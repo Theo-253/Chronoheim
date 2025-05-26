@@ -1,0 +1,10 @@
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~
+execute as @a run summon zoglin ~ ~ ~

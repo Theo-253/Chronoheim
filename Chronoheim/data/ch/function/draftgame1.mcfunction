@@ -1,0 +1,7 @@
+execute if score game1IsOngoing booleans matches 1 run execute if score character# slot1 matches 0 run function ch:characterpickplayer1
+execute if score game1IsOngoing booleans matches 1 run execute if score character# slot1 matches 1.. run execute if score character# slot5 matches 0 run function ch:characterpickplayer2
+execute if score game1IsOngoing booleans matches 1 run execute if score character# slot5 matches 1.. run execute if score character# slot2 matches 0 run function ch:characterpickplayer1
+execute if score game1IsOngoing booleans matches 1 run execute if score character# slot2 matches 1.. run execute if score character# slot6 matches 0 run function ch:characterpickplayer2
+execute if score game1IsOngoing booleans matches 1 run execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 0 run function ch:characterpickplayer1
+execute if score game1IsOngoing booleans matches 1 run execute if score character# slot3 matches 1.. run execute if score character# slot7 matches 0 run function ch:characterpickplayer2
+execute if score game1IsOngoing booleans matches 1 run execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run function ch:spellpickgame1

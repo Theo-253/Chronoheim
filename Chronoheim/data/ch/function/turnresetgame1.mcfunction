@@ -32,8 +32,8 @@ execute if score slot1 hp matches 1.. run execute if score character# slot1 matc
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches -2 run scoreboard players operation speed slot1 = demon herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches -3 run scoreboard players operation speed slot1 = healingtotem herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches -4 run scoreboard players operation speed slot1 = golemite herospeed
-execute if score slot1Duration speeddebuffs matches 1.. run scoreboard players operation speed slot1 -= speedreduction speedDebuffSlot1
-execute if score slot1 stunned matches 1.. run scoreboard players set speed slot1 -10000
+scoreboard players operation speed slot1 -= speedDebuffSlot1 speedDebuffs
+scoreboard players operation speed slot1 += speedBuffSlot1 speedBuffs
 
 
 #Slot 2 Speed Resets
@@ -70,8 +70,8 @@ execute if score slot2 hp matches 1.. run execute if score character# slot2 matc
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches -2 run scoreboard players operation speed slot2 = demon herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches -3 run scoreboard players operation speed slot2 = healingtotem herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches -4 run scoreboard players operation speed slot2 = golemite herospeed
-execute if score slot2Duration speeddebuffs matches 1.. run scoreboard players operation speed slot2 -= speedreduction speedDebuffSlot2
-execute if score slot2 stunned matches 1.. run scoreboard players set speed slot2 -10000
+scoreboard players operation speed slot2 -= speedDebuffSlot2 speedDebuffs
+scoreboard players operation speed slot2 += speedBuffSlot2 speedBuffs
 
 
 #Slot 3 Speed Resets
@@ -108,8 +108,9 @@ execute if score slot3 hp matches 1.. run execute if score character# slot3 matc
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches -2 run scoreboard players operation speed slot3 = demon herospeed
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches -3 run scoreboard players operation speed slot3 = healingtotem herospeed
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches -4 run scoreboard players operation speed slot3 = golemite herospeed
-execute if score slot3Duration speeddebuffs matches 1.. run scoreboard players operation speed slot3 -= speedreduction speedDebuffSlot3
-execute if score slot3 stunned matches 1.. run scoreboard players set speed slot3 -10000
+scoreboard players operation speed slot3 -= speedDebuffSlot3 speedDebuffs
+scoreboard players operation speed slot3 += speedBuffSlot3 speedBuffs
+
 
 
 #Slot 5 Speed Resets
@@ -146,8 +147,9 @@ execute if score slot5 hp matches 1.. run execute if score character# slot5 matc
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches -2 run scoreboard players operation speed slot5 = demon herospeed
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches -3 run scoreboard players operation speed slot5 = healingtotem herospeed
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches -4 run scoreboard players operation speed slot5 = golemite herospeed
-execute if score slot5Duration speeddebuffs matches 1.. run scoreboard players operation speed slot5 -= speedreduction speedDebuffSlot5
-execute if score slot5 stunned matches 1.. run scoreboard players set speed slot5 -10000
+scoreboard players operation speed slot5 -= speedDebuffSlot5 speedDebuffs
+scoreboard players operation speed slot5 += speedBuffSlot5 speedBuffs
+
 
 
 #Slot 6 Speed Resets
@@ -184,8 +186,8 @@ execute if score slot6 hp matches 1.. run execute if score character# slot6 matc
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches -2 run scoreboard players operation speed slot6 = demon herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches -3 run scoreboard players operation speed slot6 = healingtotem herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches -4 run scoreboard players operation speed slot6 = golemite herospeed
-execute if score slot6Duration speeddebuffs matches 1.. run scoreboard players operation speed slot6 -= speedreduction speedDebuffSlot6
-execute if score slot6 stunned matches 1.. run scoreboard players set speed slot6 -10000
+scoreboard players operation speed slot6 -= speedDebuffSlot6 speedDebuffs
+scoreboard players operation speed slot6 += speedBuffSlot6 speedBuffs
 
 
 #Slot 7 Speed Resets
@@ -222,8 +224,9 @@ execute if score slot7 hp matches 1.. run execute if score character# slot7 matc
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches -2 run scoreboard players operation speed slot7 = demon herospeed
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches -3 run scoreboard players operation speed slot7 = healingtotem herospeed
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches -4 run scoreboard players operation speed slot7 = golemite herospeed
-execute if score slot7Duration speeddebuffs matches 1.. run scoreboard players operation speed slot7 -= speedreduction speedDebuffSlot7
-execute if score slot7 stunned matches 1.. run scoreboard players set speed slot7 -10000
+scoreboard players operation speed slot7 -= speedDebuffSlot7 speedDebuffs
+scoreboard players operation speed slot7 += speedBuffSlot7 speedBuffs
+
 
 
 #Slot 4 Speed Resets
@@ -231,8 +234,8 @@ execute if score slot4 hp matches 1.. run execute if score character# slot4 matc
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -2 run scoreboard players operation speed slot4 = demon herospeed
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -3 run scoreboard players operation speed slot4 = healingtotem herospeed
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -4 run scoreboard players operation speed slot4 = golemite herospeed
-execute if score slot4Duration speeddebuffs matches 1.. run scoreboard players operation speed slot4 -= speedreduction speedDebuffSlot4
-execute if score slot4 stunned matches 1.. run scoreboard players set speed slot4 -10000
+scoreboard players operation speed slot4 -= speedDebuffSlot4 speedDebuffs
+scoreboard players operation speed slot4 += speedBuffSlot4 speedBuffs
 
 
 #Slot 8 Speed Resets
@@ -240,8 +243,8 @@ execute if score slot8 hp matches 1.. run execute if score character# slot8 matc
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -2 run scoreboard players operation speed slot8 = demon herospeed
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -3 run scoreboard players operation speed slot8 = healingtotem herospeed
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -4 run scoreboard players operation speed slot8 = golemite herospeed
-execute if score slot8Duration speeddebuffs matches 1.. run scoreboard players operation speed slot8 -= speedreduction speedDebuffSlot8
-execute if score slot8 stunned matches 1.. run scoreboard players set speed slot8 -10000
+scoreboard players operation speed slot8 -= speedDebuffSlot8 speedDebuffs
+scoreboard players operation speed slot8 += speedBuffSlot8 speedBuffs
 
 
 #Misc

@@ -1,6 +1,7 @@
 #player1
-execute if score slot5 hp matches 1.. run give @p[tag=p1] minecraft:allay_spawn_egg[minecraft:custom_name="Slot 5"]
-execute if score slot6 hp matches 1.. run give @p[tag=p1] minecraft:allay_spawn_egg[minecraft:custom_name="Slot 6"]
-execute if score slot7 hp matches 1.. run give @p[tag=p1] minecraft:allay_spawn_egg[minecraft:custom_name="Slot 7"]
-execute if score slot8 hp matches 1.. run give @p[tag=p1] minecraft:allay_spawn_egg[minecraft:custom_name="Slot 8"]
+execute if score slot5 hp matches 1.. run give @p[tag=p1] minecraft:target[minecraft:custom_name="Attack Slot 5",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:5,amplifier:1,show_particles:0b}]}]}]
+execute if score slot6 hp matches 1.. run give @p[tag=p1] minecraft:target[minecraft:custom_name="Attack Slot 6",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:5,amplifier:2,show_particles:0b}]}]}]
+execute if score slot7 hp matches 1.. run give @p[tag=p1] minecraft:target[minecraft:custom_name="Attack Slot 7",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:5,amplifier:3,show_particles:0b}]}]}]
+execute if score slot8 hp matches 1.. run give @p[tag=p1] minecraft:target[minecraft:custom_name="Attack Slot 8",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:5,amplifier:4,show_particles:0b}]}]}]
 effect clear @p[tag=p1] minecraft:conduit_power
+

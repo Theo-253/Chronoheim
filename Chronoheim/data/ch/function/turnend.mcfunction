@@ -164,6 +164,36 @@ execute if score slot8isatk booleans matches 1 run execute if score durationSlot
 execute if score slot8isatk booleans matches 1 run execute if score durationSlot3-8 fear matches 1.. run scoreboard players remove durationSlot3-8 fear 1
 execute if score slot8isatk booleans matches 1 run execute if score durationSlot4-8 fear matches 1.. run scoreboard players remove durationSlot4-8 fear 1
 
+#Disease Damage
+execute if score slot1isatk booleans matches 1 run scoreboard players operation slot1 hp -= slot1Disease disease
+execute if score slot2isatk booleans matches 1 run scoreboard players operation slot2 hp -= slot2Disease disease
+execute if score slot3isatk booleans matches 1 run scoreboard players operation slot3 hp -= slot3Disease disease
+execute if score slot4isatk booleans matches 1 run scoreboard players operation slot4 hp -= slot4Disease disease
+execute if score slot5isatk booleans matches 1 run scoreboard players operation slot5 hp -= slot5Disease disease
+execute if score slot6isatk booleans matches 1 run scoreboard players operation slot6 hp -= slot6Disease disease
+execute if score slot7isatk booleans matches 1 run scoreboard players operation slot7 hp -= slot7Disease disease
+execute if score slot8isatk booleans matches 1 run scoreboard players operation slot8 hp -= slot8Disease disease
+
+#Mark Duration
+execute if score slot1isatk booleans matches 1 run execute if score durationSlot1 mark matches 1.. run scoreboard players remove durationSlot1 mark 1
+execute if score slot2isatk booleans matches 1 run execute if score durationSlot2 mark matches 1.. run scoreboard players remove durationSlot2 mark 1
+execute if score slot3isatk booleans matches 1 run execute if score durationSlot3 mark matches 1.. run scoreboard players remove durationSlot3 mark 1
+execute if score slot4isatk booleans matches 1 run execute if score durationSlot4 mark matches 1.. run scoreboard players remove durationSlot4 mark 1
+execute if score slot5isatk booleans matches 1 run execute if score durationSlot5 mark matches 1.. run scoreboard players remove durationSlot5 mark 1
+execute if score slot6isatk booleans matches 1 run execute if score durationSlot6 mark matches 1.. run scoreboard players remove durationSlot6 mark 1
+execute if score slot7isatk booleans matches 1 run execute if score durationSlot7 mark matches 1.. run scoreboard players remove durationSlot7 mark 1
+execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 mark matches 1.. run scoreboard players remove durationSlot8 mark 1
+
+#Double Target
+execute if score slot5isatk booleans matches 1 run execute if score doubleatk slot1 matches 1 run execute if score useddoubleatk slot1 matches 1 run function ch:turnend
+execute if score slot6isatk booleans matches 1 run execute if score doubleatk slot2 matches 1 run execute if score useddoubleatk slot2 matches 1 run function ch:turnend
+execute if score slot7isatk booleans matches 1 run execute if score doubleatk slot3 matches 1 run execute if score useddoubleatk slot3 matches 1 run function ch:turnend
+execute if score slot8isatk booleans matches 1 run execute if score doubleatk slot4 matches 1 run execute if score useddoubleatk slot4 matches 1 run function ch:turnend
+execute if score slot5isatk booleans matches 1 run execute if score doubleatk slot5 matches 1 run execute if score useddoubleatk slot5 matches 1 run function ch:turnend
+execute if score slot6isatk booleans matches 1 run execute if score doubleatk slot6 matches 1 run execute if score useddoubleatk slot6 matches 1 run function ch:turnend
+execute if score slot7isatk booleans matches 1 run execute if score doubleatk slot7 matches 1 run execute if score useddoubleatk slot7 matches 1 run function ch:turnend
+execute if score slot8isatk booleans matches 1 run execute if score doubleatk slot8 matches 1 run execute if score useddoubleatk slot8 matches 1 run function ch:turnend
+
 #Attack boolean reset
 scoreboard players set slot1isatk booleans 0
 scoreboard players set slot2isatk booleans 0

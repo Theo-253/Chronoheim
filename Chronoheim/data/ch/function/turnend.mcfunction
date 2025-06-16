@@ -71,24 +71,24 @@ execute if score slot7isatk booleans matches 1 run execute if score durationSlot
 execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 speedBuffs matches 1.. run scoreboard players remove durationSlot8 speedBuffs 1
 
 #Attack Buff Duration
-execute if score slot1isatk booleans matches 1 run execute if score buffDurationSlot1 attackmodifiers matches 1.. run scoreboard players remove buffDurationSlot1 attackmodifiers 1
-execute if score slot2isatk booleans matches 1 run execute if score buffDurationSlot2 attackmodifiers matches 1.. run scoreboard players remove buffDurationSlot2 attackmodifiers 1
-execute if score slot3isatk booleans matches 1 run execute if score buffDurationSlot3 attackmodifiers matches 1.. run scoreboard players remove buffDurationSlot3 attackmodifiers 1
-execute if score slot4isatk booleans matches 1 run execute if score buffDurationSlot4 attackmodifiers matches 1.. run scoreboard players remove buffDurationSlot4 attackmodifiers 1
-execute if score slot5isatk booleans matches 1 run execute if score buffDurationSlot5 attackmodifiers matches 1.. run scoreboard players remove buffDurationSlot5 attackmodifiers 1
-execute if score slot6isatk booleans matches 1 run execute if score buffDurationSlot6 attackmodifiers matches 1.. run scoreboard players remove buffDurationSlot6 attackmodifiers 1
-execute if score slot7isatk booleans matches 1 run execute if score buffDurationSlot7 attackmodifiers matches 1.. run scoreboard players remove buffDurationSlot7 attackmodifiers 1
-execute if score slot8isatk booleans matches 1 run execute if score buffDurationSlot8 attackmodifiers matches 1.. run scoreboard players remove buffDurationSlot8 attackmodifiers 1
+execute if score slot1isatk booleans matches 1 run execute if score buffDurationSlot1 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot1 atkmodifiers 1
+execute if score slot2isatk booleans matches 1 run execute if score buffDurationSlot2 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot2 atkmodifiers 1
+execute if score slot3isatk booleans matches 1 run execute if score buffDurationSlot3 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot3 atkmodifiers 1
+execute if score slot4isatk booleans matches 1 run execute if score buffDurationSlot4 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot4 atkmodifiers 1
+execute if score slot5isatk booleans matches 1 run execute if score buffDurationSlot5 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot5 atkmodifiers 1
+execute if score slot6isatk booleans matches 1 run execute if score buffDurationSlot6 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot6 atkmodifiers 1
+execute if score slot7isatk booleans matches 1 run execute if score buffDurationSlot7 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot7 atkmodifiers 1
+execute if score slot8isatk booleans matches 1 run execute if score buffDurationSlot8 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot8 atkmodifiers 1
 
 #Attack Debuff Duration
-execute if score slot1isatk booleans matches 1 run execute if score debuffDurationSlot1 attackmodifiers matches 1.. run scoreboard players remove debuffDurationSlot1 attackmodifiers 1
-execute if score slot2isatk booleans matches 1 run execute if score debuffDurationSlot2 attackmodifiers matches 1.. run scoreboard players remove debuffDurationSlot2 attackmodifiers 1
-execute if score slot3isatk booleans matches 1 run execute if score debuffDurationSlot3 attackmodifiers matches 1.. run scoreboard players remove debuffDurationSlot3 attackmodifiers 1
-execute if score slot4isatk booleans matches 1 run execute if score debuffDurationSlot4 attackmodifiers matches 1.. run scoreboard players remove debuffDurationSlot4 attackmodifiers 1
-execute if score slot5isatk booleans matches 1 run execute if score debuffDurationSlot5 attackmodifiers matches 1.. run scoreboard players remove debuffDurationSlot5 attackmodifiers 1
-execute if score slot6isatk booleans matches 1 run execute if score debuffDurationSlot6 attackmodifiers matches 1.. run scoreboard players remove debuffDurationSlot6 attackmodifiers 1
-execute if score slot7isatk booleans matches 1 run execute if score debuffDurationSlot7 attackmodifiers matches 1.. run scoreboard players remove debuffDurationSlot7 attackmodifiers 1
-execute if score slot8isatk booleans matches 1 run execute if score debuffDurationSlot8 attackmodifiers matches 1.. run scoreboard players remove debuffDurationSlot8 attackmodifiers 1
+execute if score slot1isatk booleans matches 1 run execute if score debuffDurationSlot1 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot1 atkmodifiers 1
+execute if score slot2isatk booleans matches 1 run execute if score debuffDurationSlot2 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot2 atkmodifiers 1
+execute if score slot3isatk booleans matches 1 run execute if score debuffDurationSlot3 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot3 atkmodifiers 1
+execute if score slot4isatk booleans matches 1 run execute if score debuffDurationSlot4 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot4 atkmodifiers 1
+execute if score slot5isatk booleans matches 1 run execute if score debuffDurationSlot5 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot5 atkmodifiers 1
+execute if score slot6isatk booleans matches 1 run execute if score debuffDurationSlot6 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot6 atkmodifiers 1
+execute if score slot7isatk booleans matches 1 run execute if score debuffDurationSlot7 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot7 atkmodifiers 1
+execute if score slot8isatk booleans matches 1 run execute if score debuffDurationSlot8 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot8 atkmodifiers 1
 
 #Regen Healing
 execute if score slot1isatk booleans matches 1 run scoreboard players operation slot1 hp += slot1Regen regen

@@ -1,4 +1,15 @@
-#basic attack functions + attack modifiers
+#Attack Modifiers
+scoreboard players operation slot5 atkmodifiers = attackBuffSlot5 atkmodifiers
+scoreboard players operation slot5 atkmodifiers -= attackDebuffSlot5 atkmodifiers
+scoreboard players operation slot6 atkmodifiers = attackBuffSlot6 atkmodifiers
+scoreboard players operation slot6 atkmodifiers -= attackDebuffSlot6 atkmodifiers
+scoreboard players operation slot7 atkmodifiers = attackBuffSlot7 atkmodifiers
+scoreboard players operation slot7 atkmodifiers -= attackDebuffSlot7 atkmodifiers
+scoreboard players operation slot8 atkmodifiers = attackBuffSlot8 atkmodifiers
+scoreboard players operation slot8 atkmodifiers -= attackDebuffSlot8 atkmodifiers
+
+
+#basic attack functions
 #slot 5
 execute if score slot5isatk booleans matches 1 run scoreboard players operation atk saves = atk1 slot5
 execute if score slot5isatk booleans matches 1 run scoreboard players operation atk saves += slot5 atkmodifiers

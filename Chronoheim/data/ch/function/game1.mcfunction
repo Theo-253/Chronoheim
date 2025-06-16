@@ -1,3 +1,9 @@
+#drafting
+function ch:draftgame1
+#game start check
+execute if score sP player1spells matches 0 run execute if score sP player2spells matches 0 run execute if score game1Ongoing ongoinggames matches 0 if score character# slot1 matches 1.. run execute if score character# slot2 matches 1.. run execute if score character# slot3 matches 1.. run execute if score character# slot4 matches 1.. run execute if score character# slot5 matches 1.. run execute if score character# slot6 matches 1.. run scoreboard players set attackIsOngoingGame1 booleans 1
+execute if score sP player1spells matches 0 run execute if score sP player2spells matches 0 run execute if score game1Ongoing ongoinggames matches 0 if score character# slot1 matches 1.. run execute if score character# slot2 matches 1.. run execute if score character# slot3 matches 1.. run execute if score character# slot4 matches 1.. run execute if score character# slot5 matches 1.. run execute if score character# slot6 matches 1.. run function ch:game1start
+
 #attack initiation check
 execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:0,max:0}}}}} run function ch:basicattackstartp1
 execute as @p[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:0,max:0}}}}} run function ch:basicattackstartp2

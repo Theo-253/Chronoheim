@@ -27,6 +27,8 @@ execute if score ward slot8 matches 0 run execute as @p[tag=p1] if predicate {co
 execute if score ward slot8 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:4,max:4}}}}} run function ch:ward
 effect clear @a minecraft:conduit_power
 
+function ch:abilitytargetinggeneralgame1
+
 execute unless score speed slot1 matches ..-100 run execute if score game1Ongoing ongoinggames matches 1 run execute if score attackIsOngoingGame1 booleans matches 0 if score speed slot1 > speed slot2 if score speed slot1 >= speed slot3 if score speed slot1 >= speed slot4 if score speed slot1 >= speed slot5 if score speed slot1 > speed slot6 if score speed slot1 > speed slot7 if score speed slot1 >= speed slot8 run function ch:attackoptions1
 execute unless score speed slot2 matches ..-100 run execute if score game1Ongoing ongoinggames matches 1 run execute if score attackIsOngoingGame1 booleans matches 0 if score speed slot2 >= speed slot1 if score speed slot2 >= speed slot3 if score speed slot2 >= speed slot4 if score speed slot2 >= speed slot5 if score speed slot2 >= speed slot6 if score speed slot2 >= speed slot7 if score speed slot2 >= speed slot8 run function ch:attackoptions2
 execute unless score speed slot3 matches ..-100 run execute if score game1Ongoing ongoinggames matches 1 run execute if score attackIsOngoingGame1 booleans matches 0 if score speed slot3 > speed slot1 if score speed slot3 > speed slot2 if score speed slot3 >= speed slot4 if score speed slot3 > speed slot5 if score speed slot3 > speed slot6 if score speed slot3 >= speed slot7 if score speed slot3 >= speed slot8 run function ch:attackoptions3

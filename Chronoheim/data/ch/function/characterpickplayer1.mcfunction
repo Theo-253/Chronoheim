@@ -606,3 +606,29 @@ execute if score character# slot1 matches 0 run execute as @a[tag=p1,tag=ripperO
 execute if score character# slot1 matches 0 run execute as @a[tag=p1,tag=ripperO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:29,max:29}}}}} run effect clear @a[tag=p1] hero_of_the_village
 
 execute as @a[tag=!ripperO,tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:29,max:29}}}}} run say Sorry, you don't own this hero.
+
+
+#Domino character select p1
+execute as @a[tag=dominoO,tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run say picked Domino
+
+
+execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players set character# slot3 30
+execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players operation slot3 hp = domino herohealth
+execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players operation atk slot3 = domino heroattack
+execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run effect clear @a[tag=p1] hero_of_the_village
+
+
+execute if score character# slot2 matches 0 run execute if score character# slot1 matches 1.. run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players set character# slot2 30
+execute if score character# slot2 matches 0 run execute if score character# slot1 matches 1.. run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players operation slot2 hp = domino herohealth
+execute if score character# slot2 matches 0 run execute if score character# slot1 matches 1.. run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players operation atk slot2 = domino heroattack
+execute if score character# slot2 matches 0 run execute if score character# slot1 matches 1.. run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run effect clear @a[tag=p1] hero_of_the_village
+
+
+execute if score character# slot1 matches 0 run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players set character# slot1 30
+execute if score character# slot1 matches 0 run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players operation slot1 hp = domino herohealth
+execute if score character# slot1 matches 0 run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run scoreboard players operation atk slot1 = domino heroattack
+execute if score character# slot1 matches 0 run execute as @a[tag=p1,tag=dominoO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run effect clear @a[tag=p1] hero_of_the_village
+
+
+execute as @a[tag=!dominoO,tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:hero_of_the_village":{amplifier:{min:30,max:30}}}}} run say Sorry, you don't own this hero.
+

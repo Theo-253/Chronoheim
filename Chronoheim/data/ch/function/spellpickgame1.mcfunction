@@ -506,3 +506,5 @@ execute if score Spell_Points_P2 Spell_Points matches 4.. run execute as @a[tag=
 execute if score Spell_Points_P2 Spell_Points matches 4.. run execute as @a[tag=p2,tag=healingtotemO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:30,max:30}}}}} run say picked Healing Totem
 execute if score Spell_Points_P2 Spell_Points matches 4.. run execute as @a[tag=p2,tag=healingtotemO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:30,max:30}}}}} run effect clear @a[tag=p2] water_breathing
 execute if score Spell_Points_P2 Spell_Points matches ..3 run execute as @a[tag=p2,tag=healingtotemO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:30,max:30}}}}} run say You dont have enough spell points to equip this spell yeet yo
+
+execute if score Spell_Points_P1 Spell_Points matches 0 run execute if score Spell_Points_P2 Spell_Points matches 0 run function ch:game1start

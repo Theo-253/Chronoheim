@@ -175,14 +175,14 @@ execute if score slot7isatk booleans matches 1 run scoreboard players operation 
 execute if score slot8isatk booleans matches 1 run scoreboard players operation slot8 hp -= slot8Disease disease
 
 #Mark Duration
-execute if score slot1isatk booleans matches 1 run execute if score durationSlot1 mark matches 1.. run scoreboard players remove durationSlot1 mark 1
-execute if score slot2isatk booleans matches 1 run execute if score durationSlot2 mark matches 1.. run scoreboard players remove durationSlot2 mark 1
-execute if score slot3isatk booleans matches 1 run execute if score durationSlot3 mark matches 1.. run scoreboard players remove durationSlot3 mark 1
-execute if score slot4isatk booleans matches 1 run execute if score durationSlot4 mark matches 1.. run scoreboard players remove durationSlot4 mark 1
-execute if score slot5isatk booleans matches 1 run execute if score durationSlot5 mark matches 1.. run scoreboard players remove durationSlot5 mark 1
-execute if score slot6isatk booleans matches 1 run execute if score durationSlot6 mark matches 1.. run scoreboard players remove durationSlot6 mark 1
-execute if score slot7isatk booleans matches 1 run execute if score durationSlot7 mark matches 1.. run scoreboard players remove durationSlot7 mark 1
-execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 mark matches 1.. run scoreboard players remove durationSlot8 mark 1
+#execute if score slot1isatk booleans matches 1 run execute if score durationSlot1 mark matches 1.. run scoreboard players remove durationSlot1 mark 1
+#execute if score slot2isatk booleans matches 1 run execute if score durationSlot2 mark matches 1.. run scoreboard players remove durationSlot2 mark 1
+#execute if score slot3isatk booleans matches 1 run execute if score durationSlot3 mark matches 1.. run scoreboard players remove durationSlot3 mark 1
+#execute if score slot4isatk booleans matches 1 run execute if score durationSlot4 mark matches 1.. run scoreboard players remove durationSlot4 mark 1
+#execute if score slot5isatk booleans matches 1 run execute if score durationSlot5 mark matches 1.. run scoreboard players remove durationSlot5 mark 1
+#execute if score slot6isatk booleans matches 1 run execute if score durationSlot6 mark matches 1.. run scoreboard players remove durationSlot6 mark 1
+#execute if score slot7isatk booleans matches 1 run execute if score durationSlot7 mark matches 1.. run scoreboard players remove durationSlot7 mark 1
+#execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 mark matches 1.. run scoreboard players remove durationSlot8 mark 1
 
 #bleed duration
 execute if score slot1isatk booleans matches 1 run execute if score slot1bleeding booleaneffects matches 1.. run scoreboard players remove slot1bleeding booleaneffects 1
@@ -224,6 +224,6 @@ scoreboard players set slot5isatk booleans 0
 scoreboard players set slot6isatk booleans 0
 scoreboard players set slot7isatk booleans 0
 scoreboard players set slot8isatk booleans 0
-scoreboard players set side1isakt booleans 0
-scoreboard players set side2isatk booleans 0
+scoreboard players set p1isatk booleans 0
+scoreboard players set p2isatk booleans 0
 scoreboard players set attackIsOngoingGame1 booleans 0

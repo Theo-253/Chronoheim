@@ -1,5 +1,5 @@
-#player1
-execute if score side1isatk booleans matches 1 run clear @p[tag=p1]
+#player2
+clear @p[tag=p2]
 execute if score slot1 hp matches 1.. run give @p[tag=p2] minecraft:target[minecraft:custom_name="Attack Slot 1",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:1,amplifier:1,show_particles:0b}]}]}]
 execute if score slot2 hp matches 1.. run give @p[tag=p2] minecraft:target[minecraft:custom_name="Attack Slot 2",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:1,amplifier:2,show_particles:0b}]}]}]
 execute if score slot3 hp matches 1.. run give @p[tag=p2] minecraft:target[minecraft:custom_name="Attack Slot 3",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:1,amplifier:3,show_particles:0b}]}]}]

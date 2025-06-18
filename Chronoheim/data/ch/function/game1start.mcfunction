@@ -246,4 +246,24 @@ execute if score slot8 hp matches 1.. run execute if score character# slot8 matc
 scoreboard players operation speed slot8 -= speedDebuffSlot8 speedDebuffs
 scoreboard players operation speed slot8 += speedBuffSlot8 speedBuffs
 
+
+#Game Start Leader bonuses
+execute if score character# slot2 matches 2 run scoreboard players add buffDurationSlot1 atkmodifiers 3
+execute if score character# slot2 matches 2 run scoreboard players add buffDurationSlot2 atkmodifiers 3
+execute if score character# slot2 matches 2 run scoreboard players add buffDurationSlot3 atkmodifiers 3
+execute if score character# slot2 matches 2 run scoreboard players add buffDurationSlot4 atkmodifiers 3
+execute if score character# slot2 matches 2 run scoreboard players add attackBuffSlot1 atkmodifiers 60
+execute if score character# slot2 matches 2 run scoreboard players add attackBuffSlot2 atkmodifiers 60
+execute if score character# slot2 matches 2 run scoreboard players add attackBuffSlot3 atkmodifiers 60
+execute if score character# slot2 matches 2 run scoreboard players add attackBuffSlot4 atkmodifiers 60
+
+execute if score character# slot6 matches 2 run scoreboard players add buffDurationSlot5 atkmodifiers 3
+execute if score character# slot6 matches 2 run scoreboard players add buffDurationSlot6 atkmodifiers 3
+execute if score character# slot6 matches 2 run scoreboard players add buffDurationSlot7 atkmodifiers 3
+execute if score character# slot6 matches 2 run scoreboard players add buffDurationSlot8 atkmodifiers 3
+execute if score character# slot6 matches 2 run scoreboard players add attackBuffSlot5 atkmodifiers 60
+execute if score character# slot6 matches 2 run scoreboard players add attackBuffSlot6 atkmodifiers 60
+execute if score character# slot6 matches 2 run scoreboard players add attackBuffSlot7 atkmodifiers 60
+execute if score character# slot6 matches 2 run scoreboard players add attackBuffSlot8 atkmodifiers 60
+
 scoreboard players set attackIsOngoingGame1 booleans 0

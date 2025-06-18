@@ -184,6 +184,27 @@ execute if score slot6isatk booleans matches 1 run execute if score durationSlot
 execute if score slot7isatk booleans matches 1 run execute if score durationSlot7 mark matches 1.. run scoreboard players remove durationSlot7 mark 1
 execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 mark matches 1.. run scoreboard players remove durationSlot8 mark 1
 
+#bleed duration
+execute if score slot1isatk booleans matches 1 run execute if score slot1bleeding booleaneffects matches 1.. run scoreboard players remove slot1bleeding booleaneffects 1
+execute if score slot2isatk booleans matches 1 run execute if score slot2bleeding booleaneffects matches 1.. run scoreboard players remove slot2bleeding booleaneffects 1
+execute if score slot3isatk booleans matches 1 run execute if score slot3bleeding booleaneffects matches 1.. run scoreboard players remove slot3bleeding booleaneffects 1
+execute if score slot4isatk booleans matches 1 run execute if score slot4bleeding booleaneffects matches 1.. run scoreboard players remove slot4bleeding booleaneffects 1
+execute if score slot5isatk booleans matches 1 run execute if score slot5bleeding booleaneffects matches 1.. run scoreboard players remove slot5bleeding booleaneffects 1
+execute if score slot6isatk booleans matches 1 run execute if score slot6bleeding booleaneffects matches 1.. run scoreboard players remove slot6bleeding booleaneffects 1
+execute if score slot7isatk booleans matches 1 run execute if score slot7bleeding booleaneffects matches 1.. run scoreboard players remove slot7bleeding booleaneffects 1
+execute if score slot8isatk booleans matches 1 run execute if score slot8bleeding booleaneffects matches 1.. run scoreboard players remove slot8bleeding booleaneffects 1
+
+
+#disarm duration
+execute if score slot1isatk booleans matches 1 run execute if score disarmedslot1 booleaneffects matches 1.. run scoreboard players remove disarmedslot1 booleaneffects 1
+execute if score slot2isatk booleans matches 1 run execute if score disarmedslot2 booleaneffects matches 1.. run scoreboard players remove disarmedslot2 booleaneffects 1
+execute if score slot3isatk booleans matches 1 run execute if score disarmedslot3 booleaneffects matches 1.. run scoreboard players remove disarmedslot3 booleaneffects 1
+execute if score slot4isatk booleans matches 1 run execute if score disarmedslot4 booleaneffects matches 1.. run scoreboard players remove disarmedslot4 booleaneffects 1
+execute if score slot5isatk booleans matches 1 run execute if score disarmedslot5 booleaneffects matches 1.. run scoreboard players remove disarmedslot5 booleaneffects 1
+execute if score slot6isatk booleans matches 1 run execute if score disarmedslot6 booleaneffects matches 1.. run scoreboard players remove disarmedslot6 booleaneffects 1
+execute if score slot7isatk booleans matches 1 run execute if score disarmedslot7 booleaneffects matches 1.. run scoreboard players remove disarmedslot7 booleaneffects 1
+execute if score slot8isatk booleans matches 1 run execute if score disarmedslot8 booleaneffects matches 1.. run scoreboard players remove disarmedslot8 booleaneffects 1
+
 #Double Target
 execute if score slot5isatk booleans matches 1 run execute if score doubleatk slot1 matches 1 run execute if score useddoubleatk slot1 matches 1 run function ch:turnend
 execute if score slot6isatk booleans matches 1 run execute if score doubleatk slot2 matches 1 run execute if score useddoubleatk slot2 matches 1 run function ch:turnend

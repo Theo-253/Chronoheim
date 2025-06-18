@@ -11,32 +11,32 @@ scoreboard players operation slot4 atkmodifiers -= attackDebuffSlot4 atkmodifier
 
 #basic attack functions
 #slot 5
-execute if score slot1isatk booleans matches 1 run scoreboard players operation atk saves = atk1 slot1
-execute if score slot1isatk booleans matches 1 run scoreboard players operation atk saves += slot1 atkmodifiers
-execute if score slot1isatk booleans matches 1 run scoreboard players operation atk saves += marks slot1
-execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot1
-execute if score slot1isatk booleans matches 1 run scoreboard players operation shield slot1 -= atk1 saves
+execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot1
+execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves += slot1 atkmodifiers
+execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot5
+execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot5
+execute if score slot1isatk booleans matches 1 run scoreboard players operation shield slot5 -= atk1 saves
 #slot 6
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot2
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves += slot2 atkmodifiers
-execute if score slot2isatk booleans matches 1 run scoreboard players operation atk saves += marks slot1
-execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot1
-execute if score slot2isatk booleans matches 1 run scoreboard players operation shield slot1 -= atk1 saves
+execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot5
+execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot5
+execute if score slot2isatk booleans matches 1 run scoreboard players operation shield slot5 -= atk1 saves
 #slot 7
 execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot3
-execute if score slot3isatk booleans matches 1 run scoreboard players operation atk saves += marks slot1
+execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot5
 execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves += slot3 atkmodifiers
-execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot1
-execute if score slot3isatk booleans matches 1 run scoreboard players operation shield slot1 -= atk1 saves
+execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot5
+execute if score slot3isatk booleans matches 1 run scoreboard players operation shield slot5 -= atk1 saves
 #slot 8
 execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot4
-execute if score slot4isatk booleans matches 1 run scoreboard players operation atk saves += marks slot1
+execute if score slot4isatk booleans matches 1 run scoreboard players operation atk saves += marks slot5
 execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves += slot4 atkmodifiers
-execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot1
-execute if score slot4isatk booleans matches 1 run scoreboard players operation shield slot1 -= atk1 saves
+execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot5
+execute if score slot4isatk booleans matches 1 run scoreboard players operation shield slot5 -= atk1 saves
 #damage + shield reset (all)
-execute if score shield slot1 matches ..0 run scoreboard players operation slot1 hp -= shield slot1
-execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0
+execute if score shield slot5 matches ..0 run scoreboard players operation slot5 hp -= shield slot5
+execute if score shield slot5 matches ..0 run scoreboard players set shield slot5 0
 
 
 

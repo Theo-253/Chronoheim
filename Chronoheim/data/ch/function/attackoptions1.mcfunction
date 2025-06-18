@@ -1,3 +1,7 @@
+scoreboard players set attackIsOngoingGame1 booleans 1
+scoreboard players set speed slot1 -100
+scoreboard players set slot1isatk booleans 1
+scoreboard players set side1isatk booleans 1
 execute if score disarmedslot1 booleaneffects matches 0 if score hasuniquebasicattack slot1 matches 0 run give @p[tag=p1] minecraft:iron_sword[minecraft:custom_name="Basic Attack",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:1,amplifier:0,show_particles:0b}]}]}]
 execute if score character# slot1 matches 1 run give @p[tag=p1] minecraft:arrow[minecraft:custom_name="Volley",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.arrow.hit",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:fire_resistance,duration:1,amplifier:1,show_particles:0b}]}]}]
 execute if score character# slot1 matches 2 run give @p[tag=p1] minecraft:nether_star[minecraft:custom_name="Holy Light",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.experience_orb.pickup",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:fire_resistance,duration:1,amplifier:2,show_particles:0b}]}]}]

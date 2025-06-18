@@ -224,6 +224,6 @@ scoreboard players set slot5isatk booleans 0
 scoreboard players set slot6isatk booleans 0
 scoreboard players set slot7isatk booleans 0
 scoreboard players set slot8isatk booleans 0
-scoreboard players set p1isatk booleans 0
-scoreboard players set p2isatk booleans 0
+scoreboard players set side1isakt booleans 0
+scoreboard players set side2isatk booleans 0
 scoreboard players set attackIsOngoingGame1 booleans 0

@@ -46,7 +46,7 @@ execute if score slot2 hp matches 1.. run execute if score character# slot2 matc
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 7 run scoreboard players operation speed slot2 = kong herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 8 run scoreboard players operation speed slot2 = kirin herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 9 run scoreboard players operation speed slot2 = robyn herospeed
-execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 10 run scoreboard players operation speed slot2 = dillo herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 10 run scoreboard players operation speed slot2 = dilloLeader herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 11 run scoreboard players operation speed slot2 = flint herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 12 run scoreboard players operation speed slot2 = ace herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 13 run scoreboard players operation speed slot2 = london herospeed
@@ -162,7 +162,7 @@ execute if score slot6 hp matches 1.. run execute if score character# slot6 matc
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 7 run scoreboard players operation speed slot6 = kong herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 8 run scoreboard players operation speed slot6 = kirin herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 9 run scoreboard players operation speed slot6 = robyn herospeed
-execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 10 run scoreboard players operation speed slot6 = dillo herospeed
+execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 10 run scoreboard players operation speed slot6 = dilloLeader herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 11 run scoreboard players operation speed slot6 = flint herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 12 run scoreboard players operation speed slot6 = ace herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 13 run scoreboard players operation speed slot6 = london herospeed

@@ -1,0 +1,16 @@
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score side1isatk booleans matches 1 run scoreboard players set abilityusep1 booleans 1
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score side2isatk booleans matches 1 run scoreboard players set abilityusep2 booleans 2
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run function ch:abilitygivetargetsp2
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run function ch:abilitygivetargetsp1
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run say used Bubble Shield!
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run say used Bubble Shield!
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score slot1isatk booleans matches 1.. run scoreboard players operation cooldown slot1 = garabaldiCooldown abilityStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score slot2isatk booleans matches 1.. run scoreboard players operation cooldown slot3 = garabaldiCooldown abilityStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score slot3isatk booleans matches 1.. run scoreboard players operation cooldown slot3 = garabaldiCooldown abilityStats
+
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score slot5isatk booleans matches 1.. run scoreboard players operation cooldown slot5 = garabaldiCooldown abilityStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score slot6isatk booleans matches 1.. run scoreboard players operation cooldown slot6 = garabaldiCooldown abilityStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score slot7isatk booleans matches 1.. run scoreboard players operation cooldown slot7 = garabaldiCooldown abilityStats
+scoreboard players set burn burn 1
+scoreboard players set abilitynumber abilities 24

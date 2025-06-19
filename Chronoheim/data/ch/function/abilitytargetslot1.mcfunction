@@ -11,9 +11,11 @@ execute if score abilitynumber abilities matches 3 run scoreboard players operat
 execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
 execute if score abilitynumber abilities matches 3 run execute if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= abilityDmg saves
 execute if score abilitynumber abilities matches 3 run execute if score ward slot1 matches 0 if score shield slot1 matches ..0 run scoreboard players operation slot1 hp += shield slot1
-execute if score abilitynumber abilities matches 3 run execute if score ward slot1 matches 1.. run function ch:ward
+execute if score abilitynumber abilities matches 3 run execute if score ward slot1 matches 1.. run function ch:wardslot1
 
-
+#Garabaldi Ability
+execute if score ability# abilities matches 24 if score slot1 hp matches 1.. if score slot1bleeding booleaneffects matches 0 run scoreboard players operation hp slot1 += garabaldiHeal abilityStats
+execute if score ability# abilities matches 24 if score slot1 hp matches 1.. run scoreboard players set ward slot1 2
 
 
 

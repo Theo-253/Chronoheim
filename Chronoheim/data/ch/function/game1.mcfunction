@@ -32,6 +32,16 @@ function ch:abilitytargetinggeneralgame1
 function ch:speedcheckgame1
 function ch:abilitychecks
 
+#invincibility
+execute if score invincibleSlot1 booleaneffects matches 1.. run scoreboard players operation slot1 hp = savehp1 saves
+execute if score invincibleSlot2 booleaneffects matches 1.. run scoreboard players operation slot2 hp = savehp2 saves
+execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot3 hp = savehp3 saves
+execute if score invincibleSlot5 booleaneffects matches 1.. run scoreboard players operation slot5 hp = savehp5 saves
+execute if score invincibleSlot6 booleaneffects matches 1.. run scoreboard players operation slot6 hp = savehp6 saves
+execute if score invincibleSlot7 booleaneffects matches 1.. run scoreboard players operation slot7 hp = savehp7 saves
+
+
+
 #Speed Reset
 execute if score attackIsOngoingGame1 booleans matches 0 run execute if score speed slot6 matches ..-10000 run execute if score speed slot5 matches ..-10000 run execute if score speed slot4 matches ..-10000 run execute if score speed slot3 matches ..-10000 run execute if score speed slot2 matches ..-10000 run execute if score speed slot1 matches ..-10000 run execute if score character# slot1 matches 1.. run scoreboard players set attackIsOngoingGame1 booleans 1
 execute if score attackIsOngoingGame1 booleans matches 0 run execute if score speed slot6 matches ..-10000 run execute if score speed slot5 matches ..-10000 run execute if score speed slot4 matches ..-10000 run execute if score speed slot3 matches ..-10000 run execute if score speed slot2 matches ..-10000 run execute if score speed slot1 matches ..-10000 run execute if score character# slot1 matches 1.. run function ch:turnresetgame1

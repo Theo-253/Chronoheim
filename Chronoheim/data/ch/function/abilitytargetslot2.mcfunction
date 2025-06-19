@@ -1,7 +1,7 @@
 effect clear @a[tag=game1] strength
-execute if score abilitynumber abilities matches 12 run scoreboard players set cooldown slot2 3
-execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players set durationSlot2 SpeedDebuffs 3
-execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players set speedDebuffSlot2 SpeedDebuffs 1000
+execute if score abilitynumber abilities matches 12 run scoreboard players operation cooldown slot2 = aceSetCooldown abilityStats
+execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot2 SpeedDebuffs = aceLeaderDuration abilitystats
+execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speedDebuffSlot2 SpeedDebuffs = aceLeader abilityStats
 
 
 

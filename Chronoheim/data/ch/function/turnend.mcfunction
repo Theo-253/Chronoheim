@@ -205,6 +205,17 @@ execute if score slot6isatk booleans matches 1 run execute if score disarmedslot
 execute if score slot7isatk booleans matches 1 run execute if score disarmedslot7 booleaneffects matches 1.. run scoreboard players remove disarmedslot7 booleaneffects 1
 execute if score slot8isatk booleans matches 1 run execute if score disarmedslot8 booleaneffects matches 1.. run scoreboard players remove disarmedslot8 booleaneffects 1
 
+#invincibility duration
+execute if score slot1isatk booleans matches 1 run execute if score invincibleSlot1 booleaneffects matches 1.. run scoreboard players remove invincibleSlot1 booleaneffects 1
+execute if score slot2isatk booleans matches 1 run execute if score invincibleSlot2 booleaneffects matches 1.. run scoreboard players remove invincibleSlot2 booleaneffects 1
+execute if score slot3isatk booleans matches 1 run execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players remove invincibleSlot3 booleaneffects 1
+execute if score slot4isatk booleans matches 1 run execute if score invincibleSlot4 booleaneffects matches 1.. run scoreboard players remove invincibleSlot4 booleaneffects 1
+execute if score slot5isatk booleans matches 1 run execute if score invincibleSlot5 booleaneffects matches 1.. run scoreboard players remove invincibleSlot5 booleaneffects 1
+execute if score slot6isatk booleans matches 1 run execute if score invincibleSlot6 booleaneffects matches 1.. run scoreboard players remove invincibleSlot6 booleaneffects 1
+execute if score slot7isatk booleans matches 1 run execute if score invincibleSlot7 booleaneffects matches 1.. run scoreboard players remove invincibleSlot7 booleaneffects 1
+execute if score slot8isatk booleans matches 1 run execute if score invincibleSlot8 booleaneffects matches 1.. run scoreboard players remove invincibleSlot8 booleaneffects 1
+
+
 #Double Target
 execute if score slot5isatk booleans matches 1 run execute if score doubleatk slot1 matches 1 run execute if score useddoubleatk slot1 matches 1 run function ch:turnend
 execute if score slot6isatk booleans matches 1 run execute if score doubleatk slot2 matches 1 run execute if score useddoubleatk slot2 matches 1 run function ch:turnend

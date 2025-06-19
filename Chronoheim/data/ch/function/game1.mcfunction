@@ -17,14 +17,14 @@ execute if score ward slot3 matches 0 run execute as @p[tag=p2] if predicate {co
 execute if score ward slot3 matches 1.. run execute as @p[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:3,max:3}}}}} run function ch:wardslot3
 execute if score ward slot4 matches 0 run execute as @p[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:4,max:4}}}}} run function ch:basicattacks4
 execute if score ward slot4 matches 1.. run execute as @p[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:4,max:4}}}}} run function ch:wardslot4
-execute if score ward slot5 matches 0 run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:5,max:5}}}}} run function ch:basicattacks5
-execute if score ward slot5 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:5,max:5}}}}} run function ch:wardslot5
-execute if score ward slot6 matches 0 run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:6,max:6}}}}} run function ch:basicattacks6
-execute if score ward slot6 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:6,max:6}}}}} run function ch:wardslot6
-execute if score ward slot7 matches 0 run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:7,max:7}}}}} run function ch:basicattacks7
-execute if score ward slot7 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:7,max:7}}}}} run function ch:wardslot7
-execute if score ward slot8 matches 0 run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:8,max:8}}}}} run function ch:basicattacks8
-execute if score ward slot8 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:8,max:8}}}}} run function ch:wardslot8
+execute if score ward slot5 matches 0 run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:1,max:1}}}}} run function ch:basicattacks5
+execute if score ward slot5 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:1,max:1}}}}} run function ch:wardslot5
+execute if score ward slot6 matches 0 run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:2,max:2}}}}} run function ch:basicattacks6
+execute if score ward slot6 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:2,max:2}}}}} run function ch:wardslot6
+execute if score ward slot7 matches 0 run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:3,max:3}}}}} run function ch:basicattacks7
+execute if score ward slot7 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:3,max:3}}}}} run function ch:wardslot7
+execute if score ward slot8 matches 0 run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:4,max:4}}}}} run function ch:basicattacks8
+execute if score ward slot8 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:4,max:4}}}}} run function ch:wardslot8
 effect clear @a minecraft:conduit_power
 
 function ch:abilitytargetinggeneralgame1
@@ -61,3 +61,9 @@ execute if score alivep1 deaths matches 0 run function ch:win
 execute if score alivep1 deaths matches 0 run say @a @p[tag=p2] has won the duel against @p[tag=p1]!
 execute if score alivep2 deaths matches 0 run function ch:win
 execute if score alivep2 deaths matches 0 run say @a @p[tag=p1] has won the duel against @p[tag=p2]!
+
+#Rapidtick
+execute if score character# slot2 matches 18 if score slot2 hp matches ..400 run scoreboard players operation slot2 atk = grangorLeaderAtk heroattack
+execute if score character# slot2 matches 18 if score slot2 hp matches 401.. run scoreboard players operation slot2 atk = grangor heroattack
+execute if score character# slot6 matches 18 if score slot6 hp matches ..400 run scoreboard players operation slot6 atk = grangorLeaderAtk heroattack
+execute if score character# slot6 matches 18 if score slot6 hp matches 401.. run scoreboard players operation slot6 atk = grangor heroattack

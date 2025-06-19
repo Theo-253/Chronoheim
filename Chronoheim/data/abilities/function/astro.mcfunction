@@ -27,3 +27,8 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot5isatk booleans matches 1.. run scoreboard players operation savehp5 saves = slot5 hp 
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot6isatk booleans matches 1.. run scoreboard players operation savehp6 saves = slot6 hp 
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot7isatk booleans matches 1.. run scoreboard players operation savehp7 saves = slot7 hp 
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run function ch:turnend
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run effect clear @a[tag=game1] fire_resistance
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run function ch:turnend
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run effect clear @a[tag=game1] fire_resistance

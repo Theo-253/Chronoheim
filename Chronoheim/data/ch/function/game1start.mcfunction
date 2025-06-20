@@ -301,5 +301,23 @@ execute if score character# slot6 matches 29 run scoreboard players operation at
 execute if score character# slot6 matches 29 if score durationSlot6 shield < ripperLeaderDuration abilityStats run scoreboard players operation durationSlot6 shield = ripperLeaderDuration abilityStats
 execute if score character# slot6 matches 29 run scoreboard players operation shield slot6 += ripperShield abilityStats
 
+execute if score character# slot2 matches 9 run execute if score ward slot5 matches 0 run scoreboard players operation marks slot5 = robyn abilityStats
+execute if score character# slot2 matches 9 run execute if score ward slot5 matches 1 run function ch:wardslot5
+execute if score character# slot2 matches 9 run execute if score ward slot6 matches 0 run scoreboard players operation marks slot6 = robyn abilityStats
+execute if score character# slot2 matches 9 run execute if score ward slot6 matches 1 run function ch:wardslot6
+execute if score character# slot2 matches 9 run execute if score ward slot7 matches 0 run scoreboard players operation marks slot7 = robyn abilityStats
+execute if score character# slot2 matches 9 run execute if score ward slot7 matches 1 run function ch:wardslot7
+execute if score character# slot2 matches 9 run execute if score ward slot8 matches 0 run scoreboard players operation marks slot8 = robyn abilityStats
+execute if score character# slot2 matches 9 run execute if score ward slot8 matches 1 run function ch:wardslot8
+
+execute if score character# slot6 matches 9 run execute if score ward slot5 matches 0 run scoreboard players operation marks slot1 = robyn abilityStats
+execute if score character# slot6 matches 9 run execute if score ward slot5 matches 1 run function ch:wardslot1
+execute if score character# slot6 matches 9 run execute if score ward slot6 matches 0 run scoreboard players operation marks slot2 = robyn abilityStats
+execute if score character# slot6 matches 9 run execute if score ward slot6 matches 1 run function ch:wardslot2
+execute if score character# slot6 matches 9 run execute if score ward slot7 matches 0 run scoreboard players operation marks slot3 = robyn abilityStats
+execute if score character# slot6 matches 9 run execute if score ward slot7 matches 1 run function ch:wardslot3
+execute if score character# slot6 matches 9 run execute if score ward slot8 matches 0 run scoreboard players operation marks slot4 = robyn abilityStats
+execute if score character# slot6 matches 9 run execute if score ward slot8 matches 1 run function ch:wardslot4
+
 
 scoreboard players set attackIsOngoingGame1 booleans 0

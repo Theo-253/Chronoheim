@@ -174,6 +174,16 @@ execute if score slot6isatk booleans matches 1 run scoreboard players operation 
 execute if score slot7isatk booleans matches 1 run scoreboard players operation slot7 hp -= slot7Disease disease
 execute if score slot8isatk booleans matches 1 run scoreboard players operation slot8 hp -= slot8Disease disease
 
+#gatsby consume (visual)
+#execute if score slot1isatk booleans matches 1 run execute if score slot1EatenDuration abilities matches 1.. run scoreboard players remove slot1EatenDuration abilities 1
+#execute if score slot2isatk booleans matches 1 run execute if score slot2EatenDuration abilities matches 1.. run scoreboard players remove slot2EatenDuration abilities 1
+#execute if score slot3isatk booleans matches 1 run execute if score slot3EatenDuration abilities matches 1.. run scoreboard players remove slot3EatenDuration abilities 1
+#execute if score slot4isatk booleans matches 1 run execute if score slot4EatenDuration abilities matches 1.. run scoreboard players remove slot4EatenDuration abilities 1
+#execute if score slot5isatk booleans matches 1 run execute if score slot5EatenDuration abilities matches 1.. run scoreboard players remove slot5EatenDuration abilities 1
+#execute if score slot6isatk booleans matches 1 run execute if score slot6EatenDuration abilities matches 1.. run scoreboard players remove slot6EatenDuration abilities 1
+#execute if score slot7isatk booleans matches 1 run execute if score slot7EatenDuration abilities matches 1.. run scoreboard players remove slot7EatenDuration abilities 1
+#execute if score slot8isatk booleans matches 1 run execute if score slot8EatenDuration abilities matches 1.. run scoreboard players remove slot8EatenDuration abilities 1
+
 #Mark Duration
 #execute if score slot1isatk booleans matches 1 run execute if score durationSlot1 mark matches 1.. run scoreboard players remove durationSlot1 mark 1
 #execute if score slot2isatk booleans matches 1 run execute if score durationSlot2 mark matches 1.. run scoreboard players remove durationSlot2 mark 1

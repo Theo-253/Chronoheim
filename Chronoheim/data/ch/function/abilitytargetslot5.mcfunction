@@ -146,5 +146,10 @@ execute if score abilitynumber abilities matches -1 run scoreboard players opera
 
 #This goes at the bottom
 execute if score shield slot5 matches ..0 run scoreboard players set shield slot5 0
+execute if score shield slot8 matches ..0 run scoreboard players set shield slot8 0
+execute if score shield slot7 matches ..0 run scoreboard players set shield slot7 0
+execute if score shield slot8 matches ..0 run scoreboard players set shield slot8 0
+clear @p[tag=p2]
+effect clear @p[tag=p2]
 function ch:turnend
 #Make sure to add burn to your abilities

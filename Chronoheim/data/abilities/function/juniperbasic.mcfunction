@@ -1,0 +1,10 @@
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:strength":{amplifier:{min:26,max:26}}}}} run function ch:abilitygivetargetsp2reverse
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:strength":{amplifier:{min:26,max:26}}}}} run function ch:abilitygivetargetsp1reverse
+
+execute if score character# slot5 matches 27 run clear @p[tag=p2] minecraft:target[minecraft:custom_name="Target Slot 5",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:strength,duration:1,amplifier:5,show_particles:0b}]}]}] 5
+execute if score character# slot7 matches 27 run clear @p[tag=p2] minecraft:target[minecraft:custom_name="Target Slot 7",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:strength,duration:1,amplifier:7,show_particles:0b}]}]}] 5
+execute if score character# slot1 matches 27 run clear @p[tag=p1] minecraft:target[minecraft:custom_name="Target Slot 1",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:strength,duration:1,amplifier:1,show_particles:0b}]}]}] 5
+execute if score character# slot3 matches 27 run clear @p[tag=p1] minecraft:target[minecraft:custom_name="Target Slot 3",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:strength,duration:1,amplifier:3,show_particles:0b}]}]}] 5
+
+
+scoreboard players set abilitynumber abilities -2

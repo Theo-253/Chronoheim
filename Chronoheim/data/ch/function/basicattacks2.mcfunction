@@ -195,6 +195,10 @@ execute if score lifesteal slot8 matches 1.. run execute if score splash slot8 m
 execute if score lifesteal slot8 matches 1.. run execute if score splash slot8 matches 1.. run execute if score slot8isatk booleans matches 1 run scoreboard players operation lifestealsplash1 saves += marks slot3
 execute if score slot3 hp matches 1.. run execute if score ward slot3 matches 0 run execute if score slot8bleeding booleaneffects matches 0 run execute if score lifesteal slot8 matches 1.. run execute if score splash slot8 matches 1.. run execute if score slot8isatk booleans matches 1 run scoreboard players operation slot8 hp += lifestealsplash1 saves
 
+#Special Cases
+execute if score slot5isatk booleans matches 1 if score character# slot5 matches 29 run scoreboard players operation slot2bleeding booleaneffect = ripperBleed abilityStats
+execute if score slot6isatk booleans matches 1 if score character# slot6 matches 29 run scoreboard players operation slot2bleeding booleaneffect = ripperBleed abilityStats
+execute if score slot7isatk booleans matches 1 if score character# slot7 matches 29 run scoreboard players operation slot2bleeding booleaneffect = ripperBleed abilityStats
 
 #double target + turn end trigger
 #regular attack

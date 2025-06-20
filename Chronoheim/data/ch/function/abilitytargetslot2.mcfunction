@@ -1,4 +1,9 @@
 effect clear @a[tag=game1] strength
+#Kirin
+execute if score abilitynumber abilities matches 8 if score buffDurationSlot2 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot2 atkmodifiers = kirinDuration abilityStats
+execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffSlot2 atkmodifiers += kirin abilityStats
+execute if score abilitynumber abilities matches 8 if score slot2isatk booleans matches 1 if score slot2Bleeding booleaneffects matches 0.. run scoreboard players operation slot2 hp += kirinLeader abilityStats
+
 #Ace
 execute if score abilitynumber abilities matches 12 run scoreboard players operation cooldown slot2 = aceSetCooldown abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot2 SpeedDebuffs = aceLeaderDuration abilitystats
@@ -50,6 +55,11 @@ execute if score abilitynumber abilities matches 25 if score slot6isatk booleans
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= abilityDmg saves
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot1 hp += shield slot2
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 1.. run function ch:wardslot3
+
+#Ripper
+execute if score abilitynumber abilities matches 29 if score slot2 hp matches ..500 if score ward slot2 matches 0 if score invincibleSlot2 booleaneffects matches 0 run scoreboard players set slot2 hp 0
+execute if score abilitynumber abilities matches 29 if score slot2 hp matches ..500 if score invincibleSlot2 booleaneffects matches 0 if score ward slot2 matches 1.. run function ch:wardslot2
+
 #Domino
 execute if score abilitynumber abilities matches 30 run scoreboard players operation abilityDmg saves = domino abilitystats
 execute if score abilitynumber abilities matches 30 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers

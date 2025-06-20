@@ -16,9 +16,10 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run scoreboard players set burn burn 1
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run scoreboard players set abilityusep1 booleans 1
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run say used INFERNO!
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run effect clear @a[tag=p1] fire_resistance
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run function ch:turnend
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run effect clear @a[tag=p1] fire_resistance
 
+#Player2
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} if score ward slot1 matches 0 if score grangorBurnDuration abilityStats > durationSlot1 burn run scoreboard players operation durationSlot1 burn = grangorBurnDuration abilityStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} if score ward slot2 matches 0 if score grangorBurnDuration abilityStats > durationSlot2 burn run scoreboard players operation durationSlot2 burn = grangorBurnDuration abilityStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} if score ward slot3 matches 0 if score grangorBurnDuration abilityStats > durationSlot3 burn run scoreboard players operation durationSlot3 burn = grangorBurnDuration abilityStats
@@ -37,6 +38,5 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run scoreboard players set burn burn 1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run scoreboard players set abilityusep2 booleans 1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run say used INFERNO!
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run effect clear @a[tag=p2] fire_resistance
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run function ch:turnend
-
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:18,max:18}}}}} run effect clear @a[tag=p2] fire_resistance

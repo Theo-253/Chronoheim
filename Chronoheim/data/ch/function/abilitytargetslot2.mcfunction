@@ -1,9 +1,12 @@
 effect clear @a[tag=game1] strength
+#Robo
+execute if score abilitynumber abilities matches 5 if score durationSlot2 shield < roboDuration abilityStats run scoreboard players operation durationSlot2 shield = roboDuration abilityStats
+execute if score abilitynumber abilities matches 5 run scoreboard players operation shield slot2 += robo abilityStats
+execute if score abilitynumber abilities matches 5 if score slot2isatk booleans matches 1 run scoreboard players operation shield slot2 += roboLeader abilityStats
 #Kirin
 execute if score abilitynumber abilities matches 8 if score buffDurationSlot2 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot2 atkmodifiers = kirinDuration abilityStats
 execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffSlot2 atkmodifiers += kirin abilityStats
 execute if score abilitynumber abilities matches 8 if score slot2isatk booleans matches 1 if score slot2Bleeding booleaneffects matches 0.. run scoreboard players operation slot2 hp += kirinLeader abilityStats
-
 #Ace
 execute if score abilitynumber abilities matches 12 run scoreboard players operation cooldown slot2 = aceSetCooldown abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot2 SpeedDebuffs = aceLeaderDuration abilitystats

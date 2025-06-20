@@ -266,6 +266,9 @@ execute if score character# slot6 matches 2 run scoreboard players add attackBuf
 execute if score character# slot6 matches 2 run scoreboard players add attackBuffSlot7 atkmodifiers 60
 execute if score character# slot6 matches 2 run scoreboard players add attackBuffSlot8 atkmodifiers 60
 
+execute if score character# slot2 matches 14 run scoreboard players operation atk slot2 += hydraLeader heroattack
+execute if score character# slot6 matches 14 run scoreboard players operation atk slot6 += hydraLeader heroattack
+
 execute if score character# slot1 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
 execute if score character# slot1 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats
 execute if score character# slot1 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
@@ -289,5 +292,14 @@ execute if score character# slot2 matches 21 run scoreboard players operation sl
 execute if score character# slot6 matches 21 run scoreboard players operation slot5 hp -= lillithLeaderLeechDmg abilityStats
 execute if score character# slot6 matches 21 run scoreboard players operation slot6 hp -= lillithLeaderLeechDmg abilityStats
 execute if score character# slot6 matches 21 run scoreboard players operation slot7 hp -= lillithLeaderLeechDmg abilityStats
+
+execute if score character# slot2 matches 29 run scoreboard players operation atk slot2 += ripperLeader heroattack
+execute if score character# slot2 matches 29 if score durationSlot2 shield < ripperLeaderDuration abilityStats run scoreboard players operation durationSlot2 shield = ripperLeaderDuration abilityStats
+execute if score character# slot2 matches 29 run scoreboard players operation shield slot2 += ripperShield abilityStats
+
+execute if score character# slot6 matches 29 run scoreboard players operation atk slot6 += ripperLeader heroattack
+execute if score character# slot6 matches 29 if score durationSlot6 shield < ripperLeaderDuration abilityStats run scoreboard players operation durationSlot6 shield = ripperLeaderDuration abilityStats
+execute if score character# slot6 matches 29 run scoreboard players operation shield slot6 += ripperShield abilityStats
+
 
 scoreboard players set attackIsOngoingGame1 booleans 0

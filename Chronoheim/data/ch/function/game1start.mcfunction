@@ -266,4 +266,28 @@ execute if score character# slot6 matches 2 run scoreboard players add attackBuf
 execute if score character# slot6 matches 2 run scoreboard players add attackBuffSlot7 atkmodifiers 60
 execute if score character# slot6 matches 2 run scoreboard players add attackBuffSlot8 atkmodifiers 60
 
+execute if score character# slot1 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
+execute if score character# slot1 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats
+execute if score character# slot1 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
+
+execute if score character# slot3 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
+execute if score character# slot4 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats
+execute if score character# slot5 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
+
+execute if score character# slot5 matches 21 run scoreboard players operation slot5 hp -= lillithLeechDmg abilityStats
+execute if score character# slot5 matches 21 run scoreboard players operation slot6 hp -= lillithLeechDmg abilityStats
+execute if score character# slot5 matches 21 run scoreboard players operation slot7 hp -= lillithLeechDmg abilityStats
+
+execute if score character# slot7 matches 21 run scoreboard players operation slot5 hp -= lillithLeechDmg abilityStats
+execute if score character# slot7 matches 21 run scoreboard players operation slot6 hp -= lillithLeechDmg abilityStats
+execute if score character# slot7 matches 21 run scoreboard players operation slot7 hp -= lillithLeechDmg abilityStats
+
+execute if score character# slot2 matches 21 run scoreboard players operation slot1 hp -= lillithLeaderLeechDmg abilityStats
+execute if score character# slot2 matches 21 run scoreboard players operation slot2 hp -= lillithLeaderLeechDmg abilityStats
+execute if score character# slot2 matches 21 run scoreboard players operation slot3 hp -= lillithLeaderLeechDmg abilityStats
+
+execute if score character# slot6 matches 21 run scoreboard players operation slot5 hp -= lillithLeaderLeechDmg abilityStats
+execute if score character# slot6 matches 21 run scoreboard players operation slot6 hp -= lillithLeaderLeechDmg abilityStats
+execute if score character# slot6 matches 21 run scoreboard players operation slot7 hp -= lillithLeaderLeechDmg abilityStats
+
 scoreboard players set attackIsOngoingGame1 booleans 0

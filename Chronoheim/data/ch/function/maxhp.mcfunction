@@ -777,3 +777,143 @@ execute if score character# slot21 matches 30 run execute if score slot21 hp > d
 execute if score character# slot22 matches 30 run execute if score slot22 hp > domino herohealth run scoreboard players operation slot22 hp = domino herohealth
 execute if score character# slot23 matches 30 run execute if score slot23 hp > domino herohealth run scoreboard players operation slot23 hp = domino herohealth
 execute if score character# slot24 matches 30 run execute if score slot24 hp > domino herohealth run scoreboard players operation slot24 hp = domino herohealth
+
+#skeleton maxhp
+execute if score character# slot1 matches -1 run execute if score slot1 hp > skeleton herohealth run scoreboard players operation slot1 hp = skeleton herohealth
+execute if score character# slot2 matches -1 run execute if score slot2 hp > skeleton herohealth run scoreboard players operation slot2 hp = skeleton herohealth
+execute if score character# slot3 matches -1 run execute if score slot3 hp > skeleton herohealth run scoreboard players operation slot3 hp = skeleton herohealth
+execute if score character# slot4 matches -1 run execute if score slot4 hp > skeleton herohealth run scoreboard players operation slot4 hp = skeleton herohealth
+execute if score character# slot5 matches -1 run execute if score slot5 hp > skeleton herohealth run scoreboard players operation slot5 hp = skeleton herohealth
+execute if score character# slot6 matches -1 run execute if score slot6 hp > skeleton herohealth run scoreboard players operation slot6 hp = skeleton herohealth
+execute if score character# slot7 matches -1 run execute if score slot7 hp > skeleton herohealth run scoreboard players operation slot7 hp = skeleton herohealth
+execute if score character# slot8 matches -1 run execute if score slot8 hp > skeleton herohealth run scoreboard players operation slot8 hp = skeleton herohealth
+execute if score character# slot9 matches -1 run execute if score slot9 hp > skeleton herohealth run scoreboard players operation slot9 hp = skeleton herohealth
+execute if score character# slot10 matches -1 run execute if score slot10 hp > skeleton herohealth run scoreboard players operation slot10 hp = skeleton herohealth
+execute if score character# slot11 matches -1 run execute if score slot11 hp > skeleton herohealth run scoreboard players operation slot11 hp = skeleton herohealth
+execute if score character# slot12 matches -1 run execute if score slot12 hp > skeleton herohealth run scoreboard players operation slot12 hp = skeleton herohealth
+execute if score character# slot13 matches -1 run execute if score slot13 hp > skeleton herohealth run scoreboard players operation slot13 hp = skeleton herohealth
+execute if score character# slot14 matches -1 run execute if score slot14 hp > skeleton herohealth run scoreboard players operation slot14 hp = skeleton herohealth
+execute if score character# slot15 matches -1 run execute if score slot15 hp > skeleton herohealth run scoreboard players operation slot15 hp = skeleton herohealth
+execute if score character# slot16 matches -1 run execute if score slot16 hp > skeleton herohealth run scoreboard players operation slot16 hp = skeleton herohealth
+execute if score character# slot17 matches -1 run execute if score slot17 hp > skeleton herohealth run scoreboard players operation slot17 hp = skeleton herohealth
+execute if score character# slot18 matches -1 run execute if score slot18 hp > skeleton herohealth run scoreboard players operation slot18 hp = skeleton herohealth
+execute if score character# slot19 matches -1 run execute if score slot19 hp > skeleton herohealth run scoreboard players operation slot19 hp = skeleton herohealth
+execute if score character# slot20 matches -1 run execute if score slot20 hp > skeleton herohealth run scoreboard players operation slot20 hp = skeleton herohealth
+execute if score character# slot21 matches -1 run execute if score slot21 hp > skeleton herohealth run scoreboard players operation slot21 hp = skeleton herohealth
+execute if score character# slot22 matches -1 run execute if score slot22 hp > skeleton herohealth run scoreboard players operation slot22 hp = skeleton herohealth
+execute if score character# slot23 matches -1 run execute if score slot23 hp > skeleton herohealth run scoreboard players operation slot23 hp = skeleton herohealth
+execute if score character# slot24 matches -1 run execute if score slot24 hp > skeleton herohealth run scoreboard players operation slot24 hp = skeleton herohealth
+
+#demon maxhp
+execute if score character# slot1 matches -2 run execute if score slot1 hp > demon herohealth run scoreboard players operation slot1 hp = demon herohealth
+execute if score character# slot2 matches -2 run execute if score slot2 hp > demon herohealth run scoreboard players operation slot2 hp = demon herohealth
+execute if score character# slot3 matches -2 run execute if score slot3 hp > demon herohealth run scoreboard players operation slot3 hp = demon herohealth
+execute if score character# slot4 matches -2 run execute if score slot4 hp > demon herohealth run scoreboard players operation slot4 hp = demon herohealth
+execute if score character# slot5 matches -2 run execute if score slot5 hp > demon herohealth run scoreboard players operation slot5 hp = demon herohealth
+execute if score character# slot6 matches -2 run execute if score slot6 hp > demon herohealth run scoreboard players operation slot6 hp = demon herohealth
+execute if score character# slot7 matches -2 run execute if score slot7 hp > demon herohealth run scoreboard players operation slot7 hp = demon herohealth
+execute if score character# slot8 matches -2 run execute if score slot8 hp > demon herohealth run scoreboard players operation slot8 hp = demon herohealth
+execute if score character# slot9 matches -2 run execute if score slot9 hp > demon herohealth run scoreboard players operation slot9 hp = demon herohealth
+execute if score character# slot10 matches -2 run execute if score slot10 hp > demon herohealth run scoreboard players operation slot10 hp = demon herohealth
+execute if score character# slot11 matches -2 run execute if score slot11 hp > demon herohealth run scoreboard players operation slot11 hp = demon herohealth
+execute if score character# slot12 matches -2 run execute if score slot12 hp > demon herohealth run scoreboard players operation slot12 hp = demon herohealth
+execute if score character# slot13 matches -2 run execute if score slot13 hp > demon herohealth run scoreboard players operation slot13 hp = demon herohealth
+execute if score character# slot14 matches -2 run execute if score slot14 hp > demon herohealth run scoreboard players operation slot14 hp = demon herohealth
+execute if score character# slot15 matches -2 run execute if score slot15 hp > demon herohealth run scoreboard players operation slot15 hp = demon herohealth
+execute if score character# slot16 matches -2 run execute if score slot16 hp > demon herohealth run scoreboard players operation slot16 hp = demon herohealth
+execute if score character# slot17 matches -2 run execute if score slot17 hp > demon herohealth run scoreboard players operation slot17 hp = demon herohealth
+execute if score character# slot18 matches -2 run execute if score slot18 hp > demon herohealth run scoreboard players operation slot18 hp = demon herohealth
+execute if score character# slot19 matches -2 run execute if score slot19 hp > demon herohealth run scoreboard players operation slot19 hp = demon herohealth
+execute if score character# slot20 matches -2 run execute if score slot20 hp > demon herohealth run scoreboard players operation slot20 hp = demon herohealth
+execute if score character# slot21 matches -2 run execute if score slot21 hp > demon herohealth run scoreboard players operation slot21 hp = demon herohealth
+execute if score character# slot22 matches -2 run execute if score slot22 hp > demon herohealth run scoreboard players operation slot22 hp = demon herohealth
+execute if score character# slot23 matches -2 run execute if score slot23 hp > demon herohealth run scoreboard players operation slot23 hp = demon herohealth
+execute if score character# slot24 matches -2 run execute if score slot24 hp > demon herohealth run scoreboard players operation slot24 hp = demon herohealth
+
+#healingtotem maxhp
+execute if score character# slot1 matches -3 run execute if score slot1 hp > healingtotem herohealth run scoreboard players operation slot1 hp = healingtotem herohealth
+execute if score character# slot2 matches -3 run execute if score slot2 hp > healingtotem herohealth run scoreboard players operation slot2 hp = healingtotem herohealth
+execute if score character# slot3 matches -3 run execute if score slot3 hp > healingtotem herohealth run scoreboard players operation slot3 hp = healingtotem herohealth
+execute if score character# slot4 matches -3 run execute if score slot4 hp > healingtotem herohealth run scoreboard players operation slot4 hp = healingtotem herohealth
+execute if score character# slot5 matches -3 run execute if score slot5 hp > healingtotem herohealth run scoreboard players operation slot5 hp = healingtotem herohealth
+execute if score character# slot6 matches -3 run execute if score slot6 hp > healingtotem herohealth run scoreboard players operation slot6 hp = healingtotem herohealth
+execute if score character# slot7 matches -3 run execute if score slot7 hp > healingtotem herohealth run scoreboard players operation slot7 hp = healingtotem herohealth
+execute if score character# slot8 matches -3 run execute if score slot8 hp > healingtotem herohealth run scoreboard players operation slot8 hp = healingtotem herohealth
+execute if score character# slot9 matches -3 run execute if score slot9 hp > healingtotem herohealth run scoreboard players operation slot9 hp = healingtotem herohealth
+execute if score character# slot10 matches -3 run execute if score slot10 hp > healingtotem herohealth run scoreboard players operation slot10 hp = healingtotem herohealth
+execute if score character# slot11 matches -3 run execute if score slot11 hp > healingtotem herohealth run scoreboard players operation slot11 hp = healingtotem herohealth
+execute if score character# slot12 matches -3 run execute if score slot12 hp > healingtotem herohealth run scoreboard players operation slot12 hp = healingtotem herohealth
+execute if score character# slot13 matches -3 run execute if score slot13 hp > healingtotem herohealth run scoreboard players operation slot13 hp = healingtotem herohealth
+execute if score character# slot14 matches -3 run execute if score slot14 hp > healingtotem herohealth run scoreboard players operation slot14 hp = healingtotem herohealth
+execute if score character# slot15 matches -3 run execute if score slot15 hp > healingtotem herohealth run scoreboard players operation slot15 hp = healingtotem herohealth
+execute if score character# slot16 matches -3 run execute if score slot16 hp > healingtotem herohealth run scoreboard players operation slot16 hp = healingtotem herohealth
+execute if score character# slot17 matches -3 run execute if score slot17 hp > healingtotem herohealth run scoreboard players operation slot17 hp = healingtotem herohealth
+execute if score character# slot18 matches -3 run execute if score slot18 hp > healingtotem herohealth run scoreboard players operation slot18 hp = healingtotem herohealth
+execute if score character# slot19 matches -3 run execute if score slot19 hp > healingtotem herohealth run scoreboard players operation slot19 hp = healingtotem herohealth
+execute if score character# slot20 matches -3 run execute if score slot20 hp > healingtotem herohealth run scoreboard players operation slot20 hp = healingtotem herohealth
+execute if score character# slot21 matches -3 run execute if score slot21 hp > healingtotem herohealth run scoreboard players operation slot21 hp = healingtotem herohealth
+execute if score character# slot22 matches -3 run execute if score slot22 hp > healingtotem herohealth run scoreboard players operation slot22 hp = healingtotem herohealth
+execute if score character# slot23 matches -3 run execute if score slot23 hp > healingtotem herohealth run scoreboard players operation slot23 hp = healingtotem herohealth
+execute if score character# slot24 matches -3 run execute if score slot24 hp > healingtotem herohealth run scoreboard players operation slot24 hp = healingtotem herohealth
+
+#golemite maxhp
+execute if score character# slot1 matches -4 run execute if score slot1 hp > golemite herohealth run scoreboard players operation slot1 hp = golemite herohealth
+execute if score character# slot2 matches -4 run execute if score slot2 hp > golemite herohealth run scoreboard players operation slot2 hp = golemite herohealth
+execute if score character# slot3 matches -4 run execute if score slot3 hp > golemite herohealth run scoreboard players operation slot3 hp = golemite herohealth
+execute if score character# slot4 matches -4 run execute if score slot4 hp > golemite herohealth run scoreboard players operation slot4 hp = golemite herohealth
+execute if score character# slot5 matches -4 run execute if score slot5 hp > golemite herohealth run scoreboard players operation slot5 hp = golemite herohealth
+execute if score character# slot6 matches -4 run execute if score slot6 hp > golemite herohealth run scoreboard players operation slot6 hp = golemite herohealth
+execute if score character# slot7 matches -4 run execute if score slot7 hp > golemite herohealth run scoreboard players operation slot7 hp = golemite herohealth
+execute if score character# slot8 matches -4 run execute if score slot8 hp > golemite herohealth run scoreboard players operation slot8 hp = golemite herohealth
+execute if score character# slot9 matches -4 run execute if score slot9 hp > golemite herohealth run scoreboard players operation slot9 hp = golemite herohealth
+execute if score character# slot10 matches -4 run execute if score slot10 hp > golemite herohealth run scoreboard players operation slot10 hp = golemite herohealth
+execute if score character# slot11 matches -4 run execute if score slot11 hp > golemite herohealth run scoreboard players operation slot11 hp = golemite herohealth
+execute if score character# slot12 matches -4 run execute if score slot12 hp > golemite herohealth run scoreboard players operation slot12 hp = golemite herohealth
+execute if score character# slot13 matches -4 run execute if score slot13 hp > golemite herohealth run scoreboard players operation slot13 hp = golemite herohealth
+execute if score character# slot14 matches -4 run execute if score slot14 hp > golemite herohealth run scoreboard players operation slot14 hp = golemite herohealth
+execute if score character# slot15 matches -4 run execute if score slot15 hp > golemite herohealth run scoreboard players operation slot15 hp = golemite herohealth
+execute if score character# slot16 matches -4 run execute if score slot16 hp > golemite herohealth run scoreboard players operation slot16 hp = golemite herohealth
+execute if score character# slot17 matches -4 run execute if score slot17 hp > golemite herohealth run scoreboard players operation slot17 hp = golemite herohealth
+execute if score character# slot18 matches -4 run execute if score slot18 hp > golemite herohealth run scoreboard players operation slot18 hp = golemite herohealth
+execute if score character# slot19 matches -4 run execute if score slot19 hp > golemite herohealth run scoreboard players operation slot19 hp = golemite herohealth
+execute if score character# slot20 matches -4 run execute if score slot20 hp > golemite herohealth run scoreboard players operation slot20 hp = golemite herohealth
+execute if score character# slot21 matches -4 run execute if score slot21 hp > golemite herohealth run scoreboard players operation slot21 hp = golemite herohealth
+execute if score character# slot22 matches -4 run execute if score slot22 hp > golemite herohealth run scoreboard players operation slot22 hp = golemite herohealth
+execute if score character# slot23 matches -4 run execute if score slot23 hp > golemite herohealth run scoreboard players operation slot23 hp = golemite herohealth
+execute if score character# slot24 matches -4 run execute if score slot24 hp > golemite herohealth run scoreboard players operation slot24 hp = golemite herohealth
+
+#skeletonplus maxhp
+execute if score character# slot1 matches -5 run execute if score slot1 hp > skeletonplus herohealth run scoreboard players operation slot1 hp = skeletonplus herohealth
+execute if score character# slot2 matches -5 run execute if score slot2 hp > skeletonplus herohealth run scoreboard players operation slot2 hp = skeletonplus herohealth
+execute if score character# slot3 matches -5 run execute if score slot3 hp > skeletonplus herohealth run scoreboard players operation slot3 hp = skeletonplus herohealth
+execute if score character# slot4 matches -5 run execute if score slot4 hp > skeletonplus herohealth run scoreboard players operation slot4 hp = skeletonplus herohealth
+execute if score character# slot5 matches -5 run execute if score slot5 hp > skeletonplus herohealth run scoreboard players operation slot5 hp = skeletonplus herohealth
+execute if score character# slot6 matches -5 run execute if score slot6 hp > skeletonplus herohealth run scoreboard players operation slot6 hp = skeletonplus herohealth
+execute if score character# slot7 matches -5 run execute if score slot7 hp > skeletonplus herohealth run scoreboard players operation slot7 hp = skeletonplus herohealth
+execute if score character# slot8 matches -5 run execute if score slot8 hp > skeletonplus herohealth run scoreboard players operation slot8 hp = skeletonplus herohealth
+execute if score character# slot9 matches -5 run execute if score slot9 hp > skeletonplus herohealth run scoreboard players operation slot9 hp = skeletonplus herohealth
+execute if score character# slot10 matches -5 run execute if score slot10 hp > skeletonplus herohealth run scoreboard players operation slot10 hp = skeletonplus herohealth
+execute if score character# slot11 matches -5 run execute if score slot11 hp > skeletonplus herohealth run scoreboard players operation slot11 hp = skeletonplus herohealth
+execute if score character# slot12 matches -5 run execute if score slot12 hp > skeletonplus herohealth run scoreboard players operation slot12 hp = skeletonplus herohealth
+execute if score character# slot13 matches -5 run execute if score slot13 hp > skeletonplus herohealth run scoreboard players operation slot13 hp = skeletonplus herohealth
+execute if score character# slot14 matches -5 run execute if score slot14 hp > skeletonplus herohealth run scoreboard players operation slot14 hp = skeletonplus herohealth
+execute if score character# slot15 matches -5 run execute if score slot15 hp > skeletonplus herohealth run scoreboard players operation slot15 hp = skeletonplus herohealth
+execute if score character# slot16 matches -5 run execute if score slot16 hp > skeletonplus herohealth run scoreboard players operation slot16 hp = skeletonplus herohealth
+execute if score character# slot17 matches -5 run execute if score slot17 hp > skeletonplus herohealth run scoreboard players operation slot17 hp = skeletonplus herohealth
+execute if score character# slot18 matches -5 run execute if score slot18 hp > skeletonplus herohealth run scoreboard players operation slot18 hp = skeletonplus herohealth
+execute if score character# slot19 matches -5 run execute if score slot19 hp > skeletonplus herohealth run scoreboard players operation slot19 hp = skeletonplus herohealth
+execute if score character# slot20 matches -5 run execute if score slot20 hp > skeletonplus herohealth run scoreboard players operation slot20 hp = skeletonplus herohealth
+execute if score character# slot21 matches -5 run execute if score slot21 hp > skeletonplus herohealth run scoreboard players operation slot21 hp = skeletonplus herohealth
+execute if score character# slot22 matches -5 run execute if score slot22 hp > skeletonplus herohealth run scoreboard players operation slot22 hp = skeletonplus herohealth
+execute if score character# slot23 matches -5 run execute if score slot23 hp > skeletonplus herohealth run scoreboard players operation slot23 hp = skeletonplus herohealth
+execute if score character# slot24 matches -5 run execute if score slot24 hp > skeletonplus herohealth run scoreboard players operation slot24 hp = skeletonplus herohealth
+
+
+
+
+
+
+
+
+
+

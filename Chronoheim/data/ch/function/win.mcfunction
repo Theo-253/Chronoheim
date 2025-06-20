@@ -101,6 +101,9 @@ scoreboard players set debuffDurationSlot5 atkmodifiers 0
 scoreboard players set debuffDurationSlot6 atkmodifiers 0
 scoreboard players set debuffDurationSlot7 atkmodifiers 0
 scoreboard players set debuffDurationSlot8 atkmodifiers 0
+scoreboard players set Spell_Points_P1 Spell_Points -1
+scoreboard players set Spell_Points_P2 Spell_Points -1
+
 
 
 

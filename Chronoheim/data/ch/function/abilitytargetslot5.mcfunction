@@ -108,20 +108,13 @@ execute if score abilitynumber abilities matches 25 run execute if score ward sl
 execute if score abilitynumber abilities matches 25 run execute if score ward slot5 matches 1.. run function ch:wardslot5
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves -= slot5 marks
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= atkmultiplier slot5
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 marks
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot5
+execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 marks
+execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot6
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerleader abilities
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= abilityDmg saves
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot5 matches 0 if score shield slot5 matches ..0 run scoreboard players operation slot5 hp += shield slot5
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot5 matches 1.. run function ch:wardslot5
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves -= slot5 marks
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= atkmultiplier slot5
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 marks
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot5
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerleader abilities
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= abilityDmg saves
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot5 matches 0 if score shield slot5 matches ..0 run scoreboard players operation slot5 hp += shield slot5
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot5 matches 1.. run function ch:wardslot5
+execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= abilityDmg saves
+execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
+execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot6 matches 1.. run function ch:wardslot6
+
 
 #Ripper
 execute if score abilitynumber abilities matches 29 if score slot5 hp matches ..500 if score ward slot5 matches 0 if score invincibleSlot5 booleaneffects matches 0 run scoreboard players set slot5 hp 0

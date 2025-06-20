@@ -105,20 +105,20 @@ execute if score abilitynumber abilities matches 25 run execute if score ward sl
 execute if score abilitynumber abilities matches 25 run execute if score ward slot3 matches 1.. run function ch:wardslot3
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves -= slot3 marks
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= atkmultiplier slot3
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot3 marks
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot3
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 marks
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot2
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerleader abilities
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= abilityDmg saves
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 1.. run function ch:wardslot3
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves -= slot3 marks
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= atkmultiplier slot3
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot3 marks
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot3
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= abilityDmg saves
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot3 hp += shield slot3
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot2 matches 1.. run function ch:wardslot2
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves -= slot2 marks
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= atkmultiplier slot2
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot4 marks
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot4
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerleader abilities
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= abilityDmg saves
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 1.. run function ch:wardslot3
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= abilityDmg saves
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot4 matches 0 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 
 #Ripper
 execute if score abilitynumber abilities matches 29 if score slot3 hp matches ..500 if score ward slot3 matches 0 if score invincibleSlot3 booleaneffects matches 0 run scoreboard players set slot3 hp 0

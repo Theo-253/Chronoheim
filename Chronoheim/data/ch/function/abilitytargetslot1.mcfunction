@@ -5,7 +5,7 @@ execute if score abilitynumber abilities matches 3 run scoreboard players operat
 execute if score abilitynumber abilities matches 3 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
 execute if score abilitynumber abilities matches 3 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
 execute if score abilitynumber abilities matches 3 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
-execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves += slot1 marks
+execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves += marks slot1
 execute if score abilitynumber abilities matches 3 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= deuceMultLeader abilityStats
 execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves *= deuceMult abilityStats
 execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
@@ -22,7 +22,7 @@ execute if score abilitynumber abilities matches 24 run scoreboard players opera
 execute if score abilitynumber abilities matches 24 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
 execute if score abilitynumber abilities matches 24 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
 execute if score abilitynumber abilities matches 24 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
-execute if score abilitynumber abilities matches 24 run scoreboard players operation abilityDmg saves += slot1 marks
+execute if score abilitynumber abilities matches 24 run scoreboard players operation abilityDmg saves += marks slot1
 execute if score abilitynumber abilities matches 24 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
 execute if score abilitynumber abilities matches 24 run execute if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= abilityDmg saves
 execute if score abilitynumber abilities matches 24 run execute if score ward slot1 matches 0 run scoreboard players operation slot1 stun = juniperStun abilityStats
@@ -38,7 +38,7 @@ execute if score abilitynumber abilities matches 7 run scoreboard players operat
 execute if score abilitynumber abilities matches 7 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
 execute if score abilitynumber abilities matches 7 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
 execute if score abilitynumber abilities matches 7 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
-execute if score abilitynumber abilities matches 7 run scoreboard players operation abilityDmg saves += slot1 marks
+execute if score abilitynumber abilities matches 7 run scoreboard players operation abilityDmg saves += marks slot1
 execute if score abilitynumber abilities matches 7 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
 execute if score abilitynumber abilities matches 7 run execute if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= abilityDmg saves
 execute if score abilitynumber abilities matches 7 run execute if score ward slot1 matches 0 if score kongSpDebuffDuration abilityStats > durationslot1 speedDebuffs run scoreboard players operation durationSlot1 speedDebuffs = kongSpDebuffDuration abilityStats
@@ -51,6 +51,10 @@ execute if score abilitynumber abilities matches 7 run execute if score ward slo
 execute if score abilitynumber abilities matches 7 run execute if score ward slot1 matches 0 run scoreboard players operation speed slot1 -= kongSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot1 matches 0 if score shield slot1 matches ..0 run scoreboard players operation slot1 hp += shield slot1
 execute if score abilitynumber abilities matches 7 run execute if score ward slot1 matches 1.. run function ch:wardslot1
+
+#Robyn Ability
+execute if score abilitynumber abilities matches 9 if score ward slot1 matches 0 run scoreboard players operation marks slot1 = robyn abilityStats
+execute if score abilitynumber abilities matches 9 if score ward slot1 matches 1 run function ch:wardslot1
 
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0

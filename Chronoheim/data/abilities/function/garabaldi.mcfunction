@@ -1,5 +1,5 @@
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score side1isatk booleans matches 1 run scoreboard players set abilityusep1 booleans 1
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run execute if score side2isatk booleans matches 1 run scoreboard players set abilityusep2 booleans 2
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run scoreboard players set abilityusep1 booleans 1
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run scoreboard players set abilityusep2 booleans 2
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run function ch:abilitygivetargetsp2reverse
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:24,max:24}}}}} run function ch:abilitygivetargetsp1reverse
 

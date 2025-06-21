@@ -1,14 +1,18 @@
-effect clear @a[tag=game1] strength
-execute if score spellnumber spells matches 1 run say yo 
-
-
-
+clear @p[tag=game1]
+#fireball
+execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves = fireball spellStats
+execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
+execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves += slot1 marks
+execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves /= atkmultiplier slot1
+execute if score spellnumber spells matches 3 run execute if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= spellDmg saves
+execute if score spellnumber spells matches 3 run execute if score ward slot1 matches 0 if score durationSlot1 burn < fireballDuration spellStats run scoreboard players operation durationSlot1 burn = fireballDuration spellstats
+execute if score spellnumber spells matches 3 run execute if score ward slot1 matches 0 run scoreboard players operation slot1burn burn += fireballBurn spellStats
+execute if score spellnumber spells matches 3 run execute if score ward slot1 matches 1.. run function ch:wardslot1
+execute if score spellnumber spells matches 3 run function ch:spellphasep1
 
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0
 execute if score shield slot2 matches ..0 run scoreboard players set shield slot2 0
 execute if score shield slot3 matches ..0 run scoreboard players set shield slot3 0
 execute if score shield slot4 matches ..0 run scoreboard players set shield slot4 0
-clear @p[tag=p2]
-effect clear @p[tag=p2]
-function ch:turnend
+

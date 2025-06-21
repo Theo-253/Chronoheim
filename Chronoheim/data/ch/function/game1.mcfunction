@@ -28,7 +28,7 @@ execute if score ward slot8 matches 1.. run execute as @p[tag=p1] if predicate {
 effect clear @a minecraft:conduit_power
 
 function ch:abilitytargetinggeneralgame1
-
+function ch:atkmodifiers
 function ch:speedcheckgame1
 function ch:abilitychecks
 

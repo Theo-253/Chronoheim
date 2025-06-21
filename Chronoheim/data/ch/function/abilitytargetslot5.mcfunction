@@ -67,11 +67,11 @@ execute if score abilitynumber abilities matches 8 run scoreboard players operat
 execute if score abilitynumber abilities matches 8 if score slot2isatk booleans matches 1 if score slot5Bleeding booleaneffects matches 0.. run scoreboard players operation slot5 hp += kirinLeader abilityStats
 #Ace
 execute if score abilitynumber abilities matches 12 run scoreboard players operation cooldown slot5 = aceSetCooldown abilityStats
-execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation durationSlot5 SpeedDebuffs = aceLeaderDuration abilitystats
+execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation durationSlot5 SpeedDebuffs = aceLeaderDuration abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation speedDebuffSlot5 SpeedDebuffs = aceLeader abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation speed slot5 -= aceLeader abilityStats
 #Gabriel
-execute if score abilitynumber abilities matches 22 run scoreboard players operation abilityDmg saves = gabriel abilitystats
+execute if score abilitynumber abilities matches 22 run scoreboard players operation abilityDmg saves = gabriel abilityStats
 execute if score abilitynumber abilities matches 22 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
 execute if score abilitynumber abilities matches 22 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 atkmodifiers
 execute if score abilitynumber abilities matches 22 if score slot3isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot3 atkmodifiers
@@ -91,7 +91,7 @@ execute if score abilitynumber abilities matches 23 if score ward slot5 matches 
 execute if score abilitynumber abilities matches 23 if score ward slot5 matches 0 run scoreboard players operation savehp2 saves = slot5 hp 
 #execute if score abilitynumber abilities matches 23 if score ward slot5 matches 0 run scoreboard players operation slot5EatenDuration abilities = gatsbyDuration abilityStats
 #Boomer
-execute if score abilitynumber abilities matches 25 run scoreboard players operation abilityDmg saves = boomer abilitystats
+execute if score abilitynumber abilities matches 25 run scoreboard players operation abilityDmg saves = boomer abilityStats
 execute if score abilitynumber abilities matches 25 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 atkmodifiers
 execute if score abilitynumber abilities matches 25 if score slot3isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot3 atkmodifiers
@@ -115,7 +115,7 @@ execute if score abilitynumber abilities matches 29 if score slot5 hp matches ..
 execute if score abilitynumber abilities matches 29 if score slot5 hp matches ..500 if score invincibleSlot5 booleaneffects matches 0 if score ward slot5 matches 1.. run function ch:wardslot5
 
 #Domino
-execute if score abilitynumber abilities matches 30 run scoreboard players operation abilityDmg saves = domino abilitystats
+execute if score abilitynumber abilities matches 30 run scoreboard players operation abilityDmg saves = domino abilityStats
 execute if score abilitynumber abilities matches 30 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
 execute if score abilitynumber abilities matches 30 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 atkmodifiers
 execute if score abilitynumber abilities matches 30 if score slot3isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot3 atkmodifiers
@@ -127,7 +127,8 @@ execute if score abilitynumber abilities matches 30 run scoreboard players opera
 execute if score abilitynumber abilities matches 30 run execute if score ward slot5 matches 1.. run function ch:wardslot5
 #Doc Basic Attack
 execute if score abilitynumber abilities matches -1 run scoreboard players operation slot5Disease disease += doc heroattack
-
+#Healing Totem
+execute if score abilitynumber abilities matches -3 run execute if score slot5bleeding booleaneffects matches 0 run scoreboard players operation slot5 hp += healingTotemHeal spellStats
 
 
 

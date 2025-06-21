@@ -31,10 +31,10 @@ execute if score spellnumber spells matches 6 run scoreboard players operation s
 execute if score spellnumber spells matches 6 run scoreboard players operation spellDmg saves += marks slot1
 execute if score spellnumber spells matches 6 run scoreboard players operation spellDmg saves /= atkmultiplier slot1
 execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= spellDmg saves
-execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 if score frostboltSpDebuffDuration spellStats > durationslot1 speedDebuffs run scoreboard players operation durationSlot1 speedDebuffs = frostboltSpDebuffDuration spellStats
-execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 if score frostboltDmgDebuffDuration spellStats > debuffDurationSlot1 atkmodifiers run scoreboard players operation debuffDurationSlot1 atkmodifiers = frostboltDmgDebuffDuration spellStats
-execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation durationSlot1 speedDebuffs += frostboltSpDebuffDuration spellStats
-execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation debuffDurationSlot1 atkmodifiers += frostboltDmgDebuffDuration spellStats
+execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 if score frostboltDuration spellStats > durationSlot1 speedDebuffs run scoreboard players operation durationSlot1 speedDebuffs = frostboltDuration spellStats
+execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 if score frostboltDuration spellStats > debuffDurationSlot1 atkmodifiers run scoreboard players operation debuffDurationSlot1 atkmodifiers = frostboltDuration spellStats
+execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation speedDebuffSlot1 speedDebuffs += frostboltSpDebuff spellStats
+execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation attackDebuffSlot1 atkmodifiers += frostboltDmgDebuff spellStats
 execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation speed slot1 -= frostboltSpDebuff spellStats
 execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 if score shield slot1 matches ..0 run scoreboard players operation slot1 hp += shield slot1
 execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 1.. run function ch:wardslot1
@@ -79,14 +79,19 @@ execute if score spellnumber spells matches 8 if score ward slot1 matches 0 run 
 execute if score spellnumber spells matches 8 if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score spellnumber spells matches 8 run function ch:spellphasep1
 
-#Witch's Brew
-execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 if score witchesBrewSpDebuffDuration spellStats > durationslot1 speedDebuffs run scoreboard players operation durationSlot1 speedDebuffs = witchesBrewSpDebuffDuration spellStats
-execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 if score witchesBrewDmgDebuffDuration spellStats > debuffDurationSlot1 atkmodifiers run scoreboard players operation debuffDurationSlot1 atkmodifiers = witchesBrewDmgDebuffDuration spellStats
-execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 if score witchesBrewPoisonDuration spellStats > durationSlot1 speedDebuffs run scoreboard players operation debuffDurationSlot1 atkmodifiers = witchesBrewDmgDebuffDuration spellStats
-execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 run scoreboard players operation durationSlot1 speedDebuffs += frostboltSpDebuffDuration spellStats
-execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 run scoreboard players operation debuffDurationSlot1 atkmodifiers += witchesBrewDmgDebuffDuration spellStats
+#Witches Brew
+execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 if score witchesBrewDuration spellStats > durationSlot1 speedDebuffs run scoreboard players operation durationSlot1 speedDebuffs = witchesBrewDuration spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 if score witchesBrewDuration spellStats > debuffDurationSlot1 atkmodifiers run scoreboard players operation debuffDurationSlot1 atkmodifiers = witchesBrewDuration spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 if score witchesBrewDuration spellStats > durationSlot1 poison run scoreboard players operation durationSlot1 poison = witchesBrewDuration spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 if score witchesBrewDuration spellStats > durationSlot1 burn run scoreboard players operation durationSlot1 burn = witchesBrewDuration spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 run scoreboard players operation speedDebuffSlot1 speedDebuffs += witchesBrewSpDebuff spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 run scoreboard players operation attackDebuffSlot1 atkmodifiers += witchesBrewDmgDebuff spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 run scoreboard players operation slot1Poison atkmodifiers += witchesBrew spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 run scoreboard players operation slot1Burn atkmodifiers += witchesBrewBurn spellStats
 execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 0 run scoreboard players operation speed slot1 -= witchesBrewSpDebuff spellStats
 execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 1.. run function ch:wardslot1
+execute if score spellnumber spells matches 23 run function ch:spellphasep1
+
 
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0

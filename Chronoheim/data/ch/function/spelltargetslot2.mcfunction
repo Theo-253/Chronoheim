@@ -39,12 +39,23 @@ execute if score spellnumber spells matches 7 run execute if score ward slot3 ma
 execute if score spellnumber spells matches 7 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 7 run function ch:spellphasep1
 
+#plague
+execute if score spellnumber spells matches 21 run scoreboard players operation slot2Disease disease += plague spellStats
+execute if score spellnumber spells matches 21 run function ch:spellphasep1
 #fountain of youth
 execute if score spellnumber spells matches 25 run execute if score diarmedslot1 booleaneffects < fountainOfYouthDuration spellStats run scoreboard players operation diarmedslot1 booleaneffects = fountainOfYouthDuration spellStats
-execute if score spellnumber spells matches 25 if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += fountainOfYouth spellStats
-execute if score spellnumber spells matches 25 if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += spellbuffsp1 spells
+execute if score spellnumber spells matches 25 if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot2 hp += fountainOfYouth spellStats
+execute if score spellnumber spells matches 25 if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot2 hp += spellbuffsp1 spells
 execute if score spellnumber spells matches 25 run scoreboard players set attackIsOngoingGame1 booleans 0
 execute if score spellnumber spells matches 25 run scoreboard players set spellbuffsp1 spells 0
+
+#overclock
+execute if score spellnumber spells matches 27 run execute if score buffDurationSlot1 atkmodifiers < overclockDuration spellStats run scoreboard players operation buffDurationSlot1 atkmodifiers = overclockDuration spellStats
+execute if score spellnumber spells matches 27 run scoreboard players operation attackBuffSlot2 atkmodifiers += overclock spellStats
+execute if score spellnumber spells matches 27 run scoreboard players operation shield slot2 -= overclockAtk spellStats
+execute if score spellnumber spells matches 27 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp -= shield slot2
+execute if score spellnumber spells matches 27 run scoreboard players set attackIsOngoingGame1 booleans 0
+
 
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0

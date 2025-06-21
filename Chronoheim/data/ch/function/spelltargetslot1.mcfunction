@@ -92,6 +92,20 @@ execute if score spellnumber spells matches 23 run execute if score ward slot1 m
 execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score spellnumber spells matches 23 run function ch:spellphasep1
 
+#Shifting Shadows Token
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 5 if score ward slot1 matches 0 run scoreboard players set durationSlot5-1 fear 1 
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 6 if score ward slot1 matches 0 run scoreboard players set durationSlot6-1 fear 1 
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 7 if score ward slot1 matches 0 run scoreboard players set durationSlot7-1 fear 1 
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 8 if score ward slot1 matches 0 run scoreboard players set durationSlot8-1 fear 1
+execute if score spellnumber spells matches -1 if score ward slot1 matches 1.. run function ch:wardslot1
+execute if score spellnumber spells matches -1 run function ch:spellphasep1
+
+#Shifting Shadows
+execute if score spellnumber spells matches 28 run scoreboard players set shadowsPart1 spells 1
+execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp1
+execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
+
+
 
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0

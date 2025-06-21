@@ -10,6 +10,7 @@ execute if score character# slot6 matches 15 run execute if score slot6 hp match
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp matches ..0 run scoreboard players set slot5 stun 0
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp matches ..0 run scoreboard players set disarmedslot5 booleaneffects 0
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp matches ..0 run function ch:cleanseslot5
+execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp matches ..0 run scoreboard players operation slot5 hp = golemite herohealth
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp = golemite herohealth if score atk slot5 = golemite heroattack run scoreboard players set character# slot5 -4
 
@@ -20,6 +21,7 @@ execute if score character# slot6 matches 15 run execute if score slot6 hp match
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players set slot7 stun 0
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players set disarmedslot7 booleaneffects 0
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches ..0 run function ch:cleanseslot7
+execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players operation slot7 hp = golemite herohealth
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp = golemite herohealth if score atk slot7 = golemite heroattack run scoreboard players set character# slot7 -4
 
@@ -29,6 +31,7 @@ execute if score character# slot6 matches 15 run execute if score slot6 hp match
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches ..0 run scoreboard players set slot8 stun 0
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches ..0 run scoreboard players set disarmedslot8 booleaneffects 0
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches ..0 run function ch:cleanseslot8
+execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches ..0 run scoreboard players operation slot8 hp = golemite herohealth
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp = golemite herohealth if score atk slot8 = golemite heroattack run scoreboard players set character# slot8 -4
 
@@ -38,5 +41,6 @@ execute if score character# slot6 matches 15 run execute if score slot6 hp match
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 run function ch:cleanseslot6
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 run scoreboard players set slot6 stun 0
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 run scoreboard players set disarmedslot6 booleaneffects 0
+execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 run scoreboard players operation slot6 hp = golemite herohealth
 execute if score character# slot6 matches 15 run execute if score slot6 hp = golemite herohealth if score atk slot6 = golemite heroattack run scoreboard players set character# slot6 -4

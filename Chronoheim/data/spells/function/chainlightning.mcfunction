@@ -1,4 +1,4 @@
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmg saves = chainlightning spellStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmg saves = chainLightning spellStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmg saves += spellbuffsp1 spells
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmgSlot5 saves = spellDmg saves
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmgSlot6 saves = spellDmg saves
@@ -35,7 +35,7 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players set spellbuffsp1 spells 0
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players set attackIsOngoingGame1 booleans 0
 
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmg saves = chainlightning spellStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmg saves = chainLightning spellStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmg saves += spellbuffsp1 spells
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmgSlot5 saves = spellDmg saves
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:3,max:3}}}}} run scoreboard players operation spellDmgSlot6 saves = spellDmg saves

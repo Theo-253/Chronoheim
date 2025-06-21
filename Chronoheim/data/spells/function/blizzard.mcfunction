@@ -11,6 +11,7 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} if score ward slot7 matches 0 run scoreboard players operation speed slot7 -= blizzardSpDebuff spellStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} if score ward slot8 matches 0 run scoreboard players operation speed slot8 -= blizzardSpDebuff spellStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmg saves = blizzard spellStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmg saves += spellbuffsp1 spells
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmgSlot5 saves = spellDmg saves
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmgSlot6 saves = spellDmg saves
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmgSlot7 saves = spellDmg saves
@@ -44,6 +45,7 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players set attackIsOngoingGame1 booleans 0
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=p1] infested
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run clear @a[tag=p1]
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players set spellbuffsp1 spells 0
 
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} if score ward slot1 matches 0 if score blizzardSpDebuffDuration spellStats > durationSlot1 speedDebuffs run scoreboard players operation durationSlot1 speedDebuffs = blizzardSpDebuffDuration spellStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} if score ward slot2 matches 0 if score blizzardSpDebuffDuration spellStats > durationSlot2 speedDebuffs run scoreboard players operation durationSlot2 speedDebuffs = blizzardSpDebuffDuration spellStats
@@ -58,6 +60,7 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} if score ward slot3 matches 0 run scoreboard players operation speed slot3 -= blizzardSpDebuff spellStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} if score ward slot4 matches 0 run scoreboard players operation speed slot4 -= blizzardSpDebuff spellStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmg saves = blizzard spellStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmg saves += spellbuffsp2 spells
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmgslot1 saves = spellDmg saves
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmgslot2 saves = spellDmg saves
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players operation spellDmgslot3 saves = spellDmg saves
@@ -91,6 +94,8 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run function ch:spellphasep1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=p2] infested
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run clear @a[tag=p2]
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:20,max:20}}}}} run scoreboard players set spellbuffsp2 spells 0
+
 
 
 

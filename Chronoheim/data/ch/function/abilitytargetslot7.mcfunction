@@ -1,16 +1,5 @@
 effect clear @a[tag=game1] strength
-execute if score abilitynumber abilitynumber matches 1 run say yo 
-
-
-effect clear @a[tag=game1] strength
-execute if score abilitynumber abilitynumber matches 1 run say yo 
-
-effect clear @a[tag=game1] strength
-execute if score abilitynumber abilitynumber matches 1 run say yo 
-
-
-effect clear @a[tag=game1] strength
-
+clear @p[tag=game1]
 #Deuce ability
 execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves = deuce heroattack
 execute if score abilitynumber abilities matches 3 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
@@ -150,7 +139,5 @@ execute if score shield slot5 matches ..0 run scoreboard players set shield slot
 execute if score shield slot8 matches ..0 run scoreboard players set shield slot8 0
 execute if score shield slot7 matches ..0 run scoreboard players set shield slot7 0
 execute if score shield slot8 matches ..0 run scoreboard players set shield slot8 0
-clear @p[tag=p2]
-effect clear @p[tag=p2]
 function ch:turnend
 #Make sure to add burn to your abilities

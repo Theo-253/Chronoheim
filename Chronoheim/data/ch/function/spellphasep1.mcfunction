@@ -61,6 +61,5 @@ execute if score healingTotemCooldown player1spells matches 0 run execute at @p[
 give @p[tag=p1] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
 
 
-#Misc
-scoreboard players set spellPhasePlayer1 booleans 0
+
 

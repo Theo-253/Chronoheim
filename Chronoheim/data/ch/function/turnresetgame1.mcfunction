@@ -266,4 +266,4 @@ scoreboard players operation speed slot8 += speedBuffSlot8 speedBuffs
 scoreboard players set attackIsOngoingGame1 booleans 1
 scoreboard players set abilityusep1 booleans 0
 scoreboard players set abilityusep2 booleans 0
-scoreboard players set spellPhasePlayer2 booleans 1
+function ch:spellphasep2

@@ -41,7 +41,7 @@ execute if score abilitynumber abilities matches 7 if score slot3isatk booleans 
 execute if score abilitynumber abilities matches 7 run scoreboard players operation abilityDmg saves += marks slot7
 execute if score abilitynumber abilities matches 7 run scoreboard players operation abilityDmg saves /= atkmultiplier slot7
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 run scoreboard players operation shield slot7 -= abilityDmg saves
-execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 if score kongSpDebuffDuration abilityStats > durationslot7 speedDebuffs run scoreboard players operation durationSlot7 speedDebuffs = kongSpDebuffDuration abilityStats
+execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 if score kongSpDebuffDuration abilityStats > durationSlot7 speedDebuffs run scoreboard players operation durationSlot7 speedDebuffs = kongSpDebuffDuration abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 if score kongDmgDebuffDuration abilityStats > debuffDurationSlot7 speedDebuffs run scoreboard players operation debuffDurationSlot7 atkmodifiers = kongDmgDebuffDuration abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 run scoreboard players operation durationSlot7 speedDebuffs += kongSpDebuffDuration abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 run scoreboard players operation debuffDurationSlot7 atkmodifiers += kongDmgDebuffDuration abilityStats

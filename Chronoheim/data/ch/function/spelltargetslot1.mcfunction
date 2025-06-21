@@ -31,7 +31,7 @@ execute if score spellnumber spells matches 6 run scoreboard players operation s
 execute if score spellnumber spells matches 6 run scoreboard players operation spellDmg saves += marks slot1
 execute if score spellnumber spells matches 6 run scoreboard players operation spellDmg saves /= atkmultiplier slot1
 execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= spellDmg saves
-execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 if score frostboltSpDebuffDuration spellStats > durationslot1 speedDebuffs run scoreboard players operation durationSlot1 speedDebuffs = frostboltSpDebuffDuration spellStats
+execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 if score frostboltSpDebuffDuration spellStats > durationSlot1 speedDebuffs run scoreboard players operation durationSlot1 speedDebuffs = frostboltSpDebuffDuration spellStats
 execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 if score frostboltDmgDebuffDuration spellStats > debuffDurationSlot1 speedDebuffs run scoreboard players operation debuffDurationSlot1 atkmodifiers = frostboltDmgDebuffDuration spellStats
 execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation durationSlot1 speedDebuffs += frostboltSpDebuffDuration spellStats
 execute if score spellnumber spells matches 6 run execute if score ward slot1 matches 0 run scoreboard players operation debuffDurationSlot1 atkmodifiers += frostboltDmgDebuffDuration spellStats

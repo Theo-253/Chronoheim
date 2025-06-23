@@ -8,7 +8,7 @@ execute if score abilitynumber abilities matches 3 if score slot6isatk booleans 
 execute if score abilitynumber abilities matches 3 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
 execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves += marks slot3
 execute if score abilitynumber abilities matches 3 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= deuceMultLeader abilityStats
-execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves *= deuceMult abilityStats
+execute if score abilitynumber abilities matches 3 if score slot6isatk booleans matches 0 run scoreboard players operation abilityDmg saves *= deuceMult abilityStats
 execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves /= atkmultiplier slot3
 execute if score abilitynumber abilities matches 3 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= abilityDmg saves
 execute if score abilitynumber abilities matches 3 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3

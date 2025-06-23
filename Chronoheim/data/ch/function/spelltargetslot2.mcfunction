@@ -105,7 +105,6 @@ execute if score spellnumber spells matches 28 run scoreboard players set shadow
 execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp1
 execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
 
-clear @p[tag=game1]
 #fireball
 execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves = fireball spellStats
 execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves += spellbuffsp2 spells

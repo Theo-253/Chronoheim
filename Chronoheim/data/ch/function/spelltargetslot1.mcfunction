@@ -92,7 +92,6 @@ execute if score spellnumber spells matches 23 run execute if score ward slot1 m
 execute if score spellnumber spells matches 23 run execute if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score spellnumber spells matches 23 run function ch:spellphasep1
 
-
 #Shifting Shadows Token
 execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 5 if score ward slot1 matches 0 run scoreboard players set durationSlot5-1 fear 1 
 execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 6 if score ward slot1 matches 0 run scoreboard players set durationSlot6-1 fear 1 
@@ -105,8 +104,6 @@ execute if score spellnumber spells matches -1 run function ch:spellphasep1
 execute if score spellnumber spells matches 28 run scoreboard players set shadowsPart1 spells 1
 execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp1
 execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
-
-
 
 clear @p[tag=game1]
 #fireball

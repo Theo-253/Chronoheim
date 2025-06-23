@@ -189,7 +189,7 @@ execute if score spellnumber spells matches 27 run scoreboard players operation 
 execute if score spellnumber spells matches 27 run scoreboard players operation shield slot1 -= overclockAtk spellStats
 execute if score spellnumber spells matches 27 if score shield slot1 matches ..0 run scoreboard players operation slot1 hp -= shield slot1
 execute if score spellnumber spells matches 27 run scoreboard players set attackIsOngoingGame1 booleans 0
->>>>>>> Stashed changes
+
 
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0

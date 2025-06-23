@@ -1,5 +1,5 @@
 effect clear @a[tag=game1] weakness
-clear @p[tag=game1]
+clear @a[tag=game1]
 
 #Dragonforge
 execute if score spellnumber spells matches 26 run execute if score durationSlot1 shield < dragonforgeDuration spellStats run scoreboard players operation durationSlot1 shield = dragonforgeDuration spellStats 

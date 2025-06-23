@@ -63,7 +63,7 @@ execute if score alivep2 deaths matches 0 run function ch:win
 execute if score alivep2 deaths matches 0 run say @a @p[tag=p1] has won the duel against @p[tag=p2]!
 
 #Rapidtick
-execute if score character# slot2 matches 18 if score slot2 hp matches ..400 run scoreboard players operation slot2 atk = grangorLeaderAtk heroattack
-execute if score character# slot2 matches 18 if score slot2 hp matches 401.. run scoreboard players operation slot2 atk = grangor heroattack
-execute if score character# slot6 matches 18 if score slot6 hp matches ..400 run scoreboard players operation slot6 atk = grangorLeaderAtk heroattack
-execute if score character# slot6 matches 18 if score slot6 hp matches 401.. run scoreboard players operation slot6 atk = grangor heroattack
+execute if score character# slot2 matches 18 if score slot2 hp matches ..400 run scoreboard players operation atk slot2 = grangorLeaderAtk heroattack
+execute if score character# slot2 matches 18 if score slot2 hp matches 401.. run scoreboard players operation atk slot2 = grangor heroattack
+execute if score character# slot6 matches 18 if score slot6 hp matches ..400 run scoreboard players operation atk slot6 = grangorLeaderAtk heroattack
+execute if score character# slot6 matches 18 if score slot6 hp matches 401.. run scoreboard players operation atk slot6 = grangor heroattack

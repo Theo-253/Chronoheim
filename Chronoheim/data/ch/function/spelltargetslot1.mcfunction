@@ -127,8 +127,8 @@ execute if score spellnumber spells matches 7 run scoreboard players operation s
 execute if score spellnumber spells matches 7 run execute if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= spellDmg saves
 execute if score spellnumber spells matches 7 run execute if score ward slot1 matches 0 if score shield slot1 matches ..0 run scoreboard players operation slot1 hp += shield slot1
 execute if score spellnumber spells matches 7 run execute if score ward slot1 matches 1.. run function ch:wardslot1
-execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves -= slot1 marks
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves *= atkmultiplier slot1
+execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves -= slot1 marks
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves += slot2 marks
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves /= atkmultiplier slot2
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves /= meteorSplash spells

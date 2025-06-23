@@ -1,5 +1,5 @@
 effect clear @a[tag=game1] weakness
-clear @a[tag=game1]
+clear @p[tag=game1]
 
 #Dragonforge
 execute if score spellnumber spells matches 26 run execute if score durationSlot4 shield < dragonforgeDuration spellStats run scoreboard players operation durationSlot4 shield = dragonforgeDuration spellStats
@@ -57,7 +57,7 @@ execute if score spellnumber spells matches 4 run scoreboard players operation s
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= spellDmg saves
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 0 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 1.. run function ch:wardslot4
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run function ch:spellgivetargetsp1
+execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run function ch:spellgivetargetsp2
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run scoreboard players set magicMissilex2 spells 1
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run function ch:spellphasep1
@@ -93,15 +93,15 @@ execute if score spellnumber spells matches 23 run execute if score ward slot4 m
 execute if score spellnumber spells matches 23 run function ch:spellphasep1
 
 #Shifting Shadows Token
-execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 5 if score ward slot4 matches 0 run scoreboard players set durationSlot5-1 fear 1
-execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 6 if score ward slot4 matches 0 run scoreboard players set durationSlot6-1 fear 1
-execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 7 if score ward slot4 matches 0 run scoreboard players set durationSlot7-1 fear 1
-execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 8 if score ward slot4 matches 0 run scoreboard players set durationSlot8-1 fear 1
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 5 if score ward slot4 matches 0 run scoreboard players set durationSlot5-4 fear 1
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 6 if score ward slot4 matches 0 run scoreboard players set durationSlot6-4 fear 1
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 7 if score ward slot4 matches 0 run scoreboard players set durationSlot7-4 fear 1
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 8 if score ward slot4 matches 0 run scoreboard players set durationSlot8-4 fear 1
 execute if score spellnumber spells matches -1 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches -1 run function ch:spellphasep1
 
 #Shifting Shadows
-execute if score spellnumber spells matches 28 run scoreboard players set shadowsPart1 spells 1
+execute if score spellnumber spells matches 28 run scoreboard players set shadowsPart1 spells 4
 execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp1
 execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
 

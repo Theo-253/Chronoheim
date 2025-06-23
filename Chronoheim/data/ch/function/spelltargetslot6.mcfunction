@@ -57,7 +57,7 @@ execute if score spellnumber spells matches 4 run scoreboard players operation s
 execute if score spellnumber spells matches 4 run execute if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= spellDmg saves
 execute if score spellnumber spells matches 4 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
 execute if score spellnumber spells matches 4 run execute if score ward slot6 matches 1.. run function ch:wardslot6
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run function ch:spellgivetargetsp2
+execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run function ch:spellgivetargetsp1
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run scoreboard players set magicMissilex2 spells 1
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run scoreboard players set attackIsOngoingGame1 booleans 0
@@ -93,15 +93,15 @@ execute if score spellnumber spells matches 23 run execute if score ward slot6 m
 execute if score spellnumber spells matches 23 run scoreboard players set attackIsOngoingGame1 booleans 0
 
 #Shifting Shadows Token
-execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 1 if score ward slot6 matches 0 run scoreboard players set durationSlot1-5 fear 1
-execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 2 if score ward slot6 matches 0 run scoreboard players set durationSlot2-5 fear 1
-execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 3 if score ward slot6 matches 0 run scoreboard players set durationSlot3-5 fear 1
-execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 4 if score ward slot6 matches 0 run scoreboard players set durationSlot4-5 fear 1
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 1 if score ward slot6 matches 0 run scoreboard players set durationSlot1-6 fear 1
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 2 if score ward slot6 matches 0 run scoreboard players set durationSlot2-6 fear 1
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 3 if score ward slot6 matches 0 run scoreboard players set durationSlot3-6 fear 1
+execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 4 if score ward slot6 matches 0 run scoreboard players set durationSlot4-6 fear 1
 execute if score spellnumber spells matches -1 if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score spellnumber spells matches -1 run scoreboard players set attackIsOngoingGame1 booleans 0
 
 #Shifting Shadows
-execute if score spellnumber spells matches 28 run scoreboard players set shadowsPart1 spells 5
+execute if score spellnumber spells matches 28 run scoreboard players set shadowsPart1 spells 6
 execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp2
 execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
 

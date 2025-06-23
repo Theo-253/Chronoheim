@@ -234,6 +234,17 @@ execute if score slot6isatk booleans matches 1 run execute if score doubleatk sl
 execute if score slot7isatk booleans matches 1 run execute if score doubleatk slot7 matches 1 run execute if score useddoubleatk slot7 matches 1 run function ch:turnend
 execute if score slot8isatk booleans matches 1 run execute if score doubleatk slot8 matches 1 run execute if score useddoubleatk slot8 matches 1 run function ch:turnend
 
+#Ward Duration
+execute if score slot1isatk booleans matches 1 run execute if score durationSlot1 wards matches 1.. run scoreboard players remove durationSlot1 wards 1
+execute if score slot2isatk booleans matches 1 run execute if score durationSlot2 wards matches 1.. run scoreboard players remove durationSlot2 wards 1
+execute if score slot3isatk booleans matches 1 run execute if score durationSlot3 wards matches 1.. run scoreboard players remove durationSlot3 wards 1
+execute if score slot4isatk booleans matches 1 run execute if score durationSlot4 wards matches 1.. run scoreboard players remove durationSlot4 wards 1
+execute if score slot5isatk booleans matches 1 run execute if score durationSlot5 wards matches 1.. run scoreboard players remove durationSlot5 wards 1
+execute if score slot6isatk booleans matches 1 run execute if score durationSlot6 wards matches 1.. run scoreboard players remove durationSlot6 wards 1
+execute if score slot7isatk booleans matches 1 run execute if score durationSlot7 wards matches 1.. run scoreboard players remove durationSlot7 wards 1
+execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 wards matches 1.. run scoreboard players remove durationSlot8 wards 1
+
+
 #Attack boolean reset
 scoreboard players set slot1isatk booleans 0
 scoreboard players set slot2isatk booleans 0
@@ -244,3 +255,4 @@ scoreboard players set slot6isatk booleans 0
 scoreboard players set slot7isatk booleans 0
 scoreboard players set slot8isatk booleans 0
 scoreboard players set attackIsOngoingGame1 booleans 0
+

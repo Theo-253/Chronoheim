@@ -1,5 +1,5 @@
 effect clear @a[tag=game1] weakness
-clear @p[tag=game1]
+clear @a[tag=game1]
 
 #Dragonforge
 execute if score spellnumber spells matches 26 run execute if score durationSlot5 shield < dragonforgeDuration spellStats run scoreboard players operation durationSlot5 shield = dragonforgeDuration spellStats 
@@ -57,7 +57,7 @@ execute if score spellnumber spells matches 4 run scoreboard players operation s
 execute if score spellnumber spells matches 4 run execute if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= spellDmg saves
 execute if score spellnumber spells matches 4 run execute if score ward slot5 matches 0 if score shield slot5 matches ..0 run scoreboard players operation slot5 hp += shield slot5
 execute if score spellnumber spells matches 4 run execute if score ward slot5 matches 1.. run function ch:wardslot5
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run function ch:spellgivetargetsp1
+execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run function ch:spellgivetargetsp2
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run scoreboard players set magicMissilex2 spells 1
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run scoreboard players set attackIsOngoingGame1 booleans 0
@@ -106,9 +106,6 @@ execute if score spellnumber spells matches 28 run scoreboard players set shadow
 execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp2
 execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
 
-
-
-clear @p[tag=game1]
 #fireball
 execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves = fireball spellStats
 execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves += spellbuffsp1 spells

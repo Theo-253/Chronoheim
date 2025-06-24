@@ -89,7 +89,16 @@ execute if score abilitynumber abilities matches 22 run execute if score ward sl
 #Gatsby
 execute if score abilitynumber abilities matches 23 if score ward slot5 matches 0 run scoreboard players operation slot5 stun = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot5 matches 0 run scoreboard players operation invincibleSlot5 booleaneffects = gatsbyDuration abilityStats
-execute if score abilitynumber abilities matches 23 if score ward slot5 matches 0 run scoreboard players operation savehp2 saves = slot5 hp 
+execute if score abilitynumber abilities matches 23 if score ward slot5 matches 0 run scoreboard players operation savehp2 saves = slot5 hp
+execute if score abilitynumber abilities matches 23 if score ward slot6 matches 0 if score slot2isatk booleans matches 1 if score debuffDurationSlot6 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot6 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot7 matches 0 if score slot2isatk booleans matches 1 if score debuffDurationSlot7 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot7 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot8 matches 0 if score slot2isatk booleans matches 1 if score debuffDurationSlot8 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot8 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot6 matches 0 if score slot2isatk booleans matches 1 run scoreboard players operation attackDebuffSlot6 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot7 matches 0 if score slot2isatk booleans matches 1 run scoreboard players operation attackDebuffSlot7 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot8 matches 0 if score slot2isatk booleans matches 1 run scoreboard players operation attackDebuffSlot8 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot6 matches 1.. if score slot2isatk booleans matches 1 run function ch:wardslot6
+execute if score abilitynumber abilities matches 23 if score ward slot7 matches 1.. if score slot2isatk booleans matches 1 run function ch:wardslot7
+execute if score abilitynumber abilities matches 23 if score ward slot8 matches 1.. if score slot2isatk booleans matches 1 run function ch:wardslot8
 #execute if score abilitynumber abilities matches 23 if score ward slot5 matches 0 run scoreboard players operation slot5EatenDuration abilities = gatsbyDuration abilityStats
 #Boomer
 execute if score abilitynumber abilities matches 25 run scoreboard players operation abilityDmg saves = boomer abilityStats
@@ -105,15 +114,15 @@ execute if score abilitynumber abilities matches 25 if score slot2isatk booleans
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves -= marks slot5
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += marks slot6
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot6
-execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerleader abilities
+execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerLeader abilityStats
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= abilityDmg saves
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
 execute if score abilitynumber abilities matches 25 if score slot2isatk booleans matches 1 run execute if score ward slot6 matches 1.. run function ch:wardslot6
 
 
 #Ripper
-execute if score abilitynumber abilities matches 29 if score slot5 hp matches ..500 if score ward slot5 matches 0 if score invincibleSlot5 booleaneffects matches 0 run scoreboard players set slot5 hp 0
-execute if score abilitynumber abilities matches 29 if score slot5 hp matches ..500 if score invincibleSlot5 booleaneffects matches 0 if score ward slot5 matches 1.. run function ch:wardslot5
+execute if score abilitynumber abilities matches 29 if score slot5 hp <= ripper abilityStats if score ward slot5 matches 0 if score invincibleSlot5 booleaneffects matches 0 run scoreboard players set slot5 hp 0
+execute if score abilitynumber abilities matches 29 if score slot5 hp <= ripper abilityStats if score invincibleSlot5 booleaneffects matches 0 if score ward slot5 matches 1.. run function ch:wardslot5
 
 #Domino
 execute if score abilitynumber abilities matches 30 run scoreboard players operation abilityDmg saves = domino abilityStats
@@ -128,6 +137,8 @@ execute if score abilitynumber abilities matches 30 run scoreboard players opera
 execute if score abilitynumber abilities matches 30 run execute if score ward slot5 matches 1.. run function ch:wardslot5
 #Doc Basic Attack
 execute if score abilitynumber abilities matches -1 run scoreboard players operation slot5Disease disease += doc heroattack
+execute if score abilitynumber abilities matches -1 if score slot2isatk booleans matches 1 run scoreboard players operation slot5Disease disease += docLeader heroattack
+
 #Healing Totem
 execute if score abilitynumber abilities matches -3 run execute if score slot5bleeding booleaneffects matches 0 run scoreboard players operation slot5 hp += healingTotemHeal spellStats
 

@@ -88,6 +88,15 @@ execute if score abilitynumber abilities matches 22 run execute if score ward sl
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation slot4 stun = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation invincibleslot4 booleaneffects = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation savehp2 saves = slot4 hp
+execute if score abilitynumber abilities matches 23 if score ward slot2 matches 0 if score slot6isatk booleans matches 1 if score debuffDurationSlot2 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot2 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot3 matches 0 if score slot6isatk booleans matches 1 if score debuffDurationSlot3 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot3 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot1 matches 0 if score slot6isatk booleans matches 1 if score debuffDurationSlot1 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot1 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot2 matches 0 if score slot6isatk booleans matches 1 run scoreboard players operation attackDebuffSlot2 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot3 matches 0 if score slot6isatk booleans matches 1 run scoreboard players operation attackDebuffSlot3 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot1 matches 0 if score slot6isatk booleans matches 1 run scoreboard players operation attackDebuffSlot1 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot2 matches 1.. if score slot6isatk booleans matches 1 run function ch:wardslot2
+execute if score abilitynumber abilities matches 23 if score ward slot3 matches 1.. if score slot6isatk booleans matches 1 run function ch:wardslot3
+execute if score abilitynumber abilities matches 23 if score ward slot1 matches 1.. if score slot6isatk booleans matches 1 run function ch:wardslot1
 #execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation slot4EatenDuration abilities = gatsbyDuration abilityStats
 #Boomer
 execute if score abilitynumber abilities matches 25 run scoreboard players operation abilityDmg saves = boomer abilityStats
@@ -103,14 +112,14 @@ execute if score abilitynumber abilities matches 25 if score slot6isatk booleans
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves -= marks slot4
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += marks slot3
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot3
-execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerleader abilities
+execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerLeader abilityStats
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= abilityDmg saves
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 1.. run function ch:wardslot3
 
 #Ripper
-execute if score abilitynumber abilities matches 29 if score slot4 hp matches ..500 if score ward slot4 matches 0 if score invincibleslot4 booleaneffects matches 0 run scoreboard players set slot4 hp 0
-execute if score abilitynumber abilities matches 29 if score slot4 hp matches ..500 if score invincibleslot4 booleaneffects matches 0 if score ward slot4 matches 1.. run function ch:wardslot4
+execute if score abilitynumber abilities matches 29 if score slot4 hp <= ripper abilityStats if score ward slot4 matches 0 if score invincibleslot4 booleaneffects matches 0 run scoreboard players set slot4 hp 0
+execute if score abilitynumber abilities matches 29 if score slot4 hp <= ripper abilityStats if score invincibleslot4 booleaneffects matches 0 if score ward slot4 matches 1.. run function ch:wardslot4
 
 #Domino
 execute if score abilitynumber abilities matches 30 run scoreboard players operation abilityDmg saves = domino abilityStats
@@ -126,6 +135,8 @@ execute if score abilitynumber abilities matches 30 run scoreboard players opera
 execute if score abilitynumber abilities matches 30 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 #Doc Basic Attack
 execute if score abilitynumber abilities matches -1 run scoreboard players operation slot4Disease disease += doc heroattack
+execute if score abilitynumber abilities matches -1 if score slot6isatk booleans matches 1 run scoreboard players operation slot4Disease disease += docLeader heroattack
+
 #Healing Totem
 execute if score abilitynumber abilities matches -3 run execute if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += healingTotemHeal spellStats
 

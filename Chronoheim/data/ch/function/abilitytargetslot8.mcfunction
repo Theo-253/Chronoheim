@@ -16,6 +16,7 @@ execute if score abilitynumber abilities matches 3 run execute if score ward slo
 
 #Garabaldi Ability
 execute if score ability# abilities matches 24 if score slot8 hp matches 1.. if score slot8bleeding booleaneffects matches 0 run scoreboard players operation hp slot8 += garabaldiHeal abilityStats
+execute if score ability# abilities matches 24 if score slot8 hp matches 1.. if score slot8bleeding booleaneffects matches 0 if score character# slot6 matches 24 run scoreboard players operation hp slot8 += garabaldiLeader abilityStats
 execute if score ability# abilities matches 24 if score slot8 hp matches 1.. run scoreboard players set ward slot8 2
 
 
@@ -47,9 +48,8 @@ execute if score abilitynumber abilities matches 7 run scoreboard players operat
 execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run scoreboard players operation shield slot8 -= abilityDmg saves
 execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 if score kongSpDebuffDuration abilityStats > durationSlot8 speedDebuffs run scoreboard players operation durationSlot8 speedDebuffs = kongSpDebuffDuration abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 if score kongDmgDebuffDuration abilityStats > debuffDurationSlot8 atkmodifiers run scoreboard players operation debuffDurationSlot8 atkmodifiers = kongDmgDebuffDuration abilityStats
-execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run scoreboard players operation durationSlot8 speedDebuffs += kongSpDebuffDuration abilityStats
-execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run scoreboard players operation debuffDurationSlot8 atkmodifiers += kongDmgDebuffDuration abilityStats
-execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation attackDebuffslot8 atkmodifiers += kongLeaderDmgDebuff abilityStats
+execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run scoreboard players operation speedDebuffSlot8 speedDebuffs += kongSpDebuff abilityStats
+execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run scoreboard players operation attackDebuffSlot8 atkmodifiers += kongDmgDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation speedDebuffslot8 speedDebuffs += kongLeaderSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation speed slot8 -= kongLeaderSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot8 matches 0 run scoreboard players operation speed slot8 -= kongSpDebuff abilityStats

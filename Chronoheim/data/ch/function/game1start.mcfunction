@@ -301,6 +301,9 @@ execute if score character# slot6 matches 29 run scoreboard players operation at
 execute if score character# slot6 matches 29 if score durationSlot6 shield < ripperLeaderDuration abilityStats run scoreboard players operation durationSlot6 shield = ripperLeaderDuration abilityStats
 execute if score character# slot6 matches 29 run scoreboard players operation shield slot6 += ripperShield abilityStats
 
+execute if score character# slot2 matches 24 run scoreboard players set ward slot2 2
+execute if score character# slot6 matches 24 run scoreboard players set ward slot6 2
+
 execute if score character# slot2 matches 9 run execute if score ward slot5 matches 0 run scoreboard players operation marks slot5 = robyn abilityStats
 execute if score character# slot2 matches 9 run execute if score ward slot5 matches 1 run function ch:wardslot5
 execute if score character# slot2 matches 9 run execute if score ward slot6 matches 0 run scoreboard players operation marks slot6 = robyn abilityStats

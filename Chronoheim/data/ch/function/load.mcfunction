@@ -53,4 +53,4 @@ scoreboard objectives add player1spells dummy
 scoreboard objectives add player2spells dummy
 scoreboard objectives add hp dummy
 scoreboard objectives add ongoinggames dummy
-scoreboard players set bones heroattack 0
+

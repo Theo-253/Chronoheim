@@ -214,27 +214,27 @@ execute if score debuffDurationSlot23 atkmodifiers matches 0 run scoreboard play
 execute if score debuffDurationSlot24 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot24 atkmodifiers 0
 
 #Wards
-execute if score durationSlot1 wards matches 0 run scoreboard players set ward slot1 0
-execute if score durationSlot2 wards matches 0 run scoreboard players set ward slot2 0
-execute if score durationSlot3 wards matches 0 run scoreboard players set ward slot3 0
-execute if score durationSlot4 wards matches 0 run scoreboard players set ward slot4 0
-execute if score durationSlot5 wards matches 0 run scoreboard players set ward slot5 0
-execute if score durationSlot6 wards matches 0 run scoreboard players set ward slot6 0
-execute if score durationSlot7 wards matches 0 run scoreboard players set ward slot7 0
-execute if score durationSlot8 wards matches 0 run scoreboard players set ward slot8 0
-execute if score durationSlot9 wards matches 0 run scoreboard players set ward slot9 0
-execute if score durationSlot10 wards matches 0 run scoreboard players set ward slot10 0
-execute if score durationSlot11 wards matches 0 run scoreboard players set ward slot11 0
-execute if score durationSlot12 wards matches 0 run scoreboard players set ward slot12 0
-execute if score durationSlot13 wards matches 0 run scoreboard players set ward slot13 0
-execute if score durationSlot14 wards matches 0 run scoreboard players set ward slot14 0
-execute if score durationSlot15 wards matches 0 run scoreboard players set ward slot15 0
-execute if score durationSlot16 wards matches 0 run scoreboard players set ward slot16 0
-execute if score durationSlot17 wards matches 0 run scoreboard players set ward slot17 0
-execute if score durationSlot18 wards matches 0 run scoreboard players set ward slot18 0
-execute if score durationSlot19 wards matches 0 run scoreboard players set ward slot19 0
-execute if score durationSlot20 wards matches 0 run scoreboard players set ward slot20 0
-execute if score durationSlot21 wards matches 0 run scoreboard players set ward slot21 0
-execute if score durationSlot22 wards matches 0 run scoreboard players set ward slot22 0
-execute if score durationSlot23 wards matches 0 run scoreboard players set ward slot23 0
-execute if score durationSlot24 wards matches 0 run scoreboard players set ward slot24 0
+execute if score durationSlot1 wards matches 0 if score ward slot1 matches 3 run scoreboard players set ward slot1 0
+execute if score durationSlot2 wards matches 0 if score ward slot2 matches 3 run scoreboard players set ward slot2 0
+execute if score durationSlot3 wards matches 0 if score ward slot3 matches 3 run scoreboard players set ward slot3 0
+execute if score durationSlot4 wards matches 0 if score ward slot4 matches 3 run scoreboard players set ward slot4 0
+execute if score durationSlot5 wards matches 0 if score ward slot5 matches 3 run scoreboard players set ward slot5 0
+execute if score durationSlot6 wards matches 0 if score ward slot6 matches 3 run scoreboard players set ward slot6 0
+execute if score durationSlot7 wards matches 0 if score ward slot7 matches 3 run scoreboard players set ward slot7 0
+execute if score durationSlot8 wards matches 0 if score ward slot8 matches 3 run scoreboard players set ward slot8 0
+execute if score durationSlot9 wards matches 0 if score ward slot9 matches 3 run scoreboard players set ward slot9 0
+execute if score durationSlot10 wards matches 0 if score ward slot10 matches 3 run scoreboard players set ward slot10 0
+execute if score durationSlot11 wards matches 0 if score ward slot11 matches 3 run scoreboard players set ward slot11 0
+execute if score durationSlot12 wards matches 0 if score ward slot12 matches 3 run scoreboard players set ward slot12 0
+execute if score durationSlot13 wards matches 0 if score ward slot13 matches 3 run scoreboard players set ward slot13 0
+execute if score durationSlot14 wards matches 0 if score ward slot14 matches 3 run scoreboard players set ward slot14 0
+execute if score durationSlot15 wards matches 0 if score ward slot15 matches 3 run scoreboard players set ward slot15 0
+execute if score durationSlot16 wards matches 0 if score ward slot16 matches 3 run scoreboard players set ward slot16 0
+execute if score durationSlot17 wards matches 0 if score ward slot17 matches 3 run scoreboard players set ward slot17 0
+execute if score durationSlot18 wards matches 0 if score ward slot18 matches 3 run scoreboard players set ward slot18 0
+execute if score durationSlot19 wards matches 0 if score ward slot19 matches 3 run scoreboard players set ward slot19 0
+execute if score durationSlot20 wards matches 0 if score ward slot20 matches 3 run scoreboard players set ward slot20 0
+execute if score durationSlot21 wards matches 0 if score ward slot21 matches 3 run scoreboard players set ward slot21 0
+execute if score durationSlot22 wards matches 0 if score ward slot22 matches 3 run scoreboard players set ward slot22 0
+execute if score durationSlot23 wards matches 0 if score ward slot23 matches 3 run scoreboard players set ward slot23 0
+execute if score durationSlot24 wards matches 0 if score ward slot24 matches 3 run scoreboard players set ward slot24 0

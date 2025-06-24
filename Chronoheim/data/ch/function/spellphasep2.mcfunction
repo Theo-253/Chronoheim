@@ -1,31 +1,4 @@
-execute if score fireballCooldown player2spells matches 1.. run scoreboard players remove fireballCooldown player2spells 1
-execute if score healCooldown player2spells matches 1.. run scoreboard players remove healCooldown player2spells 1
-execute if score chainLightningCooldown player2spells matches 1.. run scoreboard players remove chainLightningCooldown player2spells 1
-execute if score frostBoltCooldown player2spells matches 1.. run scoreboard players remove frostBoltCooldown player2spells 1
-execute if score meteorCooldown player2spells matches 1.. run scoreboard players remove meteorCooldown player2spells 1
-execute if score shieldCooldown player2spells matches 1.. run scoreboard players remove shieldCooldown player2spells 1
-execute if score shockOrbCooldown player2spells matches 1.. run scoreboard players remove shockOrbCooldown player2spells 1
-execute if score witchBoltCooldown player2spells matches 1.. run scoreboard players remove witchBoltCooldown player2spells 1
-execute if score swiftnessCooldown player2spells matches 1.. run scoreboard players remove swiftnessCooldown player2spells 1
-execute if score embrittleCooldown player2spells matches 1.. run scoreboard players remove embrittleCooldown player2spells 1
-execute if score embiggenCooldown player2spells matches 1.. run scoreboard players remove embiggenCooldown player2spells 1
-execute if score immolateCooldown player2spells matches 1.. run scoreboard players remove immolateCooldown player2spells 1
-execute if score evilEyeCooldown player2spells matches 1.. run scoreboard players remove evilEyeCooldown player2spells 1
-execute if score protectorsRuneCooldown player2spells matches 1.. run scoreboard players remove protectorsRuneCooldown player2spells 1
-execute if score miracleCooldown player2spells matches 1.. run scoreboard players remove miracleCooldown player2spells 1
-execute if score miasmaCooldown player2spells matches 1.. run scoreboard players remove miasmaCooldown player2spells 1
-execute if score wardCooldown player2spells matches 1.. run scoreboard players remove wardCooldown player2spells 1
-execute if score blizzardCooldown player2spells matches 1.. run scoreboard players remove blizzardCooldown player2spells 1
-execute if score plagueCooldown player2spells matches 1.. run scoreboard players remove plagueCooldown player2spells 1
-execute if score secondWindCooldown player2spells matches 1.. run scoreboard players remove secondWindCooldown player2spells 1
-execute if score witchesBrewCooldown player2spells matches 1.. run scoreboard players remove witchesBrewCooldown player2spells 1
-execute if score fontOfWisdomCooldown player2spells matches 1.. run scoreboard players remove fontOfWisdomCooldown player2spells 1
-execute if score fountainOfYouthCooldown player2spells matches 1.. run scoreboard players remove fountainOfYouthCooldown player2spells 1
-execute if score dragonforgeCooldown player2spells matches 1.. run scoreboard players remove dragonforgeCooldown player2spells 1
-execute if score overclockCooldown player2spells matches 1.. run scoreboard players remove overclockCooldown player2spells 1
-execute if score shiftingShadowsCooldown player2spells matches 1.. run scoreboard players remove shiftingShadowsCooldown player2spells 1
-execute if score chronoWarpCooldown player2spells matches 1.. run scoreboard players remove chronoWarpCooldown player2spells 1
-execute if score healingTotemCooldown player2spells matches 1.. run scoreboard players remove healingTotemCooldown player2spells 1
+
 
 execute if score fireballCooldown player2spells matches 0 run execute at @p[tag=p2,tag=fireball] run give @p[tag=p2] fire_charge[minecraft:custom_name="Fireball",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:1,show_particles:0b}]}]}]
 execute if score healCooldown player2spells matches 0 run execute at @p[tag=p2,tag=heal] run give @p[tag=p2] emerald[minecraft:custom_name="Heal",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:2,show_particles:0b}]}]}]
@@ -59,3 +32,31 @@ execute if score chronoWarpCooldown player2spells matches 0 run execute at @p[ta
 execute if score healingTotemCooldown player2spells matches 0 run execute at @p[tag=p2,tag=healingtotem] run give @p[tag=p2] totem_of_undying[minecraft:custom_name="Healing Totem",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:30,show_particles:0b}]}]}]
 give @p[tag=p2] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
 
+execute if score fireballCooldown player2spells matches 1.. run scoreboard players remove fireballCooldown player2spells 1
+execute if score healCooldown player2spells matches 1.. run scoreboard players remove healCooldown player2spells 1
+execute if score chainLightningCooldown player2spells matches 1.. run scoreboard players remove chainLightningCooldown player2spells 1
+execute if score frostBoltCooldown player2spells matches 1.. run scoreboard players remove frostBoltCooldown player2spells 1
+execute if score meteorCooldown player2spells matches 1.. run scoreboard players remove meteorCooldown player2spells 1
+execute if score shieldCooldown player2spells matches 1.. run scoreboard players remove shieldCooldown player2spells 1
+execute if score shockOrbCooldown player2spells matches 1.. run scoreboard players remove shockOrbCooldown player2spells 1
+execute if score witchBoltCooldown player2spells matches 1.. run scoreboard players remove witchBoltCooldown player2spells 1
+execute if score swiftnessCooldown player2spells matches 1.. run scoreboard players remove swiftnessCooldown player2spells 1
+execute if score embrittleCooldown player2spells matches 1.. run scoreboard players remove embrittleCooldown player2spells 1
+execute if score embiggenCooldown player2spells matches 1.. run scoreboard players remove embiggenCooldown player2spells 1
+execute if score immolateCooldown player2spells matches 1.. run scoreboard players remove immolateCooldown player2spells 1
+execute if score evilEyeCooldown player2spells matches 1.. run scoreboard players remove evilEyeCooldown player2spells 1
+execute if score protectorsRuneCooldown player2spells matches 1.. run scoreboard players remove protectorsRuneCooldown player2spells 1
+execute if score miracleCooldown player2spells matches 1.. run scoreboard players remove miracleCooldown player2spells 1
+execute if score miasmaCooldown player2spells matches 1.. run scoreboard players remove miasmaCooldown player2spells 1
+execute if score wardCooldown player2spells matches 1.. run scoreboard players remove wardCooldown player2spells 1
+execute if score blizzardCooldown player2spells matches 1.. run scoreboard players remove blizzardCooldown player2spells 1
+execute if score plagueCooldown player2spells matches 1.. run scoreboard players remove plagueCooldown player2spells 1
+execute if score secondWindCooldown player2spells matches 1.. run scoreboard players remove secondWindCooldown player2spells 1
+execute if score witchesBrewCooldown player2spells matches 1.. run scoreboard players remove witchesBrewCooldown player2spells 1
+execute if score fontOfWisdomCooldown player2spells matches 1.. run scoreboard players remove fontOfWisdomCooldown player2spells 1
+execute if score fountainOfYouthCooldown player2spells matches 1.. run scoreboard players remove fountainOfYouthCooldown player2spells 1
+execute if score dragonforgeCooldown player2spells matches 1.. run scoreboard players remove dragonforgeCooldown player2spells 1
+execute if score overclockCooldown player2spells matches 1.. run scoreboard players remove overclockCooldown player2spells 1
+execute if score shiftingShadowsCooldown player2spells matches 1.. run scoreboard players remove shiftingShadowsCooldown player2spells 1
+execute if score chronoWarpCooldown player2spells matches 1.. run scoreboard players remove chronoWarpCooldown player2spells 1
+execute if score healingTotemCooldown player2spells matches 1.. run scoreboard players remove healingTotemCooldown player2spells 1

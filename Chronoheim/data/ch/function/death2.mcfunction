@@ -2,6 +2,10 @@ execute if score game1Ongoing ongoinggames matches 1 run execute if score charac
 execute if score slot2 hp matches ..0 run scoreboard players set speed slot2 -10000
 
 #Character Specific Crap
+execute if score character# slot6 matches 30 if score slot5 hp matches 1.. if score slot5bleeding booleaneffects matches 0 run scoreboard players operation slot5 hp += dominoLeader abilityStats
+execute if score character# slot6 matches 30 if score slot6 hp matches 1.. if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += dominoLeader abilityStats
+execute if score character# slot6 matches 30 if score slot7 hp matches 1.. if score slot7bleeding booleaneffects matches 0 run scoreboard players operation slot7 hp += dominoLeader abilityStats
+execute if score character# slot6 matches 30 if score slot8 hp matches 1.. if score slot8bleeding booleaneffects matches 0 run scoreboard players operation slot8 hp += dominoLeader abilityStats
 
 execute if score character# slot2 matches 15 run execute if score slot2 hp matches ..0 if score slot4 hp matches 1.. if score slot3 hp matches 1.. if score slot1 hp matches ..0 run scoreboard players operation speed slot1 = golemite herospeed
 execute if score character# slot2 matches 15 run execute if score slot2 hp matches ..0 if score slot4 hp matches 1.. if score slot3 hp matches 1.. if score slot1 hp matches ..0 run scoreboard players operation atk slot1 = golemite heroattack

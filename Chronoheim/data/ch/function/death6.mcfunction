@@ -4,6 +4,11 @@ w @p[tag=p1] Slot 6 has died!
 w @p[tag=p2] Slot 6 has died!
 
 #Character Specific Crap
+execute if score character# slot2 matches 30 if score slot1 hp matches 1.. if score slot1bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += dominoLeader abilityStats
+execute if score character# slot2 matches 30 if score slot2 hp matches 1.. if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot2 hp += dominoLeader abilityStats
+execute if score character# slot2 matches 30 if score slot3 hp matches 1.. if score slot3bleeding booleaneffects matches 0 run scoreboard players operation slot3 hp += dominoLeader abilityStats
+execute if score character# slot2 matches 30 if score slot4 hp matches 1.. if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += dominoLeader abilityStats
+
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp matches ..0 run scoreboard players operation speed slot5 = golemite herospeed
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp matches ..0 run scoreboard players operation atk slot5 = golemite heroattack
 execute if score character# slot6 matches 15 run execute if score slot6 hp matches ..0 if score slot8 hp matches 1.. if score slot7 hp matches 1.. if score slot5 hp matches ..0 run scoreboard players operation durationSlot5 taunt = golemTaunt abilityStats

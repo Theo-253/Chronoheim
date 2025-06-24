@@ -139,7 +139,8 @@ execute if score abilitynumber abilities matches 30 run scoreboard players opera
 execute if score abilitynumber abilities matches 30 run scoreboard players operation abilityDmg saves /= atkmultiplier slot7
 execute if score abilitynumber abilities matches 30 run execute if score ward slot7 matches 0 run scoreboard players operation shield slot7 -= abilityDmg saves
 execute if score abilitynumber abilities matches 30 run execute if score ward slot7 matches 0 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
-execute if score abilitynumber abilities matches 30 run scoreboard players operation durationSlot7 poison = dominoDuration abilityStats 
+execute if score abilitynumber abilities matches 30 if score ward slot7 matches 0 if score durationSlot7 poison < dominoDuration abilityStats run scoreboard players operation durationSlot7 poison = dominoDuration abilityStats 
+execute if score abilitynumber abilities matches 30 if score ward slot7 matches 0 run scoreboard players operation slot7Poison poison += dominoPoison abilityStats 
 execute if score abilitynumber abilities matches 30 run execute if score ward slot7 matches 1.. run function ch:wardslot7
 #Doc Basic Attack
 execute if score abilitynumber abilities matches -1 run scoreboard players operation slot7Disease disease += doc heroattack

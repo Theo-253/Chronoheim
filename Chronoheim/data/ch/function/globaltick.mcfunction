@@ -1,1 +1,2 @@
 execute if score game1ongoing ongoinggames matches 1 run function ch:game1
+function ch:effectclear

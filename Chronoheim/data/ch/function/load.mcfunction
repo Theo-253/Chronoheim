@@ -104,7 +104,7 @@ scoreboard players set thorn herohealth 720
 scoreboard players set thorn herospeed 1200
 scoreboard players set thornDuration abilityStats 3
 scoreboard players set thornCD abilityStats 4
-#Wip Kong
+
 scoreboard players set kong heroattack 20
 scoreboard players set kong herohealth 1360
 scoreboard players set kong herospeed 900

@@ -274,8 +274,8 @@ execute if score character# slot1 matches 21 run scoreboard players operation sl
 execute if score character# slot1 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
 
 execute if score character# slot3 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
-execute if score character# slot4 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats
-execute if score character# slot5 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
+execute if score character# slot3 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats
+execute if score character# slot3 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
 
 execute if score character# slot5 matches 21 run scoreboard players operation slot5 hp -= lillithLeechDmg abilityStats
 execute if score character# slot5 matches 21 run scoreboard players operation slot6 hp -= lillithLeechDmg abilityStats

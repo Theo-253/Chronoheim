@@ -287,6 +287,23 @@ scoreboard players set dominoPoison abilityStats 40
 scoreboard players set dominoLeader abilityStats 140
 scoreboard players set dominoLeaderHit abilityStats 100
 
+scoreboard players set golemite heroattack 60
+scoreboard players set golemite herohealth 240
+scoreboard players set golemite herospeed 700
+
+scoreboard players set skeleton heroattack 80
+scoreboard players set skeleton herohealth 200
+scoreboard players set skeleton herospeed 100
+
+scoreboard players set skeletonPlus heroattack 120
+scoreboard players set skeletonPlus herohealth 240
+scoreboard players set skeletonPlus herospeed 1200
+
+scoreboard players set demon heroattack 40
+scoreboard players set demon herosplash 2
+scoreboard players set demon herohealth 700
+scoreboard players set demon herospeed 700
+
 scoreboard players set blizzardSpDebuffDuration spellStats 2
 scoreboard players set blizzardSpDebuff spellStats 500
 scoreboard players set blizzard spellStats 60

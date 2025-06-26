@@ -83,6 +83,7 @@ scoreboard players set deuce herohealth 1040
 scoreboard players set deuce herospeed 1100
 scoreboard players set deuceCD abilityStats 3
 scoreboard players set deuceMultLeader abilityStats 3
+scoreboard players set deuceMult abilityStats 2
 
 scoreboard players set subject heroattack 120
 scoreboard players set subject herohealth 920

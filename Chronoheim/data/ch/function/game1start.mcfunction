@@ -274,8 +274,8 @@ execute if score character# slot1 matches 21 run scoreboard players operation sl
 execute if score character# slot1 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
 
 execute if score character# slot3 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
-execute if score character# slot4 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats
-execute if score character# slot5 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
+execute if score character# slot3 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats
+execute if score character# slot3 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
 
 execute if score character# slot5 matches 21 run scoreboard players operation slot5 hp -= lillithLeechDmg abilityStats
 execute if score character# slot5 matches 21 run scoreboard players operation slot6 hp -= lillithLeechDmg abilityStats
@@ -322,5 +322,5 @@ execute if score character# slot6 matches 9 run execute if score ward slot7 matc
 execute if score character# slot6 matches 9 run execute if score ward slot8 matches 0 run scoreboard players operation marks slot4 = robyn abilityStats
 execute if score character# slot6 matches 9 run execute if score ward slot8 matches 1 run function ch:wardslot4
 
-
+scoreboard players set game1Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame1 booleans 0

@@ -37,30 +37,14 @@ scoreboard players set slot5isatk booleans 0
 scoreboard players set slot6isatk booleans 0
 scoreboard players set slot7isatk booleans 0
 scoreboard players set slot8isatk booleans 0
-scoreboard players set durationSlot1 poison 0
-scoreboard players set durationSlot2 poison 0
-scoreboard players set durationSlot3 poison 0
-scoreboard players set durationSlot4 poison 0
-scoreboard players set durationSlot5 poison 0
-scoreboard players set durationSlot6 poison 0
-scoreboard players set durationSlot7 poison 0
-scoreboard players set durationSlot8 poison 0
-scoreboard players set durationSlot1 burn 0
-scoreboard players set durationSlot2 burn 0
-scoreboard players set durationSlot3 burn 0
-scoreboard players set durationSlot4 burn 0
-scoreboard players set durationSlot5 burn 0
-scoreboard players set durationSlot6 burn 0
-scoreboard players set durationSlot7 burn 0
-scoreboard players set durationSlot8 burn 0
-scoreboard players set durationSlot1 speedDebuffs 0
-scoreboard players set durationSlot2 speedDebuffs 0
-scoreboard players set durationSlot3 speedDebuffs 0
-scoreboard players set durationSlot4 speedDebuffs 0
-scoreboard players set durationSlot5 speedDebuffs 0
-scoreboard players set durationSlot6 speedDebuffs 0
-scoreboard players set durationSlot7 speedDebuffs 0
-scoreboard players set durationSlot8 speedDebuffs 0
+function ch:cleanseslot1
+function ch:cleanseslot2
+function ch:cleanseslot3
+function ch:cleanseslot4
+function ch:cleanseslot5
+function ch:cleanseslot6
+function ch:cleanseslot7
+function ch:cleanseslot8
 scoreboard players set durationSlot1 speedBuffs 0
 scoreboard players set durationSlot2 speedBuffs 0
 scoreboard players set durationSlot3 speedBuffs 0
@@ -101,6 +85,31 @@ scoreboard players set debuffDurationSlot5 atkmodifiers 0
 scoreboard players set debuffDurationSlot6 atkmodifiers 0
 scoreboard players set debuffDurationSlot7 atkmodifiers 0
 scoreboard players set debuffDurationSlot8 atkmodifiers 0
+scoreboard players set slot1 stun 0
+scoreboard players set slot2 stun 0
+scoreboard players set slot3 stun 0
+scoreboard players set slot4 stun 0
+scoreboard players set slot5 stun 0
+scoreboard players set slot6 stun 0
+scoreboard players set slot7 stun 0
+scoreboard players set slot8 stun 0
+scoreboard players set disarmedslot1 booleaneffects 0
+scoreboard players set disarmedslot2 booleaneffects 0
+scoreboard players set disarmedslot3 booleaneffects 0
+scoreboard players set disarmedslot4 booleaneffects 0
+scoreboard players set disarmedslot5 booleaneffects 0
+scoreboard players set disarmedslot6 booleaneffects 0
+scoreboard players set disarmedslot7 booleaneffects 0
+scoreboard players set disarmedslot8 booleaneffects 0
+scoreboard players set nobasicattack slot1 0
+scoreboard players set nobasicattack slot2 0
+scoreboard players set nobasicattack slot3 0
+scoreboard players set nobasicattack slot4 0
+scoreboard players set nobasicattack slot5 0
+scoreboard players set nobasicattack slot6 0
+scoreboard players set nobasicattack slot7 0
+scoreboard players set nobasicattack slot8 0
+
 scoreboard players set Spell_Points_P1 Spell_Points -1
 scoreboard players set Spell_Points_P2 Spell_Points -1
 

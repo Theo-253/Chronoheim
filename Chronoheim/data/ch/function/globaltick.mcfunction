@@ -1,2 +1,6 @@
 execute if score game1ongoing ongoinggames matches 1 run function ch:game1
 function ch:effectclear
+execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames matches 0 run function ch:draftgame1
+execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames matches 0 run scoreboard players set game1start ongoinggames 1
+execute if score sP player1spells matches 0 run execute if score sP player2spells matches 0 run execute if score game1Ongoing ongoinggames matches 0 if score character# slot1 matches 1.. run execute if score character# slot2 matches 1.. run execute if score character# slot3 matches 1.. run execute if score character# slot7 matches 1.. run execute if score character# slot5 matches 1.. run execute if score character# slot6 matches 1.. run scoreboard players set attackIsOngoingGame1 booleans 1
+execute if score sP player1spells matches 0 run execute if score sP player2spells matches 0 run execute if score game1Ongoing ongoinggames matches 0 if score character# slot1 matches 1.. run execute if score character# slot2 matches 1.. run execute if score character# slot3 matches 1.. run execute if score character# slot7 matches 1.. run execute if score character# slot5 matches 1.. run execute if score character# slot6 matches 1.. run function ch:game1start

@@ -68,6 +68,7 @@ scoreboard players set slot5isatk booleans 0
 scoreboard players set slot6isatk booleans 0
 scoreboard players set slot7isatk booleans 0
 scoreboard players set slot8isatk booleans 0
+scoreboard players set game1start booleans 0
 function ch:cleanseslot1
 function ch:cleanseslot2
 function ch:cleanseslot3

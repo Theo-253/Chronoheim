@@ -23,8 +23,39 @@ scoreboard players set speed slot6 0
 scoreboard players set speed slot7 0
 scoreboard players set speed slot8 0
 scoreboard players set game1Ongoing ongoinggames 0
+tag @a[tag=game1] remove fireball
+tag @a[tag=game1] remove chainlightning
+tag @a[tag=game1] remove heal
+tag @a[tag=game1] remove magicmissile
+tag @a[tag=game1] remove ritualofblood
+tag @a[tag=game1] remove frostbolt
+tag @a[tag=game1] remove meteor
+tag @a[tag=game1] remove shield
+tag @a[tag=game1] remove shockorb
+tag @a[tag=game1] remove witchbolt
+tag @a[tag=game1] remove swiftness
+tag @a[tag=game1] remove embrittle
+tag @a[tag=game1] remove embiggen
+tag @a[tag=game1] remove immolate
+tag @a[tag=game1] remove evileye
+tag @a[tag=game1] remove protectorsrune
+tag @a[tag=game1] remove miracle
+tag @a[tag=game1] remove miasma
+tag @a[tag=game1] remove ward
+tag @a[tag=game1] remove blizzard
+tag @a[tag=game1] remove plague
+tag @a[tag=game1] remove secondwind
+tag @a[tag=game1] remove witchesbrew
+tag @a[tag=game1] remove fontofwisdom
+tag @a[tag=game1] remove fountainofyouth
+tag @a[tag=game1] remove dragonforge
+tag @a[tag=game1] remove overclock
+tag @a[tag=game1] remove shiftingshadows
+tag @a[tag=game1] remove chronowarp
+tag @a[tag=game1] remove healingtotem
 tag @a remove p1
 tag @a remove p2
+tag @a remove game1
 scoreboard players set alivep1 deaths 3
 scoreboard players set alivep2 deaths 3
 scoreboard players set abilityusep1 booleans 0

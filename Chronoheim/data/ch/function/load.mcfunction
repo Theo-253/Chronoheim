@@ -54,7 +54,6 @@ scoreboard objectives add player1spells dummy
 scoreboard objectives add player2spells dummy
 scoreboard objectives add hp dummy
 scoreboard objectives add ongoinggames dummy
-
 scoreboard players set atkmultiplier slot1 1
 scoreboard players set atkmultiplier slot2 1
 scoreboard players set atkmultiplier slot3 1
@@ -289,7 +288,6 @@ scoreboard players set eidolon herospeed 900
 scoreboard players set eidolon abilityStats 260
 scoreboard players set eidolonDuration abilityStats 2
 scoreboard players set eidolonLeader abilityStats 360
-scoreboard players set eidolonFearDuration abilityStats 1
 
 scoreboard players set domino heroattack 100
 scoreboard players set domino herohealth 960

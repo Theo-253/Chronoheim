@@ -27,6 +27,7 @@ execute if score ward slot8 matches 0 run execute as @p[tag=p1] if predicate {co
 execute if score ward slot8 matches 1.. run execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:4,max:4}}}}} run function ch:wardslot8
 effect clear @a minecraft:conduit_power
 
+function ch:spelltargetinggeneralgame1
 function ch:abilitytargetinggeneralgame1
 function ch:atkmodifiers
 function ch:speedcheckgame1
@@ -40,8 +41,11 @@ execute if score invincibleSlot5 booleaneffects matches 1.. run scoreboard playe
 execute if score invincibleSlot6 booleaneffects matches 1.. run scoreboard players operation slot6 hp = savehp6 saves
 execute if score invincibleSlot7 booleaneffects matches 1.. run scoreboard players operation slot7 hp = savehp7 saves
 
-
-
+#Skips
+execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:0,max:0}}}}} run function ch:turnend
+execute as @p[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:0,max:0}}}}} run function ch:turnend
+execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:0,max:0}}}}} run scoreboard players set attackIsOngoingGame1 booleans 0
+execute as @p[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:0,max:0}}}}} run function ch:spellphasep1
 #Speed Reset
 execute if score attackIsOngoingGame1 booleans matches 0 run execute if score speed slot6 matches ..-10000 run execute if score speed slot5 matches ..-10000 run execute if score speed slot4 matches ..-10000 run execute if score speed slot3 matches ..-10000 run execute if score speed slot2 matches ..-10000 run execute if score speed slot1 matches ..-10000 run execute if score character# slot1 matches 1.. run scoreboard players set attackIsOngoingGame1 booleans 1
 execute if score attackIsOngoingGame1 booleans matches 0 run execute if score speed slot6 matches ..-10000 run execute if score speed slot5 matches ..-10000 run execute if score speed slot4 matches ..-10000 run execute if score speed slot3 matches ..-10000 run execute if score speed slot2 matches ..-10000 run execute if score speed slot1 matches ..-10000 run execute if score character# slot1 matches 1.. run function ch:turnresetgame1

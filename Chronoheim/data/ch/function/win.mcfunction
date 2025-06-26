@@ -37,30 +37,14 @@ scoreboard players set slot5isatk booleans 0
 scoreboard players set slot6isatk booleans 0
 scoreboard players set slot7isatk booleans 0
 scoreboard players set slot8isatk booleans 0
-scoreboard players set durationSlot1 poison 0
-scoreboard players set durationSlot2 poison 0
-scoreboard players set durationSlot3 poison 0
-scoreboard players set durationSlot4 poison 0
-scoreboard players set durationSlot5 poison 0
-scoreboard players set durationSlot6 poison 0
-scoreboard players set durationSlot7 poison 0
-scoreboard players set durationSlot8 poison 0
-scoreboard players set durationSlot1 burn 0
-scoreboard players set durationSlot2 burn 0
-scoreboard players set durationSlot3 burn 0
-scoreboard players set durationSlot4 burn 0
-scoreboard players set durationSlot5 burn 0
-scoreboard players set durationSlot6 burn 0
-scoreboard players set durationSlot7 burn 0
-scoreboard players set durationSlot8 burn 0
-scoreboard players set durationSlot1 speedDebuffs 0
-scoreboard players set durationSlot2 speedDebuffs 0
-scoreboard players set durationSlot3 speedDebuffs 0
-scoreboard players set durationSlot4 speedDebuffs 0
-scoreboard players set durationSlot5 speedDebuffs 0
-scoreboard players set durationSlot6 speedDebuffs 0
-scoreboard players set durationSlot7 speedDebuffs 0
-scoreboard players set durationSlot8 speedDebuffs 0
+function ch:cleanseslot1
+function ch:cleanseslot2
+function ch:cleanseslot3
+function ch:cleanseslot4
+function ch:cleanseslot5
+function ch:cleanseslot6
+function ch:cleanseslot7
+function ch:cleanseslot8
 scoreboard players set durationSlot1 speedBuffs 0
 scoreboard players set durationSlot2 speedBuffs 0
 scoreboard players set durationSlot3 speedBuffs 0

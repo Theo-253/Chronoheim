@@ -139,7 +139,19 @@ execute if score abilitynumber abilities matches -1 if score slot6isatk booleans
 
 #Healing Totem
 execute if score abilitynumber abilities matches -3 run execute if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += healingTotemHeal spellStats
-
+#Eidolon Basic Attack
+execute if score abilitynumber abilities matches -4 run execute if score ward slot4 matches 0 if score durationSlot5-4 fear <= eidolonFearDuration abilityStats if score slot5isatk booleans matches 1 run scoreboard players operation durationSlot5-4 fear = eidolonFearDuration abilityStats
+execute if score abilitynumber abilities matches -4 run execute if score ward slot4 matches 0 if score durationSlot6-4 fear <= eidolonFearDuration abilityStats if score slot6isatk booleans matches 1 run scoreboard players operation durationSlot6-4 fear = eidolonFearDuration abilityStats
+execute if score abilitynumber abilities matches -4 run execute if score ward slot4 matches 0 if score durationSlot7-4 fear <= eidolonFearDuration abilityStats if score slot7isatk booleans matches 1 run scoreboard players operation durationSlot7-4 fear = eidolonFearDuration abilityStats
+execute if score abilitynumber abilities matches -4 run scoreboard players operation abilityDmg saves = eidolon heroattack
+execute if score abilitynumber abilities matches -4 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
+execute if score abilitynumber abilities matches -4 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
+execute if score abilitynumber abilities matches -4 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
+execute if score abilitynumber abilities matches -4 run scoreboard players operation abilityDmg saves += marks slot4
+execute if score abilitynumber abilities matches -4 run scoreboard players operation abilityDmg saves /= atkmultiplier slot4
+execute if score abilitynumber abilities matches -4 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= abilityDmg saves
+execute if score abilitynumber abilities matches -4 run execute if score ward slot4 matches 0 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
+execute if score abilitynumber abilities matches -4 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 
 
 #This goes at the bottom

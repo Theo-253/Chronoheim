@@ -274,8 +274,8 @@ scoreboard players set eidolon herohealth 920
 scoreboard players set eidolon herospeed 900
 scoreboard players set eidolon abilityStats 260
 scoreboard players set eidolonDuration abilityStats 2
-scoreboard players set eidolonLeaderStun abilityStats 1
-scoreboard players set eidolonLeader abilityStats 60
+scoreboard players set eidolonLeader abilityStats 360
+scoreboard players set eidolonFearDuration abilityStats 1
 
 scoreboard players set domino heroattack 100
 scoreboard players set domino herohealth 960

@@ -55,6 +55,15 @@ scoreboard objectives add player2spells dummy
 scoreboard objectives add hp dummy
 scoreboard objectives add ongoinggames dummy
 
+scoreboard players set atkmultiplier slot1 1
+scoreboard players set atkmultiplier slot2 1
+scoreboard players set atkmultiplier slot3 1
+scoreboard players set atkmultiplier slot4 1
+scoreboard players set atkmultiplier slot5 1
+scoreboard players set atkmultiplier slot6 1
+scoreboard players set atkmultiplier slot7 1
+scoreboard players set atkmultiplier slot8 1
+
 scoreboard players set bones heroattack 140
 scoreboard players set bones herohealth 1000
 scoreboard players set bones herospeed 1000
@@ -102,7 +111,12 @@ scoreboard players set kong herohealth 1360
 scoreboard players set kong herospeed 900
 scoreboard players set kong abilityStats 400
 scoreboard players set kongCD abilityStats 2
-scoreboard players set kongLeaderBonus abilityStats 120
+scoreboard players set kongSpDebuff abilityStats 300
+scoreboard players set kongSpDebuffDuration abilityStats 1
+scoreboard players set kongDmgDebuff abilityStats 40
+scoreboard players set kongDmgDebuffDuration abilityStats 1
+scoreboard players set kongLeaderSpDebuff abilityStats 500
+scoreboard players set kongLeaderDmgDebuff abilityStats 60
 
 scoreboard players set kirin heroattack 60
 scoreboard players set kirin herohealth 1000

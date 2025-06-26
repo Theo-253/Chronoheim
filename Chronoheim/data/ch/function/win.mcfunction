@@ -85,6 +85,31 @@ scoreboard players set debuffDurationSlot5 atkmodifiers 0
 scoreboard players set debuffDurationSlot6 atkmodifiers 0
 scoreboard players set debuffDurationSlot7 atkmodifiers 0
 scoreboard players set debuffDurationSlot8 atkmodifiers 0
+scoreboard players set slot1 stun 0
+scoreboard players set slot2 stun 0
+scoreboard players set slot3 stun 0
+scoreboard players set slot4 stun 0
+scoreboard players set slot5 stun 0
+scoreboard players set slot6 stun 0
+scoreboard players set slot7 stun 0
+scoreboard players set slot8 stun 0
+scoreboard players set disarmedslot1 booleaneffects 0
+scoreboard players set disarmedslot2 booleaneffects 0
+scoreboard players set disarmedslot3 booleaneffects 0
+scoreboard players set disarmedslot4 booleaneffects 0
+scoreboard players set disarmedslot5 booleaneffects 0
+scoreboard players set disarmedslot6 booleaneffects 0
+scoreboard players set disarmedslot7 booleaneffects 0
+scoreboard players set disarmedslot8 booleaneffects 0
+scoreboard players set nobasicattack slot1 0
+scoreboard players set nobasicattack slot2 0
+scoreboard players set nobasicattack slot3 0
+scoreboard players set nobasicattack slot4 0
+scoreboard players set nobasicattack slot5 0
+scoreboard players set nobasicattack slot6 0
+scoreboard players set nobasicattack slot7 0
+scoreboard players set nobasicattack slot8 0
+
 scoreboard players set Spell_Points_P1 Spell_Points -1
 scoreboard players set Spell_Points_P2 Spell_Points -1
 

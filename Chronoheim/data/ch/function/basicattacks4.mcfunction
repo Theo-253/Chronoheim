@@ -1,4 +1,5 @@
 #basic attack functions
+clear @a[tag=p2]
 #slot 5
 execute if score slot5isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot5
 execute if score slot5isatk booleans matches 1 run scoreboard players operation atk1 saves += slot5 atkmodifiers

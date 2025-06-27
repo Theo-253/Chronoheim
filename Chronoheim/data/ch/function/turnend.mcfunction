@@ -1,4 +1,6 @@
 clear @a[tag=game1] minecraft:target
+clear @p[tag=p1]
+clear @p[tag=p2]
 #Cooldowns
 execute if score slot1isatk booleans matches 1 run execute if score cooldown slot1 matches 1.. run scoreboard players remove cooldown slot1 1
 execute if score slot2isatk booleans matches 1 run execute if score cooldown slot2 matches 1.. run scoreboard players remove cooldown slot2 1

@@ -67,7 +67,7 @@ execute if score abilitynumber abilities matches 5 if score slot8isatk booleans 
 #Kirin
 execute if score abilitynumber abilities matches 8 if score buffDurationSlot8 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot8 atkmodifiers = kirinDuration abilityStats
 execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffslot8 atkmodifiers += kirin abilityStats
-execute if score abilitynumber abilities matches 8 if score slot8isatk booleans matches 1 if score slot8Bleeding booleaneffects matches 0.. run scoreboard players operation slot8 hp += kirinLeader abilityStats
+execute if score abilitynumber abilities matches 8 if score slot8isatk booleans matches 1 if score slot8bleeding booleaneffects matches 0.. run scoreboard players operation slot8 hp += kirinLeader abilityStats
 #Ace
 execute if score abilitynumber abilities matches 12 run scoreboard players operation cooldown slot8 = aceSetCooldown abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation durationSlot8 speedDebuffs = aceLeaderDuration abilityStats

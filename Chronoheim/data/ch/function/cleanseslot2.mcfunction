@@ -8,6 +8,6 @@ scoreboard players set durationSlot7-2 fear 0
 scoreboard players set durationSlot8-2 fear 0
 scoreboard players set durationSlot2 mark 0
 scoreboard players set slot2Disease disease 0
-scoreboard players set slot2Bleeding booleaneffects 0
+scoreboard players set slot2bleeding booleaneffects 0
 scoreboard players set marks slot2 0
 

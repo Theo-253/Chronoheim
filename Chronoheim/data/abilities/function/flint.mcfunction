@@ -52,3 +52,4 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run function ch:basicattackstartp2
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=game1] fire_resistance
 scoreboard players set flintatkswap booleans 0
+scoreboard players set burn burn 1

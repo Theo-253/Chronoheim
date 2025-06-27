@@ -115,7 +115,7 @@ execute if score spellnumber spells matches 1 run scoreboard players operation s
 execute if score spellnumber spells matches 1 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= spellDmg saves
 execute if score spellnumber spells matches 1 run execute if score ward slot3 matches 0 run scoreboard players operation slot3 hp += shield slot3
 execute if score spellnumber spells matches 1 run execute if score ward slot3 matches 0 if score durationSlot3 burn < fireballDuration spellStats run scoreboard players operation durationSlot3 burn = fireballDuration spellStats
-execute if score spellnumber spells matches 1 run execute if score ward slot3 matches 0 run scoreboard players operation slot3burn burn += fireballBurn spellStats
+execute if score spellnumber spells matches 1 run execute if score ward slot3 matches 0 run scoreboard players operation slot3Burn burn += fireballBurn spellStats
 execute if score spellnumber spells matches 1 run execute if score ward slot3 matches 1.. run function ch:wardslot3
 execute if score spellnumber spells matches 1 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 1 run function ch:spellphasep1

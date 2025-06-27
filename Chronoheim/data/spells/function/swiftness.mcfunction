@@ -9,8 +9,8 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run scoreboard players operation swiftnessCooldown player1spells = swiftnessCD abilityStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run clear @a[tag=p1]
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run say used Swiftness!
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=p1] infested
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run function ch:spellphasep1
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=p1] infested
 
 #Player 2
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run execute if score durationSlot5 speedBuffs < swiftnessDuration spellStats run scoreboard players operation durationSlot5 speedBuffs = swiftnessDuration spellStats
@@ -24,5 +24,5 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run scoreboard players operation swiftnessCooldown player2spells = swiftnessCD abilityStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run clear @a[tag=p2]
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run say used Swiftness!
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=p2] infested
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run scoreboard players set attackIsOngoingGame1 booleans 0
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=p2] infested

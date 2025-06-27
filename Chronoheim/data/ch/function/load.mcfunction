@@ -62,6 +62,14 @@ scoreboard players set atkmultiplier slot5 1
 scoreboard players set atkmultiplier slot6 1
 scoreboard players set atkmultiplier slot7 1
 scoreboard players set atkmultiplier slot8 1
+scoreboard players set ward slot1 0
+scoreboard players set ward slot2 0
+scoreboard players set ward slot3 0
+scoreboard players set ward slot4 0
+scoreboard players set ward slot5 0
+scoreboard players set ward slot6 0
+scoreboard players set ward slot7 0
+scoreboard players set ward slot8 0
 
 scoreboard players set bones heroattack 140
 scoreboard players set bones herohealth 1000

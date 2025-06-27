@@ -24,7 +24,7 @@ execute if score slot8isatk booleans matches 1 run scoreboard players operation 
 execute if score slot8isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot4
 execute if score slot8isatk booleans matches 1 run scoreboard players operation shield slot4 -= atk1 saves
 #damage + shield reset (all)
-execute if score shield slot4 matches ..0 run scoreboard players operation slot4 hp -= shield slot4
+execute if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
 execute if score shield slot4 matches ..0 run scoreboard players set shield slot4 0
 
 
@@ -62,7 +62,7 @@ execute if score splash slot8 matches 1.. run execute if score slot8isatk boolea
 execute if score ward slot3 matches 0 run execute if score splash slot8 matches 1.. run execute if score slot8isatk booleans matches 1 run scoreboard players operation shield slot3 -= splashdamage saves
 execute if score ward slot3 matches 1.. run execute if score splash slot8 matches 1.. run execute if score slot8isatk booleans matches 1 run function ch:wardslot3
 #damage + shield reset (all)
-execute if score shield slot3 matches ..0 run scoreboard players operation slot3 hp -= shield slot3
+execute if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3
 execute if score shield slot3 matches ..0 run scoreboard players set shield slot3 0
 
 

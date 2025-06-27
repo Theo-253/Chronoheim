@@ -133,14 +133,14 @@ scoreboard players set disarmedslot5 booleaneffects 0
 scoreboard players set disarmedslot6 booleaneffects 0
 scoreboard players set disarmedslot7 booleaneffects 0
 scoreboard players set disarmedslot8 booleaneffects 0
-scoreboard players set nobasicattack slot1 0
-scoreboard players set nobasicattack slot2 0
-scoreboard players set nobasicattack slot3 0
-scoreboard players set nobasicattack slot4 0
-scoreboard players set nobasicattack slot5 0
-scoreboard players set nobasicattack slot6 0
-scoreboard players set nobasicattack slot7 0
-scoreboard players set nobasicattack slot8 0
+scoreboard players set nobasicatk slot1 0
+scoreboard players set nobasicatk slot2 0
+scoreboard players set nobasicatk slot3 0
+scoreboard players set nobasicatk slot4 0
+scoreboard players set nobasicatk slot5 0
+scoreboard players set nobasicatk slot6 0
+scoreboard players set nobasicatk slot7 0
+scoreboard players set nobasicatk slot8 0
 
 scoreboard players set Spell_Points_P1 Spell_Points -1
 scoreboard players set Spell_Points_P2 Spell_Points -1

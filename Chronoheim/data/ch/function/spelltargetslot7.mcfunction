@@ -112,7 +112,7 @@ execute if score spellnumber spells matches 3 run scoreboard players operation s
 execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves += marks slot7
 execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves /= atkmultiplier slot7
 execute if score spellnumber spells matches 3 run execute if score ward slot7 matches 0 run scoreboard players operation shield slot7 -= spellDmg saves
-execute if score spellnumber spells matches 3 run execute if score ward slot7 matches 0 run scoreboard players operation slot7 hp -= shield slot7
+execute if score spellnumber spells matches 3 run execute if score ward slot7 matches 0 run scoreboard players operation slot7 hp += shield slot7
 execute if score spellnumber spells matches 3 run execute if score ward slot7 matches 0 if score durationSlot7 burn < fireballDuration spellStats run scoreboard players operation durationSlot7 burn = fireballDuration spellStats
 execute if score spellnumber spells matches 3 run execute if score ward slot7 matches 0 run scoreboard players operation slot7burn burn += fireballBurn spellStats
 execute if score spellnumber spells matches 3 run execute if score ward slot7 matches 1.. run function ch:wardslot7
@@ -152,7 +152,7 @@ execute if score spellnumber spells matches 10 run scoreboard players operation 
 execute if score spellnumber spells matches 10 run scoreboard players operation spellDmg saves += marks slot7
 execute if score spellnumber spells matches 10 run scoreboard players operation spellDmg saves /= atkmultiplier slot7
 execute if score spellnumber spells matches 10 run execute if score ward slot7 matches 0 run scoreboard players operation shield slot7 -= spellDmg saves
-execute if score spellnumber spells matches 10 run execute if score ward slot7 matches 0 run scoreboard players operation slot7 hp -= shield slot7
+execute if score spellnumber spells matches 10 run execute if score ward slot7 matches 0 run scoreboard players operation slot7 hp += shield slot7
 execute if score spellnumber spells matches 10 run execute if score ward slot7 matches 1.. run function ch:wardslot7
 execute if score spellnumber spells matches 10 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 10 run scoreboard players set attackIsOngoingGame1 booleans 0
@@ -184,7 +184,7 @@ execute if score spellnumber spells matches 25 run scoreboard players set spellb
 execute if score spellnumber spells matches 27 run execute if score buffDurationSlot7 atkmodifiers < overclockDuration spellStats run scoreboard players operation buffDurationSlot7 atkmodifiers = overclockDuration spellStats
 execute if score spellnumber spells matches 27 run scoreboard players operation attackBuffSlot7 atkmodifiers += overclock spellStats
 execute if score spellnumber spells matches 27 run scoreboard players operation shield slot7 -= overclockAtk spellStats
-execute if score spellnumber spells matches 27 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp -= shield slot7
+execute if score spellnumber spells matches 27 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
 execute if score spellnumber spells matches 27 run function ch:spellphasep1
 
 

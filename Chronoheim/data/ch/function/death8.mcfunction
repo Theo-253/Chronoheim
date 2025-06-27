@@ -7,5 +7,5 @@ execute unless score character# slot8 matches 0 if score game1Ongoing ongoinggam
 execute unless score character# slot8 matches 0 if score game1Ongoing ongoinggames matches 1 run execute if score character# slot8 matches 1.. run execute if score slot8 hp matches ..0 run execute unless score speed slot8 matches -1000000..-900000 run execute if score character# slot7 matches 28 run scoreboard players set cooldown slot7 0
 execute unless score character# slot8 matches 0 if score slot8 hp matches ..0 run scoreboard players set speed slot8 -1000000
 
-w @p[tag=p1] Slot 8 has died!
-w @p[tag=p2] Slot 8 has died!
+execute unless score character# slot8 matches 0 run w @p[tag=p1] Slot 8 has died!
+execute unless score character# slot8 matches 0 run w @p[tag=p2] Slot 8 has died!

@@ -236,7 +236,7 @@ scoreboard players operation speed slot7 += speedBuffSlot7 speedBuffs
 
 
 #Slot 4 Speed Resets
-execute if score slot4 hp matches ..0 run scoreboard players set speed slot4 -1000000
+scoreboard players set speed slot4 -1000000
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -1 run scoreboard players operation speed slot4 = skeleton herospeed
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -2 run scoreboard players operation speed slot4 = demon herospeed
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -3 run scoreboard players operation speed slot4 = healingtotem herospeed
@@ -246,7 +246,7 @@ scoreboard players operation speed slot4 += speedBuffSlot4 speedBuffs
 
 
 #Slot 8 Speed Resets
-execute if score slot8 hp matches ..0 run scoreboard players set speed slot8 -1000000
+scoreboard players set speed slot8 -1000000
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -1 run scoreboard players operation speed slot8 = skeleton herospeed
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -2 run scoreboard players operation speed slot8 = demon herospeed
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -3 run scoreboard players operation speed slot8 = healingtotem herospeed

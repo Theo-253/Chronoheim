@@ -42,12 +42,12 @@ execute if score spellnumber spells matches 6 run scoreboard players set spellbu
 execute if score spellnumber spells matches 6 run function ch:spellphasep1
 
 #Heal
-execute if score spellnumber spells matches 3 run scoreboard players operation spellHeal saves = heal spellStats
-execute if score spellnumber spells matches 3 run scoreboard players operation spellHeal saves += spellbuffsp1 spells
-execute if score spellnumber spells matches 3 run scoreboard players operation slot2 hp += spellHeal saves
-execute if score spellnumber spells matches 3 run function ch:cleanseslot2
-execute if score spellnumber spells matches 3 run scoreboard players set spellbuffsp1 spells 0
-execute if score spellnumber spells matches 3 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 2 run scoreboard players operation spellHeal saves = heal spellStats
+execute if score spellnumber spells matches 2 run scoreboard players operation spellHeal saves += spellbuffsp1 spells
+execute if score spellnumber spells matches 2 run scoreboard players operation slot2 hp += spellHeal saves
+execute if score spellnumber spells matches 2 run function ch:cleanseslot2
+execute if score spellnumber spells matches 2 run scoreboard players set spellbuffsp1 spells 0
+execute if score spellnumber spells matches 2 run scoreboard players set attackIsOngoingGame1 booleans 0
 
 #Magic Missile
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves = magicMissile spellStats
@@ -106,17 +106,17 @@ execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp
 execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
 
 #fireball
-execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves = fireball spellStats
-execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
-execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves += marks slot2
-execute if score spellnumber spells matches 3 run scoreboard players operation spellDmg saves /= atkmultiplier slot2
-execute if score spellnumber spells matches 3 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= spellDmg saves
-execute if score spellnumber spells matches 3 run execute if score ward slot2 matches 0 run scoreboard players operation slot2 hp += shield slot2
-execute if score spellnumber spells matches 3 run execute if score ward slot2 matches 0 if score durationSlot2 burn < fireballDuration spellStats run scoreboard players operation durationSlot2 burn = fireballDuration spellStats
-execute if score spellnumber spells matches 3 run execute if score ward slot2 matches 0 run scoreboard players operation slot2burn burn += fireballBurn spellStats
-execute if score spellnumber spells matches 3 run execute if score ward slot2 matches 1.. run function ch:wardslot2
-execute if score spellnumber spells matches 3 run scoreboard players set spellbuffsp2 spells 0
-execute if score spellnumber spells matches 3 run function ch:spellphasep1
+execute if score spellnumber spells matches 1 run scoreboard players operation spellDmg saves = fireball spellStats
+execute if score spellnumber spells matches 1 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
+execute if score spellnumber spells matches 1 run scoreboard players operation spellDmg saves += marks slot2
+execute if score spellnumber spells matches 1 run scoreboard players operation spellDmg saves /= atkmultiplier slot2
+execute if score spellnumber spells matches 1 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= spellDmg saves
+execute if score spellnumber spells matches 1 run execute if score ward slot2 matches 0 run scoreboard players operation slot2 hp += shield slot2
+execute if score spellnumber spells matches 1 run execute if score ward slot2 matches 0 if score durationSlot2 burn < fireballDuration spellStats run scoreboard players operation durationSlot2 burn = fireballDuration spellStats
+execute if score spellnumber spells matches 1 run execute if score ward slot2 matches 0 run scoreboard players operation slot2burn burn += fireballBurn spellStats
+execute if score spellnumber spells matches 1 run execute if score ward slot2 matches 1.. run function ch:wardslot2
+execute if score spellnumber spells matches 1 run scoreboard players set spellbuffsp2 spells 0
+execute if score spellnumber spells matches 1 run function ch:spellphasep1
 
 #meteor
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves = meteor spellStats

@@ -70,6 +70,14 @@ scoreboard players set ward slot5 0
 scoreboard players set ward slot6 0
 scoreboard players set ward slot7 0
 scoreboard players set ward slot8 0
+scoreboard players set doubleatk slot1 0
+scoreboard players set doubleatk slot2 0
+scoreboard players set doubleatk slot3 0
+scoreboard players set doubleatk slot4 0
+scoreboard players set doubleatk slot5 0
+scoreboard players set doubleatk slot6 0
+scoreboard players set doubleatk slot7 0
+scoreboard players set doubleatk slot8 0
 
 scoreboard players set bones heroattack 140
 scoreboard players set bones herohealth 1000

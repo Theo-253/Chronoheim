@@ -1,3 +1,4 @@
+execute if score attackIsOngoingGame1 booleans matches 0 run execute if score speed slot8 matches ..-10000 if score speed slot7 matches ..-10000 if score speed slot6 matches ..-10000 run execute if score speed slot5 matches ..-10000 run execute if score speed slot4 matches ..-10000 run execute if score speed slot3 matches ..-10000 run execute if score speed slot2 matches ..-10000 run execute if score speed slot1 matches ..-10000 run scoreboard players set attackIsOngoingGame1 booleans 1
 #Slot 1 Speed Reset
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 1 run scoreboard players operation speed slot1 = bones herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 2 run scoreboard players operation speed slot1 = arthur herospeed

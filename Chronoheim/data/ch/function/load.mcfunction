@@ -360,7 +360,7 @@ scoreboard players set embrittleSp spellStats 2
 scoreboard players set evilEye spellStats 20
 scoreboard players set evilEyeCD spellStats 1
 scoreboard players set evilEyeSp spellStats 2
-scoreboard players set firball spellStats 100
+scoreboard players set fireball spellStats 100
 scoreboard players set fireballDuration spellStats 2
 scoreboard players set fireballBurn spellStats 300
 scoreboard players set fireballCD spellStats 3

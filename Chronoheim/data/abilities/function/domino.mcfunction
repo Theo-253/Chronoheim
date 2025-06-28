@@ -1,9 +1,6 @@
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:30,max:30}}}}} run scoreboard players set abilityusep1 booleans 1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:30,max:30}}}}} run scoreboard players set abilityusep2 booleans 1
 
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:30,max:30}}}}} run function ch:abilitygivetargetsp1
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:30,max:30}}}}} run function ch:abilitygivetargetsp2
-
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:30,max:30}}}}} run say used Poison Dart!
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:30,max:30}}}}} run say used Poison Dart!
 
@@ -17,3 +14,6 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 
 scoreboard players set burn burn 1
 scoreboard players set abilitynumber abilities 30
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:30,max:30}}}}} run function ch:abilitygivetargetsp1
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:30,max:30}}}}} run function ch:abilitygivetargetsp2

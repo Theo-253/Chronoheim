@@ -55,10 +55,10 @@ execute if score game1Ongoing ongoinggames matches 1 run execute if score slot7 
 execute if score game1Ongoing ongoinggames matches 1 run execute if score slot8 hp matches ..0 run execute unless score speed slot8 matches -1000000..-900000 run function ch:death8
 
 #When I get elected, we will have so much winning
-execute if score alivep1 deaths matches 0 run function ch:win
 execute if score alivep1 deaths matches 0 run say @a @p[tag=p2] has won the duel against @p[tag=p1]!
-execute if score alivep2 deaths matches 0 run function ch:win
+execute if score alivep1 deaths matches 0 run function ch:win
 execute if score alivep2 deaths matches 0 run say @a @p[tag=p1] has won the duel against @p[tag=p2]!
+execute if score alivep2 deaths matches 0 run function ch:win
 
 #Rapidtick
 execute if score character# slot2 matches 18 if score slot2 hp matches ..400 run scoreboard players operation atk slot2 = grangorLeaderAtk heroattack

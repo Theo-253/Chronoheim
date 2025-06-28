@@ -58,7 +58,7 @@ execute if score abilitynumber abilities matches 7 run execute if score ward slo
 
 
 #Robyn Ability
-execute if score abilitynumber abilities matches 9 if score ward slot8 matches 0 run scoreboard players operation marks slot8 = robyn abilityStats
+execute if score abilitynumber abilities matches 9 if score ward slot8 matches 0 run scoreboard players operation marks slot8 += robyn abilityStats
 execute if score abilitynumber abilities matches 9 if score ward slot8 matches 1 run function ch:wardslot8
 #Robo
 execute if score abilitynumber abilities matches 5 if score durationSlot8 shield < roboDuration abilityStats run scoreboard players operation durationSlot8 shield = roboDuration abilityStats

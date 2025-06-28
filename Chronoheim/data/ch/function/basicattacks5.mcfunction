@@ -20,7 +20,7 @@ execute if score slot3isatk booleans matches 1 run scoreboard players operation 
 execute if score slot3isatk booleans matches 1 run scoreboard players operation shield slot5 -= atk1 saves
 #slot 8
 execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot4
-execute if score slot4isatk booleans matches 1 run scoreboard players operation atk saves += marks slot5
+execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot5
 execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves += slot4 atkmodifiers
 execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot5
 execute if score slot4isatk booleans matches 1 run scoreboard players operation shield slot5 -= atk1 saves

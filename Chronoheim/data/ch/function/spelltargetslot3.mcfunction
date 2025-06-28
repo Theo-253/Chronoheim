@@ -128,16 +128,16 @@ execute if score spellnumber spells matches 7 run scoreboard players operation s
 execute if score spellnumber spells matches 7 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= spellDmg saves
 execute if score spellnumber spells matches 7 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3
 execute if score spellnumber spells matches 7 run execute if score ward slot3 matches 1.. run function ch:wardslot3
-execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves *= atkmultiplier slot3
-execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves -= marks slot3
+execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves = meteor spellStats
+execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves += marks slot2
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves /= atkmultiplier slot2
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves /= meteorSplash spellStats
 execute if score spellnumber spells matches 7 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= spellDmg saves
 execute if score spellnumber spells matches 7 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
 execute if score spellnumber spells matches 7 run execute if score ward slot2 matches 1.. run function ch:wardslot2
-execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves *= atkmultiplier slot2
-execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves -= marks slot2
+execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves = meteor spellStats
+execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves += marks slot4
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves /= atkmultiplier slot4
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves /= meteorSplash spellStats

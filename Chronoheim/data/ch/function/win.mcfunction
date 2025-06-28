@@ -172,7 +172,7 @@ scoreboard players set chainLightningCooldown player1spells 0
 scoreboard players set healCooldown player1spells 0
 scoreboard players set magicMissileCooldown player1spells 0
 scoreboard players set ritualOfBloodCooldown player1spells 0
-scoreboard players set frostBoltCooldown player1spells 0
+scoreboard players set frostboltCooldown player1spells 0
 scoreboard players set shockOrbCooldown player1spells 0
 scoreboard players set meteorCooldown player1spells 0
 scoreboard players set shieldCooldown player1spells 0
@@ -206,7 +206,7 @@ scoreboard players set frostBoltCooldown player2spells 0
 scoreboard players set shockOrbCooldown player2spells 0
 scoreboard players set meteorCooldown player2spells 0
 scoreboard players set shieldCooldown player2spells 0
-scoreboard players set witchBoltCooldown player2spells 0
+scoreboard players set witchboltCooldown player2spells 0
 scoreboard players set swiftnessCooldown player2spells 0
 scoreboard players set embrittleCooldown player2spells 0
 scoreboard players set embiggenCooldown player2spells 0

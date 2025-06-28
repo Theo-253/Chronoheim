@@ -7,7 +7,7 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:3,max:3}}}}} run say used Double Punch!
 
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:3,max:3}}}}} run execute if score slot1isatk booleans matches 1.. run scoreboard players operation cooldown slot1 = deuceCD abilityStats
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:3,max:3}}}}} run execute if score slot2isatk booleans matches 1.. run scoreboard players operation cooldown slot3 = deuceCD abilityStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:3,max:3}}}}} run execute if score slot2isatk booleans matches 1.. run scoreboard players operation cooldown slot2 = deuceCD abilityStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:3,max:3}}}}} run execute if score slot3isatk booleans matches 1.. run scoreboard players operation cooldown slot3 = deuceCD abilityStats
 
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:3,max:3}}}}} run execute if score slot5isatk booleans matches 1.. run scoreboard players operation cooldown slot5 = deuceCD abilityStats

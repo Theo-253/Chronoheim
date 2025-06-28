@@ -1,29 +1,29 @@
 #basic attack functions
 clear @a[tag=p1]
 #slot 1
-execute if score slot1isatk booleans matches 1 run scoreboard players operation atk saves = atk1 slot1
-execute if score slot1isatk booleans matches 1 run scoreboard players operation atk saves += slot1 atkmodifiers
-execute if score slot1isatk booleans matches 1 run scoreboard players operation atk saves += marks slot6
+execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot1
+execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves += slot1 atkmodifiers
+execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot6
 execute if score slot1isatk booleans matches 1 if score character# slot1 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack
 execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot6
 execute if score slot1isatk booleans matches 1 run scoreboard players operation shield slot6 -= atk1 saves
 #slot 2
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot2
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves += slot2 atkmodifiers
-execute if score slot2isatk booleans matches 1 run scoreboard players operation atk saves += marks slot6
+execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot6
 execute if score slot2isatk booleans matches 1 if score character# slot2 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot6
 execute if score slot2isatk booleans matches 1 run scoreboard players operation shield slot6 -= atk1 saves
 #slot 3
 execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot3
-execute if score slot3isatk booleans matches 1 run scoreboard players operation atk saves += marks slot6
+execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot6
 execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves += slot3 atkmodifiers
 execute if score slot3isatk booleans matches 1 if score character# slot3 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack
 execute if score slot3isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot6
 execute if score slot3isatk booleans matches 1 run scoreboard players operation shield slot6 -= atk1 saves
 #slot 4
 execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot4
-execute if score slot4isatk booleans matches 1 run scoreboard players operation atk saves += marks slot6
+execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot6
 execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves += slot4 atkmodifiers
 execute if score slot4isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot6
 execute if score slot4isatk booleans matches 1 run scoreboard players operation shield slot6 -= atk1 saves

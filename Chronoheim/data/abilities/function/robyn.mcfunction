@@ -1,9 +1,6 @@
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run scoreboard players set abilityusep1 booleans 1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run scoreboard players set abilityusep2 booleans 1
 
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run function ch:abilitygivetargetsp1
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run function ch:abilitygivetargetsp2
-
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run say used Most Wanted!
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run say used Most Wanted!
 
@@ -16,3 +13,5 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run execute if score slot7isatk booleans matches 1.. run scoreboard players operation cooldown slot7 = robynCD abilityStats
 scoreboard players set burn burn 1
 scoreboard players set abilitynumber abilities 9
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run function ch:abilitygivetargetsp1
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:9,max:9}}}}} run function ch:abilitygivetargetsp2

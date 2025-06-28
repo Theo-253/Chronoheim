@@ -1,6 +1,3 @@
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run function ch:abilitygivetargetsp2
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run function ch:abilitygivetargetsp1
-
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run say used Healing Totem!
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run say used Healing Totem!
 

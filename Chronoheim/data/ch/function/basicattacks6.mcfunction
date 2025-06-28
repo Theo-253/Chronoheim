@@ -1,7 +1,7 @@
 #basic attack functions
 clear @a[tag=p1]
 #slot 1
-execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves = atk1 slot1
+execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot1
 execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves += slot1 atkmodifiers
 execute if score slot1isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot6
 execute if score slot1isatk booleans matches 1 if score character# slot1 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack

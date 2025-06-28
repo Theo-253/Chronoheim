@@ -439,7 +439,7 @@ scoreboard players set swiftnessSp spellStats 1
 scoreboard players set wardCD spellStats 1
 scoreboard players set wardSp spellStats 3
 scoreboard players set witchbolt spellStats 200
-scoreboard players set witchboltCD spellStats 2
+scoreboard players set witchBoltCD spellStats 2
 scoreboard players set witchboltSp spellStats 2
 scoreboard players set witchesBrewCD spellStats 5
 scoreboard players set witchesBrewSp spellStats 4

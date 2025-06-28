@@ -75,9 +75,9 @@ execute if score spellnumber spells matches 8 run scoreboard players operation s
 execute if score spellnumber spells matches 8 run scoreboard players set attackIsOngoingGame1 booleans 0
 
 #Ball Lightning
-execute if score spellnumber spells matches 8 if score ward slot4 matches 0 run scoreboard players operation slot4 stun += shockOrb spellStats
-execute if score spellnumber spells matches 8 if score ward slot4 matches 1.. run function ch:wardslot4
-execute if score spellnumber spells matches 8 run function ch:spellphasep1
+execute if score spellnumber spells matches 9 if score ward slot4 matches 0 run scoreboard players operation slot4 stun += shockOrb spellStats
+execute if score spellnumber spells matches 9 if score ward slot4 matches 1.. run function ch:wardslot4
+execute if score spellnumber spells matches 9 run function ch:spellphasep1
 
 #Witches Brew
 execute if score spellnumber spells matches 23 run execute if score ward slot4 matches 0 if score witchesBrewDuration spellStats > durationSlot4 speedDebuffs run scoreboard players operation durationSlot4 speedDebuffs = witchesBrewDuration spellStats

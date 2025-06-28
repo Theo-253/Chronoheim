@@ -48,3 +48,4 @@ execute if score ward slot3 matches 3 run execute if score slot8isatk booleans m
 execute if score ward slot3 matches 3 run execute if score slot8isatk booleans matches 1 run scoreboard players operation shield slot8 -= abilityDmg saves
 execute if score ward slot3 matches 3 run execute if score slot8isatk booleans matches 1 if score shield slot8 matches ..0 run scoreboard players operation slot8 hp += shield slot8 
 execute if score ward slot3 matches 3 run execute if score slot8isatk booleans matches 1 if score shield slot8 matches ..0 run scoreboard players set shield slot8 0
+function ch:turnend

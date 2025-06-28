@@ -57,3 +57,4 @@ execute if score ward slot1 matches 2 run execute if score slot5isatk booleans m
 execute if score ward slot1 matches 2 run execute if score slot6isatk booleans matches 1 run scoreboard players set slot6 stun 1
 execute if score ward slot1 matches 2 run execute if score slot7isatk booleans matches 1 run scoreboard players set slot7 stun 1
 execute if score ward slot1 matches 2 run execute if score slot8isatk booleans matches 1 run scoreboard players set slot8 stun 1
+function ch:turnend

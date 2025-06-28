@@ -144,7 +144,7 @@ execute if score spellnumber spells matches 10 run scoreboard players operation 
 execute if score spellnumber spells matches 10 run scoreboard players operation spellDmg saves += marks slot4
 execute if score spellnumber spells matches 10 run scoreboard players operation spellDmg saves /= atkmultiplier slot4
 execute if score spellnumber spells matches 10 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= spellDmg saves
-execute if score spellnumber spells matches 10 run execute if score ward slot4 matches 0 run scoreboard players operation slot4 hp += shield slot4
+execute if score spellnumber spells matches 10 run execute if score ward slot4 matches 0 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
 execute if score spellnumber spells matches 10 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 10 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 10 run function ch:spellphasep1

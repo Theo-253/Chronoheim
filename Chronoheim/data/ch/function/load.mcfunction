@@ -252,6 +252,7 @@ scoreboard players set doc heroattack 60
 scoreboard players set doc herohealth 920
 scoreboard players set doc herospeed 900
 scoreboard players set docLeaderRegen abilityStats 20
+scoreboard players set docRegen abilityStats 60
 scoreboard players set docDuration abilityStats 3
 scoreboard players set docCD abilityStats 3
 scoreboard players set docLeader heroattack 20

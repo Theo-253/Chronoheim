@@ -6,6 +6,6 @@ execute if score character# slot5 matches 28 run scoreboard players set cooldown
 execute if score character# slot6 matches 28 run scoreboard players set cooldown slot6 0
 execute if score character# slot7 matches 28 run scoreboard players set cooldown slot7 0
 execute unless score character# slot8 matches 0 if score slot8 hp matches ..0 run scoreboard players set speed slot8 -1000000
-
+scoreboard players set durationSlot8 taunt 0
 execute unless score character# slot8 matches 0 run w @p[tag=p1] Slot 8 has died!
 execute unless score character# slot8 matches 0 run w @p[tag=p2] Slot 8 has died!

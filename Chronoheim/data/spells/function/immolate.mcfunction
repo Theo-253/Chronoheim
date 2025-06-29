@@ -13,8 +13,8 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} if score ward slot8 matches 1.. run function ch:wardslot8
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run say used Immolate!
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run scoreboard players set attackIsOngoingGame1 booleans 0
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run effect clear @a[tag=p1] infested
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run clear @a[tag=p1]
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run effect clear @a[tag=p1] infested
 
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} if score ward slot1 matches 0 if score immolateDuration spellStats > durationSlot1 burn run scoreboard players operation durationSlot1 burn = immolateDuration spellStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} if score ward slot2 matches 0 if score immolateDuration spellStats > durationSlot2 burn run scoreboard players operation durationSlot2 burn = immolateDuration spellStats
@@ -30,6 +30,6 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} if score ward slot3 matches 1.. run function ch:wardslot3
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} if score ward slot4 matches 1.. run function ch:wardslot4
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run say used Immolate!
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run scoreboard players set attackIsOngoingGame1 booleans 0
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run effect clear @a[tag=p2] infested
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run function ch:spellphasep1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run clear @a[tag=p2]
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:14,max:14}}}}} run effect clear @a[tag=p2] infested

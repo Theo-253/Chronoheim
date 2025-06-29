@@ -86,6 +86,15 @@ scoreboard players set useddoubleatk slot5 0
 scoreboard players set useddoubleatk slot6 0
 scoreboard players set useddoubleatk slot7 0
 scoreboard players set useddoubleatk slot8 0
+scoreboard players set durationSlot1 taunt 0
+scoreboard players set durationSlot2 taunt 0
+scoreboard players set durationSlot3 taunt 0
+scoreboard players set durationSlot4 taunt 0
+scoreboard players set durationSlot5 taunt 0
+scoreboard players set durationSlot6 taunt 0
+scoreboard players set durationSlot7 taunt 0
+scoreboard players set durationSlot8 taunt 0
+
 
 scoreboard players set bones heroattack 140
 scoreboard players set bones herohealth 1000

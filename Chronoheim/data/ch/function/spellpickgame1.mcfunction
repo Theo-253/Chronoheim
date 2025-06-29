@@ -400,7 +400,7 @@ execute if score Spell_Points_P1 Spell_Points < fontOfWisdomSp spellStats run ex
 execute if score Spell_Points_P1 Spell_Points >= fontOfWisdomSp spellStats run execute as @a[tag=p1,tag=fontofwisdomO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:24,max:24}}}}} run scoreboard players operation Spell_Points_P1 Spell_Points -= fontOfWisdomSp spellStats
 execute if score Spell_Points_P1 Spell_Points >= fontOfWisdomSp spellStats run execute as @a[tag=p1,tag=fontofwisdomO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:24,max:24}}}}} run effect clear @a[tag=p1] water_breathing
 
-execute as @a[tag=!O] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:24,max:24}}}}} run say Sorry, you don't own this spell
+execute as @a[tag=!fontofwisdomO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:24,max:24}}}}} run say Sorry, you don't own this spell
 
 #Font of Wisdom Select P2
 execute if score Spell_Points_P2 Spell_Points >= fontOfWisdomSp spellStats run execute as @a[tag=p2,tag=fontofwisdomO] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:24,max:24}}}}} run tag @p[tag=p2] add fontofwisdom

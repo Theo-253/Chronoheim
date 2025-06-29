@@ -32,14 +32,14 @@ execute if score slot7isatk booleans matches 1 run execute if score durationSlot
 execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 poison matches 1.. run scoreboard players remove durationSlot8 poison 1
 
 #Burn Damage
-execute if score burn burn matches 1 run execute if score slot1isatk booleans matches 1 run scoreboard players operation slot1 hp -= slot1Burn burn
-execute if score burn burn matches 1 run execute if score slot2isatk booleans matches 1 run scoreboard players operation slot2 hp -= slot2Burn burn
-execute if score burn burn matches 1 run execute if score slot3isatk booleans matches 1 run scoreboard players operation slot3 hp -= slot3Burn burn
-execute if score burn burn matches 1 run execute if score slot4isatk booleans matches 1 run scoreboard players operation slot4 hp -= slot4Burn burn
-execute if score burn burn matches 1 run execute if score slot5isatk booleans matches 1 run scoreboard players operation slot5 hp -= slot5Burn burn
-execute if score burn burn matches 1 run execute if score slot6isatk booleans matches 1 run scoreboard players operation slot6 hp -= slot6Burn burn
-execute if score burn burn matches 1 run execute if score slot7isatk booleans matches 1 run scoreboard players operation slot7 hp -= slot7Burn burn
-execute if score burn burn matches 1 run execute if score slot8isatk booleans matches 1 run scoreboard players operation slot8 hp -= slot8Burn burn
+execute if score burn burn matches 1 if score slot1isatk booleans matches 1 run scoreboard players operation slot1 hp -= slot1Burn burn
+execute if score burn burn matches 1 if score slot2isatk booleans matches 1 run scoreboard players operation slot2 hp -= slot2Burn burn
+execute if score burn burn matches 1 if score slot3isatk booleans matches 1 run scoreboard players operation slot3 hp -= slot3Burn burn
+execute if score burn burn matches 1 if score slot4isatk booleans matches 1 run scoreboard players operation slot4 hp -= slot4Burn burn
+execute if score burn burn matches 1 if score slot5isatk booleans matches 1 run scoreboard players operation slot5 hp -= slot5Burn burn
+execute if score burn burn matches 1 if score slot6isatk booleans matches 1 run scoreboard players operation slot6 hp -= slot6Burn burn
+execute if score burn burn matches 1 if score slot7isatk booleans matches 1 run scoreboard players operation slot7 hp -= slot7Burn burn
+execute if score burn burn matches 1 if score slot8isatk booleans matches 1 run scoreboard players operation slot8 hp -= slot8Burn burn
 
 #Burn Duration
 scoreboard players set burn burn 0

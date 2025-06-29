@@ -1,12 +1,12 @@
 #Spell Point Giver
-execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches ..-1 run scoreboard players set Spell_Points_P1 Spell_Points 7
-execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches ..-1 run scoreboard players set Spell_Points_P2 Spell_Points 7
-execute if score character# slot1 matches 17 run scoreboard players operation Spell_Points_P1 Spell_Points += grimoireSpellPoints abilityStats
-execute if score character# slot2 matches 17 run scoreboard players operation Spell_Points_P1 Spell_Points += grimoireLeaderSpellPoints abilityStats
-execute if score character# slot3 matches 17 run scoreboard players operation Spell_Points_P1 Spell_Points += grimoireSpellPoints abilityStats
-execute if score character# slot5 matches 17 run scoreboard players operation Spell_Points_P2 Spell_Points += grimoireSpellPoints abilityStats
-execute if score character# slot6 matches 17 run scoreboard players operation Spell_Points_P2 Spell_Points += grimoireLeaderSpellPoints abilityStats
-execute if score character# slot7 matches 17 run scoreboard players operation Spell_Points_P2 Spell_Points += grimoireSpellPoints abilityStats
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches -1 run scoreboard players set Spell_Points_P1 Spell_Points 7
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -1 run scoreboard players set Spell_Points_P2 Spell_Points 7
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -2 run scoreboard players set Spell_Points_P2 Spell_Points 9
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -3 run scoreboard players set Spell_Points_P2 Spell_Points 11
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches -2 run scoreboard players set Spell_Points_P2 Spell_Points 9
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches -3 run scoreboard players set Spell_Points_P2 Spell_Points 11
+
+
 
 #Fireball Select P1
 execute if score Spell_Points_P1 Spell_Points >= fireballSp spellStats run execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:1,max:1}}}}} run tag @p[tag=p1] add fireball

@@ -1,9 +1,6 @@
 #Spell Point Giver
-execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches ..-1 run scoreboard players set Spell_Points_P1 Spell_Points 7
-execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches ..-1 run scoreboard players set Spell_Points_P2 Spell_Points 7
-execute if score character# slot1 matches 17 run scoreboard players operation Spell_Points_P1 Spell_Points += grimoireSpellPoints abilityStats
-execute if score character# slot2 matches 17 run scoreboard players operation Spell_Points_P1 Spell_Points += grimoireLeaderSpellPoints abilityStats
-execute if score character# slot3 matches 17 run scoreboard players operation Spell_Points_P1 Spell_Points += grimoireSpellPoints abilityStats
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches ..-1 run scoreboard players add Spell_Points_P1 Spell_Points 8
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches ..-1 run scoreboard players add Spell_Points_P2 Spell_Points 8
 execute if score character# slot5 matches 17 run scoreboard players operation Spell_Points_P2 Spell_Points += grimoireSpellPoints abilityStats
 execute if score character# slot6 matches 17 run scoreboard players operation Spell_Points_P2 Spell_Points += grimoireLeaderSpellPoints abilityStats
 execute if score character# slot7 matches 17 run scoreboard players operation Spell_Points_P2 Spell_Points += grimoireSpellPoints abilityStats

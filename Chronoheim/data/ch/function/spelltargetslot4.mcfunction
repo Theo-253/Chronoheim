@@ -58,7 +58,7 @@ execute if score spellnumber spells matches 4 run scoreboard players operation s
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= spellDmg saves
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 0 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 1.. run function ch:wardslot4
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run function ch:spellgivetargetsp2
+execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run function ch:spellgivetargetsp2
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run clear @a[tag=p2] target
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run function ch:spellphasep1

@@ -246,8 +246,8 @@ scoreboard players set healingTotemCooldown player2spells 0
 scoreboard players set Spell_Points_P1 Spell_Points -1
 scoreboard players set Spell_Points_P2 Spell_Points -1
 scoreboard players set suddenDeath deaths 0
-scoreboard players set side1spinball abilities 0
-scoreboard players set side2spinball abilities 0
+scoreboard players set side1spinball abilities -1
+scoreboard players set side2spinball abilities -1
 
 
 

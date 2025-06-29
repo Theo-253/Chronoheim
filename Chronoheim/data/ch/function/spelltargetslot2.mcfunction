@@ -87,8 +87,8 @@ execute if score spellnumber spells matches 23 run execute if score ward slot2 m
 execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 0 if score witchesBrewDuration spellStats > durationSlot2 burn run scoreboard players operation durationSlot2 burn = witchesBrewDuration spellStats
 execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 0 run scoreboard players operation speedDebuffSlot2 speedDebuffs += witchesBrewSpDebuff spellStats
 execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 0 run scoreboard players operation attackDebuffSlot2 atkmodifiers += witchesBrewDmgDebuff spellStats
-execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 0 run scoreboard players operation slot2Poison atkmodifiers += witchesBrew spellStats
-execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 0 run scoreboard players operation slot2Burn atkmodifiers += witchesBrewBurn spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 0 run scoreboard players operation slot2Poison poison += witchesBrew spellStats
+execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 0 run scoreboard players operation slot2Burn burn += witchesBrewBurn spellStats
 execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 0 run scoreboard players operation speed slot2 -= witchesBrewSpDebuff spellStats
 execute if score spellnumber spells matches 23 run execute if score ward slot2 matches 1.. run function ch:wardslot2
 execute if score spellnumber spells matches 23 run function ch:spellphasep1

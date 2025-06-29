@@ -226,16 +226,6 @@ execute if score slot6isatk booleans matches 1 run execute if score invincibleSl
 execute if score slot7isatk booleans matches 1 run execute if score invincibleSlot7 booleaneffects matches 1.. run scoreboard players remove invincibleSlot7 booleaneffects 1
 execute if score slot8isatk booleans matches 1 run execute if score invincibleSlot8 booleaneffects matches 1.. run scoreboard players remove invincibleSlot8 booleaneffects 1
 
-#Double Target
-#execute if score slot5isatk booleans matches 1 run execute if score doubleatk slot1 matches 1 run execute if score useddoubleatk slot1 matches 1 run function ch:turnend
-#execute if score slot6isatk booleans matches 1 run execute if score doubleatk slot2 matches 1 run execute if score useddoubleatk slot2 matches 1 run function ch:turnend
-#execute if score slot7isatk booleans matches 1 run execute if score doubleatk slot3 matches 1 run execute if score useddoubleatk slot3 matches 1 run function ch:turnend
-#execute if score slot8isatk booleans matches 1 run execute if score doubleatk slot4 matches 1 run execute if score useddoubleatk slot4 matches 1 run function ch:turnend
-#execute if score slot5isatk booleans matches 1 run execute if score doubleatk slot5 matches 1 run execute if score useddoubleatk slot5 matches 1 run function ch:turnend
-#execute if score slot6isatk booleans matches 1 run execute if score doubleatk slot6 matches 1 run execute if score useddoubleatk slot6 matches 1 run function ch:turnend
-#execute if score slot7isatk booleans matches 1 run execute if score doubleatk slot7 matches 1 run execute if score useddoubleatk slot7 matches 1 run function ch:turnend
-#execute if score slot8isatk booleans matches 1 run execute if score doubleatk slot8 matches 1 run execute if score useddoubleatk slot8 matches 1 run function ch:turnend
-
 #Ward Duration
 execute if score slot1isatk booleans matches 1 run execute if score durationSlot1 wards matches 1.. run scoreboard players remove durationSlot1 wards 1
 execute if score slot2isatk booleans matches 1 run execute if score durationSlot2 wards matches 1.. run scoreboard players remove durationSlot2 wards 1

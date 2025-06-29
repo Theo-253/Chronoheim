@@ -171,7 +171,7 @@ scoreboard players set flint herosplash 1
 scoreboard players set flint herohealth 1000
 scoreboard players set flint herospeed 1000
 scoreboard players set flintCD abilityStats 2
-scoreboard players set flintLeaderBonus abilityStats 120
+scoreboard players set flintLeader abilityStats 120
 
 scoreboard players set ace heroattack 120
 scoreboard players set ace herohealth 840

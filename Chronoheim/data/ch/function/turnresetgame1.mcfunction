@@ -268,6 +268,17 @@ execute if score slot8 hp matches 1.. run execute if score character# slot8 matc
 scoreboard players operation speed slot8 -= speedDebuffSlot8 speedDebuffs
 scoreboard players operation speed slot8 += speedBuffSlot8 speedBuffs
 
+#Double atk resets
+scoreboard players set useddoubleatk slot1 0
+scoreboard players set useddoubleatk slot2 0
+scoreboard players set useddoubleatk slot3 0
+scoreboard players set useddoubleatk slot4 0
+scoreboard players set useddoubleatk slot5 0
+scoreboard players set useddoubleatk slot6 0
+scoreboard players set useddoubleatk slot7 0
+scoreboard players set useddoubleatk slot8 0
+
+
 
 #Misc
 scoreboard players set flintatkswap booleans 0

@@ -153,13 +153,13 @@ execute if score slot2isatk booleans matches 1 run execute if score doubleatk sl
 execute if score slot3isatk booleans matches 1 run execute if score doubleatk slot3 matches 1 run execute if score useddoubleatk slot3 matches 1 run function ch:turnend
 execute if score slot4isatk booleans matches 1 run execute if score doubleatk slot4 matches 1 run execute if score useddoubleatk slot4 matches 1 run function ch:turnend
 #double target (1st hit)
-execute if score slot1isatk booleans matches 1 run execute if score doubleatk slot1 matches 1 run execute if score useddoubleatk slot1 matches 0 run function ch:basicattackstartp2
+execute if score slot1isatk booleans matches 1 run execute if score doubleatk slot1 matches 1 run execute if score useddoubleatk slot1 matches 0 run function ch:basicattackstartp1
 execute if score slot1isatk booleans matches 1 run execute if score doubleatk slot1 matches 1 run execute if score useddoubleatk slot1 matches 0 run scoreboard players set useddoubleatk slot1 1
-execute if score slot2isatk booleans matches 1 run execute if score doubleatk slot2 matches 1 run execute if score useddoubleatk slot2 matches 0 run function ch:basicattackstartp2
+execute if score slot2isatk booleans matches 1 run execute if score doubleatk slot2 matches 1 run execute if score useddoubleatk slot2 matches 0 run function ch:basicattackstartp1
 execute if score slot2isatk booleans matches 1 run execute if score doubleatk slot2 matches 1 run execute if score useddoubleatk slot2 matches 0 run scoreboard players set useddoubleatk slot2 1
-execute if score slot3isatk booleans matches 1 run execute if score doubleatk slot3 matches 1 run execute if score useddoubleatk slot3 matches 0 run function ch:basicattackstartp2
+execute if score slot3isatk booleans matches 1 run execute if score doubleatk slot3 matches 1 run execute if score useddoubleatk slot3 matches 0 run function ch:basicattackstartp1
 execute if score slot3isatk booleans matches 1 run execute if score doubleatk slot3 matches 1 run execute if score useddoubleatk slot3 matches 0 run scoreboard players set useddoubleatk slot3 1
-execute if score slot4isatk booleans matches 1 run execute if score doubleatk slot4 matches 1 run execute if score useddoubleatk slot4 matches 0 run function ch:basicattackstartp2
+execute if score slot4isatk booleans matches 1 run execute if score doubleatk slot4 matches 1 run execute if score useddoubleatk slot4 matches 0 run function ch:basicattackstartp1
 execute if score slot4isatk booleans matches 1 run execute if score doubleatk slot4 matches 1 run execute if score useddoubleatk slot4 matches 0 run scoreboard players set useddoubleatk slot4 1
 
 

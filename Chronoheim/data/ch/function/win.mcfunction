@@ -229,7 +229,7 @@ scoreboard players set chronoWarpCooldown player2spells 0
 scoreboard players set healingTotemCooldown player2spells 0
 scoreboard players set Spell_Points_P1 Spell_Points -1
 scoreboard players set Spell_Points_P2 Spell_Points -1
-
+scoreboard players set suddenDeath deaths 0
 
 
 

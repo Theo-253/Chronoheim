@@ -50,6 +50,7 @@ execute if score spellnumber spells matches 2 run scoreboard players set spellbu
 execute if score spellnumber spells matches 2 run function ch:spellphasep1
 
 #Magic Missile
+execute if score spellnumber spells matches 4 run scoreboard players add magicMissilex2 spells 1
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves = magicMissile spellStats
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp1 spells
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += marks slot7
@@ -58,10 +59,9 @@ execute if score spellnumber spells matches 4 run execute if score ward slot7 ma
 execute if score spellnumber spells matches 4 run execute if score ward slot7 matches 0 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
 execute if score spellnumber spells matches 4 run execute if score ward slot7 matches 1.. run function ch:wardslot7
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run function ch:spellgivetargetsp1
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 0 run scoreboard players set magicMissilex2 spells 1
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run scoreboard players set spellbuffsp1 spells 0
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run scoreboard players set attackIsOngoingGame1 booleans 0
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run scoreboard players set magicMissilex2 spells 0
+execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set spellbuffsp1 spells 0
+execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set magicMissilex2 spells 0
 
 #Protector's Rune
 execute if score spellnumber spells matches 16 if score protectorsrune spellStats > durationSlot7 taunt run scoreboard players operation durationSlot7 taunt = protectorsrune spellStats

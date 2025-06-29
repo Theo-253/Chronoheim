@@ -5,6 +5,7 @@
  execute if score character# slot5 matches 28 run scoreboard players set cooldown slot5 0
  execute if score character# slot6 matches 28 run scoreboard players set cooldown slot6 0
  execute if score character# slot7 matches 28 run scoreboard players set cooldown slot7 0
+ scoreboard players set durationSlot3 taunt 0
 execute if score slot3 hp matches ..0 run scoreboard players set speed slot3 -1000000
 w @p[tag=p1] Slot 3 has died!
 w @p[tag=p2] Slot 3 has died!

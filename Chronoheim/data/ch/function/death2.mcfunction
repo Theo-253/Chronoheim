@@ -5,6 +5,7 @@ execute if score character# slot3 matches 28 run scoreboard players set cooldown
 execute if score character# slot5 matches 28 run scoreboard players set cooldown slot5 0
 execute if score character# slot6 matches 28 run scoreboard players set cooldown slot6 0
 execute if score character# slot7 matches 28 run scoreboard players set cooldown slot7 0
+scoreboard players set durationSlot2 taunt 0
 execute if score slot2 hp matches ..0 run scoreboard players set speed slot2 -1000000
 
 #Character Specific Crap

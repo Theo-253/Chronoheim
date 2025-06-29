@@ -908,12 +908,12 @@ execute if score character# slot22 matches -5 run execute if score slot22 hp > s
 execute if score character# slot23 matches -5 run execute if score slot23 hp > skeletonplus herohealth run scoreboard players operation slot23 hp = skeletonplus herohealth
 execute if score character# slot24 matches -5 run execute if score slot24 hp > skeletonplus herohealth run scoreboard players operation slot24 hp = skeletonplus herohealth
 
-execute if score character# slot4 matches 0 run scoreboard players reset slot4 hp
-execute if score character# slot8 matches 0 run scoreboard players reset slot8 hp
-execute if score character# slot12 matches 0 run scoreboard players reset slot12 hp
-execute if score character# slot16 matches 0 run scoreboard players reset slot16 hp
-execute if score character# slot20 matches 0 run scoreboard players reset slot20 hp
-execute if score character# slot24 matches 0 run scoreboard players reset slot24 hp
+execute if score slot4 hp matches ..0 if score character# slot4 matches 0 run scoreboard players reset slot4 hp
+execute if score slot8 hp matches ..0 if score character# slot8 matches 0 run scoreboard players reset slot8 hp
+execute if score slot12 hp matches ..0 if score character# slot12 matches 0 run scoreboard players reset slot12 hp
+execute if score slot16 hp matches ..0 if score character# slot16 matches 0 run scoreboard players reset slot16 hp
+execute if score slot20 hp matches ..0 if score character# slot20 matches 0 run scoreboard players reset slot20 hp
+execute if score slot24 hp matches ..0 if score character# slot24 matches 0 run scoreboard players reset slot24 hp
 
 
 

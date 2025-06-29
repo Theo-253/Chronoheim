@@ -390,7 +390,7 @@ scoreboard players set immolateburn spellStats 100
 scoreboard players set immolateDuration spellStats 3
 scoreboard players set immolateCD spellStats 4
 scoreboard players set immolateSp spellStats 2
-scoreboard players set magicMissile spellStats 80
+scoreboard players set magicMissile spellStats 40
 scoreboard players set magicMissileSp spellStats 1
 scoreboard players set magicMissileCD spellStats 0
 scoreboard players set meteorCD spellStats 4

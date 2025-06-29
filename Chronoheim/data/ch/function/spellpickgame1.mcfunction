@@ -1,6 +1,6 @@
 #Spell Point Giver
-execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches ..-1 run scoreboard players set Spell_Points_P1 Spell_Points 7
-execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches ..-1 run scoreboard players set Spell_Points_P2 Spell_Points 7
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches -1 run scoreboard players set Spell_Points_P1 Spell_Points 7
+execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -1 run scoreboard players set Spell_Points_P2 Spell_Points 7
 execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -2 run scoreboard players set Spell_Points_P2 Spell_Points 9
 execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -3 run scoreboard players set Spell_Points_P2 Spell_Points 11
 execute if score character# slot6 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches -2 run scoreboard players set Spell_Points_P2 Spell_Points 9

@@ -132,7 +132,7 @@ scoreboard players set kongSpDebuffDuration abilityStats 1
 scoreboard players set kongDmgDebuff abilityStats 40
 scoreboard players set kongDmgDebuffDuration abilityStats 1
 scoreboard players set kongLeaderSpDebuff abilityStats 500
-scoreboard players set kongLeaderDmgDebuff abilityStats 60
+scoreboard players set kongLeaderDmgDebuff abilityStats 20
 
 scoreboard players set kirin heroattack 60
 scoreboard players set kirin herohealth 1000

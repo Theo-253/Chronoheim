@@ -183,6 +183,14 @@ scoreboard players set lifesteal slot5 0
 scoreboard players set lifesteal slot6 0
 scoreboard players set lifesteal slot7 0
 scoreboard players set lifesteal slot8 0
+scoreboard players set invincibleSlot1 booleaneffects 0
+scoreboard players set invincibleSlot2 booleaneffects 0
+scoreboard players set invincibleSlot3 booleaneffects 0
+scoreboard players set invincibleSlot4 booleaneffects 0
+scoreboard players set invincibleSlot5 booleaneffects 0
+scoreboard players set invincibleSlot6 booleaneffects 0
+scoreboard players set invincibleSlot7 booleaneffects 0
+scoreboard players set invincibleSlot8 booleaneffects 0
 scoreboard players set fireballCooldown player1spells 0
 scoreboard players set chainLightningCooldown player1spells 0
 scoreboard players set healCooldown player1spells 0

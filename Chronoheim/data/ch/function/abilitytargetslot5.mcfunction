@@ -20,16 +20,16 @@ execute if score abilitynumber abilities matches 24 if score slot5 hp matches 1.
 execute if score abilitynumber abilities matches 24 if score slot5 hp matches 1.. run scoreboard players set ward slot5 2
 
 #Juniper Ability
-execute if score abilitynumber abilities matches 24 run scoreboard players operation abilityDmg saves = juniper abilityStats
-execute if score abilitynumber abilities matches 24 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
-execute if score abilitynumber abilities matches 24 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 atkmodifiers
-execute if score abilitynumber abilities matches 24 if score slot3isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot3 atkmodifiers
-execute if score abilitynumber abilities matches 24 run scoreboard players operation abilityDmg saves += marks slot5
-execute if score abilitynumber abilities matches 24 run scoreboard players operation abilityDmg saves /= atkmultiplier slot5
-execute if score abilitynumber abilities matches 24 run execute if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= abilityDmg saves
-execute if score abilitynumber abilities matches 24 run execute if score ward slot5 matches 0 run scoreboard players operation slot5 stun = juniperStun abilityStats
-execute if score abilitynumber abilities matches 24 run execute if score ward slot5 matches 0 if score shield slot5 matches ..0 run scoreboard players operation slot5 hp += shield slot5
-execute if score abilitynumber abilities matches 24 run execute if score ward slot5 matches 1.. run function ch:wardslot5
+execute if score abilitynumber abilities matches 27 run scoreboard players operation abilityDmg saves = juniper abilityStats
+execute if score abilitynumber abilities matches 27 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
+execute if score abilitynumber abilities matches 27 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 atkmodifiers
+execute if score abilitynumber abilities matches 27 if score slot3isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot3 atkmodifiers
+execute if score abilitynumber abilities matches 27 run scoreboard players operation abilityDmg saves += marks slot5
+execute if score abilitynumber abilities matches 27 run scoreboard players operation abilityDmg saves /= atkmultiplier slot5
+execute if score abilitynumber abilities matches 27 run execute if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= abilityDmg saves
+execute if score abilitynumber abilities matches 27 run execute if score ward slot5 matches 0 run scoreboard players operation slot5 stun = juniperStun abilityStats
+execute if score abilitynumber abilities matches 27 run execute if score ward slot5 matches 0 if score shield slot5 matches ..0 run scoreboard players operation slot5 hp += shield slot5
+execute if score abilitynumber abilities matches 27 run execute if score ward slot5 matches 1.. run function ch:wardslot5
 
 #Juniper Basic
 execute if score abilitynumber abilities matches -2 run execute if score slot5bleeding booleaneffects matches 0 run scoreboard players operation slot5 hp += juniper heroattack

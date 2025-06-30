@@ -69,6 +69,6 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run execute if score slot5 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run execute if score slot5 hp matches ..0 run function ch:cleanseslot5
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run execute if score slot5 hp matches ..0 run scoreboard players operation slot5 hp = healingTotemHP spellStats
-
+clear @a[tag=game1]
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run scoreboard players set attackIsOngoingGame1 booleans 0
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:30,max:30}}}}} run function ch:spellphasep1

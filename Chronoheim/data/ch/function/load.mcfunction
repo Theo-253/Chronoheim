@@ -95,6 +95,14 @@ scoreboard players set durationSlot6 taunt 0
 scoreboard players set durationSlot7 taunt 0
 scoreboard players set durationSlot8 taunt 0
 
+scoreboard players set invincibleSlot1 booleaneffects 0
+scoreboard players set invincibleSlot2 booleaneffects 0
+scoreboard players set invincibleSlot3 booleaneffects 0
+scoreboard players set invincibleSlot4 booleaneffects 0
+scoreboard players set invincibleSlot5 booleaneffects 0
+scoreboard players set invincibleSlot6 booleaneffects 0
+scoreboard players set invincibleSlot7 booleaneffects 0
+scoreboard players set invincibleSlot8 booleaneffects 0
 
 scoreboard players set bones heroattack 140
 scoreboard players set bones herohealth 1000

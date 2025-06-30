@@ -91,8 +91,8 @@ execute if score abilitynumber abilities matches 22 if score slot6isatk booleans
 execute if score abilitynumber abilities matches 22 run execute if score ward slot2 matches 1.. run function ch:wardslot2
 #Gatsby
 execute if score abilitynumber abilities matches 23 if score ward slot2 matches 0 run scoreboard players operation slot2 stun = gatsbyDuration abilityStats
-execute if score abilitynumber abilities matches 23 if score ward slot2 matches 0 run scoreboard players operation invincibleSlot2 booleaneffects = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot2 matches 0 run scoreboard players operation savehp2 saves = slot2 hp
+execute if score abilitynumber abilities matches 23 if score ward slot2 matches 0 run scoreboard players operation invincibleSlot2 booleaneffects = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score durationSlot2-5 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot2-5 fear = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score durationSlot2-6 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot2-6 fear = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score durationSlot2-7 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot2-7 fear = gatsbyDuration abilityStats

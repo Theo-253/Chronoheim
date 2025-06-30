@@ -295,6 +295,7 @@ scoreboard players set gatsbyLeader abilityStats 60
 scoreboard players set garabaldi heroattack 120
 scoreboard players set garabaldi herohealth 800
 scoreboard players set garabaldi herospeed 1200
+scoreboard players set garabaldi herosplash 4
 scoreboard players set garabaldiHeal abilityStats 140
 scoreboard players set garabaldiCD abilityStats 3
 scoreboard players set garabaldiLeader abilityStats 60

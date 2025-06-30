@@ -340,7 +340,7 @@ scoreboard players set domino herohealth 960
 scoreboard players set domino herospeed 1200
 scoreboard players set domino abilityStats 160
 scoreboard players set dominoDuration abilityStats 3
-scoreboard players set dominoLeaderPoison abilityStats 80
+scoreboard players set dominoPoisonLeader abilityStats 80
 scoreboard players set dominoPoison abilityStats 40
 scoreboard players set dominoLeader abilityStats 140
 scoreboard players set dominoLeaderHit heroattack 100

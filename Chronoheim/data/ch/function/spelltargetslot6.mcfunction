@@ -174,7 +174,7 @@ execute if score spellnumber spells matches 22 run function ch:spellphasep1
 execute if score spellnumber spells matches 22 run scoreboard players set spellbuffsp2 spells 0
 
 #fountain of youth
-execute if score spellnumber spells matches 25 run execute if score diarmedslot6 booleaneffects < fountainOfYouthDuration spellStats run scoreboard players operation diarmedslot6 booleaneffects = fountainOfYouthDuration spellStats
+execute if score spellnumber spells matches 25 run execute if score disarmedslot6 booleaneffects < fountainOfYouthDuration spellStats run scoreboard players operation disarmedslot6 booleaneffects = fountainOfYouthDuration spellStats
 execute if score spellnumber spells matches 25 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += fountainOfYouth spellStats
 execute if score spellnumber spells matches 25 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += spellbuffsp2 spells
 execute if score spellnumber spells matches 25 run function ch:spellphasep1

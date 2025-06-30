@@ -176,7 +176,7 @@ execute if score spellnumber spells matches 22 run scoreboard players set attack
 execute if score spellnumber spells matches 22 run scoreboard players set spellbuffsp1 spells 0
 
 #fountain of youth
-execute if score spellnumber spells matches 25 run execute if score diarmedslot3 booleaneffects < fountainOfYouthDuration spellStats run scoreboard players operation diarmedslot3 booleaneffects = fountainOfYouthDuration spellStats
+execute if score spellnumber spells matches 25 run execute if score disarmedslot3 booleaneffects < fountainOfYouthDuration spellStats run scoreboard players operation disarmedslot3 booleaneffects = fountainOfYouthDuration spellStats
 execute if score spellnumber spells matches 25 if score slot3bleeding booleaneffects matches 0 run scoreboard players operation slot3 hp += fountainOfYouth spellStats
 execute if score spellnumber spells matches 25 if score slot3bleeding booleaneffects matches 0 run scoreboard players operation slot3 hp += spellbuffsp1 spells
 execute if score spellnumber spells matches 25 run scoreboard players set attackIsOngoingGame1 booleans 0

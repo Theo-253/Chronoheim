@@ -14,9 +14,9 @@ execute if score abilitynumber abilities matches 3 run execute if score ward slo
 execute if score abilitynumber abilities matches 3 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 
 #Garabaldi Ability
-execute if score ability# abilities matches 24 if score slot4 hp matches 1.. if score slot4bleeding booleaneffects matches 0 run scoreboard players operation hp slot4 += garabaldiHeal abilityStats
-execute if score ability# abilities matches 24 if score slot4 hp matches 1.. if score slot4bleeding booleaneffects matches 0 if score character# slot2 matches 24 run scoreboard players operation hp slot4 += garabaldiLeader abilityStats
-execute if score ability# abilities matches 24 if score slot4 hp matches 1.. run scoreboard players set ward slot4 2
+execute if score abilitynumber abilities matches 24 if score slot4 hp matches 1.. if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += garabaldiHeal abilityStats
+execute if score abilitynumber abilities matches 24 if score slot4 hp matches 1.. if score slot4bleeding booleaneffects matches 0 if score character# slot2 matches 24 run scoreboard players operation slot4 hp += garabaldiLeader abilityStats
+execute if score abilitynumber abilities matches 24 if score slot4 hp matches 1.. run scoreboard players set ward slot4 2
 
 #Juniper Ability
 execute if score abilitynumber abilities matches 24 run scoreboard players operation abilityDmg saves = juniper abilityStats

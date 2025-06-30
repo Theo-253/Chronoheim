@@ -831,30 +831,30 @@ execute if score character# slot23 matches -2 run execute if score slot23 hp > d
 execute if score character# slot24 matches -2 run execute if score slot24 hp > demon herohealth run scoreboard players operation slot24 hp = demon herohealth
 
 #healingtotem maxhp
-execute if score character# slot1 matches -3 run execute if score slot1 hp > healingtotem herohealth run scoreboard players operation slot1 hp = healingtotem herohealth
-execute if score character# slot2 matches -3 run execute if score slot2 hp > healingtotem herohealth run scoreboard players operation slot2 hp = healingtotem herohealth
-execute if score character# slot3 matches -3 run execute if score slot3 hp > healingtotem herohealth run scoreboard players operation slot3 hp = healingtotem herohealth
-execute if score character# slot4 matches -3 run execute if score slot4 hp > healingtotem herohealth run scoreboard players operation slot4 hp = healingtotem herohealth
-execute if score character# slot5 matches -3 run execute if score slot5 hp > healingtotem herohealth run scoreboard players operation slot5 hp = healingtotem herohealth
-execute if score character# slot6 matches -3 run execute if score slot6 hp > healingtotem herohealth run scoreboard players operation slot6 hp = healingtotem herohealth
-execute if score character# slot7 matches -3 run execute if score slot7 hp > healingtotem herohealth run scoreboard players operation slot7 hp = healingtotem herohealth
-execute if score character# slot8 matches -3 run execute if score slot8 hp > healingtotem herohealth run scoreboard players operation slot8 hp = healingtotem herohealth
-execute if score character# slot9 matches -3 run execute if score slot9 hp > healingtotem herohealth run scoreboard players operation slot9 hp = healingtotem herohealth
-execute if score character# slot10 matches -3 run execute if score slot10 hp > healingtotem herohealth run scoreboard players operation slot10 hp = healingtotem herohealth
-execute if score character# slot11 matches -3 run execute if score slot11 hp > healingtotem herohealth run scoreboard players operation slot11 hp = healingtotem herohealth
-execute if score character# slot12 matches -3 run execute if score slot12 hp > healingtotem herohealth run scoreboard players operation slot12 hp = healingtotem herohealth
-execute if score character# slot13 matches -3 run execute if score slot13 hp > healingtotem herohealth run scoreboard players operation slot13 hp = healingtotem herohealth
-execute if score character# slot14 matches -3 run execute if score slot14 hp > healingtotem herohealth run scoreboard players operation slot14 hp = healingtotem herohealth
-execute if score character# slot15 matches -3 run execute if score slot15 hp > healingtotem herohealth run scoreboard players operation slot15 hp = healingtotem herohealth
-execute if score character# slot16 matches -3 run execute if score slot16 hp > healingtotem herohealth run scoreboard players operation slot16 hp = healingtotem herohealth
-execute if score character# slot17 matches -3 run execute if score slot17 hp > healingtotem herohealth run scoreboard players operation slot17 hp = healingtotem herohealth
-execute if score character# slot18 matches -3 run execute if score slot18 hp > healingtotem herohealth run scoreboard players operation slot18 hp = healingtotem herohealth
-execute if score character# slot19 matches -3 run execute if score slot19 hp > healingtotem herohealth run scoreboard players operation slot19 hp = healingtotem herohealth
-execute if score character# slot20 matches -3 run execute if score slot20 hp > healingtotem herohealth run scoreboard players operation slot20 hp = healingtotem herohealth
-execute if score character# slot21 matches -3 run execute if score slot21 hp > healingtotem herohealth run scoreboard players operation slot21 hp = healingtotem herohealth
-execute if score character# slot22 matches -3 run execute if score slot22 hp > healingtotem herohealth run scoreboard players operation slot22 hp = healingtotem herohealth
-execute if score character# slot23 matches -3 run execute if score slot23 hp > healingtotem herohealth run scoreboard players operation slot23 hp = healingtotem herohealth
-execute if score character# slot24 matches -3 run execute if score slot24 hp > healingtotem herohealth run scoreboard players operation slot24 hp = healingtotem herohealth
+execute if score character# slot1 matches -3 run execute if score slot1 hp > healingTotemHP spellStats run scoreboard players operation slot1 hp = healingTotemHP spellStats
+execute if score character# slot2 matches -3 run execute if score slot2 hp > healingTotemHP spellStats run scoreboard players operation slot2 hp = healingTotemHP spellStats
+execute if score character# slot3 matches -3 run execute if score slot3 hp > healingTotemHP spellStats run scoreboard players operation slot3 hp = healingTotemHP spellStats
+execute if score character# slot4 matches -3 run execute if score slot4 hp > healingTotemHP spellStats run scoreboard players operation slot4 hp = healingTotemHP spellStats
+execute if score character# slot5 matches -3 run execute if score slot5 hp > healingTotemHP spellStats run scoreboard players operation slot5 hp = healingTotemHP spellStats
+execute if score character# slot6 matches -3 run execute if score slot6 hp > healingTotemHP spellStats run scoreboard players operation slot6 hp = healingTotemHP spellStats
+execute if score character# slot7 matches -3 run execute if score slot7 hp > healingTotemHP spellStats run scoreboard players operation slot7 hp = healingTotemHP spellStats
+execute if score character# slot8 matches -3 run execute if score slot8 hp > healingTotemHP spellStats run scoreboard players operation slot8 hp = healingTotemHP spellStats
+execute if score character# slot9 matches -3 run execute if score slot9 hp > healingTotemHP spellStats run scoreboard players operation slot9 hp = healingTotemHP spellStats
+execute if score character# slot10 matches -3 run execute if score slot10 hp > healingTotemHP spellStats run scoreboard players operation slot10 hp = healingTotemHP spellStats
+execute if score character# slot11 matches -3 run execute if score slot11 hp > healingTotemHP spellStats run scoreboard players operation slot11 hp = healingTotemHP spellStats
+execute if score character# slot12 matches -3 run execute if score slot12 hp > healingTotemHP spellStats run scoreboard players operation slot12 hp = healingTotemHP spellStats
+execute if score character# slot13 matches -3 run execute if score slot13 hp > healingTotemHP spellStats run scoreboard players operation slot13 hp = healingTotemHP spellStats
+execute if score character# slot14 matches -3 run execute if score slot14 hp > healingTotemHP spellStats run scoreboard players operation slot14 hp = healingTotemHP spellStats
+execute if score character# slot15 matches -3 run execute if score slot15 hp > healingTotemHP spellStats run scoreboard players operation slot15 hp = healingTotemHP spellStats
+execute if score character# slot16 matches -3 run execute if score slot16 hp > healingTotemHP spellStats run scoreboard players operation slot16 hp = healingTotemHP spellStats
+execute if score character# slot17 matches -3 run execute if score slot17 hp > healingTotemHP spellStats run scoreboard players operation slot17 hp = healingTotemHP spellStats
+execute if score character# slot18 matches -3 run execute if score slot18 hp > healingTotemHP spellStats run scoreboard players operation slot18 hp = healingTotemHP spellStats
+execute if score character# slot19 matches -3 run execute if score slot19 hp > healingTotemHP spellStats run scoreboard players operation slot19 hp = healingTotemHP spellStats
+execute if score character# slot20 matches -3 run execute if score slot20 hp > healingTotemHP spellStats run scoreboard players operation slot20 hp = healingTotemHP spellStats
+execute if score character# slot21 matches -3 run execute if score slot21 hp > healingTotemHP spellStats run scoreboard players operation slot21 hp = healingTotemHP spellStats
+execute if score character# slot22 matches -3 run execute if score slot22 hp > healingTotemHP spellStats run scoreboard players operation slot22 hp = healingTotemHP spellStats
+execute if score character# slot23 matches -3 run execute if score slot23 hp > healingTotemHP spellStats run scoreboard players operation slot23 hp = healingTotemHP spellStats
+execute if score character# slot24 matches -3 run execute if score slot24 hp > healingTotemHP spellStats run scoreboard players operation slot24 hp = healingTotemHP spellStats
 
 #golemite maxhp
 execute if score character# slot1 matches -4 run execute if score slot1 hp > golemite herohealth run scoreboard players operation slot1 hp = golemite herohealth

@@ -171,6 +171,7 @@ scoreboard players set dillo herospeed 1200
 scoreboard players set dillo abilityStats 100
 scoreboard players set dilloCD abilityStats 1
 scoreboard players set dilloLeader herospeed 2200
+scoreboard players set dilloDmg abilityStats 100
 scoreboard players set dilloLeaderShield abilityStats 400
 scoreboard players set dilloLeaderDuration abilityStats 4
 
@@ -257,14 +258,14 @@ scoreboard players set docDuration abilityStats 3
 scoreboard players set docCD abilityStats 3
 scoreboard players set docLeader heroattack 20
 
-scoreboard players set lilith heroattack 120
-scoreboard players set lilith herohealth 920
-scoreboard players set lilith herospeed 800
-scoreboard players set lilithDmgBuff abilityStats 60
-scoreboard players set lilithDmgBuffDuration abilityStats 2
-scoreboard players set lilithCD abilityStats 5
-scoreboard players set lilithLeechDmg abilityStats 160
-scoreboard players set lilithLeaderLeechDmg abilityStats 40
+scoreboard players set lillith heroattack 120
+scoreboard players set lillith herohealth 920
+scoreboard players set lillith herospeed 800
+scoreboard players set lillithDmgBuff abilityStats 60
+scoreboard players set lillithDmgBuffDuration abilityStats 2
+scoreboard players set lillithCD abilityStats 5
+scoreboard players set lillithLeechDmg abilityStats 160
+scoreboard players set lillithLeaderLeechDmg abilityStats 40
 
 scoreboard players set gabriel heroattack 100
 scoreboard players set gabriel herohealth 1400

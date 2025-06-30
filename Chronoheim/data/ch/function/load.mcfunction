@@ -331,6 +331,7 @@ scoreboard players set ripperLeaderDuration abilityStats 3
 scoreboard players set eidolon heroattack 140
 scoreboard players set eidolon herohealth 920
 scoreboard players set eidolon herospeed 900
+scoreboard players set eidolonCD abilityStats 999999999
 scoreboard players set eidolon abilityStats 260
 scoreboard players set eidolonDuration abilityStats 2
 scoreboard players set eidolonLeader abilityStats 360

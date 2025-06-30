@@ -59,6 +59,7 @@ execute if score spellnumber spells matches 4 run execute if score ward slot1 ma
 execute if score spellnumber spells matches 4 run execute if score ward slot1 matches 0 if score shield slot1 matches ..0 run scoreboard players operation slot1 hp += shield slot1
 execute if score spellnumber spells matches 4 run execute if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run say magic missle! magic missile! I smite thee with magic missile!
+#cursed line?
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run function ch:spellgivetargetsp2
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run say magic missle! magic missile! I skip thee with magic missile!
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set spellbuffsp2 spells 0

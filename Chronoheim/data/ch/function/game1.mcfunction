@@ -32,9 +32,11 @@ function ch:spellchecks
 execute if score invincibleSlot1 booleaneffects matches 1.. run scoreboard players operation slot1 hp = savehp1 saves
 execute if score invincibleSlot2 booleaneffects matches 1.. run scoreboard players operation slot2 hp = savehp2 saves
 execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot3 hp = savehp3 saves
+execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot4 hp = savehp4 saves
 execute if score invincibleSlot5 booleaneffects matches 1.. run scoreboard players operation slot5 hp = savehp5 saves
 execute if score invincibleSlot6 booleaneffects matches 1.. run scoreboard players operation slot6 hp = savehp6 saves
 execute if score invincibleSlot7 booleaneffects matches 1.. run scoreboard players operation slot7 hp = savehp7 saves
+execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot8 hp = savehp8 saves
 
 #Skips
 execute as @p[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:0,max:0}}}}} run function ch:turnend

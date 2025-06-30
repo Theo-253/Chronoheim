@@ -353,9 +353,9 @@ scoreboard players set skeleton heroattack 80
 scoreboard players set skeleton herohealth 200
 scoreboard players set skeleton herospeed 100
 
-scoreboard players set skeletonPlus heroattack 120
-scoreboard players set skeletonPlus herohealth 240
-scoreboard players set skeletonPlus herospeed 1200
+scoreboard players set skeletonplus heroattack 120
+scoreboard players set skeletonplus herohealth 240
+scoreboard players set skeletonplus herospeed 1200
 
 scoreboard players set demon heroattack 40
 scoreboard players set demon herosplash 2

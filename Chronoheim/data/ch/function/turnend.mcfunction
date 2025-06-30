@@ -236,7 +236,12 @@ execute if score slot6isatk booleans matches 1 run execute if score durationSlot
 execute if score slot7isatk booleans matches 1 run execute if score durationSlot7 wards matches 1.. run scoreboard players remove durationSlot7 wards 1
 execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 wards matches 1.. run scoreboard players remove durationSlot8 wards 1
 
-
+execute if score slot1isatk booleaneffects matches 1 if score side1spinball abilities matches 0.. if score character# slot1 matches 10 run scoreboard players add side1spinball abilities 1
+execute if score slot2isatk booleaneffects matches 1 if score side1spinball abilities matches 0.. if score character# slot2 matches 10 run scoreboard players add side1spinball abilities 1
+execute if score slot3isatk booleaneffects matches 1 if score side1spinball abilities matches 0.. if score character# slot3 matches 10 run scoreboard players add side1spinball abilities 1
+execute if score slot5isatk booleaneffects matches 1 if score side2spinball abilities matches 0.. if score character# slot5 matches 10 run scoreboard players add side2spinball abilities 1
+execute if score slot6isatk booleaneffects matches 1 if score side2spinball abilities matches 0.. if score character# slot6 matches 10 run scoreboard players add side2spinball abilities 1
+execute if score slot7isatk booleaneffects matches 1 if score side2spinball abilities matches 0.. if score character# slot7 matches 10 run scoreboard players add side2spinball abilities 1
 #Attack boolean reset
 scoreboard players set slot1isatk booleans 0
 scoreboard players set slot2isatk booleans 0

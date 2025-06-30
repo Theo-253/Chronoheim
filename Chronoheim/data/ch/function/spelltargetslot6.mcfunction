@@ -4,7 +4,7 @@ clear @a[tag=game1]
 #Dragonforge
 execute if score spellnumber spells matches 26 run execute if score durationSlot6 shield < dragonforgeDuration spellStats run scoreboard players operation durationSlot6 shield = dragonforgeDuration spellStats
 execute if score spellnumber spells matches 26 run scoreboard players operation shield slot6 += dragonforge spellStats
-execute if score spellnumber spells matches 26 run execute if score alivep1 deaths matches 1 run scoreboard players operation shield slot6 += dragonforge spellStats
+execute if score spellnumber spells matches 26 run execute if score alivep2 deaths matches 1 run scoreboard players operation shield slot6 += dragonforge spellStats
 execute if score spellnumber spells matches 26 run function ch:spellphasep1
 
 #Embiggen

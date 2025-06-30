@@ -343,7 +343,7 @@ scoreboard players set dominoDuration abilityStats 3
 scoreboard players set dominoLeaderPoison abilityStats 80
 scoreboard players set dominoPoison abilityStats 40
 scoreboard players set dominoLeader abilityStats 140
-scoreboard players set dominoLeaderHit abilityStats 100
+scoreboard players set dominoLeaderHit heroattack 100
 
 scoreboard players set golemite heroattack 60
 scoreboard players set golemite herohealth 240

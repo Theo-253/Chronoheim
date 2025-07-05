@@ -144,8 +144,8 @@ scoreboard players set roboLeader abilityStats 100
 scoreboard players set thorn heroattack 220
 scoreboard players set thorn herohealth 720
 scoreboard players set thorn herospeed 1200
-scoreboard players set thornDuration abilityStats 3
-scoreboard players set thornCD abilityStats 4
+scoreboard players set thornDuration abilityStats 2
+scoreboard players set thornCD abilityStats 3
 
 scoreboard players set kong heroattack 20
 scoreboard players set kong herohealth 1360

@@ -273,8 +273,8 @@ scoreboard players set lillithDmgBuff abilityStats 60
 scoreboard players set lillithDmgBuffDuration abilityStats 1
 scoreboard players set lillithSelfDmgBuffDuration abilityStats 2
 scoreboard players set lillithCD abilityStats 4
-scoreboard players set lillithLeechDmg abilityStats 160
-scoreboard players set lillithLeaderLeechDmg abilityStats 40
+scoreboard players set lillithLeechDmg abilityStats 320
+scoreboard players set lillithLeaderLeechDmg abilityStats 80
 
 scoreboard players set gabriel heroattack 100
 scoreboard players set gabriel herohealth 1400
@@ -335,7 +335,7 @@ scoreboard players set eidolon herospeed 900
 scoreboard players set eidolonCD abilityStats 999999999
 scoreboard players set eidolon abilityStats 260
 scoreboard players set eidolonDuration abilityStats 2
-scoreboard players set eidolonLeader abilityStats 360
+scoreboard players set eidolonLeader abilityStats 460
 
 scoreboard players set domino heroattack 100
 scoreboard players set domino herohealth 960

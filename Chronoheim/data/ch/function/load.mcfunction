@@ -270,7 +270,8 @@ scoreboard players set lillith heroattack 120
 scoreboard players set lillith herohealth 920
 scoreboard players set lillith herospeed 800
 scoreboard players set lillithDmgBuff abilityStats 60
-scoreboard players set lillithDmgBuffDuration abilityStats 2
+scoreboard players set lillithDmgBuffDuration abilityStats 1
+scoreboard players set lillithSelfDmgBuffDuration abilityStats 2
 scoreboard players set lillithCD abilityStats 5
 scoreboard players set lillithLeechDmg abilityStats 160
 scoreboard players set lillithLeaderLeechDmg abilityStats 40

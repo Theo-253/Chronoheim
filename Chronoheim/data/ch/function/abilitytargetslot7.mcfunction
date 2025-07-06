@@ -31,6 +31,7 @@ execute if score abilitynumber abilities matches 27 run execute if score ward sl
 execute if score abilitynumber abilities matches 27 run execute if score ward slot7 matches 0 run scoreboard players operation slot7 stun = juniperStun abilityStats
 execute if score abilitynumber abilities matches 27 run execute if score ward slot7 matches 0 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
 execute if score abilitynumber abilities matches 27 run execute if score ward slot7 matches 1.. run function ch:wardslot7
+execute if score abilitynumber abilities matches 27 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Pixie Dust on Slot 7!"]
 
 #Juniper Basic
 execute if score abilitynumber abilities matches -2 run execute if score slot7bleeding booleaneffects matches 0 run scoreboard players operation slot7 hp += juniper heroattack
@@ -54,19 +55,24 @@ execute if score abilitynumber abilities matches 7 run execute if score ward slo
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 run scoreboard players operation speed slot7 -= kongSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 1.. run function ch:wardslot7
+execute if score abilitynumber abilities matches 7 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used B.A.N.A.N.A S.L.A.M.M.A! on Slot 7!"]
 
 #Robyn Ability
 execute if score abilitynumber abilities matches 9 if score ward slot7 matches 0 run scoreboard players operation marks slot7 += robyn abilityStats
 execute if score abilitynumber abilities matches 9 if score ward slot7 matches 1 run function ch:wardslot7
+execute if score abilitynumber abilities matches 9 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Most Wanted on Slot 7!"]
 
 #Robo
 execute if score abilitynumber abilities matches 5 if score durationSlot7 shield < roboDuration abilityStats run scoreboard players operation durationSlot7 shield = roboDuration abilityStats
 execute if score abilitynumber abilities matches 5 run scoreboard players operation shield slot7 += robo abilityStats
 execute if score abilitynumber abilities matches 5 if score slot2isatk booleans matches 1 run scoreboard players operation shield slot7 += roboLeader abilityStats
+execute if score abilitynumber abilities matches 5 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Force Field on Slot 7!"]
+
 #Kirin
 execute if score abilitynumber abilities matches 8 if score buffDurationSlot7 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot7 atkmodifiers = kirinDuration abilityStats
 execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffSlot7 atkmodifiers += kirin abilityStats
 execute if score abilitynumber abilities matches 8 if score slot2isatk booleans matches 1 if score slot7bleeding booleaneffects matches 0.. run scoreboard players operation slot7 hp += kirinLeader abilityStats
+execute if score abilitynumber abilities matches 8 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Mythical Empowerment on Slot 7!"]
 #Ace
 execute if score abilitynumber abilities matches 12 run scoreboard players operation cooldown slot7 = aceSetCooldown abilityStats
 execute if score abilitynumber abilities matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Ace of Spades on Slot 7!"]
@@ -138,6 +144,7 @@ execute if score abilitynumber abilities matches 25 if score slot2isatk booleans
 #Ripper
 execute if score abilitynumber abilities matches 29 if score slot7 hp <= ripper abilityStats if score ward slot7 matches 0 if score invincibleSlot7 booleaneffects matches 0 run scoreboard players set slot7 hp 0
 execute if score abilitynumber abilities matches 29 if score slot7 hp <= ripper abilityStats if score invincibleSlot7 booleaneffects matches 0 if score ward slot7 matches 1.. run function ch:wardslot7
+execute if score abilitynumber abilities matches 29 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Execute on Slot 7!"]
 
 #Domino
 execute if score abilitynumber abilities matches 30 run scoreboard players operation abilityDmg saves = domino abilityStats

@@ -1,5 +1,5 @@
 #Bones character select p2
-execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Bones","bold":true,"color":"gray","italic":false}] run say picked Bones.
+execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Bones","bold":true,"color":"gray","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Bones."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Bones","bold":true,"color":"gray","italic":false}] run scoreboard players operation slot7 hp = bones herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Bones","bold":true,"color":"gray","italic":false}] run scoreboard players operation atk slot7 = bones heroattack
@@ -15,7 +15,7 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 
 
 #Arthur character select p2
-execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Arthur","bold":true,"color":"gray","italic":false}] run say picked Arthur.
+execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Arthur","bold":true,"color":"gray","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Arthur."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Arthur","bold":true,"color":"gray","italic":false}] run scoreboard players operation slot7 hp = arthur herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Arthur","bold":true,"color":"gray","italic":false}] run scoreboard players operation atk slot7 = arthur heroattack
@@ -31,7 +31,7 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 
 
 #Deuce character select p2
-execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Deuce","bold":true,"color":"gray","italic":false}] run say picked Deuce.
+execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Deuce","bold":true,"color":"gray","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Deuce."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Deuce","bold":true,"color":"gray","italic":false}] run scoreboard players operation slot7 hp = deuce herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Deuce","bold":true,"color":"gray","italic":false}] run scoreboard players operation atk slot7 = deuce heroattack
@@ -46,7 +46,7 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2] container.* minecraft:player_head[minecraft:custom_name={"text":"Deuce","bold":true,"color":"gray","italic":false}] run scoreboard players set character# slot5 3
 
 #Subject character select p2
-execute if items entity @p[tag=p2,tag=subjectO] container.* minecraft:player_head[minecraft:custom_name={"text":"Subject","bold":true,"color":"dark_green","italic":false}] run say picked Subject
+execute if items entity @p[tag=p2,tag=subjectO] container.* minecraft:player_head[minecraft:custom_name={"text":"Subject","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Subject."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=subjectO] container.* minecraft:player_head[minecraft:custom_name={"text":"Subject","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot7 hp = subject herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=subjectO] container.* minecraft:player_head[minecraft:custom_name={"text":"Subject","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot7 = subject heroattack
@@ -60,10 +60,10 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=subjectO] container.* minecraft:player_head[minecraft:custom_name={"text":"Subject","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot5 = subject heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=subjectO] container.* minecraft:player_head[minecraft:custom_name={"text":"Subject","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot5 4
 
-execute if items entity @p[tag=p2,tag=!subjectO] container.* minecraft:player_head[minecraft:custom_name={"text":"Subject","bold":true,"color":"dark_green","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!subjectO] container.* minecraft:player_head[minecraft:custom_name={"text":"Subject","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 #Robo character select p2
-execute if items entity @p[tag=p2,tag=roboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robo","bold":true,"color":"dark_green","italic":false}] run say picked Robo
+execute if items entity @p[tag=p2,tag=roboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robo","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Robo."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=roboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robo","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot7 hp = robo herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=roboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robo","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot7 = robo heroattack
@@ -77,11 +77,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=roboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robo","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot5 = robo heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=roboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robo","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot5 5
 
-execute if items entity @p[tag=p2,tag=!roboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robo","bold":true,"color":"dark_green","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!roboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robo","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Thorn character select p2
-execute if items entity @p[tag=p2,tag=thornO] container.* minecraft:player_head[minecraft:custom_name={"text":"Thorn","bold":true,"color":"dark_green","italic":false}] run say picked Thorn
+execute if items entity @p[tag=p2,tag=thornO] container.* minecraft:player_head[minecraft:custom_name={"text":"Thorn","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Thorn."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=thornO] container.* minecraft:player_head[minecraft:custom_name={"text":"Thorn","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot7 hp = thorn herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=thornO] container.* minecraft:player_head[minecraft:custom_name={"text":"Thorn","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot7 = thorn heroattack
@@ -95,11 +95,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=thornO] container.* minecraft:player_head[minecraft:custom_name={"text":"Thorn","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot5 = thorn heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=thornO] container.* minecraft:player_head[minecraft:custom_name={"text":"Thorn","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot5 6
 
-execute if items entity @p[tag=p2,tag=!thornO] container.* minecraft:player_head[minecraft:custom_name={"text":"Thorn","bold":true,"color":"dark_green","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!thornO] container.* minecraft:player_head[minecraft:custom_name={"text":"Thorn","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #K.O.N.G. character select p2
-execute if items entity @p[tag=p2,tag=kongO] container.* minecraft:player_head[minecraft:custom_name={"text":"K.O.N.G.","bold":true,"color":"dark_green","italic":false}] run say picked K.O.N.G.
+execute if items entity @p[tag=p2,tag=kongO] container.* minecraft:player_head[minecraft:custom_name={"text":"K.O.N.G.","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked K.O.N.G."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=kongO] container.* minecraft:player_head[minecraft:custom_name={"text":"K.O.N.G.","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot7 hp = kong herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=kongO] container.* minecraft:player_head[minecraft:custom_name={"text":"K.O.N.G.","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot7 = kong heroattack
@@ -113,11 +113,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=kongO] container.* minecraft:player_head[minecraft:custom_name={"text":"K.O.N.G.","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot5 = kong heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=kongO] container.* minecraft:player_head[minecraft:custom_name={"text":"K.O.N.G.","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot5 7
 
-execute if items entity @p[tag=p2,tag=!kongO] container.* minecraft:player_head[minecraft:custom_name={"text":"K.O.N.G.","bold":true,"color":"dark_green","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!kongO] container.* minecraft:player_head[minecraft:custom_name={"text":"K.O.N.G.","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Kirin character select p2
-execute if items entity @p[tag=p2,tag=kirinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Kirin","bold":true,"color":"dark_green","italic":false}] run say picked Kirin
+execute if items entity @p[tag=p2,tag=kirinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Kirin","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Kirin."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=kirinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Kirin","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot7 hp = kirin herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=kirinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Kirin","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot7 = kirin heroattack
@@ -131,11 +131,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=kirinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Kirin","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot5 = kirin heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=kirinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Kirin","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot5 8
 
-execute if items entity @p[tag=p2,tag=!kirinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Kirin","bold":true,"color":"dark_green","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!kirinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Kirin","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Robyn character select p2
-execute if items entity @p[tag=p2,tag=robynO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robyn","bold":true,"color":"dark_green","italic":false}] run say picked Robyn
+execute if items entity @p[tag=p2,tag=robynO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robyn","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Robyn."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=robynO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robyn","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot7 hp = robyn herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=robynO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robyn","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot7 = robyn heroattack
@@ -149,11 +149,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=robynO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robyn","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot5 = robyn heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=robynO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robyn","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot5 9
 
-execute if items entity @p[tag=p2,tag=!robynO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robyn","bold":true,"color":"dark_green","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!robynO] container.* minecraft:player_head[minecraft:custom_name={"text":"Robyn","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Dillo character select p2
-execute if items entity @p[tag=p2,tag=dilloO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dillo","bold":true,"color":"gold","italic":false}] run say picked Dillo
+execute if items entity @p[tag=p2,tag=dilloO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dillo","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Dillo."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=dilloO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dillo","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot7 hp = dillo herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=dilloO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dillo","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot7 = dillo heroattack
@@ -167,11 +167,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=dilloO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dillo","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot5 = dillo heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=dilloO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dillo","bold":true,"color":"gold","italic":false}] run scoreboard players set character# slot5 10
 
-execute if items entity @p[tag=p2,tag=!dilloO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dillo","bold":true,"color":"gold","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!dilloO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dillo","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Flint character select p2
-execute if items entity @p[tag=p2,tag=flintO] container.* minecraft:player_head[minecraft:custom_name={"text":"Flint","bold":true,"color":"dark_green","italic":false}] run say picked Flint
+execute if items entity @p[tag=p2,tag=flintO] container.* minecraft:player_head[minecraft:custom_name={"text":"Flint","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Flint."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=flintO] container.* minecraft:player_head[minecraft:custom_name={"text":"Flint","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot7 hp = flint herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=flintO] container.* minecraft:player_head[minecraft:custom_name={"text":"Flint","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot7 = flint heroattack
@@ -185,11 +185,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=flintO] container.* minecraft:player_head[minecraft:custom_name={"text":"Flint","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot5 = flint heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=flintO] container.* minecraft:player_head[minecraft:custom_name={"text":"Flint","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot5 11
 
-execute if items entity @p[tag=p2,tag=!flintO] container.* minecraft:player_head[minecraft:custom_name={"text":"Flint","bold":true,"color":"dark_green","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!flintO] container.* minecraft:player_head[minecraft:custom_name={"text":"Flint","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Ace character select p2
-execute if items entity @p[tag=p2,tag=aceO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ace","bold":true,"color":"blue","italic":false}] run say picked Ace
+execute if items entity @p[tag=p2,tag=aceO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ace","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Ace."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=aceO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ace","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot7 hp = ace herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=aceO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ace","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot7 = ace heroattack
@@ -203,11 +203,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=aceO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ace","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot5 = ace heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=aceO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ace","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot5 12
 
-execute if items entity @p[tag=p2,tag=!aceO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ace","bold":true,"color":"blue","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!aceO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ace","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #London character select p2
-execute if items entity @p[tag=p2,tag=londonO] container.* minecraft:player_head[minecraft:custom_name={"text":"London","bold":true,"color":"blue","italic":false}] run say picked London
+execute if items entity @p[tag=p2,tag=londonO] container.* minecraft:player_head[minecraft:custom_name={"text":"London","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked London."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=londonO] container.* minecraft:player_head[minecraft:custom_name={"text":"London","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot7 hp = london herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=londonO] container.* minecraft:player_head[minecraft:custom_name={"text":"London","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot7 = london heroattack
@@ -224,11 +224,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=londonO] container.* minecraft:player_head[minecraft:custom_name={"text":"London","bold":true,"color":"blue","italic":false}] run scoreboard players set doubleatk slot5 1
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=londonO] container.* minecraft:player_head[minecraft:custom_name={"text":"London","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot5 13
 
-execute if items entity @p[tag=p2,tag=!londonO] container.* minecraft:player_head[minecraft:custom_name={"text":"London","bold":true,"color":"blue","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!londonO] container.* minecraft:player_head[minecraft:custom_name={"text":"London","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Hydra character select p2
-execute if items entity @p[tag=p2,tag=hydraO] container.* minecraft:player_head[minecraft:custom_name={"text":"Hydra","bold":true,"color":"dark_green","italic":false}] run say picked Hydra
+execute if items entity @p[tag=p2,tag=hydraO] container.* minecraft:player_head[minecraft:custom_name={"text":"Hydra","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Hydra."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=hydraO] container.* minecraft:player_head[minecraft:custom_name={"text":"Hydra","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot7 hp = hydra herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=hydraO] container.* minecraft:player_head[minecraft:custom_name={"text":"Hydra","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot7 = hydra heroattack
@@ -242,11 +242,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=hydraO] container.* minecraft:player_head[minecraft:custom_name={"text":"Hydra","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation atk slot5 = hydra heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=hydraO] container.* minecraft:player_head[minecraft:custom_name={"text":"Hydra","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot5 14
 
-execute if items entity @p[tag=p2,tag=!hydraO] container.* minecraft:player_head[minecraft:custom_name={"text":"Hydra","bold":true,"color":"dark_green","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!hydraO] container.* minecraft:player_head[minecraft:custom_name={"text":"Hydra","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Golem character select p2
-execute if items entity @p[tag=p2,tag=golemO] container.* minecraft:player_head[minecraft:custom_name={"text":"Golem","bold":true,"color":"blue","italic":false}] run say picked Golem
+execute if items entity @p[tag=p2,tag=golemO] container.* minecraft:player_head[minecraft:custom_name={"text":"Golem","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Golem."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=golemO] container.* minecraft:player_head[minecraft:custom_name={"text":"Golem","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot7 hp = golem herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=golemO] container.* minecraft:player_head[minecraft:custom_name={"text":"Golem","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot7 = golem heroattack
@@ -260,11 +260,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=golemO] container.* minecraft:player_head[minecraft:custom_name={"text":"Golem","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot5 = golem heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=golemO] container.* minecraft:player_head[minecraft:custom_name={"text":"Golem","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot5 15
 
-execute if items entity @p[tag=p2,tag=!golemO] container.* minecraft:player_head[minecraft:custom_name={"text":"Golem","bold":true,"color":"blue","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!golemO] container.* minecraft:player_head[minecraft:custom_name={"text":"Golem","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Blackbeard character select p2
-execute if items entity @p[tag=p2,tag=blackbeardO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blackbeard","bold":true,"color":"blue","italic":false}] run say picked Blackbeard
+execute if items entity @p[tag=p2,tag=blackbeardO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blackbeard","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Blackbeard."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=blackbeardO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blackbeard","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot7 hp = blackbeard herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=blackbeardO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blackbeard","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot7 = blackbeard heroattack
@@ -281,31 +281,31 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=blackbeardO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blackbeard","bold":true,"color":"blue","italic":false}] run scoreboard players set doubleatk slot5 1
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=blackbeardO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blackbeard","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot5 15
 
-execute if items entity @p[tag=p2,tag=!blackbeardO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blackbeard","bold":true,"color":"blue","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!blackbeardO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blackbeard","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 #Grimoire character select p2
-execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run say picked Grimoire
+execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Grimoire."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot7 hp = grimoire herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot7 = grimoire heroattack
-execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set Spell_Points_P1 Spell_Points -2
+execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set Spell_Points_p2 Spell_Points -2
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot7 17
 
 execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot6 hp = grimoire herohealth
 execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot6 = grimoire heroattack
-execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set Spell_Points_P1 Spell_Points -3
+execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set Spell_Points_p2 Spell_Points -3
 execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot6 17
 
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot5 hp = grimoire herohealth
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot5 = grimoire heroattack
-execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set Spell_Points_P1 Spell_Points -2
+execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set Spell_Points_p2 Spell_Points -2
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot5 17
 
-execute if items entity @p[tag=p2,tag=!grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!grimoireO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grimoire","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Grangor character select p2
-execute if items entity @p[tag=p2,tag=grangorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grangor","bold":true,"color":"blue","italic":false}] run say picked Grangor, the Demon Eater
+execute if items entity @p[tag=p2,tag=grangorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grangor","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Grangor."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grangorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grangor","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot7 hp = grangor herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=grangorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grangor","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot7 = grangor heroattack
@@ -322,10 +322,10 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=grangorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grangor","bold":true,"color":"blue","italic":false}] run scoreboard players operation lifesteal slot5 = grangor herolifesteal
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=grangorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grangor","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot5 18
 
-execute if items entity @p[tag=p2,tag=!grangorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grangor","bold":true,"color":"blue","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!grangorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grangor","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 #Astro character select p2
-execute if items entity @p[tag=p2,tag=astroO] container.* minecraft:player_head[minecraft:custom_name={"text":"Astro","bold":true,"color":"dark_purple","italic":false}] run say picked Astro
+execute if items entity @p[tag=p2,tag=astroO] container.* minecraft:player_head[minecraft:custom_name={"text":"Astro","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Astro."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=astroO] container.* minecraft:player_head[minecraft:custom_name={"text":"Astro","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot7 hp = astro herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=astroO] container.* minecraft:player_head[minecraft:custom_name={"text":"Astro","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot7 = astro heroattack
@@ -342,10 +342,10 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=astroO] container.* minecraft:player_head[minecraft:custom_name={"text":"Astro","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation splash slot5 = astro herosplash
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=astroO] container.* minecraft:player_head[minecraft:custom_name={"text":"Astro","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot5 19
 
-execute if items entity @p[tag=p2,tag=!astroO] container.* minecraft:player_head[minecraft:custom_name={"text":"Astro","bold":true,"color":"dark_purple","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!astroO] container.* minecraft:player_head[minecraft:custom_name={"text":"Astro","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 #Doc character select p2
-execute if items entity @p[tag=p2,tag=docO] container.* minecraft:player_head[minecraft:custom_name={"text":"Doc","bold":true,"color":"dark_purple","italic":false}] run say picked Doc
+execute if items entity @p[tag=p2,tag=docO] container.* minecraft:player_head[minecraft:custom_name={"text":"Doc","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Doc."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=docO] container.* minecraft:player_head[minecraft:custom_name={"text":"Doc","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot7 hp = doc herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=docO] container.* minecraft:player_head[minecraft:custom_name={"text":"Doc","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot7 = doc heroattack
@@ -362,11 +362,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=docO] container.* minecraft:player_head[minecraft:custom_name={"text":"Doc","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set nobasicatk slot5 1
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=docO] container.* minecraft:player_head[minecraft:custom_name={"text":"Doc","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot5 20
 
-execute if items entity @p[tag=p2,tag=!docO] container.* minecraft:player_head[minecraft:custom_name={"text":"Doc","bold":true,"color":"dark_purple","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!docO] container.* minecraft:player_head[minecraft:custom_name={"text":"Doc","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Lillith character select p2
-execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run say picked Lillith
+execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Lillith."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot7 hp = lillith herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot7 = lillith heroattack
@@ -374,7 +374,7 @@ execute if score character# slot7 matches 0 run execute if score character# slot
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot8 = demon heroattack
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation splash slot8 = demon herosplash
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot8 -2
-execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set alivep1 deaths 4
+execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set alivep2 deaths 4
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot7 21
 
 execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot6 hp = lillith herohealth
@@ -383,7 +383,7 @@ execute if score character# slot6 matches 0 run execute if score character# slot
 execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot8 = demon heroattack
 execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation splash slot8 = demon herosplash
 execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot8 -2
-execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set alivep1 deaths 4
+execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set alivep2 deaths 4
 execute if score character# slot6 matches 0 run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot6 21
 
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot5 hp = lillith herohealth
@@ -392,14 +392,14 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot8 = demon heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation splash slot8 = demon herosplash
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot8 -2
-execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set alivep1 deaths 4
+execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set alivep2 deaths 4
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot5 21
 
-execute if items entity @p[tag=p2,tag=!lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!lillithO] container.* minecraft:player_head[minecraft:custom_name={"text":"Lillith","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Gabriel character select p2
-execute if items entity @p[tag=p2,tag=gabrielO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gabriel","bold":true,"color":"dark_purple","italic":false}] run say picked Gabriel
+execute if items entity @p[tag=p2,tag=gabrielO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gabriel","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Gabriel."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=gabrielO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gabriel","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot7 hp = gabriel herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=gabrielO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gabriel","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot7 = gabriel heroattack
@@ -413,11 +413,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=gabrielO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gabriel","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot5 = gabriel heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=gabrielO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gabriel","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot5 22
 
-execute if items entity @p[tag=p2,tag=!gabrielO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gabriel","bold":true,"color":"dark_purple","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!gabrielO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gabriel","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Gatsby character select p2
-execute if items entity @p[tag=p2,tag=gatsbyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gatsby","bold":true,"color":"dark_purple","italic":false}] run say picked Gatsby
+execute if items entity @p[tag=p2,tag=gatsbyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gatsby","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Gatsby."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=gatsbyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gatsby","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot7 hp = gatsby herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=gatsbyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gatsby","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot7 = gatsby heroattack
@@ -431,11 +431,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=gatsbyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gatsby","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot5 = gatsby heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=gatsbyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gatsby","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot5 23
 
-execute if items entity @p[tag=p2,tag=!gatsbyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gatsby","bold":true,"color":"dark_purple","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!gatsbyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Gatsby","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Garabaldi character select p2
-execute if items entity @p[tag=p2,tag=garabaldiO] container.* minecraft:player_head[minecraft:custom_name={"text":"Garabaldi","bold":true,"color":"dark_purple","italic":false}] run say picked Garabaldi
+execute if items entity @p[tag=p2,tag=garabaldiO] container.* minecraft:player_head[minecraft:custom_name={"text":"Garabaldi","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Garabaldi."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=garabaldiO] container.* minecraft:player_head[minecraft:custom_name={"text":"Garabaldi","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot7 hp = garabaldi herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=garabaldiO] container.* minecraft:player_head[minecraft:custom_name={"text":"Garabaldi","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot7 = garabaldi heroattack
@@ -452,11 +452,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=garabaldiO] container.* minecraft:player_head[minecraft:custom_name={"text":"Garabaldi","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation splash slot5 = garabaldi herosplash
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=garabaldiO] container.* minecraft:player_head[minecraft:custom_name={"text":"Garabaldi","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot5 24
 
-execute if items entity @p[tag=p2,tag=!garabaldiO] container.* minecraft:player_head[minecraft:custom_name={"text":"Garabaldi","bold":true,"color":"dark_purple","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!garabaldiO] container.* minecraft:player_head[minecraft:custom_name={"text":"Garabaldi","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Boomer character select p2
-execute if items entity @p[tag=p2,tag=boomerO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boomer","bold":true,"color":"gold","italic":false}] run say picked Boomer
+execute if items entity @p[tag=p2,tag=boomerO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boomer","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Boomer."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=boomerO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boomer","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot7 hp = boomer herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=boomerO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boomer","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot7 = boomer heroattack
@@ -470,11 +470,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=boomerO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boomer","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot5 = boomer heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=boomerO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boomer","bold":true,"color":"gold","italic":false}] run scoreboard players set character# slot5 25
 
-execute if items entity @p[tag=p2,tag=!boomerO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boomer","bold":true,"color":"gold","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!boomerO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boomer","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Osiris character select p2
-execute if items entity @p[tag=p2,tag=osirisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Osiris","bold":true,"color":"gold","italic":false}] run say picked Osiris
+execute if items entity @p[tag=p2,tag=osirisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Osiris","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Osiris."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=osirisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Osiris","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot7 hp = osiris herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=osirisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Osiris","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot7 = osiris heroattack
@@ -488,11 +488,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=osirisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Osiris","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot5 = osiris heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=osirisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Osiris","bold":true,"color":"gold","italic":false}] run scoreboard players set character# slot5 26
 
-execute if items entity @p[tag=p2,tag=!osirisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Osiris","bold":true,"color":"gold","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!osirisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Osiris","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Juniper character select p2
-execute if items entity @p[tag=p2,tag=juniperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Juniper","bold":true,"color":"dark_purple","italic":false}] run say picked Juniper
+execute if items entity @p[tag=p2,tag=juniperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Juniper","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Juniper."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=juniperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Juniper","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot7 hp = juniper herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=juniperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Juniper","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot7 = juniper heroattack
@@ -509,11 +509,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=juniperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Juniper","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set nobasicatk slot5 1
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=juniperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Juniper","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot5 27
 
-execute if items entity @p[tag=p2,tag=!juniperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Juniper","bold":true,"color":"dark_purple","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!juniperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Juniper","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Eidolon character select p2
-execute if items entity @p[tag=p2,tag=eidolonO] container.* minecraft:player_head[minecraft:custom_name={"text":"Eidolon","bold":true,"color":"gold","italic":false}] run say picked Eidolon
+execute if items entity @p[tag=p2,tag=eidolonO] container.* minecraft:player_head[minecraft:custom_name={"text":"Eidolon","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Eidolon."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=eidolonO] container.* minecraft:player_head[minecraft:custom_name={"text":"Eidolon","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot7 hp = eidolon herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=eidolonO] container.* minecraft:player_head[minecraft:custom_name={"text":"Eidolon","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot7 = eidolon heroattack
@@ -530,11 +530,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=eidolonO] container.* minecraft:player_head[minecraft:custom_name={"text":"Eidolon","bold":true,"color":"gold","italic":false}] run scoreboard players set nobasicatk slot5 1
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=eidolonO] container.* minecraft:player_head[minecraft:custom_name={"text":"Eidolon","bold":true,"color":"gold","italic":false}] run scoreboard players set character# slot5 28
 
-execute if items entity @p[tag=p2,tag=!eidolonO] container.* minecraft:player_head[minecraft:custom_name={"text":"Eidolon","bold":true,"color":"gold","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!eidolonO] container.* minecraft:player_head[minecraft:custom_name={"text":"Eidolon","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Ripper character select p2
-execute if items entity @p[tag=p2,tag=ripperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ripper","bold":true,"color":"gold","italic":false}] run say picked Ripper
+execute if items entity @p[tag=p2,tag=ripperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ripper","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Ripper."]
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=ripperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ripper","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot7 hp = ripper herohealth
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=ripperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ripper","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot7 = ripper heroattack
@@ -548,11 +548,11 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=ripperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ripper","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot5 = ripper heroattack
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=ripperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ripper","bold":true,"color":"gold","italic":false}] run scoreboard players set character# slot5 29
 
-execute if items entity @p[tag=p2,tag=!ripperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ripper","bold":true,"color":"gold","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!ripperO] container.* minecraft:player_head[minecraft:custom_name={"text":"Ripper","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 
 #Domino character select p2
-execute if items entity @p[tag=p2,tag=dominoO] container.* minecraft:player_head[minecraft:custom_name={"text":"Domino","bold":true,"color":"blue","italic":false}] run say picked Domino
+execute if items entity @p[tag=p2,tag=dominoO] container.* minecraft:player_head[minecraft:custom_name={"text":"Domino","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," picked Domino."]
 
 
 execute if score character# slot7 matches 0 run execute if score character# slot6 matches 1.. run execute if score character# slot5 matches 1.. run execute if items entity @p[tag=p2,tag=dominoO] container.* minecraft:player_head[minecraft:custom_name={"text":"Domino","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot7 hp = domino herohealth
@@ -570,6 +570,6 @@ execute if score character# slot5 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot5 matches 0 run execute if items entity @p[tag=p2,tag=dominoO] container.* minecraft:player_head[minecraft:custom_name={"text":"Domino","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot5 30
 
 
-execute if items entity @p[tag=p2,tag=!dominoO] container.* minecraft:player_head[minecraft:custom_name={"text":"Domino","bold":true,"color":"blue","italic":false}] run say Sorry, you don't own this hero.
+execute if items entity @p[tag=p2,tag=!dominoO] container.* minecraft:player_head[minecraft:custom_name={"text":"Domino","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," , you don't own this hero."]
 
 clear @p[tag=p2] minecraft:player_head

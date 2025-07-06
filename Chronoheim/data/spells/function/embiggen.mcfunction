@@ -1,6 +1,3 @@
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:13,max:13}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Embiggen!"]
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:13,max:13}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Embiggen!"]
-
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:13,max:13}}}}} run scoreboard players operation embiggenCooldown player1spells = embiggenCD spellStats
 
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:13,max:13}}}}} run scoreboard players operation embiggenCooldown player2spells = embiggenCD spellStats

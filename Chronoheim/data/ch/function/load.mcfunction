@@ -398,7 +398,7 @@ scoreboard players set fireballCD spellStats 3
 scoreboard players set fireballSp spellStats 3
 scoreboard players set fontOfWisdom spellStats 160
 scoreboard players set fontOfWisdomCD spellStats 3
-scoreboard players set fontOfWisdomSp spellStats 1
+scoreboard players set fontOfWisdomSp spellStats 2
 scoreboard players set fountainOfYouthDuration spellStats 1
 scoreboard players set fountainOfYouth spellStats 340
 scoreboard players set fountainOfYouthSp spellStats 3

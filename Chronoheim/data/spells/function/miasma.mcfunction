@@ -13,7 +13,7 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run execute if score ward slot8 matches 1.. run function ch:wardslot8
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run scoreboard players operation miasmaCooldown player1spells = miasmaCD spellStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run clear @a[tag=p1]
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run say used Miasma!
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Miasma!"]
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run scoreboard players set attackIsOngoingGame1 booleans 0
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run effect clear @a[tag=p1] infested
 
@@ -33,6 +33,6 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run execute if score ward slot4 matches 1.. run function ch:wardslot4
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run scoreboard players operation miasmaCooldown player2spells = miasmaCD spellStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run clear @a[tag=p2]
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run say used Miasma!
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Miasma!"]
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run function ch:spellphasep1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run effect clear @a[tag=p2] infested

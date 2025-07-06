@@ -1,9 +1,6 @@
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:12,max:12}}}}} run scoreboard players set abilityusep1 booleans 1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:12,max:12}}}}} run scoreboard players set abilityusep2 booleans 1
 
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:12,max:12}}}}} run say used Ace of Spades!
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:12,max:12}}}}} run say used Ace of Spades!
-
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:12,max:12}}}}} run execute if score slot1isatk booleans matches 1.. run scoreboard players operation cooldown slot1 = aceCD abilityStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:12,max:12}}}}} run execute if score slot2isatk booleans matches 1.. run scoreboard players operation cooldown slot2 = aceCD abilityStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:12,max:12}}}}} run execute if score slot3isatk booleans matches 1.. run scoreboard players operation cooldown slot3 = aceCD abilityStats

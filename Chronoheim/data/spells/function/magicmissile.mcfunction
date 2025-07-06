@@ -1,5 +1,5 @@
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:4,max:4}}}}} run say used Magic Missile!
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:4,max:4}}}}} run say used Magic Missile!
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:4,max:4}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Magic Missile!"]
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:4,max:4}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Magic Missile!"]
 
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:4,max:4}}}}} run scoreboard players operation magicMissileCooldown player1spells = magicMissileCD spellStats
 

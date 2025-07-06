@@ -59,5 +59,5 @@ execute if score character# slot2 matches 15 run execute if score slot2 hp match
 execute if score character# slot2 matches 15 run execute if score slot2 hp = golemite herohealth if score atk slot2 = golemite heroattack run scoreboard players set character# slot2 -4
 
 
-w @p[tag=p1] Slot 2 has died!
-w @p[tag=p2] Slot 2 has died!
+w @p[tag=p1] Slot 2 has died!"]
+w @p[tag=p2] Slot 2 has died!"]

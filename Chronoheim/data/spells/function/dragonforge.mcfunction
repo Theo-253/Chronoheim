@@ -1,5 +1,5 @@
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:26,max:26}}}}} run say used Dragonforge!
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:26,max:26}}}}} run say used Dragonforge!
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:26,max:26}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Dragonforge!"]
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:26,max:26}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Dragonforge!"]
 
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:26,max:26}}}}} run scoreboard players operation dragonforgeCooldown player1spells = dragonforgeCD spellStats
 

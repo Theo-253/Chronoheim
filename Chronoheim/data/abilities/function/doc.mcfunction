@@ -16,7 +16,7 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot2isatk booleans matches 1 run scoreboard players operation cooldown slot2 = docCD abilityStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot3isatk booleans matches 1 run scoreboard players operation cooldown slot3 = docCD abilityStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run function ch:turnend
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run say used The Doctor is in!
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used The Doctor is in!"]
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=game1] fire_resistance
 
 #Player 2
@@ -37,7 +37,7 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot6isatk booleans matches 1 run scoreboard players operation cooldown slot6 = docCD abilityStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot7isatk booleans matches 1 run scoreboard players operation cooldown slot7 = docCD abilityStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run function ch:turnend
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run say used The Doctor is in!
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used The Doctor is in!"]
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=game1] fire_resistance
 
 scoreboard players set burn burn 1

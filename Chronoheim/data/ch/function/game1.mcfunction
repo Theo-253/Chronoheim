@@ -49,9 +49,9 @@ execute if score game1Ongoing ongoinggames matches 1 run execute if score slot7 
 execute if score game1Ongoing ongoinggames matches 1 unless score character# slot8 matches 0 run execute if score slot8 hp matches ..0 run execute unless score speed slot8 matches -1000000..-900000 run function ch:death8
 
 #When I get elected, we will have so much winning
-execute if score alivep1 deaths matches 0 run say @p[tag=p2] has won the duel against @p[tag=p1]! 
+execute if score alivep1 deaths matches 0 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," @p[tag=p2] has won the duel against @p[tag=p1]!"] 
 execute if score alivep1 deaths matches 0 run function ch:win
-execute if score alivep2 deaths matches 0 run say @p[tag=p1] has won the duel against @p[tag=p2]! 
+execute if score alivep2 deaths matches 0 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," @p[tag=p1] has won the duel against @p[tag=p2]!"] 
 execute if score alivep2 deaths matches 0 run function ch:win
 
 #Rapidtick

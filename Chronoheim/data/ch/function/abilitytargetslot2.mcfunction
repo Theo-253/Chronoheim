@@ -12,7 +12,7 @@ execute if score abilitynumber abilities matches 3 run scoreboard players operat
 execute if score abilitynumber abilities matches 3 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= abilityDmg saves
 execute if score abilitynumber abilities matches 3 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
 execute if score abilitynumber abilities matches 3 run execute if score ward slot2 matches 1.. run function ch:wardslot2
-
+execute if score abilitynumber abilities matches 3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Double Punch on Slot 2!"]
 
 #Garabaldi Ability
 execute if score abilitynumber abilities matches 24 if score slot2 hp matches 1.. if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot2 hp += garabaldiHeal abilityStats
@@ -71,6 +71,7 @@ execute if score abilitynumber abilities matches 8 run scoreboard players operat
 execute if score abilitynumber abilities matches 8 if score slot2isatk booleans matches 1 if score slot2bleeding booleaneffects matches 0.. run scoreboard players operation slot2 hp += kirinLeader abilityStats
 #Ace
 execute if score abilitynumber abilities matches 12 run scoreboard players operation cooldown slot2 = aceSetCooldown abilityStats
+execute if score abilitynumber abilities matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Ace of Spades on Slot 2!"]
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot2 speedDebuffs = aceLeaderDuration abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speedDebuffSlot2 speedDebuffs = aceLeader abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speed slot2 -= aceLeader abilityStats
@@ -106,6 +107,7 @@ execute if score abilitynumber abilities matches 23 if score ward slot4 matches 
 execute if score abilitynumber abilities matches 23 if score ward slot1 matches 1.. if score slot6isatk booleans matches 1 run function ch:wardslot1
 execute if score abilitynumber abilities matches 23 if score ward slot3 matches 1.. if score slot6isatk booleans matches 1 run function ch:wardslot3
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 1.. if score slot6isatk booleans matches 1 run function ch:wardslot4
+execute if score abilitynumber abilities matches 23 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Consume on Slot 2!"]
 #execute if score abilitynumber abilities matches 23 if score ward slot2 matches 0 run scoreboard players operation slot2EatenDuration abilities = gatsbyDuration abilityStats
 #Boomer
 execute if score abilitynumber abilities matches 25 run scoreboard players operation abilityDmg saves = boomer abilityStats
@@ -117,6 +119,7 @@ execute if score abilitynumber abilities matches 25 run scoreboard players opera
 execute if score abilitynumber abilities matches 25 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= abilityDmg saves
 execute if score abilitynumber abilities matches 25 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
 execute if score abilitynumber abilities matches 25 run execute if score ward slot2 matches 1.. run function ch:wardslot2
+execute if score abilitynumber abilities matches 25 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used KABOOM! on Slot 2!"]
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= atkmultiplier slot2
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves -= marks slot2
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += marks slot1
@@ -151,6 +154,7 @@ execute if score abilitynumber abilities matches 30 run execute if score ward sl
 execute if score abilitynumber abilities matches 30 if score ward slot2 matches 0 if score durationSlot2 poison < dominoDuration abilityStats run scoreboard players operation durationSlot2 poison = dominoDuration abilityStats 
 execute if score abilitynumber abilities matches 30 if score ward slot2 matches 0 run scoreboard players operation slot2Poison poison += dominoPoisonLeader abilityStats 
 execute if score abilitynumber abilities matches 30 run execute if score ward slot2 matches 1.. run function ch:wardslot2
+execute if score abilitynumber abilities matches 30 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Poison Dart on Slot 2!"]
 #Doc Basic Attack
 execute if score abilitynumber abilities matches -1 run scoreboard players operation slot2Disease disease += doc heroattack
 execute if score abilitynumber abilities matches -1 if score slot6isatk booleans matches 1 run scoreboard players operation slot2Disease disease += docLeader heroattack

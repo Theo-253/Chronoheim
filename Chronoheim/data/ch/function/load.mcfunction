@@ -223,6 +223,7 @@ scoreboard players set golem herospeed 500
 scoreboard players set golemTaunt abilityStats 2
 scoreboard players set golemCD abilityStats 2
 
+
 scoreboard players set blackbeard heroattack 40
 scoreboard players set blackbeard herohealth 1400
 scoreboard players set blackbeard herospeed 1100
@@ -348,20 +349,20 @@ scoreboard players set dominoLeader abilityStats 140
 scoreboard players set dominoLeaderHit heroattack 100
 
 scoreboard players set golemite heroattack 60
-scoreboard players set golemite herohealth 240
+scoreboard players set golemite herohealth 480
 scoreboard players set golemite herospeed 700
 
 scoreboard players set skeleton heroattack 80
-scoreboard players set skeleton herohealth 200
+scoreboard players set skeleton herohealth 400
 scoreboard players set skeleton herospeed 100
 
 scoreboard players set skeletonplus heroattack 120
-scoreboard players set skeletonplus herohealth 240
+scoreboard players set skeletonplus herohealth 480
 scoreboard players set skeletonplus herospeed 1200
 
 scoreboard players set demon heroattack 40
 scoreboard players set demon herosplash 2
-scoreboard players set demon herohealth 700
+scoreboard players set demon herohealth 1400
 scoreboard players set demon herospeed 700
 
 scoreboard players set blizzardSpDebuffDuration spellStats 2

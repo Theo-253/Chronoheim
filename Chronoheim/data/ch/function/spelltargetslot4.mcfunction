@@ -6,6 +6,7 @@ execute if score spellnumber spells matches 26 run execute if score durationSlot
 execute if score spellnumber spells matches 26 run scoreboard players operation shield slot4 += dragonforge spellStats
 execute if score spellnumber spells matches 26 run execute if score alivep1 deaths matches 1 run scoreboard players operation shield slot4 += dragonforge spellStats
 execute if score spellnumber spells matches 26 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 26 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Dragonforge on Slot 4!"]
 
 #Embiggen
 execute if score spellnumber spells matches 13 run execute if score buffDurationSlot4 atkmodifiers < embiggenDuration spellStats run scoreboard players operation buffDurationSlot4 atkmodifiers = embiggenDuration spellStats
@@ -13,17 +14,19 @@ execute if score spellnumber spells matches 13 run scoreboard players operation 
 execute if score spellnumber spells matches 13 run execute if score durationSlot4 shield < embiggenDuration spellStats run scoreboard players operation durationSlot4 shield = embiggenDuration spellStats
 execute if score spellnumber spells matches 13 run scoreboard players operation shield slot4 += embiggen spellStats
 execute if score spellnumber spells matches 13 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 13 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Embiggen on Slot 4!"]
 
 #Embrittle
 execute if score spellnumber spells matches 12 if score ward slot4 matches 0 run execute if score debuffDurationSlot4 atkmodifiers < embrittleDuration spellStats run scoreboard players operation debuffDurationSlot4 atkmodifiers = embrittleDuration spellStats
 execute if score spellnumber spells matches 12 if score ward slot4 matches 0 run scoreboard players operation attackDebuffSlot4 atkmodifiers += embrittle spellStats
 execute if score spellnumber spells matches 12 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 12 run function ch:spellphasep1
-
+execute if score spellnumber spells matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Embrittle on Slot 4!"]
 #Evil Eye
 execute if score spellnumber spells matches 15 if score ward slot4 matches 0 run scoreboard players operation marks slot4 += evilEye spellStats
 execute if score spellnumber spells matches 15 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 15 run function ch:spellphasep1
+execute if score spellnumber spells matches 15 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Evil Eye on Slot 4!"]
 
 #Frostbolt
 execute if score spellnumber spells matches 6 run scoreboard players operation spellDmg saves = frostbolt spellStats
@@ -40,6 +43,7 @@ execute if score spellnumber spells matches 6 run execute if score ward slot4 ma
 execute if score spellnumber spells matches 6 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 6 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 6 run function ch:spellphasep1
+execute if score spellnumber spells matches 6 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Frostbolt on Slot 4!"]
 
 #Heal
 execute if score spellnumber spells matches 2 run scoreboard players operation spellHeal saves = heal spellStats
@@ -48,6 +52,7 @@ execute if score spellnumber spells matches 2 run scoreboard players operation s
 execute if score spellnumber spells matches 2 run function ch:cleanseslot4
 execute if score spellnumber spells matches 2 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 2 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 2 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Heal on Slot 4!"]
 
 #Magic Missile
 execute if score spellnumber spells matches 4 run scoreboard players add magicMissilex2 spells 1
@@ -58,6 +63,7 @@ execute if score spellnumber spells matches 4 run scoreboard players operation s
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= spellDmg saves
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 0 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 1.. run function ch:wardslot4
+execute if score spellnumber spells matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," smited Slot 4 with Magic Missle!"]
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run function ch:spellgivetargetsp2
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run clear @a[tag=p2] target
@@ -69,16 +75,19 @@ execute if score spellnumber spells matches 16 if score protectorsrune spellStat
 execute if score spellnumber spells matches 16 if score protectorsrune spellStats > durationSlot4 taunt if score ward slot4 matches 0 run scoreboard players operation marks slot4 += protectorsruneMarks spellStats
 execute if score spellnumber spells matches 16 if score protectorsrune spellStats > durationSlot4 taunt if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 16 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 16 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Protector's Rune on Slot 4!"]
 
 #Shield
 execute if score spellnumber spells matches 8 run execute if score durationSlot4 shield < shieldDuration spellStats run scoreboard players operation durationSlot4 shield = shieldDuration spellStats
 execute if score spellnumber spells matches 8 run scoreboard players operation shield slot4 += shield spellStats
 execute if score spellnumber spells matches 8 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 8 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Shield on Slot 4!"]
 
 #Ball Lightning
 execute if score spellnumber spells matches 9 if score ward slot4 matches 0 run scoreboard players operation slot4 stun += shockOrb spellStats
 execute if score spellnumber spells matches 9 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 9 run function ch:spellphasep1
+execute if score spellnumber spells matches 9 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Ball Lightning on Slot 4!"]
 
 #Witches Brew
 execute if score spellnumber spells matches 23 run execute if score ward slot4 matches 0 if score witchesBrewDuration spellStats > durationSlot4 speedDebuffs run scoreboard players operation durationSlot4 speedDebuffs = witchesBrewDuration spellStats
@@ -92,7 +101,7 @@ execute if score spellnumber spells matches 23 run execute if score ward slot4 m
 execute if score spellnumber spells matches 23 run execute if score ward slot4 matches 0 run scoreboard players operation speed slot4 -= witchesBrewSpDebuff spellStats
 execute if score spellnumber spells matches 23 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 23 run function ch:spellphasep1
-
+execute if score spellnumber spells matches 23 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Witches Brew on Slot 4!"]
 #Shifting Shadows Token
 execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 5 if score ward slot4 matches 0 run scoreboard players set durationSlot5-4 fear 1
 execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 6 if score ward slot4 matches 0 run scoreboard players set durationSlot6-4 fear 1
@@ -100,12 +109,13 @@ execute if score spellnumber spells matches -1 if score shadowsPart1 spells matc
 execute if score spellnumber spells matches -1 if score shadowsPart1 spells matches 8 if score ward slot4 matches 0 run scoreboard players set durationSlot8-4 fear 1
 execute if score spellnumber spells matches -1 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches -1 run function ch:spellphasep1
+execute if score spellnumber spells matches -1 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Shifting Shadows to fear Slot 4!"]
 
 #Shifting Shadows
 execute if score spellnumber spells matches 28 run scoreboard players set shadowsPart1 spells 4
 execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp1
 execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
-
+execute if score spellnumber spells matches 28 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Shifting Shadows to make Slot 4 scary!"]
 clear @p[tag=game1]
 #fireball
 execute if score spellnumber spells matches 1 run scoreboard players operation spellDmg saves = fireball spellStats
@@ -119,7 +129,7 @@ execute if score spellnumber spells matches 1 run execute if score ward slot4 ma
 execute if score spellnumber spells matches 1 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 1 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 1 run function ch:spellphasep1
-
+execute if score spellnumber spells matches 1 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Fireball on Slot 4!"]
 #meteor
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves = meteor spellStats
 execute if score spellnumber spells matches 7 if score slot7isatk booleans matches 1 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
@@ -138,6 +148,7 @@ execute if score spellnumber spells matches 7 run execute if score ward slot3 ma
 execute if score spellnumber spells matches 7 run execute if score ward slot3 matches 1.. run function ch:wardslot3
 execute if score spellnumber spells matches 7 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 7 run function ch:spellphasep1
+execute if score spellnumber spells matches 7 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Meteor on Slot 4!"]
 
 #witchbolt
 execute if score spellnumber spells matches 10 run scoreboard players operation spellDmg saves = witchbolt spellStats
@@ -149,14 +160,17 @@ execute if score spellnumber spells matches 10 run execute if score ward slot4 m
 execute if score spellnumber spells matches 10 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 10 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 10 run function ch:spellphasep1
-
+execute if score spellnumber spells matches 10 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Witch Bolt on Slot 4!"]
 #ward
 execute if score spellnumber spells matches 19 run scoreboard players set ward slot4 1
 execute if score spellnumber spells matches 19 run scoreboard players set attackIsOngoingGame1 booleans 0
-
+execute if score spellnumber spells matches 26 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Ward on Slot 4!"]
 #plague
-execute if score spellnumber spells matches 21 run scoreboard players operation slot4Disease disease += plague spellStats
+execute if score spellnumber spells matches 21 if score ward slot4 matches 0 run scoreboard players operation slot4Disease disease += plague spellStats
+execute if score spellnumber spells matches 21 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 21 run function ch:spellphasep1
+execute if score spellnumber spells matches 21 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Plague on Slot 4!"]
+
 #Second wind
 execute if score spellnumber spells matches 22 run execute if score durationSlot4 speedBuffs < secondWindDuration spellStats run scoreboard players operation durationSlot4 speedBuffs = secondWindDuration spellStats
 execute if score spellnumber spells matches 22 run scoreboard players operation speedBuffSlot4 speedBuffs += secondWindSpeed spellStats
@@ -165,20 +179,21 @@ execute if score spellnumber spells matches 22 if score slot4bleeding booleaneff
 execute if score spellnumber spells matches 22 if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += spellbuffsp1 spells
 execute if score spellnumber spells matches 22 run scoreboard players set attackIsOngoingGame1 booleans 0
 execute if score spellnumber spells matches 22 run scoreboard players set spellbuffsp1 spells 0
-
+execute if score spellnumber spells matches 22 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Second Wind on Slot 4!"]
 #fountain of youth
 execute if score spellnumber spells matches 25 run execute if score disarmedslot4 booleaneffects < fountainOfYouthDuration spellStats run scoreboard players operation disarmedslot4 booleaneffects = fountainOfYouthDuration spellStats
 execute if score spellnumber spells matches 25 if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += fountainOfYouth spellStats
 execute if score spellnumber spells matches 25 if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += spellbuffsp1 spells
 execute if score spellnumber spells matches 25 run scoreboard players set attackIsOngoingGame1 booleans 0
 execute if score spellnumber spells matches 25 run scoreboard players set spellbuffsp1 spells 0
-
+execute if score spellnumber spells matches 25 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Fountain of Youth on Slot 4!"]
 #overclock
 execute if score spellnumber spells matches 27 run execute if score buffDurationSlot4 atkmodifiers < overclockDuration spellStats run scoreboard players operation buffDurationSlot4 atkmodifiers = overclockDuration spellStats
 execute if score spellnumber spells matches 27 run scoreboard players operation attackBuffSlot4 atkmodifiers += overclock spellStats
 execute if score spellnumber spells matches 27 run scoreboard players operation shield slot4 -= overclockAtk spellStats
 execute if score spellnumber spells matches 27 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
 execute if score spellnumber spells matches 27 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 27 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Overclock on Slot 4!"]
 
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0

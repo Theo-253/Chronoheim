@@ -1,6 +1,3 @@
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:7,max:7}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Meteor!"]
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:7,max:7}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Meteor!"]
-
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:7,max:7}}}}} run scoreboard players operation meteorCooldown player1spells = meteorCD spellStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:7,max:7}}}}} run scoreboard players operation meteorCooldown player2spells = meteorCD spellStats
 

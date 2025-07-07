@@ -7,9 +7,8 @@ execute if score character# slot6 matches 28 run scoreboard players set cooldown
 execute if score character# slot7 matches 28 run scoreboard players set cooldown slot7 0
 execute if score slot6 hp matches ..0 run scoreboard players set speed slot6 -1000000
 scoreboard players set durationSlot6 taunt 0
-w @p[tag=p1] Slot 6 has died!"]
-w @p[tag=p2] Slot 6 has died!"]
-
+tellraw @a[tag=game1] ["Slot 6 has died"]
+execute at @e[name=slot6,type=armor_stand] run kill @e[name=!slot6,type=!player,distance=..4]
 #Character Specific Crap
 execute if score character# slot2 matches 30 if score slot1 hp matches 1.. if score slot1bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += dominoLeader abilityStats
 execute if score character# slot2 matches 30 if score slot2 hp matches 1.. if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot2 hp += dominoLeader abilityStats

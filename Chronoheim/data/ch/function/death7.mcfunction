@@ -7,5 +7,5 @@ execute if score character# slot6 matches 28 run scoreboard players set cooldown
 execute if score character# slot7 matches 28 run scoreboard players set cooldown slot7 0
 execute if score slot7 hp matches ..0 run scoreboard players set speed slot7 -1000000
 scoreboard players set durationSlot7 taunt 0
-w @p[tag=p1] Slot 7 has died!"]
-w @p[tag=p2] Slot 7 has died!"]
+tellraw @a[tag=game1] ["Slot 7 has died"]
+execute at @e[name=slot7,type=armor_stand] run kill @e[name=!slot7,type=!player,distance=..4]

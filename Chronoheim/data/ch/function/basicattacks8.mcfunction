@@ -28,6 +28,7 @@ execute if score slot4isatk booleans matches 1 run scoreboard players operation 
 execute if score shield slot8 matches ..0 if score ward slot8 matches 0 run scoreboard players operation slot8 hp += shield slot8
 execute if score ward slot8 matches 1.. run function ch:wardslot8
 execute if score shield slot8 matches ..0 run scoreboard players set shield slot8 0
+execute at @e[name=slot8,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 
 
 #splash
@@ -39,6 +40,7 @@ execute if score splash slot1 matches 1.. run execute if score slot1isatk boolea
 execute if score splash slot1 matches 1.. run execute if score slot1isatk booleans matches 1 run scoreboard players operation splashdamage saves /= atkmultiplier slot7
 execute if score ward slot7 matches 0 run execute if score splash slot1 matches 1.. run execute if score slot1isatk booleans matches 1 run scoreboard players operation shield slot7 -= splashdamage saves
 execute if score ward slot7 matches 1.. run execute if score splash slot1 matches 1.. run execute if score slot1isatk booleans matches 1 run function ch:wardslot7
+execute if score splash slot1 matches 1.. at @e[name=slot7,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot2
 execute if score splash slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation splashdamage saves = atk slot2
 execute if score splash slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation splashdamage saves += slot2 atkmodifiers
@@ -47,6 +49,7 @@ execute if score splash slot2 matches 1.. run execute if score slot2isatk boolea
 execute if score splash slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation splashdamage saves /= atkmultiplier slot7
 execute if score ward slot7 matches 0 run execute if score splash slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation shield slot7 -= splashdamage saves
 execute if score ward slot7 matches 1.. run execute if score splash slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run function ch:wardslot7
+execute if score splash slot2 matches 1.. at @e[name=slot7,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot3
 execute if score splash slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation splashdamage saves = atk slot3
 execute if score splash slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation splashdamage saves += slot3 atkmodifiers
@@ -55,6 +58,7 @@ execute if score splash slot3 matches 1.. run execute if score slot3isatk boolea
 execute if score splash slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation splashdamage saves /= atkmultiplier slot7
 execute if score ward slot7 matches 0 run execute if score splash slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation shield slot7 -= splashdamage saves
 execute if score ward slot7 matches 1.. run execute if score splash slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run function ch:wardslot7
+execute if score splash slot3 matches 1.. at @e[name=slot7,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot4
 execute if score splash slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation splashdamage saves = atk slot4
 execute if score splash slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation splashdamage saves += slot4 atkmodifiers
@@ -63,6 +67,7 @@ execute if score splash slot4 matches 1.. run execute if score slot4isatk boolea
 execute if score splash slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation splashdamage saves /= atkmultiplier slot7
 execute if score ward slot7 matches 0 run execute if score splash slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation shield slot7 -= splashdamage saves
 execute if score ward slot7 matches 1.. run execute if score splash slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run function ch:wardslot7
+execute if score splash slot4 matches 1.. at @e[name=slot7,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #damage + shield reset (all)
 execute if score shield slot7 matches ..0 if score ward slot7 matches 0 run scoreboard players operation slot7 hp += shield slot7
 execute if score ward slot7 matches 1.. run function ch:wardslot7
@@ -76,28 +81,32 @@ execute if score lifesteal slot1 matches 1.. run execute if score slot1isatk boo
 execute if score lifesteal slot1 matches 1.. run execute if score slot1isatk booleans matches 1 run scoreboard players operation lifesteal saves += marks slot8
 execute if score lifesteal slot1 matches 1.. run execute if score slot1isatk booleans matches 1 run scoreboard players operation lifesteal saves /= atkmultiplier slot8
 execute if score lifesteal slot1 matches 1.. run execute if score slot1isatk booleans matches 1 run scoreboard players operation lifesteal saves /= lifesteal slot1
-execute if score slot1bleeding booleaneffects matches 0 run execute if score lifesteal slot1 matches 1.. run execute if score slot1isatk booleans matches 1 run scoreboard players operation slot1 hp += lifesteal saves
+execute if score ward slot8 matches 0 if score slot1bleeding booleaneffects matches 0 run execute if score lifesteal slot1 matches 1.. run execute if score slot1isatk booleans matches 1 run scoreboard players operation slot1 hp += lifesteal saves
+execute if score ward slot8 matches 0 if score lifesteal slot1 matches 1.. at @e[name=slot1,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 6
 execute if score lifesteal slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation lifesteal saves = atk slot2
 execute if score lifesteal slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation lifesteal saves += slot2 atkmodifiers
 execute if score lifesteal slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation lifesteal saves += marks slot8
 execute if score lifesteal slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation lifesteal saves /= atkmultiplier slot8
 execute if score lifesteal slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation lifesteal saves /= lifesteal slot2
-execute if score slot2bleeding booleaneffects matches 0 run execute if score lifesteal slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation slot2 hp += lifesteal saves
+execute if score ward slot8 matches 0 if score slot2bleeding booleaneffects matches 0 run execute if score lifesteal slot2 matches 1.. run execute if score slot2isatk booleans matches 1 run scoreboard players operation slot2 hp += lifesteal saves
+execute if score ward slot8 matches 0 if score lifesteal slot2 matches 1.. at @e[name=slot2,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 7
 execute if score lifesteal slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation lifesteal saves = atk slot3
 execute if score lifesteal slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation lifesteal saves += slot3 atkmodifiers
 execute if score lifesteal slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation lifesteal saves += marks slot8
 execute if score lifesteal slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation lifesteal saves /= atkmultiplier slot8
 execute if score lifesteal slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation lifesteal saves /= lifesteal slot3
-execute if score slot3bleeding booleaneffects matches 0 run execute if score lifesteal slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation slot3 hp += lifesteal saves
+execute if score ward slot8 matches 0 if score slot3bleeding booleaneffects matches 0 run execute if score lifesteal slot3 matches 1.. run execute if score slot3isatk booleans matches 1 run scoreboard players operation slot3 hp += lifesteal saves
+execute if score ward slot8 matches 0 if score lifesteal slot3 matches 1.. at @e[name=slot3,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 8
 execute if score lifesteal slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation lifesteal saves = atk slot4
 execute if score lifesteal slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation lifesteal saves += slot4 atkmodifiers
 execute if score lifesteal slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation lifesteal saves += marks slot8
 execute if score lifesteal slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation lifesteal saves /= atkmultiplier slot8
 execute if score lifesteal slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation lifesteal saves /= lifesteal slot4
-execute if score slot4bleeding booleaneffects matches 0 run execute if score lifesteal slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation slot4 hp += lifesteal saves
+execute if score ward slot8 matches 0 if score slot4bleeding booleaneffects matches 0 run execute if score lifesteal slot4 matches 1.. run execute if score slot4isatk booleans matches 1 run scoreboard players operation slot4 hp += lifesteal saves
+execute if score ward slot8 matches 0 if score lifesteal slot4 matches 1.. at @e[name=slot4,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 
 
 #lifesteal + splash

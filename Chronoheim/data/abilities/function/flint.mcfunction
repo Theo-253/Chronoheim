@@ -51,6 +51,13 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run execute if score flintsplashmode booleans matches 0 run scoreboard players set flintsplashmode booleans 1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run execute if score flintatkswap booleans matches 0 if score flintsplashmode booleans matches 1 run scoreboard players set flintsplashmode booleans 0
 
+execute if score slot1isatk booleans matches 1.. at @e[name=slot1] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score slot2isatk booleans matches 1.. at @e[name=slot2] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score slot3isatk booleans matches 1.. at @e[name=slot3] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score slot5isatk booleans matches 1.. at @e[name=slot5] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score slot6isatk booleans matches 1.. at @e[name=slot6] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score slot7isatk booleans matches 1.. at @e[name=slot7] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run function ch:basicattackstartp1
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=game1] fire_resistance
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run function ch:basicattackstartp2

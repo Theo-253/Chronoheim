@@ -12,6 +12,8 @@ execute if score abilitynumber abilities matches 3 run scoreboard players operat
 execute if score abilitynumber abilities matches 3 run execute if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= abilityDmg saves
 execute if score abilitynumber abilities matches 3 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
 execute if score abilitynumber abilities matches 3 run execute if score ward slot6 matches 1.. run function ch:wardslot6
+execute if score abilitynumber abilities matches 3 run execute at @e[name=slot6,type=armor_stand] run particle crit ~ ~ ~ 0.3 0.3 0.3 2 100
+
 execute if score abilitynumber abilities matches 3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Double Punch on Slot 6!"]
 
 #Garabaldi Ability

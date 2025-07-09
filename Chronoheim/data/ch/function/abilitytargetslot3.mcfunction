@@ -81,7 +81,7 @@ execute if score abilitynumber abilities matches 8 at @e[name=slot3] run particl
 #Ace
 execute if score abilitynumber abilities matches 12 if score ward slot3 matches 0 run scoreboard players operation cooldown slot3 = aceSetCooldown abilityStats
 execute if score abilitynumber abilities matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Ace of Spades on Slot 3!"]
-execute if score abilitynumber abilities matches 12 if score ward slot3 matches 1 run function ch:wardslot3
+execute if score abilitynumber abilities matches 12 if score ward slot3 matches 1.. run function ch:wardslot3
 execute if score abilitynumber abilities matches 12 at @e[name=slot3] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot3 speedDebuffs = aceLeaderDuration abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speedDebuffSlot3 speedDebuffs = aceLeader abilityStats
@@ -106,6 +106,9 @@ execute if score abilitynumber abilities matches 22 run execute if score ward sl
 execute if score abilitynumber abilities matches 23 if score ward slot3 matches 0 run scoreboard players operation slot3 stun = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot3 matches 0 run scoreboard players operation savehp3 saves = slot3 hp 
 execute if score abilitynumber abilities matches 23 if score ward slot3 matches 0 run scoreboard players operation invincibleSlot3 booleaneffects = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot3 matches 0 run scoreboard players operation slot3EatenDuration abilities = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot3 matches 0 at @e[name=slot3] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score abilitynumber abilities matches 23 run execute if score ward slot3 matches 1.. run function ch:wardslot3
 execute if score abilitynumber abilities matches 23 if score durationSlot3-5 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot3-5 fear = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score durationSlot3-6 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot3-6 fear = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score durationSlot3-7 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot3-7 fear = gatsbyDuration abilityStats
@@ -124,7 +127,6 @@ execute if score abilitynumber abilities matches 23 at @e[name=slot3] run partic
 execute if score abilitynumber abilities matches 23 if score slot6isatk booleans matches 1 at @e[name=slot2] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber abilities matches 23 if score slot6isatk booleans matches 1 at @e[name=slot1] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber abilities matches 23 if score slot6isatk booleans matches 1 at @e[name=slot4] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
-#execute if score abilitynumber abilities matches 23 if score ward slot3 matches 0 run scoreboard players operation slot3EatenDuration abilities = gatsbyDuration abilityStats
 #Boomer
 execute if score abilitynumber abilities matches 25 run scoreboard players operation abilityDmg saves = boomer abilityStats
 execute if score abilitynumber abilities matches 25 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers

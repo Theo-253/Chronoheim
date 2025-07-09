@@ -77,7 +77,7 @@ execute if score abilitynumber abilities matches 8 at @e[name=slot4] run particl
 #Ace
 execute if score abilitynumber abilities matches 12 if score ward slot4 matches 0 run scoreboard players operation cooldown slot4 = aceSetCooldown abilityStats
 execute if score abilitynumber abilities matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Ace of Spades on Slot 4!"]
-execute if score abilitynumber abilities matches 12 if score ward slot4 matches 1 run function ch:wardslot4
+execute if score abilitynumber abilities matches 12 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score abilitynumber abilities matches 12 at @e[name=slot4] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot4 speedDebuffs = aceLeaderDuration abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speedDebuffslot4 speedDebuffs = aceLeader abilityStats
@@ -102,6 +102,8 @@ execute if score abilitynumber abilities matches 22 run execute if score ward sl
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation slot4 stun = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation savehp4 saves = slot4 hp
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation invincibleslot4 booleaneffects = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 at @e[name=slot4] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score abilitynumber abilities matches 23 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score abilitynumber abilities matches 23 if score durationSlot4-5 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot4-5 fear = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score durationSlot4-6 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot4-6 fear = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score durationSlot4-7 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot4-7 fear = gatsbyDuration abilityStats

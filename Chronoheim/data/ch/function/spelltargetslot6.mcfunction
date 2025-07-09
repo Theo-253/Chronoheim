@@ -128,6 +128,7 @@ execute if score spellnumber spells matches 1 run execute if score ward slot6 ma
 execute if score spellnumber spells matches 1 run execute if score ward slot6 matches 0 run scoreboard players operation slot6 hp += shield slot6
 execute if score spellnumber spells matches 1 run execute if score ward slot6 matches 0 if score durationSlot6 burn < fireballDuration spellStats run scoreboard players operation durationSlot6 burn = fireballDuration spellStats
 execute if score spellnumber spells matches 1 run execute if score ward slot6 matches 0 run scoreboard players operation slot6Burn burn += fireballBurn spellStats
+execute if score spellnumber spells matches 1 at @e[name=slot6] run particle minecraft:flame ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber spells matches 1 run execute if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score spellnumber spells matches 1 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 1 run scoreboard players set attackIsOngoingGame1 booleans 0
@@ -140,6 +141,9 @@ execute if score spellnumber spells matches 7 run scoreboard players operation s
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves /= atkmultiplier slot6
 execute if score spellnumber spells matches 7 run execute if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= spellDmg saves
 execute if score spellnumber spells matches 7 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
+execute if score spellnumber spells matches 7 at @e[name=slot6] run particle minecraft:lava ~ ~1 ~ 0.9 0.9 0.9 0.5 100
+execute if score spellnumber spells matches 7 at @e[name=slot5] run particle minecraft:lava ~ ~1 ~ 0.9 0.9 0.9 0.5 50
+execute if score spellnumber spells matches 7 at @e[name=slot7] run particle minecraft:lava ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 execute if score spellnumber spells matches 7 run execute if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves = meteor spellStats
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
@@ -168,17 +172,20 @@ execute if score spellnumber spells matches 10 run scoreboard players operation 
 execute if score spellnumber spells matches 10 run scoreboard players operation spellDmg saves /= atkmultiplier slot6
 execute if score spellnumber spells matches 10 run execute if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= spellDmg saves
 execute if score spellnumber spells matches 10 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
+execute if score spellnumber spells matches 10 at @e[name=slot6] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 200
 execute if score spellnumber spells matches 10 run execute if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score spellnumber spells matches 10 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 10 run scoreboard players set attackIsOngoingGame1 booleans 0
 execute if score spellnumber spells matches 10 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Witch Bolt on Slot 6!"]
 #ward
 execute if score spellnumber spells matches 19 run scoreboard players set ward slot6 1
+execute if score spellnumber spells matches 19 at @e[name=slot6] run particle minecraft:ominous_spawning ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score spellnumber spells matches 19 run function ch:spellphasep1
-execute if score spellnumber spells matches 26 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Ward on Slot 6!"]
+execute if score spellnumber spells matches 19 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Ward on Slot 6!"]
 
 #plague
 execute if score spellnumber spells matches 21 if score ward slot6 matches 0 run scoreboard players operation slot6Disease disease += plague spellStats
+execute if score spellnumber spells matches 21 at @e[name=slot6] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber spells matches 21 if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score spellnumber spells matches 21 run scoreboard players set attackIsOngoingGame1 booleans 0
 execute if score spellnumber spells matches 21 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Plague on Slot 6!"]
@@ -189,6 +196,7 @@ execute if score spellnumber spells matches 22 run scoreboard players operation 
 execute if score spellnumber spells matches 22 run scoreboard players operation speed slot6 += secondWindSpeed spellStats
 execute if score spellnumber spells matches 22 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += secondWind spellStats
 execute if score spellnumber spells matches 22 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += spellbuffsp2 spells
+execute if score spellnumber spells matches 22 at @e[name=slot6] run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber spells matches 22 run function ch:spellphasep1
 execute if score spellnumber spells matches 22 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 22 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Second Wind on Slot 6!"]
@@ -197,6 +205,7 @@ execute if score spellnumber spells matches 22 run tellraw @a[tag=game1] ["",{"s
 execute if score spellnumber spells matches 25 run execute if score disarmedslot6 booleaneffects < fountainOfYouthDuration spellStats run scoreboard players operation disarmedslot6 booleaneffects = fountainOfYouthDuration spellStats
 execute if score spellnumber spells matches 25 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += fountainOfYouth spellStats
 execute if score spellnumber spells matches 25 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += spellbuffsp2 spells
+execute if score spellnumber spells matches 25 at @e[name=slot6] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 500
 execute if score spellnumber spells matches 25 run function ch:spellphasep1
 execute if score spellnumber spells matches 25 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 25 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Fountain of Youth on Slot 6!"]
@@ -206,6 +215,7 @@ execute if score spellnumber spells matches 27 run execute if score buffDuration
 execute if score spellnumber spells matches 27 run scoreboard players operation attackBuffSlot6 atkmodifiers += overclock spellStats
 execute if score spellnumber spells matches 27 run scoreboard players operation shield slot6 -= overclockAtk spellStats
 execute if score spellnumber spells matches 27 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
+execute if score spellnumber spells matches 27 at @e[name=slot6] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 400
 execute if score spellnumber spells matches 27 run function ch:spellphasep1
 execute if score spellnumber spells matches 27 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Overclock on Slot 6!"]
 

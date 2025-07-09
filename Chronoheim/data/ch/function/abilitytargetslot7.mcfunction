@@ -12,7 +12,7 @@ execute if score abilitynumber abilities matches 3 run scoreboard players operat
 execute if score abilitynumber abilities matches 3 run execute if score ward slot7 matches 0 run scoreboard players operation shield slot7 -= abilityDmg saves
 execute if score abilitynumber abilities matches 3 run execute if score ward slot7 matches 0 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
 execute if score abilitynumber abilities matches 3 run execute if score ward slot7 matches 1.. run function ch:wardslot7
-execute if score abilitynumber abilities matches 3 run execute at @e[name=slot7,type=armor_stand] run particle crit ~ ~ ~ 0.3 0.3 0.3 2 100
+execute if score abilitynumber abilities matches 3 run execute at @e[name=slot7,type=armor_stand] run particle crit ~ ~1 ~ 0.3 0.3 0.3 2 100
 
 execute if score abilitynumber abilities matches 3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Double Punch on Slot 7!"]
 
@@ -201,6 +201,8 @@ execute if score abilitynumber abilities matches -4 run scoreboard players opera
 execute if score abilitynumber abilities matches -4 run execute if score ward slot7 matches 0 run scoreboard players operation shield slot7 -= abilityDmg saves
 execute if score abilitynumber abilities matches -4 run execute if score ward slot7 matches 0 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
 execute if score abilitynumber abilities matches -4 run execute if score ward slot7 matches 1.. run function ch:wardslot7
+execute if score abilitynumber abilities matches -4 run execute at @e[name=slot7,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
+
 
 
 #This goes at the bottom

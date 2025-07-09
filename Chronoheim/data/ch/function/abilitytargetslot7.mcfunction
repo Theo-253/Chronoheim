@@ -20,8 +20,7 @@ execute if score abilitynumber abilities matches 3 run tellraw @a[tag=game1] [""
 execute if score abilitynumber abilities matches 24 if score slot7 hp matches 1.. if score slot7bleeding booleaneffects matches 0 run scoreboard players operation slot7 hp += garabaldiHeal abilityStats
 execute if score abilitynumber abilities matches 24 if score slot7 hp matches 1.. if score slot7bleeding booleaneffects matches 0 if score character# slot6 matches 24 run scoreboard players operation slot7 hp += garabaldiLeader abilityStats
 execute if score abilitynumber abilities matches 24 if score slot7 hp matches 1.. run scoreboard players set ward slot7 2
-execute if score abilitynumber abilities matches 24 run execute at @n[type=armor_stand,name=slot7] run particle minecraft:nautilus ~ ~1 ~ 0.5 0.5 0.5 2 100
-
+execute if score abilitynumber abilities matches 24 run execute at @n[type=armor_stand,name=slot7] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber abilities matches 24 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Bubble Shield on Slot 7!"]
 
 #Juniper Ability
@@ -35,11 +34,15 @@ execute if score abilitynumber abilities matches 27 run execute if score ward sl
 execute if score abilitynumber abilities matches 27 run execute if score ward slot7 matches 0 run scoreboard players operation slot7 stun = juniperStun abilityStats
 execute if score abilitynumber abilities matches 27 run execute if score ward slot7 matches 0 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
 execute if score abilitynumber abilities matches 27 run execute if score ward slot7 matches 1.. run function ch:wardslot7
+execute if score abilitynumber abilities matches 27 run execute at @e[name=slot7,type=armor_stand] run particle firefly ~ ~1 ~ 0.3 0.3 0.3 1 100
+
 execute if score abilitynumber abilities matches 27 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Pixie Dust on Slot 7!"]
 
 #Juniper Basic
 execute if score abilitynumber abilities matches -2 run execute if score slot7bleeding booleaneffects matches 0 run scoreboard players operation slot7 hp += juniper heroattack
-execute if score character# slot6 matches 27 run function ch:cleanseslot7
+execute if score abilitynumber abilities matches -2 run execute at @n[type=armor_stand,name=slot7] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
+
+execute if score abilitynumber abilities matches -2 if score character# slot6 matches 27 run function ch:cleanseslot7
 
 #K.O.N.G ability
 execute if score abilitynumber abilities matches 7 run scoreboard players operation abilityDmg saves = kong abilityStats
@@ -59,17 +62,20 @@ execute if score abilitynumber abilities matches 7 run execute if score ward slo
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 run scoreboard players operation speed slot7 -= kongSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 0 if score shield slot7 matches ..0 run scoreboard players operation slot7 hp += shield slot7
 execute if score abilitynumber abilities matches 7 run execute if score ward slot7 matches 1.. run function ch:wardslot7
+execute if score abilitynumber abilities matches 7 run execute at @n[type=armor_stand,name=slot7] run particle minecraft:explosion_emitter ~ ~1 ~
 execute if score abilitynumber abilities matches 7 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used B.A.N.A.N.A S.L.A.M.M.A! on Slot 7!"]
 
 #Robyn Ability
 execute if score abilitynumber abilities matches 9 if score ward slot7 matches 0 run scoreboard players operation marks slot7 += robyn abilityStats
 execute if score abilitynumber abilities matches 9 if score ward slot7 matches 1 run function ch:wardslot7
+execute if score abilitynumber abilities matches 9 run execute at @n[type=armor_stand,name=slot7] run particle minecraft:angry_villager ~ ~1 ~ 0.9 0.9 0.9 1 50
 execute if score abilitynumber abilities matches 9 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Most Wanted on Slot 7!"]
 
 #Robo
 execute if score abilitynumber abilities matches 5 if score durationSlot7 shield < roboDuration abilityStats run scoreboard players operation durationSlot7 shield = roboDuration abilityStats
 execute if score abilitynumber abilities matches 5 run scoreboard players operation shield slot7 += robo abilityStats
 execute if score abilitynumber abilities matches 5 if score slot2isatk booleans matches 1 run scoreboard players operation shield slot7 += roboLeader abilityStats
+execute if score abilitynumber abilities matches 5 run execute at @n[name=slot7,type=armor_stand] run particle minecraft:wax_off ~ ~1 ~ 0.6 0.6 0.6 0.0001 400
 execute if score abilitynumber abilities matches 5 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Force Field on Slot 7!"]
 
 #Kirin

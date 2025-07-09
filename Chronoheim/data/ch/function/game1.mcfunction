@@ -55,10 +55,12 @@ execute if score alivep2 deaths matches 0 run tellraw @a[tag=game1] ["",{"select
 execute if score alivep2 deaths matches 0 run function ch:win
 
 #Rapidtick
-execute if score character# slot2 matches 18 if score slot2 hp matches ..400 run scoreboard players operation atk slot2 = grangorLeaderAtk heroattack
-execute if score character# slot2 matches 18 if score slot2 hp matches 401.. run scoreboard players operation atk slot2 = grangor heroattack
-execute if score character# slot6 matches 18 if score slot6 hp matches ..400 run scoreboard players operation atk slot6 = grangorLeaderAtk heroattack
-execute if score character# slot6 matches 18 if score slot6 hp matches 401.. run scoreboard players operation atk slot6 = grangor heroattack
+execute if score character# slot2 matches 18 if score slot2 hp matches ..800 run scoreboard players operation atk slot2 = grangorLeaderAtk heroattack
+execute if score character# slot2 matches 18 if score slot2 hp matches 801.. run scoreboard players operation atk slot2 = grangor heroattack
+execute if score character# slot6 matches 18 if score slot6 hp matches ..800 run scoreboard players operation atk slot6 = grangorLeaderAtk heroattack
+execute if score character# slot6 matches 18 if score slot6 hp matches 801.. run scoreboard players operation atk slot6 = grangor heroattack
+execute if score character# slot6 matches 18 if score slot6 hp matches ..801 run execute at @n[type=armor_stand,name=slot6] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
+execute if score character# slot2 matches 18 if score slot2 hp matches ..801 run execute at @n[type=armor_stand,name=slot2] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
 execute if score suddenDeath deaths matches 20.. run scoreboard players set slot1bleeding booleaneffects 999
 execute if score suddenDeath deaths matches 20.. run scoreboard players set slot2bleeding booleaneffects 999
 execute if score suddenDeath deaths matches 20.. run scoreboard players set slot3bleeding booleaneffects 999

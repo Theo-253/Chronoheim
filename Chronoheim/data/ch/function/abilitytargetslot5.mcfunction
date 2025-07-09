@@ -21,6 +21,8 @@ execute if score abilitynumber abilities matches 3 run tellraw @a[tag=game1] [""
 execute if score abilitynumber abilities matches 24 if score slot5 hp matches 1.. if score slot5bleeding booleaneffects matches 0 run scoreboard players operation slot5 hp += garabaldiHeal abilityStats
 execute if score abilitynumber abilities matches 24 if score slot5 hp matches 1.. if score slot5bleeding booleaneffects matches 0 if score character# slot6 matches 24 run scoreboard players operation slot5 hp += garabaldiLeader abilityStats
 execute if score abilitynumber abilities matches 24 if score slot5 hp matches 1.. run scoreboard players set ward slot5 2
+execute if score abilitynumber abilities matches 24 run execute at @n[type=armor_stand,name=slot5] run particle minecraft:nautilus ~ ~1 ~ 0.5 0.5 0.5 2 100
+
 execute if score abilitynumber abilities matches 24 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Bubble Shield on Slot 5!"]
 
 #Juniper Ability

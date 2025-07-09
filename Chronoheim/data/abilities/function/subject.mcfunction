@@ -19,6 +19,13 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:4,max:4}}}}} if score slot6isatk booleans matches 1 run scoreboard players operation slot6 hp += subject abilityStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:4,max:4}}}}} if score slot7isatk booleans matches 1 run scoreboard players operation slot7 hp += subject abilityStats
 
+execute if score slot1isatk booleans matches 1.. at @e[name=slot1] run particle minecraft:item_slime ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot2isatk booleans matches 1.. at @e[name=slot2] run particle minecraft:item_slime ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot3isatk booleans matches 1.. at @e[name=slot3] run particle minecraft:item_slime ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot5isatk booleans matches 1.. at @e[name=slot5] run particle minecraft:item_slime ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot6isatk booleans matches 1.. at @e[name=slot6] run particle minecraft:item_slime ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot7isatk booleans matches 1.. at @e[name=slot7] run particle minecraft:item_slime ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:4,max:4}}}}} run function ch:turnend
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:4,max:4}}}}} run effect clear @a[tag=game1] fire_resistance
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:4,max:4}}}}} run function ch:turnend

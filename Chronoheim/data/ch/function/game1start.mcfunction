@@ -1,6 +1,7 @@
 #Teams
 team join p1 @a[tag=p1]
 team join p2 @a[tag=p2]
+tp @a[tag=game1] 200 1 214
 #Scoreboard Uis
 scoreboard objectives add Health_Game_1 dummy
 scoreboard objectives add Speed_Game_1 dummy

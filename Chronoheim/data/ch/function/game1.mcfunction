@@ -20,6 +20,7 @@ function ch:speedcheckgame1
 function ch:abilitychecks
 function ch:spellchecks
 
+
 #invincibility
 execute if score invincibleSlot1 booleaneffects matches 1.. run scoreboard players operation slot1 hp = savehp1 saves
 execute if score invincibleSlot2 booleaneffects matches 1.. run scoreboard players operation slot2 hp = savehp2 saves

@@ -1,3 +1,6 @@
+scoreboard objectives remove Health_Game_1
+scoreboard objectives remove Speed_Game_1
+scoreboard objectives remove Cooldown_Game_1
 scoreboard players set character# slot1 0
 scoreboard players set character# slot2 0
 scoreboard players set character# slot3 0

@@ -257,6 +257,13 @@ execute if score slot3isatk booleans matches 1 if score side1spinball abilities 
 execute if score slot5isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot5 matches 10 run execute at @n[name=slot5,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
 execute if score slot6isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot6 matches 10 run execute at @n[name=slot6,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
 execute if score slot7isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot7 matches 10 run execute at @n[name=slot7,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
+
+execute if score slot1isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot1 matches 10 run execute at @n[name=slot1,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot2isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot2 matches 10 run execute at @n[name=slot2,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot3isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot3 matches 10 run execute at @n[name=slot3,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot5isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot5 matches 10 run execute at @n[name=slot5,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot6isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot6 matches 10 run execute at @n[name=slot6,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot7isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot7 matches 10 run execute at @n[name=slot7,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
 #Attack boolean reset
 scoreboard players set slot1isatk booleans 0
 scoreboard players set slot2isatk booleans 0

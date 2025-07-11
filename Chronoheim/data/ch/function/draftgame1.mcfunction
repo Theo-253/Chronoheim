@@ -1,3 +1,5 @@
+execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot1 matches 0 run team join p1 @a[tag=p1]
+execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot1 matches 0 run team join p2 @a[tag=p2]
 execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot1 matches 0 run function ch:characterpickplayer1
 execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot1 matches 0 run setblock -173 128 -109 barrier
 execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot1 matches 0 run setblock -171 127 -107 barrier
@@ -49,3 +51,6 @@ execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoing
 execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot7 matches 1.. run execute if score character# slot3 matches 1.. if score drafttext drafts matches 6 run place template minecraft:game1spells1 -173 127 -109
 execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot7 matches 1.. run execute if score character# slot3 matches 1.. if score drafttext drafts matches 6 run place template minecraft:game1spells2 -171 126 -107
 execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot3 matches 1.. run execute if score character# slot7 matches 1.. if score drafttext drafts matches 6 run scoreboard players set drafttext drafts 0
+execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot3 matches 1.. run execute if score character# slot7 matches 1.. if score drafttext drafts matches 6 run scoreboard objectives setdisplay sidebar.team.dark_red Spell_Points
+execute if score game1start ongoinggames matches 1 if score game1Ongoing ongoinggames matches 0 run execute if score character# slot3 matches 1.. run execute if score character# slot7 matches 1.. if score drafttext drafts matches 6 run scoreboard objectives setdisplay sidebar.team.red Spell_Points
+

@@ -5,6 +5,7 @@ execute if score character# slot7 matches 1.. run execute if score character# sl
 execute if score character# slot7 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -3 run scoreboard players set Spell_Points_P2 Spell_Points 11
 execute if score character# slot7 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches -2 run scoreboard players set Spell_Points_P1 Spell_Points 9
 execute if score character# slot7 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P1 Spell_Points matches -3 run scoreboard players set Spell_Points_P1 Spell_Points 11
+scoreboard players operation spellpick1 drafts = Spell_Points_P1 Spell_Points
 
 #Fireball Select P1
 execute if score Spell_Points_P1 Spell_Points >= fireballSp spellStats run execute if items entity @p[tag=p1] container.* fire_charge[minecraft:custom_name={"text":"Fireball","bold":true,"color":"gray","italic":false}] run tag @p[tag=p1] add fireball
@@ -314,5 +315,7 @@ execute if score Spell_Points_P1 Spell_Points >= healingTotemSp spellStats run e
 
 execute if items entity @p[tag=p1,tag=!healingtotemO] container.* minecraft:totem_of_undying[minecraft:custom_name={"text":"Healing Totem","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p1] ["Sorry, you don't own this spell."]
 
-clear @a[tag=p1]
+
+execute if score spellpick1 drafts > Spell_Points_P1 Spell_Points run clear @a[tag=p1]
+
 execute if score Spell_Points_P1 Spell_Points matches 0 run execute if score Spell_Points_P2 Spell_Points matches 0 run function ch:game1start

@@ -1,3 +1,5 @@
+scoreboard players operation spellpick2 drafts = Spell_Points_P2 Spell_Points
+
 #Fireball Select P1
 execute if score Spell_Points_P2 Spell_Points >= fireballSp spellStats run execute if items entity @p[tag=p2] container.* fire_charge[minecraft:custom_name={"text":"Fireball","bold":true,"color":"gray","italic":false}] run tag @p[tag=p2] add fireball
 execute if score Spell_Points_P2 Spell_Points >= fireballSp spellStats run execute if items entity @p[tag=p2] container.* fire_charge[minecraft:custom_name={"text":"Fireball","bold":true,"color":"gray","italic":false}] run tellraw @a[tag=p2] ["",{"selector":"@p[tag=p2]"}," picked Fireball."]
@@ -304,6 +306,8 @@ execute if score Spell_Points_P2 Spell_Points < healingTotemSp spellStats run ex
 execute if score Spell_Points_P2 Spell_Points >= healingTotemSp spellStats run execute if items entity @p[tag=p2,tag=healingtotemO] container.* minecraft:totem_of_undying[minecraft:custom_name={"text":"Healing Totem","bold":true,"color":"gold","italic":false}] run scoreboard players operation Spell_Points_P2 Spell_Points -= healingTotemSp spellStats
 execute if score Spell_Points_P2 Spell_Points >= healingTotemSp spellStats run execute if items entity @p[tag=p2,tag=healingtotemO] container.* minecraft:totem_of_undying[minecraft:custom_name={"text":"Healing Totem","bold":true,"color":"gold","italic":false}] run effect clear @a[tag=p2] water_breathing
 
+
 execute if items entity @p[tag=p2,tag=!healingtotemO] container.* minecraft:totem_of_undying[minecraft:custom_name={"text":"Healing Totem","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p2] ["Sorry, you don't own this spell."]
 
-clear @a[tag=p2]
+
+execute if score spellpick2 drafts > Spell_Points_P2 Spell_Points run clear @a[tag=p2]

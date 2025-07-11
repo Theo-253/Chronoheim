@@ -4,6 +4,7 @@ tp @a[tag=game1] 200 1 214
 scoreboard objectives add Health_Game_1 dummy
 scoreboard objectives add Speed_Game_1 dummy
 scoreboard objectives add Cooldown_Game_1 dummy
+scoreboard objectives add Spell_Cooldown_Game_1 dummy
 scoreboard objectives setdisplay sidebar.team.red Health_Game_1
 scoreboard objectives setdisplay sidebar.team.dark_red Health_Game_1
 #Slot 1 Speed Reset

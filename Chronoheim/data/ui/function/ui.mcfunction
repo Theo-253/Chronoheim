@@ -26050,6 +26050,14 @@ execute if score buffDurationSlot1 atkmodifiers matches 0 run item replace block
 execute if score durationSlot1 burn matches 0 run item replace block 203 1 209 container.1 with air
 execute if score durationSlot1 shield matches 0 run item replace block 203 1 209 container.4 with air
 execute if score durationSlot1 speedBuffs matches 0 run item replace block 203 1 209 container.9 with air
+execute if score durationSlot1 regen matches 0 run item replcae block 203 1 209 container.3 with air
+execute if score durationSlot2 regen matches 0 run item replcae block 204 1 214 container.3 with air
+execute if score durationSlot3 regen matches 0 run item replcae block 203 1 219 container.3 with air
+execute if score durationSlot4 regen matches 0 run item replcae block 203 1 224 container.3 with air
+execute if score durationSlot5 regen matches 0 run item replcae block 196 1 221 container.3 with air
+execute if score durationSlot6 regen matches 0 run item replcae block 195 1 216 container.3 with air
+execute if score durationSlot7 regen matches 0 run item replcae block 196 1 211 container.3 with air
+execute if score durationSlot8 regen matches 0 run item replcae block 196 1 206 container.3 with air
 
 execute if score disarmedslot1 booleaneffects matches 1 run item replace block 203 1 209 container.15 with barrier[custom_name={"bold":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
 execute if score disarmedslot1 booleaneffects matches 2 run item replace block 203 1 209 container.15 with barrier[custom_name={"bold":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2

@@ -27,6 +27,7 @@ scoreboard players set speed slot7 0
 scoreboard players set speed slot8 0
 scoreboard players set game1Ongoing ongoinggames 0
 team leave @a[tag=game1]
+kill @a[tag=game1]
 tag @a[tag=game1] remove fireball
 tag @a[tag=game1] remove chainlightning
 tag @a[tag=game1] remove heal

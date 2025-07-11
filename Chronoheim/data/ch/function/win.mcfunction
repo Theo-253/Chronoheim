@@ -270,22 +270,22 @@ execute at @e[name=slot5,type=armor_stand] run kill @e[name=!slot5,type=!player,
 execute at @e[name=slot6,type=armor_stand] run kill @e[name=!slot6,type=!player,distance=..4]
 execute at @e[name=slot7,type=armor_stand] run kill @e[name=!slot7,type=!player,distance=..4]
 execute at @e[name=slot8,type=armor_stand] run kill @e[name=!slot8,type=!player,distance=..4]
-execute if score slot1EatenDuration booleaneffects matches 1.. run execute at @e[name=slot1] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot2EatenDuration booleaneffects matches 1.. run execute at @e[name=slot2] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot3EatenDuration booleaneffects matches 1.. run execute at @e[name=slot3] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot4EatenDuration booleaneffects matches 1.. run execute at @e[name=slot4] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot5EatenDuration booleaneffects matches 1.. run execute at @e[name=slot5] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot6EatenDuration booleaneffects matches 1.. run execute at @e[name=slot6] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot7EatenDuration booleaneffects matches 1.. run execute at @e[name=slot7] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot8EatenDuration booleaneffects matches 1.. run execute at @e[name=slot8] run tp @n[distance=..4] ~ ~20 ~
-scoreboard players set slot1EatenDuration booleaneffects 0
-scoreboard players set slot2EatenDuration booleaneffects 0
-scoreboard players set slot3EatenDuration booleaneffects 0
-scoreboard players set slot4EatenDuration booleaneffects 0
-scoreboard players set slot5EatenDuration booleaneffects 0
-scoreboard players set slot6EatenDuration booleaneffects 0
-scoreboard players set slot7EatenDuration booleaneffects 0
-scoreboard players set slot8EatenDuration booleaneffects 0
+execute if score slot1EatenDuration abilities matches 1.. run execute at @e[name=slot1] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot2EatenDuration abilities matches 1.. run execute at @e[name=slot2] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot3EatenDuration abilities matches 1.. run execute at @e[name=slot3] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot4EatenDuration abilities matches 1.. run execute at @e[name=slot4] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot5EatenDuration abilities matches 1.. run execute at @e[name=slot5] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot6EatenDuration abilities matches 1.. run execute at @e[name=slot6] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot7EatenDuration abilities matches 1.. run execute at @e[name=slot7] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot8EatenDuration abilities matches 1.. run execute at @e[name=slot8] run tp @n[distance=..4] ~ ~20 ~
+scoreboard players set slot1EatenDuration abilities 0
+scoreboard players set slot2EatenDuration abilities 0
+scoreboard players set slot3EatenDuration abilities 0
+scoreboard players set slot4EatenDuration abilities 0
+scoreboard players set slot5EatenDuration abilities 0
+scoreboard players set slot6EatenDuration abilities 0
+scoreboard players set slot7EatenDuration abilities 0
+scoreboard players set slot8EatenDuration abilities 0
 
 
 

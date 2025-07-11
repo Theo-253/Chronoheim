@@ -114,7 +114,7 @@ execute if score abilitynumber abilities matches 23 if score ward slot7 matches 
 execute if score abilitynumber abilities matches 23 if score ward slot7 matches 0 run scoreboard players operation savehp7 saves = slot7 hp
 execute if score abilitynumber abilities matches 23 if score ward slot7 matches 0 run scoreboard players operation invincibleSlot7 booleaneffects = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot7 matches 0 run scoreboard players operation slot7EatenDuration abilities = gatsbyDuration abilityStats
-execute if score abilitynumber abilities matches 23 if score ward slot7 matches 0 at @e[name=slot7] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score abilitynumber abilities matches 23 if score ward slot7 matches 0 at @e[name=slot7] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~-20 ~
 execute if score abilitynumber abilities matches 23 run execute if score ward slot7 matches 1.. run function ch:wardslot7
 execute if score abilitynumber abilities matches 23 if score durationSlot7-1 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot7-1 fear = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score durationSlot7-2 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot7-2 fear = gatsbyDuration abilityStats

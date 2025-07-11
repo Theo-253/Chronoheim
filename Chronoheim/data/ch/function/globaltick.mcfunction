@@ -16,4 +16,4 @@ function ch:maxhp
 function ch:effectparticles
 function ui:ui
 function ui:characterui
-function ch:scoreboardui
+function ui:scoreboardui

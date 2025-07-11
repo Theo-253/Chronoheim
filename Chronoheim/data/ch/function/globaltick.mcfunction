@@ -14,6 +14,6 @@ execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames
 
 function ch:maxhp
 function ch:effectparticles
-function ch:ui
-function ch:characterui
+function ui:ui
+function ui:characterui
 function ch:scoreboardui

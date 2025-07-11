@@ -89,3 +89,4 @@ execute if score suddenDeath deaths matches 20.. if score shield slot8 matches 1
 #Token slots
 execute if score character# slot4 matches 0 run scoreboard players set slot4 hp 0
 execute if score character# slot8 matches 0 run scoreboard players set slot8 hp 0
+

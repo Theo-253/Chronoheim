@@ -683,4 +683,3 @@ execute if score character# slot1 matches 0 run execute if items entity @p[tag=p
 
 execute if items entity @p[tag=p1,tag=!dominoO] container.* minecraft:player_head[minecraft:custom_name={"text":"Domino","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," , you don't own this hero."]
 
-clear @p[tag=p1] minecraft:player_head

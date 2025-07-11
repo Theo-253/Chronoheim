@@ -27,6 +27,7 @@ scoreboard players set speed slot6 0
 scoreboard players set speed slot7 0
 scoreboard players set speed slot8 0
 scoreboard players set game1Ongoing ongoinggames 0
+clear @a[tag=game1]
 team leave @a[tag=game1]
 tp @a[tag=game1] -32 51 1
 tag @a[tag=game1] remove fireball

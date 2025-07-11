@@ -26324,9 +26324,9 @@ execute if score durationSlot1-7 fear matches 1 run item replace block 203 1 219
 execute if score durationSlot1-7 fear matches 2 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
 execute if score durationSlot1-7 fear matches 3 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
 
-execute if score durationSlot1-8 fear matches 1 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot1-8 fear matches 2 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot1-8 fear matches 3 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
+execute if score durationSlot1-8 fear matches 1 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
+execute if score durationSlot1-8 fear matches 2 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
+execute if score durationSlot1-8 fear matches 3 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
 
 execute if score durationSlot2-5 fear matches 1 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
 execute if score durationSlot2-5 fear matches 2 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
@@ -26340,9 +26340,9 @@ execute if score durationSlot2-7 fear matches 1 run item replace block 203 1 219
 execute if score durationSlot2-7 fear matches 2 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
 execute if score durationSlot2-7 fear matches 3 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
 
-execute if score durationSlot2-8 fear matches 1 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot2-8 fear matches 2 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot2-8 fear matches 3 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
+execute if score durationSlot2-8 fear matches 1 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
+execute if score durationSlot2-8 fear matches 2 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
+execute if score durationSlot2-8 fear matches 3 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
 
 execute if score durationSlot4-5 fear matches 1 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
 execute if score durationSlot4-5 fear matches 2 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
@@ -26356,9 +26356,9 @@ execute if score durationSlot4-7 fear matches 1 run item replace block 203 1 219
 execute if score durationSlot4-7 fear matches 2 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
 execute if score durationSlot4-7 fear matches 3 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
 
-execute if score durationSlot4-8 fear matches 1 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot4-8 fear matches 2 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot4-8 fear matches 3 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
+execute if score durationSlot4-8 fear matches 1 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
+execute if score durationSlot4-8 fear matches 2 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
+execute if score durationSlot4-8 fear matches 3 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
 
 execute if score durationSlot3-5 fear matches 1 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
 execute if score durationSlot3-5 fear matches 2 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
@@ -26372,9 +26372,9 @@ execute if score durationSlot3-7 fear matches 1 run item replace block 203 1 219
 execute if score durationSlot3-7 fear matches 2 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
 execute if score durationSlot3-7 fear matches 3 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
 
-execute if score durationSlot3-8 fear matches 1 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot3-8 fear matches 2 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot3-8 fear matches 3 run item replace block 203 1 225 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
+execute if score durationSlot3-8 fear matches 1 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
+execute if score durationSlot3-8 fear matches 2 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
+execute if score durationSlot3-8 fear matches 3 run item replace block 203 1 224t container.12 with wither_skeleton_skull[custom_name={"bold":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
 
 execute if score durationSlot5-1 fear matches 0 run execute if score durationSlot6-1 fear matches 0 run execute if score durationSlot7-1 fear matches 0 run execute if score durationSlot8-1 fear matches 0 run item replace block 203 1 209 container.14 with air 1
 
@@ -26384,7 +26384,6 @@ execute if score durationSlot5-3 fear matches 0 run execute if score durationSlo
 
 execute if score durationSlot5-4 fear matches 0 run execute if score durationSlot6-4 fear matches 0 run execute if score durationSlot7-4 fear matches 0 run execute if score durationSlot8-4 fear matches 0 run item replace block 203 1 224 container.14 with air 1
 
-
 execute if score durationSlot1-5 fear matches 0 run execute if score durationSlot2-5 fear matches 0 run execute if score durationSlot3-5 fear matches 0 run execute if score durationSlot4-5 fear matches 0 run item replace block 196 1 221 container.14 with air 1
 
 execute if score durationSlot1-6 fear matches 0 run execute if score durationSlot2-6 fear matches 0 run execute if score durationSlot4-6 fear matches 0 run execute if score durationSlot3-6 fear matches 0 run item replace block 195 1 216 container.14 with air 1
@@ -26393,64 +26392,29 @@ execute if score durationSlot1-7 fear matches 0 run execute if score durationSlo
 
 execute if score durationSlot1-8 fear matches 0 run execute if score durationSlot2-8 fear matches 0 run execute if score durationSlot4-8 fear matches 0 run execute if score durationSlot3-8 fear matches 0 run item replace block 196 1 206 container.14 with air 1
 
+execute if score durationSlot5-1 fear matches 0 run execute if score durationSlot5-2 fear matches 0 run execute if score durationSlot5-3 fear matches 0 run execute if score durationSlot5-4 fear matches 0 run item replace block 196 1 221 container.12 with air
 
-execute if score durationSlot5-1 fear matches 0 run item replace block 196 1 221 container.12 with air
-execute if score durationSlot6-1 fear matches 0 run item replace block 195 1 216 container.12 with air
+execute if score durationSlot6-1 fear matches 0 run execute if score durationSlot6-2 fear matches 0 run execute if score durationSlot6-4 fear matches 0 run execute if score durationSlot6-3 fear matches 0 run item replace block 195 1 216 container.12 with air
 
-execute if score durationSlot7-1 fear matches 0 run item replace block 196 1 211 container.12 with air
+execute if score durationSlot7-1 fear matches 0 run execute if score durationSlot7-2 fear matches 0 run execute if score durationSlot7-4 fear matches 0 run execute if score durationSlot7-3 fear matches 0 run item replace block 196 1 211 container.12 with air
 
-execute if score durationSlot8-1 fear matches 0 run item replace block 196 1 206 container.12 with air
+execute if score durationSlot8-1 fear matches 0 run execute if score durationSlot8-2 fear matches 0 run execute if score durationSlot8-4 fear matches 0 run execute if score durationSlot8-3 fear matches 0 run item replace block 196 1 206 container.12 with air
 
-execute if score durationSlot5-2 fear matches 0 run item replace block 196 1 221 container.12 with air
+execute if score durationSlot1-5 fear matches 0 run execute if score durationSlot1-6 fear matches 0 run execute if score durationSlot1-7 fear matches 0 run execute if score durationSlot1-8 fear matches 0 run item replace block 203 1 209 container.12 with air
 
-execute if score durationSlot6-2 fear matches 0 run item replace block 195 1 216 container.12 with air
+execute if score durationSlot2-5 fear matches 0 run execute if score durationSlot2-6 fear matches 0 run execute if score durationSlot2-8 fear matches 0 run execute if score durationSlot2-7 fear matches 0 run item replace block 204 1 214 container.12 with air
 
-execute if score durationSlot7-2 fear matches 0 run item replace block 196 1 211 container.12 with air
+execute if score durationSlot3-5 fear matches 0 run execute if score durationSlot3-6 fear matches 0 run execute if score durationSlot3-7 fear matches 0 run execute if score durationSlot3-8 fear matches 0 run item replace block 203 1 219 container.12 with air
 
-execute if score durationSlot8-2 fear matches 0 run item replace block 196 1 206 container.12 with air
+execute if score durationSlot4-5 fear matches 0 run execute if score durationSlot4-6 fear matches 0 run execute if score durationSlot4-7 fear matches 0 run execute if score durationSlot4-8 fear matches 0 run item replace block 203 1 224 container.12 with air
 
-execute if score durationSlot5-4 fear matches 0 run item replace block 196 1 221 container.12 with air
 
-execute if score durationSlot6-4 fear matches 0 run item replace block 195 1 216 container.12 with air
 
-execute if score durationSlot7-4 fear matches 0 run item replace block 196 1 211 container.12 with air
 
-execute if score durationSlot8-4 fear matches 0 run item replace block 196 1 206 container.12 with air
 
-execute if score durationSlot5-3 fear matches 0 run item replace block 196 1 221 container.12 with air
 
-execute if score durationSlot6-3 fear matches 0 run item replace block 195 1 216 container.12 with air
 
-execute if score durationSlot7-3 fear matches 0 run item replace block 196 1 211 container.12 with air
 
-execute if score durationSlot8-3 fear matches 0 run item replace block 196 1 206 container.12 with air
+ 
 
-execute if score durationSlot1-5 fear matches 0 run item replace block 203 1 209 container.12 with air
-
-execute if score durationSlot1-6 fear matches 0 run item replace block 204 1 214 container.12 with air
-
-execute if score durationSlot1-7 fear matches 0 run item replace block 203 1 219 container.12 with air
-
-execute if score durationSlot1-8 fear matches 0 run item replace block 203 1 225 container.12 with air
-
-execute if score durationSlot2-5 fear matches 0 run item replace block 203 1 209 container.12 with air
-execute if score durationSlot2-6 fear matches 0 run item replace block 204 1 214 container.12 with air
-
-execute if score durationSlot2-7 fear matches 0 run item replace block 203 1 219 container.12 with air
-
-execute if score durationSlot2-8 fear matches 0 run item replace block 203 1 225 container.12 with air
-
-execute if score durationSlot4-5 fear matches 0 run item replace block 203 1 209 container.12 with air
-
-execute if score durationSlot4-6 fear matches 0 run item replace block 204 1 214 container.12 with air
-
-execute if score durationSlot4-7 fear matches 0 run item replace block 203 1 219 container.12 with air
-
-execute if score durationSlot4-8 fear matches 0 run item replace block 203 1 225 container.12 with air
-
-execute if score durationSlot3-5 fear matches 0 run item replace block 203 1 209 container.12 with air
-
-execute if score durationSlot3-6 fear matches 0 run item replace block 204 1 214 container.12 with air
-
-execute if score durationSlot3-7 fear matches 0 run item replace block 203 1 219 container.12 with air
-execute if score durationSlot3-8 fear matches 0 run item replace block 203 1 225 container.12 with air
+ 

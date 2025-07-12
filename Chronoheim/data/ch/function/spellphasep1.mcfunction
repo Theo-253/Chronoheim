@@ -37,7 +37,7 @@ give @p[tag=p1] book[minecraft:custom_name="View Spell Cooldowns",food={can_alwa
 execute if score fireballCooldown player1spells matches 1.. run scoreboard players remove fireballCooldown player1spells 1
 execute if score healCooldown player1spells matches 1.. run scoreboard players remove healCooldown player1spells 1
 execute if score chainLightningCooldown player1spells matches 1.. run scoreboard players remove chainLightningCooldown player1spells 1
-execute if score frostBoltCooldown player1spells matches 1.. run scoreboard players remove frostBoltCooldown player1spells 1
+execute if score frostboltCooldown player1spells matches 1.. run scoreboard players remove frostboltCooldown player1spells 1
 execute if score meteorCooldown player1spells matches 1.. run scoreboard players remove meteorCooldown player1spells 1
 execute if score shieldCooldown player1spells matches 1.. run scoreboard players remove shieldCooldown player1spells 1
 execute if score shockOrbCooldown player1spells matches 1.. run scoreboard players remove shockOrbCooldown player1spells 1

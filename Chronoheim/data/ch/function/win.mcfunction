@@ -207,7 +207,7 @@ scoreboard players set frostboltCooldown player1spells 0
 scoreboard players set shockOrbCooldown player1spells 0
 scoreboard players set meteorCooldown player1spells 0
 scoreboard players set shieldCooldown player1spells 0
-scoreboard players set witchBoltCooldown player1spells 0
+scoreboard players set witchboltCooldown player1spells 0
 scoreboard players set swiftnessCooldown player1spells 0
 scoreboard players set embrittleCooldown player1spells 0
 scoreboard players set embiggenCooldown player1spells 0

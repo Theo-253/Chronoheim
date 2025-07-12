@@ -1,6 +1,6 @@
 execute if score durationSlot1 poison matches 1.. at @e[name=slot1] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot1 regen matches 1.. at @e[name=slot1] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
-execute if score durationSlot1 burn matches 1.. at @e[name=slot1] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.5 1
+execute if score durationSlot1 burn matches 1.. at @e[name=slot1] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot1 atkmodifiers matches 1.. at @e[name=slot1] run particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot1 atkmodifiers matches ..-1 at @e[name=slot1] run particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot1 speedBuffs matches 1.. at @e[name=slot1] run particle minecraft:dolphin ~ ~2 ~ 0.2 0.9 0.2 0.01 1
@@ -16,7 +16,7 @@ execute if score shield slot1 matches 1.. at @e[name=slot1] run particle minecra
 
 execute if score durationSlot2 poison matches 1.. at @e[name=slot2] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot2 regen matches 1.. at @e[name=slot2] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
-execute if score durationSlot2 burn matches 1.. at @e[name=slot2] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.5 1
+execute if score durationSlot2 burn matches 1.. at @e[name=slot2] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot2 atkmodifiers matches 1.. at @e[name=slot2] run particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot2 atkmodifiers matches ..-1 at @e[name=slot2] run particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot2 speedBuffs matches 1.. at @e[name=slot2] run particle minecraft:dolphin ~ ~2 ~ 0.2 0.9 0.2 0.01 1
@@ -32,7 +32,7 @@ execute if score shield slot2 matches 1.. at @e[name=slot2] run particle minecra
 
 execute if score durationSlot3 poison matches 1.. at @e[name=slot3] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot3 regen matches 1.. at @e[name=slot3] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
-execute if score durationSlot3 burn matches 1.. at @e[name=slot3] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.5 1
+execute if score durationSlot3 burn matches 1.. at @e[name=slot3] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot3 atkmodifiers matches 1.. at @e[name=slot3] run particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot3 atkmodifiers matches ..-1 at @e[name=slot3] run particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot3 speedBuffs matches 1.. at @e[name=slot3] run particle minecraft:dolphin ~ ~2 ~ 0.2 0.9 0.2 0.01 1
@@ -48,7 +48,7 @@ execute if score shield slot3 matches 1.. at @e[name=slot3] run particle minecra
 
 execute if score durationSlot4 poison matches 1.. at @e[name=slot4] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot4 regen matches 1.. at @e[name=slot4] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
-execute if score durationSlot4 burn matches 1.. at @e[name=slot4] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.5 1
+execute if score durationSlot4 burn matches 1.. at @e[name=slot4] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot4 atkmodifiers matches 1.. at @e[name=slot4] run particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot4 atkmodifiers matches ..-1 at @e[name=slot4] run particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot4 speedBuffs matches 1.. at @e[name=slot4] run particle minecraft:dolphin ~ ~2 ~ 0.2 0.9 0.2 0.01 1
@@ -64,7 +64,7 @@ execute if score shield slot4 matches 1.. at @e[name=slot4] run particle minecra
 
 execute if score durationSlot5 poison matches 1.. at @e[name=slot5] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot5 regen matches 1.. at @e[name=slot5] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
-execute if score durationSlot5 burn matches 1.. at @e[name=slot5] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.5 1
+execute if score durationSlot5 burn matches 1.. at @e[name=slot5] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot5 atkmodifiers matches 1.. at @e[name=slot5] run particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot5 atkmodifiers matches ..-1 at @e[name=slot5] run particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot5 speedBuffs matches 1.. at @e[name=slot5] run particle minecraft:dolphin ~ ~2 ~ 0.2 0.9 0.2 0.01 1
@@ -80,7 +80,7 @@ execute if score shield slot5 matches 1.. at @e[name=slot5] run particle minecra
 
 execute if score durationSlot6 poison matches 1.. at @e[name=slot6] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot6 regen matches 1.. at @e[name=slot6] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
-execute if score durationSlot6 burn matches 1.. at @e[name=slot6] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.5 1
+execute if score durationSlot6 burn matches 1.. at @e[name=slot6] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot6 atkmodifiers matches 1.. at @e[name=slot6] run particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot6 atkmodifiers matches ..-1 at @e[name=slot6] run particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot6 speedBuffs matches 1.. at @e[name=slot6] run particle minecraft:dolphin ~ ~2 ~ 0.2 0.9 0.2 0.01 1
@@ -96,7 +96,7 @@ execute if score shield slot6 matches 1.. at @e[name=slot6] run particle minecra
 
 execute if score durationSlot7 poison matches 1.. at @e[name=slot7] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot7 regen matches 1.. at @e[name=slot7] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
-execute if score durationSlot7 burn matches 1.. at @e[name=slot7] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.5 1
+execute if score durationSlot7 burn matches 1.. at @e[name=slot7] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot7 atkmodifiers matches 1.. at @e[name=slot7] run particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot7 atkmodifiers matches ..-1 at @e[name=slot7] run particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot7 speedBuffs matches 1.. at @e[name=slot7] run particle minecraft:dolphin ~ ~2 ~ 0.2 0.9 0.2 0.01 1
@@ -112,7 +112,7 @@ execute if score shield slot7 matches 1.. at @e[name=slot7] run particle minecra
 
 execute if score durationSlot8 poison matches 1.. at @e[name=slot8] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot8 regen matches 1.. at @e[name=slot8] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
-execute if score durationSlot8 burn matches 1.. at @e[name=slot8] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.5 1
+execute if score durationSlot8 burn matches 1.. at @e[name=slot8] run particle minecraft:flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot8 atkmodifiers matches 1.. at @e[name=slot8] run particle minecraft:trial_spawner_detection ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score slot8 atkmodifiers matches ..-1 at @e[name=slot8] run particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot8 speedBuffs matches 1.. at @e[name=slot8] run particle minecraft:dolphin ~ ~2 ~ 0.2 0.9 0.2 0.01 1

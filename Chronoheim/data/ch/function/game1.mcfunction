@@ -49,16 +49,6 @@ execute as @p[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 #Speed Reset
 execute if score attackIsOngoingGame1 booleans matches 0 run execute if score speed slot8 matches ..-10000 if score speed slot7 matches ..-10000 if score speed slot6 matches ..-10000 run execute if score speed slot5 matches ..-10000 run execute if score speed slot4 matches ..-10000 run execute if score speed slot3 matches ..-10000 run execute if score speed slot2 matches ..-10000 run execute if score speed slot1 matches ..-10000 run function ch:turnresetgame1
 
-#Death
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot1 hp matches ..0 run execute unless score speed slot1 matches -1000000..-900000 run function ch:death1
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot2 hp matches ..0 run execute unless score speed slot2 matches -1000000..-900000 run function ch:death2
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot3 hp matches ..0 run execute unless score speed slot3 matches -1000000..-900000 run function ch:death3
-execute if score game1Ongoing ongoinggames matches 1 unless score character# slot4 matches 0 run execute if score slot4 hp matches ..0 run execute unless score speed slot4 matches -1000000..-900000 run function ch:death4
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot5 hp matches ..0 run execute unless score speed slot5 matches -1000000..-900000 run function ch:death5
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot6 hp matches ..0 run execute unless score speed slot6 matches -1000000..-900000 run function ch:death6
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot7 hp matches ..0 run execute unless score speed slot7 matches -1000000..-900000 run function ch:death7
-execute if score game1Ongoing ongoinggames matches 1 unless score character# slot8 matches 0 run execute if score slot8 hp matches ..0 run execute unless score speed slot8 matches -1000000..-900000 run function ch:death8
-
 #When I get elected, we will have so much winning
 execute if score alivep1 deaths matches 0 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," @p[tag=p2] has won the duel against @p[tag=p1]!"] 
 execute if score alivep1 deaths matches 0 run function ch:win

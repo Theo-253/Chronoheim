@@ -79,15 +79,15 @@ execute if items entity @p[tag=p1,tag=!frostboltO] container.* breeze_rod[minecr
 
 
 #Meteor Select P1
-execute if score Spell_Points_P1 Spell_Points >= meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run tag @p[tag=p1] add meteor
-execute if score Spell_Points_P1 Spell_Points >= meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p1] ["",{"selector":"@p[tag=p1]"}," picked Meteor."]
-execute if score Spell_Points_P1 Spell_Points < meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p1] ["",{"selector":"@p[tag=p1]"}," You dont have enough spell points to equip this spell."]
-execute if score Spell_Points_P1 Spell_Points < meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p1]
-execute if score Spell_Points_P1 Spell_Points >= meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation Spell_Points_P1 Spell_Points -= meteorSp spellStats
-execute if score Spell_Points_P1 Spell_Points >= meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run effect clear @a[tag=p1] water_breathing
+execute if score Spell_Points_P1 Spell_Points >= meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral_block[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run tag @p[tag=p1] add meteor
+execute if score Spell_Points_P1 Spell_Points >= meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral_block[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p1] ["",{"selector":"@p[tag=p1]"}," picked Meteor."]
+execute if score Spell_Points_P1 Spell_Points < meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral_block[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p1] ["",{"selector":"@p[tag=p1]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P1 Spell_Points < meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral_block[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p1]
+execute if score Spell_Points_P1 Spell_Points >= meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral_block[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation Spell_Points_P1 Spell_Points -= meteorSp spellStats
+execute if score Spell_Points_P1 Spell_Points >= meteorSp spellStats run execute if items entity @p[tag=p1,tag=meteorO] container.* dead_brain_coral_block[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run effect clear @a[tag=p1] water_breathing
 
-execute if items entity @p[tag=p1,tag=!meteorO] container.* dead_brain_coral[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p1] ["Sorry, you don't own this spell."]
-execute if items entity @p[tag=p1,tag=!meteorO] container.* dead_brain_coral[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p1]
+execute if items entity @p[tag=p1,tag=!meteorO] container.* dead_brain_coral_block[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p1] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p1,tag=!meteorO] container.* dead_brain_coral_block[minecraft:custom_name={"text":"Meteor","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p1]
 
 
 #Shield Select P1

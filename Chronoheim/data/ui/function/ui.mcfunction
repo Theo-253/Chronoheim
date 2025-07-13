@@ -26120,44 +26120,44 @@ execute if score disarmedslot8 booleaneffects matches 2 run item replace block 1
 execute if score disarmedslot8 booleaneffects matches 3 run item replace block 196 1 206 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
 execute if score disarmedslot8 booleaneffects matches 3 run item replace block 196 1 206 container.15 with air
 
-execute if score durationSlot1 taunt matches 1 run item replace block 203 1 209 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot1 taunt matches 2 run item replace block 203 1 209 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot1 taunt matches 3 run item replace block 203 1 209 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot1 taunt matches 1 run item replace block 203 1 209 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot1 taunt matches 2 run item replace block 203 1 209 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot1 taunt matches 3 run item replace block 203 1 209 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
 execute if score durationSlot1 taunt matches 0 run item replace block 203 1 209 container.22 with air
 
-execute if score durationSlot2 taunt matches 1 run item replace block 204 1 214 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot2 taunt matches 2 run item replace block 204 1 214 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot2 taunt matches 3 run item replace block 204 1 214 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot2 taunt matches 1 run item replace block 204 1 214 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot2 taunt matches 2 run item replace block 204 1 214 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot2 taunt matches 3 run item replace block 204 1 214 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
 execute if score durationSlot2 taunt matches 0 run item replace block 204 1 214 container.22 with air
 
-execute if score durationSlot3 taunt matches 1 run item replace block 203 1 219 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot3 taunt matches 2 run item replace block 203 1 219 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot3 taunt matches 3 run item replace block 203 1 219 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot3 taunt matches 1 run item replace block 203 1 219 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot3 taunt matches 2 run item replace block 203 1 219 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot3 taunt matches 3 run item replace block 203 1 219 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
 execute if score durationSlot3 taunt matches 0 run item replace block 203 1 219 container.22 with air
 
-execute if score durationSlot4 taunt matches 1 run item replace block 203 1 224 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot4 taunt matches 2 run item replace block 203 1 224 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot4 taunt matches 3 run item replace block 203 1 224 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot4 taunt matches 1 run item replace block 203 1 224 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot4 taunt matches 2 run item replace block 203 1 224 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot4 taunt matches 3 run item replace block 203 1 224 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
 execute if score durationSlot4 taunt matches 0 run item replace block 203 1 224 container.22 with air
 
-execute if score durationSlot5 taunt matches 1 run item replace block 196 1 221 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot5 taunt matches 2 run item replace block 196 1 221 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot5 taunt matches 3 run item replace block 196 1 221 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot5 taunt matches 1 run item replace block 196 1 221 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot5 taunt matches 2 run item replace block 196 1 221 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot5 taunt matches 3 run item replace block 196 1 221 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
 execute if score durationSlot5 taunt matches 0 run item replace block 196 1 221 container.22 with air
 
-execute if score durationSlot6 taunt matches 1 run item replace block 195 1 216 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot6 taunt matches 2 run item replace block 195 1 216 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot6 taunt matches 3 run item replace block 195 1 216 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot6 taunt matches 1 run item replace block 195 1 216 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot6 taunt matches 2 run item replace block 195 1 216 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot6 taunt matches 3 run item replace block 195 1 216 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
 execute if score durationSlot6 taunt matches 0 run item replace block 195 1 216 container.22 with air
 
-execute if score durationSlot7 taunt matches 1 run item replace block 196 1 211 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot7 taunt matches 2 run item replace block 196 1 211 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot7 taunt matches 3 run item replace block 196 1 211 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot7 taunt matches 1 run item replace block 196 1 211 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot7 taunt matches 2 run item replace block 196 1 211 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot7 taunt matches 3 run item replace block 196 1 211 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
 execute if score durationSlot7 taunt matches 0 run item replace block 196 1 211 container.22 with air
 
-execute if score durationSlot8 taunt matches 1 run item replace block 196 1 206 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot8 taunt matches 2 run item replace block 196 1 206 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot8 taunt matches 3 run item replace block 196 1 206 container.22 with cake[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot8 taunt matches 1 run item replace block 196 1 206 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot8 taunt matches 2 run item replace block 196 1 206 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot8 taunt matches 3 run item replace block 196 1 206 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
 execute if score durationSlot8 taunt matches 0 run item replace block 196 1 206 container.22 with air
 
 execute if score durationSlot5-1 fear matches 1 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1

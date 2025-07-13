@@ -279,7 +279,6 @@ scoreboard players set useddoubleatk slot7 0
 scoreboard players set useddoubleatk slot8 0
 
 
-
 #Misc
 scoreboard players set flintatkswap booleans 0
 scoreboard players set attackIsOngoingGame1 booleans 1
@@ -289,55 +288,5 @@ scoreboard players add suddenDeath deaths 1
 execute if score suddenDeath deaths matches 20 run title @a[tag=game1] actionbar "Sudden Death is now active! Healing and Shields are disabled."
 execute if score side1spinball abilities matches -2 run scoreboard players set side1spinball abilities -1
 execute if score side2spinball abilities matches -2 run scoreboard players set side2spinball abilities -1
-execute if score side1spinball booleans matches 1 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 1 stack of Kinetic Energy"]
-execute if score side1spinball booleans matches 2 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 2 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 3 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 4 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 5 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 5 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 6 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 6 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 7 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 7 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 8 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 8 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 9 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 9 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 10 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 10 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 11 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 11 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 12 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 13 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 13 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 14 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 14 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 15 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 15 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 16 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 16 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 17 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 17 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 18 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 18 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 19 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 19 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 20 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 20 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 21 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 21 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 22 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 22 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 23 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 23 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 24 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 24 stacks of Kinetic Energy"]
-execute if score side1spinball booleans matches 25 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"},"'s Dillo has 25 stacks of Kinetic Energy"]
 
-execute if score side2spinball booleans matches 1 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 1 stack of Kinetic Energy"]
-execute if score side2spinball booleans matches 2 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 2 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 3 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 4 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 5 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 5 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 6 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 6 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 7 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 7 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 8 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 8 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 9 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 9 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 10 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 10 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 11 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 11 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 12 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 13 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 13 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 14 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 14 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 15 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 15 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 16 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 16 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 17 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 17 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 18 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 18 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 19 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 19 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 20 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 20 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 21 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 21 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 22 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 22 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 23 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 23 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 24 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 24 stacks of Kinetic Energy"]
-execute if score side2spinball booleans matches 25 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"},"'s Dillo has 25 stacks of Kinetic Energy"]
 function ch:spellphasep2

@@ -1,0 +1,33 @@
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run scoreboard players set abilityusep1 booleans 1
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run scoreboard players set abilityusep2 booleans 1
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used More Heads!"]
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used More Heads!"]
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run execute if score slot1isatk booleans matches 1.. run scoreboard players operation cooldown slot1 = hydraCD abilityStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run execute if score slot2isatk booleans matches 1.. run scoreboard players operation cooldown slot2 = hydraCD abilityStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run execute if score slot3isatk booleans matches 1.. run scoreboard players operation cooldown slot3 = hydraCD abilityStats
+
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run execute if score slot5isatk booleans matches 1.. run scoreboard players operation cooldown slot5 = hydraCD abilityStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run execute if score slot6isatk booleans matches 1.. run scoreboard players operation cooldown slot6 = hydraCD abilityStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run execute if score slot7isatk booleans matches 1.. run scoreboard players operation cooldown slot7 = hydraCD abilityStats
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} if score slot1isatk booleans matches 1 run scoreboard players operation atk slot1 *= hydra abilityStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} if score slot2isatk booleans matches 1 run scoreboard players operation atk slot2 *= hydra abilityStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} if score slot3isatk booleans matches 1 run scoreboard players operation atk slot3 *= hydra abilityStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} if score slot5isatk booleans matches 1 run scoreboard players operation atk slot5 *= hydra abilityStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} if score slot6isatk booleans matches 1 run scoreboard players operation atk slot6 *= hydra abilityStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} if score slot7isatk booleans matches 1 run scoreboard players operation atk slot7 *= hydra abilityStats
+
+execute if score slot1isatk booleans matches 1.. at @e[name=slot1] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot2isatk booleans matches 1.. at @e[name=slot2] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot3isatk booleans matches 1.. at @e[name=slot3] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot5isatk booleans matches 1.. at @e[name=slot5] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot6isatk booleans matches 1.. at @e[name=slot6] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score slot7isatk booleans matches 1.. at @e[name=slot7] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run function ch:turnend
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run effect clear @a[tag=game1] fire_resistance
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run function ch:turnend
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run effect clear @a[tag=game1] fire_resistance
+scoreboard players set burn burn 1

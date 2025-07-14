@@ -2,30 +2,30 @@ scoreboard objectives remove Health_Game_1
 scoreboard objectives remove Speed_Game_1
 scoreboard objectives remove Cooldown_Game_1
 scoreboard objectives remove Spell_Cooldown_Game_1
-scoreboard players set character# slot9 0
-scoreboard players set character# slot10 0
-scoreboard players set character# slot11 0
-scoreboard players set character# slot12 0
-scoreboard players set character# slot13 0
-scoreboard players set character# slot14 0
-scoreboard players set character# slot15 0
-scoreboard players set character# slot16 0
-scoreboard players set cooldown slot9 0
-scoreboard players set cooldown slot10 0
-scoreboard players set cooldown slot11 0
-scoreboard players set cooldown slot12 0
-scoreboard players set cooldown slot13 0
-scoreboard players set cooldown slot14 0
-scoreboard players set cooldown slot15 0
-scoreboard players set cooldown slot16 0
-scoreboard players set speed slot9 0
-scoreboard players set speed slot10 0
-scoreboard players set speed slot11 0
-scoreboard players set speed slot12 0
-scoreboard players set speed slot13 0
-scoreboard players set speed slot14 0
-scoreboard players set speed slot15 0
-scoreboard players set speed slot16 0
+scoreboard players set character# slot17 0
+scoreboard players set character# slot18 0
+scoreboard players set character# slot19 0
+scoreboard players set character# slot20 0
+scoreboard players set character# slot21 0
+scoreboard players set character# slot23 0
+scoreboard players set character# slot23 0
+scoreboard players set character# slot24 0
+scoreboard players set cooldown slot17 0
+scoreboard players set cooldown slot18 0
+scoreboard players set cooldown slot19 0
+scoreboard players set cooldown slot20 0
+scoreboard players set cooldown slot21 0
+scoreboard players set cooldown slot23 0
+scoreboard players set cooldown slot23 0
+scoreboard players set cooldown slot24 0
+scoreboard players set speed slot17 0
+scoreboard players set speed slot18 0
+scoreboard players set speed slot19 0
+scoreboard players set speed slot20 0
+scoreboard players set speed slot21 0
+scoreboard players set speed slot23 0
+scoreboard players set speed slot23 0
+scoreboard players set speed slot24 0
 scoreboard players set game2Ongoing ongoinggames 0
 clear @a[tag=game2]
 team leave @a[tag=game2]
@@ -60,144 +60,144 @@ tag @a[tag=game2] remove overclock
 tag @a[tag=game2] remove shiftingshadows
 tag @a[tag=game2] remove chronowarp
 tag @a[tag=game2] remove healingtotem
-tag @a remove p3
-tag @a remove p4
+tag @a remove p5
+tag @a remove p6
 tag @a remove game2
-scoreboard players set alivep3 deaths 3
-scoreboard players set alivep4 deaths 3
-scoreboard players set abilityusep3 booleans 0
-scoreboard players set abilityusep4 booleans 0
-scoreboard players set slot9isatk booleans 0
-scoreboard players set slot10isatk booleans 0
-scoreboard players set slot11isatk booleans 0
-scoreboard players set slot12isatk booleans 0
-scoreboard players set slot13isatk booleans 0
-scoreboard players set slot14isatk booleans 0
-scoreboard players set slot15isatk booleans 0
-scoreboard players set slot16isatk booleans 0
+scoreboard players set alivep5 deaths 3
+scoreboard players set alivep6 deaths 3
+scoreboard players set abilityusep5 booleans 0
+scoreboard players set abilityusep6 booleans 0
+scoreboard players set slot17isatk booleans 0
+scoreboard players set slot18isatk booleans 0
+scoreboard players set slot19isatk booleans 0
+scoreboard players set slot20isatk booleans 0
+scoreboard players set slot21isatk booleans 0
+scoreboard players set slot23isatk booleans 0
+scoreboard players set slot23isatk booleans 0
+scoreboard players set slot24isatk booleans 0
 scoreboard players set game2start ongoinggames 0
-scoreboard players reset slot12 hp
-scoreboard players reset slot16 hp
-function ch:cleanseslot9
-function ch:cleanseslot10
-function ch:cleanseslot11
-function ch:cleanseslot12
-function ch:cleanseslot13
-function ch:cleanseslot14
-function ch:cleanseslot15
-function ch:cleanseslot16
-scoreboard players set durationSlot9 speedBuffs 0
-scoreboard players set durationSlot10 speedBuffs 0
-scoreboard players set durationSlot11 speedBuffs 0
-scoreboard players set durationSlot12 speedBuffs 0
-scoreboard players set durationSlot13 speedBuffs 0
-scoreboard players set durationSlot14 speedBuffs 0
-scoreboard players set durationSlot15 speedBuffs 0
-scoreboard players set durationSlot16 speedBuffs 0
-scoreboard players set durationSlot9 regen 0
-scoreboard players set durationSlot10 regen 0
-scoreboard players set durationSlot11 regen 0
-scoreboard players set durationSlot12 regen 0
-scoreboard players set durationSlot13 regen 0
-scoreboard players set durationSlot14 regen 0
-scoreboard players set durationSlot15 regen 0
-scoreboard players set durationSlot16 regen 0
-scoreboard players set durationSlot9 shield 0
-scoreboard players set durationSlot10 shield 0
-scoreboard players set durationSlot11 shield 0
-scoreboard players set durationSlot12 shield 0
-scoreboard players set durationSlot13 shield 0
-scoreboard players set durationSlot14 shield 0
-scoreboard players set durationSlot15 shield 0
-scoreboard players set durationSlot16 shield 0
-scoreboard players set buffDurationSlot9 atkmodifiers 0
-scoreboard players set buffDurationSlot10 atkmodifiers 0
-scoreboard players set buffDurationSlot11 atkmodifiers 0
-scoreboard players set buffDurationSlot12 atkmodifiers 0
-scoreboard players set buffDurationSlot13 atkmodifiers 0
-scoreboard players set buffDurationSlot14 atkmodifiers 0
-scoreboard players set buffDurationSlot15 atkmodifiers 0
-scoreboard players set buffDurationSlot16 atkmodifiers 0
-scoreboard players set debuffDurationSlot9 atkmodifiers 0
-scoreboard players set debuffDurationSlot10 atkmodifiers 0
-scoreboard players set debuffDurationSlot11 atkmodifiers 0
-scoreboard players set debuffDurationSlot12 atkmodifiers 0
-scoreboard players set debuffDurationSlot13 atkmodifiers 0
-scoreboard players set debuffDurationSlot14 atkmodifiers 0
-scoreboard players set debuffDurationSlot15 atkmodifiers 0
-scoreboard players set debuffDurationSlot16 atkmodifiers 0
-scoreboard players set slot9 stun 0
-scoreboard players set slot10 stun 0
-scoreboard players set slot11 stun 0
-scoreboard players set slot12 stun 0
-scoreboard players set slot13 stun 0
-scoreboard players set slot14 stun 0
-scoreboard players set slot15 stun 0
-scoreboard players set slot16 stun 0
-scoreboard players set disarmedslot9 booleaneffects 0
-scoreboard players set disarmedslot10 booleaneffects 0
-scoreboard players set disarmedslot11 booleaneffects 0
-scoreboard players set disarmedslot12 booleaneffects 0
-scoreboard players set disarmedslot13 booleaneffects 0
-scoreboard players set disarmedslot14 booleaneffects 0
-scoreboard players set disarmedslot15 booleaneffects 0
-scoreboard players set disarmedslot16 booleaneffects 0
-scoreboard players set nobasicatk slot9 0
-scoreboard players set nobasicatk slot10 0
-scoreboard players set nobasicatk slot11 0
-scoreboard players set nobasicatk slot12 0
-scoreboard players set nobasicatk slot13 0
-scoreboard players set nobasicatk slot14 0
-scoreboard players set nobasicatk slot15 0
-scoreboard players set nobasicatk slot16 0
-scoreboard players set atkmultiplier slot9 1
-scoreboard players set atkmultiplier slot10 1
-scoreboard players set atkmultiplier slot11 1
-scoreboard players set atkmultiplier slot12 1
-scoreboard players set atkmultiplier slot13 1
-scoreboard players set atkmultiplier slot14 1
-scoreboard players set atkmultiplier slot15 1
-scoreboard players set atkmultiplier slot16 1
-scoreboard players set ward slot9 0
-scoreboard players set ward slot10 0
-scoreboard players set ward slot11 0
-scoreboard players set ward slot12 0
-scoreboard players set ward slot13 0
-scoreboard players set ward slot14 0
-scoreboard players set ward slot15 0
-scoreboard players set ward slot16 0
-scoreboard players set doubleatk slot9 0
-scoreboard players set doubleatk slot10 0
-scoreboard players set doubleatk slot11 0
-scoreboard players set doubleatk slot12 0
-scoreboard players set doubleatk slot13 0
-scoreboard players set doubleatk slot14 0
-scoreboard players set doubleatk slot15 0
-scoreboard players set doubleatk slot16 0
-scoreboard players set splash slot9 0
-scoreboard players set splash slot10 0
-scoreboard players set splash slot11 0
-scoreboard players set splash slot12 0
-scoreboard players set splash slot13 0
-scoreboard players set splash slot14 0
-scoreboard players set splash slot15 0
-scoreboard players set splash slot16 0
-scoreboard players set lifesteal slot9 0
-scoreboard players set lifesteal slot10 0
-scoreboard players set lifesteal slot11 0
-scoreboard players set lifesteal slot12 0
-scoreboard players set lifesteal slot13 0
-scoreboard players set lifesteal slot14 0
-scoreboard players set lifesteal slot15 0
-scoreboard players set lifesteal slot16 0
-scoreboard players set invincibleSlot9 booleaneffects 0
-scoreboard players set invincibleSlot10 booleaneffects 0
-scoreboard players set invincibleSlot11 booleaneffects 0
-scoreboard players set invincibleSlot12 booleaneffects 0
-scoreboard players set invincibleSlot13 booleaneffects 0
-scoreboard players set invincibleSlot14 booleaneffects 0
-scoreboard players set invincibleSlot15 booleaneffects 0
-scoreboard players set invincibleSlot16 booleaneffects 0
+scoreboard players reset slot20 hp
+scoreboard players reset slot24 hp
+function ch:cleanseslot17
+function ch:cleanseslot18
+function ch:cleanseslot19
+function ch:cleanseslot20
+function ch:cleanseslot21
+function ch:cleanseslot23
+function ch:cleanseslot23
+function ch:cleanseslot24
+scoreboard players set durationSlot17 speedBuffs 0
+scoreboard players set durationSlot18 speedBuffs 0
+scoreboard players set durationSlot19 speedBuffs 0
+scoreboard players set durationSlot20 speedBuffs 0
+scoreboard players set durationSlot21 speedBuffs 0
+scoreboard players set durationSlot22 speedBuffs 0
+scoreboard players set durationSlot23 speedBuffs 0
+scoreboard players set durationSlot24 speedBuffs 0
+scoreboard players set durationSlot17 regen 0
+scoreboard players set durationSlot18 regen 0
+scoreboard players set durationSlot19 regen 0
+scoreboard players set durationSlot20 regen 0
+scoreboard players set durationSlot21 regen 0
+scoreboard players set durationSlot22 regen 0
+scoreboard players set durationSlot23 regen 0
+scoreboard players set durationSlot24 regen 0
+scoreboard players set durationSlot17 shield 0
+scoreboard players set durationSlot18 shield 0
+scoreboard players set durationSlot19 shield 0
+scoreboard players set durationSlot20 shield 0
+scoreboard players set durationSlot21 shield 0
+scoreboard players set durationSlot22 shield 0
+scoreboard players set durationSlot23 shield 0
+scoreboard players set durationSlot24 shield 0
+scoreboard players set buffDurationSlot17 atkmodifiers 0
+scoreboard players set buffDurationSlot18 atkmodifiers 0
+scoreboard players set buffDurationSlot19 atkmodifiers 0
+scoreboard players set buffDurationSlot20 atkmodifiers 0
+scoreboard players set buffDurationSlot21 atkmodifiers 0
+scoreboard players set buffDurationSlot22 atkmodifiers 0
+scoreboard players set buffDurationSlot23 atkmodifiers 0
+scoreboard players set buffDurationSlot24 atkmodifiers 0
+scoreboard players set debuffDurationSlot17 atkmodifiers 0
+scoreboard players set debuffDurationSlot18 atkmodifiers 0
+scoreboard players set debuffDurationSlot19 atkmodifiers 0
+scoreboard players set debuffDurationSlot20 atkmodifiers 0
+scoreboard players set debuffDurationSlot21 atkmodifiers 0
+scoreboard players set debuffDurationSlot22 atkmodifiers 0
+scoreboard players set debuffDurationSlot23 atkmodifiers 0
+scoreboard players set debuffDurationSlot24 atkmodifiers 0
+scoreboard players set slot17 stun 0
+scoreboard players set slot18 stun 0
+scoreboard players set slot19 stun 0
+scoreboard players set slot20 stun 0
+scoreboard players set slot21 stun 0
+scoreboard players set slot23 stun 0
+scoreboard players set slot23 stun 0
+scoreboard players set slot24 stun 0
+scoreboard players set disarmedslot17 booleaneffects 0
+scoreboard players set disarmedslot18 booleaneffects 0
+scoreboard players set disarmedslot19 booleaneffects 0
+scoreboard players set disarmedslot20 booleaneffects 0
+scoreboard players set disarmedslot21 booleaneffects 0
+scoreboard players set disarmedslot23 booleaneffects 0
+scoreboard players set disarmedslot23 booleaneffects 0
+scoreboard players set disarmedslot24 booleaneffects 0
+scoreboard players set nobasicatk slot17 0
+scoreboard players set nobasicatk slot18 0
+scoreboard players set nobasicatk slot19 0
+scoreboard players set nobasicatk slot20 0
+scoreboard players set nobasicatk slot21 0
+scoreboard players set nobasicatk slot23 0
+scoreboard players set nobasicatk slot23 0
+scoreboard players set nobasicatk slot24 0
+scoreboard players set atkmultiplier slot17 1
+scoreboard players set atkmultiplier slot18 1
+scoreboard players set atkmultiplier slot19 1
+scoreboard players set atkmultiplier slot20 1
+scoreboard players set atkmultiplier slot21 1
+scoreboard players set atkmultiplier slot23 1
+scoreboard players set atkmultiplier slot23 1
+scoreboard players set atkmultiplier slot24 1
+scoreboard players set ward slot17 0
+scoreboard players set ward slot18 0
+scoreboard players set ward slot19 0
+scoreboard players set ward slot20 0
+scoreboard players set ward slot21 0
+scoreboard players set ward slot23 0
+scoreboard players set ward slot23 0
+scoreboard players set ward slot24 0
+scoreboard players set doubleatk slot17 0
+scoreboard players set doubleatk slot18 0
+scoreboard players set doubleatk slot19 0
+scoreboard players set doubleatk slot20 0
+scoreboard players set doubleatk slot21 0
+scoreboard players set doubleatk slot23 0
+scoreboard players set doubleatk slot23 0
+scoreboard players set doubleatk slot24 0
+scoreboard players set splash slot17 0
+scoreboard players set splash slot18 0
+scoreboard players set splash slot19 0
+scoreboard players set splash slot20 0
+scoreboard players set splash slot21 0
+scoreboard players set splash slot23 0
+scoreboard players set splash slot23 0
+scoreboard players set splash slot24 0
+scoreboard players set lifesteal slot17 0
+scoreboard players set lifesteal slot18 0
+scoreboard players set lifesteal slot19 0
+scoreboard players set lifesteal slot20 0
+scoreboard players set lifesteal slot21 0
+scoreboard players set lifesteal slot23 0
+scoreboard players set lifesteal slot23 0
+scoreboard players set lifesteal slot24 0
+scoreboard players set invincibleSlot17 booleaneffects 0
+scoreboard players set invincibleSlot18 booleaneffects 0
+scoreboard players set invincibleSlot19 booleaneffects 0
+scoreboard players set invincibleSlot20 booleaneffects 0
+scoreboard players set invincibleSlot21 booleaneffects 0
+scoreboard players set invincibleSlot22 booleaneffects 0
+scoreboard players set invincibleSlot23 booleaneffects 0
+scoreboard players set invincibleSlot24 booleaneffects 0
 scoreboard players set fireballCooldown player3spells 0
 scoreboard players set chainLightningCooldown player3spells 0
 scoreboard players set healCooldown player3spells 0
@@ -263,30 +263,30 @@ scoreboard players set Spell_Points_P2 Spell_Points -1
 scoreboard players set suddenDeath2 deaths 0
 scoreboard players set side1spinball abilities -1
 scoreboard players set side2spinball abilities -1
-execute at @e[name=slot9,type=armor_stand] run kill @e[name=!slot9,type=!player,distance=..4]
-execute at @e[name=slot10,type=armor_stand] run kill @e[name=!slot10,type=!player,distance=..4]
-execute at @e[name=slot11,type=armor_stand] run kill @e[name=!slot11,type=!player,distance=..4]
-execute at @e[name=slot12,type=armor_stand] run kill @e[name=!slot12,type=!player,distance=..4]
-execute at @e[name=slot13,type=armor_stand] run kill @e[name=!slot13,type=!player,distance=..4]
-execute at @e[name=slot14,type=armor_stand] run kill @e[name=!slot14,type=!player,distance=..4]
-execute at @e[name=slot15,type=armor_stand] run kill @e[name=!slot15,type=!player,distance=..4]
-execute at @e[name=slot16,type=armor_stand] run kill @e[name=!slot16,type=!player,distance=..4]
-execute if score slot9EatenDuration abilities matches 1.. run execute at @e[name=slot9] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot10EatenDuration abilities matches 1.. run execute at @e[name=slot10] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot11EatenDuration abilities matches 1.. run execute at @e[name=slot11] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot12EatenDuration abilities matches 1.. run execute at @e[name=slot12] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot13EatenDuration abilities matches 1.. run execute at @e[name=slot13] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot14EatenDuration abilities matches 1.. run execute at @e[name=slot14] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot15EatenDuration abilities matches 1.. run execute at @e[name=slot15] run tp @n[distance=..4] ~ ~20 ~
-execute if score slot16EatenDuration abilities matches 1.. run execute at @e[name=slot16] run tp @n[distance=..4] ~ ~20 ~
-scoreboard players set slot9EatenDuration abilities 0
-scoreboard players set slot10EatenDuration abilities 0
-scoreboard players set slot11EatenDuration abilities 0
-scoreboard players set slot12EatenDuration abilities 0
-scoreboard players set slot13EatenDuration abilities 0
-scoreboard players set slot14EatenDuration abilities 0
-scoreboard players set slot15EatenDuration abilities 0
-scoreboard players set slot16EatenDuration abilities 0
+execute at @e[name=slot17,type=armor_stand] run kill @e[name=!slot17,type=!player,distance=..4]
+execute at @e[name=slot18,type=armor_stand] run kill @e[name=!slot18,type=!player,distance=..4]
+execute at @e[name=slot19,type=armor_stand] run kill @e[name=!slot19,type=!player,distance=..4]
+execute at @e[name=slot20,type=armor_stand] run kill @e[name=!slot20,type=!player,distance=..4]
+execute at @e[name=slot21,type=armor_stand] run kill @e[name=!slot21,type=!player,distance=..4]
+execute at @e[name=slot23,type=armor_stand] run kill @e[name=!slot23,type=!player,distance=..4]
+execute at @e[name=slot23,type=armor_stand] run kill @e[name=!slot23,type=!player,distance=..4]
+execute at @e[name=slot24,type=armor_stand] run kill @e[name=!slot24,type=!player,distance=..4]
+execute if score slot17EatenDuration abilities matches 1.. run execute at @e[name=slot17] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot18EatenDuration abilities matches 1.. run execute at @e[name=slot18] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot19EatenDuration abilities matches 1.. run execute at @e[name=slot19] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot20EatenDuration abilities matches 1.. run execute at @e[name=slot20] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot21EatenDuration abilities matches 1.. run execute at @e[name=slot21] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot23EatenDuration abilities matches 1.. run execute at @e[name=slot23] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot23EatenDuration abilities matches 1.. run execute at @e[name=slot23] run tp @n[distance=..4] ~ ~20 ~
+execute if score slot24EatenDuration abilities matches 1.. run execute at @e[name=slot24] run tp @n[distance=..4] ~ ~20 ~
+scoreboard players set slot17EatenDuration abilities 0
+scoreboard players set slot18EatenDuration abilities 0
+scoreboard players set slot19EatenDuration abilities 0
+scoreboard players set slot20EatenDuration abilities 0
+scoreboard players set slot21EatenDuration abilities 0
+scoreboard players set slot23EatenDuration abilities 0
+scoreboard players set slot23EatenDuration abilities 0
+scoreboard players set slot24EatenDuration abilities 0
 
 
 

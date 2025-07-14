@@ -24,8 +24,8 @@ function ch:spellchecks
 #invincibility
 execute if score invincibleSlot1 booleaneffects matches 1.. run scoreboard players operation slot1 hp = savehp1 saves
 execute if score invincibleSlot2 booleaneffects matches 1.. run scoreboard players operation slot2 hp = savehp2 saves
-execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot3 hp = savehp3 saves
-execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot4 hp = savehp4 saves
+execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot3 hp = savehp5 saves
+execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot4 hp = savehp6 saves
 execute if score invincibleSlot5 booleaneffects matches 1.. run scoreboard players operation slot5 hp = savehp5 saves
 execute if score invincibleSlot6 booleaneffects matches 1.. run scoreboard players operation slot6 hp = savehp6 saves
 execute if score invincibleSlot7 booleaneffects matches 1.. run scoreboard players operation slot7 hp = savehp7 saves

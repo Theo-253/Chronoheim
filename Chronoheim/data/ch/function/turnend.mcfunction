@@ -1,289 +1,289 @@
 clear @a[tag=game2] minecraft:target
-clear @p[tag=p3]
-clear @p[tag=p4]
+clear @p[tag=p5]
+clear @p[tag=p6]
 #Cooldowns
-execute if score slot9isatk booleans matches 1 run execute if score cooldown slot9 matches 1.. run scoreboard players remove cooldown slot9 1
-execute if score slot10isatk booleans matches 1 run execute if score cooldown slot10 matches 1.. run scoreboard players remove cooldown slot10 1
-execute if score slot11isatk booleans matches 1 run execute if score cooldown slot11 matches 1.. run scoreboard players remove cooldown slot11 1
-execute if score slot12isatk booleans matches 1 run execute if score cooldown slot12 matches 1.. run scoreboard players remove cooldown slot12 1
-execute if score slot13isatk booleans matches 1 run execute if score cooldown slot13 matches 1.. run scoreboard players remove cooldown slot13 1
-execute if score slot14isatk booleans matches 1 run execute if score cooldown slot14 matches 1.. run scoreboard players remove cooldown slot14 1
-execute if score slot15isatk booleans matches 1 run execute if score cooldown slot15 matches 1.. run scoreboard players remove cooldown slot15 1
-execute if score slot16isatk booleans matches 1 run execute if score cooldown slot16 matches 1.. run scoreboard players remove cooldown slot16 1
+execute if score slot17isatk booleans matches 1 run execute if score cooldown slot17 matches 1.. run scoreboard players remove cooldown slot17 1
+execute if score slot18isatk booleans matches 1 run execute if score cooldown slot18 matches 1.. run scoreboard players remove cooldown slot18 1
+execute if score slot19isatk booleans matches 1 run execute if score cooldown slot19 matches 1.. run scoreboard players remove cooldown slot19 1
+execute if score slot20isatk booleans matches 1 run execute if score cooldown slot20 matches 1.. run scoreboard players remove cooldown slot20 1
+execute if score slot21isatk booleans matches 1 run execute if score cooldown slot21 matches 1.. run scoreboard players remove cooldown slot21 1
+execute if score slot23isatk booleans matches 1 run execute if score cooldown slot23 matches 1.. run scoreboard players remove cooldown slot23 1
+execute if score slot23isatk booleans matches 1 run execute if score cooldown slot23 matches 1.. run scoreboard players remove cooldown slot23 1
+execute if score slot24isatk booleans matches 1 run execute if score cooldown slot24 matches 1.. run scoreboard players remove cooldown slot24 1
 
 #Poison Damage
-execute if score slot9isatk booleans matches 1 run scoreboard players operation slot9 hp -= slot9Poison poison
-execute if score slot10isatk booleans matches 1 run scoreboard players operation slot10 hp -= slot10Poison poison
-execute if score slot11isatk booleans matches 1 run scoreboard players operation slot11 hp -= slot11Poison poison
-execute if score slot12isatk booleans matches 1 run scoreboard players operation slot12 hp -= slot12Poison poison
-execute if score slot13isatk booleans matches 1 run scoreboard players operation slot13 hp -= slot13Poison poison
-execute if score slot14isatk booleans matches 1 run scoreboard players operation slot14 hp -= slot14Poison poison
-execute if score slot15isatk booleans matches 1 run scoreboard players operation slot15 hp -= slot15Poison poison
-execute if score slot16isatk booleans matches 1 run scoreboard players operation slot16 hp -= slot16Poison poison
+execute if score slot17isatk booleans matches 1 run scoreboard players operation slot17 hp -= slot17Poison poison
+execute if score slot18isatk booleans matches 1 run scoreboard players operation slot18 hp -= slot18Poison poison
+execute if score slot19isatk booleans matches 1 run scoreboard players operation slot19 hp -= slot19Poison poison
+execute if score slot20isatk booleans matches 1 run scoreboard players operation slot20 hp -= slot20Poison poison
+execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp -= slot21Poison poison
+execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp -= slot23Poison poison
+execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp -= slot23Poison poison
+execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp -= slot24Poison poison
 
 #Poison Duration
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 poison matches 1.. run scoreboard players remove durationSlot9 poison 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 poison matches 1.. run scoreboard players remove durationSlot10 poison 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 poison matches 1.. run scoreboard players remove durationSlot11 poison 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 poison matches 1.. run scoreboard players remove durationSlot12 poison 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 poison matches 1.. run scoreboard players remove durationSlot13 poison 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 poison matches 1.. run scoreboard players remove durationSlot14 poison 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 poison matches 1.. run scoreboard players remove durationSlot15 poison 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 poison matches 1.. run scoreboard players remove durationSlot16 poison 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 poison matches 1.. run scoreboard players remove durationSlot17 poison 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 poison matches 1.. run scoreboard players remove durationSlot18 poison 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 poison matches 1.. run scoreboard players remove durationSlot19 poison 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 poison matches 1.. run scoreboard players remove durationSlot20 poison 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 poison matches 1.. run scoreboard players remove durationSlot21 poison 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 poison matches 1.. run scoreboard players remove durationSlot22 poison 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 poison matches 1.. run scoreboard players remove durationSlot23 poison 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 poison matches 1.. run scoreboard players remove durationSlot24 poison 1
 
 #Burn Damage
-execute if score burn burn2 matches 1 if score slot9isatk booleans matches 1 run scoreboard players operation slot9 hp -= slot9Burn burn
-execute if score burn burn2 matches 1 if score slot10isatk booleans matches 1 run scoreboard players operation slot10 hp -= slot10Burn burn
-execute if score burn burn2 matches 1 if score slot11isatk booleans matches 1 run scoreboard players operation slot11 hp -= slot11Burn burn
-execute if score burn burn2 matches 1 if score slot12isatk booleans matches 1 run scoreboard players operation slot12 hp -= slot12Burn burn
-execute if score burn burn2 matches 1 if score slot13isatk booleans matches 1 run scoreboard players operation slot13 hp -= slot13Burn burn
-execute if score burn burn2 matches 1 if score slot14isatk booleans matches 1 run scoreboard players operation slot14 hp -= slot14Burn burn
-execute if score burn burn2 matches 1 if score slot15isatk booleans matches 1 run scoreboard players operation slot15 hp -= slot15Burn burn
-execute if score burn burn2 matches 1 if score slot16isatk booleans matches 1 run scoreboard players operation slot16 hp -= slot16Burn burn
+execute if score burn burn3 matches 1 if score slot17isatk booleans matches 1 run scoreboard players operation slot17 hp -= slot17Burn burn
+execute if score burn burn3 matches 1 if score slot18isatk booleans matches 1 run scoreboard players operation slot18 hp -= slot18Burn burn
+execute if score burn burn3 matches 1 if score slot19isatk booleans matches 1 run scoreboard players operation slot19 hp -= slot19Burn burn
+execute if score burn burn3 matches 1 if score slot20isatk booleans matches 1 run scoreboard players operation slot20 hp -= slot20Burn burn
+execute if score burn burn3 matches 1 if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp -= slot21Burn burn
+execute if score burn burn3 matches 1 if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp -= slot23Burn burn
+execute if score burn burn3 matches 1 if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp -= slot23Burn burn
+execute if score burn burn3 matches 1 if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp -= slot24Burn burn
 
 #Burn Duration
-scoreboard players set burn burn2 0
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 burn matches 1.. run scoreboard players remove durationSlot9 burn 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 burn matches 1.. run scoreboard players remove durationSlot10 burn 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 burn matches 1.. run scoreboard players remove durationSlot11 burn 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 burn matches 1.. run scoreboard players remove durationSlot12 burn 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 burn matches 1.. run scoreboard players remove durationSlot13 burn 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 burn matches 1.. run scoreboard players remove durationSlot14 burn 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 burn matches 1.. run scoreboard players remove durationSlot15 burn 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 burn matches 1.. run scoreboard players remove durationSlot16 burn 1
+scoreboard players set burn burn3 0
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 burn matches 1.. run scoreboard players remove durationSlot17 burn 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 burn matches 1.. run scoreboard players remove durationSlot18 burn 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 burn matches 1.. run scoreboard players remove durationSlot19 burn 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 burn matches 1.. run scoreboard players remove durationSlot20 burn 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 burn matches 1.. run scoreboard players remove durationSlot21 burn 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 burn matches 1.. run scoreboard players remove durationSlot22 burn 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 burn matches 1.. run scoreboard players remove durationSlot23 burn 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 burn matches 1.. run scoreboard players remove durationSlot24 burn 1
 
 #Speed Debuff Duration
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 speedDebuffs matches 1.. run scoreboard players remove durationSlot9 speedDebuffs 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 speedDebuffs matches 1.. run scoreboard players remove durationSlot10 speedDebuffs 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 speedDebuffs matches 1.. run scoreboard players remove durationSlot11 speedDebuffs 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 speedDebuffs matches 1.. run scoreboard players remove durationSlot12 speedDebuffs 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 speedDebuffs matches 1.. run scoreboard players remove durationSlot13 speedDebuffs 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 speedDebuffs matches 1.. run scoreboard players remove durationSlot14 speedDebuffs 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 speedDebuffs matches 1.. run scoreboard players remove durationSlot15 speedDebuffs 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 speedDebuffs matches 1.. run scoreboard players remove durationSlot16 speedDebuffs 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 speedDebuffs matches 1.. run scoreboard players remove durationSlot17 speedDebuffs 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 speedDebuffs matches 1.. run scoreboard players remove durationSlot18 speedDebuffs 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 speedDebuffs matches 1.. run scoreboard players remove durationSlot19 speedDebuffs 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 speedDebuffs matches 1.. run scoreboard players remove durationSlot20 speedDebuffs 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 speedDebuffs matches 1.. run scoreboard players remove durationSlot21 speedDebuffs 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 speedDebuffs matches 1.. run scoreboard players remove durationSlot22 speedDebuffs 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 speedDebuffs matches 1.. run scoreboard players remove durationSlot23 speedDebuffs 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 speedDebuffs matches 1.. run scoreboard players remove durationSlot24 speedDebuffs 1
 
 #Speed Buff Duration
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 speedBuffs matches 1.. run scoreboard players remove durationSlot9 speedBuffs 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 speedBuffs matches 1.. run scoreboard players remove durationSlot10 speedBuffs 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 speedBuffs matches 1.. run scoreboard players remove durationSlot11 speedBuffs 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 speedBuffs matches 1.. run scoreboard players remove durationSlot12 speedBuffs 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 speedBuffs matches 1.. run scoreboard players remove durationSlot13 speedBuffs 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 speedBuffs matches 1.. run scoreboard players remove durationSlot14 speedBuffs 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 speedBuffs matches 1.. run scoreboard players remove durationSlot15 speedBuffs 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 speedBuffs matches 1.. run scoreboard players remove durationSlot16 speedBuffs 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 speedBuffs matches 1.. run scoreboard players remove durationSlot17 speedBuffs 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 speedBuffs matches 1.. run scoreboard players remove durationSlot18 speedBuffs 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 speedBuffs matches 1.. run scoreboard players remove durationSlot19 speedBuffs 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 speedBuffs matches 1.. run scoreboard players remove durationSlot20 speedBuffs 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 speedBuffs matches 1.. run scoreboard players remove durationSlot21 speedBuffs 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 speedBuffs matches 1.. run scoreboard players remove durationSlot22 speedBuffs 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 speedBuffs matches 1.. run scoreboard players remove durationSlot23 speedBuffs 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 speedBuffs matches 1.. run scoreboard players remove durationSlot24 speedBuffs 1
 
 #Attack Buff Duration
-execute if score slot9isatk booleans matches 1 run execute if score buffDurationSlot9 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot9 atkmodifiers 1
-execute if score slot10isatk booleans matches 1 run execute if score buffDurationSlot10 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot10 atkmodifiers 1
-execute if score slot11isatk booleans matches 1 run execute if score buffDurationSlot11 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot11 atkmodifiers 1
-execute if score slot12isatk booleans matches 1 run execute if score buffDurationSlot12 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot12 atkmodifiers 1
-execute if score slot13isatk booleans matches 1 run execute if score buffDurationSlot13 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot13 atkmodifiers 1
-execute if score slot14isatk booleans matches 1 run execute if score buffDurationSlot14 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot14 atkmodifiers 1
-execute if score slot15isatk booleans matches 1 run execute if score buffDurationSlot15 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot15 atkmodifiers 1
-execute if score slot16isatk booleans matches 1 run execute if score buffDurationSlot16 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot16 atkmodifiers 1
+execute if score slot17isatk booleans matches 1 run execute if score buffDurationSlot17 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot17 atkmodifiers 1
+execute if score slot18isatk booleans matches 1 run execute if score buffDurationSlot18 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot18 atkmodifiers 1
+execute if score slot19isatk booleans matches 1 run execute if score buffDurationSlot19 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot19 atkmodifiers 1
+execute if score slot20isatk booleans matches 1 run execute if score buffDurationSlot20 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot20 atkmodifiers 1
+execute if score slot21isatk booleans matches 1 run execute if score buffDurationSlot21 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot21 atkmodifiers 1
+execute if score slot23isatk booleans matches 1 run execute if score buffDurationSlot22 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot22 atkmodifiers 1
+execute if score slot23isatk booleans matches 1 run execute if score buffDurationSlot23 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot23 atkmodifiers 1
+execute if score slot24isatk booleans matches 1 run execute if score buffDurationSlot24 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot24 atkmodifiers 1
 
 #Attack Debuff Duration
-execute if score slot9isatk booleans matches 1 run execute if score debuffDurationSlot9 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot9 atkmodifiers 1
-execute if score slot10isatk booleans matches 1 run execute if score debuffDurationSlot10 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot10 atkmodifiers 1
-execute if score slot11isatk booleans matches 1 run execute if score debuffDurationSlot11 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot11 atkmodifiers 1
-execute if score slot12isatk booleans matches 1 run execute if score debuffDurationSlot12 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot12 atkmodifiers 1
-execute if score slot13isatk booleans matches 1 run execute if score debuffDurationSlot13 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot13 atkmodifiers 1
-execute if score slot14isatk booleans matches 1 run execute if score debuffDurationSlot14 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot14 atkmodifiers 1
-execute if score slot15isatk booleans matches 1 run execute if score debuffDurationSlot15 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot15 atkmodifiers 1
-execute if score slot16isatk booleans matches 1 run execute if score debuffDurationSlot16 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot16 atkmodifiers 1
+execute if score slot17isatk booleans matches 1 run execute if score debuffDurationSlot17 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot17 atkmodifiers 1
+execute if score slot18isatk booleans matches 1 run execute if score debuffDurationSlot18 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot18 atkmodifiers 1
+execute if score slot19isatk booleans matches 1 run execute if score debuffDurationSlot19 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot19 atkmodifiers 1
+execute if score slot20isatk booleans matches 1 run execute if score debuffDurationSlot20 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot20 atkmodifiers 1
+execute if score slot21isatk booleans matches 1 run execute if score debuffDurationSlot21 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot21 atkmodifiers 1
+execute if score slot23isatk booleans matches 1 run execute if score debuffDurationSlot22 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot22 atkmodifiers 1
+execute if score slot23isatk booleans matches 1 run execute if score debuffDurationSlot23 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot23 atkmodifiers 1
+execute if score slot24isatk booleans matches 1 run execute if score debuffDurationSlot24 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot24 atkmodifiers 1
 
 #Regen Healing
-execute if score slot9isatk booleans matches 1 run scoreboard players operation slot9 hp += slot9Regen regen
-execute if score slot10isatk booleans matches 1 run scoreboard players operation slot10 hp += slot10Regen regen
-execute if score slot11isatk booleans matches 1 run scoreboard players operation slot11 hp += slot11Regen regen
-execute if score slot12isatk booleans matches 1 run scoreboard players operation slot12 hp += slot12Regen regen
-execute if score slot13isatk booleans matches 1 run scoreboard players operation slot13 hp += slot13Regen regen
-execute if score slot14isatk booleans matches 1 run scoreboard players operation slot14 hp += slot14Regen regen
-execute if score slot15isatk booleans matches 1 run scoreboard players operation slot15 hp += slot15Regen regen
-execute if score slot16isatk booleans matches 1 run scoreboard players operation slot16 hp += slot16Regen regen
+execute if score slot17isatk booleans matches 1 run scoreboard players operation slot17 hp += slot17Regen regen
+execute if score slot18isatk booleans matches 1 run scoreboard players operation slot18 hp += slot18Regen regen
+execute if score slot19isatk booleans matches 1 run scoreboard players operation slot19 hp += slot19Regen regen
+execute if score slot20isatk booleans matches 1 run scoreboard players operation slot20 hp += slot20Regen regen
+execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp += slot21Regen regen
+execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += slot23Regen regen
+execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += slot23Regen regen
+execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp += slot24Regen regen
 
 #Regen Duration
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 regen matches 1.. run scoreboard players remove durationSlot9 regen 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 regen matches 1.. run scoreboard players remove durationSlot10 regen 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 regen matches 1.. run scoreboard players remove durationSlot11 regen 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 regen matches 1.. run scoreboard players remove durationSlot12 regen 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 regen matches 1.. run scoreboard players remove durationSlot13 regen 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 regen matches 1.. run scoreboard players remove durationSlot14 regen 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 regen matches 1.. run scoreboard players remove durationSlot15 regen 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 regen matches 1.. run scoreboard players remove durationSlot16 regen 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 regen matches 1.. run scoreboard players remove durationSlot17 regen 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 regen matches 1.. run scoreboard players remove durationSlot18 regen 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 regen matches 1.. run scoreboard players remove durationSlot19 regen 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 regen matches 1.. run scoreboard players remove durationSlot20 regen 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 regen matches 1.. run scoreboard players remove durationSlot21 regen 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 regen matches 1.. run scoreboard players remove durationSlot22 regen 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 regen matches 1.. run scoreboard players remove durationSlot23 regen 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 regen matches 1.. run scoreboard players remove durationSlot24 regen 1
 
 #Shield Duration
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 shield matches 1.. run scoreboard players remove durationSlot9 shield 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 shield matches 1.. run scoreboard players remove durationSlot10 shield 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 shield matches 1.. run scoreboard players remove durationSlot11 shield 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 shield matches 1.. run scoreboard players remove durationSlot12 shield 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 shield matches 1.. run scoreboard players remove durationSlot13 shield 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 shield matches 1.. run scoreboard players remove durationSlot14 shield 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 shield matches 1.. run scoreboard players remove durationSlot15 shield 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 shield matches 1.. run scoreboard players remove durationSlot16 shield 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 shield matches 1.. run scoreboard players remove durationSlot17 shield 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 shield matches 1.. run scoreboard players remove durationSlot18 shield 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 shield matches 1.. run scoreboard players remove durationSlot19 shield 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 shield matches 1.. run scoreboard players remove durationSlot20 shield 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 shield matches 1.. run scoreboard players remove durationSlot21 shield 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 shield matches 1.. run scoreboard players remove durationSlot22 shield 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 shield matches 1.. run scoreboard players remove durationSlot23 shield 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 shield matches 1.. run scoreboard players remove durationSlot24 shield 1
 
 #Taunt Duration
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 taunt matches 1.. run scoreboard players remove durationSlot9 taunt 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 taunt matches 1.. run scoreboard players remove durationSlot10 taunt 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 taunt matches 1.. run scoreboard players remove durationSlot11 taunt 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 taunt matches 1.. run scoreboard players remove durationSlot12 taunt 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 taunt matches 1.. run scoreboard players remove durationSlot13 taunt 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 taunt matches 1.. run scoreboard players remove durationSlot14 taunt 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 taunt matches 1.. run scoreboard players remove durationSlot15 taunt 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 taunt matches 1.. run scoreboard players remove durationSlot16 taunt 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 taunt matches 1.. run scoreboard players remove durationSlot17 taunt 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 taunt matches 1.. run scoreboard players remove durationSlot18 taunt 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 taunt matches 1.. run scoreboard players remove durationSlot19 taunt 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 taunt matches 1.. run scoreboard players remove durationSlot20 taunt 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 taunt matches 1.. run scoreboard players remove durationSlot21 taunt 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 taunt matches 1.. run scoreboard players remove durationSlot22 taunt 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 taunt matches 1.. run scoreboard players remove durationSlot23 taunt 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 taunt matches 1.. run scoreboard players remove durationSlot24 taunt 1
 
 #Fear Duration
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot13-1 fear matches 1.. run scoreboard players remove durationSlot13-1 fear 1
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot14-1 fear matches 1.. run scoreboard players remove durationSlot14-1 fear 1
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot15-1 fear matches 1.. run scoreboard players remove durationSlot15-1 fear 1
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot16-1 fear matches 1.. run scoreboard players remove durationSlot16-1 fear 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot13-2 fear matches 1.. run scoreboard players remove durationSlot13-2 fear 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot14-2 fear matches 1.. run scoreboard players remove durationSlot14-2 fear 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot15-2 fear matches 1.. run scoreboard players remove durationSlot15-2 fear 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot16-2 fear matches 1.. run scoreboard players remove durationSlot16-2 fear 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot13-3 fear matches 1.. run scoreboard players remove durationSlot13-3 fear 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot14-3 fear matches 1.. run scoreboard players remove durationSlot14-3 fear 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot15-3 fear matches 1.. run scoreboard players remove durationSlot15-3 fear 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot16-3 fear matches 1.. run scoreboard players remove durationSlot16-3 fear 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot13-4 fear matches 1.. run scoreboard players remove durationSlot13-4 fear 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot14-4 fear matches 1.. run scoreboard players remove durationSlot14-4 fear 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot15-4 fear matches 1.. run scoreboard players remove durationSlot15-4 fear 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot16-4 fear matches 1.. run scoreboard players remove durationSlot16-4 fear 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot9-5 fear matches 1.. run scoreboard players remove durationSlot9-5 fear 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot10-5 fear matches 1.. run scoreboard players remove durationSlot10-5 fear 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot11-5 fear matches 1.. run scoreboard players remove durationSlot11-5 fear 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot12-5 fear matches 1.. run scoreboard players remove durationSlot12-5 fear 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot9-6 fear matches 1.. run scoreboard players remove durationSlot9-6 fear 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot10-6 fear matches 1.. run scoreboard players remove durationSlot10-6 fear 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot11-6 fear matches 1.. run scoreboard players remove durationSlot11-6 fear 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot12-6 fear matches 1.. run scoreboard players remove durationSlot12-6 fear 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot9-7 fear matches 1.. run scoreboard players remove durationSlot9-7 fear 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot10-7 fear matches 1.. run scoreboard players remove durationSlot10-7 fear 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot11-7 fear matches 1.. run scoreboard players remove durationSlot11-7 fear 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot12-7 fear matches 1.. run scoreboard players remove durationSlot12-7 fear 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot9-8 fear matches 1.. run scoreboard players remove durationSlot9-8 fear 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot10-8 fear matches 1.. run scoreboard players remove durationSlot10-8 fear 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot11-8 fear matches 1.. run scoreboard players remove durationSlot11-8 fear 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot12-8 fear matches 1.. run scoreboard players remove durationSlot12-8 fear 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot21-17 fear matches 1.. run scoreboard players remove durationSlot21-17 fear 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot22-17 fear matches 1.. run scoreboard players remove durationSlot22-17 fear 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot23-17 fear matches 1.. run scoreboard players remove durationSlot23-17 fear 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot24-17 fear matches 1.. run scoreboard players remove durationSlot24-17 fear 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot21-18 fear matches 1.. run scoreboard players remove durationSlot21-18 fear 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot22-18 fear matches 1.. run scoreboard players remove durationSlot22-18 fear 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot23-18 fear matches 1.. run scoreboard players remove durationSlot23-18 fear 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot24-18 fear matches 1.. run scoreboard players remove durationSlot24-18 fear 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot21-19 fear matches 1.. run scoreboard players remove durationSlot21-19 fear 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot22-19 fear matches 1.. run scoreboard players remove durationSlot22-19 fear 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot23-19 fear matches 1.. run scoreboard players remove durationSlot23-19 fear 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot24-19 fear matches 1.. run scoreboard players remove durationSlot24-19 fear 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot21-20 fear matches 1.. run scoreboard players remove durationSlot21-20 fear 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot22-20 fear matches 1.. run scoreboard players remove durationSlot22-20 fear 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot23-20 fear matches 1.. run scoreboard players remove durationSlot23-20 fear 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot24-20 fear matches 1.. run scoreboard players remove durationSlot24-20 fear 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot17-21 fear matches 1.. run scoreboard players remove durationSlot17-21 fear 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot18-21 fear matches 1.. run scoreboard players remove durationSlot18-21 fear 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot19-21 fear matches 1.. run scoreboard players remove durationSlot19-21 fear 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot20-21 fear matches 1.. run scoreboard players remove durationSlot20-21 fear 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot17-22 fear matches 1.. run scoreboard players remove durationSlot17-22 fear 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot18-22 fear matches 1.. run scoreboard players remove durationSlot18-22 fear 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot19-22 fear matches 1.. run scoreboard players remove durationSlot19-22 fear 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot20-22 fear matches 1.. run scoreboard players remove durationSlot20-22 fear 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot17-23 fear matches 1.. run scoreboard players remove durationSlot17-23 fear 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot18-23 fear matches 1.. run scoreboard players remove durationSlot18-23 fear 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot19-23 fear matches 1.. run scoreboard players remove durationSlot19-23 fear 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot20-23 fear matches 1.. run scoreboard players remove durationSlot20-23 fear 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot17-24 fear matches 1.. run scoreboard players remove durationSlot17-24 fear 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot18-24 fear matches 1.. run scoreboard players remove durationSlot18-24 fear 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot19-24 fear matches 1.. run scoreboard players remove durationSlot19-24 fear 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot20-24 fear matches 1.. run scoreboard players remove durationSlot20-24 fear 1
 
 #Disease Damage
-execute if score slot9isatk booleans matches 1 run scoreboard players operation slot9 hp -= slot9Disease disease
-execute if score slot10isatk booleans matches 1 run scoreboard players operation slot10 hp -= slot10Disease disease
-execute if score slot11isatk booleans matches 1 run scoreboard players operation slot11 hp -= slot11Disease disease
-execute if score slot12isatk booleans matches 1 run scoreboard players operation slot12 hp -= slot12Disease disease
-execute if score slot13isatk booleans matches 1 run scoreboard players operation slot13 hp -= slot13Disease disease
-execute if score slot14isatk booleans matches 1 run scoreboard players operation slot14 hp -= slot14Disease disease
-execute if score slot15isatk booleans matches 1 run scoreboard players operation slot15 hp -= slot15Disease disease
-execute if score slot16isatk booleans matches 1 run scoreboard players operation slot16 hp -= slot16Disease disease
+execute if score slot17isatk booleans matches 1 run scoreboard players operation slot17 hp -= slot17Disease disease
+execute if score slot18isatk booleans matches 1 run scoreboard players operation slot18 hp -= slot18Disease disease
+execute if score slot19isatk booleans matches 1 run scoreboard players operation slot19 hp -= slot19Disease disease
+execute if score slot20isatk booleans matches 1 run scoreboard players operation slot20 hp -= slot20Disease disease
+execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp -= slot21Disease disease
+execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp -= slot23Disease disease
+execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp -= slot23Disease disease
+execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp -= slot24Disease disease
 
 #gatsby consume (visual)
-execute if score slot9isatk booleans matches 1 run execute if score slot9EatenDuration abilities matches 1 at @e[name=slot9] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
-execute if score slot10isatk booleans matches 1 run execute if score slot10EatenDuration abilities matches 1 at @e[name=slot10] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
-execute if score slot11isatk booleans matches 1 run execute if score slot11EatenDuration abilities matches 1 at @e[name=slot11] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
-execute if score slot12isatk booleans matches 1 run execute if score slot12EatenDuration abilities matches 1 at @e[name=slot12] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
-execute if score slot13isatk booleans matches 1 run execute if score slot13EatenDuration abilities matches 1 at @e[name=slot13] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
-execute if score slot14isatk booleans matches 1 run execute if score slot14EatenDuration abilities matches 1 at @e[name=slot14] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
-execute if score slot15isatk booleans matches 1 run execute if score slot15EatenDuration abilities matches 1 at @e[name=slot15] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
-execute if score slot16isatk booleans matches 1 run execute if score slot16EatenDuration abilities matches 1 at @e[name=slot16] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
-execute if score slot9isatk booleans matches 1 run execute if score slot9EatenDuration abilities matches 1.. run scoreboard players remove slot9EatenDuration abilities 1
-execute if score slot10isatk booleans matches 1 run execute if score slot10EatenDuration abilities matches 1.. run scoreboard players remove slot10EatenDuration abilities 1
-execute if score slot11isatk booleans matches 1 run execute if score slot11EatenDuration abilities matches 1.. run scoreboard players remove slot11EatenDuration abilities 1
-execute if score slot12isatk booleans matches 1 run execute if score slot12EatenDuration abilities matches 1.. run scoreboard players remove slot12EatenDuration abilities 1
-execute if score slot13isatk booleans matches 1 run execute if score slot13EatenDuration abilities matches 1.. run scoreboard players remove slot13EatenDuration abilities 1
-execute if score slot14isatk booleans matches 1 run execute if score slot14EatenDuration abilities matches 1.. run scoreboard players remove slot14EatenDuration abilities 1
-execute if score slot15isatk booleans matches 1 run execute if score slot15EatenDuration abilities matches 1.. run scoreboard players remove slot15EatenDuration abilities 1
-execute if score slot16isatk booleans matches 1 run execute if score slot16EatenDuration abilities matches 1.. run scoreboard players remove slot16EatenDuration abilities 1
+execute if score slot17isatk booleans matches 1 run execute if score slot17EatenDuration abilities matches 1 at @e[name=slot17] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score slot18isatk booleans matches 1 run execute if score slot18EatenDuration abilities matches 1 at @e[name=slot18] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score slot19isatk booleans matches 1 run execute if score slot19EatenDuration abilities matches 1 at @e[name=slot19] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score slot20isatk booleans matches 1 run execute if score slot20EatenDuration abilities matches 1 at @e[name=slot20] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score slot21isatk booleans matches 1 run execute if score slot21EatenDuration abilities matches 1 at @e[name=slot21] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score slot23isatk booleans matches 1 run execute if score slot23EatenDuration abilities matches 1 at @e[name=slot23] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score slot23isatk booleans matches 1 run execute if score slot23EatenDuration abilities matches 1 at @e[name=slot23] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score slot24isatk booleans matches 1 run execute if score slot24EatenDuration abilities matches 1 at @e[name=slot24] run execute at @e[distance=..4,type=!minecraft:player] run tp @n[type=!minecraft:player,distance=..4] ~ ~20 ~
+execute if score slot17isatk booleans matches 1 run execute if score slot17EatenDuration abilities matches 1.. run scoreboard players remove slot17EatenDuration abilities 1
+execute if score slot18isatk booleans matches 1 run execute if score slot18EatenDuration abilities matches 1.. run scoreboard players remove slot18EatenDuration abilities 1
+execute if score slot19isatk booleans matches 1 run execute if score slot19EatenDuration abilities matches 1.. run scoreboard players remove slot19EatenDuration abilities 1
+execute if score slot20isatk booleans matches 1 run execute if score slot20EatenDuration abilities matches 1.. run scoreboard players remove slot20EatenDuration abilities 1
+execute if score slot21isatk booleans matches 1 run execute if score slot21EatenDuration abilities matches 1.. run scoreboard players remove slot21EatenDuration abilities 1
+execute if score slot23isatk booleans matches 1 run execute if score slot23EatenDuration abilities matches 1.. run scoreboard players remove slot23EatenDuration abilities 1
+execute if score slot23isatk booleans matches 1 run execute if score slot23EatenDuration abilities matches 1.. run scoreboard players remove slot23EatenDuration abilities 1
+execute if score slot24isatk booleans matches 1 run execute if score slot24EatenDuration abilities matches 1.. run scoreboard players remove slot24EatenDuration abilities 1
 
 #Mark Duration
-#execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 mark matches 1.. run scoreboard players remove durationSlot9 mark 1
-#execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 mark matches 1.. run scoreboard players remove durationSlot10 mark 1
-#execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 mark matches 1.. run scoreboard players remove durationSlot11 mark 1
-#execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 mark matches 1.. run scoreboard players remove durationSlot12 mark 1
-#execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 mark matches 1.. run scoreboard players remove durationSlot13 mark 1
-#execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 mark matches 1.. run scoreboard players remove durationSlot14 mark 1
-#execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 mark matches 1.. run scoreboard players remove durationSlot15 mark 1
-#execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 mark matches 1.. run scoreboard players remove durationSlot16 mark 1
+#execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 mark matches 1.. run scoreboard players remove durationSlot17 mark 1
+#execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 mark matches 1.. run scoreboard players remove durationSlot18 mark 1
+#execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 mark matches 1.. run scoreboard players remove durationSlot19 mark 1
+#execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 mark matches 1.. run scoreboard players remove durationSlot20 mark 1
+#execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 mark matches 1.. run scoreboard players remove durationSlot21 mark 1
+#execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 mark matches 1.. run scoreboard players remove durationSlot22 mark 1
+#execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 mark matches 1.. run scoreboard players remove durationSlot23 mark 1
+#execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 mark matches 1.. run scoreboard players remove durationSlot24 mark 1
 
 #bleed duration
-execute if score slot9isatk booleans matches 1 run execute if score slot9bleeding booleaneffects matches 1.. run scoreboard players remove slot9bleeding booleaneffects 1
-execute if score slot10isatk booleans matches 1 run execute if score slot10bleeding booleaneffects matches 1.. run scoreboard players remove slot10bleeding booleaneffects 1
-execute if score slot11isatk booleans matches 1 run execute if score slot11bleeding booleaneffects matches 1.. run scoreboard players remove slot11bleeding booleaneffects 1
-execute if score slot12isatk booleans matches 1 run execute if score slot12bleeding booleaneffects matches 1.. run scoreboard players remove slot12bleeding booleaneffects 1
-execute if score slot13isatk booleans matches 1 run execute if score slot13bleeding booleaneffects matches 1.. run scoreboard players remove slot13bleeding booleaneffects 1
-execute if score slot14isatk booleans matches 1 run execute if score slot14bleeding booleaneffects matches 1.. run scoreboard players remove slot14bleeding booleaneffects 1
-execute if score slot15isatk booleans matches 1 run execute if score slot15bleeding booleaneffects matches 1.. run scoreboard players remove slot15bleeding booleaneffects 1
-execute if score slot16isatk booleans matches 1 run execute if score slot16bleeding booleaneffects matches 1.. run scoreboard players remove slot16bleeding booleaneffects 1
+execute if score slot17isatk booleans matches 1 run execute if score slot17bleeding booleaneffects matches 1.. run scoreboard players remove slot17bleeding booleaneffects 1
+execute if score slot18isatk booleans matches 1 run execute if score slot18bleeding booleaneffects matches 1.. run scoreboard players remove slot18bleeding booleaneffects 1
+execute if score slot19isatk booleans matches 1 run execute if score slot19bleeding booleaneffects matches 1.. run scoreboard players remove slot19bleeding booleaneffects 1
+execute if score slot20isatk booleans matches 1 run execute if score slot20bleeding booleaneffects matches 1.. run scoreboard players remove slot20bleeding booleaneffects 1
+execute if score slot21isatk booleans matches 1 run execute if score slot21bleeding booleaneffects matches 1.. run scoreboard players remove slot21bleeding booleaneffects 1
+execute if score slot23isatk booleans matches 1 run execute if score slot23bleeding booleaneffects matches 1.. run scoreboard players remove slot23bleeding booleaneffects 1
+execute if score slot23isatk booleans matches 1 run execute if score slot23bleeding booleaneffects matches 1.. run scoreboard players remove slot23bleeding booleaneffects 1
+execute if score slot24isatk booleans matches 1 run execute if score slot24bleeding booleaneffects matches 1.. run scoreboard players remove slot24bleeding booleaneffects 1
 
 #disarm duration
-execute if score slot9isatk booleans matches 1 run execute if score disarmedslot9 booleaneffects matches 1.. run scoreboard players remove disarmedslot9 booleaneffects 1
-execute if score slot10isatk booleans matches 1 run execute if score disarmedslot10 booleaneffects matches 1.. run scoreboard players remove disarmedslot10 booleaneffects 1
-execute if score slot11isatk booleans matches 1 run execute if score disarmedslot11 booleaneffects matches 1.. run scoreboard players remove disarmedslot11 booleaneffects 1
-execute if score slot12isatk booleans matches 1 run execute if score disarmedslot12 booleaneffects matches 1.. run scoreboard players remove disarmedslot12 booleaneffects 1
-execute if score slot13isatk booleans matches 1 run execute if score disarmedslot13 booleaneffects matches 1.. run scoreboard players remove disarmedslot13 booleaneffects 1
-execute if score slot14isatk booleans matches 1 run execute if score disarmedslot14 booleaneffects matches 1.. run scoreboard players remove disarmedslot14 booleaneffects 1
-execute if score slot15isatk booleans matches 1 run execute if score disarmedslot15 booleaneffects matches 1.. run scoreboard players remove disarmedslot15 booleaneffects 1
-execute if score slot16isatk booleans matches 1 run execute if score disarmedslot16 booleaneffects matches 1.. run scoreboard players remove disarmedslot16 booleaneffects 1
+execute if score slot17isatk booleans matches 1 run execute if score disarmedslot17 booleaneffects matches 1.. run scoreboard players remove disarmedslot17 booleaneffects 1
+execute if score slot18isatk booleans matches 1 run execute if score disarmedslot18 booleaneffects matches 1.. run scoreboard players remove disarmedslot18 booleaneffects 1
+execute if score slot19isatk booleans matches 1 run execute if score disarmedslot19 booleaneffects matches 1.. run scoreboard players remove disarmedslot19 booleaneffects 1
+execute if score slot20isatk booleans matches 1 run execute if score disarmedslot20 booleaneffects matches 1.. run scoreboard players remove disarmedslot20 booleaneffects 1
+execute if score slot21isatk booleans matches 1 run execute if score disarmedslot21 booleaneffects matches 1.. run scoreboard players remove disarmedslot21 booleaneffects 1
+execute if score slot23isatk booleans matches 1 run execute if score disarmedslot23 booleaneffects matches 1.. run scoreboard players remove disarmedslot23 booleaneffects 1
+execute if score slot23isatk booleans matches 1 run execute if score disarmedslot23 booleaneffects matches 1.. run scoreboard players remove disarmedslot23 booleaneffects 1
+execute if score slot24isatk booleans matches 1 run execute if score disarmedslot24 booleaneffects matches 1.. run scoreboard players remove disarmedslot24 booleaneffects 1
 
 #invincibility duration
-execute if score slot9isatk booleans matches 1 run execute if score invincibleSlot9 booleaneffects matches 1.. run scoreboard players remove invincibleSlot9 booleaneffects 1
-execute if score slot10isatk booleans matches 1 run execute if score invincibleSlot10 booleaneffects matches 1.. run scoreboard players remove invincibleSlot10 booleaneffects 1
-execute if score slot11isatk booleans matches 1 run execute if score invincibleSlot11 booleaneffects matches 1.. run scoreboard players remove invincibleSlot11 booleaneffects 1
-execute if score slot12isatk booleans matches 1 run execute if score invincibleSlot12 booleaneffects matches 1.. run scoreboard players remove invincibleSlot12 booleaneffects 1
-execute if score slot13isatk booleans matches 1 run execute if score invincibleSlot13 booleaneffects matches 1.. run scoreboard players remove invincibleSlot13 booleaneffects 1
-execute if score slot14isatk booleans matches 1 run execute if score invincibleSlot14 booleaneffects matches 1.. run scoreboard players remove invincibleSlot14 booleaneffects 1
-execute if score slot15isatk booleans matches 1 run execute if score invincibleSlot15 booleaneffects matches 1.. run scoreboard players remove invincibleSlot15 booleaneffects 1
-execute if score slot16isatk booleans matches 1 run execute if score invincibleSlot16 booleaneffects matches 1.. run scoreboard players remove invincibleSlot16 booleaneffects 1
+execute if score slot17isatk booleans matches 1 run execute if score invincibleSlot17 booleaneffects matches 1.. run scoreboard players remove invincibleSlot17 booleaneffects 1
+execute if score slot18isatk booleans matches 1 run execute if score invincibleSlot18 booleaneffects matches 1.. run scoreboard players remove invincibleSlot18 booleaneffects 1
+execute if score slot19isatk booleans matches 1 run execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players remove invincibleSlot19 booleaneffects 1
+execute if score slot20isatk booleans matches 1 run execute if score invincibleSlot20 booleaneffects matches 1.. run scoreboard players remove invincibleSlot20 booleaneffects 1
+execute if score slot21isatk booleans matches 1 run execute if score invincibleSlot21 booleaneffects matches 1.. run scoreboard players remove invincibleSlot21 booleaneffects 1
+execute if score slot23isatk booleans matches 1 run execute if score invincibleSlot22 booleaneffects matches 1.. run scoreboard players remove invincibleSlot22 booleaneffects 1
+execute if score slot23isatk booleans matches 1 run execute if score invincibleSlot23 booleaneffects matches 1.. run scoreboard players remove invincibleSlot23 booleaneffects 1
+execute if score slot24isatk booleans matches 1 run execute if score invincibleSlot24 booleaneffects matches 1.. run scoreboard players remove invincibleSlot24 booleaneffects 1
 
 #Ward Duration
-execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 wards matches 1.. run scoreboard players remove durationSlot9 wards 1
-execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 wards matches 1.. run scoreboard players remove durationSlot10 wards 1
-execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 wards matches 1.. run scoreboard players remove durationSlot11 wards 1
-execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 wards matches 1.. run scoreboard players remove durationSlot12 wards 1
-execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 wards matches 1.. run scoreboard players remove durationSlot13 wards 1
-execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 wards matches 1.. run scoreboard players remove durationSlot14 wards 1
-execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 wards matches 1.. run scoreboard players remove durationSlot15 wards 1
-execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 wards matches 1.. run scoreboard players remove durationSlot16 wards 1
+execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 wards matches 1.. run scoreboard players remove durationSlot17 wards 1
+execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 wards matches 1.. run scoreboard players remove durationSlot18 wards 1
+execute if score slot19isatk booleans matches 1 run execute if score durationSlot19 wards matches 1.. run scoreboard players remove durationSlot19 wards 1
+execute if score slot20isatk booleans matches 1 run execute if score durationSlot20 wards matches 1.. run scoreboard players remove durationSlot20 wards 1
+execute if score slot21isatk booleans matches 1 run execute if score durationSlot21 wards matches 1.. run scoreboard players remove durationSlot21 wards 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot22 wards matches 1.. run scoreboard players remove durationSlot22 wards 1
+execute if score slot23isatk booleans matches 1 run execute if score durationSlot23 wards matches 1.. run scoreboard players remove durationSlot23 wards 1
+execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 wards matches 1.. run scoreboard players remove durationSlot24 wards 1
 
-execute if score slot9isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot9 matches 10 run scoreboard players add side1spinball abilities 1
-execute if score slot10isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot10 matches 10 run scoreboard players add side1spinball abilities 1
-execute if score slot11isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot11 matches 10 run scoreboard players add side1spinball abilities 1
-execute if score slot13isatk booleans matches 1 if score side2spinball abilities matches 0.. if score character# slot13 matches 10 run scoreboard players add side2spinball abilities 1
-execute if score slot14isatk booleans matches 1 if score side2spinball abilities matches 0.. if score character# slot14 matches 10 run scoreboard players add side2spinball abilities 1
-execute if score slot15isatk booleans matches 1 if score side2spinball abilities matches 0.. if score character# slot15 matches 10 run scoreboard players add side2spinball abilities 1
+execute if score slot17isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot17 matches 10 run scoreboard players add side1spinball abilities 1
+execute if score slot18isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot18 matches 10 run scoreboard players add side1spinball abilities 1
+execute if score slot19isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot19 matches 10 run scoreboard players add side1spinball abilities 1
+execute if score slot21isatk booleans matches 1 if score side2spinball abilities matches 0.. if score character# slot21 matches 10 run scoreboard players add side2spinball abilities 1
+execute if score slot23isatk booleans matches 1 if score side2spinball abilities matches 0.. if score character# slot23 matches 10 run scoreboard players add side2spinball abilities 1
+execute if score slot23isatk booleans matches 1 if score side2spinball abilities matches 0.. if score character# slot23 matches 10 run scoreboard players add side2spinball abilities 1
 
-execute if score slot9isatk booleans matches 1 if score side1spinball abilities matches 10.. if score character# slot9 matches 10 run execute at @n[name=slot9,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
-execute if score slot10isatk booleans matches 1 if score side1spinball abilities matches 10.. if score character# slot10 matches 10 run execute at @n[name=slot10,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
-execute if score slot11isatk booleans matches 1 if score side1spinball abilities matches 10.. if score character# slot11 matches 10 run execute at @n[name=slot11,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
-execute if score slot13isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot13 matches 10 run execute at @n[name=slot13,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
-execute if score slot14isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot14 matches 10 run execute at @n[name=slot14,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
-execute if score slot15isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot15 matches 10 run execute at @n[name=slot15,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
+execute if score slot17isatk booleans matches 1 if score side1spinball abilities matches 10.. if score character# slot17 matches 10 run execute at @n[name=slot17,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
+execute if score slot18isatk booleans matches 1 if score side1spinball abilities matches 10.. if score character# slot18 matches 10 run execute at @n[name=slot18,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
+execute if score slot19isatk booleans matches 1 if score side1spinball abilities matches 10.. if score character# slot19 matches 10 run execute at @n[name=slot19,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
+execute if score slot21isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot21 matches 10 run execute at @n[name=slot21,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
+execute if score slot23isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot23 matches 10 run execute at @n[name=slot23,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
+execute if score slot23isatk booleans matches 1 if score side2spinball abilities matches 10.. if score character# slot23 matches 10 run execute at @n[name=slot23,type=armor_stand] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.4 40
 
-execute if score slot9isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot9 matches 10 run execute at @n[name=slot9,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
-execute if score slot10isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot10 matches 10 run execute at @n[name=slot10,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
-execute if score slot11isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot11 matches 10 run execute at @n[name=slot11,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
-execute if score slot13isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot13 matches 10 run execute at @n[name=slot13,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
-execute if score slot14isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot14 matches 10 run execute at @n[name=slot14,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
-execute if score slot15isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot15 matches 10 run execute at @n[name=slot15,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot17isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot17 matches 10 run execute at @n[name=slot17,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot18isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot18 matches 10 run execute at @n[name=slot18,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot19isatk booleans matches 1 if score side1spinball abilities matches 0..9 if score character# slot19 matches 10 run execute at @n[name=slot19,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot21isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot21 matches 10 run execute at @n[name=slot21,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot23isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot23 matches 10 run execute at @n[name=slot23,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+execute if score slot23isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot23 matches 10 run execute at @n[name=slot23,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
 
 #Death
-execute if score game2Ongoing ongoinggames matches 1 run execute if score slot9 hp matches ..0 run execute unless score speed slot9 matches ..-900000 run function ch:death1
-execute if score game2Ongoing ongoinggames matches 1 run execute if score slot10 hp matches ..0 run execute unless score speed slot10 matches ..-900000 run function ch:death2
-execute if score game2Ongoing ongoinggames matches 1 run execute if score slot11 hp matches ..0 run execute unless score speed slot11 matches ..-900000 run function ch:death3
-execute if score game2Ongoing ongoinggames matches 1 unless score character# slot12 matches 0 run execute if score slot12 hp matches ..0 run execute unless score speed slot12 matches ..-900000 run function ch:death4
-execute if score game2Ongoing ongoinggames matches 1 run execute if score slot13 hp matches ..0 run execute unless score speed slot13 matches ..-900000 run function ch:death5
-execute if score game2Ongoing ongoinggames matches 1 run execute if score slot14 hp matches ..0 run execute unless score speed slot14 matches ..-900000 run function ch:death6
-execute if score game2Ongoing ongoinggames matches 1 run execute if score slot15 hp matches ..0 run execute unless score speed slot15 matches ..-900000 run function ch:death7
-execute if score game2Ongoing ongoinggames matches 1 unless score character# slot16 matches 0 run execute if score slot16 hp matches ..0 run execute unless score speed slot16 matches ..-900000 run function ch:death8
+execute if score game2Ongoing ongoinggames matches 1 run execute if score slot17 hp matches ..0 run execute unless score speed slot17 matches ..-900000 run function ch:death1
+execute if score game2Ongoing ongoinggames matches 1 run execute if score slot18 hp matches ..0 run execute unless score speed slot18 matches ..-900000 run function ch:death2
+execute if score game2Ongoing ongoinggames matches 1 run execute if score slot19 hp matches ..0 run execute unless score speed slot19 matches ..-900000 run function ch:death3
+execute if score game2Ongoing ongoinggames matches 1 unless score character# slot20 matches 0 run execute if score slot20 hp matches ..0 run execute unless score speed slot20 matches ..-900000 run function ch:death4
+execute if score game2Ongoing ongoinggames matches 1 run execute if score slot21 hp matches ..0 run execute unless score speed slot21 matches ..-900000 run function ch:death5
+execute if score game2Ongoing ongoinggames matches 1 run execute if score slot23 hp matches ..0 run execute unless score speed slot23 matches ..-900000 run function ch:death6
+execute if score game2Ongoing ongoinggames matches 1 run execute if score slot23 hp matches ..0 run execute unless score speed slot23 matches ..-900000 run function ch:death7
+execute if score game2Ongoing ongoinggames matches 1 unless score character# slot24 matches 0 run execute if score slot24 hp matches ..0 run execute unless score speed slot24 matches ..-900000 run function ch:death8
 
 #Attack boolean reset
-scoreboard players set slot9isatk booleans 0
-scoreboard players set slot10isatk booleans 0
-scoreboard players set slot11isatk booleans 0
-scoreboard players set slot12isatk booleans 0
-scoreboard players set slot13isatk booleans 0
-scoreboard players set slot14isatk booleans 0
-scoreboard players set slot15isatk booleans 0
-scoreboard players set slot16isatk booleans 0
+scoreboard players set slot17isatk booleans 0
+scoreboard players set slot18isatk booleans 0
+scoreboard players set slot19isatk booleans 0
+scoreboard players set slot20isatk booleans 0
+scoreboard players set slot21isatk booleans 0
+scoreboard players set slot23isatk booleans 0
+scoreboard players set slot23isatk booleans 0
+scoreboard players set slot24isatk booleans 0
 
 
 

@@ -1,240 +1,240 @@
 #Burn
-execute if score durationSlot9 burn matches 0 run scoreboard players set slot9Burn burn 0
-execute if score durationSlot10 burn matches 0 run scoreboard players set slot10Burn burn 0
-execute if score durationSlot11 burn matches 0 run scoreboard players set slot11Burn burn 0
-execute if score durationSlot12 burn matches 0 run scoreboard players set slot12Burn burn 0
-execute if score durationSlot13 burn matches 0 run scoreboard players set slot13Burn burn 0
-execute if score durationSlot14 burn matches 0 run scoreboard players set slot14Burn burn 0
-execute if score durationSlot15 burn matches 0 run scoreboard players set slot15Burn burn 0
-execute if score durationSlot16 burn matches 0 run scoreboard players set slot16Burn burn 0
-execute if score durationSlot9 burn matches 0 run scoreboard players set slot9Burn burn 0
-execute if score durationSlot90 burn matches 0 run scoreboard players set slot90Burn burn 0
-execute if score durationSlot91 burn matches 0 run scoreboard players set slot91Burn burn 0
-execute if score durationSlot92 burn matches 0 run scoreboard players set slot92Burn burn 0
-execute if score durationSlot93 burn matches 0 run scoreboard players set slot93Burn burn 0
-execute if score durationSlot94 burn matches 0 run scoreboard players set slot94Burn burn 0
-execute if score durationSlot95 burn matches 0 run scoreboard players set slot95Burn burn 0
-execute if score durationSlot96 burn matches 0 run scoreboard players set slot96Burn burn 0
-execute if score durationSlot97 burn matches 0 run scoreboard players set slot97Burn burn 0
-execute if score durationSlot98 burn matches 0 run scoreboard players set slot98Burn burn 0
-execute if score durationSlot99 burn matches 0 run scoreboard players set slot99Burn burn 0
-execute if score durationSlot100 burn matches 0 run scoreboard players set slot100Burn burn 0
-execute if score durationSlot101 burn matches 0 run scoreboard players set slot101Burn burn 0
-execute if score durationSlot102 burn matches 0 run scoreboard players set slot102Burn burn 0
-execute if score durationSlot103 burn matches 0 run scoreboard players set slot103Burn burn 0
-execute if score durationSlot104 burn matches 0 run scoreboard players set slot104Burn burn 0
+execute if score durationSlot17 burn matches 0 run scoreboard players set slot17Burn burn 0
+execute if score durationSlot18 burn matches 0 run scoreboard players set slot18Burn burn 0
+execute if score durationSlot19 burn matches 0 run scoreboard players set slot19Burn burn 0
+execute if score durationSlot20 burn matches 0 run scoreboard players set slot20Burn burn 0
+execute if score durationSlot21 burn matches 0 run scoreboard players set slot21Burn burn 0
+execute if score durationSlot22 burn matches 0 run scoreboard players set slot23Burn burn 0
+execute if score durationSlot23 burn matches 0 run scoreboard players set slot23Burn burn 0
+execute if score durationSlot24 burn matches 0 run scoreboard players set slot24Burn burn 0
+execute if score durationSlot17 burn matches 0 run scoreboard players set slot17Burn burn 0
+execute if score durationSlot170 burn matches 0 run scoreboard players set slot170Burn burn 0
+execute if score durationSlot171 burn matches 0 run scoreboard players set slot171Burn burn 0
+execute if score durationSlot172 burn matches 0 run scoreboard players set slot172Burn burn 0
+execute if score durationSlot173 burn matches 0 run scoreboard players set slot173Burn burn 0
+execute if score durationSlot174 burn matches 0 run scoreboard players set slot174Burn burn 0
+execute if score durationSlot175 burn matches 0 run scoreboard players set slot175Burn burn 0
+execute if score durationSlot176 burn matches 0 run scoreboard players set slot176Burn burn 0
+execute if score durationSlot177 burn matches 0 run scoreboard players set slot177Burn burn 0
+execute if score durationSlot178 burn matches 0 run scoreboard players set slot178Burn burn 0
+execute if score durationSlot179 burn matches 0 run scoreboard players set slot179Burn burn 0
+execute if score durationSlot180 burn matches 0 run scoreboard players set slot180Burn burn 0
+execute if score durationSlot181 burn matches 0 run scoreboard players set slot181Burn burn 0
+execute if score durationSlot182 burn matches 0 run scoreboard players set slot182Burn burn 0
+execute if score durationSlot183 burn matches 0 run scoreboard players set slot183Burn burn 0
+execute if score durationSlot184 burn matches 0 run scoreboard players set slot184Burn burn 0
 
 
 #Poison
-execute if score durationSlot9 poison matches 0 run scoreboard players set slot9Poison poison 0
-execute if score durationSlot10 poison matches 0 run scoreboard players set slot10Poison poison 0
-execute if score durationSlot11 poison matches 0 run scoreboard players set slot11Poison poison 0
-execute if score durationSlot12 poison matches 0 run scoreboard players set slot12Poison poison 0
-execute if score durationSlot13 poison matches 0 run scoreboard players set slot13Poison poison 0
-execute if score durationSlot14 poison matches 0 run scoreboard players set slot14Poison poison 0
-execute if score durationSlot15 poison matches 0 run scoreboard players set slot15Poison poison 0
-execute if score durationSlot16 poison matches 0 run scoreboard players set slot16Poison poison 0
-execute if score durationSlot9 poison matches 0 run scoreboard players set slot9Poison poison 0
-execute if score durationSlot90 poison matches 0 run scoreboard players set slot90Poison poison 0
-execute if score durationSlot91 poison matches 0 run scoreboard players set slot91Poison poison 0
-execute if score durationSlot92 poison matches 0 run scoreboard players set slot92Poison poison 0
-execute if score durationSlot93 poison matches 0 run scoreboard players set slot93Poison poison 0
-execute if score durationSlot94 poison matches 0 run scoreboard players set slot94Poison poison 0
-execute if score durationSlot95 poison matches 0 run scoreboard players set slot95Poison poison 0
-execute if score durationSlot96 poison matches 0 run scoreboard players set slot96Poison poison 0
-execute if score durationSlot97 poison matches 0 run scoreboard players set slot97Poison poison 0
-execute if score durationSlot98 poison matches 0 run scoreboard players set slot98Poison poison 0
-execute if score durationSlot99 poison matches 0 run scoreboard players set slot99Poison poison 0
-execute if score durationSlot100 poison matches 0 run scoreboard players set slot100Poison poison 0
-execute if score durationSlot101 poison matches 0 run scoreboard players set slot101Poison poison 0
-execute if score durationSlot102 poison matches 0 run scoreboard players set slot102Poison poison 0
-execute if score durationSlot103 poison matches 0 run scoreboard players set slot103Poison poison 0
-execute if score durationSlot104 poison matches 0 run scoreboard players set slot104Poison poison 0
+execute if score durationSlot17 poison matches 0 run scoreboard players set slot17Poison poison 0
+execute if score durationSlot18 poison matches 0 run scoreboard players set slot18Poison poison 0
+execute if score durationSlot19 poison matches 0 run scoreboard players set slot19Poison poison 0
+execute if score durationSlot20 poison matches 0 run scoreboard players set slot20Poison poison 0
+execute if score durationSlot21 poison matches 0 run scoreboard players set slot21Poison poison 0
+execute if score durationSlot22 poison matches 0 run scoreboard players set slot23Poison poison 0
+execute if score durationSlot23 poison matches 0 run scoreboard players set slot23Poison poison 0
+execute if score durationSlot24 poison matches 0 run scoreboard players set slot24Poison poison 0
+execute if score durationSlot17 poison matches 0 run scoreboard players set slot17Poison poison 0
+execute if score durationSlot170 poison matches 0 run scoreboard players set slot170Poison poison 0
+execute if score durationSlot171 poison matches 0 run scoreboard players set slot171Poison poison 0
+execute if score durationSlot172 poison matches 0 run scoreboard players set slot172Poison poison 0
+execute if score durationSlot173 poison matches 0 run scoreboard players set slot173Poison poison 0
+execute if score durationSlot174 poison matches 0 run scoreboard players set slot174Poison poison 0
+execute if score durationSlot175 poison matches 0 run scoreboard players set slot175Poison poison 0
+execute if score durationSlot176 poison matches 0 run scoreboard players set slot176Poison poison 0
+execute if score durationSlot177 poison matches 0 run scoreboard players set slot177Poison poison 0
+execute if score durationSlot178 poison matches 0 run scoreboard players set slot178Poison poison 0
+execute if score durationSlot179 poison matches 0 run scoreboard players set slot179Poison poison 0
+execute if score durationSlot180 poison matches 0 run scoreboard players set slot180Poison poison 0
+execute if score durationSlot181 poison matches 0 run scoreboard players set slot181Poison poison 0
+execute if score durationSlot182 poison matches 0 run scoreboard players set slot182Poison poison 0
+execute if score durationSlot183 poison matches 0 run scoreboard players set slot183Poison poison 0
+execute if score durationSlot184 poison matches 0 run scoreboard players set slot184Poison poison 0
 
 
 #Speed Debuffs
-execute if score durationSlot9 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot9 speedDebuffs 0
-execute if score durationSlot10 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot10 speedDebuffs 0
-execute if score durationSlot11 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot11 speedDebuffs 0
-execute if score durationSlot12 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot12 speedDebuffs 0
-execute if score durationSlot13 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot13 speedDebuffs 0
-execute if score durationSlot14 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot14 speedDebuffs 0
-execute if score durationSlot15 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot15 speedDebuffs 0
-execute if score durationSlot16 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot16 speedDebuffs 0
-execute if score durationSlot9 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot9 speedDebuffs 0
-execute if score durationSlot90 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot90 speedDebuffs 0
-execute if score durationSlot91 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot91 speedDebuffs 0
-execute if score durationSlot92 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot92 speedDebuffs 0
-execute if score durationSlot93 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot93 speedDebuffs 0
-execute if score durationSlot94 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot94 speedDebuffs 0
-execute if score durationSlot95 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot95 speedDebuffs 0
-execute if score durationSlot96 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot96 speedDebuffs 0
-execute if score durationSlot97 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot97 speedDebuffs 0
-execute if score durationSlot98 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot98 speedDebuffs 0
-execute if score durationSlot99 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot99 speedDebuffs 0
-execute if score durationSlot100 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot100 speedDebuffs 0
-execute if score durationSlot101 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot101 speedDebuffs 0
-execute if score durationSlot102 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot102 speedDebuffs 0
-execute if score durationSlot103 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot103 speedDebuffs 0
-execute if score durationSlot104 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot104 speedDebuffs 0
+execute if score durationSlot17 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot17 speedDebuffs 0
+execute if score durationSlot18 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot18 speedDebuffs 0
+execute if score durationSlot19 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot19 speedDebuffs 0
+execute if score durationSlot20 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot20 speedDebuffs 0
+execute if score durationSlot21 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot21 speedDebuffs 0
+execute if score durationSlot22 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot22 speedDebuffs 0
+execute if score durationSlot23 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot23 speedDebuffs 0
+execute if score durationSlot24 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot24 speedDebuffs 0
+execute if score durationSlot17 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot17 speedDebuffs 0
+execute if score durationSlot170 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot170 speedDebuffs 0
+execute if score durationSlot171 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot171 speedDebuffs 0
+execute if score durationSlot172 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot172 speedDebuffs 0
+execute if score durationSlot173 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot173 speedDebuffs 0
+execute if score durationSlot174 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot174 speedDebuffs 0
+execute if score durationSlot175 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot175 speedDebuffs 0
+execute if score durationSlot176 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot176 speedDebuffs 0
+execute if score durationSlot177 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot177 speedDebuffs 0
+execute if score durationSlot178 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot178 speedDebuffs 0
+execute if score durationSlot179 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot179 speedDebuffs 0
+execute if score durationSlot180 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot180 speedDebuffs 0
+execute if score durationSlot181 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot181 speedDebuffs 0
+execute if score durationSlot182 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot182 speedDebuffs 0
+execute if score durationSlot183 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot183 speedDebuffs 0
+execute if score durationSlot184 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot184 speedDebuffs 0
 
 
 #Speed Buffs
-execute if score durationSlot9 speedBuffs matches 0 run scoreboard players set speedBuffSlot9 speedBuffs 0
-execute if score durationSlot10 speedBuffs matches 0 run scoreboard players set speedBuffSlot10 speedBuffs 0
-execute if score durationSlot11 speedBuffs matches 0 run scoreboard players set speedBuffSlot11 speedBuffs 0
-execute if score durationSlot12 speedBuffs matches 0 run scoreboard players set speedBuffSlot12 speedBuffs 0
-execute if score durationSlot13 speedBuffs matches 0 run scoreboard players set speedBuffSlot13 speedBuffs 0
-execute if score durationSlot14 speedBuffs matches 0 run scoreboard players set speedBuffSlot14 speedBuffs 0
-execute if score durationSlot15 speedBuffs matches 0 run scoreboard players set speedBuffSlot15 speedBuffs 0
-execute if score durationSlot16 speedBuffs matches 0 run scoreboard players set speedBuffSlot16 speedBuffs 0
-execute if score durationSlot9 speedBuffs matches 0 run scoreboard players set speedBuffSlot9 speedBuffs 0
-execute if score durationSlot90 speedBuffs matches 0 run scoreboard players set speedBuffSlot90 speedBuffs 0
-execute if score durationSlot91 speedBuffs matches 0 run scoreboard players set speedBuffSlot91 speedBuffs 0
-execute if score durationSlot92 speedBuffs matches 0 run scoreboard players set speedBuffSlot92 speedBuffs 0
-execute if score durationSlot93 speedBuffs matches 0 run scoreboard players set speedBuffSlot93 speedBuffs 0
-execute if score durationSlot94 speedBuffs matches 0 run scoreboard players set speedBuffSlot94 speedBuffs 0
-execute if score durationSlot95 speedBuffs matches 0 run scoreboard players set speedBuffSlot95 speedBuffs 0
-execute if score durationSlot96 speedBuffs matches 0 run scoreboard players set speedBuffSlot96 speedBuffs 0
-execute if score durationSlot97 speedBuffs matches 0 run scoreboard players set speedBuffSlot97 speedBuffs 0
-execute if score durationSlot98 speedBuffs matches 0 run scoreboard players set speedBuffSlot98 speedBuffs 0
-execute if score durationSlot99 speedBuffs matches 0 run scoreboard players set speedBuffSlot99 speedBuffs 0
-execute if score durationSlot100 speedBuffs matches 0 run scoreboard players set speedBuffSlot100 speedBuffs 0
-execute if score durationSlot101 speedBuffs matches 0 run scoreboard players set speedBuffSlot101 speedBuffs 0
-execute if score durationSlot102 speedBuffs matches 0 run scoreboard players set speedBuffSlot102 speedBuffs 0
-execute if score durationSlot103 speedBuffs matches 0 run scoreboard players set speedBuffSlot103 speedBuffs 0
-execute if score durationSlot104 speedBuffs matches 0 run scoreboard players set speedBuffSlot104 speedBuffs 0
+execute if score durationSlot17 speedBuffs matches 0 run scoreboard players set speedBuffSlot17 speedBuffs 0
+execute if score durationSlot18 speedBuffs matches 0 run scoreboard players set speedBuffSlot18 speedBuffs 0
+execute if score durationSlot19 speedBuffs matches 0 run scoreboard players set speedBuffSlot19 speedBuffs 0
+execute if score durationSlot20 speedBuffs matches 0 run scoreboard players set speedBuffSlot20 speedBuffs 0
+execute if score durationSlot21 speedBuffs matches 0 run scoreboard players set speedBuffSlot21 speedBuffs 0
+execute if score durationSlot22 speedBuffs matches 0 run scoreboard players set speedBuffSlot22 speedBuffs 0
+execute if score durationSlot23 speedBuffs matches 0 run scoreboard players set speedBuffSlot23 speedBuffs 0
+execute if score durationSlot24 speedBuffs matches 0 run scoreboard players set speedBuffSlot24 speedBuffs 0
+execute if score durationSlot17 speedBuffs matches 0 run scoreboard players set speedBuffSlot17 speedBuffs 0
+execute if score durationSlot170 speedBuffs matches 0 run scoreboard players set speedBuffSlot170 speedBuffs 0
+execute if score durationSlot171 speedBuffs matches 0 run scoreboard players set speedBuffSlot171 speedBuffs 0
+execute if score durationSlot172 speedBuffs matches 0 run scoreboard players set speedBuffSlot172 speedBuffs 0
+execute if score durationSlot173 speedBuffs matches 0 run scoreboard players set speedBuffSlot173 speedBuffs 0
+execute if score durationSlot174 speedBuffs matches 0 run scoreboard players set speedBuffSlot174 speedBuffs 0
+execute if score durationSlot175 speedBuffs matches 0 run scoreboard players set speedBuffSlot175 speedBuffs 0
+execute if score durationSlot176 speedBuffs matches 0 run scoreboard players set speedBuffSlot176 speedBuffs 0
+execute if score durationSlot177 speedBuffs matches 0 run scoreboard players set speedBuffSlot177 speedBuffs 0
+execute if score durationSlot178 speedBuffs matches 0 run scoreboard players set speedBuffSlot178 speedBuffs 0
+execute if score durationSlot179 speedBuffs matches 0 run scoreboard players set speedBuffSlot179 speedBuffs 0
+execute if score durationSlot180 speedBuffs matches 0 run scoreboard players set speedBuffSlot180 speedBuffs 0
+execute if score durationSlot181 speedBuffs matches 0 run scoreboard players set speedBuffSlot181 speedBuffs 0
+execute if score durationSlot182 speedBuffs matches 0 run scoreboard players set speedBuffSlot182 speedBuffs 0
+execute if score durationSlot183 speedBuffs matches 0 run scoreboard players set speedBuffSlot183 speedBuffs 0
+execute if score durationSlot184 speedBuffs matches 0 run scoreboard players set speedBuffSlot184 speedBuffs 0
 
 
 #Regen
-execute if score durationSlot9 regen matches 0 run scoreboard players set slot9Regen regen 0
-execute if score durationSlot10 regen matches 0 run scoreboard players set slot10Regen regen 0
-execute if score durationSlot11 regen matches 0 run scoreboard players set slot11Regen regen 0
-execute if score durationSlot12 regen matches 0 run scoreboard players set slot12Regen regen 0
-execute if score durationSlot13 regen matches 0 run scoreboard players set slot13Regen regen 0
-execute if score durationSlot14 regen matches 0 run scoreboard players set slot14Regen regen 0
-execute if score durationSlot15 regen matches 0 run scoreboard players set slot15Regen regen 0
-execute if score durationSlot16 regen matches 0 run scoreboard players set slot16Regen regen 0
-execute if score durationSlot9 regen matches 0 run scoreboard players set slot9Regen regen 0
-execute if score durationSlot90 regen matches 0 run scoreboard players set slot90Regen regen 0
-execute if score durationSlot91 regen matches 0 run scoreboard players set slot91Regen regen 0
-execute if score durationSlot92 regen matches 0 run scoreboard players set slot92Regen regen 0
-execute if score durationSlot93 regen matches 0 run scoreboard players set slot93Regen regen 0
-execute if score durationSlot94 regen matches 0 run scoreboard players set slot94Regen regen 0
-execute if score durationSlot95 regen matches 0 run scoreboard players set slot95Regen regen 0
-execute if score durationSlot96 regen matches 0 run scoreboard players set slot96Regen regen 0
-execute if score durationSlot97 regen matches 0 run scoreboard players set slot97Regen regen 0
-execute if score durationSlot98 regen matches 0 run scoreboard players set slot98Regen regen 0
-execute if score durationSlot99 regen matches 0 run scoreboard players set slot99Regen regen 0
-execute if score durationSlot100 regen matches 0 run scoreboard players set slot100Regen regen 0
-execute if score durationSlot101 regen matches 0 run scoreboard players set slot101Regen regen 0
-execute if score durationSlot102 regen matches 0 run scoreboard players set slot102Regen regen 0
-execute if score durationSlot103 regen matches 0 run scoreboard players set slot103Regen regen 0
-execute if score durationSlot104 regen matches 0 run scoreboard players set slot104Regen regen 0
+execute if score durationSlot17 regen matches 0 run scoreboard players set slot17Regen regen 0
+execute if score durationSlot18 regen matches 0 run scoreboard players set slot18Regen regen 0
+execute if score durationSlot19 regen matches 0 run scoreboard players set slot19Regen regen 0
+execute if score durationSlot20 regen matches 0 run scoreboard players set slot20Regen regen 0
+execute if score durationSlot21 regen matches 0 run scoreboard players set slot21Regen regen 0
+execute if score durationSlot22 regen matches 0 run scoreboard players set slot23Regen regen 0
+execute if score durationSlot23 regen matches 0 run scoreboard players set slot23Regen regen 0
+execute if score durationSlot24 regen matches 0 run scoreboard players set slot24Regen regen 0
+execute if score durationSlot17 regen matches 0 run scoreboard players set slot17Regen regen 0
+execute if score durationSlot170 regen matches 0 run scoreboard players set slot170Regen regen 0
+execute if score durationSlot171 regen matches 0 run scoreboard players set slot171Regen regen 0
+execute if score durationSlot172 regen matches 0 run scoreboard players set slot172Regen regen 0
+execute if score durationSlot173 regen matches 0 run scoreboard players set slot173Regen regen 0
+execute if score durationSlot174 regen matches 0 run scoreboard players set slot174Regen regen 0
+execute if score durationSlot175 regen matches 0 run scoreboard players set slot175Regen regen 0
+execute if score durationSlot176 regen matches 0 run scoreboard players set slot176Regen regen 0
+execute if score durationSlot177 regen matches 0 run scoreboard players set slot177Regen regen 0
+execute if score durationSlot178 regen matches 0 run scoreboard players set slot178Regen regen 0
+execute if score durationSlot179 regen matches 0 run scoreboard players set slot179Regen regen 0
+execute if score durationSlot180 regen matches 0 run scoreboard players set slot180Regen regen 0
+execute if score durationSlot181 regen matches 0 run scoreboard players set slot181Regen regen 0
+execute if score durationSlot182 regen matches 0 run scoreboard players set slot182Regen regen 0
+execute if score durationSlot183 regen matches 0 run scoreboard players set slot183Regen regen 0
+execute if score durationSlot184 regen matches 0 run scoreboard players set slot184Regen regen 0
 
 
 #Shield
-execute if score durationSlot9 shield matches 0 run scoreboard players set shield slot9 0
-execute if score durationSlot10 shield matches 0 run scoreboard players set shield slot10 0
-execute if score durationSlot11 shield matches 0 run scoreboard players set shield slot11 0
-execute if score durationSlot12 shield matches 0 run scoreboard players set shield slot12 0
-execute if score durationSlot13 shield matches 0 run scoreboard players set shield slot13 0
-execute if score durationSlot14 shield matches 0 run scoreboard players set shield slot14 0
-execute if score durationSlot15 shield matches 0 run scoreboard players set shield slot15 0
-execute if score durationSlot16 shield matches 0 run scoreboard players set shield slot16 0
-execute if score durationSlot9 shield matches 0 run scoreboard players set shield slot9 0
-execute if score durationSlot90 shield matches 0 run scoreboard players set shield slot90 0
-execute if score durationSlot91 shield matches 0 run scoreboard players set shield slot91 0
-execute if score durationSlot92 shield matches 0 run scoreboard players set shield slot92 0
-execute if score durationSlot93 shield matches 0 run scoreboard players set shield slot93 0
-execute if score durationSlot94 shield matches 0 run scoreboard players set shield slot94 0
-execute if score durationSlot95 shield matches 0 run scoreboard players set shield slot95 0
-execute if score durationSlot96 shield matches 0 run scoreboard players set shield slot96 0
-execute if score durationSlot97 shield matches 0 run scoreboard players set shield slot97 0
-execute if score durationSlot98 shield matches 0 run scoreboard players set shield slot98 0
-execute if score durationSlot99 shield matches 0 run scoreboard players set shield slot99 0
-execute if score durationSlot100 shield matches 0 run scoreboard players set shield slot100 0
-execute if score durationSlot101 shield matches 0 run scoreboard players set shield slot101 0
-execute if score durationSlot102 shield matches 0 run scoreboard players set shield slot102 0
-execute if score durationSlot103 shield matches 0 run scoreboard players set shield slot103 0
-execute if score durationSlot104 shield matches 0 run scoreboard players set shield slot104 0
+execute if score durationSlot17 shield matches 0 run scoreboard players set shield slot17 0
+execute if score durationSlot18 shield matches 0 run scoreboard players set shield slot18 0
+execute if score durationSlot19 shield matches 0 run scoreboard players set shield slot19 0
+execute if score durationSlot20 shield matches 0 run scoreboard players set shield slot20 0
+execute if score durationSlot21 shield matches 0 run scoreboard players set shield slot21 0
+execute if score durationSlot22 shield matches 0 run scoreboard players set shield slot23 0
+execute if score durationSlot23 shield matches 0 run scoreboard players set shield slot23 0
+execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot24 0
+execute if score durationSlot17 shield matches 0 run scoreboard players set shield slot17 0
+execute if score durationSlot170 shield matches 0 run scoreboard players set shield slot170 0
+execute if score durationSlot171 shield matches 0 run scoreboard players set shield slot171 0
+execute if score durationSlot172 shield matches 0 run scoreboard players set shield slot172 0
+execute if score durationSlot173 shield matches 0 run scoreboard players set shield slot173 0
+execute if score durationSlot174 shield matches 0 run scoreboard players set shield slot174 0
+execute if score durationSlot175 shield matches 0 run scoreboard players set shield slot175 0
+execute if score durationSlot176 shield matches 0 run scoreboard players set shield slot176 0
+execute if score durationSlot177 shield matches 0 run scoreboard players set shield slot177 0
+execute if score durationSlot178 shield matches 0 run scoreboard players set shield slot178 0
+execute if score durationSlot179 shield matches 0 run scoreboard players set shield slot179 0
+execute if score durationSlot180 shield matches 0 run scoreboard players set shield slot180 0
+execute if score durationSlot181 shield matches 0 run scoreboard players set shield slot181 0
+execute if score durationSlot182 shield matches 0 run scoreboard players set shield slot182 0
+execute if score durationSlot183 shield matches 0 run scoreboard players set shield slot183 0
+execute if score durationSlot184 shield matches 0 run scoreboard players set shield slot184 0
 
 
 #Damage Buff
-execute if score buffDurationSlot9 atkmodifiers matches 0 run scoreboard players set attackBuffSlot9 atkmodifiers 0
-execute if score buffDurationSlot10 atkmodifiers matches 0 run scoreboard players set attackBuffSlot10 atkmodifiers 0
-execute if score buffDurationSlot11 atkmodifiers matches 0 run scoreboard players set attackBuffSlot11 atkmodifiers 0
-execute if score buffDurationSlot12 atkmodifiers matches 0 run scoreboard players set attackBuffSlot12 atkmodifiers 0
-execute if score buffDurationSlot13 atkmodifiers matches 0 run scoreboard players set attackBuffSlot13 atkmodifiers 0
-execute if score buffDurationSlot14 atkmodifiers matches 0 run scoreboard players set attackBuffSlot14 atkmodifiers 0
-execute if score buffDurationSlot15 atkmodifiers matches 0 run scoreboard players set attackBuffSlot15 atkmodifiers 0
-execute if score buffDurationSlot16 atkmodifiers matches 0 run scoreboard players set attackBuffSlot16 atkmodifiers 0
-execute if score buffDurationSlot9 atkmodifiers matches 0 run scoreboard players set attackBuffSlot9 atkmodifiers 0
-execute if score buffDurationSlot90 atkmodifiers matches 0 run scoreboard players set attackBuffSlot90 atkmodifiers 0
-execute if score buffDurationSlot91 atkmodifiers matches 0 run scoreboard players set attackBuffSlot91 atkmodifiers 0
-execute if score buffDurationSlot92 atkmodifiers matches 0 run scoreboard players set attackBuffSlot92 atkmodifiers 0
-execute if score buffDurationSlot93 atkmodifiers matches 0 run scoreboard players set attackBuffSlot93 atkmodifiers 0
-execute if score buffDurationSlot94 atkmodifiers matches 0 run scoreboard players set attackBuffSlot94 atkmodifiers 0
-execute if score buffDurationSlot95 atkmodifiers matches 0 run scoreboard players set attackBuffSlot95 atkmodifiers 0
-execute if score buffDurationSlot96 atkmodifiers matches 0 run scoreboard players set attackBuffSlot96 atkmodifiers 0
-execute if score buffDurationSlot97 atkmodifiers matches 0 run scoreboard players set attackBuffSlot97 atkmodifiers 0
-execute if score buffDurationSlot98 atkmodifiers matches 0 run scoreboard players set attackBuffSlot98 atkmodifiers 0
-execute if score buffDurationSlot99 atkmodifiers matches 0 run scoreboard players set attackBuffSlot99 atkmodifiers 0
-execute if score buffDurationSlot100 atkmodifiers matches 0 run scoreboard players set attackBuffSlot100 atkmodifiers 0
-execute if score buffDurationSlot101 atkmodifiers matches 0 run scoreboard players set attackBuffSlot101 atkmodifiers 0
-execute if score buffDurationSlot102 atkmodifiers matches 0 run scoreboard players set attackBuffSlot102 atkmodifiers 0
-execute if score buffDurationSlot103 atkmodifiers matches 0 run scoreboard players set attackBuffSlot103 atkmodifiers 0
-execute if score buffDurationSlot104 atkmodifiers matches 0 run scoreboard players set attackBuffSlot104 atkmodifiers 0
+execute if score buffDurationSlot17 atkmodifiers matches 0 run scoreboard players set attackBuffSlot17 atkmodifiers 0
+execute if score buffDurationSlot18 atkmodifiers matches 0 run scoreboard players set attackBuffSlot18 atkmodifiers 0
+execute if score buffDurationSlot19 atkmodifiers matches 0 run scoreboard players set attackBuffSlot19 atkmodifiers 0
+execute if score buffDurationSlot20 atkmodifiers matches 0 run scoreboard players set attackBuffSlot20 atkmodifiers 0
+execute if score buffDurationSlot21 atkmodifiers matches 0 run scoreboard players set attackBuffSlot21 atkmodifiers 0
+execute if score buffDurationSlot22 atkmodifiers matches 0 run scoreboard players set attackBuffSlot22 atkmodifiers 0
+execute if score buffDurationSlot23 atkmodifiers matches 0 run scoreboard players set attackBuffSlot23 atkmodifiers 0
+execute if score buffDurationSlot24 atkmodifiers matches 0 run scoreboard players set attackBuffSlot24 atkmodifiers 0
+execute if score buffDurationSlot17 atkmodifiers matches 0 run scoreboard players set attackBuffSlot17 atkmodifiers 0
+execute if score buffDurationSlot170 atkmodifiers matches 0 run scoreboard players set attackBuffSlot170 atkmodifiers 0
+execute if score buffDurationSlot171 atkmodifiers matches 0 run scoreboard players set attackBuffSlot171 atkmodifiers 0
+execute if score buffDurationSlot172 atkmodifiers matches 0 run scoreboard players set attackBuffSlot172 atkmodifiers 0
+execute if score buffDurationSlot173 atkmodifiers matches 0 run scoreboard players set attackBuffSlot173 atkmodifiers 0
+execute if score buffDurationSlot174 atkmodifiers matches 0 run scoreboard players set attackBuffSlot174 atkmodifiers 0
+execute if score buffDurationSlot175 atkmodifiers matches 0 run scoreboard players set attackBuffSlot175 atkmodifiers 0
+execute if score buffDurationSlot176 atkmodifiers matches 0 run scoreboard players set attackBuffSlot176 atkmodifiers 0
+execute if score buffDurationSlot177 atkmodifiers matches 0 run scoreboard players set attackBuffSlot177 atkmodifiers 0
+execute if score buffDurationSlot178 atkmodifiers matches 0 run scoreboard players set attackBuffSlot178 atkmodifiers 0
+execute if score buffDurationSlot179 atkmodifiers matches 0 run scoreboard players set attackBuffSlot179 atkmodifiers 0
+execute if score buffDurationSlot180 atkmodifiers matches 0 run scoreboard players set attackBuffSlot180 atkmodifiers 0
+execute if score buffDurationSlot181 atkmodifiers matches 0 run scoreboard players set attackBuffSlot181 atkmodifiers 0
+execute if score buffDurationSlot182 atkmodifiers matches 0 run scoreboard players set attackBuffSlot182 atkmodifiers 0
+execute if score buffDurationSlot183 atkmodifiers matches 0 run scoreboard players set attackBuffSlot183 atkmodifiers 0
+execute if score buffDurationSlot184 atkmodifiers matches 0 run scoreboard players set attackBuffSlot184 atkmodifiers 0
 
 
 #Damage Debuff
-execute if score debuffDurationSlot9 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot9 atkmodifiers 0
-execute if score debuffDurationSlot10 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot10 atkmodifiers 0
-execute if score debuffDurationSlot11 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot11 atkmodifiers 0
-execute if score debuffDurationSlot12 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot12 atkmodifiers 0
-execute if score debuffDurationSlot13 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot13 atkmodifiers 0
-execute if score debuffDurationSlot14 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot14 atkmodifiers 0
-execute if score debuffDurationSlot15 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot15 atkmodifiers 0
-execute if score debuffDurationSlot16 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot16 atkmodifiers 0
-execute if score debuffDurationSlot9 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot9 atkmodifiers 0
-execute if score debuffDurationSlot90 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot90 atkmodifiers 0
-execute if score debuffDurationSlot91 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot91 atkmodifiers 0
-execute if score debuffDurationSlot92 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot92 atkmodifiers 0
-execute if score debuffDurationSlot93 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot93 atkmodifiers 0
-execute if score debuffDurationSlot94 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot94 atkmodifiers 0
-execute if score debuffDurationSlot95 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot95 atkmodifiers 0
-execute if score debuffDurationSlot96 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot96 atkmodifiers 0
-execute if score debuffDurationSlot97 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot97 atkmodifiers 0
-execute if score debuffDurationSlot98 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot98 atkmodifiers 0
-execute if score debuffDurationSlot99 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot99 atkmodifiers 0
-execute if score debuffDurationSlot100 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot100 atkmodifiers 0
-execute if score debuffDurationSlot101 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot101 atkmodifiers 0
-execute if score debuffDurationSlot102 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot102 atkmodifiers 0
-execute if score debuffDurationSlot103 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot103 atkmodifiers 0
-execute if score debuffDurationSlot104 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot104 atkmodifiers 0
+execute if score debuffDurationSlot17 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot17 atkmodifiers 0
+execute if score debuffDurationSlot18 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot18 atkmodifiers 0
+execute if score debuffDurationSlot19 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot19 atkmodifiers 0
+execute if score debuffDurationSlot20 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot20 atkmodifiers 0
+execute if score debuffDurationSlot21 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot21 atkmodifiers 0
+execute if score debuffDurationSlot22 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot22 atkmodifiers 0
+execute if score debuffDurationSlot23 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot23 atkmodifiers 0
+execute if score debuffDurationSlot24 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot24 atkmodifiers 0
+execute if score debuffDurationSlot17 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot17 atkmodifiers 0
+execute if score debuffDurationSlot170 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot170 atkmodifiers 0
+execute if score debuffDurationSlot171 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot171 atkmodifiers 0
+execute if score debuffDurationSlot172 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot172 atkmodifiers 0
+execute if score debuffDurationSlot173 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot173 atkmodifiers 0
+execute if score debuffDurationSlot174 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot174 atkmodifiers 0
+execute if score debuffDurationSlot175 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot175 atkmodifiers 0
+execute if score debuffDurationSlot176 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot176 atkmodifiers 0
+execute if score debuffDurationSlot177 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot177 atkmodifiers 0
+execute if score debuffDurationSlot178 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot178 atkmodifiers 0
+execute if score debuffDurationSlot179 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot179 atkmodifiers 0
+execute if score debuffDurationSlot180 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot180 atkmodifiers 0
+execute if score debuffDurationSlot181 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot181 atkmodifiers 0
+execute if score debuffDurationSlot182 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot182 atkmodifiers 0
+execute if score debuffDurationSlot183 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot183 atkmodifiers 0
+execute if score debuffDurationSlot184 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot184 atkmodifiers 0
 
 #Wards
-execute if score durationSlot9 wards matches 0 if score ward slot9 matches 3 run scoreboard players set ward slot9 0
-execute if score durationSlot10 wards matches 0 if score ward slot10 matches 3 run scoreboard players set ward slot10 0
-execute if score durationSlot11 wards matches 0 if score ward slot11 matches 3 run scoreboard players set ward slot11 0
-execute if score durationSlot12 wards matches 0 if score ward slot12 matches 3 run scoreboard players set ward slot12 0
-execute if score durationSlot13 wards matches 0 if score ward slot13 matches 3 run scoreboard players set ward slot13 0
-execute if score durationSlot14 wards matches 0 if score ward slot14 matches 3 run scoreboard players set ward slot14 0
-execute if score durationSlot15 wards matches 0 if score ward slot15 matches 3 run scoreboard players set ward slot15 0
-execute if score durationSlot16 wards matches 0 if score ward slot16 matches 3 run scoreboard players set ward slot16 0
-execute if score durationSlot9 wards matches 0 if score ward slot9 matches 3 run scoreboard players set ward slot9 0
-execute if score durationSlot90 wards matches 0 if score ward slot90 matches 3 run scoreboard players set ward slot90 0
-execute if score durationSlot91 wards matches 0 if score ward slot91 matches 3 run scoreboard players set ward slot91 0
-execute if score durationSlot92 wards matches 0 if score ward slot92 matches 3 run scoreboard players set ward slot92 0
-execute if score durationSlot93 wards matches 0 if score ward slot93 matches 3 run scoreboard players set ward slot93 0
-execute if score durationSlot94 wards matches 0 if score ward slot94 matches 3 run scoreboard players set ward slot94 0
-execute if score durationSlot95 wards matches 0 if score ward slot95 matches 3 run scoreboard players set ward slot95 0
-execute if score durationSlot96 wards matches 0 if score ward slot96 matches 3 run scoreboard players set ward slot96 0
-execute if score durationSlot97 wards matches 0 if score ward slot97 matches 3 run scoreboard players set ward slot97 0
-execute if score durationSlot98 wards matches 0 if score ward slot98 matches 3 run scoreboard players set ward slot98 0
-execute if score durationSlot99 wards matches 0 if score ward slot99 matches 3 run scoreboard players set ward slot99 0
-execute if score durationSlot100 wards matches 0 if score ward slot100 matches 3 run scoreboard players set ward slot100 0
-execute if score durationSlot101 wards matches 0 if score ward slot101 matches 3 run scoreboard players set ward slot101 0
-execute if score durationSlot102 wards matches 0 if score ward slot102 matches 3 run scoreboard players set ward slot102 0
-execute if score durationSlot103 wards matches 0 if score ward slot103 matches 3 run scoreboard players set ward slot103 0
-execute if score durationSlot104 wards matches 0 if score ward slot104 matches 3 run scoreboard players set ward slot104 0
+execute if score durationSlot17 wards matches 0 if score ward slot17 matches 3 run scoreboard players set ward slot17 0
+execute if score durationSlot18 wards matches 0 if score ward slot18 matches 3 run scoreboard players set ward slot18 0
+execute if score durationSlot19 wards matches 0 if score ward slot19 matches 3 run scoreboard players set ward slot19 0
+execute if score durationSlot20 wards matches 0 if score ward slot20 matches 3 run scoreboard players set ward slot20 0
+execute if score durationSlot21 wards matches 0 if score ward slot21 matches 3 run scoreboard players set ward slot21 0
+execute if score durationSlot22 wards matches 0 if score ward slot23 matches 3 run scoreboard players set ward slot23 0
+execute if score durationSlot23 wards matches 0 if score ward slot23 matches 3 run scoreboard players set ward slot23 0
+execute if score durationSlot24 wards matches 0 if score ward slot24 matches 3 run scoreboard players set ward slot24 0
+execute if score durationSlot17 wards matches 0 if score ward slot17 matches 3 run scoreboard players set ward slot17 0
+execute if score durationSlot170 wards matches 0 if score ward slot170 matches 3 run scoreboard players set ward slot170 0
+execute if score durationSlot171 wards matches 0 if score ward slot171 matches 3 run scoreboard players set ward slot171 0
+execute if score durationSlot172 wards matches 0 if score ward slot172 matches 3 run scoreboard players set ward slot172 0
+execute if score durationSlot173 wards matches 0 if score ward slot173 matches 3 run scoreboard players set ward slot173 0
+execute if score durationSlot174 wards matches 0 if score ward slot174 matches 3 run scoreboard players set ward slot174 0
+execute if score durationSlot175 wards matches 0 if score ward slot175 matches 3 run scoreboard players set ward slot175 0
+execute if score durationSlot176 wards matches 0 if score ward slot176 matches 3 run scoreboard players set ward slot176 0
+execute if score durationSlot177 wards matches 0 if score ward slot177 matches 3 run scoreboard players set ward slot177 0
+execute if score durationSlot178 wards matches 0 if score ward slot178 matches 3 run scoreboard players set ward slot178 0
+execute if score durationSlot179 wards matches 0 if score ward slot179 matches 3 run scoreboard players set ward slot179 0
+execute if score durationSlot180 wards matches 0 if score ward slot180 matches 3 run scoreboard players set ward slot180 0
+execute if score durationSlot181 wards matches 0 if score ward slot181 matches 3 run scoreboard players set ward slot181 0
+execute if score durationSlot182 wards matches 0 if score ward slot182 matches 3 run scoreboard players set ward slot182 0
+execute if score durationSlot183 wards matches 0 if score ward slot183 matches 3 run scoreboard players set ward slot183 0
+execute if score durationSlot184 wards matches 0 if score ward slot184 matches 3 run scoreboard players set ward slot184 0

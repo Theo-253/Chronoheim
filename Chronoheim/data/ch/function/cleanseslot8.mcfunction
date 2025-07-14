@@ -1,13 +1,13 @@
-scoreboard players set durationSlot16 burn 0
-scoreboard players set durationSlot16 poison 0
-scoreboard players set debuffDurationSlot16 atkmodifiers 0
-scoreboard players set durationSlot16 speedDebuffs 0
-scoreboard players set durationSlot9-8 fear 0
-scoreboard players set durationSlot10-8 fear 0
-scoreboard players set durationSlot11-8 fear 0
-scoreboard players set durationSlot12-8 fear 0
-scoreboard players set durationSlot16 mark 0
-scoreboard players set slot16Disease disease 0
-scoreboard players set slot16bleeding booleaneffects 0
-scoreboard players set marks slot16 0
-execute at @e[name=slot16] run particle minecraft:end_rod ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+scoreboard players set durationSlot24 burn 0
+scoreboard players set durationSlot24 poison 0
+scoreboard players set debuffDurationSlot24 atkmodifiers 0
+scoreboard players set durationSlot24 speedDebuffs 0
+scoreboard players set durationSlot17-24 fear 0
+scoreboard players set durationSlot18-24 fear 0
+scoreboard players set durationSlot19-24 fear 0
+scoreboard players set durationSlot20-24 fear 0
+scoreboard players set durationSlot24 mark 0
+scoreboard players set slot24Disease disease 0
+scoreboard players set slot24bleeding booleaneffects 0
+scoreboard players set marks slot24 0
+execute at @e[name=slot24] run particle minecraft:end_rod ~ ~1 ~ 0.9 0.9 0.9 0.1 100

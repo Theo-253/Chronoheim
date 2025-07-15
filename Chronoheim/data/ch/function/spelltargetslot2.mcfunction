@@ -34,11 +34,11 @@ execute if score spellnumber3 spells matches 15 run execute at @n[type=armor_sta
 execute if score spellnumber3 spells matches 15 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Evil Eye on Slot 18!"]
 
 #Frostbolt
-execute if score spellnumber3 spells matches 6 run scoreboard players operation spellDmg2 saves = frostbolt spellStats
-execute if score spellnumber3 spells matches 6 run scoreboard players operation spellDmg2 saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 6 run scoreboard players operation spellDmg2 saves += marks slot18
-execute if score spellnumber3 spells matches 6 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot18
-execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg2 saves
+execute if score spellnumber3 spells matches 6 run scoreboard players operation spelldmg32 saves = frostbolt spellStats
+execute if score spellnumber3 spells matches 6 run scoreboard players operation spelldmg32 saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 6 run scoreboard players operation spelldmg32 saves += marks slot18
+execute if score spellnumber3 spells matches 6 run scoreboard players operation spelldmg32 saves /= atkmultiplier slot18
+execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spelldmg32 saves
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score frostboltDuration spellStats > durationSlot18 speedDebuffs run scoreboard players operation durationSlot18 speedDebuffs = frostboltDuration spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score frostboltDuration spellStats > debuffDurationSlot18 atkmodifiers run scoreboard players operation debuffDurationSlot18 atkmodifiers = frostboltDuration spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation speedDebuffSlot18 speedDebuffs += frostboltSpDebuff spellStats
@@ -63,11 +63,11 @@ execute if score spellnumber3 spells matches 2 run tellraw @a[tag=game2] ["",{"s
 
 #Magic Missile
 execute if score spellnumber3 spells matches 4 run scoreboard players add magicMissilex2 spells 1
-execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg2 saves = magicMissile spellStats
-execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg2 saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg2 saves += marks slot18
-execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot18
-execute if score spellnumber3 spells matches 4 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg2 saves
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spelldmg32 saves = magicMissile spellStats
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spelldmg32 saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spelldmg32 saves += marks slot18
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spelldmg32 saves /= atkmultiplier slot18
+execute if score spellnumber3 spells matches 4 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spelldmg32 saves
 execute if score spellnumber3 spells matches 4 run execute if score ward slot18 matches 0 if score shield slot18 matches ..0 run scoreboard players operation slot18 hp += shield slot18
 execute if score spellnumber3 spells matches 4 run execute if score ward slot18 matches 1.. run function ch:wardslot18
 execute if score spellnumber3 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," smited Slot 18 with Magic Missle!"]
@@ -130,11 +130,11 @@ execute if score spellnumber3 spells matches 28 run scoreboard players set spell
 execute if score spellnumber3 spells matches 28 run execute at @n[type=armor_stand,name=slot18] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber3 spells matches 28 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Shifting Shadows to make Slot 18 scary!"]
 #fireball
-execute if score spellnumber3 spells matches 1 run scoreboard players operation spellDmg2 saves = fireball spellStats
-execute if score spellnumber3 spells matches 1 run scoreboard players operation spellDmg2 saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 1 run scoreboard players operation spellDmg2 saves += marks slot18
-execute if score spellnumber3 spells matches 1 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot18
-execute if score spellnumber3 spells matches 1 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg2 saves
+execute if score spellnumber3 spells matches 1 run scoreboard players operation spelldmg32 saves = fireball spellStats
+execute if score spellnumber3 spells matches 1 run scoreboard players operation spelldmg32 saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 1 run scoreboard players operation spelldmg32 saves += marks slot18
+execute if score spellnumber3 spells matches 1 run scoreboard players operation spelldmg32 saves /= atkmultiplier slot18
+execute if score spellnumber3 spells matches 1 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spelldmg32 saves
 execute if score spellnumber3 spells matches 1 run execute if score ward slot18 matches 0 run scoreboard players operation slot18 hp += shield slot18
 execute if score spellnumber3 spells matches 1 run execute if score ward slot18 matches 0 if score durationSlot18 burn < fireballDuration spellStats run scoreboard players operation durationSlot18 burn = fireballDuration spellStats
 execute if score spellnumber3 spells matches 1 run execute if score ward slot18 matches 0 run scoreboard players operation slot18Burn burn += fireballBurn spellStats
@@ -144,30 +144,30 @@ execute if score spellnumber3 spells matches 1 run scoreboard players set spellb
 execute if score spellnumber3 spells matches 1 run function ch:spellphasep5
 execute if score spellnumber3 spells matches 1 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Fireball on Slot 18!"]
 #meteor
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves = meteor spellStats
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves += marks slot18
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot18
-execute if score spellnumber3 spells matches 7 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg2 saves
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves = meteor spellStats
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves += marks slot18
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves /= atkmultiplier slot18
+execute if score spellnumber3 spells matches 7 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spelldmg32 saves
 execute if score spellnumber3 spells matches 7 run execute if score ward slot18 matches 0 if score shield slot18 matches ..0 run scoreboard players operation slot18 hp += shield slot18
 execute if score spellnumber3 spells matches 7 run execute if score ward slot18 matches 1.. run function ch:wardslot18
 execute if score spellnumber3 spells matches 7 at @e[name=slot18] run particle minecraft:lava ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber3 spells matches 7 at @e[name=slot17] run particle minecraft:lava ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 execute if score spellnumber3 spells matches 7 at @e[name=slot19] run particle minecraft:lava ~ ~1 ~ 0.9 0.9 0.9 0.5 50
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves = meteor spellStats
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves /= meteorSplash spellStats
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves += marks slot17
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot17
-execute if score spellnumber3 spells matches 7 run execute if score ward slot17 matches 0 run scoreboard players operation shield slot17 -= spellDmg2 saves
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves = meteor spellStats
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves /= meteorSplash spellStats
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves += marks slot17
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves /= atkmultiplier slot17
+execute if score spellnumber3 spells matches 7 run execute if score ward slot17 matches 0 run scoreboard players operation shield slot17 -= spelldmg32 saves
 execute if score spellnumber3 spells matches 7 run execute if score ward slot17 matches 0 if score shield slot17 matches ..0 run scoreboard players operation slot17 hp += shield slot17
 execute if score spellnumber3 spells matches 7 run execute if score ward slot17 matches 1.. run function ch:wardslot17
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves = meteor spellStats
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves /= meteorSplash spellStats
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves += marks slot19
-execute if score spellnumber3 spells matches 7 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot19
-execute if score spellnumber3 spells matches 7 run execute if score ward slot19 matches 0 run scoreboard players operation shield slot19 -= spellDmg2 saves
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves = meteor spellStats
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves /= meteorSplash spellStats
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves += marks slot19
+execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves /= atkmultiplier slot19
+execute if score spellnumber3 spells matches 7 run execute if score ward slot19 matches 0 run scoreboard players operation shield slot19 -= spelldmg32 saves
 execute if score spellnumber3 spells matches 7 run execute if score ward slot19 matches 0 if score shield slot19 matches ..0 run scoreboard players operation slot19 hp += shield slot19
 execute if score spellnumber3 spells matches 7 run execute if score ward slot19 matches 1.. run function ch:wardslot19
 execute if score spellnumber3 spells matches 7 run scoreboard players set spellbuffsp6 spells 0
@@ -175,11 +175,11 @@ execute if score spellnumber3 spells matches 7 run function ch:spellphasep5
 execute if score spellnumber3 spells matches 7 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Meteor on Slot 18!"]
 
 #witchbolt
-execute if score spellnumber3 spells matches 10 run scoreboard players operation spellDmg2 saves = witchbolt spellStats
-execute if score spellnumber3 spells matches 10 run scoreboard players operation spellDmg2 saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 10 run scoreboard players operation spellDmg2 saves += marks slot18
-execute if score spellnumber3 spells matches 10 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot18
-execute if score spellnumber3 spells matches 10 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg2 saves
+execute if score spellnumber3 spells matches 10 run scoreboard players operation spelldmg32 saves = witchbolt spellStats
+execute if score spellnumber3 spells matches 10 run scoreboard players operation spelldmg32 saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 10 run scoreboard players operation spelldmg32 saves += marks slot18
+execute if score spellnumber3 spells matches 10 run scoreboard players operation spelldmg32 saves /= atkmultiplier slot18
+execute if score spellnumber3 spells matches 10 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spelldmg32 saves
 execute if score spellnumber3 spells matches 10 run execute if score ward slot18 matches 0 if score shield slot18 matches ..0 run scoreboard players operation slot18 hp += shield slot18
 execute if score spellnumber3 spells matches 10 at @e[name=slot18] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 200
 execute if score spellnumber3 spells matches 10 run execute if score ward slot18 matches 1.. run function ch:wardslot18

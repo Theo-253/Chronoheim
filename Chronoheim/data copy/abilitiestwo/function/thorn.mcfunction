@@ -1,0 +1,42 @@
+execute if score slot9isatk booleans matches 1.. at @e[name=slot9] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
+execute if score slot10isatk booleans matches 1.. at @e[name=slot10] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
+execute if score slot11isatk booleans matches 1.. at @e[name=slot11] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
+execute if score slot13isatk booleans matches 1.. at @e[name=slot13] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
+execute if score slot14isatk booleans matches 1.. at @e[name=slot14] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
+execute if score slot15isatk booleans matches 1.. at @e[name=slot15] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
+
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot9isatk booleans matches 1 run scoreboard players operation durationSlot9 wards = thornDuration abilityStats 
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot10isatk booleans matches 1 run scoreboard players operation durationSlot10 wards = thornDuration abilityStats 
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot11isatk booleans matches 1 run scoreboard players operation durationSlot11 wards = thornDuration abilityStats 
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot9isatk booleans matches 1 run scoreboard players set ward slot9 3 
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot10isatk booleans matches 1 run scoreboard players set ward slot10 3 
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot11isatk booleans matches 1 run scoreboard players set ward slot11 3 
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Crown of Thorns!"]
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot9isatk booleans matches 1.. run scoreboard players operation cooldown slot9 = thornCD abilityStats
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot10isatk booleans matches 1.. run scoreboard players operation cooldown slot10 = thornCD abilityStats
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot11isatk booleans matches 1.. run scoreboard players operation cooldown slot11 = thornCD abilityStats
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run scoreboard players set abilityusep3 booleans 1
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot10isatk booleans matches 0 run function ch:turnend
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot10isatk booleans matches 1 run function ch:basicattackstartp3
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run effect clear @a[tag=p3] fire_resistance
+
+## P2
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot13isatk booleans matches 1 run scoreboard players operation durationSlot9 wards = thornDuration abilityStats 
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot14isatk booleans matches 1 run scoreboard players operation durationSlot10 wards = thornDuration abilityStats 
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot15isatk booleans matches 1 run scoreboard players operation durationSlot11 wards = thornDuration abilityStats 
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot13isatk booleans matches 1 run scoreboard players set ward slot13 3 
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot14isatk booleans matches 1 run scoreboard players set ward slot14 3 
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot15isatk booleans matches 1 run scoreboard players set ward slot15 3 
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Crown of Thorns!"]
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot13isatk booleans matches 1.. run scoreboard players operation cooldown slot13 = thornCD abilityStats
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot14isatk booleans matches 1.. run scoreboard players operation cooldown slot14 = thornCD abilityStats
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot15isatk booleans matches 1.. run scoreboard players operation cooldown slot15 = thornCD abilityStats
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run scoreboard players set abilityusep4 booleans 1
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot14isatk booleans matches 0 run function ch:turnend
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot14isatk booleans matches 1 run function ch:basicattackstartp4
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run effect clear @a[tag=p4] fire_resistance
+
+
+
+
+scoreboard players set burn2 burn 1

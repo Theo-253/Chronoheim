@@ -30,4 +30,4 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run effect clear @a[tag=game2] fire_resistance
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run function ch:turnend
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:14,max:14}}}}} run effect clear @a[tag=game2] fire_resistance
-scoreboard players set burn burn3 1
+scoreboard players set burn3 burn 1

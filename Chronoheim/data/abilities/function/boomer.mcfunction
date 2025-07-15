@@ -24,7 +24,7 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:25,max:25}}}}} run execute if score slot23isatk booleans matches 1.. run scoreboard players set slot23 hp 0
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:25,max:25}}}}} run execute if score slot23isatk booleans matches 1.. run scoreboard players set slot23 hp 0
 
-scoreboard players set burn burn3 1
+scoreboard players set burn3 burn 1
 scoreboard players set abilitynumber3 abilities 25
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:25,max:25}}}}} run function ch:abilitygivetargetsp5
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:25,max:25}}}}} run function ch:abilitygivetargetsp6

@@ -85,7 +85,7 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} run execute if score slot18isatk booleans matches 1 if score slot19 hp matches ..0 run scoreboard players operation slot19 hp = skeletonplus herohealth
 
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} run scoreboard players set abilityusep5 booleans 1
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} run scoreboard players set burn burn3 1
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} run scoreboard players set burn3 burn 1
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} if score slot17isatk booleans matches 1 run scoreboard players operation cooldown slot17 = osirisCD abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} if score slot18isatk booleans matches 1 run scoreboard players operation cooldown slot18 = osirisCD abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} if score slot19isatk booleans matches 1 run scoreboard players operation cooldown slot19 = osirisCD abilityStats
@@ -187,7 +187,7 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 
 
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} run scoreboard players set abilityusep6 booleans 1
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} run scoreboard players set burn burn3 1
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} run scoreboard players set burn3 burn 1
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} if score slot21isatk booleans matches 1 run scoreboard players operation cooldown slot21 = osirisCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} if score slot23isatk booleans matches 1 run scoreboard players operation cooldown slot23 = osirisCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:26,max:26}}}}} if score slot23isatk booleans matches 1 run scoreboard players operation cooldown slot23 = osirisCD abilityStats

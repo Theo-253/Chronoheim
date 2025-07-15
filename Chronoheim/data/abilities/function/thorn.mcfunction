@@ -39,4 +39,4 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 
 
 
-scoreboard players set burn burn3 1
+scoreboard players set burn3 burn 1

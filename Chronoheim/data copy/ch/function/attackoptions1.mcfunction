@@ -42,6 +42,6 @@ give @p[tag=p3] clock[minecraft:custom_name="View Cooldowns",food={can_always_ea
 give @p[tag=p3] feather[minecraft:custom_name="View Speeds",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:"regeneration",duration:1,amplifier:1,show_particles:0b}]}]}] 64
 give @p[tag=p3] apple[minecraft:custom_name="View HP",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:"regeneration",duration:1,amplifier:2,show_particles:0b}]}]}] 64
 give @p[tag=p3] book[minecraft:custom_name="View Spell Cooldowns",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:"regeneration",duration:1,amplifier:3,show_particles:0b}]}]}] 64
-execute if score slot9 stun matches 1.. run title @a[tag=game2] actionbar "Slot 9 was Stunned!"
+execute if score slot9 stun matches 1.. run title @a[tag=game2] actionbar "Slot 1 was Stunned!"
 execute if score slot9 stun matches 1.. run function ch:turnend
 execute if score slot9 stun matches 1.. run scoreboard players remove slot9 stun 1

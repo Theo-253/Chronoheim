@@ -1,5 +1,5 @@
 execute if score attackIsOngoingGame2 booleans matches 0 run execute if score speed slot16 matches ..-10000 if score speed slot15 matches ..-10000 if score speed slot14 matches ..-10000 run execute if score speed slot13 matches ..-10000 run execute if score speed slot12 matches ..-10000 run execute if score speed slot11 matches ..-10000 run execute if score speed slot10 matches ..-10000 run execute if score speed slot9 matches ..-10000 run scoreboard players set attackIsOngoingGame2 booleans 1
-#Slot 9 Speed Reset
+#Slot 1 Speed Reset
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 1 run scoreboard players operation speed slot9 = bones herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 2 run scoreboard players operation speed slot9 = arthur herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 3 run scoreboard players operation speed slot9 = deuce herospeed
@@ -40,7 +40,7 @@ scoreboard players operation speed slot9 -= speedDebuffSlot9 speedDebuffs
 scoreboard players operation speed slot9 += speedBuffSlot9 speedBuffs
 
 
-#Slot 10 Speed Resets
+#Slot 2 Speed Resets
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 1 run scoreboard players operation speed slot10 = bones herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 2 run scoreboard players operation speed slot10 = arthur herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 3 run scoreboard players operation speed slot10 = deuce herospeed
@@ -81,7 +81,7 @@ scoreboard players operation speed slot10 -= speedDebuffSlot10 speedDebuffs
 scoreboard players operation speed slot10 += speedBuffSlot10 speedBuffs
 
 
-#Slot 11 Speed Resets
+#Slot 3 Speed Resets
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 1 run scoreboard players operation speed slot11 = bones herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 2 run scoreboard players operation speed slot11 = arthur herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 3 run scoreboard players operation speed slot11 = deuce herospeed
@@ -123,7 +123,7 @@ scoreboard players operation speed slot11 += speedBuffSlot11 speedBuffs
 
 
 
-#Slot 13 Speed Resets
+#Slot 5 Speed Resets
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 1 run scoreboard players operation speed slot13 = bones herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 2 run scoreboard players operation speed slot13 = arthur herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 3 run scoreboard players operation speed slot13 = deuce herospeed
@@ -165,7 +165,7 @@ scoreboard players operation speed slot13 += speedBuffSlot13 speedBuffs
 
 
 
-#Slot 14 Speed Resets
+#Slot 6 Speed Resets
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 1 run scoreboard players operation speed slot14 = bones herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 2 run scoreboard players operation speed slot14 = arthur herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 3 run scoreboard players operation speed slot14 = deuce herospeed
@@ -206,7 +206,7 @@ scoreboard players operation speed slot14 -= speedDebuffSlot14 speedDebuffs
 scoreboard players operation speed slot14 += speedBuffSlot14 speedBuffs
 
 
-#Slot 15 Speed Resets
+#Slot 7 Speed Resets
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 1 run scoreboard players operation speed slot15 = bones herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 2 run scoreboard players operation speed slot15 = arthur herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 3 run scoreboard players operation speed slot15 = deuce herospeed
@@ -248,7 +248,7 @@ scoreboard players operation speed slot15 += speedBuffSlot15 speedBuffs
 
 
 
-#Slot 12 Speed Resets
+#Slot 4 Speed Resets
 execute if score slot12 hp matches 1.. run execute if score character# slot12 matches -1 run scoreboard players operation speed slot12 = skeleton herospeed
 execute if score slot12 hp matches 1.. run execute if score character# slot12 matches -2 run scoreboard players operation speed slot12 = demon herospeed
 execute if score slot12 hp matches 1.. run execute if score character# slot12 matches -3 run scoreboard players operation speed slot12 = healingTotemSpeed spellStats
@@ -259,7 +259,7 @@ scoreboard players operation speed slot12 -= speedDebuffSlot12 speedDebuffs
 scoreboard players operation speed slot12 += speedBuffSlot12 speedBuffs
 
 
-#Slot 16 Speed Resets
+#Slot 8 Speed Resets
 execute if score slot16 hp matches 1.. run execute if score character# slot16 matches -1 run scoreboard players operation speed slot16 = skeleton herospeed
 execute if score slot16 hp matches 1.. run execute if score character# slot16 matches -2 run scoreboard players operation speed slot16 = demon herospeed
 execute if score slot16 hp matches 1.. run execute if score character# slot16 matches -3 run scoreboard players operation speed slot16 = healingTotemSpeed spellStats

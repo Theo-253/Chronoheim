@@ -1,32 +1,32 @@
 #basic attack functions
 clear @a[tag=p6]
 #slot 5
-execute if score slot21isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot21
-execute if score slot21isatk booleans matches 1 run scoreboard players operation atk1 saves += slot21 atkmodifiers
-execute if score slot21isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot18
-execute if score slot21isatk booleans matches 1 if score character# slot21 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack
-execute if score slot21isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot18
-execute if score slot21isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk1 saves
+execute if score slot21isatk booleans matches 1 run scoreboard players operation atk3 saves = atk slot21
+execute if score slot21isatk booleans matches 1 run scoreboard players operation atk3 saves += slot21 atkmodifiers
+execute if score slot21isatk booleans matches 1 run scoreboard players operation atk3 saves += marks slot18
+execute if score slot21isatk booleans matches 1 if score character# slot21 matches 30 run scoreboard players operation atk3 saves += dominoLeaderHit heroattack
+execute if score slot21isatk booleans matches 1 run scoreboard players operation atk3 saves /= atkmultiplier slot18
+execute if score slot21isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk3 saves
 #slot 6
-execute if score slot23isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot23
-execute if score slot23isatk booleans matches 1 run scoreboard players operation atk1 saves += slot23 atkmodifiers
-execute if score slot23isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot18
-execute if score slot23isatk booleans matches 1 if score character# slot23 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack
-execute if score slot23isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot18
-execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk1 saves
+execute if score slot23isatk booleans matches 1 run scoreboard players operation atk3 saves = atk slot23
+execute if score slot23isatk booleans matches 1 run scoreboard players operation atk3 saves += slot23 atkmodifiers
+execute if score slot23isatk booleans matches 1 run scoreboard players operation atk3 saves += marks slot18
+execute if score slot23isatk booleans matches 1 if score character# slot23 matches 30 run scoreboard players operation atk3 saves += dominoLeaderHit heroattack
+execute if score slot23isatk booleans matches 1 run scoreboard players operation atk3 saves /= atkmultiplier slot18
+execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk3 saves
 #slot 7
-execute if score slot23isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot23
-execute if score slot23isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot18
-execute if score slot23isatk booleans matches 1 run scoreboard players operation atk1 saves += slot23 atkmodifiers
-execute if score slot23isatk booleans matches 1 if score character# slot23 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack
-execute if score slot23isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot18
-execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk1 saves
+execute if score slot23isatk booleans matches 1 run scoreboard players operation atk3 saves = atk slot23
+execute if score slot23isatk booleans matches 1 run scoreboard players operation atk3 saves += marks slot18
+execute if score slot23isatk booleans matches 1 run scoreboard players operation atk3 saves += slot23 atkmodifiers
+execute if score slot23isatk booleans matches 1 if score character# slot23 matches 30 run scoreboard players operation atk3 saves += dominoLeaderHit heroattack
+execute if score slot23isatk booleans matches 1 run scoreboard players operation atk3 saves /= atkmultiplier slot18
+execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk3 saves
 #slot 8
-execute if score slot24isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot24
-execute if score slot24isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot18
-execute if score slot24isatk booleans matches 1 run scoreboard players operation atk1 saves += slot24 atkmodifiers
-execute if score slot24isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot18
-execute if score slot24isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk1 saves
+execute if score slot24isatk booleans matches 1 run scoreboard players operation atk3 saves = atk slot24
+execute if score slot24isatk booleans matches 1 run scoreboard players operation atk3 saves += marks slot18
+execute if score slot24isatk booleans matches 1 run scoreboard players operation atk3 saves += slot24 atkmodifiers
+execute if score slot24isatk booleans matches 1 run scoreboard players operation atk3 saves /= atkmultiplier slot18
+execute if score slot24isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk3 saves
 #damage + shield reset (all)
 execute if score shield slot18 matches ..0 if score ward slot18 matches 0 run scoreboard players operation slot18 hp += shield slot18
 execute if score ward slot18 matches 1.. run function ch:wardslot18
@@ -36,72 +36,72 @@ execute at @e[name=slot18,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0
 
 #splash
 #slot21
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves = atk slot21
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += slot21 atkmodifiers
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= splash slot21
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += marks slot17
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= atkmultiplier slot17
-execute if score ward slot17 matches 0 run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation shield slot17 -= splashdamage2 saves
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot21
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += slot21 atkmodifiers
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= splash slot21
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot17
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot17
+execute if score ward slot17 matches 0 run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation shield slot17 -= splashdamage3 saves
 execute if score ward slot17 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run function ch:wardslot17
 execute if score splash slot21 matches 1.. if score slot21isatk booleans matches 1 at @e[name=slot17,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves = atk slot21
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += slot21 atkmodifiers
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= splash slot21
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += marks slot19
-execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= atkmultiplier slot19
-execute if score ward slot19 matches 0 run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation shield slot19 -= splashdamage2 saves
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot21
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += slot21 atkmodifiers
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= splash slot21
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot19
+execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot19
+execute if score ward slot19 matches 0 run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation shield slot19 -= splashdamage3 saves
 execute if score ward slot19 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run function ch:wardslot19
 execute if score splash slot21 matches 1.. if score slot21isatk booleans matches 1 at @e[name=slot19,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 
 #slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves = atk slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += slot23 atkmodifiers
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= splash slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += marks slot17
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= atkmultiplier slot17
-execute if score ward slot17 matches 0 run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot17 -= splashdamage2 saves
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot23
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += slot23 atkmodifiers
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= splash slot23
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot17
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot17
+execute if score ward slot17 matches 0 run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot17 -= splashdamage3 saves
 execute if score ward slot17 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run function ch:wardslot17
 execute if score splash slot23 matches 1.. if score slot23isatk booleans matches 1 at @e[name=slot17,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves = atk slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += slot23 atkmodifiers
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= splash slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += marks slot19
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= atkmultiplier slot19
-execute if score ward slot19 matches 0 run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot19 -= splashdamage2 saves
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot23
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += slot23 atkmodifiers
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= splash slot23
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot19
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot19
+execute if score ward slot19 matches 0 run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot19 -= splashdamage3 saves
 execute if score ward slot19 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run function ch:wardslot19
 execute if score splash slot23 matches 1.. if score slot23isatk booleans matches 1 at @e[name=slot19,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves = atk slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += slot23 atkmodifiers
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= splash slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += marks slot17
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= atkmultiplier slot17
-execute if score ward slot17 matches 0 run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot17 -= splashdamage2 saves
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot23
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += slot23 atkmodifiers
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= splash slot23
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot17
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot17
+execute if score ward slot17 matches 0 run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot17 -= splashdamage3 saves
 execute if score ward slot17 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run function ch:wardslot17
 execute if score splash slot23 matches 1.. if score slot23isatk booleans matches 1 at @e[name=slot17,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves = atk slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += slot23 atkmodifiers
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= splash slot23
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += marks slot19
-execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= atkmultiplier slot19
-execute if score ward slot19 matches 0 run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot19 -= splashdamage2 saves
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot23
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += slot23 atkmodifiers
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= splash slot23
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot19
+execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot19
+execute if score ward slot19 matches 0 run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation shield slot19 -= splashdamage3 saves
 execute if score ward slot19 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run function ch:wardslot19
 execute if score splash slot23 matches 1.. if score slot23isatk booleans matches 1 at @e[name=slot19,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot24
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves = atk slot24
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += slot24 atkmodifiers
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= splash slot24
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += marks slot17
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= atkmultiplier slot17
-execute if score ward slot17 matches 0 run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation shield slot17 -= splashdamage2 saves
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot24
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += slot24 atkmodifiers
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= splash slot24
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot17
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot17
+execute if score ward slot17 matches 0 run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation shield slot17 -= splashdamage3 saves
 execute if score ward slot17 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run function ch:wardslot17
 execute if score splash slot24 matches 1.. if score slot24isatk booleans matches 1 at @e[name=slot17,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves = atk slot24
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += slot24 atkmodifiers
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= splash slot24
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves += marks slot19
-execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage2 saves /= atkmultiplier slot19
-execute if score ward slot19 matches 0 run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation shield slot19 -= splashdamage2 saves
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot24
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += slot24 atkmodifiers
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= splash slot24
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot19
+execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot19
+execute if score ward slot19 matches 0 run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation shield slot19 -= splashdamage3 saves
 execute if score ward slot19 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run function ch:wardslot19
 execute if score splash slot24 matches 1.. if score slot24isatk booleans matches 1 at @e[name=slot19,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #damage + shield reset (all)
@@ -115,103 +115,103 @@ execute if score shield slot19 matches ..0 run scoreboard players set shield slo
 
 #lifesteal
 #slot 5
-execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal2 saves = atk slot21
-execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal2 saves += slot21 atkmodifiers
-execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal2 saves += marks slot18
-execute if score lifesteal slot21 matches 1.. if score slot21isatk booleans matches 1 if score character# slot21 matches 30 run scoreboard players operation lifesteal2 saves += dominoLeaderHit heroattack
-execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal2 saves /= atkmultiplier slot18
-execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal2 saves /= lifesteal slot21
-execute if score ward slot18 matches 0 if score slot21bleeding booleaneffects matches 0 run execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp += lifesteal2 saves
+execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal3 saves = atk slot21
+execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal3 saves += slot21 atkmodifiers
+execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal3 saves += marks slot18
+execute if score lifesteal slot21 matches 1.. if score slot21isatk booleans matches 1 if score character# slot21 matches 30 run scoreboard players operation lifesteal3 saves += dominoLeaderHit heroattack
+execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal3 saves /= atkmultiplier slot18
+execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifesteal3 saves /= lifesteal slot21
+execute if score ward slot18 matches 0 if score slot21bleeding booleaneffects matches 0 run execute if score lifesteal slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp += lifesteal3 saves
 execute if score ward slot18 matches 0 if score lifesteal slot21 matches 1.. if score slot21isatk booleans matches 1 at @e[name=slot21,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 6
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves = atk slot23
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves += slot23 atkmodifiers
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves += marks slot18
-execute if score lifesteal slot23 matches 1.. if score slot23isatk booleans matches 1 if score character# slot23 matches 30 run scoreboard players operation lifesteal2 saves += dominoLeaderHit heroattack
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves /= atkmultiplier slot18
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves /= lifesteal slot23
-execute if score ward slot18 matches 0 if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifesteal2 saves
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves = atk slot23
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves += slot23 atkmodifiers
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves += marks slot18
+execute if score lifesteal slot23 matches 1.. if score slot23isatk booleans matches 1 if score character# slot23 matches 30 run scoreboard players operation lifesteal3 saves += dominoLeaderHit heroattack
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves /= atkmultiplier slot18
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves /= lifesteal slot23
+execute if score ward slot18 matches 0 if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifesteal3 saves
 execute if score ward slot18 matches 0 if score lifesteal slot23 matches 1.. if score slot23isatk booleans matches 1 at @e[name=slot23,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 7
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves = atk slot23
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves += slot23 atkmodifiers
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves += marks slot18
-execute if score lifesteal slot23 matches 1.. if score slot23isatk booleans matches 1 if score character# slot23 matches 30 run scoreboard players operation lifesteal2 saves += dominoLeaderHit heroattack
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves /= atkmultiplier slot18
-execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal2 saves /= lifesteal slot23
-execute if score ward slot18 matches 0 if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifesteal2 saves
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves = atk slot23
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves += slot23 atkmodifiers
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves += marks slot18
+execute if score lifesteal slot23 matches 1.. if score slot23isatk booleans matches 1 if score character# slot23 matches 30 run scoreboard players operation lifesteal3 saves += dominoLeaderHit heroattack
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves /= atkmultiplier slot18
+execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifesteal3 saves /= lifesteal slot23
+execute if score ward slot18 matches 0 if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifesteal3 saves
 execute if score ward slot18 matches 0 if score lifesteal slot23 matches 1.. if score slot23isatk booleans matches 1 at @e[name=slot23,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 8
-execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal2 saves = atk slot24
-execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal2 saves += slot24 atkmodifiers
-execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal2 saves += marks slot18
-execute if score lifesteal slot21 matches 1.. if score slot21isatk booleans matches 1 if score character# slot21 matches 30 run scoreboard players operation lifesteal2 saves += dominoLeaderHit heroattack
-execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal2 saves /= atkmultiplier slot18
-execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal2 saves /= lifesteal slot24
-execute if score ward slot18 matches 0 if score slot24bleeding booleaneffects matches 0 run execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp += lifesteal2 saves
+execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal3 saves = atk slot24
+execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal3 saves += slot24 atkmodifiers
+execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal3 saves += marks slot18
+execute if score lifesteal slot21 matches 1.. if score slot21isatk booleans matches 1 if score character# slot21 matches 30 run scoreboard players operation lifesteal3 saves += dominoLeaderHit heroattack
+execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal3 saves /= atkmultiplier slot18
+execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifesteal3 saves /= lifesteal slot24
+execute if score ward slot18 matches 0 if score slot24bleeding booleaneffects matches 0 run execute if score lifesteal slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp += lifesteal3 saves
 execute if score ward slot18 matches 0 if score lifesteal slot24 matches 1.. if score slot24isatk booleans matches 1 at @e[name=slot24,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 
 #lifesteal + splash
 #slot 5
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot21
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot21 atkmodifiers
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot21
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot17
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot17
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot21
-execute if score slot17 hp matches 1.. run execute if score ward slot17 matches 0 run execute if score slot21bleeding booleaneffects matches 0 run execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp += lifestealsplash2 saves
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot21
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot21 atkmodifiers
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot21
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot19
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot19
-execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot21
-execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot21bleeding booleaneffects matches 0 run execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp += lifestealsplash2 saves
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves = atk slot21
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += slot21 atkmodifiers
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= splash slot21
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += marks slot17
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= atkmultiplier slot17
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= lifesteal slot21
+execute if score slot17 hp matches 1.. run execute if score ward slot17 matches 0 run execute if score slot21bleeding booleaneffects matches 0 run execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp += lifestealsplash3 saves
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves = atk slot21
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += slot21 atkmodifiers
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= splash slot21
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += marks slot19
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= atkmultiplier slot19
+execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= lifesteal slot21
+execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot21bleeding booleaneffects matches 0 run execute if score lifesteal slot21 matches 1.. run execute if score splash slot21 matches 1.. run execute if score slot21isatk booleans matches 1 run scoreboard players operation slot21 hp += lifestealsplash3 saves
 #slot 6
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot23
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot23 atkmodifiers
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot23
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot17
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot17
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot23
-execute if score slot17 hp matches 1.. run execute if score ward slot17 matches 0 run execute if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifestealsplash2 saves
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot23
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot23 atkmodifiers
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot23
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot19
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot19
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot23
-execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifestealsplash2 saves
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves = atk slot23
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += slot23 atkmodifiers
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= splash slot23
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += marks slot17
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= atkmultiplier slot17
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= lifesteal slot23
+execute if score slot17 hp matches 1.. run execute if score ward slot17 matches 0 run execute if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifestealsplash3 saves
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves = atk slot23
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += slot23 atkmodifiers
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= splash slot23
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += marks slot19
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= atkmultiplier slot19
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= lifesteal slot23
+execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifestealsplash3 saves
 #slot 7
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot23
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot23 atkmodifiers
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot23
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot17
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot17
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot23
-execute if score slot17 hp matches 1.. run execute if score ward slot17 matches 0 run execute if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifestealsplash2 saves
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot23
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot23 atkmodifiers
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot23
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot19
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot19
-execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot23
-execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifestealsplash2 saves
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves = atk slot23
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += slot23 atkmodifiers
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= splash slot23
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += marks slot17
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= atkmultiplier slot17
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= lifesteal slot23
+execute if score slot17 hp matches 1.. run execute if score ward slot17 matches 0 run execute if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifestealsplash3 saves
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves = atk slot23
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += slot23 atkmodifiers
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= splash slot23
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += marks slot19
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= atkmultiplier slot19
+execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= lifesteal slot23
+execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot23bleeding booleaneffects matches 0 run execute if score lifesteal slot23 matches 1.. run execute if score splash slot23 matches 1.. run execute if score slot23isatk booleans matches 1 run scoreboard players operation slot23 hp += lifestealsplash3 saves
 #slot 8
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot24
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot24 atkmodifiers
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot24
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot17
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot17
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot24
-execute if score slot17 hp matches 1.. run execute if score ward slot17 matches 0 run execute if score slot24bleeding booleaneffects matches 0 run execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp += lifestealsplash2 saves
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot24
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot24 atkmodifiers
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot24
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot19
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot19
-execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot24
-execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot24bleeding booleaneffects matches 0 run execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp += lifestealsplash2 saves
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves = atk slot24
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += slot24 atkmodifiers
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= splash slot24
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += marks slot17
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= atkmultiplier slot17
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= lifesteal slot24
+execute if score slot17 hp matches 1.. run execute if score ward slot17 matches 0 run execute if score slot24bleeding booleaneffects matches 0 run execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp += lifestealsplash3 saves
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves = atk slot24
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += slot24 atkmodifiers
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= splash slot24
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves += marks slot19
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= atkmultiplier slot19
+execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation lifestealsplash3 saves /= lifesteal slot24
+execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot24bleeding booleaneffects matches 0 run execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp += lifestealsplash3 saves
 
 #Special Cases
 execute if score slot21isatk booleans matches 1 if score character# slot21 matches 29 run scoreboard players operation slot18bleeding booleaneffects = ripperBleed abilityStats

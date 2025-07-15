@@ -14,7 +14,7 @@ execute if score abilitynumber2 abilities matches 3 run execute if score ward sl
 execute if score abilitynumber2 abilities matches 3 run execute if score ward slot16 matches 1.. run function ch:wardslot16
 execute if score abilitynumber2 abilities matches 3 run execute at @e[name=slot16,type=armor_stand] run particle crit ~ ~1 ~ 0.3 0.3 0.3 2 100
 
-execute if score abilitynumber2 abilities matches 3 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Double Punch on Slot 16!"]
+execute if score abilitynumber2 abilities matches 3 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Double Punch on Slot 8!"]
 
 #Garabaldi Ability
 execute if score abilitynumber2 abilities matches 24 if score slot16 hp matches 1.. if score slot16bleeding booleaneffects matches 0 run scoreboard players operation slot16 hp += garabaldiHeal abilityStats
@@ -22,7 +22,7 @@ execute if score abilitynumber2 abilities matches 24 if score slot16 hp matches 
 execute if score abilitynumber2 abilities matches 24 if score slot16 hp matches 1.. run scoreboard players set ward slot16 2
 execute if score abilitynumber2 abilities matches 24 run execute at @n[type=armor_stand,name=slot16] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 
-execute if score abilitynumber2 abilities matches 24 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Bubble Shield on Slot 16!"]
+execute if score abilitynumber2 abilities matches 24 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Bubble Shield on Slot 8!"]
 
 
 #Juniper Ability
@@ -36,7 +36,7 @@ execute if score abilitynumber2 abilities matches 27 run execute if score ward s
 execute if score abilitynumber2 abilities matches 27 run execute if score ward slot16 matches 0 run scoreboard players operation slot16 stun = juniperStun abilityStats
 execute if score abilitynumber2 abilities matches 27 run execute if score ward slot16 matches 0 if score shield slot16 matches ..0 run scoreboard players operation slot16 hp += shield slot16
 execute if score abilitynumber2 abilities matches 27 run execute if score ward slot16 matches 1.. run function ch:wardslot16
-execute if score abilitynumber2 abilities matches 27 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Pixie Dust on Slot 16!"]
+execute if score abilitynumber2 abilities matches 27 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Pixie Dust on Slot 8!"]
 execute if score abilitynumber2 abilities matches 27 run execute at @e[name=slot16,type=armor_stand] run particle firefly ~ ~1 ~ 0.3 0.3 0.3 1 100
 
 #Juniper Basic
@@ -66,29 +66,29 @@ execute if score abilitynumber2 abilities matches 7 run execute if score ward sl
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot16 matches 1.. run function ch:wardslot16
 execute if score abilitynumber2 abilities matches 7 run execute at @n[type=armor_stand,name=slot16] run particle minecraft:explosion_emitter ~ ~1 ~
 execute if score abilitynumber2 abilities matches 9 run execute at @n[type=armor_stand,name=slot16] run particle minecraft:angry_villager ~ ~1 ~ 0.9 0.9 0.9 1 50
-execute if score abilitynumber2 abilities matches 7 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used B.A.N.A.N.A S.L.A.M.M.A! on Slot 16!"]
+execute if score abilitynumber2 abilities matches 7 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used B.A.N.A.N.A S.L.A.M.M.A! on Slot 8!"]
 
 #Robyn Ability
 execute if score abilitynumber2 abilities matches 9 if score ward slot16 matches 0 run scoreboard players operation marks slot16 += robyn abilityStats
 execute if score abilitynumber2 abilities matches 9 if score ward slot16 matches 1 run function ch:wardslot16
-execute if score abilitynumber2 abilities matches 9 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Most Wanted on Slot 16!"]
+execute if score abilitynumber2 abilities matches 9 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Most Wanted on Slot 8!"]
 
 #Robo
 execute if score abilitynumber2 abilities matches 5 if score durationSlot16 shield < roboDuration abilityStats run scoreboard players operation durationSlot16 shield = roboDuration abilityStats
 execute if score abilitynumber2 abilities matches 5 run scoreboard players operation shield slot16 += robo abilityStats
 execute if score abilitynumber2 abilities matches 5 if score slot16isatk booleans matches 1 run scoreboard players operation shield slot16 += roboLeader abilityStats
 execute if score abilitynumber2 abilities matches 5 run execute at @n[name=slot16,type=armor_stand] run particle minecraft:wax_off ~ ~1 ~ 0.6 0.6 0.6 0.0001 400
-execute if score abilitynumber2 abilities matches 5 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Force Field on Slot 16!"]
+execute if score abilitynumber2 abilities matches 5 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Force Field on Slot 8!"]
 #Kirin
 execute if score abilitynumber2 abilities matches 8 if score buffDurationSlot16 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot16 atkmodifiers = kirinDuration abilityStats
 execute if score abilitynumber2 abilities matches 8 run scoreboard players operation attackBuffslot16 atkmodifiers += kirin abilityStats
 execute if score abilitynumber2 abilities matches 8 if score slot16isatk booleans matches 1 if score slot16bleeding booleaneffects matches 0.. run scoreboard players operation slot16 hp += kirinLeader abilityStats
-execute if score abilitynumber2 abilities matches 8 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Mythical Empowerment on Slot 16!"]
+execute if score abilitynumber2 abilities matches 8 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Mythical Empowerment on Slot 8!"]
 execute if score abilitynumber2 abilities matches 8 at @e[name=slot16] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 
 #Ace
 execute if score abilitynumber2 abilities matches 12 if score ward slot16 matches 0 run scoreboard players operation cooldown slot16 = aceSetCooldown abilityStats
-execute if score abilitynumber2 abilities matches 12 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Ace of Spades on Slot 16!"]
+execute if score abilitynumber2 abilities matches 12 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Ace of Spades on Slot 8!"]
 execute if score abilitynumber2 abilities matches 12 if score ward slot16 matches 1.. run function ch:wardslot16
 execute if score abilitynumber2 abilities matches 12 at @e[name=slot16] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber2 abilities matches 12 run execute if score character# slot10 matches 12 run scoreboard players operation durationSlot16 speedDebuffs = aceLeaderDuration abilityStats
@@ -117,10 +117,10 @@ execute if score abilitynumber2 abilities matches 23 if score ward slot16 matche
 execute if score abilitynumber2 abilities matches 23 if score ward slot16 matches 0 run scoreboard players operation slot16EatenDuration abilities = gatsbyDuration abilityStats
 execute if score abilitynumber2 abilities matches 23 if score ward slot16 matches 0 at @e[name=slot16] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~-20 ~
 execute if score abilitynumber2 abilities matches 23 run execute if score ward slot16 matches 1.. run function ch:wardslot16
-execute if score abilitynumber2 abilities matches 23 if score durationSlot16-1 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot16-1 fear = gatsbyDuration abilityStats
-execute if score abilitynumber2 abilities matches 23 if score durationSlot16-2 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot16-2 fear = gatsbyDuration abilityStats
-execute if score abilitynumber2 abilities matches 23 if score durationSlot16-3 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot16-3 fear = gatsbyDuration abilityStats
-execute if score abilitynumber2 abilities matches 23 if score durationSlot16-4 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot16-4 fear = gatsbyDuration abilityStats
+execute if score abilitynumber2 abilities matches 23 if score durationSlot16-9 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot16-9 fear = gatsbyDuration abilityStats
+execute if score abilitynumber2 abilities matches 23 if score durationSlot16-10 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot16-10 fear = gatsbyDuration abilityStats
+execute if score abilitynumber2 abilities matches 23 if score durationSlot16-11 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot16-11 fear = gatsbyDuration abilityStats
+execute if score abilitynumber2 abilities matches 23 if score durationSlot16-12 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot16-12 fear = gatsbyDuration abilityStats
 execute if score abilitynumber2 abilities matches 23 if score ward slot14 matches 0 if score slot10isatk booleans matches 1 if score debuffDurationSlot14 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot14 atkmodifiers = gatsbyDuration abilityStats
 execute if score abilitynumber2 abilities matches 23 if score ward slot15 matches 0 if score slot10isatk booleans matches 1 if score debuffDurationSlot15 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot15 atkmodifiers = gatsbyDuration abilityStats
 execute if score abilitynumber2 abilities matches 23 if score ward slot13 matches 0 if score slot10isatk booleans matches 1 if score debuffDurationSlot13 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot13 atkmodifiers = gatsbyDuration abilityStats
@@ -130,7 +130,7 @@ execute if score abilitynumber2 abilities matches 23 if score ward slot13 matche
 execute if score abilitynumber2 abilities matches 23 if score ward slot14 matches 1.. if score slot10isatk booleans matches 1 run function ch:wardslot14
 execute if score abilitynumber2 abilities matches 23 if score ward slot15 matches 1.. if score slot10isatk booleans matches 1 run function ch:wardslot15
 execute if score abilitynumber2 abilities matches 23 if score ward slot13 matches 1.. if score slot10isatk booleans matches 1 run function ch:wardslot13
-execute if score abilitynumber2 abilities matches 23 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Consume on Slot 16!"]
+execute if score abilitynumber2 abilities matches 23 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Consume on Slot 8!"]
 execute if score abilitynumber2 abilities matches 23 at @e[name=slot16] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score abilitynumber2 abilities matches 23 if score slot10isatk booleans matches 1 at @e[name=slot13] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber2 abilities matches 23 if score slot10isatk booleans matches 1 at @e[name=slot15] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
@@ -147,7 +147,7 @@ execute if score abilitynumber2 abilities matches 25 run execute if score ward s
 execute if score abilitynumber2 abilities matches 25 run execute if score ward slot16 matches 1.. run function ch:wardslot16
 execute if score abilitynumber2 abilities matches 25 at @e[name=slot16] run particle minecraft:explosion ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score abilitynumber2 abilities matches 25 if score slot10isatk booleans matches 1 at @e[name=slot15] run particle minecraft:explosion ~ ~1 ~ 0.9 0.9 0.9 0.1 50
-execute if score abilitynumber2 abilities matches 25 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used KABOOM! on Slot 16!"]
+execute if score abilitynumber2 abilities matches 25 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used KABOOM! on Slot 8!"]
 execute if score abilitynumber2 abilities matches 25 if score slot10isatk booleans matches 1 run scoreboard players operation abilityDmg saves = boomer abilityStats
 execute if score abilitynumber2 abilities matches 25 if score slot10isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot10 atkmodifiers
 execute if score abilitynumber2 abilities matches 25 if score slot10isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerLeader abilityStats
@@ -161,7 +161,7 @@ execute if score abilitynumber2 abilities matches 25 if score slot10isatk boolea
 #Ripper
 execute if score abilitynumber2 abilities matches 29 if score slot16 hp <= ripper abilityStats if score ward slot16 matches 0 if score invincibleslot16 booleaneffects matches 0 run scoreboard players set slot16 hp 0
 execute if score abilitynumber2 abilities matches 29 if score slot16 hp <= ripper abilityStats if score invincibleslot16 booleaneffects matches 0 if score ward slot16 matches 1.. run function ch:wardslot16
-execute if score abilitynumber2 abilities matches 29 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Execute on Slot 16!"]
+execute if score abilitynumber2 abilities matches 29 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Execute on Slot 8!"]
 execute if score abilitynumber2 abilities matches 29 at @e[name=slot16] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 
 #Domino
@@ -177,7 +177,7 @@ execute if score abilitynumber2 abilities matches 30 if score ward slot16 matche
 execute if score abilitynumber2 abilities matches 30 if score ward slot16 matches 0 run scoreboard players operation slot16Poison poison += dominoPoisonLeader abilityStats
 execute if score abilitynumber2 abilities matches 30 run execute if score ward slot16 matches 1.. run function ch:wardslot16
 execute if score abilitynumber2 abilities matches 30 at @e[name=slot16] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
-execute if score abilitynumber2 abilities matches 30 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Poison Dart on Slot 16!"]
+execute if score abilitynumber2 abilities matches 30 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Poison Dart on Slot 8!"]
 
 #Doc Basic Attack
 execute if score abilitynumber2 abilities matches -1 run scoreboard players operation slot16Disease disease += doc heroattack
@@ -189,9 +189,9 @@ execute if score abilitynumber2 abilities matches -3 run execute if score slot16
 execute if score abilitynumber2 abilities matches -3 at @e[name=slot16] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 
 #Eidolon Basic Attack
-execute if score abilitynumber2 abilities matches -4 run execute if score ward slot16 matches 0 if score durationSlot9-8 fear <= eidolonFearDuration abilityStats if score slot9isatk booleans matches 1 run scoreboard players operation durationSlot9-8 fear = eidolonFearDuration abilityStats
-execute if score abilitynumber2 abilities matches -4 run execute if score ward slot16 matches 0 if score durationSlot10-8 fear <= eidolonFearDuration abilityStats if score slot10isatk booleans matches 1 run scoreboard players operation durationSlot10-8 fear = eidolonFearDuration abilityStats
-execute if score abilitynumber2 abilities matches -4 run execute if score ward slot16 matches 0 if score durationSlot11-8 fear <= eidolonFearDuration abilityStats if score slot11isatk booleans matches 1 run scoreboard players operation durationSlot11-8 fear = eidolonFearDuration abilityStats
+execute if score abilitynumber2 abilities matches -4 run execute if score ward slot16 matches 0 if score durationSlot9-16 fear <= eidolonFearDuration abilityStats if score slot9isatk booleans matches 1 run scoreboard players operation durationSlot9-16 fear = eidolonFearDuration abilityStats
+execute if score abilitynumber2 abilities matches -4 run execute if score ward slot16 matches 0 if score durationSlot10-16 fear <= eidolonFearDuration abilityStats if score slot10isatk booleans matches 1 run scoreboard players operation durationSlot10-16 fear = eidolonFearDuration abilityStats
+execute if score abilitynumber2 abilities matches -4 run execute if score ward slot16 matches 0 if score durationSlot11-16 fear <= eidolonFearDuration abilityStats if score slot11isatk booleans matches 1 run scoreboard players operation durationSlot11-16 fear = eidolonFearDuration abilityStats
 execute if score abilitynumber2 abilities matches -4 run scoreboard players operation abilityDmg saves = eidolon heroattack
 execute if score abilitynumber2 abilities matches -4 if score slot9isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot9 atkmodifiers
 execute if score abilitynumber2 abilities matches -4 if score slot10isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot10 atkmodifiers

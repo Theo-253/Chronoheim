@@ -1,5 +1,5 @@
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:24,max:24}}}}} run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Font of Wisdom!"]
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:24,max:24}}}}} run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Font of Wisdom!"]
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:24,max:24}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Font of Wisdom!"]
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:24,max:24}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Font of Wisdom!"]
 
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:24,max:24}}}}} run scoreboard players operation fontOfWisdomCooldown player3spells = fontOfWisdomCD spellStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:24,max:24}}}}} run scoreboard players operation fontOfWisdomCooldown player4spells = fontOfWisdomCD spellStats

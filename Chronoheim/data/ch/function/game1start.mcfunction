@@ -1,5 +1,5 @@
 #Teams
-tp @a[tag=game2] 200 1 214
+tp @a[tag=game3] 200 1 214
 #Scoreboard Uis
 scoreboard objectives add Health_Game_1 dummy
 scoreboard objectives add Speed_Game_1 dummy
@@ -328,5 +328,5 @@ execute if score character# slot23 matches 9 run execute if score ward slot23 ma
 execute if score character# slot23 matches 9 run execute if score ward slot23 matches 1 run function ch:wardslot18
 
 
-scoreboard players set game2Ongoing ongoinggames 1
+scoreboard players set game3Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame2 booleans 0

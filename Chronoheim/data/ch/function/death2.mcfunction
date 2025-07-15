@@ -73,5 +73,5 @@ execute if score character# slot18 matches 15 run execute if score slot18 hp = g
 execute if score character# slot18 matches 15 run execute if score slot18 hp = golemite herohealth if score atk slot18 = golemite heroattack run scoreboard players set character# slot18 -4
 
 
-tellraw @a[tag=game2] ["Slot 18 has died"]
+tellraw @a[tag=game3] ["Slot 18 has died"]
 execute at @e[name=slot18,type=armor_stand] run kill @e[name=!slot18,type=!player,distance=..4]

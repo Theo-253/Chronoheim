@@ -13,10 +13,10 @@ execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:4,max:4}}}}} run function ch:basicattacks8
 effect clear @a minecraft:conduit_power
 
-function ch:spelltargetinggeneralgame2
-function ch:abilitytargetinggeneralgame2
+function ch:spelltargetinggeneralgame3
+function ch:abilitytargetinggeneralgame3
 function ch:atkmodifiers
-function ch:speedcheckgame2
+function ch:speedcheckgame3
 function ch:abilitychecks
 function ch:spellchecks
 
@@ -47,12 +47,12 @@ execute as @p[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:0,max:0}}}}} run scoreboard players set attackIsOngoingGame2 booleans 0
 execute as @p[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:0,max:0}}}}} run function ch:spellphasep5
 #Speed Reset
-execute if score attackIsOngoingGame2 booleans matches 0 run execute if score speed slot24 matches ..-10000 if score speed slot23 matches ..-10000 if score speed slot23 matches ..-10000 run execute if score speed slot21 matches ..-10000 run execute if score speed slot20 matches ..-10000 run execute if score speed slot19 matches ..-10000 run execute if score speed slot18 matches ..-10000 run execute if score speed slot17 matches ..-10000 run function ch:turnresetgame2
+execute if score attackIsOngoingGame2 booleans matches 0 run execute if score speed slot24 matches ..-10000 if score speed slot23 matches ..-10000 if score speed slot23 matches ..-10000 run execute if score speed slot21 matches ..-10000 run execute if score speed slot20 matches ..-10000 run execute if score speed slot19 matches ..-10000 run execute if score speed slot18 matches ..-10000 run execute if score speed slot17 matches ..-10000 run function ch:turnresetgame3
 
 #When I get elected, we will have so much winning
-execute if score alivep5 deaths matches 0 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," @p[tag=p6] has won the duel against @p[tag=p5]!"] 
+execute if score alivep5 deaths matches 0 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," @p[tag=p6] has won the duel against @p[tag=p5]!"] 
 execute if score alivep5 deaths matches 0 run function ch:win
-execute if score alivep6 deaths matches 0 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," @p[tag=p5] has won the duel against @p[tag=p6]!"] 
+execute if score alivep6 deaths matches 0 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," @p[tag=p5] has won the duel against @p[tag=p6]!"] 
 execute if score alivep6 deaths matches 0 run function ch:win
 
 #Rapidtick

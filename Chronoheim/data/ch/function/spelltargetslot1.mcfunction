@@ -1,5 +1,5 @@
-effect clear @a[tag=game2] weakness
-clear @a[tag=game2]
+effect clear @a[tag=game3] weakness
+clear @a[tag=game3]
 
 #Dragonforge
 execute if score spellnumber3 spells matches 26 run execute if score durationSlot17 shield < dragonforgeDuration spellStats run scoreboard players operation durationSlot17 shield = dragonforgeDuration spellStats 
@@ -8,7 +8,7 @@ execute if score spellnumber3 spells matches 26 run execute if score alivep5 dea
 execute if score spellnumber3 spells matches 26 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber3 spells matches 26 run execute if score alivep5 deaths matches 1 run execute at @n[type=armor_stand,name=slot17] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber3 spells matches 26 run execute if score alivep5 deaths matches 2.. run execute at @n[type=armor_stand,name=slot17] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 100
-execute if score spellnumber3 spells matches 26 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Dragonforge on Slot 17!"]
+execute if score spellnumber3 spells matches 26 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Dragonforge on Slot 17!"]
 
 #Embiggen
 execute if score spellnumber3 spells matches 13 run execute if score buffDurationSlot17 atkmodifiers < embiggenDuration spellStats run scoreboard players operation buffDurationSlot17 atkmodifiers = embiggenDuration spellStats
@@ -17,7 +17,7 @@ execute if score spellnumber3 spells matches 13 run execute if score durationSlo
 execute if score spellnumber3 spells matches 13 run scoreboard players operation shield slot17 += embiggen spellStats
 execute if score spellnumber3 spells matches 13 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber3 spells matches 13 run execute at @n[type=armor_stand,name=slot17] run particle minecraft:egg_crack ~ ~1 ~ 0.9 0.9 0.9 0.1 100
-execute if score spellnumber3 spells matches 13 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Embiggen on Slot 17!"]
+execute if score spellnumber3 spells matches 13 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Embiggen on Slot 17!"]
 
 #Embrittle
 execute if score spellnumber3 spells matches 12 if score ward slot17 matches 0 run execute if score debuffDurationSlot17 atkmodifiers < embrittleDuration spellStats run scoreboard players operation debuffDurationSlot17 atkmodifiers = embrittleDuration spellStats
@@ -25,14 +25,14 @@ execute if score spellnumber3 spells matches 12 if score ward slot17 matches 0 r
 execute if score spellnumber3 spells matches 12 if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches 12 run function ch:spellphasep5
 execute if score spellnumber3 spells matches 12 run execute at @n[type=armor_stand,name=slot17] run particle minecraft:block_crumble{block_state:"minecraft:ice"} ~ ~1 ~ 0.9 0.9 0.9 0.1 200
-execute if score spellnumber3 spells matches 12 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Embrittle on Slot 17!"]
+execute if score spellnumber3 spells matches 12 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Embrittle on Slot 17!"]
 
 #Evil Eye
 execute if score spellnumber3 spells matches 15 if score ward slot17 matches 0 run scoreboard players operation marks slot17 += evilEye spellStats
 execute if score spellnumber3 spells matches 15 if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches 15 run function ch:spellphasep5
 execute if score spellnumber3 spells matches 15 run execute at @n[type=armor_stand,name=slot17] run particle minecraft:effect ~ ~1 ~ 0.7 0.7 0.7 0.1 200
-execute if score spellnumber3 spells matches 15 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Evil Eye on Slot 17!"]
+execute if score spellnumber3 spells matches 15 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Evil Eye on Slot 17!"]
 
 #Frostbolt
 execute if score spellnumber3 spells matches 6 run scoreboard players operation spelldmg32 saves = frostbolt spellStats
@@ -50,7 +50,7 @@ execute if score spellnumber3 spells matches 6 run execute if score ward slot17 
 execute if score spellnumber3 spells matches 6 run scoreboard players set spellbuffsp6 spells 0
 execute if score spellnumber3 spells matches 6 run function ch:spellphasep5
 execute if score spellnumber3 spells matches 6 run execute at @n[type=armor_stand,name=slot17] run particle minecraft:item_snowball ~ ~1 ~ 0.7 0.7 0.7 0.1 200
-execute if score spellnumber3 spells matches 6 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Frostbolt on Slot 17!"]
+execute if score spellnumber3 spells matches 6 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Frostbolt on Slot 17!"]
 
 #Heal
 execute if score spellnumber3 spells matches 2 run scoreboard players operation spellHeal saves = heal spellStats
@@ -60,7 +60,7 @@ execute if score spellnumber3 spells matches 2 run function ch:cleanseslot17
 execute if score spellnumber3 spells matches 2 run scoreboard players set spellbuffsp5 spells 0
 execute if score spellnumber3 spells matches 2 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber3 spells matches 2 run execute at @n[type=armor_stand,name=slot17] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
-execute if score spellnumber3 spells matches 2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Heal on Slot 17!"]
+execute if score spellnumber3 spells matches 2 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Heal on Slot 17!"]
 
 #Magic Missile
 execute if score spellnumber3 spells matches 4 run scoreboard players add magicMissilex2 spells 1
@@ -74,7 +74,7 @@ execute if score spellnumber3 spells matches 4 run execute if score ward slot17 
 #cursed line of code. This line of code doesn't work at all. That's why there's nothing here. It's cursed. There was a line above it that said magic missle!"] magic missile!"] I smite thee with magic missile!"] and one below it that said magic missle!"] magic missile!"] I skip thee with magic missile!"] Both of those lines triggered, but this one, for whatever reason, was skipped. Anyways: sigh starch lord is the most overrated card in the entire game. I can't stand it when people think starch lord is good. You guys, this is a 4 cost card that has 2 attack and 4 health. It has garbage stats. Now let's look at it's abilities. When you play a root, it gets +1/+1. Thats almost no- think about it. In order to get this up to the actual stats that it needs to be as a 4 cost card, this would have to buff like 2 roots just to break even. It would have to grow 3 roots to actually be viable. The fact that people think that it is a good idea to start drawing cards on turn 5, it really means you have no idea how to play pvz heroes. It's way too late!"] This is- it's- you dont make a deck that has roots in it, that's not a good strategy, there are some good roots in the game but you just have to put too many roots in it. It's drawing cards on turn 5, the last turn you're gonna be drawing cards as a plant player is going to be on turn 3. it's so overrated, it's just a big piece of trash, just look at this guy, a big ugly guy. it's based on by the way the worst Marvel superhero in the entire Marvel Fra- actually universe of Superheroes in the entire history of the planet, star-lord, who is a simp, douchebag, has no superpowers, is the lamest, dumb. and do you know what, it's appropriate cuz this is the stupidest card in the game and it's based on the stupidest Marvel superhero ever. This is so overrated, It's so grunts it's so, I'm sticking this in F tier I don't even care.
 execute if score spellnumber3 spells matches 4 run execute if score magicMissilex2 spells matches 1 run function ch:spellgivetargetsp6
 execute if score spellnumber3 spells matches 4 run execute at @n[type=armor_stand,name=slot17] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
-execute if score spellnumber3 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," smited Slot 17 with Magic Missle!"]
+execute if score spellnumber3 spells matches 4 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," smited Slot 17 with Magic Missle!"]
 execute if score spellnumber3 spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set spellbuffsp6 spells 0
 execute if score spellnumber3 spells matches 4 run execute if score magicMissilex2 spells matches 2 run clear @a[tag=p6] target
 execute if score spellnumber3 spells matches 4 run execute if score magicMissilex2 spells matches 2 run function ch:spellphasep5
@@ -86,20 +86,20 @@ execute if score spellnumber3 spells matches 16 if score protectorsrune spellSta
 execute if score spellnumber3 spells matches 16 if score protectorsrune spellStats > durationSlot17 taunt if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches 16 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber3 spells matches 16 run execute at @n[type=armor_stand,name=slot17] run particle minecraft:block_crumble{block_state:"minecraft:emerald_ore"} ~ ~1 ~ 0.7 0.7 0.7 1 400
-execute if score spellnumber3 spells matches 16 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Protector's Rune on Slot 17!"]
+execute if score spellnumber3 spells matches 16 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Protector's Rune on Slot 17!"]
 #Shield
 execute if score spellnumber3 spells matches 8 run execute if score durationSlot17 shield < shieldDuration spellStats run scoreboard players operation durationSlot17 shield = shieldDuration spellStats 
 execute if score spellnumber3 spells matches 8 run scoreboard players operation shield slot17 += shield spellStats
 execute if score spellnumber3 spells matches 8 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber3 spells matches 8 run execute at @n[type=armor_stand,name=slot17] run particle wax_off ~ ~1 ~ 0.7 0.7 0.7 0.1 400
-execute if score spellnumber3 spells matches 8 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Shield on Slot 17!"]
+execute if score spellnumber3 spells matches 8 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Shield on Slot 17!"]
 
 #Ball Lightning
 execute if score spellnumber3 spells matches 9 if score ward slot17 matches 0 run scoreboard players operation slot17 stun += shockOrb spellStats
 execute if score spellnumber3 spells matches 9 if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches 9 run function ch:spellphasep5
 execute if score spellnumber3 spells matches 9 run execute at @n[type=armor_stand,name=slot17] run particle flash ~ ~1 ~ 0.9 0.9 0.9 0.1 10
-execute if score spellnumber3 spells matches 9 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Ball Lightning on Slot 17!"]
+execute if score spellnumber3 spells matches 9 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Ball Lightning on Slot 17!"]
 
 #Witches Brew
 execute if score spellnumber3 spells matches 23 run execute if score ward slot17 matches 0 if score witchesBrewDuration spellStats > durationSlot17 speedDebuffs run scoreboard players operation durationSlot17 speedDebuffs = witchesBrewDuration spellStats
@@ -113,7 +113,7 @@ execute if score spellnumber3 spells matches 23 run execute if score ward slot17
 execute if score spellnumber3 spells matches 23 run execute if score ward slot17 matches 0 run scoreboard players operation speed slot17 -= witchesBrewSpDebuff spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches 23 run function ch:spellphasep5
-execute if score spellnumber3 spells matches 23 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Witches Brew on Slot 17!"]
+execute if score spellnumber3 spells matches 23 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Witches Brew on Slot 17!"]
 #Shifting Shadows Token
 execute if score spellnumber3 spells matches -1 if score shadowsPart1 spells matches 5 if score ward slot17 matches 0 run scoreboard players set durationSlot21-17 fear 1 
 execute if score spellnumber3 spells matches -1 if score shadowsPart1 spells matches 6 if score ward slot17 matches 0 run scoreboard players set durationSlot22-17 fear 1 
@@ -122,16 +122,16 @@ execute if score spellnumber3 spells matches -1 if score shadowsPart1 spells mat
 execute if score spellnumber3 spells matches -1 if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches -1 run function ch:spellphasep5
 execute if score spellnumber3 spells matches 28 run execute at @n[type=armor_stand,name=slot17] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score spellnumber3 spells matches -1 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Shifting Shadows to fear Slot 17!"]
+execute if score spellnumber3 spells matches -1 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Shifting Shadows to fear Slot 17!"]
 
 #Shifting Shadows
 execute if score spellnumber3 spells matches 28 run scoreboard players set shadowsPart1 spells 1
 execute if score spellnumber3 spells matches 28 run function ch:spellgivetargetsp5
 execute if score spellnumber3 spells matches 28 run scoreboard players set spellnumber3 spells -1
 execute if score spellnumber3 spells matches 28 run execute at @n[type=armor_stand,name=slot17] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score spellnumber3 spells matches 28 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Shifting Shadows to make Slot 17 scary!"]
+execute if score spellnumber3 spells matches 28 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Shifting Shadows to make Slot 17 scary!"]
 
-clear @p[tag=game2]
+clear @p[tag=game3]
 #fireball
 execute if score spellnumber3 spells matches 1 run scoreboard players operation spelldmg32 saves = fireball spellStats
 execute if score spellnumber3 spells matches 1 run scoreboard players operation spelldmg32 saves += spellbuffsp6 spells
@@ -145,7 +145,7 @@ execute if score spellnumber3 spells matches 1 at @e[name=slot17] run particle m
 execute if score spellnumber3 spells matches 1 run execute if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches 1 run scoreboard players set spellbuffsp6 spells 0
 execute if score spellnumber3 spells matches 1 run function ch:spellphasep5
-execute if score spellnumber3 spells matches 1 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Fireball on Slot 17!"]
+execute if score spellnumber3 spells matches 1 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Fireball on Slot 17!"]
 
 #meteor
 execute if score spellnumber3 spells matches 7 run scoreboard players operation spelldmg32 saves = meteor spellStats
@@ -167,7 +167,7 @@ execute if score spellnumber3 spells matches 7 run execute if score ward slot18 
 execute if score spellnumber3 spells matches 7 run execute if score ward slot18 matches 1.. run function ch:wardslot18
 execute if score spellnumber3 spells matches 7 run scoreboard players set spellbuffsp6 spells 0
 execute if score spellnumber3 spells matches 7 run function ch:spellphasep5
-execute if score spellnumber3 spells matches 7 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Meteor on Slot 17!"]
+execute if score spellnumber3 spells matches 7 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Meteor on Slot 17!"]
 
 #witchbolt
 execute if score spellnumber3 spells matches 10 run scoreboard players operation spelldmg32 saves = witchbolt spellStats
@@ -180,19 +180,19 @@ execute if score spellnumber3 spells matches 10 at @e[name=slot17] run particle 
 execute if score spellnumber3 spells matches 10 run execute if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches 10 run scoreboard players set spellbuffsp6 spells 0
 execute if score spellnumber3 spells matches 10 run function ch:spellphasep5
-execute if score spellnumber3 spells matches 10 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Witch Bolt on Slot 17!"]
+execute if score spellnumber3 spells matches 10 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Witch Bolt on Slot 17!"]
 #ward
 execute if score spellnumber3 spells matches 19 run scoreboard players set ward slot17 1
 execute if score spellnumber3 spells matches 19 at @e[name=slot17] run particle minecraft:ominous_spawning ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score spellnumber3 spells matches 19 run scoreboard players set attackIsOngoingGame2 booleans 0
-execute if score spellnumber3 spells matches 19 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Ward on Slot 17!"]
+execute if score spellnumber3 spells matches 19 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Ward on Slot 17!"]
 
 #plague
 execute if score spellnumber3 spells matches 21 if score ward slot17 matches 0 run scoreboard players operation slot17Disease disease += plague spellStats
 execute if score spellnumber3 spells matches 21 at @e[name=slot17] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber3 spells matches 21 if score ward slot17 matches 1.. run function ch:wardslot17
 execute if score spellnumber3 spells matches 21 run function ch:spellphasep5
-execute if score spellnumber3 spells matches 21 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Plague on Slot 17!"]
+execute if score spellnumber3 spells matches 21 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Plague on Slot 17!"]
 
 #Second wind
 execute if score spellnumber3 spells matches 22 run execute if score durationSlot17 speedBuffs < secondWindDuration spellStats run scoreboard players operation durationSlot17 speedBuffs = secondWindDuration spellStats
@@ -203,7 +203,7 @@ execute if score spellnumber3 spells matches 22 if score slot17bleeding booleane
 execute if score spellnumber3 spells matches 22 at @e[name=slot17] run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber3 spells matches 22 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber3 spells matches 22 run scoreboard players set spellbuffsp5 spells 0
-execute if score spellnumber3 spells matches 22 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Second Wind on Slot 17!"]
+execute if score spellnumber3 spells matches 22 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Second Wind on Slot 17!"]
 
 #fountain of youth
 execute if score spellnumber3 spells matches 25 run execute if score disarmedslot17 booleaneffects < fountainOfYouthDuration spellStats run scoreboard players operation disarmedslot17 booleaneffects = fountainOfYouthDuration spellStats
@@ -212,7 +212,7 @@ execute if score spellnumber3 spells matches 25 if score slot17bleeding booleane
 execute if score spellnumber3 spells matches 25 at @e[name=slot17] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 500
 execute if score spellnumber3 spells matches 25 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber3 spells matches 25 run scoreboard players set spellbuffsp5 spells 0
-execute if score spellnumber3 spells matches 25 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Fountain of Youth on Slot 17!"]
+execute if score spellnumber3 spells matches 25 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Fountain of Youth on Slot 17!"]
 
 #overclock
 execute if score spellnumber3 spells matches 27 run execute if score buffDurationSlot17 atkmodifiers < overclockDuration spellStats run scoreboard players operation buffDurationSlot17 atkmodifiers = overclockDuration spellStats
@@ -221,7 +221,7 @@ execute if score spellnumber3 spells matches 27 run scoreboard players operation
 execute if score spellnumber3 spells matches 27 if score shield slot17 matches ..0 run scoreboard players operation slot17 hp += shield slot17
 execute if score spellnumber3 spells matches 27 at @e[name=slot17] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 400
 execute if score spellnumber3 spells matches 27 run scoreboard players set attackIsOngoingGame2 booleans 0
-execute if score spellnumber3 spells matches 27 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Overclock on Slot 17!"]
+execute if score spellnumber3 spells matches 27 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Overclock on Slot 17!"]
 
 
 #This goes at the bottom

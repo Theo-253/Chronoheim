@@ -371,4 +371,4 @@ execute if items entity @p[tag=p5,tag=!healingtotemO] container.* minecraft:tote
 
 execute if score spellpick1 drafts > Spell_Points_P1 Spell_Points run clear @a[tag=p5]
 
-execute if score Spell_Points_P1 Spell_Points matches 0 run execute if score Spell_Points_P2 Spell_Points matches 0 run function ch:game2start
+execute if score Spell_Points_P1 Spell_Points matches 0 run execute if score Spell_Points_P2 Spell_Points matches 0 run function ch:game3start

@@ -1,7 +1,7 @@
-scoreboard objectives remove Health_Game_1
-scoreboard objectives remove Speed_Game_1
-scoreboard objectives remove Cooldown_Game_1
-scoreboard objectives remove Spell_Cooldown_Game_1
+scoreboard objectives remove Health_Game_3
+scoreboard objectives remove Speed_Game_3
+scoreboard objectives remove Cooldown_Game_3
+scoreboard objectives remove Spell_Cooldown_Game_3
 scoreboard players set character# slot17 0
 scoreboard players set character# slot18 0
 scoreboard players set character# slot19 0
@@ -26,43 +26,43 @@ scoreboard players set speed slot21 0
 scoreboard players set speed slot23 0
 scoreboard players set speed slot23 0
 scoreboard players set speed slot24 0
-scoreboard players set game2Ongoing ongoinggames 0
-clear @a[tag=game2]
-team leave @a[tag=game2]
-tp @a[tag=game2] -32 51 1
-tag @a[tag=game2] remove fireball
-tag @a[tag=game2] remove chainlightning
-tag @a[tag=game2] remove heal
-tag @a[tag=game2] remove magicmissile
-tag @a[tag=game2] remove ritualofblood
-tag @a[tag=game2] remove frostbolt
-tag @a[tag=game2] remove meteor
-tag @a[tag=game2] remove shield
-tag @a[tag=game2] remove shockorb
-tag @a[tag=game2] remove witchbolt
-tag @a[tag=game2] remove swiftness
-tag @a[tag=game2] remove embrittle
-tag @a[tag=game2] remove embiggen
-tag @a[tag=game2] remove immolate
-tag @a[tag=game2] remove evileye
-tag @a[tag=game2] remove protectorsrune
-tag @a[tag=game2] remove miracle
-tag @a[tag=game2] remove miasma
-tag @a[tag=game2] remove ward
-tag @a[tag=game2] remove blizzard
-tag @a[tag=game2] remove plague
-tag @a[tag=game2] remove secondwind
-tag @a[tag=game2] remove witchesbrew
-tag @a[tag=game2] remove fontofwisdom
-tag @a[tag=game2] remove fountainofyouth
-tag @a[tag=game2] remove dragonforge
-tag @a[tag=game2] remove overclock
-tag @a[tag=game2] remove shiftingshadows
-tag @a[tag=game2] remove chronowarp
-tag @a[tag=game2] remove healingtotem
+scoreboard players set game3Ongoing ongoinggames 0
+clear @a[tag=game3]
+team leave @a[tag=game3]
+tp @a[tag=game3] -32 51 1
+tag @a[tag=game3] remove fireball
+tag @a[tag=game3] remove chainlightning
+tag @a[tag=game3] remove heal
+tag @a[tag=game3] remove magicmissile
+tag @a[tag=game3] remove ritualofblood
+tag @a[tag=game3] remove frostbolt
+tag @a[tag=game3] remove meteor
+tag @a[tag=game3] remove shield
+tag @a[tag=game3] remove shockorb
+tag @a[tag=game3] remove witchbolt
+tag @a[tag=game3] remove swiftness
+tag @a[tag=game3] remove embrittle
+tag @a[tag=game3] remove embiggen
+tag @a[tag=game3] remove immolate
+tag @a[tag=game3] remove evileye
+tag @a[tag=game3] remove protectorsrune
+tag @a[tag=game3] remove miracle
+tag @a[tag=game3] remove miasma
+tag @a[tag=game3] remove ward
+tag @a[tag=game3] remove blizzard
+tag @a[tag=game3] remove plague
+tag @a[tag=game3] remove secondwind
+tag @a[tag=game3] remove witchesbrew
+tag @a[tag=game3] remove fontofwisdom
+tag @a[tag=game3] remove fountainofyouth
+tag @a[tag=game3] remove dragonforge
+tag @a[tag=game3] remove overclock
+tag @a[tag=game3] remove shiftingshadows
+tag @a[tag=game3] remove chronowarp
+tag @a[tag=game3] remove healingtotem
 tag @a remove p5
 tag @a remove p6
-tag @a remove game2
+tag @a remove game3
 scoreboard players set alivep5 deaths 3
 scoreboard players set alivep6 deaths 3
 scoreboard players set abilityusep5 booleans 0
@@ -75,7 +75,7 @@ scoreboard players set slot21isatk booleans 0
 scoreboard players set slot23isatk booleans 0
 scoreboard players set slot23isatk booleans 0
 scoreboard players set slot24isatk booleans 0
-scoreboard players set game2start ongoinggames 0
+scoreboard players set game3start ongoinggames 0
 scoreboard players reset slot20 hp
 scoreboard players reset slot24 hp
 function ch:cleanseslot17

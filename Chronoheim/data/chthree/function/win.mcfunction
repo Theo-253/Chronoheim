@@ -258,8 +258,8 @@ scoreboard players set overclockCooldown player4spells 0
 scoreboard players set shiftingShadowsCooldown player4spells 0
 scoreboard players set chronoWarpCooldown player4spells 0
 scoreboard players set healingTotemCooldown player4spells 0
-scoreboard players set Spell_Points_P1 Spell_Points -1
-scoreboard players set Spell_Points_P2 Spell_Points -1
+scoreboard players set Spell_Points_P5 Spell_Points -1
+scoreboard players set Spell_Points_P6 Spell_Points -1
 scoreboard players set suddenDeath2 deaths 0
 scoreboard players set side1spinball abilities -1
 scoreboard players set side2spinball abilities -1

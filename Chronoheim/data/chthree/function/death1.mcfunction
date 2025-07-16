@@ -14,6 +14,6 @@ execute if score character# slot23 matches 28 run execute at @n[type=armor_stand
 execute if score character# slot23 matches 28 run execute at @n[type=armor_stand,name=slot23] run particle minecraft:trial_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 scoreboard players set durationSlot17 taunt 0
 execute if score slot17 hp matches ..0 run scoreboard players set speed slot17 -1000000
-tellraw @a[tag=game3] ["Slot 17 has died"]
+tellraw @a[tag=game3] ["Slot 1 has died"]
 execute at @e[name=slot17,type=armor_stand] run kill @e[name=!slot17,type=!player,distance=..4]
 

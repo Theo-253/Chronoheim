@@ -10,10 +10,10 @@ execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames
 execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames matches 0 run place template minecraft:game1heroes1 -173 127 -109
 execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames matches 0 run place template minecraft:game1heroes2 -171 126 -107
 execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames matches 0 run scoreboard players set game1start ongoinggames 1
-
 function ch:maxhp
 function ch:effectparticles
 function ui:ui
 function ui:characterui
 function ui:scoreboardui
 function ch:attackparticles
+

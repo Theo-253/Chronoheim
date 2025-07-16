@@ -1,3 +1,4 @@
+clear @a[tag=game2]
 scoreboard players set attackIsOngoingGame2 booleans 1
 scoreboard players set speed slot14 -20000
 scoreboard players set slot14isatk booleans 1

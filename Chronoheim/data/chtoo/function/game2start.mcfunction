@@ -1,5 +1,5 @@
 #Teams
-tp @a[tag=game2] 200 1 214
+tp @a[tag=game2] 200 1 245
 #Scoreboard Uis
 scoreboard objectives add Health_Game_2 dummy
 scoreboard objectives add Speed_Game_2 dummy

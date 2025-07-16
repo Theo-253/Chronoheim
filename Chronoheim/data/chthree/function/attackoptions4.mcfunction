@@ -1,4 +1,5 @@
-scoreboard players set attackIsOngoingGame2 booleans 1
+clear @a[tag=game3]
+scoreboard players set attackIsOngoingGame3 booleans 1
 scoreboard players set speed slot20 -20000
 scoreboard players set slot20isatk booleans 1
 execute if score disarmedslot20 booleaneffects matches 0 if score nobasicatk slot20 matches 0 run give @p[tag=p5] minecraft:iron_sword[minecraft:custom_name="Basic Attack",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:conduit_power,duration:1,amplifier:0,show_particles:0b}]}]}]

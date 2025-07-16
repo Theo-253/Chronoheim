@@ -1,12 +1,12 @@
 #Teams
-tp @a[tag=game3] 200 1 214
+tp @a[tag=game3] 200 1 276
 #Scoreboard Uis
-scoreboard objectives add Health_Game_1 dummy
-scoreboard objectives add Speed_Game_1 dummy
-scoreboard objectives add Cooldown_Game_1 dummy
-scoreboard objectives add Spell_Cooldown_Game_1 dummy
-scoreboard objectives setdisplay sidebar.team.red Health_Game_1
-scoreboard objectives setdisplay sidebar.team.dark_red Health_Game_1
+scoreboard objectives add Health_Game_3 dummy
+scoreboard objectives add Speed_Game_3 dummy
+scoreboard objectives add Cooldown_Game_3 dummy
+scoreboard objectives add Spell_Cooldown_Game_3 dummy
+scoreboard objectives setdisplay sidebar.team.blue Health_Game_3
+scoreboard objectives setdisplay sidebar.team.dark_blue Health_Game_3
 #Slot 17 Speed Reset
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 1 run scoreboard players operation speed slot17 = bones herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 2 run scoreboard players operation speed slot17 = arthur herospeed

@@ -287,5 +287,5 @@ scoreboard players set slot24isatk booleans 0
 
 
 
-scoreboard players set attackIsOngoingGame2 booleans 0
+scoreboard players set attackIsOngoingGame3 booleans 0
 

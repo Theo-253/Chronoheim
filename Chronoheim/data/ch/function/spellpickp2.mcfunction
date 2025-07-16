@@ -1,5 +1,7 @@
 scoreboard players operation spellpick2 drafts = Spell_Points_P2 Spell_Points
 
+give @p[tag=p2] barrier[minecraft:custom_name="Skip Spell Picking",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:water_breathing,duration:1,amplifier:0,show_particles:0b}]}]}]
+
 #Fireball Select P1
 execute if score Spell_Points_P2 Spell_Points >= fireballSp spellStats run execute if items entity @p[tag=p2] container.* fire_charge[minecraft:custom_name={"text":"Fireball","bold":true,"color":"gray","italic":false}] run tag @p[tag=p2] add fireball
 execute if score Spell_Points_P2 Spell_Points >= fireballSp spellStats run execute if items entity @p[tag=p2] container.* fire_charge[minecraft:custom_name={"text":"Fireball","bold":true,"color":"gray","italic":false}] run tellraw @a[tag=p2] ["",{"selector":"@p[tag=p2]"}," picked Fireball."]

@@ -249,6 +249,23 @@ scoreboard players set slot22bleeding booleaneffects 0
 scoreboard players set slot23bleeding booleaneffects 0
 scoreboard players set slot24bleeding booleaneffects 0
 
+scoreboard players set character# slot9 0
+scoreboard players set character# slot10 0
+scoreboard players set character# slot11 0
+scoreboard players set character# slot12 0
+scoreboard players set character# slot13 0
+scoreboard players set character# slot14 0
+scoreboard players set character# slot15 0
+scoreboard players set character# slot16 0
+scoreboard players set character# slot17 0
+scoreboard players set character# slot18 0
+scoreboard players set character# slot19 0
+scoreboard players set character# slot20 0
+scoreboard players set character# slot21 0
+scoreboard players set character# slot22 0
+scoreboard players set character# slot23 0
+scoreboard players set character# slot24 0
+
 scoreboard players set bones heroattack 140
 scoreboard players set bones herohealth 1000
 scoreboard players set bones herospeed 1000

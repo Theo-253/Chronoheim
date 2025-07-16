@@ -1,5 +1,9 @@
 {
         "values": [
-        "ch:globaltick"
+        "ch:globaltick",
+        "chtoo:globaltick",
+        "chthree:globaltick"
+
+
     ]
 }

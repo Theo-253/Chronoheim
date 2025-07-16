@@ -1,7 +1,7 @@
-scoreboard objectives remove Health_Game_1
-scoreboard objectives remove Speed_Game_1
-scoreboard objectives remove Cooldown_Game_1
-scoreboard objectives remove Spell_Cooldown_Game_1
+scoreboard objectives remove Health_Game_2
+scoreboard objectives remove Speed_Game_2
+scoreboard objectives remove Cooldown_Game_2
+scoreboard objectives remove Spell_Cooldown_Game_2
 scoreboard players set character# slot9 0
 scoreboard players set character# slot10 0
 scoreboard players set character# slot11 0

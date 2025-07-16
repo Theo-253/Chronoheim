@@ -13,7 +13,7 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run execute at @n[type=armor_stand,name=slot18] run particle minecraft:cloud ~ ~1 ~ 0.9 0.9 0.9 0.1 60
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run execute at @n[type=armor_stand,name=slot19] run particle minecraft:cloud ~ ~1 ~ 0.9 0.9 0.9 0.1 60
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run execute at @n[type=armor_stand,name=slot20] run particle minecraft:cloud ~ ~1 ~ 0.9 0.9 0.9 0.1 60
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run scoreboard players set attackIsOngoingGame2 booleans 0
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run scoreboard players set attackIsOngoingGame3 booleans 0
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=p5] infested
 
 #Player 2

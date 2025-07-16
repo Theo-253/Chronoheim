@@ -52,8 +52,26 @@ scoreboard objectives add mark dummy
 scoreboard objectives add deaths dummy
 scoreboard objectives add player1spells dummy
 scoreboard objectives add player2spells dummy
+scoreboard objectives add player3spells dummy
+scoreboard objectives add player4spells dummy
+scoreboard objectives add player5spells dummy
+scoreboard objectives add player6spells dummy
 scoreboard objectives add hp dummy
+team add p3
+team add p4
+team add p5
+team add p6
+team modify p3 color yellow
+team modify p4 color gold
+team modify p5 color blue
+team modify p6 color dark_blue
 scoreboard objectives add ongoinggames dummy
+scoreboard players set game2start ongoinggames 0
+scoreboard players set game3start ongoinggames 0
+scoreboard players set game2Ongoing ongoinggames 0
+scoreboard players set game3Ongoing ongoinggames 0
+scoreboard players set attackIsOngoingGame2 booleans 0
+scoreboard players set attackIsOngoingGame3 booleans 0
 scoreboard players set atkmultiplier slot1 1
 scoreboard players set atkmultiplier slot2 1
 scoreboard players set atkmultiplier slot3 1
@@ -103,6 +121,133 @@ scoreboard players set invincibleSlot5 booleaneffects 0
 scoreboard players set invincibleSlot6 booleaneffects 0
 scoreboard players set invincibleSlot7 booleaneffects 0
 scoreboard players set invincibleSlot8 booleaneffects 0
+
+scoreboard players set slot1bleeding booleaneffects 0
+scoreboard players set slot2bleeding booleaneffects 0
+scoreboard players set slot3bleeding booleaneffects 0
+scoreboard players set slot4bleeding booleaneffects 0
+scoreboard players set slot5bleeding booleaneffects 0
+scoreboard players set slot6bleeding booleaneffects 0
+scoreboard players set slot7bleeding booleaneffects 0
+scoreboard players set slot8bleeding booleaneffects 0
+
+scoreboard players set atkmultiplier slot9 1
+scoreboard players set atkmultiplier slot10 1
+scoreboard players set atkmultiplier slot11 1
+scoreboard players set atkmultiplier slot12 1
+scoreboard players set atkmultiplier slot13 1
+scoreboard players set atkmultiplier slot14 1
+scoreboard players set atkmultiplier slot15 1
+scoreboard players set atkmultiplier slot16 1
+scoreboard players set ward slot9 0
+scoreboard players set ward slot10 0
+scoreboard players set ward slot11 0
+scoreboard players set ward slot12 0
+scoreboard players set ward slot13 0
+scoreboard players set ward slot14 0
+scoreboard players set ward slot15 0
+scoreboard players set ward slot16 0
+scoreboard players set doubleatk slot9 0
+scoreboard players set doubleatk slot10 0
+scoreboard players set doubleatk slot11 0
+scoreboard players set doubleatk slot12 0
+scoreboard players set doubleatk slot13 0
+scoreboard players set doubleatk slot14 0
+scoreboard players set doubleatk slot15 0
+scoreboard players set doubleatk slot16 0
+scoreboard players set useddoubleatk slot9 0
+scoreboard players set useddoubleatk slot10 0
+scoreboard players set useddoubleatk slot11 0
+scoreboard players set useddoubleatk slot12 0
+scoreboard players set useddoubleatk slot13 0
+scoreboard players set useddoubleatk slot14 0
+scoreboard players set useddoubleatk slot15 0
+scoreboard players set useddoubleatk slot16 0
+scoreboard players set durationSlot9 taunt 0
+scoreboard players set durationSlot10 taunt 0
+scoreboard players set durationSlot11 taunt 0
+scoreboard players set durationSlot12 taunt 0
+scoreboard players set durationSlot13 taunt 0
+scoreboard players set durationSlot14 taunt 0
+scoreboard players set durationSlot15 taunt 0
+scoreboard players set durationSlot16 taunt 0
+
+scoreboard players set invincibleSlot9 booleaneffects 0
+scoreboard players set invincibleSlot10 booleaneffects 0
+scoreboard players set invincibleSlot11 booleaneffects 0
+scoreboard players set invincibleSlot12 booleaneffects 0
+scoreboard players set invincibleSlot13 booleaneffects 0
+scoreboard players set invincibleSlot14 booleaneffects 0
+scoreboard players set invincibleSlot15 booleaneffects 0
+scoreboard players set invincibleSlot16 booleaneffects 0
+
+scoreboard players set slot9bleeding booleaneffects 0
+scoreboard players set slot10bleeding booleaneffects 0
+scoreboard players set slot11bleeding booleaneffects 0
+scoreboard players set slot12bleeding booleaneffects 0
+scoreboard players set slot13bleeding booleaneffects 0
+scoreboard players set slot14bleeding booleaneffects 0
+scoreboard players set slot15bleeding booleaneffects 0
+scoreboard players set slot16bleeding booleaneffects 0
+
+scoreboard players set atkmultiplier slot17 1
+scoreboard players set atkmultiplier slot18 1
+scoreboard players set atkmultiplier slot19 1
+scoreboard players set atkmultiplier slot20 1
+scoreboard players set atkmultiplier slot21 1
+scoreboard players set atkmultiplier slot22 1
+scoreboard players set atkmultiplier slot23 1
+scoreboard players set atkmultiplier slot24 1
+scoreboard players set ward slot17 0
+scoreboard players set ward slot18 0
+scoreboard players set ward slot19 0
+scoreboard players set ward slot20 0
+scoreboard players set ward slot21 0
+scoreboard players set ward slot22 0
+scoreboard players set ward slot23 0
+scoreboard players set ward slot24 0
+scoreboard players set doubleatk slot17 0
+scoreboard players set doubleatk slot18 0
+scoreboard players set doubleatk slot19 0
+scoreboard players set doubleatk slot20 0
+scoreboard players set doubleatk slot21 0
+scoreboard players set doubleatk slot22 0
+scoreboard players set doubleatk slot23 0
+scoreboard players set doubleatk slot24 0
+scoreboard players set useddoubleatk slot17 0
+scoreboard players set useddoubleatk slot18 0
+scoreboard players set useddoubleatk slot19 0
+scoreboard players set useddoubleatk slot20 0
+scoreboard players set useddoubleatk slot21 0
+scoreboard players set useddoubleatk slot22 0
+scoreboard players set useddoubleatk slot23 0
+scoreboard players set useddoubleatk slot24 0
+scoreboard players set durationSlot17 taunt 0
+scoreboard players set durationSlot18 taunt 0
+scoreboard players set durationSlot19 taunt 0
+scoreboard players set durationSlot20 taunt 0
+scoreboard players set durationSlot21 taunt 0
+scoreboard players set durationSlot22 taunt 0
+scoreboard players set durationSlot23 taunt 0
+scoreboard players set durationSlot24 taunt 0
+
+scoreboard players set invincibleSlot17 booleaneffects 0
+scoreboard players set invincibleSlot18 booleaneffects 0
+scoreboard players set invincibleSlot19 booleaneffects 0
+scoreboard players set invincibleSlot20 booleaneffects 0
+scoreboard players set invincibleSlot21 booleaneffects 0
+scoreboard players set invincibleSlot22 booleaneffects 0
+scoreboard players set invincibleSlot23 booleaneffects 0
+scoreboard players set invincibleSlot24 booleaneffects 0
+
+scoreboard players set slot17bleeding booleaneffects 0
+scoreboard players set slot18bleeding booleaneffects 0
+scoreboard players set slot19bleeding booleaneffects 0
+scoreboard players set slot20bleeding booleaneffects 0
+scoreboard players set slot21bleeding booleaneffects 0
+scoreboard players set slot22bleeding booleaneffects 0
+scoreboard players set slot23bleeding booleaneffects 0
+scoreboard players set slot24bleeding booleaneffects 0
 
 scoreboard players set bones heroattack 140
 scoreboard players set bones herohealth 1000

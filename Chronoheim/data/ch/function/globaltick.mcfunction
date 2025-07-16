@@ -16,6 +16,7 @@ function ch:effectparticles
 function ui:ui
 function ui:characterui
 function ui:scoreboardui
+function ch:attackparticles
 
 #game 2
 execute if score game2Ongoing ongoinggames matches 1 run function chtoo:game2

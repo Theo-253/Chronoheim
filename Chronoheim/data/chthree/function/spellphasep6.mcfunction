@@ -1,3 +1,5 @@
+clear @a[tag=game3]
+tellraw @a[tag=game3] [{"selector":"@p[tag=p6]"},"'s next Spell is buffed by +",{"score":{"name":"spellbuffsp6","objective":"spells"}}," dmg/healing"]
 execute if score side5spinball abilities matches 1 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"},"'s Dillo has 1 stack of Kinetic Energy"]
 execute if score side5spinball abilities matches 2 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"},"'s Dillo has 2 stacks of Kinetic Energy"]
 execute if score side5spinball abilities matches 3 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"},"'s Dillo has 3 stacks of Kinetic Energy"]

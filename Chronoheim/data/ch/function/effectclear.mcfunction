@@ -8,13 +8,13 @@ execute if score durationSlot6 burn matches 0 run scoreboard players set slot6Bu
 execute if score durationSlot7 burn matches 0 run scoreboard players set slot7Burn burn 0
 execute if score durationSlot8 burn matches 0 run scoreboard players set slot8Burn burn 0
 execute if score durationSlot9 burn matches 0 run scoreboard players set slot17Burn burn 0
-execute if score durationSlot10 burn matches 0 run scoreboard players set slot18Burn burn 0
-execute if score durationSlot11 burn matches 0 run scoreboard players set slot19Burn burn 0
-execute if score durationSlot12 burn matches 0 run scoreboard players set slot20Burn burn 0
-execute if score durationSlot13 burn matches 0 run scoreboard players set slot21Burn burn 0
-execute if score durationSlot14 burn matches 0 run scoreboard players set slot23Burn burn 0
-execute if score durationSlot15 burn matches 0 run scoreboard players set slot23Burn burn 0
-execute if score durationSlot16 burn matches 0 run scoreboard players set slot24Burn burn 0
+execute if score durationSlot10 burn matches 0 run scoreboard players set slot10Burn burn 0
+execute if score durationSlot11 burn matches 0 run scoreboard players set slot11Burn burn 0
+execute if score durationSlot12 burn matches 0 run scoreboard players set slot12Burn burn 0
+execute if score durationSlot13 burn matches 0 run scoreboard players set slot13Burn burn 0
+execute if score durationSlot14 burn matches 0 run scoreboard players set slot14Burn burn 0
+execute if score durationSlot15 burn matches 0 run scoreboard players set slot15Burn burn 0
+execute if score durationSlot16 burn matches 0 run scoreboard players set slot16Burn burn 0
 execute if score durationSlot17 burn matches 0 run scoreboard players set slot17Burn burn 0
 execute if score durationSlot18 burn matches 0 run scoreboard players set slot18Burn burn 0
 execute if score durationSlot19 burn matches 0 run scoreboard players set slot19Burn burn 0
@@ -34,14 +34,14 @@ execute if score durationSlot5 poison matches 0 run scoreboard players set slot5
 execute if score durationSlot6 poison matches 0 run scoreboard players set slot6Poison poison 0
 execute if score durationSlot7 poison matches 0 run scoreboard players set slot7Poison poison 0
 execute if score durationSlot8 poison matches 0 run scoreboard players set slot8Poison poison 0
-execute if score durationSlot9 poison matches 0 run scoreboard players set slot17Poison poison 0
-execute if score durationSlot10 poison matches 0 run scoreboard players set slot18Poison poison 0
-execute if score durationSlot11 poison matches 0 run scoreboard players set slot19Poison poison 0
-execute if score durationSlot12 poison matches 0 run scoreboard players set slot20Poison poison 0
-execute if score durationSlot13 poison matches 0 run scoreboard players set slot21Poison poison 0
-execute if score durationSlot14 poison matches 0 run scoreboard players set slot23Poison poison 0
-execute if score durationSlot15 poison matches 0 run scoreboard players set slot23Poison poison 0
-execute if score durationSlot16 poison matches 0 run scoreboard players set slot24Poison poison 0
+execute if score durationSlot9 poison matches 0 run scoreboard players set slot9Poison poison 0
+execute if score durationSlot10 poison matches 0 run scoreboard players set slot10Poison poison 0
+execute if score durationSlot11 poison matches 0 run scoreboard players set slot11Poison poison 0
+execute if score durationSlot12 poison matches 0 run scoreboard players set slot12Poison poison 0
+execute if score durationSlot13 poison matches 0 run scoreboard players set slot13Poison poison 0
+execute if score durationSlot14 poison matches 0 run scoreboard players set slot14Poison poison 0
+execute if score durationSlot15 poison matches 0 run scoreboard players set slot15Poison poison 0
+execute if score durationSlot16 poison matches 0 run scoreboard players set slot16Poison poison 0
 execute if score durationSlot17 poison matches 0 run scoreboard players set slot17Poison poison 0
 execute if score durationSlot18 poison matches 0 run scoreboard players set slot18Poison poison 0
 execute if score durationSlot19 poison matches 0 run scoreboard players set slot19Poison poison 0
@@ -61,14 +61,14 @@ execute if score durationSlot5 speedDebuffs matches 0 run scoreboard players set
 execute if score durationSlot6 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot6 speedDebuffs 0
 execute if score durationSlot7 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot7 speedDebuffs 0
 execute if score durationSlot8 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot8 speedDebuffs 0
-execute if score durationSlot9 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot17 speedDebuffs 0
-execute if score durationSlot10 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot18 speedDebuffs 0
-execute if score durationSlot11 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot19 speedDebuffs 0
-execute if score durationSlot12 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot20 speedDebuffs 0
-execute if score durationSlot13 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot21 speedDebuffs 0
-execute if score durationSlot14 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot22 speedDebuffs 0
-execute if score durationSlot15 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot23 speedDebuffs 0
-execute if score durationSlot16 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot24 speedDebuffs 0
+execute if score durationSlot9 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot9 speedDebuffs 0
+execute if score durationSlot10 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot10 speedDebuffs 0
+execute if score durationSlot11 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot11 speedDebuffs 0
+execute if score durationSlot12 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot12 speedDebuffs 0
+execute if score durationSlot13 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot13 speedDebuffs 0
+execute if score durationSlot14 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot14 speedDebuffs 0
+execute if score durationSlot15 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot15 speedDebuffs 0
+execute if score durationSlot16 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot16 speedDebuffs 0
 execute if score durationSlot17 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot17 speedDebuffs 0
 execute if score durationSlot18 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot18 speedDebuffs 0
 execute if score durationSlot19 speedDebuffs matches 0 run scoreboard players set speedDebuffSlot19 speedDebuffs 0
@@ -88,14 +88,14 @@ execute if score durationSlot5 speedBuffs matches 0 run scoreboard players set s
 execute if score durationSlot6 speedBuffs matches 0 run scoreboard players set speedBuffSlot6 speedBuffs 0
 execute if score durationSlot7 speedBuffs matches 0 run scoreboard players set speedBuffSlot7 speedBuffs 0
 execute if score durationSlot8 speedBuffs matches 0 run scoreboard players set speedBuffSlot8 speedBuffs 0
-execute if score durationSlot9 speedBuffs matches 0 run scoreboard players set speedBuffSlot17 speedBuffs 0
-execute if score durationSlot10 speedBuffs matches 0 run scoreboard players set speedBuffSlot18 speedBuffs 0
-execute if score durationSlot11 speedBuffs matches 0 run scoreboard players set speedBuffSlot19 speedBuffs 0
-execute if score durationSlot12 speedBuffs matches 0 run scoreboard players set speedBuffSlot20 speedBuffs 0
-execute if score durationSlot12 speedBuffs matches 0 run scoreboard players set speedBuffSlot21 speedBuffs 0
-execute if score durationSlot14 speedBuffs matches 0 run scoreboard players set speedBuffSlot22 speedBuffs 0
-execute if score durationSlot15 speedBuffs matches 0 run scoreboard players set speedBuffSlot23 speedBuffs 0
-execute if score durationSlot16 speedBuffs matches 0 run scoreboard players set speedBuffSlot24 speedBuffs 0
+execute if score durationSlot9 speedBuffs matches 0 run scoreboard players set speedBuffSlot9 speedBuffs 0
+execute if score durationSlot10 speedBuffs matches 0 run scoreboard players set speedBuffSlot10 speedBuffs 0
+execute if score durationSlot11 speedBuffs matches 0 run scoreboard players set speedBuffSlot11 speedBuffs 0
+execute if score durationSlot12 speedBuffs matches 0 run scoreboard players set speedBuffSlot12 speedBuffs 0
+execute if score durationSlot12 speedBuffs matches 0 run scoreboard players set speedBuffSlot23 speedBuffs 0
+execute if score durationSlot14 speedBuffs matches 0 run scoreboard players set speedBuffSlot14 speedBuffs 0
+execute if score durationSlot15 speedBuffs matches 0 run scoreboard players set speedBuffSlot15 speedBuffs 0
+execute if score durationSlot16 speedBuffs matches 0 run scoreboard players set speedBuffSlot16 speedBuffs 0
 execute if score durationSlot17 speedBuffs matches 0 run scoreboard players set speedBuffSlot17 speedBuffs 0
 execute if score durationSlot18 speedBuffs matches 0 run scoreboard players set speedBuffSlot18 speedBuffs 0
 execute if score durationSlot19 speedBuffs matches 0 run scoreboard players set speedBuffSlot19 speedBuffs 0
@@ -115,14 +115,14 @@ execute if score durationSlot5 regen matches 0 run scoreboard players set slot5R
 execute if score durationSlot6 regen matches 0 run scoreboard players set slot6Regen regen 0
 execute if score durationSlot7 regen matches 0 run scoreboard players set slot7Regen regen 0
 execute if score durationSlot8 regen matches 0 run scoreboard players set slot8Regen regen 0
-execute if score durationSlot9 regen matches 0 run scoreboard players set slot17Regen regen 0
-execute if score durationSlot10 regen matches 0 run scoreboard players set slot18Regen regen 0
-execute if score durationSlot11 regen matches 0 run scoreboard players set slot19Regen regen 0
-execute if score durationSlot12 regen matches 0 run scoreboard players set slot20Regen regen 0
-execute if score durationSlot13 regen matches 0 run scoreboard players set slot21Regen regen 0
-execute if score durationSlot14 regen matches 0 run scoreboard players set slot23Regen regen 0
-execute if score durationSlot15 regen matches 0 run scoreboard players set slot23Regen regen 0
-execute if score durationSlot16 regen matches 0 run scoreboard players set slot24Regen regen 0
+execute if score durationSlot9 regen matches 0 run scoreboard players set slot9Regen regen 0
+execute if score durationSlot10 regen matches 0 run scoreboard players set slot10Regen regen 0
+execute if score durationSlot11 regen matches 0 run scoreboard players set slot11Regen regen 0
+execute if score durationSlot12 regen matches 0 run scoreboard players set slot12Regen regen 0
+execute if score durationSlot13 regen matches 0 run scoreboard players set slot13Regen regen 0
+execute if score durationSlot14 regen matches 0 run scoreboard players set slot14Regen regen 0
+execute if score durationSlot15 regen matches 0 run scoreboard players set slot15Regen regen 0
+execute if score durationSlot16 regen matches 0 run scoreboard players set slot16Regen regen 0
 execute if score durationSlot17 regen matches 0 run scoreboard players set slot17Regen regen 0
 execute if score durationSlot18 regen matches 0 run scoreboard players set slot18Regen regen 0
 execute if score durationSlot19 regen matches 0 run scoreboard players set slot19Regen regen 0
@@ -142,14 +142,14 @@ execute if score durationSlot5 shield matches 0 run scoreboard players set shiel
 execute if score durationSlot6 shield matches 0 run scoreboard players set shield slot6 0
 execute if score durationSlot7 shield matches 0 run scoreboard players set shield slot7 0
 execute if score durationSlot8 shield matches 0 run scoreboard players set shield slot8 0
-execute if score durationSlot9 shield matches 0 run scoreboard players set shield slot17 0
-execute if score durationSlot10 shield matches 0 run scoreboard players set shield slot18 0
-execute if score durationSlot11 shield matches 0 run scoreboard players set shield slot19 0
-execute if score durationSlot12 shield matches 0 run scoreboard players set shield slot20 0
-execute if score durationSlot13 shield matches 0 run scoreboard players set shield slot21 0
-execute if score durationSlot14 shield matches 0 run scoreboard players set shield slot23 0
-execute if score durationSlot15 shield matches 0 run scoreboard players set shield slot23 0
-execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot24 0
+execute if score durationSlot9 shield matches 0 run scoreboard players set shield slot9 0
+execute if score durationSlot10 shield matches 0 run scoreboard players set shield slot10 0
+execute if score durationSlot11 shield matches 0 run scoreboard players set shield slot11 0
+execute if score durationSlot12 shield matches 0 run scoreboard players set shield slot12 0
+execute if score durationSlot13 shield matches 0 run scoreboard players set shield slot13 0
+execute if score durationSlot14 shield matches 0 run scoreboard players set shield slot14 0
+execute if score durationSlot15 shield matches 0 run scoreboard players set shield slot15 0
+execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot16 0
 execute if score durationSlot17 shield matches 0 run scoreboard players set shield slot17 0
 execute if score durationSlot18 shield matches 0 run scoreboard players set shield slot18 0
 execute if score durationSlot19 shield matches 0 run scoreboard players set shield slot19 0
@@ -169,14 +169,14 @@ execute if score buffDurationSlot5 atkmodifiers matches 0 run scoreboard players
 execute if score buffDurationSlot6 atkmodifiers matches 0 run scoreboard players set attackBuffSlot6 atkmodifiers 0
 execute if score buffDurationSlot7 atkmodifiers matches 0 run scoreboard players set attackBuffSlot7 atkmodifiers 0
 execute if score buffDurationSlot8 atkmodifiers matches 0 run scoreboard players set attackBuffSlot8 atkmodifiers 0
-execute if score buffDurationSlot9 atkmodifiers matches 0 run scoreboard players set attackBuffSlot17 atkmodifiers 0
-execute if score buffDurationSlot10 atkmodifiers matches 0 run scoreboard players set attackBuffSlot18 atkmodifiers 0
-execute if score buffDurationSlot11 atkmodifiers matches 0 run scoreboard players set attackBuffSlot19 atkmodifiers 0
-execute if score buffDurationSlot12 atkmodifiers matches 0 run scoreboard players set attackBuffSlot20 atkmodifiers 0
-execute if score buffDurationSlot13 atkmodifiers matches 0 run scoreboard players set attackBuffSlot21 atkmodifiers 0
-execute if score buffDurationSlot14 atkmodifiers matches 0 run scoreboard players set attackBuffSlot22 atkmodifiers 0
-execute if score buffDurationSlot15 atkmodifiers matches 0 run scoreboard players set attackBuffSlot23 atkmodifiers 0
-execute if score buffDurationSlot16 atkmodifiers matches 0 run scoreboard players set attackBuffSlot24 atkmodifiers 0
+execute if score buffDurationSlot9 atkmodifiers matches 0 run scoreboard players set attackBuffSlot9 atkmodifiers 0
+execute if score buffDurationSlot10 atkmodifiers matches 0 run scoreboard players set attackBuffSlot10 atkmodifiers 0
+execute if score buffDurationSlot11 atkmodifiers matches 0 run scoreboard players set attackBuffSlot11 atkmodifiers 0
+execute if score buffDurationSlot12 atkmodifiers matches 0 run scoreboard players set attackBuffSlot12 atkmodifiers 0
+execute if score buffDurationSlot13 atkmodifiers matches 0 run scoreboard players set attackBuffSlot13 atkmodifiers 0
+execute if score buffDurationSlot14 atkmodifiers matches 0 run scoreboard players set attackBuffSlot14 atkmodifiers 0
+execute if score buffDurationSlot15 atkmodifiers matches 0 run scoreboard players set attackBuffSlot15 atkmodifiers 0
+execute if score buffDurationSlot16 atkmodifiers matches 0 run scoreboard players set attackBuffSlot16 atkmodifiers 0
 execute if score buffDurationSlot17 atkmodifiers matches 0 run scoreboard players set attackBuffSlot17 atkmodifiers 0
 execute if score buffDurationSlot18 atkmodifiers matches 0 run scoreboard players set attackBuffSlot18 atkmodifiers 0
 execute if score buffDurationSlot19 atkmodifiers matches 0 run scoreboard players set attackBuffSlot19 atkmodifiers 0
@@ -196,14 +196,14 @@ execute if score debuffDurationSlot5 atkmodifiers matches 0 run scoreboard playe
 execute if score debuffDurationSlot6 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot6 atkmodifiers 0
 execute if score debuffDurationSlot7 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot7 atkmodifiers 0
 execute if score debuffDurationSlot8 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot8 atkmodifiers 0
-execute if score debuffDurationSlot9 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot17 atkmodifiers 0
-execute if score debuffDurationSlot10 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot18 atkmodifiers 0
-execute if score debuffDurationSlot11 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot19 atkmodifiers 0
-execute if score debuffDurationSlot12 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot20 atkmodifiers 0
-execute if score debuffDurationSlot13 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot21 atkmodifiers 0
-execute if score debuffDurationSlot14 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot22 atkmodifiers 0
-execute if score debuffDurationSlot15 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot23 atkmodifiers 0
-execute if score debuffDurationSlot16 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot24 atkmodifiers 0
+execute if score debuffDurationSlot9 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot9 atkmodifiers 0
+execute if score debuffDurationSlot10 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot10 atkmodifiers 0
+execute if score debuffDurationSlot11 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot11 atkmodifiers 0
+execute if score debuffDurationSlot12 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot12 atkmodifiers 0
+execute if score debuffDurationSlot13 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot13 atkmodifiers 0
+execute if score debuffDurationSlot14 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot14 atkmodifiers 0
+execute if score debuffDurationSlot15 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot15 atkmodifiers 0
+execute if score debuffDurationSlot16 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot16 atkmodifiers 0
 execute if score debuffDurationSlot17 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot17 atkmodifiers 0
 execute if score debuffDurationSlot18 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot18 atkmodifiers 0
 execute if score debuffDurationSlot19 atkmodifiers matches 0 run scoreboard players set attackDebuffSlot19 atkmodifiers 0
@@ -222,14 +222,14 @@ execute if score durationSlot5 wards matches 0 if score ward slot5 matches 3 run
 execute if score durationSlot6 wards matches 0 if score ward slot6 matches 3 run scoreboard players set ward slot6 0
 execute if score durationSlot7 wards matches 0 if score ward slot7 matches 3 run scoreboard players set ward slot7 0
 execute if score durationSlot8 wards matches 0 if score ward slot8 matches 3 run scoreboard players set ward slot8 0
-execute if score durationSlot9 wards matches 0 if score ward slot17 matches 3 run scoreboard players set ward slot17 0
-execute if score durationSlot10 wards matches 0 if score ward slot18 matches 3 run scoreboard players set ward slot18 0
-execute if score durationSlot11 wards matches 0 if score ward slot19 matches 3 run scoreboard players set ward slot19 0
-execute if score durationSlot12 wards matches 0 if score ward slot20 matches 3 run scoreboard players set ward slot20 0
-execute if score durationSlot13 wards matches 0 if score ward slot21 matches 3 run scoreboard players set ward slot21 0
-execute if score durationSlot14 wards matches 0 if score ward slot23 matches 3 run scoreboard players set ward slot23 0
-execute if score durationSlot15 wards matches 0 if score ward slot23 matches 3 run scoreboard players set ward slot23 0
-execute if score durationSlot16 wards matches 0 if score ward slot24 matches 3 run scoreboard players set ward slot24 0
+execute if score durationSlot9 wards matches 0 if score ward slot9 matches 3 run scoreboard players set ward slot9 0
+execute if score durationSlot10 wards matches 0 if score ward slot10 matches 3 run scoreboard players set ward slot10 0
+execute if score durationSlot11 wards matches 0 if score ward slot11 matches 3 run scoreboard players set ward slot11 0
+execute if score durationSlot12 wards matches 0 if score ward slot12 matches 3 run scoreboard players set ward slot12 0
+execute if score durationSlot13 wards matches 0 if score ward slot13 matches 3 run scoreboard players set ward slot13 0
+execute if score durationSlot14 wards matches 0 if score ward slot14 matches 3 run scoreboard players set ward slot14 0
+execute if score durationSlot15 wards matches 0 if score ward slot15 matches 3 run scoreboard players set ward slot15 0
+execute if score durationSlot16 wards matches 0 if score ward slot16 matches 3 run scoreboard players set ward slot16 0
 execute if score durationSlot17 wards matches 0 if score ward slot17 matches 3 run scoreboard players set ward slot17 0
 execute if score durationSlot18 wards matches 0 if score ward slot18 matches 3 run scoreboard players set ward slot18 0
 execute if score durationSlot19 wards matches 0 if score ward slot19 matches 3 run scoreboard players set ward slot19 0

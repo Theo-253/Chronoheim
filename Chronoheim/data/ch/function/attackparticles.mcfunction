@@ -1,0 +1,1 @@
+execute if score slot1isatk booleans matches 1 run execute at @n[name=slot1,type=armor_stand] run particle glow ~ ~1 ~ 0.9 0.9 0.9 0.01 2

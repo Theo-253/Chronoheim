@@ -1,5 +1,5 @@
 scoreboard players remove alivep6 deaths 1
-function ch:cleanseslot24
+function chthree:cleanseslot24
 execute if score character# slot17 matches 28 run scoreboard players set cooldown slot17 0
 execute if score character# slot18 matches 28 run scoreboard players set cooldown slot18 0
 execute if score character# slot19 matches 28 run scoreboard players set cooldown slot19 0

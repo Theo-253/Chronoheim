@@ -10,5 +10,5 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:5,max:5}}}}} run execute if score slot23isatk booleans matches 1.. run scoreboard players operation cooldown slot23 = roboCD abilityStats
 scoreboard players set burn3 burn 1
 scoreboard players set abilitynumber3 abilities 5
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:5,max:5}}}}} run function ch:abilitygivetargetsp6reverse
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:5,max:5}}}}} run function ch:abilitygivetargetsp5reverse
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:5,max:5}}}}} run function chthree:abilitygivetargetsp6reverse
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:5,max:5}}}}} run function chthree:abilitygivetargetsp5reverse

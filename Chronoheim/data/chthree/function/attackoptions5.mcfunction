@@ -43,5 +43,5 @@ give @p[tag=p6] feather[minecraft:custom_name="View Speeds",food={can_always_eat
 give @p[tag=p6] apple[minecraft:custom_name="View HP",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:"regeneration",duration:1,amplifier:2,show_particles:0b}]}]}] 64
 give @p[tag=p6] book[minecraft:custom_name="View Spell Cooldowns",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:"regeneration",duration:1,amplifier:3,show_particles:0b}]}]}] 64
 execute if score slot21 stun matches 1.. run title @a[tag=game3] actionbar "Slot 21 was Stunned!"
-execute if score slot21 stun matches 1.. run function ch:turnend
+execute if score slot21 stun matches 1.. run function chthree:turnend
 execute if score slot21 stun matches 1.. run scoreboard players remove slot21 stun 1

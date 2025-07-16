@@ -26,7 +26,7 @@ execute if score slot20isatk booleans matches 1 run scoreboard players operation
 execute if score slot20isatk booleans matches 1 run scoreboard players operation shield slot21 -= atk3 saves
 #damage + shield reset (all)
 execute if score shield slot21 matches ..0 if score ward slot21 matches 0 run scoreboard players operation slot21 hp += shield slot21
-execute if score ward slot21 matches 1.. run function ch:wardslot21
+execute if score ward slot21 matches 1.. run function chthree:wardslot21
 execute if score shield slot21 matches ..0 run scoreboard players set shield slot21 0
 execute at @e[name=slot21,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 
@@ -39,7 +39,7 @@ execute if score splash slot17 matches 1.. run execute if score slot17isatk bool
 execute if score splash slot17 matches 1.. run execute if score slot17isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot23
 execute if score splash slot17 matches 1.. run execute if score slot17isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot23
 execute if score ward slot23 matches 0 run execute if score splash slot17 matches 1.. run execute if score slot17isatk booleans matches 1 run scoreboard players operation shield slot23 -= splashdamage3 saves
-execute if score ward slot23 matches 1.. run execute if score splash slot17 matches 1.. run execute if score slot17isatk booleans matches 1 run function ch:wardslot23
+execute if score ward slot23 matches 1.. run execute if score splash slot17 matches 1.. run execute if score slot17isatk booleans matches 1 run function chthree:wardslot23
 execute if score splash slot17 matches 1.. if score slot17isatk booleans matches 1 at @e[name=slot23,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot18
 execute if score splash slot18 matches 1.. run execute if score slot18isatk booleans matches 1 run scoreboard players operation splashdamage3 saves = atk slot18
@@ -48,7 +48,7 @@ execute if score splash slot18 matches 1.. run execute if score slot18isatk bool
 execute if score splash slot18 matches 1.. run execute if score slot18isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot23
 execute if score splash slot18 matches 1.. run execute if score slot18isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot23
 execute if score ward slot23 matches 0 run execute if score splash slot18 matches 1.. run execute if score slot18isatk booleans matches 1 run scoreboard players operation shield slot23 -= splashdamage3 saves
-execute if score ward slot23 matches 1.. run execute if score splash slot18 matches 1.. run execute if score slot18isatk booleans matches 1 run function ch:wardslot23
+execute if score ward slot23 matches 1.. run execute if score splash slot18 matches 1.. run execute if score slot18isatk booleans matches 1 run function chthree:wardslot23
 execute if score splash slot18 matches 1.. if score slot18isatk booleans matches 1 at @e[name=slot23,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 
 #slot19
@@ -58,7 +58,7 @@ execute if score splash slot19 matches 1.. run execute if score slot19isatk bool
 execute if score splash slot19 matches 1.. run execute if score slot19isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot23
 execute if score splash slot19 matches 1.. run execute if score slot19isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot23
 execute if score ward slot23 matches 0 run execute if score splash slot19 matches 1.. run execute if score slot19isatk booleans matches 1 run scoreboard players operation shield slot23 -= splashdamage3 saves
-execute if score ward slot23 matches 1.. run execute if score splash slot19 matches 1.. run execute if score slot19isatk booleans matches 1 run function ch:wardslot23
+execute if score ward slot23 matches 1.. run execute if score splash slot19 matches 1.. run execute if score slot19isatk booleans matches 1 run function chthree:wardslot23
 execute if score splash slot19 matches 1.. if score slot19isatk booleans matches 1 at @e[name=slot23,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 
 #slot20
@@ -68,12 +68,12 @@ execute if score splash slot20 matches 1.. run execute if score slot20isatk bool
 execute if score splash slot20 matches 1.. run execute if score slot20isatk booleans matches 1 run scoreboard players operation splashdamage3 saves += marks slot23
 execute if score splash slot20 matches 1.. run execute if score slot20isatk booleans matches 1 run scoreboard players operation splashdamage3 saves /= atkmultiplier slot23
 execute if score ward slot23 matches 0 run execute if score splash slot20 matches 1.. run execute if score slot20isatk booleans matches 1 run scoreboard players operation shield slot23 -= splashdamage3 saves
-execute if score ward slot23 matches 1.. run execute if score splash slot20 matches 1.. run execute if score slot20isatk booleans matches 1 run function ch:wardslot23
+execute if score ward slot23 matches 1.. run execute if score splash slot20 matches 1.. run execute if score slot20isatk booleans matches 1 run function chthree:wardslot23
 execute if score splash slot20 matches 1.. if score slot20isatk booleans matches 1 at @e[name=slot23,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 
 #damage + shield reset (all)
 execute if score shield slot23 matches ..0 if score ward slot23 matches 0 run scoreboard players operation slot23 hp += shield slot23
-execute if score ward slot23 matches 1.. run function ch:wardslot23
+execute if score ward slot23 matches 1.. run function chthree:wardslot23
 execute if score shield slot23 matches ..0 run scoreboard players set shield slot23 0
 
 
@@ -155,23 +155,23 @@ execute if score slot19isatk booleans matches 1 if score character# slot19 match
 
 #double target + turn end trigger
 #regular attack
-execute if score slot17isatk booleans matches 1 run execute if score doubleatk slot17 matches 0 run function ch:turnend
-execute if score slot18isatk booleans matches 1 run execute if score doubleatk slot18 matches 0 run function ch:turnend
-execute if score slot19isatk booleans matches 1 run execute if score doubleatk slot19 matches 0 run function ch:turnend
-execute if score slot20isatk booleans matches 1 run execute if score doubleatk slot20 matches 0 run function ch:turnend
+execute if score slot17isatk booleans matches 1 run execute if score doubleatk slot17 matches 0 run function chthree:turnend
+execute if score slot18isatk booleans matches 1 run execute if score doubleatk slot18 matches 0 run function chthree:turnend
+execute if score slot19isatk booleans matches 1 run execute if score doubleatk slot19 matches 0 run function chthree:turnend
+execute if score slot20isatk booleans matches 1 run execute if score doubleatk slot20 matches 0 run function chthree:turnend
 #double target (2nd hit)
-execute if score slot17isatk booleans matches 1 run execute if score doubleatk slot17 matches 1 run execute if score useddoubleatk slot17 matches 1 run function ch:turnend
-execute if score slot18isatk booleans matches 1 run execute if score doubleatk slot18 matches 1 run execute if score useddoubleatk slot18 matches 1 run function ch:turnend
-execute if score slot19isatk booleans matches 1 run execute if score doubleatk slot19 matches 1 run execute if score useddoubleatk slot19 matches 1 run function ch:turnend
-execute if score slot20isatk booleans matches 1 run execute if score doubleatk slot20 matches 1 run execute if score useddoubleatk slot20 matches 1 run function ch:turnend
+execute if score slot17isatk booleans matches 1 run execute if score doubleatk slot17 matches 1 run execute if score useddoubleatk slot17 matches 1 run function chthree:turnend
+execute if score slot18isatk booleans matches 1 run execute if score doubleatk slot18 matches 1 run execute if score useddoubleatk slot18 matches 1 run function chthree:turnend
+execute if score slot19isatk booleans matches 1 run execute if score doubleatk slot19 matches 1 run execute if score useddoubleatk slot19 matches 1 run function chthree:turnend
+execute if score slot20isatk booleans matches 1 run execute if score doubleatk slot20 matches 1 run execute if score useddoubleatk slot20 matches 1 run function chthree:turnend
 #double target (1st hit)
-execute if score slot17isatk booleans matches 1 run execute if score doubleatk slot17 matches 1 run execute if score useddoubleatk slot17 matches 0 run function ch:basicattackstartp5
+execute if score slot17isatk booleans matches 1 run execute if score doubleatk slot17 matches 1 run execute if score useddoubleatk slot17 matches 0 run function chthree:basicattackstartp5
 execute if score slot17isatk booleans matches 1 run execute if score doubleatk slot17 matches 1 run execute if score useddoubleatk slot17 matches 0 run scoreboard players set useddoubleatk slot17 1
-execute if score slot18isatk booleans matches 1 run execute if score doubleatk slot18 matches 1 run execute if score useddoubleatk slot18 matches 0 run function ch:basicattackstartp5
+execute if score slot18isatk booleans matches 1 run execute if score doubleatk slot18 matches 1 run execute if score useddoubleatk slot18 matches 0 run function chthree:basicattackstartp5
 execute if score slot18isatk booleans matches 1 run execute if score doubleatk slot18 matches 1 run execute if score useddoubleatk slot18 matches 0 run scoreboard players set useddoubleatk slot18 1
-execute if score slot19isatk booleans matches 1 run execute if score doubleatk slot19 matches 1 run execute if score useddoubleatk slot19 matches 0 run function ch:basicattackstartp5
+execute if score slot19isatk booleans matches 1 run execute if score doubleatk slot19 matches 1 run execute if score useddoubleatk slot19 matches 0 run function chthree:basicattackstartp5
 execute if score slot19isatk booleans matches 1 run execute if score doubleatk slot19 matches 1 run execute if score useddoubleatk slot19 matches 0 run scoreboard players set useddoubleatk slot19 1
-execute if score slot20isatk booleans matches 1 run execute if score doubleatk slot20 matches 1 run execute if score useddoubleatk slot20 matches 0 run function ch:basicattackstartp5
+execute if score slot20isatk booleans matches 1 run execute if score doubleatk slot20 matches 1 run execute if score useddoubleatk slot20 matches 0 run function chthree:basicattackstartp5
 execute if score slot20isatk booleans matches 1 run execute if score doubleatk slot20 matches 1 run execute if score useddoubleatk slot20 matches 0 run scoreboard players set useddoubleatk slot20 1
 
 

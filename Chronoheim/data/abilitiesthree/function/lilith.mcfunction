@@ -18,7 +18,7 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run execute at @n[type=armor_stand,name=slot20] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0 100
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run scoreboard players set burn3 burn 1
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run scoreboard players set abilityusep5 booleans 1
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run function ch:turnend
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run function chthree:turnend
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Dark Ritual!"]
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run effect clear @a[tag=p5] fire_resistance
 
@@ -44,7 +44,7 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run scoreboard players set burn3 burn 1
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run scoreboard players set abilityusep6 booleans 1
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run function ch:turnend
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run function chthree:turnend
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Dark Ritual!"]
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:21,max:21}}}}} run effect clear @a[tag=p6] fire_resistance
 

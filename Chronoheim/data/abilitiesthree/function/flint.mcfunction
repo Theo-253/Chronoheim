@@ -58,9 +58,9 @@ execute if score slot21isatk booleans matches 1.. at @e[name=slot21] run particl
 execute if score slot23isatk booleans matches 1.. at @e[name=slot23] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 40
 execute if score slot23isatk booleans matches 1.. at @e[name=slot23] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 40
 
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run function ch:basicattackstartp5
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run function chthree:basicattackstartp5
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=game3] fire_resistance
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run function ch:basicattackstartp6
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run function chthree:basicattackstartp6
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:11,max:11}}}}} run effect clear @a[tag=game3] fire_resistance
 scoreboard players set flintatkswap booleans 0
 scoreboard players set burn3 burn 1

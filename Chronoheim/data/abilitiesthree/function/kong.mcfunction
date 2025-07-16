@@ -11,5 +11,5 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 scoreboard players set burn3 burn 1
 scoreboard players set abilitynumber3 abilities 7
 
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:7,max:7}}}}} run function ch:abilitygivetargetsp5
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:7,max:7}}}}} run function ch:abilitygivetargetsp6
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:7,max:7}}}}} run function chthree:abilitygivetargetsp5
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:7,max:7}}}}} run function chthree:abilitygivetargetsp6

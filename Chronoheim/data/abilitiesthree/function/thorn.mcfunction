@@ -16,8 +16,8 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot18isatk booleans matches 1.. run scoreboard players operation cooldown slot18 = thornCD abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot19isatk booleans matches 1.. run scoreboard players operation cooldown slot19 = thornCD abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run scoreboard players set abilityusep5 booleans 1
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot18isatk booleans matches 0 run function ch:turnend
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot18isatk booleans matches 1 run function ch:basicattackstartp5
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot18isatk booleans matches 0 run function chthree:turnend
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot18isatk booleans matches 1 run function chthree:basicattackstartp5
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run effect clear @a[tag=p5] fire_resistance
 
 ## P2
@@ -32,8 +32,8 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot23isatk booleans matches 1.. run scoreboard players operation cooldown slot23 = thornCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run execute if score slot23isatk booleans matches 1.. run scoreboard players operation cooldown slot23 = thornCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run scoreboard players set abilityusep6 booleans 1
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot23isatk booleans matches 0 run function ch:turnend
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot23isatk booleans matches 1 run function ch:basicattackstartp6
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot23isatk booleans matches 0 run function chthree:turnend
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot23isatk booleans matches 1 run function chthree:basicattackstartp6
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run effect clear @a[tag=p6] fire_resistance
 
 

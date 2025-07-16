@@ -78,14 +78,14 @@ scoreboard players set slot24isatk booleans 0
 scoreboard players set game3start ongoinggames 0
 scoreboard players reset slot20 hp
 scoreboard players reset slot24 hp
-function ch:cleanseslot17
-function ch:cleanseslot18
-function ch:cleanseslot19
-function ch:cleanseslot20
-function ch:cleanseslot21
-function ch:cleanseslot23
-function ch:cleanseslot23
-function ch:cleanseslot24
+function chthree:cleanseslot17
+function chthree:cleanseslot18
+function chthree:cleanseslot19
+function chthree:cleanseslot20
+function chthree:cleanseslot21
+function chthree:cleanseslot23
+function chthree:cleanseslot23
+function chthree:cleanseslot24
 scoreboard players set durationSlot17 speedBuffs 0
 scoreboard players set durationSlot18 speedBuffs 0
 scoreboard players set durationSlot19 speedBuffs 0

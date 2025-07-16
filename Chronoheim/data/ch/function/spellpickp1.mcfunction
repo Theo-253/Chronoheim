@@ -6,6 +6,8 @@ execute if score character# slot7 matches 1.. run execute if score character# sl
 execute if score character# slot7 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -2 run scoreboard players set Spell_Points_P2 Spell_Points 9
 execute if score character# slot7 matches 1.. run execute if score character# slot3 matches 1.. run execute if score Spell_Points_P2 Spell_Points matches -3 run scoreboard players set Spell_Points_P2 Spell_Points 11
 
+give @p[tag=p1] barrier[minecraft:custom_name="Skip Spell Picking",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:water_breathing,duration:1,amplifier:0,show_particles:0b}]}]}]
+
 scoreboard players operation spellpick1 drafts = Spell_Points_P1 Spell_Points
 
 #Fireball Select P1

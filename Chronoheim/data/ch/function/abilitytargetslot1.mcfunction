@@ -73,15 +73,15 @@ execute if score abilitynumber abilities matches 9 run execute at @n[type=armor_
 execute if score abilitynumber abilities matches 9 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Most Wanted on Slot 1!"]
 
 #Robo
-execute if score abilitynumber abilities matches 5 if score durationSlot2 shield < roboDuration abilityStats run scoreboard players operation durationSlot2 shield = roboDuration abilityStats
+execute if score abilitynumber abilities matches 5 if score durationSlot1 shield < roboDuration abilityStats run scoreboard players operation durationSlot1 shield = roboDuration abilityStats
 execute if score abilitynumber abilities matches 5 run scoreboard players operation shield slot1 += robo abilityStats
 execute if score abilitynumber abilities matches 5 if score slot1isatk booleans matches 1 run scoreboard players operation shield slot1 += roboLeader abilityStats
 execute if score abilitynumber abilities matches 5 run execute at @n[name=slot1,type=armor_stand] run particle minecraft:wax_off ~ ~1 ~ 0.6 0.6 0.6 0.0001 400
 execute if score abilitynumber abilities matches 5 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Force Field on Slot 1!"]
 
 #Kirin
-execute if score abilitynumber abilities matches 8 if score buffDurationSlot2 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot2 atkmodifiers = kirinDuration abilityStats
-execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffSlot2 atkmodifiers += kirin abilityStats
+execute if score abilitynumber abilities matches 8 if score buffDurationSlot1 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot1 atkmodifiers = kirinDuration abilityStats
+execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffSlot1 atkmodifiers += kirin abilityStats
 execute if score abilitynumber abilities matches 8 if score slot1isatk booleans matches 1 if score slot1bleeding booleaneffects matches 0.. run scoreboard players operation slot1 hp += kirinLeader abilityStats
 execute if score abilitynumber abilities matches 8 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Mythical Empowerment on Slot 1!"]
 execute if score abilitynumber abilities matches 8 at @e[name=slot1] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.1 100

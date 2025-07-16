@@ -17,6 +17,9 @@ function ui:ui
 function ui:characterui
 function ui:scoreboardui
 function ch:attackparticles
+function uitoo:characterui
+function uitoo:scoreboardui
+function uitoo:ui
 
 #game 2
 execute if score game2Ongoing ongoinggames matches 1 run function chtoo:game2
@@ -30,9 +33,8 @@ execute as @a[tag=p3] run execute as @a[tag=p4] if score game2start ongoinggames
 execute as @a[tag=p3] run execute as @a[tag=p4] if score game2start ongoinggames matches 0 run scoreboard players set game2start ongoinggames 1
 
 function chtoo:effectparticles
-function uitoo:ui
-function uitoo:characterui
-function uitoo:scoreboardui
+
+say borzorg
 
 #game 3
 execute if score game3Ongoing ongoinggames matches 1 run function chthree:game3

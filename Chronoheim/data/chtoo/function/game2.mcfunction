@@ -51,14 +51,14 @@ execute if score attackIsOngoingGame2 booleans matches 0 run execute if score sp
 
 #When I get elected, we will have so much winning
 execute if score alivep3 deaths matches 0 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," @p[tag=p4] has won the duel against @p[tag=p3]!"]
-execute if score alivep3 deaths matches 0 run scoreboard players add @p[tag=p3] Wins 1
-execute if score alivep3 deaths matches 0 run scoreboard players add @p[tag=p3] Combat_Rating 5
-execute if score alivep3 deaths matches 0 run scoreboard players remove @p[tag=p4] Combat_Rating 5 
+execute if score alivep3 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Wins 1
+execute if score alivep3 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Combat_Rating 5
+execute if score alivep3 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p4] Combat_Rating 5 
 execute if score alivep3 deaths matches 0 run function chtoo:win
 execute if score alivep4 deaths matches 0 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," @p[tag=p3] has won the duel against @p[tag=p4]!"]
-execute if score alivep4 deaths matches 0 run scoreboard players add @p[tag=p4] Wins 1
-execute if score alivep4 deaths matches 0 run scoreboard players add @p[tag=p4] Combat_Rating 5
-execute if score alivep4 deaths matches 0 run scoreboard players remove @p[tag=p3] Combat_Rating 5
+execute if score alivep4 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Wins 1
+execute if score alivep4 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Combat_Rating 5
+execute if score alivep4 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p3] Combat_Rating 5
 execute if score alivep4 deaths matches 0 run function chtoo:win
 
 #Rapidtick

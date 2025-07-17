@@ -508,6 +508,7 @@ scoreboard players set eidolonLeader abilityStats 460
 scoreboard players set domino heroattack 100
 scoreboard players set domino herohealth 1920
 scoreboard players set domino herospeed 1200
+scoreboard players set dominoCD abilityStats 4
 scoreboard players set domino abilityStats 160
 scoreboard players set dominoDuration abilityStats 3
 scoreboard players set dominoPoisonLeader abilityStats 80

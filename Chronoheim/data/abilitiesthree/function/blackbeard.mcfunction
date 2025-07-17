@@ -55,7 +55,7 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run execute if score slot18isatk booleans matches 1 run scoreboard players operation cooldown slot18 = blackbeardCD abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run execute if score slot19isatk booleans matches 1 run scoreboard players operation cooldown slot19 = blackbeardCD abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run function chthree:turnend
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used Beard Bomb!"]
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Beard Bomb!"]
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run clear @p[tag=p5]
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run effect clear @a[tag=p5] fire_resistance
 
@@ -117,7 +117,7 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run execute if score slot22isatk booleans matches 1 run scoreboard players operation cooldown slot22 = blackbeardCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run execute if score slot23isatk booleans matches 1 run scoreboard players operation cooldown slot23 = blackbeardCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run function chthree:turnend
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used Beard Bomb!"]
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Beard Bomb!"]
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run clear @a[tag=p6]
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:16,max:16}}}}} run effect clear @a[tag=p6] fire_resistance
 

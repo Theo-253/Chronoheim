@@ -21,8 +21,8 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot18isatk booleans matches 1 run scoreboard players operation cooldown slot18 = docCD abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot19isatk booleans matches 1 run scoreboard players operation cooldown slot19 = docCD abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run function chthree:turnend
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p5]"}," used The Doctor is in!"]
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=game2] fire_resistance
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used The Doctor is in!"]
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=game3] fire_resistance
 
 #Player 2
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot21 hp matches 1.. run scoreboard players operation durationSlot21 regen = docDuration abilityStats
@@ -46,8 +46,8 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot22isatk booleans matches 1 run scoreboard players operation cooldown slot22 = docCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot23isatk booleans matches 1 run scoreboard players operation cooldown slot23 = docCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run function chthree:turnend
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p6]"}," used The Doctor is in!"]
-execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=game2] fire_resistance
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used The Doctor is in!"]
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=game3] fire_resistance
 
 
 

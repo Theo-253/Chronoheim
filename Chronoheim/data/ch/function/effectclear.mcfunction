@@ -49,7 +49,7 @@ execute if score durationSlot20 poison matches 0 run scoreboard players set slot
 execute if score durationSlot21 poison matches 0 run scoreboard players set slot21Poison poison 0
 execute if score durationSlot22 poison matches 0 run scoreboard players set slot22Poison poison 0
 execute if score durationSlot23 poison matches 0 run scoreboard players set slot23Poison poison 0
-execute if score durationSlot24 poison matches 0 run scoreboard players set slot23Poison poison 0
+execute if score durationSlot24 poison matches 0 run scoreboard players set slot24Poison poison 0
 
 
 #Speed Debuffs
@@ -130,7 +130,7 @@ execute if score durationSlot20 regen matches 0 run scoreboard players set slot2
 execute if score durationSlot21 regen matches 0 run scoreboard players set slot21Regen regen 0
 execute if score durationSlot22 regen matches 0 run scoreboard players set slot22Regen regen 0
 execute if score durationSlot23 regen matches 0 run scoreboard players set slot23Regen regen 0
-execute if score durationSlot24 regen matches 0 run scoreboard players set slot23Regen regen 0
+execute if score durationSlot24 regen matches 0 run scoreboard players set slot24Regen regen 0
 
 
 #Shield
@@ -157,7 +157,7 @@ execute if score durationSlot20 shield matches 0 run scoreboard players set shie
 execute if score durationSlot21 shield matches 0 run scoreboard players set shield slot21 0
 execute if score durationSlot22 shield matches 0 run scoreboard players set shield slot22 0
 execute if score durationSlot23 shield matches 0 run scoreboard players set shield slot23 0
-execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot23 0
+execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot24 0
 
 
 #Damage Buff
@@ -237,7 +237,7 @@ execute if score durationSlot20 wards matches 0 if score ward slot20 matches 3 r
 execute if score durationSlot21 wards matches 0 if score ward slot21 matches 3 run scoreboard players set ward slot21 0
 execute if score durationSlot22 wards matches 0 if score ward slot22 matches 3 run scoreboard players set ward slot22 0
 execute if score durationSlot23 wards matches 0 if score ward slot23 matches 3 run scoreboard players set ward slot23 0
-execute if score durationSlot24 wards matches 0 if score ward slot23 matches 3 run scoreboard players set ward slot23 0
+execute if score durationSlot24 wards matches 0 if score ward slot24 matches 3 run scoreboard players set ward slot24 0
 
 execute if score alivep1 deaths matches 1 if score alivep2 deaths matches 1 run scoreboard players set durationSlot1-5 fear 0
 execute if score alivep1 deaths matches 1 if score alivep2 deaths matches 1 run scoreboard players set durationSlot1-6 fear 0

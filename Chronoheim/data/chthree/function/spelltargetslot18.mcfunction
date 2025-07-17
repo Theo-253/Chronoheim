@@ -41,7 +41,7 @@ execute if score spellnumber3 spells matches 6 run scoreboard players operation 
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg3 saves
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score frostboltDuration spellStats > durationSlot18 speedDebuffs run scoreboard players operation durationSlot18 speedDebuffs = frostboltDuration spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score frostboltDuration spellStats > debuffDurationSlot18 atkmodifiers run scoreboard players operation debuffDurationSlot18 atkmodifiers = frostboltDuration spellStats
-execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation speedDebuffslot18 speedDebuffs += frostboltSpDebuff spellStats
+execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation speedDebuffSlot18 speedDebuffs += frostboltSpDebuff spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation attackDebuffSlot18 atkmodifiers += frostboltDmgDebuff spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation speed slot18 -= frostboltSpDebuff spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score shield slot18 matches ..0 run scoreboard players operation slot18 hp += shield slot18
@@ -105,7 +105,7 @@ execute if score spellnumber3 spells matches 23 run execute if score ward slot18
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 if score witchesBrewDuration spellStats > debuffDurationSlot18 atkmodifiers run scoreboard players operation debuffDurationSlot18 atkmodifiers = witchesBrewDuration spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 if score witchesBrewDuration spellStats > durationSlot18 poison run scoreboard players operation durationSlot18 poison = witchesBrewDuration spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 if score witchesBrewDuration spellStats > durationSlot18 burn run scoreboard players operation durationSlot18 burn = witchesBrewDuration spellStats
-execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation speedDebuffslot18 speedDebuffs += witchesBrewSpDebuff spellStats
+execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation speedDebuffSlot18 speedDebuffs += witchesBrewSpDebuff spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation attackDebuffSlot18 atkmodifiers += witchesBrewDmgDebuff spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation slot18Poison poison += witchesBrew spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation slot18Burn burn += witchesBrewBurn spellStats
@@ -200,7 +200,7 @@ execute if score spellnumber3 spells matches 21 run tellraw @a[tag=game3] ["",{"
 
 #Second wind
 execute if score spellnumber3 spells matches 22 run execute if score durationSlot18 speedBuffs < secondWindDuration spellStats run scoreboard players operation durationSlot18 speedBuffs = secondWindDuration spellStats
-execute if score spellnumber3 spells matches 22 run scoreboard players operation speedBuffslot18 speedBuffs += secondWindSpeed spellStats
+execute if score spellnumber3 spells matches 22 run scoreboard players operation speedBuffSlot18 speedBuffs += secondWindSpeed spellStats
 execute if score spellnumber3 spells matches 22 run scoreboard players operation speed slot18 += secondWindSpeed spellStats
 execute if score spellnumber3 spells matches 22 if score slot18bleeding booleaneffects matches 0 run scoreboard players operation slot18 hp += secondWind spellStats
 execute if score spellnumber3 spells matches 22 if score slot18bleeding booleaneffects matches 0 run scoreboard players operation slot18 hp += spellbuffsp5 spells

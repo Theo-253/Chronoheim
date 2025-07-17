@@ -42,8 +42,8 @@ execute if score slot17 hp matches 1.. run execute if score character# slot17 ma
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -2 run scoreboard players operation speed slot17 = demon herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -3 run scoreboard players operation speed slot17 = healingtotem herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -4 run scoreboard players operation speed slot17 = golemite herospeed
-scoreboard players operation speed slot17 -= speedDebuffslot17 speedDebuffs
-scoreboard players operation speed slot17 += speedBuffslot17 speedBuffs
+scoreboard players operation speed slot17 -= speedDebuffSlot17 speedDebuffs
+scoreboard players operation speed slot17 += speedBuffSlot17 speedBuffs
 
 
 #Slot 2 Speed Resets
@@ -81,8 +81,8 @@ execute if score slot18 hp matches 1.. run execute if score character# slot18 ma
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -2 run scoreboard players operation speed slot18 = demon herospeed
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -3 run scoreboard players operation speed slot18 = healingtotem herospeed
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -4 run scoreboard players operation speed slot18 = golemite herospeed
-scoreboard players operation speed slot18 -= speedDebuffslot18 speedDebuffs
-scoreboard players operation speed slot18 += speedBuffslot18 speedBuffs
+scoreboard players operation speed slot18 -= speedDebuffSlot18 speedDebuffs
+scoreboard players operation speed slot18 += speedBuffSlot18 speedBuffs
 
 
 #Slot 3 Speed Resets
@@ -120,8 +120,8 @@ execute if score slot19 hp matches 1.. run execute if score character# slot19 ma
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -2 run scoreboard players operation speed slot19 = demon herospeed
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -3 run scoreboard players operation speed slot19 = healingtotem herospeed
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -4 run scoreboard players operation speed slot19 = golemite herospeed
-scoreboard players operation speed slot19 -= speedDebuffslot19 speedDebuffs
-scoreboard players operation speed slot19 += speedBuffslot19 speedBuffs
+scoreboard players operation speed slot19 -= speedDebuffSlot19 speedDebuffs
+scoreboard players operation speed slot19 += speedBuffSlot19 speedBuffs
 
 
 
@@ -160,8 +160,8 @@ execute if score slot21 hp matches 1.. run execute if score character# slot21 ma
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -2 run scoreboard players operation speed slot21 = demon herospeed
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -3 run scoreboard players operation speed slot21 = healingtotem herospeed
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -4 run scoreboard players operation speed slot21 = golemite herospeed
-scoreboard players operation speed slot21 -= speedDebuffslot21 speedDebuffs
-scoreboard players operation speed slot21 += speedBuffslot21 speedBuffs
+scoreboard players operation speed slot21 -= speedDebuffSlot21 speedDebuffs
+scoreboard players operation speed slot21 += speedBuffSlot21 speedBuffs
 
 
 
@@ -200,8 +200,8 @@ execute if score slot22 hp matches 1.. run execute if score character# slot22 ma
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -2 run scoreboard players operation speed slot22 = demon herospeed
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -3 run scoreboard players operation speed slot22 = healingtotem herospeed
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -4 run scoreboard players operation speed slot22 = golemite herospeed
-scoreboard players operation speed slot22 -= speedDebuffslot22 speedDebuffs
-scoreboard players operation speed slot22 += speedBuffslot22 speedBuffs
+scoreboard players operation speed slot22 -= speedDebuffSlot22 speedDebuffs
+scoreboard players operation speed slot22 += speedBuffSlot22 speedBuffs
 
 
 #Slot 7 Speed Resets
@@ -239,8 +239,8 @@ execute if score slot23 hp matches 1.. run execute if score character# slot23 ma
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -2 run scoreboard players operation speed slot23 = demon herospeed
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -3 run scoreboard players operation speed slot23 = healingtotem herospeed
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -4 run scoreboard players operation speed slot23 = golemite herospeed
-scoreboard players operation speed slot23 -= speedDebuffslot23 speedDebuffs
-scoreboard players operation speed slot23 += speedBuffslot23 speedBuffs
+scoreboard players operation speed slot23 -= speedDebuffSlot23 speedDebuffs
+scoreboard players operation speed slot23 += speedBuffSlot23 speedBuffs
 
 
 
@@ -250,8 +250,8 @@ execute if score slot20 hp matches 1.. run execute if score character# slot20 ma
 execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -2 run scoreboard players operation speed slot20 = demon herospeed
 execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -3 run scoreboard players operation speed slot20 = healingtotem herospeed
 execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -4 run scoreboard players operation speed slot20 = golemite herospeed
-scoreboard players operation speed slot20 -= speedDebuffslot20 speedDebuffs
-scoreboard players operation speed slot20 += speedBuffslot20 speedBuffs
+scoreboard players operation speed slot20 -= speedDebuffSlot20 speedDebuffs
+scoreboard players operation speed slot20 += speedBuffSlot20 speedBuffs
 
 
 #Slot 8 Speed Resets

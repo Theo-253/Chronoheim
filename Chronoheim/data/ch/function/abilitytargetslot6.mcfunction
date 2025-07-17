@@ -58,7 +58,7 @@ execute if score abilitynumber abilities matches 7 run execute if score ward slo
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run scoreboard players operation speedDebuffSlot6 speedDebuffs += kongSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run scoreboard players operation attackDebuffSlot6 atkmodifiers += kongDmgDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation attackDebuffSlot6 atkmodifiers += kongLeaderDmgDebuff abilityStats
-execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation speedDebuffslot6 speedDebuffs += kongLeaderSpDebuff abilityStats
+execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation speedDebuffSlot6 speedDebuffs += kongLeaderSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation speed slot6 -= kongLeaderSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run scoreboard players operation speed slot6 -= kongSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
@@ -91,7 +91,7 @@ execute if score abilitynumber abilities matches 12 run tellraw @a[tag=game1] ["
 execute if score abilitynumber abilities matches 12 if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score abilitynumber abilities matches 12 at @e[name=slot6] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation durationSlot6 speedDebuffs = aceLeaderDuration abilityStats
-execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation speedDebuffslot6 speedDebuffs = aceLeader abilityStats
+execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation speedDebuffSlot6 speedDebuffs = aceLeader abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot2 matches 12 run scoreboard players operation speed slot6 -= aceLeader abilityStats
 #Gabriel
 execute if score abilitynumber abilities matches 22 run scoreboard players operation abilityDmg saves = gabriel abilityStats

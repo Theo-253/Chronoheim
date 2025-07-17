@@ -55,10 +55,10 @@ execute if score abilitynumber3 abilities matches 7 run scoreboard players opera
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run scoreboard players operation shield slot20 -= abilityDmg3 saves
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 if score kongSpDebuffDuration abilityStats > durationSlot20 speedDebuffs run scoreboard players operation durationSlot20 speedDebuffs = kongSpDebuffDuration abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 if score kongDmgDebuffDuration abilityStats > debuffDurationSlot20 atkmodifiers run scoreboard players operation debuffDurationSlot20 atkmodifiers = kongDmgDebuffDuration abilityStats
-execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run scoreboard players operation speedDebuffslot20 speedDebuffs += kongSpDebuff abilityStats
+execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run scoreboard players operation speedDebuffSlot20 speedDebuffs += kongSpDebuff abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run scoreboard players operation attackDebuffSlot20 atkmodifiers += kongDmgDebuff abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run execute if score slot22isatk booleans matches 1 run scoreboard players operation attackDebuffSlot20 atkmodifiers += kongLeaderDmgDebuff abilityStats
-execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run execute if score slot22isatk booleans matches 1 run scoreboard players operation speedDebuffslot20 speedDebuffs += kongLeaderSpDebuff abilityStats
+execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run execute if score slot22isatk booleans matches 1 run scoreboard players operation speedDebuffSlot20 speedDebuffs += kongLeaderSpDebuff abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run execute if score slot22isatk booleans matches 1 run scoreboard players operation speed slot20 -= kongLeaderSpDebuff abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 run scoreboard players operation speed slot20 -= kongSpDebuff abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot20 matches 0 if score shield slot20 matches ..0 run scoreboard players operation slot20 hp += shield slot20
@@ -91,7 +91,7 @@ execute if score abilitynumber3 abilities matches 12 run tellraw @a[tag=game3] [
 execute if score abilitynumber3 abilities matches 12 if score ward slot20 matches 1.. run function chthree:wardslot20
 execute if score abilitynumber3 abilities matches 12 at @e[name=slot20] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber3 abilities matches 12 run execute if score character# slot22 matches 12 run scoreboard players operation durationSlot20 speedDebuffs = aceLeaderDuration abilityStats
-execute if score abilitynumber3 abilities matches 12 run execute if score character# slot22 matches 12 run scoreboard players operation speedDebuffslot20 speedDebuffs = aceLeader abilityStats
+execute if score abilitynumber3 abilities matches 12 run execute if score character# slot22 matches 12 run scoreboard players operation speedDebuffSlot20 speedDebuffs = aceLeader abilityStats
 execute if score abilitynumber3 abilities matches 12 run execute if score character# slot22 matches 12 run scoreboard players operation speed slot20 -= aceLeader abilityStats
 #Gabriel
 execute if score abilitynumber3 abilities matches 22 run scoreboard players operation abilityDmg3 saves = gabriel abilityStats

@@ -1,0 +1,10 @@
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:strength":{amplifier:{min:26,max:26}}}}} run function chthree:abilitygivetargetsp6reverse
+execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:strength":{amplifier:{min:26,max:26}}}}} run function chthree:abilitygivetargetsp5reverse
+
+execute if score character# slot21 matches 27 run clear @p[tag=p6] minecraft:target[minecraft:custom_name="Target Slot 5",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:strength,duration:1,amplifier:5,show_particles:0b}]}]}] 5
+execute if score character# slot23 matches 27 run clear @p[tag=p6] minecraft:target[minecraft:custom_name="Target Slot 7",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:strength,duration:1,amplifier:7,show_particles:0b}]}]}] 7
+execute if score character# slot17 matches 27 run clear @p[tag=p5] minecraft:target[minecraft:custom_name="Target Slot 1",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:strength,duration:1,amplifier:1,show_particles:0b}]}]}] 1
+execute if score character# slot19 matches 27 run clear @p[tag=p5] minecraft:target[minecraft:custom_name="Target Slot 3",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.attack.sweep",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:strength,duration:1,amplifier:3,show_particles:0b}]}]}] 3
+
+
+scoreboard players set abilitynumber3 abilities -2

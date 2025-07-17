@@ -2,15 +2,15 @@ effect clear @a[tag=game2] strength
 clear @p[tag=game2]
 
 #Deuce ability
-execute if score abilitynumber2 abilities matches 3 run scoreboard players operation abilityDmg saves = deuce heroattack
-execute if score abilitynumber2 abilities matches 3 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot13 atkmodifiers
-execute if score abilitynumber2 abilities matches 3 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches 3 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot15 atkmodifiers
-execute if score abilitynumber2 abilities matches 3 run scoreboard players operation abilityDmg saves += marks slot11
-execute if score abilitynumber2 abilities matches 3 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves *= deuceMultLeader abilityStats
-execute if score abilitynumber2 abilities matches 3 if score slot14isatk booleans matches 0 run scoreboard players operation abilityDmg saves *= deuceMult abilityStats
-execute if score abilitynumber2 abilities matches 3 run scoreboard players operation abilityDmg saves /= atkmultiplier slot11
-execute if score abilitynumber2 abilities matches 3 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches 3 run scoreboard players operation abilityDmg2 saves = deuce heroattack
+execute if score abilitynumber2 abilities matches 3 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers
+execute if score abilitynumber2 abilities matches 3 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches 3 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot15 atkmodifiers
+execute if score abilitynumber2 abilities matches 3 run scoreboard players operation abilityDmg2 saves += marks slot11
+execute if score abilitynumber2 abilities matches 3 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves *= deuceMultLeader abilityStats
+execute if score abilitynumber2 abilities matches 3 if score slot14isatk booleans matches 0 run scoreboard players operation abilityDmg2 saves *= deuceMult abilityStats
+execute if score abilitynumber2 abilities matches 3 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot11
+execute if score abilitynumber2 abilities matches 3 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 3 run execute if score ward slot11 matches 0 if score shield slot11 matches ..0 run scoreboard players operation slot11 hp += shield slot11
 execute if score abilitynumber2 abilities matches 3 run execute if score ward slot11 matches 1.. run function chtoo:wardslot11
 execute if score abilitynumber2 abilities matches 3 run execute at @e[name=slot11,type=armor_stand] run particle crit ~ ~1 ~ 0.3 0.3 0.3 2 100
@@ -26,13 +26,13 @@ execute if score abilitynumber2 abilities matches 24 run execute at @n[type=armo
 execute if score abilitynumber2 abilities matches 24 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Bubble Shield on Slot 3!"]
 
 #Juniper Ability
-execute if score abilitynumber2 abilities matches 27 run scoreboard players operation abilityDmg saves = juniper abilityStats
-execute if score abilitynumber2 abilities matches 27 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot13 atkmodifiers
-execute if score abilitynumber2 abilities matches 27 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches 27 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot15 atkmodifiers
-execute if score abilitynumber2 abilities matches 27 run scoreboard players operation abilityDmg saves += marks slot11
-execute if score abilitynumber2 abilities matches 27 run scoreboard players operation abilityDmg saves /= atkmultiplier slot11
-execute if score abilitynumber2 abilities matches 27 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches 27 run scoreboard players operation abilityDmg2 saves = juniper abilityStats
+execute if score abilitynumber2 abilities matches 27 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers
+execute if score abilitynumber2 abilities matches 27 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches 27 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot15 atkmodifiers
+execute if score abilitynumber2 abilities matches 27 run scoreboard players operation abilityDmg2 saves += marks slot11
+execute if score abilitynumber2 abilities matches 27 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot11
+execute if score abilitynumber2 abilities matches 27 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 27 run execute if score ward slot11 matches 0 run scoreboard players operation slot11 stun = juniperStun abilityStats
 execute if score abilitynumber2 abilities matches 27 run execute if score ward slot11 matches 0 if score shield slot11 matches ..0 run scoreboard players operation slot11 hp += shield slot11
 execute if score abilitynumber2 abilities matches 27 run execute if score ward slot11 matches 1.. run function chtoo:wardslot11
@@ -47,13 +47,13 @@ execute if score abilitynumber2 abilities matches -2 run execute at @n[type=armo
 execute if score abilitynumber2 abilities matches -2 if score character# slot10 matches 27 run function chtoo:cleanseslot11
 
 #K.O.N.G ability
-execute if score abilitynumber2 abilities matches 7 run scoreboard players operation abilityDmg saves = kong abilityStats
-execute if score abilitynumber2 abilities matches 7 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot13 atkmodifiers
-execute if score abilitynumber2 abilities matches 7 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches 7 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot15 atkmodifiers
-execute if score abilitynumber2 abilities matches 7 run scoreboard players operation abilityDmg saves += marks slot11
-execute if score abilitynumber2 abilities matches 7 run scoreboard players operation abilityDmg saves /= atkmultiplier slot11
-execute if score abilitynumber2 abilities matches 7 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches 7 run scoreboard players operation abilityDmg2 saves = kong abilityStats
+execute if score abilitynumber2 abilities matches 7 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers
+execute if score abilitynumber2 abilities matches 7 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches 7 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot15 atkmodifiers
+execute if score abilitynumber2 abilities matches 7 run scoreboard players operation abilityDmg2 saves += marks slot11
+execute if score abilitynumber2 abilities matches 7 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot11
+execute if score abilitynumber2 abilities matches 7 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot11 matches 0 if score kongSpDebuffDuration abilityStats > durationSlot11 speedDebuffs run scoreboard players operation durationSlot11 speedDebuffs = kongSpDebuffDuration abilityStats
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot11 matches 0 if score kongDmgDebuffDuration abilityStats > debuffDurationSlot11 atkmodifiers run scoreboard players operation debuffDurationSlot11 atkmodifiers = kongDmgDebuffDuration abilityStats
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot11 matches 0 run scoreboard players operation speedDebuffSlot11 speedDebuffs += kongSpDebuff abilityStats
@@ -96,19 +96,19 @@ execute if score abilitynumber2 abilities matches 12 run execute if score charac
 execute if score abilitynumber2 abilities matches 12 run execute if score character# slot14 matches 12 run scoreboard players operation speedDebuffSlot11 speedDebuffs = aceLeader abilityStats
 execute if score abilitynumber2 abilities matches 12 run execute if score character# slot14 matches 12 run scoreboard players operation speed slot11 -= aceLeader abilityStats
 #Gabriel
-execute if score abilitynumber2 abilities matches 22 run scoreboard players operation abilityDmg saves = gabriel abilityStats
-execute if score abilitynumber2 abilities matches 22 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot13 atkmodifiers
-execute if score abilitynumber2 abilities matches 22 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches 22 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot15 atkmodifiers
-execute if score abilitynumber2 abilities matches 22 if score slot13 hp matches ..0 run scoreboard players operation abilityDmg saves += gabrielDeath abilityStats
-execute if score abilitynumber2 abilities matches 22 if score slot14 hp matches ..0 run scoreboard players operation abilityDmg saves += gabrielDeath abilityStats
-execute if score abilitynumber2 abilities matches 22 if score slot15 hp matches ..0 run scoreboard players operation abilityDmg saves += gabrielDeath abilityStats
-execute if score abilitynumber2 abilities matches 22 run scoreboard players operation abilityDmg saves += marks slot11
-execute if score abilitynumber2 abilities matches 22 run scoreboard players operation abilityDmg saves /= atkmultiplier slot11
-execute if score abilitynumber2 abilities matches 22 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches 22 run scoreboard players operation abilityDmg2 saves = gabriel abilityStats
+execute if score abilitynumber2 abilities matches 22 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers
+execute if score abilitynumber2 abilities matches 22 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches 22 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot15 atkmodifiers
+execute if score abilitynumber2 abilities matches 22 if score slot13 hp matches ..0 run scoreboard players operation abilityDmg2 saves += gabrielDeath abilityStats
+execute if score abilitynumber2 abilities matches 22 if score slot14 hp matches ..0 run scoreboard players operation abilityDmg2 saves += gabrielDeath abilityStats
+execute if score abilitynumber2 abilities matches 22 if score slot15 hp matches ..0 run scoreboard players operation abilityDmg2 saves += gabrielDeath abilityStats
+execute if score abilitynumber2 abilities matches 22 run scoreboard players operation abilityDmg2 saves += marks slot11
+execute if score abilitynumber2 abilities matches 22 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot11
+execute if score abilitynumber2 abilities matches 22 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 22 run execute if score ward slot11 matches 0 if score shield slot11 matches ..0 run scoreboard players operation slot11 hp += shield slot11
-execute if score abilitynumber2 abilities matches 22 if score slot14isatk booleans matches 1 if score ward slot11 matches 0 run scoreboard players operation abilityDmg saves /= gabrielLeader abilityStats
-execute if score abilitynumber2 abilities matches 22 if score slot14isatk booleans matches 1 if score ward slot11 matches 0 run scoreboard players operation slot14 hp += abilityDmg saves
+execute if score abilitynumber2 abilities matches 22 if score slot14isatk booleans matches 1 if score ward slot11 matches 0 run scoreboard players operation abilityDmg2 saves /= gabrielLeader abilityStats
+execute if score abilitynumber2 abilities matches 22 if score slot14isatk booleans matches 1 if score ward slot11 matches 0 run scoreboard players operation slot14 hp += abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 22 at @e[name=slot11] run particle minecraft:flash ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber2 abilities matches 22 run execute if score ward slot11 matches 1.. run function chtoo:wardslot11
 #Gatsby
@@ -137,33 +137,33 @@ execute if score abilitynumber2 abilities matches 23 if score slot14isatk boolea
 execute if score abilitynumber2 abilities matches 23 if score slot14isatk booleans matches 1 at @e[name=slot9] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber2 abilities matches 23 if score slot14isatk booleans matches 1 at @e[name=slot12] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 #Boomer
-execute if score abilitynumber2 abilities matches 25 run scoreboard players operation abilityDmg saves = boomer abilityStats
-execute if score abilitynumber2 abilities matches 25 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot13 atkmodifiers
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches 25 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot15 atkmodifiers
-execute if score abilitynumber2 abilities matches 25 run scoreboard players operation abilityDmg saves += marks slot11
-execute if score abilitynumber2 abilities matches 25 run scoreboard players operation abilityDmg saves /= atkmultiplier slot11
-execute if score abilitynumber2 abilities matches 25 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches 25 run scoreboard players operation abilityDmg2 saves = boomer abilityStats
+execute if score abilitynumber2 abilities matches 25 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches 25 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot15 atkmodifiers
+execute if score abilitynumber2 abilities matches 25 run scoreboard players operation abilityDmg2 saves += marks slot11
+execute if score abilitynumber2 abilities matches 25 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot11
+execute if score abilitynumber2 abilities matches 25 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 25 run execute if score ward slot11 matches 0 if score shield slot11 matches ..0 run scoreboard players operation slot11 hp += shield slot11
 execute if score abilitynumber2 abilities matches 25 run execute if score ward slot11 matches 1.. run function chtoo:wardslot11
 execute if score abilitynumber2 abilities matches 25 at @e[name=slot11] run particle minecraft:explosion ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 at @e[name=slot10] run particle minecraft:explosion ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 at @e[name=slot12] run particle minecraft:explosion ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber2 abilities matches 25 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used KABOOM! on Slot 3!"]
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves = boomer abilityStats
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerLeader abilityStats
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += marks slot10
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot10
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run execute if score ward slot10 matches 0 run scoreboard players operation shield slot10 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves = boomer abilityStats
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves /= boomerLeader abilityStats
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += marks slot10
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot10
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run execute if score ward slot10 matches 0 run scoreboard players operation shield slot10 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run execute if score ward slot10 matches 0 if score shield slot10 matches ..0 run scoreboard players operation slot11 hp += shield slot11
 execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run execute if score ward slot10 matches 1.. run function chtoo:wardslot10
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves = boomer abilityStats
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= boomerLeader abilityStats
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += marks slot12
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves /= atkmultiplier slot12
-execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run execute if score ward slot12 matches 0 run scoreboard players operation shield slot12 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves = boomer abilityStats
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves /= boomerLeader abilityStats
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += marks slot12
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot12
+execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run execute if score ward slot12 matches 0 run scoreboard players operation shield slot12 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run execute if score ward slot12 matches 0 if score shield slot12 matches ..0 run scoreboard players operation slot12 hp += shield slot12
 execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run execute if score ward slot12 matches 1.. run function chtoo:wardslot12
 
@@ -175,13 +175,13 @@ execute if score abilitynumber2 abilities matches 29 at @e[name=slot11] run part
 
 
 #Domino
-execute if score abilitynumber2 abilities matches 30 run scoreboard players operation abilityDmg saves = domino abilityStats
-execute if score abilitynumber2 abilities matches 30 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot13 atkmodifiers
-execute if score abilitynumber2 abilities matches 30 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches 30 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot15 atkmodifiers
-execute if score abilitynumber2 abilities matches 30 run scoreboard players operation abilityDmg saves += marks slot11
-execute if score abilitynumber2 abilities matches 30 run scoreboard players operation abilityDmg saves /= atkmultiplier slot11
-execute if score abilitynumber2 abilities matches 30 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches 30 run scoreboard players operation abilityDmg2 saves = domino abilityStats
+execute if score abilitynumber2 abilities matches 30 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers
+execute if score abilitynumber2 abilities matches 30 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches 30 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot15 atkmodifiers
+execute if score abilitynumber2 abilities matches 30 run scoreboard players operation abilityDmg2 saves += marks slot11
+execute if score abilitynumber2 abilities matches 30 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot11
+execute if score abilitynumber2 abilities matches 30 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 30 run execute if score ward slot11 matches 0 if score shield slot11 matches ..0 run scoreboard players operation slot11 hp += shield slot11
 execute if score abilitynumber2 abilities matches 30 if score ward slot11 matches 0 if score durationSlot11 poison < dominoDuration abilityStats run scoreboard players operation durationSlot11 poison = dominoDuration abilityStats
 execute if score abilitynumber2 abilities matches 30 if score ward slot11 matches 0 run scoreboard players operation slot11Poison poison += dominoPoison abilityStats 
@@ -201,13 +201,13 @@ execute if score abilitynumber2 abilities matches -3 at @e[name=slot11] run part
 execute if score abilitynumber2 abilities matches -4 run execute if score ward slot11 matches 0 if score durationSlot13-11 fear <= eidolonFearDuration abilityStats if score slot13isatk booleans matches 1 run scoreboard players operation durationSlot13-11 fear = eidolonFearDuration abilityStats
 execute if score abilitynumber2 abilities matches -4 run execute if score ward slot11 matches 0 if score durationSlot14-11 fear <= eidolonFearDuration abilityStats if score slot14isatk booleans matches 1 run scoreboard players operation durationSlot14-11 fear = eidolonFearDuration abilityStats
 execute if score abilitynumber2 abilities matches -4 run execute if score ward slot11 matches 0 if score durationSlot15-11 fear <= eidolonFearDuration abilityStats if score slot15isatk booleans matches 1 run scoreboard players operation durationSlot15-11 fear = eidolonFearDuration abilityStats
-execute if score abilitynumber2 abilities matches -4 run scoreboard players operation abilityDmg saves = eidolon heroattack
-execute if score abilitynumber2 abilities matches -4 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot13 atkmodifiers
-execute if score abilitynumber2 abilities matches -4 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot14 atkmodifiers
-execute if score abilitynumber2 abilities matches -4 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot15 atkmodifiers
-execute if score abilitynumber2 abilities matches -4 run scoreboard players operation abilityDmg saves += marks slot11
-execute if score abilitynumber2 abilities matches -4 run scoreboard players operation abilityDmg saves /= atkmultiplier slot11
-execute if score abilitynumber2 abilities matches -4 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg saves
+execute if score abilitynumber2 abilities matches -4 run scoreboard players operation abilityDmg2 saves = eidolon heroattack
+execute if score abilitynumber2 abilities matches -4 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers
+execute if score abilitynumber2 abilities matches -4 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers
+execute if score abilitynumber2 abilities matches -4 if score slot15isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot15 atkmodifiers
+execute if score abilitynumber2 abilities matches -4 run scoreboard players operation abilityDmg2 saves += marks slot11
+execute if score abilitynumber2 abilities matches -4 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot11
+execute if score abilitynumber2 abilities matches -4 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches -4 run execute if score ward slot11 matches 0 if score shield slot11 matches ..0 run scoreboard players operation slot11 hp += shield slot11
 execute if score abilitynumber2 abilities matches -4 run execute if score ward slot11 matches 1.. run function chtoo:wardslot11
 execute if score abilitynumber2 abilities matches -4 run execute at @e[name=slot11,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100

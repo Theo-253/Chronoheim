@@ -88,3 +88,8 @@ execute if score suddenDeath2 deaths matches 20.. if score shield slot16 matches
 execute if score character# slot12 matches 0 run scoreboard players set slot12 hp 0
 execute if score character# slot16 matches 0 run scoreboard players set slot16 hp 0
 
+#Qol
+function chtoo:effectparticles
+function uitoo:ui
+function uitoo:characterui
+function uitoo:scoreboardui

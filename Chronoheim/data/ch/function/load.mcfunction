@@ -57,6 +57,10 @@ scoreboard objectives add player4spells dummy
 scoreboard objectives add player5spells dummy
 scoreboard objectives add player6spells dummy
 scoreboard objectives add hp dummy
+scoreboard objectives add Wins dummy
+scoreboard objectives add Combat_Rating dummy
+scoreboard objectives setdisplay below_name Combat_Rating
+scoreboard objectives setdisplay sidebar Wins
 team add p3
 team add p4
 team add p5

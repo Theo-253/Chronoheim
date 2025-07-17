@@ -287,7 +287,8 @@ scoreboard players set slot5EatenDuration abilities 0
 scoreboard players set slot6EatenDuration abilities 0
 scoreboard players set slot7EatenDuration abilities 0
 scoreboard players set slot8EatenDuration abilities 0
-
+scoreboard players set spellbuffsp1 spells 0
+scoreboard players set spellbuffsp2 spells 0
 
 
 

@@ -261,8 +261,8 @@ scoreboard players set healingTotemCooldown player4spells 0
 scoreboard players set Spell_Points_P3 Spell_Points -1
 scoreboard players set Spell_Points_P4 Spell_Points -1
 scoreboard players set suddenDeath2 deaths 0
-scoreboard players set side1spinball abilities -1
-scoreboard players set side2spinball abilities -1
+scoreboard players set side3spinball abilities -1
+scoreboard players set side4spinball abilities -1
 execute at @e[name=slot9,type=armor_stand] run kill @e[name=!slot9,type=!player,distance=..4]
 execute at @e[name=slot10,type=armor_stand] run kill @e[name=!slot10,type=!player,distance=..4]
 execute at @e[name=slot11,type=armor_stand] run kill @e[name=!slot11,type=!player,distance=..4]

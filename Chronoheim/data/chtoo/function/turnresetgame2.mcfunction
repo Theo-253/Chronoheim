@@ -286,7 +286,7 @@ scoreboard players set abilityusep3 booleans 0
 scoreboard players set abilityusep4 booleans 0
 scoreboard players add suddenDeath2 deaths 1
 execute if score suddenDeath2 deaths matches 20 run title @a[tag=game2] actionbar "Sudden Death is now active! Healing and Shields are disabled."
-execute if score side1spinball abilities matches -2 run scoreboard players set side1spinball abilities -1
-execute if score side2spinball abilities matches -2 run scoreboard players set side2spinball abilities -1
+execute if score side3spinball abilities matches -2 run scoreboard players set side3spinball abilities -1
+execute if score side4spinball abilities matches -2 run scoreboard players set side4spinball abilities -1
 
 function chtoo:spellphasep4

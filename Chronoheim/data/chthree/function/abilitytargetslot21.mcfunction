@@ -114,7 +114,7 @@ execute if score abilitynumber3 abilities matches 22 run execute if score ward s
 #Gatsby
 execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 run scoreboard players operation slot21 stun = gatsbyDuration abilityStats
 execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 run scoreboard players operation savehp13 saves = slot21 hp
-execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 run scoreboard players operation invincibleslot21 booleaneffects = gatsbyDuration abilityStats
+execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 run scoreboard players operation invincibleSlot21 booleaneffects = gatsbyDuration abilityStats
 execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 run scoreboard players operation slot21EatenDuration abilities = gatsbyDuration abilityStats
 execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 at @e[name=slot21] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~-20 ~
 execute if score abilitynumber3 abilities matches 23 run execute if score ward slot21 matches 1.. run function chthree:wardslot21
@@ -160,8 +160,8 @@ execute if score abilitynumber3 abilities matches 25 if score slot18isatk boolea
 
 
 #Ripper
-execute if score abilitynumber3 abilities matches 29 if score slot21 hp <= ripper abilityStats if score ward slot21 matches 0 if score invincibleslot21 booleaneffects matches 0 run scoreboard players set slot21 hp 0
-execute if score abilitynumber3 abilities matches 29 if score slot21 hp <= ripper abilityStats if score invincibleslot21 booleaneffects matches 0 if score ward slot21 matches 1.. run function chthree:wardslot21
+execute if score abilitynumber3 abilities matches 29 if score slot21 hp <= ripper abilityStats if score ward slot21 matches 0 if score invincibleSlot21 booleaneffects matches 0 run scoreboard players set slot21 hp 0
+execute if score abilitynumber3 abilities matches 29 if score slot21 hp <= ripper abilityStats if score invincibleSlot21 booleaneffects matches 0 if score ward slot21 matches 1.. run function chthree:wardslot21
 execute if score abilitynumber3 abilities matches 29 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Execute on Slot 5!"]
 execute if score abilitynumber3 abilities matches 29 at @e[name=slot21] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 

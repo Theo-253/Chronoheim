@@ -12,12 +12,12 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 
 
 
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:28,max:28}}}}} run execute if score slot17isatk booleans matches 1.. if score buffDurationSlot9 atkmodifiers < eidolonDuration abilityStats run scoreboard players operation buffDurationSlot9 atkmodifiers = eidolonDuration abilityStats
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:28,max:28}}}}} run execute if score slot17isatk booleans matches 1.. if score buffDurationSlot17 atkmodifiers < eidolonDuration abilityStats run scoreboard players operation buffDurationSlot17 atkmodifiers = eidolonDuration abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:28,max:28}}}}} run execute if score slot18isatk booleans matches 1.. if score buffDurationSlot10 atkmodifiers < eidolonDuration abilityStats run scoreboard players operation buffDurationSlot10 atkmodifiers = eidolonDuration abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:28,max:28}}}}} run execute if score slot19isatk booleans matches 1.. if score buffDurationSlot11 atkmodifiers < eidolonDuration abilityStats run scoreboard players operation buffDurationSlot11 atkmodifiers = eidolonDuration abilityStats
 
 
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:28,max:28}}}}} run execute if score slot17isatk booleans matches 1.. run scoreboard players operation attackBuffSlot9 atkmodifiers += eidolon abilityStats
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:28,max:28}}}}} run execute if score slot17isatk booleans matches 1.. run scoreboard players operation attackBuffSlot17 atkmodifiers += eidolon abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:28,max:28}}}}} run execute if score slot18isatk booleans matches 1.. run scoreboard players operation attackBuffSlot10 atkmodifiers += eidolonLeader abilityStats
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:28,max:28}}}}} run execute if score slot19isatk booleans matches 1.. run scoreboard players operation attackBuffSlot11 atkmodifiers += eidolon abilityStats
 

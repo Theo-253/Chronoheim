@@ -225,13 +225,13 @@ execute if score slot23isatk booleans matches 1 run execute if score disarmedslo
 execute if score slot24isatk booleans matches 1 run execute if score disarmedslot24 booleaneffects matches 1.. run scoreboard players remove disarmedslot24 booleaneffects 1
 
 #invincibility duration
-execute if score slot17isatk booleans matches 1 run execute if score invincibleslot17 booleaneffects matches 1.. run scoreboard players remove invincibleslot17 booleaneffects 1
-execute if score slot18isatk booleans matches 1 run execute if score invincibleslot18 booleaneffects matches 1.. run scoreboard players remove invincibleslot18 booleaneffects 1
-execute if score slot19isatk booleans matches 1 run execute if score invincibleslot19 booleaneffects matches 1.. run scoreboard players remove invincibleslot19 booleaneffects 1
-execute if score slot20isatk booleans matches 1 run execute if score invincibleslot20 booleaneffects matches 1.. run scoreboard players remove invincibleslot20 booleaneffects 1
-execute if score slot21isatk booleans matches 1 run execute if score invincibleslot21 booleaneffects matches 1.. run scoreboard players remove invincibleslot21 booleaneffects 1
-execute if score slot22isatk booleans matches 1 run execute if score invincibleslot22 booleaneffects matches 1.. run scoreboard players remove invincibleslot22 booleaneffects 1
-execute if score slot23isatk booleans matches 1 run execute if score invincibleslot23 booleaneffects matches 1.. run scoreboard players remove invincibleslot23 booleaneffects 1
+execute if score slot17isatk booleans matches 1 run execute if score invincibleSlot17 booleaneffects matches 1.. run scoreboard players remove invincibleSlot17 booleaneffects 1
+execute if score slot18isatk booleans matches 1 run execute if score invincibleSlot18 booleaneffects matches 1.. run scoreboard players remove invincibleSlot18 booleaneffects 1
+execute if score slot19isatk booleans matches 1 run execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players remove invincibleSlot19 booleaneffects 1
+execute if score slot20isatk booleans matches 1 run execute if score invincibleSlot20 booleaneffects matches 1.. run scoreboard players remove invincibleSlot20 booleaneffects 1
+execute if score slot21isatk booleans matches 1 run execute if score invincibleSlot21 booleaneffects matches 1.. run scoreboard players remove invincibleSlot21 booleaneffects 1
+execute if score slot22isatk booleans matches 1 run execute if score invincibleSlot22 booleaneffects matches 1.. run scoreboard players remove invincibleSlot22 booleaneffects 1
+execute if score slot23isatk booleans matches 1 run execute if score invincibleSlot23 booleaneffects matches 1.. run scoreboard players remove invincibleSlot23 booleaneffects 1
 execute if score slot24isatk booleans matches 1 run execute if score invincibleSlot16 booleaneffects matches 1.. run scoreboard players remove invincibleSlot16 booleaneffects 1
 
 #Ward Duration

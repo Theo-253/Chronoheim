@@ -244,7 +244,6 @@ execute if score slot6isatk booleans matches 1 run execute if score durationSlot
 execute if score slot7isatk booleans matches 1 run execute if score durationSlot7 wards matches 1.. run scoreboard players remove durationSlot7 wards 1
 execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 wards matches 1.. run scoreboard players remove durationSlot8 wards 1
 
-say yeet
 execute if score side2spinball abilities matches 0.. run say this is annoying
 #Dillo
 execute if score slot1isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot1 matches 10 run scoreboard players add side1spinball abilities 1
@@ -267,6 +266,32 @@ execute if score slot3isatk booleans matches 1 if score side1spinball abilities 
 execute if score slot5isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot5 matches 10 run execute at @n[name=slot5,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
 execute if score slot6isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot6 matches 10 run execute at @n[name=slot6,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
 execute if score slot7isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot7 matches 10 run execute at @n[name=slot7,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
+
+#Gabriel
+execute if score slot2 hp matches 1.. if score character# slot1 matches 22 if score durationSlot1 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot1 shield += gabrielShieldDuration abilityStats
+execute if score slot3 hp matches 1.. if score character# slot1 matches 22 if score durationSlot1 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot1 shield += gabrielShieldDuration abilityStats
+execute if score slot1 hp matches 1.. if score character# slot2 matches 22 if score durationSlot2 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot2 shield += gabrielShieldDuration abilityStats
+execute if score slot3 hp matches 1.. if score character# slot2 matches 22 if score durationSlot2 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot2 shield += gabrielShieldDuration abilityStats
+execute if score slot1 hp matches 1.. if score character# slot3 matches 22 if score durationSlot3 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot3 shield += gabrielShieldDuration abilityStats
+execute if score slot2 hp matches 1.. if score character# slot3 matches 22 if score durationSlot3 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot3 shield += gabrielShieldDuration abilityStats
+execute if score slot6 hp matches 1.. if score character# slot5 matches 22 if score durationSlot5 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot5 shield += gabrielShieldDuration abilityStats
+execute if score slot7 hp matches 1.. if score character# slot5 matches 22 if score durationSlot5 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot5 shield += gabrielShieldDuration abilityStats
+execute if score slot5 hp matches 1.. if score character# slot6 matches 22 if score durationSlot6 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot6 shield += gabrielShieldDuration abilityStats
+execute if score slot7 hp matches 1.. if score character# slot6 matches 22 if score durationSlot6 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot6 shield += gabrielShieldDuration abilityStats
+execute if score slot5 hp matches 1.. if score character# slot7 matches 22 if score durationSlot7 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot7 shield += gabrielShieldDuration abilityStats
+execute if score slot6 hp matches 1.. if score character# slot7 matches 22 if score durationSlot7 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot7 shield += gabrielShieldDuration abilityStats
+execute if score slot2 hp matches 1.. if score character# slot1 matches 22 run scoreboard players operation shield slot1 += gabrielShield abilityStats
+execute if score slot3 hp matches 1.. if score character# slot1 matches 22 run scoreboard players operation shield slot1 += gabrielShield abilityStats
+execute if score slot1 hp matches 1.. if score character# slot2 matches 22 run scoreboard players operation shield slot2 += gabrielShield abilityStats
+execute if score slot3 hp matches 1.. if score character# slot2 matches 22 run scoreboard players operation shield slot2 += gabrielShield abilityStats
+execute if score slot1 hp matches 1.. if score character# slot3 matches 22 run scoreboard players operation shield slot3 += gabrielShield abilityStats
+execute if score slot2 hp matches 1.. if score character# slot3 matches 22 run scoreboard players operation shield slot3 += gabrielShield abilityStats
+execute if score slot6 hp matches 1.. if score character# slot5 matches 22 run scoreboard players operation shield slot5 += gabrielShield abilityStats
+execute if score slot7 hp matches 1.. if score character# slot5 matches 22 run scoreboard players operation shield slot5 += gabrielShield abilityStats
+execute if score slot5 hp matches 1.. if score character# slot6 matches 22 run scoreboard players operation shield slot6 += gabrielShield abilityStats
+execute if score slot7 hp matches 1.. if score character# slot6 matches 22 run scoreboard players operation shield slot6 += gabrielShield abilityStats
+execute if score slot5 hp matches 1.. if score character# slot7 matches 22 run scoreboard players operation shield slot7 += gabrielShield abilityStats
+execute if score slot6 hp matches 1.. if score character# slot7 matches 22 run scoreboard players operation shield slot7 += gabrielShield abilityStats
 
 #Death
 execute if score game1Ongoing ongoinggames matches 1 run execute if score slot1 hp matches ..0 run execute unless score speed slot1 matches ..-900000 run function ch:death1

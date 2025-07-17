@@ -448,7 +448,7 @@ scoreboard players set gabriel herohealth 2800
 scoreboard players set gabriel herospeed 1200
 scoreboard players set gabriel abilityStats 260
 scoreboard players set gabrielShield abilityStats 40
-scoreboard players set gabrielShieldDuration abilityStats 2
+scoreboard players set gabrielShieldDuration abilityStats 1
 scoreboard players set gabrielDeath abilityStats 260
 scoreboard players set gabrielLeader abilityStats 2
 scoreboard players set gabrielCD abilityStats 3

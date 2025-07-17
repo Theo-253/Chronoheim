@@ -13,5 +13,5 @@ scoreboard players operation slot22 atkmodifiers = attackBuffSlot22 atkmodifiers
 scoreboard players operation slot22 atkmodifiers -= attackDebuffSlot22 atkmodifiers
 scoreboard players operation slot23 atkmodifiers = attackBuffSlot23 atkmodifiers
 scoreboard players operation slot23 atkmodifiers -= attackDebuffSlot23 atkmodifiers
-scoreboard players operation slot24 atkmodifiers = attackBuffSlot16 atkmodifiers
-scoreboard players operation slot24 atkmodifiers -= attackDebuffSlot16 atkmodifiers
+scoreboard players operation slot24 atkmodifiers = attackBuffSlot24 atkmodifiers
+scoreboard players operation slot24 atkmodifiers -= attackDebuffSlot124 atkmodifiers

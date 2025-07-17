@@ -1,3 +1,4 @@
+scoreboard players set burn2 burn 1
 execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run scoreboard players set abilityusep3 booleans 1
 execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run scoreboard players set abilityusep4 booleans 1
 
@@ -26,4 +27,3 @@ execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run effect clear @a[tag=game2] fire_resistance
 execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run function chtoo:turnend
 execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run effect clear @a[tag=game2] fire_resistance
-scoreboard players set burn2 burn 1

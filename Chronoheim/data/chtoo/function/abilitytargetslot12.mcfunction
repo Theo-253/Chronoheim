@@ -57,7 +57,7 @@ execute if score abilitynumber2 abilities matches 7 run execute if score ward sl
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot12 matches 0 if score kongDmgDebuffDuration abilityStats > debuffDurationSlot12 atkmodifiers run scoreboard players operation debuffDurationSlot12 atkmodifiers = kongDmgDebuffDuration abilityStats
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot12 matches 0 run scoreboard players operation speedDebuffSlot12 speedDebuffs += kongSpDebuff abilityStats
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot12 matches 0 run scoreboard players operation attackDebuffSlot12 atkmodifiers += kongDmgDebuff abilityStats
-execute if score abilitynumber2 abilities matches 7 run execute if score ward slot12 matches 0 run execute if score slot14isatk booleans matches 1 run scoreboard players operation attackDebuffslot12 atkmodifiers += kongLeaderDmgDebuff abilityStats
+execute if score abilitynumber2 abilities matches 7 run execute if score ward slot12 matches 0 run execute if score slot14isatk booleans matches 1 run scoreboard players operation attackDebuffSlot12 atkmodifiers += kongLeaderDmgDebuff abilityStats
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot12 matches 0 run execute if score slot14isatk booleans matches 1 run scoreboard players operation speedDebuffslot12 speedDebuffs += kongLeaderSpDebuff abilityStats
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot12 matches 0 run execute if score slot14isatk booleans matches 1 run scoreboard players operation speed slot12 -= kongLeaderSpDebuff abilityStats
 execute if score abilitynumber2 abilities matches 7 run execute if score ward slot12 matches 0 run scoreboard players operation speed slot12 -= kongSpDebuff abilityStats
@@ -80,7 +80,7 @@ execute if score abilitynumber2 abilities matches 5 run tellraw @a[tag=game2] ["
 
 #Kirin
 execute if score abilitynumber2 abilities matches 8 if score buffDurationSlot12 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot12 atkmodifiers = kirinDuration abilityStats
-execute if score abilitynumber2 abilities matches 8 run scoreboard players operation attackBuffslot12 atkmodifiers += kirin abilityStats
+execute if score abilitynumber2 abilities matches 8 run scoreboard players operation attackBuffSlot12 atkmodifiers += kirin abilityStats
 execute if score abilitynumber2 abilities matches 8 if score slot12isatk booleans matches 1 if score slot12bleeding booleaneffects matches 0.. run scoreboard players operation slot12 hp += kirinLeader abilityStats
 execute if score abilitynumber2 abilities matches 8 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Mythical Empowerment on Slot 4!"]
 execute if score abilitynumber2 abilities matches 8 at @e[name=slot12] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.1 100

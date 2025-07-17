@@ -1,3 +1,4 @@
+scoreboard players set burn burn 1
 #Player 1
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot1 hp matches 1.. run scoreboard players operation durationSlot1 regen = docDuration abilityStats
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} if score slot2 hp matches 1.. run scoreboard players operation durationSlot2 regen = docDuration abilityStats
@@ -48,7 +49,6 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used The Doctor is in!"]
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:20,max:20}}}}} run effect clear @a[tag=game1] fire_resistance
 
-scoreboard players set burn burn 1
 
 
 

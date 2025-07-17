@@ -265,22 +265,22 @@ scoreboard players operation speed slot24 += speedBuffSlot16 speedBuffs
 
 
 #Game Start Leader bonuses
-execute if score character# slot18 matches 2 run scoreboard players operation buffDurationslot17 atkmodifiers = arthurBuffDuration abilityStats
-execute if score character# slot18 matches 2 run scoreboard players operation buffDurationslot18 atkmodifiers = arthurBuffDuration abilityStats
-execute if score character# slot18 matches 2 run scoreboard players operation buffDurationslot19 atkmodifiers = arthurBuffDuration abilityStats
-execute if score character# slot18 matches 2 run scoreboard players operation buffDurationslot20 atkmodifiers = arthurBuffDuration abilityStats
-execute if score character# slot18 matches 2 run scoreboard players operation attackBuffslot17 atkmodifiers = arthurBuff abilityStats
-execute if score character# slot18 matches 2 run scoreboard players operation attackBuffslot18 atkmodifiers = arthurBuff abilityStats
-execute if score character# slot18 matches 2 run scoreboard players operation attackBuffslot19 atkmodifiers = arthurBuff abilityStats
-execute if score character# slot18 matches 2 run scoreboard players operation attackBuffslot20 atkmodifiers = arthurBuff abilityStats
+execute if score character# slot18 matches 2 run scoreboard players operation buffDurationSlot17 atkmodifiers = arthurBuffDuration abilityStats
+execute if score character# slot18 matches 2 run scoreboard players operation buffDurationSlot18 atkmodifiers = arthurBuffDuration abilityStats
+execute if score character# slot18 matches 2 run scoreboard players operation buffDurationSlot19 atkmodifiers = arthurBuffDuration abilityStats
+execute if score character# slot18 matches 2 run scoreboard players operation buffDurationSlot20 atkmodifiers = arthurBuffDuration abilityStats
+execute if score character# slot18 matches 2 run scoreboard players operation attackBuffSlot17 atkmodifiers = arthurBuff abilityStats
+execute if score character# slot18 matches 2 run scoreboard players operation attackBuffSlot18 atkmodifiers = arthurBuff abilityStats
+execute if score character# slot18 matches 2 run scoreboard players operation attackBuffSlot19 atkmodifiers = arthurBuff abilityStats
+execute if score character# slot18 matches 2 run scoreboard players operation attackBuffSlot20 atkmodifiers = arthurBuff abilityStats
 
-execute if score character# slot22 matches 2 run scoreboard players operation buffDurationslot21 atkmodifiers = arthurBuffDuration abilityStats
-execute if score character# slot22 matches 2 run scoreboard players operation buffDurationslot22 atkmodifiers = arthurBuffDuration abilityStats
-execute if score character# slot22 matches 2 run scoreboard players operation buffDurationslot23 atkmodifiers = arthurBuffDuration abilityStats
+execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot21 atkmodifiers = arthurBuffDuration abilityStats
+execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot22 atkmodifiers = arthurBuffDuration abilityStats
+execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot23 atkmodifiers = arthurBuffDuration abilityStats
 execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot16 atkmodifiers = arthurBuffDuration abilityStats
-execute if score character# slot22 matches 2 run scoreboard players operation attackBuffslot21 atkmodifiers = arthurBuff abilityStats
-execute if score character# slot22 matches 2 run scoreboard players operation attackBuffslot22 atkmodifiers = arthurBuff abilityStats
-execute if score character# slot22 matches 2 run scoreboard players operation attackBuffslot23 atkmodifiers = arthurBuff abilityStats
+execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot21 atkmodifiers = arthurBuff abilityStats
+execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot22 atkmodifiers = arthurBuff abilityStats
+execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot23 atkmodifiers = arthurBuff abilityStats
 execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot16 atkmodifiers = arthurBuff abilityStats
 
 execute if score character# slot18 matches 14 run scoreboard players operation atk slot18 += hydraLeader heroattack

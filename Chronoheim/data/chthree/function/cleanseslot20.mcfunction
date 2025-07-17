@@ -1,6 +1,6 @@
 scoreboard players set durationSlot20 burn 0
 scoreboard players set durationSlot20 poison 0
-scoreboard players set debuffDurationslot20 atkmodifiers 0
+scoreboard players set debuffDurationSlot20 atkmodifiers 0
 scoreboard players set durationSlot20 speedDebuffs 0
 scoreboard players set durationSlot21-20 fear 0
 scoreboard players set durationSlot22-20 fear 0

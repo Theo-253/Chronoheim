@@ -11,8 +11,8 @@ execute if score spellnumber3 spells matches 26 run execute if score alivep5 dea
 execute if score spellnumber3 spells matches 26 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Dragonforge on Slot 2!"]
 
 #Embiggen
-execute if score spellnumber3 spells matches 13 run execute if score buffDurationslot18 atkmodifiers < embiggenDuration spellStats run scoreboard players operation buffDurationslot18 atkmodifiers = embiggenDuration spellStats
-execute if score spellnumber3 spells matches 13 run scoreboard players operation attackBuffslot18 atkmodifiers += embiggenBuff spellStats
+execute if score spellnumber3 spells matches 13 run execute if score buffDurationSlot18 atkmodifiers < embiggenDuration spellStats run scoreboard players operation buffDurationSlot18 atkmodifiers = embiggenDuration spellStats
+execute if score spellnumber3 spells matches 13 run scoreboard players operation attackBuffSlot18 atkmodifiers += embiggenBuff spellStats
 execute if score spellnumber3 spells matches 13 run execute if score durationSlot18 shield < embiggenDuration spellStats run scoreboard players operation durationSlot18 shield = embiggenDuration spellStats
 execute if score spellnumber3 spells matches 13 run scoreboard players operation shield slot18 += embiggen spellStats
 execute if score spellnumber3 spells matches 13 run scoreboard players set attackIsOngoingGame2 booleans 0
@@ -20,8 +20,8 @@ execute if score spellnumber3 spells matches 13 run execute at @n[type=armor_sta
 execute if score spellnumber3 spells matches 26 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Embiggen on Slot 2!"]
 
 #Embrittle
-execute if score spellnumber3 spells matches 12 if score ward slot18 matches 0 run execute if score debuffDurationslot18 atkmodifiers < embrittleDuration spellStats run scoreboard players operation debuffDurationslot18 atkmodifiers = embrittleDuration spellStats
-execute if score spellnumber3 spells matches 12 if score ward slot18 matches 0 run scoreboard players operation attackDebuffslot18 atkmodifiers += embrittle spellStats
+execute if score spellnumber3 spells matches 12 if score ward slot18 matches 0 run execute if score debuffDurationSlot18 atkmodifiers < embrittleDuration spellStats run scoreboard players operation debuffDurationSlot18 atkmodifiers = embrittleDuration spellStats
+execute if score spellnumber3 spells matches 12 if score ward slot18 matches 0 run scoreboard players operation attackDebuffSlot18 atkmodifiers += embrittle spellStats
 execute if score spellnumber3 spells matches 12 if score ward slot18 matches 1.. run function chthree:wardslot18
 execute if score spellnumber3 spells matches 12 run function chthree:spellphasep5
 execute if score spellnumber3 spells matches 12 run execute at @n[type=armor_stand,name=slot18] run particle minecraft:block_crumble{block_state:"minecraft:ice"} ~ ~1 ~ 0.9 0.9 0.9 0.1 200
@@ -40,9 +40,9 @@ execute if score spellnumber3 spells matches 6 run scoreboard players operation 
 execute if score spellnumber3 spells matches 6 run scoreboard players operation spellDmg3 saves /= atkmultiplier slot18
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg3 saves
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score frostboltDuration spellStats > durationSlot18 speedDebuffs run scoreboard players operation durationSlot18 speedDebuffs = frostboltDuration spellStats
-execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score frostboltDuration spellStats > debuffDurationslot18 atkmodifiers run scoreboard players operation debuffDurationslot18 atkmodifiers = frostboltDuration spellStats
+execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score frostboltDuration spellStats > debuffDurationSlot18 atkmodifiers run scoreboard players operation debuffDurationSlot18 atkmodifiers = frostboltDuration spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation speedDebuffslot18 speedDebuffs += frostboltSpDebuff spellStats
-execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation attackDebuffslot18 atkmodifiers += frostboltDmgDebuff spellStats
+execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation attackDebuffSlot18 atkmodifiers += frostboltDmgDebuff spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 run scoreboard players operation speed slot18 -= frostboltSpDebuff spellStats
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 0 if score shield slot18 matches ..0 run scoreboard players operation slot18 hp += shield slot18
 execute if score spellnumber3 spells matches 6 run execute if score ward slot18 matches 1.. run function chthree:wardslot18
@@ -102,11 +102,11 @@ execute if score spellnumber3 spells matches 9 run tellraw @a[tag=game3] ["",{"s
 
 #Witches Brew
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 if score witchesBrewDuration spellStats > durationSlot18 speedDebuffs run scoreboard players operation durationSlot18 speedDebuffs = witchesBrewDuration spellStats
-execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 if score witchesBrewDuration spellStats > debuffDurationslot18 atkmodifiers run scoreboard players operation debuffDurationslot18 atkmodifiers = witchesBrewDuration spellStats
+execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 if score witchesBrewDuration spellStats > debuffDurationSlot18 atkmodifiers run scoreboard players operation debuffDurationSlot18 atkmodifiers = witchesBrewDuration spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 if score witchesBrewDuration spellStats > durationSlot18 poison run scoreboard players operation durationSlot18 poison = witchesBrewDuration spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 if score witchesBrewDuration spellStats > durationSlot18 burn run scoreboard players operation durationSlot18 burn = witchesBrewDuration spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation speedDebuffslot18 speedDebuffs += witchesBrewSpDebuff spellStats
-execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation attackDebuffslot18 atkmodifiers += witchesBrewDmgDebuff spellStats
+execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation attackDebuffSlot18 atkmodifiers += witchesBrewDmgDebuff spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation slot18Poison poison += witchesBrew spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation slot18Burn burn += witchesBrewBurn spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot18 matches 0 run scoreboard players operation speed slot18 -= witchesBrewSpDebuff spellStats
@@ -217,8 +217,8 @@ execute if score spellnumber3 spells matches 25 run scoreboard players set attac
 execute if score spellnumber3 spells matches 25 run scoreboard players set spellbuffsp5 spells 0
 execute if score spellnumber3 spells matches 25 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Fountain of Youth on Slot 2!"]
 #overclock
-execute if score spellnumber3 spells matches 27 run execute if score buffDurationslot18 atkmodifiers < overclockDuration spellStats run scoreboard players operation buffDurationslot18 atkmodifiers = overclockDuration spellStats
-execute if score spellnumber3 spells matches 27 run scoreboard players operation attackBuffslot18 atkmodifiers += overclock spellStats
+execute if score spellnumber3 spells matches 27 run execute if score buffDurationSlot18 atkmodifiers < overclockDuration spellStats run scoreboard players operation buffDurationSlot18 atkmodifiers = overclockDuration spellStats
+execute if score spellnumber3 spells matches 27 run scoreboard players operation attackBuffSlot18 atkmodifiers += overclock spellStats
 execute if score spellnumber3 spells matches 27 run scoreboard players operation shield slot18 -= overclockAtk spellStats
 execute if score spellnumber3 spells matches 27 if score shield slot18 matches ..0 run scoreboard players operation slot18 hp += shield slot18
 execute if score spellnumber3 spells matches 27 at @e[name=slot18] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.5 400

@@ -1,3 +1,4 @@
+scoreboard players set burn burn 1
 execute if score slot1isatk booleans matches 1.. at @e[name=slot1] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
 execute if score slot2isatk booleans matches 1.. at @e[name=slot2] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
 execute if score slot3isatk booleans matches 1.. at @e[name=slot3] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
@@ -39,4 +40,4 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 
 
 
-scoreboard players set burn burn 1
+

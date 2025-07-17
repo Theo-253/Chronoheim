@@ -1,6 +1,6 @@
 scoreboard players set durationSlot17 burn 0
 scoreboard players set durationSlot17 poison 0
-scoreboard players set debuffDurationslot17 atkmodifiers 0
+scoreboard players set debuffDurationSlot17 atkmodifiers 0
 scoreboard players set durationSlot17 speedDebuffs 0
 scoreboard players set durationSlot21-17 fear 0
 scoreboard players set durationSlot22-17 fear 0

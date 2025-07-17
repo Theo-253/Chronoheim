@@ -57,7 +57,7 @@ execute if score abilitynumber abilities matches 7 run execute if score ward slo
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 if score kongDmgDebuffDuration abilityStats > debuffDurationSlot6 atkmodifiers run scoreboard players operation debuffDurationSlot6 atkmodifiers = kongDmgDebuffDuration abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run scoreboard players operation speedDebuffSlot6 speedDebuffs += kongSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run scoreboard players operation attackDebuffSlot6 atkmodifiers += kongDmgDebuff abilityStats
-execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation attackDebuffslot6 atkmodifiers += kongLeaderDmgDebuff abilityStats
+execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation attackDebuffSlot6 atkmodifiers += kongLeaderDmgDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation speedDebuffslot6 speedDebuffs += kongLeaderSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run execute if score slot2isatk booleans matches 1 run scoreboard players operation speed slot6 -= kongLeaderSpDebuff abilityStats
 execute if score abilitynumber abilities matches 7 run execute if score ward slot6 matches 0 run scoreboard players operation speed slot6 -= kongSpDebuff abilityStats
@@ -80,7 +80,7 @@ execute if score abilitynumber abilities matches 5 run execute at @n[name=slot6,
 execute if score abilitynumber abilities matches 5 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Force Field on Slot 6!"]
 #Kirin
 execute if score abilitynumber abilities matches 8 if score buffDurationSlot6 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot6 atkmodifiers = kirinDuration abilityStats
-execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffslot6 atkmodifiers += kirin abilityStats
+execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffSlot6 atkmodifiers += kirin abilityStats
 execute if score abilitynumber abilities matches 8 if score slot6isatk booleans matches 1 if score slot6bleeding booleaneffects matches 0.. run scoreboard players operation slot6 hp += kirinLeader abilityStats
 execute if score abilitynumber abilities matches 8 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Mythical Empowerment on Slot 6!"]
 execute if score abilitynumber abilities matches 8 at @e[name=slot6] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.1 100

@@ -1,3 +1,4 @@
+scoreboard players set burn2 burn 1
 execute if score slot9isatk booleans matches 1.. at @e[name=slot9] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
 execute if score slot10isatk booleans matches 1.. at @e[name=slot10] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
 execute if score slot11isatk booleans matches 1.. at @e[name=slot11] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 200
@@ -35,8 +36,3 @@ execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot14isatk booleans matches 0 run function chtoo:turnend
 execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} if score slot14isatk booleans matches 1 run function chtoo:basicattackstartp4
 execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:6,max:6}}}}} run effect clear @a[tag=p4] fire_resistance
-
-
-
-
-scoreboard players set burn2 burn 1

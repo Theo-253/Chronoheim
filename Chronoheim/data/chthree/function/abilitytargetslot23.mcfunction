@@ -53,10 +53,10 @@ execute if score abilitynumber3 abilities matches 7 run scoreboard players opera
 execute if score abilitynumber3 abilities matches 7 run scoreboard players operation abilityDmg3 saves /= atkmultiplier slot23
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run scoreboard players operation shield slot23 -= abilityDmg3 saves
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 if score kongSpDebuffDuration abilityStats > durationSlot23 speedDebuffs run scoreboard players operation durationSlot23 speedDebuffs = kongSpDebuffDuration abilityStats
-execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 if score kongDmgDebuffDuration abilityStats > debuffDurationslot23 atkmodifiers run scoreboard players operation debuffDurationslot23 atkmodifiers = kongDmgDebuffDuration abilityStats
+execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 if score kongDmgDebuffDuration abilityStats > debuffDurationSlot23 atkmodifiers run scoreboard players operation debuffDurationSlot23 atkmodifiers = kongDmgDebuffDuration abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run scoreboard players operation speedDebuffslot23 speedDebuffs += kongSpDebuff abilityStats
-execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run scoreboard players operation attackDebuffslot23 atkmodifiers += kongDmgDebuff abilityStats
-execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run execute if score slot18isatk booleans matches 1 run scoreboard players operation attackDebuffslot23 atkmodifiers += kongLeaderDmgDebuff abilityStats
+execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run scoreboard players operation attackDebuffSlot23 atkmodifiers += kongDmgDebuff abilityStats
+execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run execute if score slot18isatk booleans matches 1 run scoreboard players operation attackDebuffSlot23 atkmodifiers += kongLeaderDmgDebuff abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run execute if score slot18isatk booleans matches 1 run scoreboard players operation speedDebuffslot23 speedDebuffs += kongLeaderSpDebuff abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run execute if score slot18isatk booleans matches 1 run scoreboard players operation speed slot23 -= kongLeaderSpDebuff abilityStats
 execute if score abilitynumber3 abilities matches 7 run execute if score ward slot23 matches 0 run scoreboard players operation speed slot23 -= kongSpDebuff abilityStats
@@ -79,8 +79,8 @@ execute if score abilitynumber3 abilities matches 5 run execute at @n[name=slot2
 execute if score abilitynumber3 abilities matches 5 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Force Field on Slot 7!"]
 
 #Kirin
-execute if score abilitynumber3 abilities matches 8 if score buffDurationslot23 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationslot23 atkmodifiers = kirinDuration abilityStats
-execute if score abilitynumber3 abilities matches 8 run scoreboard players operation attackBuffslot23 atkmodifiers += kirin abilityStats
+execute if score abilitynumber3 abilities matches 8 if score buffDurationSlot23 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot23 atkmodifiers = kirinDuration abilityStats
+execute if score abilitynumber3 abilities matches 8 run scoreboard players operation attackBuffSlot23 atkmodifiers += kirin abilityStats
 execute if score abilitynumber3 abilities matches 8 if score slot18isatk booleans matches 1 if score slot23bleeding booleaneffects matches 0.. run scoreboard players operation slot23 hp += kirinLeader abilityStats
 execute if score abilitynumber3 abilities matches 8 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Mythical Empowerment on Slot 7!"]
 execute if score abilitynumber3 abilities matches 8 at @e[name=slot23] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.1 100
@@ -120,12 +120,12 @@ execute if score abilitynumber3 abilities matches 23 if score durationSlot23-17 
 execute if score abilitynumber3 abilities matches 23 if score durationSlot23-18 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot23-18 fear = gatsbyDuration abilityStats
 execute if score abilitynumber3 abilities matches 23 if score durationSlot23-19 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot23-19 fear = gatsbyDuration abilityStats
 execute if score abilitynumber3 abilities matches 23 if score durationSlot23-20 fear < gatsbyDuration abilityStats run scoreboard players operation durationSlot23-20 fear = gatsbyDuration abilityStats
-execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 if score slot18isatk booleans matches 1 if score debuffDurationslot22 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationslot22 atkmodifiers = gatsbyDuration abilityStats
-execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 if score slot18isatk booleans matches 1 if score debuffDurationslot21 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationslot21 atkmodifiers = gatsbyDuration abilityStats
-execute if score abilitynumber3 abilities matches 23 if score ward slot24 matches 0 if score slot18isatk booleans matches 1 if score debuffDurationSlot16 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot16 atkmodifiers = gatsbyDuration abilityStats
-execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 if score slot18isatk booleans matches 1 run scoreboard players operation attackDebuffslot22 atkmodifiers = gatsbyLeader abilityStats
-execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 if score slot18isatk booleans matches 1 run scoreboard players operation attackDebuffslot21 atkmodifiers = gatsbyLeader abilityStats
-execute if score abilitynumber3 abilities matches 23 if score ward slot24 matches 0 if score slot18isatk booleans matches 1 run scoreboard players operation attackDebuffSlot16 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 if score slot18isatk booleans matches 1 if score debuffDurationSlot22 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot22 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 if score slot18isatk booleans matches 1 if score debuffDurationSlot21 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot21 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber3 abilities matches 23 if score ward slot24 matches 0 if score slot18isatk booleans matches 1 if score debuffDurationSlot24 atkmodifiers < gatsbyDuration abilityStats run scoreboard players operation debuffDurationSlot24 atkmodifiers = gatsbyDuration abilityStats
+execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 if score slot18isatk booleans matches 1 run scoreboard players operation attackDebuffSlot22 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 0 if score slot18isatk booleans matches 1 run scoreboard players operation attackDebuffSlot21 atkmodifiers = gatsbyLeader abilityStats
+execute if score abilitynumber3 abilities matches 23 if score ward slot24 matches 0 if score slot18isatk booleans matches 1 run scoreboard players operation attackDebuffSlot24 atkmodifiers = gatsbyLeader abilityStats
 execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 1.. if score slot18isatk booleans matches 1 run function chthree:wardslot22
 execute if score abilitynumber3 abilities matches 23 if score ward slot21 matches 1.. if score slot18isatk booleans matches 1 run function chthree:wardslot21
 execute if score abilitynumber3 abilities matches 23 if score ward slot24 matches 1.. if score slot18isatk booleans matches 1 run function chthree:wardslot24

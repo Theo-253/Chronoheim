@@ -7,7 +7,7 @@ execute if score durationSlot5 burn matches 0 run scoreboard players set slot5Bu
 execute if score durationSlot6 burn matches 0 run scoreboard players set slot6Burn burn 0
 execute if score durationSlot7 burn matches 0 run scoreboard players set slot7Burn burn 0
 execute if score durationSlot8 burn matches 0 run scoreboard players set slot8Burn burn 0
-execute if score durationSlot9 burn matches 0 run scoreboard players set slot17Burn burn 0
+execute if score durationSlot9 burn matches 0 run scoreboard players set slot9Burn burn 0
 execute if score durationSlot10 burn matches 0 run scoreboard players set slot10Burn burn 0
 execute if score durationSlot11 burn matches 0 run scoreboard players set slot11Burn burn 0
 execute if score durationSlot12 burn matches 0 run scoreboard players set slot12Burn burn 0
@@ -22,7 +22,7 @@ execute if score durationSlot20 burn matches 0 run scoreboard players set slot20
 execute if score durationSlot21 burn matches 0 run scoreboard players set slot21Burn burn 0
 execute if score durationSlot22 burn matches 0 run scoreboard players set slot22Burn burn 0
 execute if score durationSlot23 burn matches 0 run scoreboard players set slot23Burn burn 0
-execute if score durationSlot24 burn matches 0 run scoreboard players set slot23Burn burn 0
+execute if score durationSlot24 burn matches 0 run scoreboard players set slot24Burn burn 0
 
 
 #Poison

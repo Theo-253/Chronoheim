@@ -244,6 +244,9 @@ execute if score slot6isatk booleans matches 1 run execute if score durationSlot
 execute if score slot7isatk booleans matches 1 run execute if score durationSlot7 wards matches 1.. run scoreboard players remove durationSlot7 wards 1
 execute if score slot8isatk booleans matches 1 run execute if score durationSlot8 wards matches 1.. run scoreboard players remove durationSlot8 wards 1
 
+say yeet
+execute if score side2spinball abilities matches 0.. run say this is annoying
+#Dillo
 execute if score slot1isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot1 matches 10 run scoreboard players add side1spinball abilities 1
 execute if score slot2isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot2 matches 10 run scoreboard players add side1spinball abilities 1
 execute if score slot3isatk booleans matches 1 if score side1spinball abilities matches 0.. if score character# slot3 matches 10 run scoreboard players add side1spinball abilities 1

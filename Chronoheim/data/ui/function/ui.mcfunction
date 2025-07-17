@@ -26080,6 +26080,16 @@ execute if score durationSlot6 regen matches 0 run item replace block 195 1 216 
 execute if score durationSlot7 regen matches 0 run item replace block 196 1 211 container.3 with air
 execute if score durationSlot8 regen matches 0 run item replace block 196 1 206 container.3 with air
 
+execute if score shield slot4 matches 0 run item replace block 203 1 224 container.4 with air
+execute if score shield slot8 matches 0 run item replace block 196 1 206 container.4 with air
+execute if score shield slot6 matches 0 run item replace block 195 1 216 container.4 with air
+execute if score shield slot7 matches 0 run item replace block 196 1 211 container.4 with air
+execute if score shield slot5 matches 0 run item replace block 196 1 221 container.4 with air
+execute if score shield slot3 matches 0 run item replace block 203 1 219 container.4 with air
+execute if score shield slot2 matches 0 run item replace block 204 1 214 container.4 with air
+execute if score shield slot1 matches 0 run item replace block 203 1 209 container.4 with air
+
+
 execute if score disarmedslot1 booleaneffects matches 1 run item replace block 203 1 209 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
 execute if score disarmedslot1 booleaneffects matches 2 run item replace block 203 1 209 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
 execute if score disarmedslot1 booleaneffects matches 3 run item replace block 203 1 209 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3

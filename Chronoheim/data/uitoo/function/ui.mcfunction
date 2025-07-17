@@ -26449,7 +26449,14 @@ execute if score durationSlot11-13 fear matches 0 run execute if score durationS
 execute if score durationSlot12-13 fear matches 0 run execute if score durationSlot12-14 fear matches 0 run execute if score durationSlot12-15 fear matches 0 run execute if score durationSlot12-16 fear matches 0 run item replace block 203 1 255 container.12 with air
 
 
-
+execute if score shield slot12 matches 0 run item replace block 203 1 255 container.4 with air
+execute if score shield slot16 matches 0 run item replace block 196 1 237 container.4 with air
+execute if score shield slot14 matches 0 run item replace block 195 1 247 container.4 with air
+execute if score shield slot15 matches 0 run item replace block 196 1 242 container.4 with air
+execute if score shield slot13 matches 0 run item replace block 196 1 252 container.4 with air
+execute if score shield slot11 matches 0 run item replace block 203 1 250 container.4 with air
+execute if score shield slot10 matches 0 run item replace block 204 1 245 container.4 with air
+execute if score shield slot9 matches 0 run item replace block 203 1 240 container.4 with air
 
 
 

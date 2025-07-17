@@ -88,3 +88,9 @@ execute if score suddenDeath2 deaths matches 20.. if score shield slot24 matches
 execute if score character# slot20 matches 0 run scoreboard players set slot20 hp 0
 execute if score character# slot24 matches 0 run scoreboard players set slot24 hp 0
 
+#QoL
+
+function chthree:effectparticles
+function uithree:ui
+function uithree:characterui
+function uithree:scoreboardui

@@ -10,7 +10,4 @@ execute as @a[tag=p3] run execute as @a[tag=p4] if score game2start ongoinggames
 execute as @a[tag=p3] run execute as @a[tag=p4] if score game2start ongoinggames matches 0 run place template minecraft:game2heroes -174 125 -95
 execute as @a[tag=p3] run execute as @a[tag=p4] if score game2start ongoinggames matches 0 run scoreboard players set game2start ongoinggames 1
 
-function chtoo:effectparticles
-function uitoo:ui
-function uitoo:characterui
-function uitoo:scoreboardui
+

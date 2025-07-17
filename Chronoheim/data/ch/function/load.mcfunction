@@ -502,6 +502,7 @@ scoreboard players set eidolon herospeed 900
 scoreboard players set eidolonCD abilityStats 999999999
 scoreboard players set eidolon abilityStats 260
 scoreboard players set eidolonDuration abilityStats 2
+scoreboard players set eidolonFearDuration abilityStats 1
 scoreboard players set eidolonLeader abilityStats 460
 
 scoreboard players set domino heroattack 100

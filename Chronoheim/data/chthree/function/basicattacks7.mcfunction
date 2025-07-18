@@ -106,10 +106,8 @@ execute if score splash slot20 matches 1.. if score slot20isatk booleans matches
 
 #damage + shield reset (all)
 execute if score shield slot22 matches ..0 if score ward slot22 matches 0 run scoreboard players operation slot22 hp += shield slot22
-execute if score ward slot22 matches 1.. run function chthree:wardslot22
 execute if score shield slot22 matches ..0 run scoreboard players set shield slot22 0
 execute if score shield slot24 matches ..0 if score ward slot24 matches 0 run scoreboard players operation slot24 hp += shield slot24
-execute if score ward slot24 matches 1.. run function chthree:wardslot24
 execute if score shield slot24 matches ..0 run scoreboard players set shield slot24 0
 
 

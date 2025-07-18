@@ -70,7 +70,6 @@ execute if score ward slot11 matches 1.. run execute if score splash slot16 matc
 execute if score splash slot16 matches 1.. if score slot16isatk booleans matches 1 at @e[name=slot11,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #damage + shield reset (all)
 execute if score shield slot11 matches ..0 if score ward slot11 matches 0 run scoreboard players operation slot11 hp += shield slot11
-execute if score ward slot11 matches 1.. run function chtoo:wardslot11
 execute if score shield slot11 matches ..0 run scoreboard players set shield slot11 0
 
 

@@ -73,7 +73,6 @@ execute if score splash slot4 matches 1.. if score slot4isatk booleans matches 1
 
 #damage + shield reset (all)
 execute if score shield slot6 matches ..0 if score ward slot6 matches 0 run scoreboard players operation slot6 hp += shield slot6
-execute if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score shield slot6 matches ..0 run scoreboard players set shield slot6 0
 
 

@@ -12,4 +12,4 @@ execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames
 execute as @a[tag=p1] run execute as @a[tag=p2] if score game1start ongoinggames matches 0 run scoreboard players set game1start ongoinggames 1
 function ch:maxhp
 function ch:attackparticles
-
+execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:luck":{amplifier:{min:0,max:0}}}}} run function lootbox:lootbox

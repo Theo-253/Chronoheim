@@ -53,15 +53,15 @@ execute if score attackIsOngoingGame2 booleans matches 0 run execute if score sp
 execute if score alivep5 deaths matches 0 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," has won the duel against ",{"selector":"@p[tag=p5]"},"!"]
 execute if score alivep5 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p5] Wins 1
 execute if score alivep5 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p5] Combat_Rating 5
-execute if score alivep5 deaths matches 0 run scoreboard players add @p[tag=p5,tag=!test] Gold 5
-execute if score alivep5 deaths matches 0 run scoreboard players add @p[tag=p6,tag=!test] Gold 15
+execute if score alivep5 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p5] Gold 5
+execute if score alivep5 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p6] Gold 15
 execute if score alivep5 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p6] Combat_Rating 5 
 execute if score alivep5 deaths matches 0 run function chthree:win
 execute if score alivep6 deaths matches 0 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," has won the duel against ",{"selector":"@p[tag=p6]"},"!"]
 execute if score alivep6 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p6] Wins 1
 execute if score alivep6 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p6] Combat_Rating 5
-execute if score alivep6 deaths matches 0 run scoreboard players add @p[tag=p5,tag=!test] Gold 15
-execute if score alivep6 deaths matches 0 run scoreboard players add @p[tag=p6,tag=!test] Gold 5
+execute if score alivep6 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p5] Gold 15
+execute if score alivep6 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p6] Gold 5
 execute if score alivep6 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p5] Combat_Rating 5
 execute if score alivep6 deaths matches 0 run function chthree:win
 

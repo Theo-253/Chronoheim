@@ -245,8 +245,6 @@ execute if score slot23isatk booleans matches 1 run execute if score durationSlo
 execute if score slot24isatk booleans matches 1 run execute if score durationSlot24 wards matches 1.. run scoreboard players remove durationSlot24 wards 1
 
 #dillo
-say yeet
-execute if score side6spinball abilities matches 0.. run say magic missile! I smite thee with magick misssile
 execute if score slot17isatk booleans matches 1 if score side5spinball abilities matches 0.. if score character# slot17 matches 10 run scoreboard players add side5spinball abilities 1
 execute if score slot18isatk booleans matches 1 if score side5spinball abilities matches 0.. if score character# slot18 matches 10 run scoreboard players add side5spinball abilities 1
 execute if score slot19isatk booleans matches 1 if score side5spinball abilities matches 0.. if score character# slot19 matches 10 run scoreboard players add side5spinball abilities 1

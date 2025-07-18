@@ -2,7 +2,7 @@ execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this
 execute store result score drop lootboxes run random value 1..100
 execute if score drop lootboxes matches 1..50 run execute store result score spellraritydrop lootboxes run random value 1..10
 execute if score drop lootboxes matches 50..99 run execute store result score heroraritydrop lootboxes run random value 1..10
-execute if score drop lootboxes matches 100 run execute store result score mapdrop lootboxes run random value 1..2
+execute if score drop lootboxes matches 100 run execute store result score mapdrop lootboxes run scoreboard players set mapdrop lootboxes 1
 execute if score spellraritydrop lootboxes matches 1..4 run execute store result score uncommonspell lootboxes run random value 1..10
 execute if score spellraritydrop lootboxes matches 5..7 run execute store result score rarespell lootboxes run random value 1..7
 execute if score spellraritydrop lootboxes matches 8..9 run execute store result score epicspell lootboxes run random value 1..7
@@ -16,9 +16,7 @@ execute if score heroraritydrop lootboxes matches 10 run execute store result sc
 execute if score mapdrop lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=colosseumO] Shards 800
 execute if score mapdrop lootboxes matches 1 run execute at @p[tag=lootbox,tag=!colosseumO] run say @p[tag=lootbox,tag=!colosseumO] unlocked the Colosseum Map!
 execute if score mapdrop lootboxes matches 1 run tag @p[tag=lootbox,tag=!colosseumO] add colosseumO
-execute if score mapdrop lootboxes matches 2 run scoreboard players add @p[tag=lootbox,tag=labO] Shards 800
-execute if score mapdrop lootboxes matches 2 run execute at @p[tag=lootbox,tag=!labO] run say @p[tag=lootbox,tag=!labO] unlocked the Lab Map!
-execute if score mapdrop lootboxes matches 2 run tag @p[tag=lootbox,tag=!labO] add labO
+
 
 #Uncommon Spell Drops
 execute if score uncommonspell lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=frostboltO] Shards 25

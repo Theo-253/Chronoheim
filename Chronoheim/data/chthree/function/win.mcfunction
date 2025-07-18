@@ -289,7 +289,38 @@ scoreboard players set slot23EatenDuration abilities 0
 scoreboard players set slot24EatenDuration abilities 0
 scoreboard players set spellbuffsp5 spells 0
 scoreboard players set spellbuffsp6 spells 0
-
+scoreboard players set durationSlot17-21 fear 0
+scoreboard players set durationSlot17-22 fear 0
+scoreboard players set durationSlot17-23 fear 0
+scoreboard players set durationSlot17-24 fear 0
+scoreboard players set durationSlot18-21 fear 0
+scoreboard players set durationSlot18-22 fear 0
+scoreboard players set durationSlot18-23 fear 0
+scoreboard players set durationSlot18-24 fear 0
+scoreboard players set durationSlot19-21 fear 0
+scoreboard players set durationSlot19-22 fear 0
+scoreboard players set durationSlot19-23 fear 0
+scoreboard players set durationSlot19-24 fear 0
+scoreboard players set durationSlot20-21 fear 0
+scoreboard players set durationSlot20-22 fear 0
+scoreboard players set durationSlot20-23 fear 0
+scoreboard players set durationSlot20-24 fear 0
+scoreboard players set durationSlot21-17 fear 0
+scoreboard players set durationSlot21-18 fear 0
+scoreboard players set durationSlot21-19 fear 0
+scoreboard players set durationSlot21-20 fear 0
+scoreboard players set durationSlot22-17 fear 0
+scoreboard players set durationSlot22-18 fear 0
+scoreboard players set durationSlot22-19 fear 0
+scoreboard players set durationSlot22-20 fear 0
+scoreboard players set durationSlot23-17 fear 0
+scoreboard players set durationSlot23-18 fear 0
+scoreboard players set durationSlot23-19 fear 0
+scoreboard players set durationSlot23-20 fear 0
+scoreboard players set durationSlot24-17 fear 0
+scoreboard players set durationSlot24-18 fear 0
+scoreboard players set durationSlot24-19 fear 0
+scoreboard players set durationSlot24-20 fear 0
 
 
 

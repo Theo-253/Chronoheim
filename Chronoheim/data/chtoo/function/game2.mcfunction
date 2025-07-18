@@ -53,12 +53,16 @@ execute if score attackIsOngoingGame2 booleans matches 0 run execute if score sp
 execute if score alivep3 deaths matches 0 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," has won the duel against ",{"selector":"@p[tag=p3]"},"!"]
 execute if score alivep3 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Wins 1
 execute if score alivep3 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Combat_Rating 5
+execute if score alivep3 deaths matches 0 run scoreboard players add @p[tag=p4,tag=!test] Gold 15
+execute if score alivep3 deaths matches 0 run scoreboard players add @p[tag=p3,tag=!test] Gold 5
 execute if score alivep3 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p4] Combat_Rating 5 
 execute if score alivep3 deaths matches 0 run function chtoo:win
 execute if score alivep4 deaths matches 0 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," has won the duel against ",{"selector":"@p[tag=p4]"},"!"]
 execute if score alivep4 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Wins 1
 execute if score alivep4 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Combat_Rating 5
 execute if score alivep4 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p3] Combat_Rating 5
+execute if score alivep4 deaths matches 0 run scoreboard players add @p[tag=p3,tag=!test] Gold 15
+execute if score alivep4 deaths matches 0 run scoreboard players add @p[tag=p4,tag=!test] Gold 5
 execute if score alivep4 deaths matches 0 run function chtoo:win
 
 #Rapidtick
@@ -68,14 +72,14 @@ execute if score character# slot14 matches 18 if score slot14 hp matches ..800 r
 execute if score character# slot14 matches 18 if score slot14 hp matches 801.. run scoreboard players operation atk slot14 = grangor heroattack
 execute if score character# slot14 matches 18 if score slot14 hp matches ..801 run execute at @n[type=armor_stand,name=slot14] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
 execute if score character# slot10 matches 18 if score slot10 hp matches ..801 run execute at @n[type=armor_stand,name=slot10] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot9bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot10bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot11bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot12bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot13bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot14bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot15bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot16bleeding booleaneffects 999
+execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot9bleeding booleaneffects 64
+execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot10bleeding booleaneffects 64
+execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot11bleeding booleaneffects 64
+execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot12bleeding booleaneffects 64
+execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot13bleeding booleaneffects 64
+execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot14bleeding booleaneffects 64
+execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot15bleeding booleaneffects 64
+execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot16bleeding booleaneffects 64
 execute if score suddenDeath2 deaths matches 20.. if score shield slot9 matches 1.. run scoreboard players set shield slot9 0
 execute if score suddenDeath2 deaths matches 20.. if score shield slot10 matches 1.. run scoreboard players set shield slot10 0
 execute if score suddenDeath2 deaths matches 20.. if score shield slot11 matches 1.. run scoreboard players set shield slot11 0

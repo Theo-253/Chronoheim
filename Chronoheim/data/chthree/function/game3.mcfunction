@@ -53,11 +53,15 @@ execute if score attackIsOngoingGame2 booleans matches 0 run execute if score sp
 execute if score alivep5 deaths matches 0 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," has won the duel against ",{"selector":"@p[tag=p5]"},"!"]
 execute if score alivep5 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p5] Wins 1
 execute if score alivep5 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p5] Combat_Rating 5
+execute if score alivep5 deaths matches 0 run scoreboard players add @p[tag=p5,tag=!test] Gold 5
+execute if score alivep5 deaths matches 0 run scoreboard players add @p[tag=p6,tag=!test] Gold 15
 execute if score alivep5 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p6] Combat_Rating 5 
 execute if score alivep5 deaths matches 0 run function chthree:win
 execute if score alivep6 deaths matches 0 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," has won the duel against ",{"selector":"@p[tag=p6]"},"!"]
 execute if score alivep6 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p6] Wins 1
 execute if score alivep6 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p6] Combat_Rating 5
+execute if score alivep6 deaths matches 0 run scoreboard players add @p[tag=p5,tag=!test] Gold 15
+execute if score alivep6 deaths matches 0 run scoreboard players add @p[tag=p6,tag=!test] Gold 5
 execute if score alivep6 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p5] Combat_Rating 5
 execute if score alivep6 deaths matches 0 run function chthree:win
 
@@ -68,22 +72,22 @@ execute if score character# slot22 matches 18 if score slot22 hp matches ..800 r
 execute if score character# slot22 matches 18 if score slot22 hp matches 801.. run scoreboard players operation atk slot22 = grangor heroattack
 execute if score character# slot22 matches 18 if score slot22 hp matches ..801 run execute at @n[type=armor_stand,name=slot22] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
 execute if score character# slot18 matches 18 if score slot18 hp matches ..801 run execute at @n[type=armor_stand,name=slot18] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot17bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot18bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot19bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot20bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot21bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot22bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot23bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot24bleeding booleaneffects 999
-execute if score suddenDeath2 deaths matches 20.. if score shield slot17 matches 1.. run scoreboard players set shield slot17 0
-execute if score suddenDeath2 deaths matches 20.. if score shield slot18 matches 1.. run scoreboard players set shield slot18 0
-execute if score suddenDeath2 deaths matches 20.. if score shield slot19 matches 1.. run scoreboard players set shield slot19 0
-execute if score suddenDeath2 deaths matches 20.. if score shield slot20 matches 1.. run scoreboard players set shield slot20 0
-execute if score suddenDeath2 deaths matches 20.. if score shield slot21 matches 1.. run scoreboard players set shield slot21 0
-execute if score suddenDeath2 deaths matches 20.. if score shield slot22 matches 1.. run scoreboard players set shield slot22 0
-execute if score suddenDeath2 deaths matches 20.. if score shield slot23 matches 1.. run scoreboard players set shield slot23 0
-execute if score suddenDeath2 deaths matches 20.. if score shield slot24 matches 1.. run scoreboard players set shield slot24 0
+execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot17bleeding booleaneffects 64
+execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot18bleeding booleaneffects 64
+execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot19bleeding booleaneffects 64
+execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot20bleeding booleaneffects 64
+execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot21bleeding booleaneffects 64
+execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot22bleeding booleaneffects 64
+execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot23bleeding booleaneffects 64
+execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot24bleeding booleaneffects 64
+execute if score suddenDeath3 deaths matches 20.. if score shield slot17 matches 1.. run scoreboard players set shield slot17 0
+execute if score suddenDeath3 deaths matches 20.. if score shield slot18 matches 1.. run scoreboard players set shield slot18 0
+execute if score suddenDeath3 deaths matches 20.. if score shield slot19 matches 1.. run scoreboard players set shield slot19 0
+execute if score suddenDeath3 deaths matches 20.. if score shield slot20 matches 1.. run scoreboard players set shield slot20 0
+execute if score suddenDeath3 deaths matches 20.. if score shield slot21 matches 1.. run scoreboard players set shield slot21 0
+execute if score suddenDeath3 deaths matches 20.. if score shield slot22 matches 1.. run scoreboard players set shield slot22 0
+execute if score suddenDeath3 deaths matches 20.. if score shield slot23 matches 1.. run scoreboard players set shield slot23 0
+execute if score suddenDeath3 deaths matches 20.. if score shield slot24 matches 1.. run scoreboard players set shield slot24 0
 #Token slots
 execute if score character# slot20 matches 0 run scoreboard players set slot20 hp 0
 execute if score character# slot24 matches 0 run scoreboard players set slot24 hp 0

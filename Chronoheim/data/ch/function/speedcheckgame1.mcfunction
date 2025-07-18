@@ -1,4 +1,12 @@
-
+#Death
+execute if score game1Ongoing ongoinggames matches 1 run execute if score slot1 hp matches ..0 run execute unless score speed slot1 matches ..-900000 run function ch:death1
+execute if score game1Ongoing ongoinggames matches 1 run execute if score slot2 hp matches ..0 run execute unless score speed slot2 matches ..-900000 run function ch:death2
+execute if score game1Ongoing ongoinggames matches 1 run execute if score slot3 hp matches ..0 run execute unless score speed slot3 matches ..-900000 run function ch:death3
+execute if score game1Ongoing ongoinggames matches 1 unless score character# slot4 matches 0 run execute if score slot4 hp matches ..0 run execute unless score speed slot4 matches ..-900000 run function ch:death4
+execute if score game1Ongoing ongoinggames matches 1 run execute if score slot5 hp matches ..0 run execute unless score speed slot5 matches ..-900000 run function ch:death5
+execute if score game1Ongoing ongoinggames matches 1 run execute if score slot6 hp matches ..0 run execute unless score speed slot6 matches ..-900000 run function ch:death6
+execute if score game1Ongoing ongoinggames matches 1 run execute if score slot7 hp matches ..0 run execute unless score speed slot7 matches ..-900000 run function ch:death7
+execute if score game1Ongoing ongoinggames matches 1 unless score character# slot8 matches 0 run execute if score slot8 hp matches ..0 run execute unless score speed slot8 matches ..-900000 run function ch:death8
 
 execute if score slot1 hp matches 1.. unless score speed slot1 matches ..-10000 run execute if score game1Ongoing ongoinggames matches 1 run execute if score attackIsOngoingGame1 booleans matches 0 if score speed slot1 >= speed slot2 if score speed slot1 >= speed slot3 if score speed slot1 >= speed slot4 if score speed slot1 >= speed slot5 if score speed slot1 >= speed slot6 if score speed slot1 >= speed slot7 if score speed slot1 >= speed slot8 run function ch:attackoptions1
 execute if score slot2 hp matches 1.. unless score speed slot2 matches ..-10000 run execute if score game1Ongoing ongoinggames matches 1 run execute if score attackIsOngoingGame1 booleans matches 0 if score speed slot2 > speed slot1 if score speed slot2 >= speed slot3 if score speed slot2 >= speed slot4 if score speed slot2 >= speed slot5 if score speed slot2 >= speed slot6 if score speed slot2 >= speed slot7 if score speed slot2 >= speed slot8 run function ch:attackoptions2

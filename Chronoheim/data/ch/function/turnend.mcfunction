@@ -293,16 +293,6 @@ execute if score slot7 hp matches 1.. if score character# slot6 matches 22 run s
 execute if score slot5 hp matches 1.. if score character# slot7 matches 22 run scoreboard players operation shield slot7 += gabrielShield abilityStats
 execute if score slot6 hp matches 1.. if score character# slot7 matches 22 run scoreboard players operation shield slot7 += gabrielShield abilityStats
 
-#Death
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot1 hp matches ..0 run execute unless score speed slot1 matches ..-900000 run function ch:death1
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot2 hp matches ..0 run execute unless score speed slot2 matches ..-900000 run function ch:death2
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot3 hp matches ..0 run execute unless score speed slot3 matches ..-900000 run function ch:death3
-execute if score game1Ongoing ongoinggames matches 1 unless score character# slot4 matches 0 run execute if score slot4 hp matches ..0 run execute unless score speed slot4 matches ..-900000 run function ch:death4
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot5 hp matches ..0 run execute unless score speed slot5 matches ..-900000 run function ch:death5
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot6 hp matches ..0 run execute unless score speed slot6 matches ..-900000 run function ch:death6
-execute if score game1Ongoing ongoinggames matches 1 run execute if score slot7 hp matches ..0 run execute unless score speed slot7 matches ..-900000 run function ch:death7
-execute if score game1Ongoing ongoinggames matches 1 unless score character# slot8 matches 0 run execute if score slot8 hp matches ..0 run execute unless score speed slot8 matches ..-900000 run function ch:death8
-
 #Attack boolean reset
 scoreboard players set slot1isatk booleans 0
 scoreboard players set slot2isatk booleans 0

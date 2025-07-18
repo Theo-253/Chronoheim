@@ -132,6 +132,118 @@ execute if score legendaryspell lootboxes matches 3 run scoreboard players add @
 execute if score legendaryspell lootboxes matches 3 run execute at @p[tag=lootbox,tag=!healingtotemO] run say @p[tag=lootbox,tag=!healingtotemO] unlocked Healing Totem!
 execute if score legendaryspell lootboxes matches 3 run tag @p[tag=lootbox,tag=!healingtotemO] add healingtotemO
 
+#Uncommon Hero Drops 
+execute if score uncommonhero lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=subjectO] Shards 50
+execute if score uncommonhero lootboxes matches 1 run execute at @p[tag=lootbox,tag=!subjectO] run say @p[tag=lootbox,tag=!subjectO] unlocked Subject!
+execute if score uncommonhero lootboxes matches 1 run tag @p[tag=lootbox,tag=!subjectO] add subjectO
+
+execute if score uncommonhero lootboxes matches 2 run scoreboard players add @p[tag=lootbox,tag=roboO] Shards 50
+execute if score uncommonhero lootboxes matches 2 run execute at @p[tag=lootbox,tag=!roboO] run say @p[tag=lootbox,tag=!roboO] unlocked Robo!
+execute if score uncommonhero lootboxes matches 2 run tag @p[tag=lootbox,tag=!roboO] add roboO
+
+execute if score uncommonhero lootboxes matches 3 run scoreboard players add @p[tag=lootbox,tag=thornO] Shards 50
+execute if score uncommonhero lootboxes matches 3 run execute at @p[tag=lootbox,tag=!thornO] run say @p[tag=lootbox,tag=!thornO] unlocked Thorn!
+execute if score uncommonhero lootboxes matches 3 run tag @p[tag=lootbox,tag=!thornO] add thornO
+
+execute if score uncommonhero lootboxes matches 4 run scoreboard players add @p[tag=lootbox,tag=kongO] Shards 50
+execute if score uncommonhero lootboxes matches 4 run execute at @p[tag=lootbox,tag=!kongO] run say @p[tag=lootbox,tag=!kongO] unlocked K.O.N.G.!
+execute if score uncommonhero lootboxes matches 4 run tag @p[tag=lootbox,tag=!kongO] add kongO
+
+execute if score uncommonhero lootboxes matches 5 run scoreboard players add @p[tag=lootbox,tag=kirinO] Shards 50
+execute if score uncommonhero lootboxes matches 5 run execute at @p[tag=lootbox,tag=!kirinO] run say @p[tag=lootbox,tag=!kirinO] unlocked Kirin
+execute if score uncommonhero lootboxes matches 5 run tag @p[tag=lootbox,tag=!kirinO] add kirinO
+
+execute if score uncommonhero lootboxes matches 6 run scoreboard players add @p[tag=lootbox,tag=robynO] Shards 50
+execute if score uncommonhero lootboxes matches 6 run execute at @p[tag=lootbox,tag=!robynO] run say @p[tag=lootbox,tag=!robynO] unlocked Robyn!
+execute if score uncommonhero lootboxes matches 6 run tag @p[tag=lootbox,tag=!robynO] add robynO
+
+execute if score uncommonhero lootboxes matches 7 run scoreboard players add @p[tag=lootbox,tag=flintO] Shards 50
+execute if score uncommonhero lootboxes matches 7 run execute at @p[tag=lootbox,tag=!flintO] run say @p[tag=lootbox,tag=!flintO] unlocked Flint!
+execute if score uncommonhero lootboxes matches 7 run tag @p[tag=lootbox,tag=!flintO] add flintO
+
+execute if score uncommonhero lootboxes matches 8 run scoreboard players add @p[tag=lootbox,tag=hydraO] Shards 50
+execute if score uncommonhero lootboxes matches 8 run execute at @p[tag=lootbox,tag=!hydraO] run say @p[tag=lootbox,tag=!hydraO] unlocked Hydra!
+execute if score uncommonhero lootboxes matches 8 run tag @p[tag=lootbox,tag=!hydraO] add hydraO
+
+#Rare Hero Drops
+execute if score rarehero lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=aceO] Shards 100
+execute if score rarehero lootboxes matches 1 run execute at @p[tag=lootbox,tag=!aceO] run say @p[tag=lootbox,tag=!aceO] unlocked Ace!
+execute if score rarehero lootboxes matches 1 run tag @p[tag=lootbox,tag=!aceO] add aceO
+
+execute if score rarehero lootboxes matches 2 run scoreboard players add @p[tag=lootbox,tag=londonO] Shards 100
+execute if score rarehero lootboxes matches 2 run execute at @p[tag=lootbox,tag=!londonO] run say @p[tag=lootbox,tag=!londonO] unlocked London!
+execute if score rarehero lootboxes matches 2 run tag @p[tag=lootbox,tag=!londonO] add londonO
+
+execute if score rarehero lootboxes matches 3 run scoreboard players add @p[tag=lootbox,tag=golemO] Shards 100
+execute if score rarehero lootboxes matches 3 run execute at @p[tag=lootbox,tag=!golemO] run say @p[tag=lootbox,tag=!golemO] unlocked Golem!
+execute if score rarehero lootboxes matches 3 run tag @p[tag=lootbox,tag=!golemO] add golemO
+
+execute if score rarehero lootboxes matches 4 run scoreboard players add @p[tag=lootbox,tag=blackbeardO] Shards 100
+execute if score rarehero lootboxes matches 4 run execute at @p[tag=lootbox,tag=!blackbeardO] run say @p[tag=lootbox,tag=!blackbeardO] unlocked Blackbeard!
+execute if score rarehero lootboxes matches 4 run tag @p[tag=lootbox,tag=!blackbeardO] add blackbeardO
+
+execute if score rarehero lootboxes matches 5 run scoreboard players add @p[tag=lootbox,tag=grimoireO] Shards 100
+execute if score rarehero lootboxes matches 5 run execute at @p[tag=lootbox,tag=!grimoireO] run say @p[tag=lootbox,tag=!grimoireO] unlocked Grimoire!
+execute if score rarehero lootboxes matches 5 run tag @p[tag=lootbox,tag=!grimoireO] add grimoireO
+
+execute if score rarehero lootboxes matches 6 run scoreboard players add @p[tag=lootbox,tag=grangorO] Shards 100
+execute if score rarehero lootboxes matches 6 run execute at @p[tag=lootbox,tag=!grangorO] run say @p[tag=lootbox,tag=!grangorO] unlocked Grangor!
+execute if score rarehero lootboxes matches 6 run tag @p[tag=lootbox,tag=!grangorO] add grangorO
+
+execute if score rarehero lootboxes matches 7 run scoreboard players add @p[tag=lootbox,tag=dominoO] Shards 100
+execute if score rarehero lootboxes matches 7 run execute at @p[tag=lootbox,tag=!dominoO] run say @p[tag=lootbox,tag=!dominoO] unlocked Domino!
+execute if score rarehero lootboxes matches 7 run tag @p[tag=lootbox,tag=!dominoO] add dominoO
+
+#Epic Hero Drops
+execute if score epichero lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=astroO] Shards 200
+execute if score epichero lootboxes matches 1 run execute at @p[tag=lootbox,tag=!astroO] run say @p[tag=lootbox,tag=!astroO] unlocked Astro!
+execute if score epichero lootboxes matches 1 run tag @p[tag=lootbox,tag=!astroO] add astroO
+
+execute if score epichero lootboxes matches 2 run scoreboard players add @p[tag=lootbox,tag=docO] Shards 200
+execute if score epichero lootboxes matches 2 run execute at @p[tag=lootbox,tag=!docO] run say @p[tag=lootbox,tag=!docO] unlocked Doc!
+execute if score epichero lootboxes matches 2 run tag @p[tag=lootbox,tag=!docO] add docO
+
+execute if score epichero lootboxes matches 3 run scoreboard players add @p[tag=lootbox,tag=lillithO] Shards 200
+execute if score epichero lootboxes matches 3 run execute at @p[tag=lootbox,tag=!lillithO] run say @p[tag=lootbox,tag=!lillithO] unlocked Lillith!
+execute if score epichero lootboxes matches 3 run tag @p[tag=lootbox,tag=!lillithO] add lillithO
+
+execute if score epichero lootboxes matches 4 run scoreboard players add @p[tag=lootbox,tag=gabrielO] Shards 200
+execute if score epichero lootboxes matches 4 run execute at @p[tag=lootbox,tag=!gabrielO] run say @p[tag=lootbox,tag=!gabrielO] unlocked Gabriel!
+execute if score epichero lootboxes matches 4 run tag @p[tag=lootbox,tag=!gabrielO] add gabrielO
+
+execute if score epichero lootboxes matches 5 run scoreboard players add @p[tag=lootbox,tag=gatsbyO] Shards 200
+execute if score epichero lootboxes matches 5 run execute at @p[tag=lootbox,tag=!gatsbyO] run say @p[tag=lootbox,tag=!gatsbyO] unlocked Gatsby!
+execute if score epichero lootboxes matches 5 run tag @p[tag=lootbox,tag=!gatsbyO] add gatsbyO
+
+execute if score epichero lootboxes matches 6 run scoreboard players add @p[tag=lootbox,tag=garabaldiO] Shards 200
+execute if score epichero lootboxes matches 6 run execute at @p[tag=lootbox,tag=!garabaldiO] run say @p[tag=lootbox,tag=!garabaldiO] unlocked Garabaldi!
+execute if score epichero lootboxes matches 6 run tag @p[tag=lootbox,tag=!garabaldiO] add garabaldiO
+
+execute if score epichero lootboxes matches 7 run scoreboard players add @p[tag=lootbox,tag=juniperO] Shards 200
+execute if score epichero lootboxes matches 7 run execute at @p[tag=lootbox,tag=!juniperO] run say @p[tag=lootbox,tag=!juniperO] unlocked Juniper!
+execute if score epichero lootboxes matches 7 run tag @p[tag=lootbox,tag=!juniperO] add juniperO
+
+#Legendary Hero Drops
+execute if score legendaryhero lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=dilloO] Shards 400
+execute if score legendaryhero lootboxes matches 1 run execute at @p[tag=lootbox,tag=!dilloO] run say @p[tag=lootbox,tag=!dilloO] unlocked Dillo!
+execute if score legendaryhero lootboxes matches 1 run tag @p[tag=lootbox,tag=!dilloO] add dilloO
+
+execute if score legendaryhero lootboxes matches 2 run scoreboard players add @p[tag=lootbox,tag=osirisO] Shards 400
+execute if score legendaryhero lootboxes matches 2 run execute at @p[tag=lootbox,tag=!osirisO] run say @p[tag=lootbox,tag=!osirisO] unlocked Osiris!
+execute if score legendaryhero lootboxes matches 2 run tag @p[tag=lootbox,tag=!osirisO] add osirisO
+
+execute if score legendaryhero lootboxes matches 3 run scoreboard players add @p[tag=lootbox,tag=eidolonO] Shards 400
+execute if score legendaryhero lootboxes matches 3 run execute at @p[tag=lootbox,tag=!eidolonO] run say @p[tag=lootbox,tag=!eidolonO] unlocked Eidolon!
+execute if score legendaryhero lootboxes matches 3 run tag @p[tag=lootbox,tag=!eidolonO] add eidolonO
+
+execute if score legendaryhero lootboxes matches 4 run scoreboard players add @p[tag=lootbox,tag=boomerO] Shards 400
+execute if score legendaryhero lootboxes matches 4 run execute at @p[tag=lootbox,tag=!boomerO] run say @p[tag=lootbox,tag=!boomerO] unlocked Boomer!
+execute if score legendaryhero lootboxes matches 4 run tag @p[tag=lootbox,tag=!boomerO] add boomerO
+
+execute if score legendaryhero lootboxes matches 5 run scoreboard players add @p[tag=lootbox,tag=ripperO] Shards 400
+execute if score legendaryhero lootboxes matches 5 run execute at @p[tag=lootbox,tag=!ripperO] run say @p[tag=lootbox,tag=!ripperO] unlocked Dillo!
+execute if score legendaryhero lootboxes matches 5 run tag @p[tag=lootbox,tag=!ripperO] add ripperO
+
 #Score resets
 scoreboard players set drop lootboxes 0
 scoreboard players set spellraritydrop lootboxes 0
@@ -146,3 +258,4 @@ scoreboard players set rarehero lootboxes 0
 scoreboard players set epichero lootboxes 0
 scoreboard players set legendaryhero lootboxes 0
 tag @a remove lootbox
+effect clear @a luck

@@ -2,7 +2,8 @@
         "values": [
         "ch:globaltick",
         "chtoo:globaltick",
-        "chthree:globaltick"
+        "chthree:globaltick",
+        "lootbox:globaltick"
 
 
     ]

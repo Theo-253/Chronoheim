@@ -22,14 +22,14 @@ function chthree:spellchecks
 
 
 #invincibility
-execute if score invincibleslot17 booleaneffects matches 1.. run scoreboard players operation slot17 hp = savehp9 saves
-execute if score invincibleslot18 booleaneffects matches 1.. run scoreboard players operation slot18 hp = savehp10 saves
-execute if score invincibleslot19 booleaneffects matches 1.. run scoreboard players operation slot19 hp = savehp11 saves
-execute if score invincibleslot19 booleaneffects matches 1.. run scoreboard players operation slot20 hp = savehp12 saves
-execute if score invincibleslot21 booleaneffects matches 1.. run scoreboard players operation slot21 hp = savehp13 saves
-execute if score invincibleslot22 booleaneffects matches 1.. run scoreboard players operation slot22 hp = savehp14 saves
-execute if score invincibleslot23 booleaneffects matches 1.. run scoreboard players operation slot23 hp = savehp15 saves
-execute if score invincibleslot19 booleaneffects matches 1.. run scoreboard players operation slot24 hp = savehp16 saves
+execute if score invincibleSlot17 booleaneffects matches 1.. run scoreboard players operation slot17 hp = savehp9 saves
+execute if score invincibleSlot18 booleaneffects matches 1.. run scoreboard players operation slot18 hp = savehp10 saves
+execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot19 hp = savehp11 saves
+execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot20 hp = savehp12 saves
+execute if score invincibleSlot21 booleaneffects matches 1.. run scoreboard players operation slot21 hp = savehp13 saves
+execute if score invincibleSlot22 booleaneffects matches 1.. run scoreboard players operation slot22 hp = savehp14 saves
+execute if score invincibleSlot23 booleaneffects matches 1.. run scoreboard players operation slot23 hp = savehp15 saves
+execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot24 hp = savehp16 saves
 
 #Scoreboard UI
 execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:regeneration":{amplifier:{min:0,max:0}}}}} run scoreboard objectives setdisplay sidebar.team.blue Cooldown_Game_3

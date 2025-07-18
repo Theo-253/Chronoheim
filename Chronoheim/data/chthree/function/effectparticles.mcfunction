@@ -11,7 +11,7 @@ execute if score slot17Disease disease matches 1.. at @e[name=slot17] run partic
 execute if score slot17bleeding booleaneffects matches 1.. at @e[name=slot17] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~ ~ 0.2 0.9 0.2 0.5 1 normal
 execute if score disarmedslot17 booleaneffects matches 1.. at @e[name=slot17] run particle minecraft:ash ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score durationSlot17 taunt matches 1.. at @e[name=slot17] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
-execute if score invincibleslot17 booleaneffects matches 1.. at @e[name=slot17] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score invincibleSlot17 booleaneffects matches 1.. at @e[name=slot17] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot17 matches 1.. at @e[name=slot17] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 
 execute if score durationSlot18 poison matches 1.. at @e[name=slot18] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -27,7 +27,7 @@ execute if score slot18Disease disease matches 1.. at @e[name=slot18] run partic
 execute if score slot18bleeding booleaneffects matches 1.. at @e[name=slot18] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~ ~ 0.2 0.9 0.2 0.5 1 normal
 execute if score disarmedslot18 booleaneffects matches 1.. at @e[name=slot18] run particle minecraft:ash ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score durationSlot18 taunt matches 1.. at @e[name=slot18] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
-execute if score invincibleslot18 booleaneffects matches 1.. at @e[name=slot18] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score invincibleSlot18 booleaneffects matches 1.. at @e[name=slot18] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot18 matches 1.. at @e[name=slot18] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 
 execute if score durationSlot19 poison matches 1.. at @e[name=slot19] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -43,7 +43,7 @@ execute if score slot19Disease disease matches 1.. at @e[name=slot19] run partic
 execute if score slot19bleeding booleaneffects matches 1.. at @e[name=slot19] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~ ~ 0.2 0.9 0.2 0.5 1 normal
 execute if score disarmedslot19 booleaneffects matches 1.. at @e[name=slot19] run particle minecraft:ash ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score durationSlot19 taunt matches 1.. at @e[name=slot19] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
-execute if score invincibleslot19 booleaneffects matches 1.. at @e[name=slot19] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score invincibleSlot19 booleaneffects matches 1.. at @e[name=slot19] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot19 matches 1.. at @e[name=slot19] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 
 execute if score durationSlot20 poison matches 1.. at @e[name=slot20] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -59,7 +59,7 @@ execute if score slot20Disease disease matches 1.. at @e[name=slot20] run partic
 execute if score slot20bleeding booleaneffects matches 1.. at @e[name=slot20] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~ ~ 0.2 0.9 0.2 0.5 1 normal
 execute if score disarmedslot20 booleaneffects matches 1.. at @e[name=slot20] run particle minecraft:ash ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score durationSlot20 taunt matches 1.. at @e[name=slot20] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
-execute if score invincibleslot20 booleaneffects matches 1.. at @e[name=slot20] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score invincibleSlot20 booleaneffects matches 1.. at @e[name=slot20] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot20 matches 1.. at @e[name=slot20] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 
 execute if score durationSlot21 poison matches 1.. at @e[name=slot21] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -75,7 +75,7 @@ execute if score slot21Disease disease matches 1.. at @e[name=slot21] run partic
 execute if score slot21bleeding booleaneffects matches 1.. at @e[name=slot21] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~ ~ 0.2 0.9 0.2 0.5 1 normal
 execute if score disarmedslot21 booleaneffects matches 1.. at @e[name=slot21] run particle minecraft:ash ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score durationSlot21 taunt matches 1.. at @e[name=slot21] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
-execute if score invincibleslot21 booleaneffects matches 1.. at @e[name=slot21] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score invincibleSlot21 booleaneffects matches 1.. at @e[name=slot21] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot21 matches 1.. at @e[name=slot21] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 
 execute if score durationSlot22 poison matches 1.. at @e[name=slot22] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -91,7 +91,7 @@ execute if score slot22Disease disease matches 1.. at @e[name=slot22] run partic
 execute if score slot22bleeding booleaneffects matches 1.. at @e[name=slot22] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~ ~ 0.2 0.9 0.2 0.5 1 normal
 execute if score disarmedslot22 booleaneffects matches 1.. at @e[name=slot22] run particle minecraft:ash ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score durationSlot22 taunt matches 1.. at @e[name=slot22] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
-execute if score invincibleslot22 booleaneffects matches 1.. at @e[name=slot22] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score invincibleSlot22 booleaneffects matches 1.. at @e[name=slot22] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot22 matches 1.. at @e[name=slot22] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 
 execute if score durationSlot23 poison matches 1.. at @e[name=slot23] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -107,7 +107,7 @@ execute if score slot23Disease disease matches 1.. at @e[name=slot23] run partic
 execute if score slot23bleeding booleaneffects matches 1.. at @e[name=slot23] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~ ~ 0.2 0.9 0.2 0.5 1 normal
 execute if score disarmedslot23 booleaneffects matches 1.. at @e[name=slot23] run particle minecraft:ash ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score durationSlot23 taunt matches 1.. at @e[name=slot23] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
-execute if score invincibleslot23 booleaneffects matches 1.. at @e[name=slot23] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score invincibleSlot23 booleaneffects matches 1.. at @e[name=slot23] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot23 matches 1.. at @e[name=slot23] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 
 execute if score durationSlot24 poison matches 1.. at @e[name=slot24] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1

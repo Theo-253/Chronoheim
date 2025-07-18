@@ -10,7 +10,4 @@ execute as @a[tag=p5] run execute as @a[tag=p6] if score game3start ongoinggames
 execute as @a[tag=p5] run execute as @a[tag=p6] if score game3start ongoinggames matches 0 run place template minecraft:game3heroes -173 128 -116
 execute as @a[tag=p5] run execute as @a[tag=p6] if score game3start ongoinggames matches 0 run scoreboard players set game3start ongoinggames 1
 
-function chthree:effectparticles
-function uithree:ui
-function uithree:characterui
-function uithree:scoreboardui
+

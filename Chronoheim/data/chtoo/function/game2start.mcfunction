@@ -7,6 +7,14 @@ scoreboard objectives add Cooldown_Game_2 dummy
 scoreboard objectives add Spell_Cooldown_Game_2 dummy
 scoreboard objectives setdisplay sidebar.team.yellow Health_Game_2
 scoreboard objectives setdisplay sidebar.team.gold Health_Game_2
+execute positioned 200 1 245 run kill @e[name=mapstand,distance=..30]
+execute at @p[tag=p3,tag=colosseum] run place template map.colosseum 200 -1 231
+execute at @p[tag=p4,tag=colosseum] run place template map.colosseum 199 -1 261 180
+execute at @p[tag=p3,tag=lab] run place template map.lab 200 -1 231
+execute at @p[tag=p4,tag=lab] run place template map.lab 199 -1 261 180
+execute at @p[tag=p3,tag=!lab,tag=!colosseum] run place template map.scenic 200 0 231
+execute at @p[tag=p4,tag=!lab,tag=!colosseum] run place template map.scenic 199 0 261 180
+kill @e[type=item]
 #Slot 1 Speed Reset
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 1 run scoreboard players operation speed slot9 = bones herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 2 run scoreboard players operation speed slot9 = arthur herospeed

@@ -112,7 +112,7 @@ execute if score abilitynumber abilities matches 22 run execute if score ward sl
 #Gatsby
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation slot4 stun = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation savehp6 saves = slot4 hp
-execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation invincibleslot4 booleaneffects = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation invincibleSlot4 booleaneffects = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 run scoreboard players operation slot4EatenDuration abilities = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot4 matches 0 at @e[name=slot4] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~-20 ~
 execute if score abilitynumber abilities matches 23 run execute if score ward slot4 matches 1.. run function ch:wardslot4
@@ -157,8 +157,8 @@ execute if score abilitynumber abilities matches 25 if score slot6isatk booleans
 execute if score abilitynumber abilities matches 25 if score slot6isatk booleans matches 1 run execute if score ward slot3 matches 1.. run function ch:wardslot3
 
 #Ripper
-execute if score abilitynumber abilities matches 29 if score slot4 hp <= ripper abilityStats if score ward slot4 matches 0 if score invincibleslot4 booleaneffects matches 0 run scoreboard players set slot4 hp 0
-execute if score abilitynumber abilities matches 29 if score slot4 hp <= ripper abilityStats if score invincibleslot4 booleaneffects matches 0 if score ward slot4 matches 1.. run function ch:wardslot4
+execute if score abilitynumber abilities matches 29 if score slot4 hp <= ripper abilityStats if score ward slot4 matches 0 if score invincibleSlot4 booleaneffects matches 0 run scoreboard players set slot4 hp 0
+execute if score abilitynumber abilities matches 29 if score slot4 hp <= ripper abilityStats if score invincibleSlot4 booleaneffects matches 0 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score abilitynumber abilities matches 29 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Execute on Slot 4!"]
 execute if score abilitynumber abilities matches 29 at @e[name=slot4] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 

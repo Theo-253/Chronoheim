@@ -112,7 +112,7 @@ execute if score abilitynumber abilities matches 22 run execute if score ward sl
 #Gatsby
 execute if score abilitynumber abilities matches 23 if score ward slot6 matches 0 run scoreboard players operation slot6 stun = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot6 matches 0 run scoreboard players operation savehp6 saves = slot6 hp
-execute if score abilitynumber abilities matches 23 if score ward slot6 matches 0 run scoreboard players operation invincibleslot6 booleaneffects = gatsbyDuration abilityStats
+execute if score abilitynumber abilities matches 23 if score ward slot6 matches 0 run scoreboard players operation invincibleSlot6 booleaneffects = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot6 matches 0 run scoreboard players operation slot6EatenDuration abilities = gatsbyDuration abilityStats
 execute if score abilitynumber abilities matches 23 if score ward slot6 matches 0 at @e[name=slot6] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~-20 ~
 execute if score abilitynumber abilities matches 23 run execute if score ward slot6 matches 1.. run function ch:wardslot6
@@ -167,8 +167,8 @@ execute if score abilitynumber abilities matches 25 if score slot2isatk booleans
 
 
 #Ripper
-execute if score abilitynumber abilities matches 29 if score slot6 hp <= ripper abilityStats if score ward slot6 matches 0 if score invincibleslot6 booleaneffects matches 0 run scoreboard players set slot6 hp 0
-execute if score abilitynumber abilities matches 29 if score slot6 hp <= ripper abilityStats if score invincibleslot6 booleaneffects matches 0 if score ward slot6 matches 1.. run function ch:wardslot6
+execute if score abilitynumber abilities matches 29 if score slot6 hp <= ripper abilityStats if score ward slot6 matches 0 if score invincibleSlot6 booleaneffects matches 0 run scoreboard players set slot6 hp 0
+execute if score abilitynumber abilities matches 29 if score slot6 hp <= ripper abilityStats if score invincibleSlot6 booleaneffects matches 0 if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score abilitynumber abilities matches 29 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Execute on Slot 6!"]
 execute if score abilitynumber abilities matches 29 at @e[name=slot6] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 

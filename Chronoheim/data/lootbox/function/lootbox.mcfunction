@@ -1,4 +1,4 @@
-
+execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:luck":{amplifier:{min:0,max:0}}}}} run tag @s add lootbox
 scoreboard objectives setdisplay sidebar.team.aqua Shards
 execute at @a[tag=lootbox] run execute store result score drop lootboxes run random value 1..100
 execute if score drop lootboxes matches 1..50 run execute store result score spellraritydrop lootboxes run random value 1..10

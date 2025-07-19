@@ -509,12 +509,12 @@ scoreboard players set domino heroattack 100
 scoreboard players set domino herohealth 1920
 scoreboard players set domino herospeed 1200
 scoreboard players set dominoCD abilityStats 4
-scoreboard players set domino abilityStats 160
+scoreboard players set domino abilityStats 240
 scoreboard players set dominoDuration abilityStats 3
 scoreboard players set dominoPoisonLeader abilityStats 80
 scoreboard players set dominoPoison abilityStats 40
 scoreboard players set dominoLeader abilityStats 140
-scoreboard players set dominoLeaderHit heroattack 100
+scoreboard players set dominoLeaderHit heroattack 120
 
 scoreboard players set golemite heroattack 60
 scoreboard players set golemite herohealth 480
@@ -535,7 +535,7 @@ scoreboard players set demon herospeed 700
 
 scoreboard players set blizzardSpDebuffDuration spellStats 2
 scoreboard players set blizzardSpDebuff spellStats 500
-scoreboard players set blizzard spellStats 60
+scoreboard players set blizzard spellStats 120
 scoreboard players set blizzardCD spellStats 4
 scoreboard players set blizzardSp spellStats 3
 scoreboard players set chainLightning spellStats 80
@@ -574,8 +574,8 @@ scoreboard players set fountainOfYouthSp spellStats 3
 scoreboard players set fountainOfYouthCD spellStats 2
 scoreboard players set frostboltCD spellStats 3
 scoreboard players set frostboltSp spellStats 2
-scoreboard players set frostbolt spellStats 40
-scoreboard players set frostboltDmgDebuff spellStats 40
+scoreboard players set frostbolt spellStats 80
+scoreboard players set frostboltDmgDebuff spellStats 60
 scoreboard players set frostboltSpDebuff spellStats 700
 scoreboard players set frostboltDuration spellStats 2
 scoreboard players set heal spellStats 180
@@ -586,7 +586,7 @@ scoreboard players set healingTotemSpeed spellStats 1200
 scoreboard players set healingTotemSp spellStats 4
 scoreboard players set healingTotemHeal spellStats 120
 scoreboard players set healingTotemCD spellStats 5
-scoreboard players set immolateburn spellStats 100
+scoreboard players set immolateburn spellStats 140
 scoreboard players set immolateDuration spellStats 3
 scoreboard players set immolateCD spellStats 4
 scoreboard players set immolateSp spellStats 2
@@ -617,7 +617,7 @@ scoreboard players set protectorsruneMarks spellStats 20
 scoreboard players set protectorsRuneSp spellStats 3
 scoreboard players set ritualOfBloodCD spellStats 3
 scoreboard players set ritualOfBloodSp spellStats 1
-scoreboard players set ritualOfBloodDuration spellStats 1
+scoreboard players set ritualOfBloodDuration spellStats 2
 scoreboard players set secondWindCD spellStats 2
 scoreboard players set secondWindSpeed spellStats 500
 scoreboard players set secondWind spellStats 100

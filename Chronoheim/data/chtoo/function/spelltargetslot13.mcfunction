@@ -62,21 +62,21 @@ execute if score spellnumber2 spells matches 2 run execute at @n[type=armor_stan
 execute if score spellnumber2 spells matches 2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Heal on Slot 5!"]
 
 #Magic Missile! Magic Missile! I smite thee with Magic Missile!
-execute if score spellnumber spells matches 4 run scoreboard players add magicMissilex3 spells 1
-execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves = magicMissile spellStats
-execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp3 spells
-execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += marks slot13
-execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot13
-execute if score spellnumber spells matches 4 run execute if score ward slot13 matches 0 run scoreboard players operation shield slot13 -= spellDmg saves
-execute if score spellnumber spells matches 4 run execute if score ward slot13 matches 0 if score shield slot13 matches ..0 run scoreboard players operation slot13 hp += shield slot13
-execute if score spellnumber spells matches 4 run execute if score ward slot13 matches 1.. run function chtoo:wardslot13
-execute if score spellnumber spells matches 4 run execute at @n[type=armor_stand,name=slot13] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
-execute if score spellnumber spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," smited Slot 13 with Magic Missle!"]
-execute if score spellnumber spells matches 4 run execute if score magicMissilex3 spells matches 1 run function chtoo:spellgivetargetsp3
-execute if score spellnumber spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set spellbuffsp3 spells 0
-execute if score spellnumber spells matches 4 run execute if score magicMissilex3 spells matches 2 run clear @a[tag=p3] target
-execute if score spellnumber spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set attackIsOngoingGame2 booleans 0
-execute if score spellnumber spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set magicMissilex3 spells 0
+execute if score spellnumber2 spells matches 4 run scoreboard players add magicMissilex3 spells 1
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves = magicMissile spellStats
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp3 spells
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves += marks slot13
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot13
+execute if score spellnumber2 spells matches 4 run execute if score ward slot13 matches 0 run scoreboard players operation shield slot13 -= spellDmg saves
+execute if score spellnumber2 spells matches 4 run execute if score ward slot13 matches 0 if score shield slot13 matches ..0 run scoreboard players operation slot13 hp += shield slot13
+execute if score spellnumber2 spells matches 4 run execute if score ward slot13 matches 1.. run function chtoo:wardslot13
+execute if score spellnumber2 spells matches 4 run execute at @n[type=armor_stand,name=slot13] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
+execute if score spellnumber2 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," smited Slot 13 with Magic Missle!"]
+execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 1 run function chtoo:spellgivetargetsp3
+execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set spellbuffsp3 spells 0
+execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run clear @a[tag=p3] target
+execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set magicMissilex3 spells 0
 
 #Protector's Rune
 execute if score spellnumber2 spells matches 16 if score protectorsrune spellStats > durationSlot13 taunt run scoreboard players operation durationSlot13 taunt = protectorsrune spellStats

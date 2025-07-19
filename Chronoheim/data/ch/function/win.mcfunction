@@ -2,6 +2,14 @@ scoreboard objectives remove Health_Game_1
 scoreboard objectives remove Speed_Game_1
 scoreboard objectives remove Cooldown_Game_1
 scoreboard objectives remove Spell_Cooldown_Game_1
+scoreboard players set slot1 hp 1
+scoreboard players set slot2 hp 1
+scoreboard players set slot3 hp 1
+scoreboard players set slot4 hp 1
+scoreboard players set slot5 hp 1
+scoreboard players set slot6 hp 1
+scoreboard players set slot7 hp 1
+scoreboard players set slot8 hp 1
 scoreboard players set character# slot1 0
 scoreboard players set character# slot2 0
 scoreboard players set character# slot3 0

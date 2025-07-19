@@ -27,6 +27,7 @@ scoreboard players set speed slot14 0
 scoreboard players set speed slot15 0
 scoreboard players set speed slot16 0
 scoreboard players set game2Ongoing ongoinggames 0
+scoreboard players set drafttext2 drafts 0
 clear @a[tag=game2]
 team leave @a[tag=game2]
 tp @a[tag=game2] -32 51 1

@@ -26,6 +26,7 @@ scoreboard players set speed slot5 0
 scoreboard players set speed slot6 0
 scoreboard players set speed slot7 0
 scoreboard players set speed slot8 0
+scoreboard players set drafttext drafts 0
 scoreboard players set game1Ongoing ongoinggames 0
 clear @a[tag=game1]
 team leave @a[tag=game1]

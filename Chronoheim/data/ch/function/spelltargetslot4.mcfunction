@@ -61,7 +61,7 @@ execute if score spellnumber spells matches 2 run scoreboard players set attackI
 execute if score spellnumber spells matches 2 run execute at @n[type=armor_stand,name=slot4] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber spells matches 2 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Heal on Slot 4!"]
 
-#Magic Missile
+#Magic Missile! Magic Missile! I smite thee with Magic Missile!
 execute if score spellnumber spells matches 4 run scoreboard players add magicMissilex2 spells 1
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves = magicMissile spellStats
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
@@ -129,7 +129,6 @@ execute if score spellnumber spells matches 28 run function ch:spellgivetargetsp
 execute if score spellnumber spells matches 28 run scoreboard players set spellnumber spells -1
 execute if score spellnumber spells matches 28 run execute at @n[type=armor_stand,name=slot4] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber spells matches 28 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Shifting Shadows to make Slot 4 scary!"]
-clear @p[tag=game1]
 #fireball
 execute if score spellnumber spells matches 1 run scoreboard players operation spellDmg saves = fireball spellStats
 execute if score spellnumber spells matches 1 run scoreboard players operation spellDmg saves += spellbuffsp2 spells

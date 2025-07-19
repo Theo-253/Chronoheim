@@ -28,7 +28,7 @@ execute if score Spell_Points_P6 Spell_Points >= chainLightningSp spellStats run
 
 
 
-#Magic Missile Lightning Select P5
+#Magic Missile! Magic Missile! I smite thee with Magic Missile! Lightning Select P5
 execute if score Spell_Points_P6 Spell_Points >= magicMissileSp spellStats run execute if items entity @p[tag=p6,tag=magicmissileO] container.* spectral_arrow[minecraft:custom_name={"text":"Magic Missile","bold":true,"color":"dark_green","italic":false}] run tag @p[tag=p6] add magicmissile
 execute if score Spell_Points_P6 Spell_Points >= magicMissileSp spellStats run execute if items entity @p[tag=p6,tag=magicmissileO] container.* spectral_arrow[minecraft:custom_name={"text":"Magic Missile","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p6] ["",{"selector":"@p[tag=p6]"}," picked Magic Missile."]
 execute if score Spell_Points_P6 Spell_Points < magicMissileSp spellStats run execute if items entity @p[tag=p6,tag=magicmissileO] container.* spectral_arrow[minecraft:custom_name={"text":"Magic Missile","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p6] ["",{"selector":"@p[tag=p6]"}," You dont have enough spell points to equip this spell."]

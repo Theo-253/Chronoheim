@@ -50,21 +50,20 @@ execute as @p[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute if score attackIsOngoingGame1 booleans matches 0 run execute if score speed slot8 matches ..-10000 if score speed slot7 matches ..-10000 if score speed slot6 matches ..-10000 run execute if score speed slot5 matches ..-10000 run execute if score speed slot4 matches ..-10000 run execute if score speed slot3 matches ..-10000 run execute if score speed slot2 matches ..-10000 run execute if score speed slot1 matches ..-10000 run function ch:turnresetgame1
 
 #When I get elected, we will have so much winning
-execute if score alivep1 deaths matches 0 run tellraw @a ["",{"selector":"@p[tag=p2]"}," has won the duel against ",{"selector":"@p[tag=p1]"},"!"]
-execute if score alivep1 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Wins 1
-execute if score alivep1 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Combat_Rating 5
-execute if score alivep1 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Gold 15
-execute if score alivep1 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Gold 5
-execute if score alivep1 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p1] Combat_Rating 5
-execute if score alivep1 deaths matches 0 run function ch:win
-execute if score alivep2 deaths matches 0 run tellraw @a ["",{"selector":"@p[tag=p1]"}," has won the duel against ",{"selector":"@p[tag=p2]"},"!"]
-execute if score alivep2 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Wins 1
-execute if score alivep2 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Combat_Rating 5
-execute if score alivep2 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Gold 5
-execute if score alivep2 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Gold 15
-execute if score alivep2 deaths matches 0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p2] Combat_Rating 5
-execute if score alivep2 deaths matches 0 run function ch:win
-
+execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 run tellraw @a ["",{"selector":"@p[tag=p2]"}," has won the duel against ",{"selector":"@p[tag=p1]"},"!"]
+execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Wins 1
+execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Combat_Rating 5
+execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Gold 15
+execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Gold 5
+execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p1] Combat_Rating 5
+execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 run function ch:win
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 run tellraw @a ["",{"selector":"@p[tag=p1]"}," has won the duel against ",{"selector":"@p[tag=p2]"},"!"]
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Wins 1
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Combat_Rating 5
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Gold 5
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Gold 15
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p2] Combat_Rating 5
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 run function ch:win
 #Rapidtick
 execute if score character# slot2 matches 18 if score slot2 hp matches ..800 run scoreboard players operation atk slot2 = grangorLeaderAtk heroattack
 execute if score character# slot2 matches 18 if score slot2 hp matches 801.. run scoreboard players operation atk slot2 = grangor heroattack

@@ -63,7 +63,19 @@ execute if score spellnumber2 spells matches 2 run execute at @n[type=armor_stan
 execute if score spellnumber2 spells matches 2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Heal on Slot 8!"]
 
 #Magic Missile
-execute if score spellnumber2 spells matches 4 run scoreboard players add magicmissilex3 spells 1
+#Magic Missile Token
+execute if score spellnumber2 spells matches -2 run scoreboard players operation spellDmg2 saves = magicMissile spellStats
+execute if score spellnumber2 spells matches -2 run scoreboard players operation spellDmg2 saves += spellbuffsp3 spells
+execute if score spellnumber2 spells matches -2 run scoreboard players operation spellDmg2 saves += marks slot16
+execute if score spellnumber2 spells matches -2 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot16
+execute if score spellnumber2 spells matches -2 run execute if score ward slot16 matches 0 run scoreboard players operation shield slot16 -= spellDmg2 saves
+execute if score spellnumber2 spells matches -2 run execute if score ward slot16 matches 0 if score shield slot16 matches ..0 run scoreboard players operation slot16 hp += shield slot16
+execute if score spellnumber2 spells matches -2 run execute if score ward slot16 matches 1.. run function chtoo:wardslot16
+execute if score spellnumber2 spells matches -2 run execute at @n[type=armor_stand,name=slot16] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
+execute if score spellnumber2 spells matches -2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," smited Slot 8 with Magic Missle!"]
+execute if score spellnumber2 spells matches -2 run scoreboard players set attackIsOngoingGame2 booleans 0
+
+#Magic Missile, Magic Missile! I smite thee with Magic Missile!
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg2 saves = magicMissile spellStats
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg2 saves += spellbuffsp3 spells
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg2 saves += marks slot16
@@ -71,13 +83,10 @@ execute if score spellnumber2 spells matches 4 run scoreboard players operation 
 execute if score spellnumber2 spells matches 4 run execute if score ward slot16 matches 0 run scoreboard players operation shield slot16 -= spellDmg2 saves
 execute if score spellnumber2 spells matches 4 run execute if score ward slot16 matches 0 if score shield slot16 matches ..0 run scoreboard players operation slot16 hp += shield slot16
 execute if score spellnumber2 spells matches 4 run execute if score ward slot16 matches 1.. run function chtoo:wardslot16
+execute if score spellnumber2 spells matches 4 run function chtoo:spellgivetargetsp4
 execute if score spellnumber2 spells matches 4 run execute at @n[type=armor_stand,name=slot16] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
 execute if score spellnumber2 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," smited Slot 8 with Magic Missle!"]
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 1 run function chtoo:spellgivetargetsp3
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 2 run scoreboard players set spellbuffsp3 spells 0
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 2 run clear @a[tag=p3] target
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 2 run scoreboard players set attackIsOngoingGame2 booleans 0
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 2 run scoreboard players set magicmissilex3 spells 0
+execute if score spellnumber2 spells matches 4 run scoreboard players set spellnumber2 spells -2
 
 #Protector's Rune
 execute if score spellnumber2 spells matches 16 if score protectorsrune spellStats > durationSlot16 taunt run scoreboard players operation durationSlot16 taunt = protectorsrune spellStats

@@ -62,19 +62,19 @@ execute if score spellnumber2 spells matches 2 run scoreboard players set attack
 execute if score spellnumber2 spells matches 2 run execute at @n[type=armor_stand,name=slot9] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber2 spells matches 2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Heal on Slot 1!"]
 
+#Magic Missile Token
+execute if score spellnumber2 spells matches -2 run scoreboard players operation spellDmg2 saves = magicMissile spellStats
+execute if score spellnumber2 spells matches -2 run scoreboard players operation spellDmg2 saves += spellbuffsp4 spells
+execute if score spellnumber2 spells matches -2 run scoreboard players operation spellDmg2 saves += marks slot9
+execute if score spellnumber2 spells matches -2 run scoreboard players operation spellDmg2 saves /= atkmultiplier slot9
+execute if score spellnumber2 spells matches -2 run execute if score ward slot9 matches 0 run scoreboard players operation shield slot9 -= spellDmg2 saves
+execute if score spellnumber2 spells matches -2 run execute if score ward slot9 matches 0 if score shield slot9 matches ..0 run scoreboard players operation slot9 hp += shield slot9
+execute if score spellnumber2 spells matches -2 run execute if score ward slot9 matches 1.. run function chtoo:wardslot9
+execute if score spellnumber2 spells matches -2 run execute at @n[type=armor_stand,name=slot9] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
+execute if score spellnumber2 spells matches -2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," smited Slot 1 with Magic Missle!"]
+execute if score spellnumber2 spells matches -2 run function chtoo:spellphasep3
 
-
-
-
-
-
-
-
-
-
-
-#Magic Missile
-execute if score spellnumber2 spells matches 4 run scoreboard players add magicmissilex3 spells 1
+#Magic Missile, Magic Missile! I smite thee with Magic Missile!
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg2 saves = magicMissile spellStats
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg2 saves += spellbuffsp4 spells
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg2 saves += marks slot9
@@ -82,15 +82,11 @@ execute if score spellnumber2 spells matches 4 run scoreboard players operation 
 execute if score spellnumber2 spells matches 4 run execute if score ward slot9 matches 0 run scoreboard players operation shield slot9 -= spellDmg2 saves
 execute if score spellnumber2 spells matches 4 run execute if score ward slot9 matches 0 if score shield slot9 matches ..0 run scoreboard players operation slot9 hp += shield slot9
 execute if score spellnumber2 spells matches 4 run execute if score ward slot9 matches 1.. run function chtoo:wardslot9
-
-#cursed line of code. This line of code doesn't work at all. That's why there's nothing here. It's cursed. There was a line above it that said magic missle!"] magic missile!"] I smite thee with magic missile!"] and one below it that said magic missle!"] magic missile!"] I skip thee with magic missile!"] Both of those lines triggered, but this one, for whatever reason, was skipped. Anyways: sigh starch lord is the most overrated card in the entire game. I can't stand it when people think starch lord is good. You guys, this is a 4 cost card that has 2 attack and 4 health. It has garbage stats. Now let's look at it's abilities. When you play a root, it gets +1/+1. Thats almost no- think about it. In order to get this up to the actual stats that it needs to be as a 4 cost card, this would have to buff like 2 roots just to break even. It would have to grow 3 roots to actually be viable. The fact that people think that it is a good idea to start drawing cards on turn 5, it really means you have no idea how to play pvz heroes. It's way too late!"] This is- it's- you dont make a deck that has roots in it, that's not a good strategy, there are some good roots in the game but you just have to put too many roots in it. It's drawing cards on turn 5, the last turn you're gonna be drawing cards as a plant player is going to be on turn 3. it's so overrated, it's just a big piece of trash, just look at this guy, a big ugly guy. it's based on by the way the worst Marvel superhero in the entire Marvel Fra- actually universe of Superheroes in the entire history of the planet, star-lord, who is a simp, douchebag, has no superpowers, is the lamest, dumb. and do you know what, it's appropriate cuz this is the stupidest card in the game and it's based on the stupidest Marvel superhero ever. This is so overrated, It's so grunts it's so, I'm sticking this in F tier I don't even care.
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 1 run function chtoo:spellgivetargetsp4
+execute if score spellnumber2 spells matches 4 run function chtoo:spellgivetargetsp4
 execute if score spellnumber2 spells matches 4 run execute at @n[type=armor_stand,name=slot9] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
 execute if score spellnumber2 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," smited Slot 1 with Magic Missle!"]
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 2 run scoreboard players set spellbuffsp4 spells 0
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 2 run clear @a[tag=p4] target
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 2 run function chtoo:spellphasep3
-execute if score spellnumber2 spells matches 4 run execute if score magicmissilex3 spells matches 2 run scoreboard players set magicmissilex3 spells 0
+execute if score spellnumber2 spells matches 4 run scoreboard players set spellnumber2 spells -2
+
 
 #Protector's Rune
 execute if score spellnumber2 spells matches 16 if score protectorsrune spellStats > durationSlot9 taunt run scoreboard players operation durationSlot9 taunt = protectorsrune spellStats

@@ -4,10 +4,10 @@ clear @a[tag=game3]
 #Dragonforge
 execute if score spellnumber3 spells matches 26 run execute if score durationSlot17 shield < dragonforgeDuration spellStats run scoreboard players operation durationSlot17 shield = dragonforgeDuration spellStats 
 execute if score spellnumber3 spells matches 26 run scoreboard players operation shield slot17 += dragonforge spellStats
-execute if score spellnumber3 spells matches 26 run execute if score alivep5 deaths matches 1 run scoreboard players operation shield slot17 += dragonforge spellStats
+execute if score spellnumber3 spells matches 26 run execute if score slot18 hp matches ..0 if score slot19 hp matches ..0 if score slot20 hp matches ..0 run scoreboard players operation shield slot17 += dragonforge spellStats
 execute if score spellnumber3 spells matches 26 run scoreboard players set attackIsOngoingGame2 booleans 0
-execute if score spellnumber3 spells matches 26 run execute if score alivep5 deaths matches 1 run execute at @n[type=armor_stand,name=slot17] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score spellnumber3 spells matches 26 run execute if score alivep5 deaths matches 2.. run execute at @n[type=armor_stand,name=slot17] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+execute if score spellnumber3 spells matches 26 run execute if score slot18 hp matches ..0 if score slot19 hp matches ..0 if score slot20 hp matches ..0 run execute at @n[type=armor_stand,name=slot17] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber3 spells matches 26 run execute at @n[type=armor_stand,name=slot17] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score spellnumber3 spells matches 26 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Dragonforge on Slot 1!"]
 
 #Embiggen
@@ -61,22 +61,6 @@ execute if score spellnumber3 spells matches 2 run scoreboard players set spellb
 execute if score spellnumber3 spells matches 2 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber3 spells matches 2 run execute at @n[type=armor_stand,name=slot17] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber3 spells matches 2 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Heal on Slot 1!"]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #Magic Missile

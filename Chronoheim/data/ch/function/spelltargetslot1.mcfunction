@@ -4,10 +4,10 @@ clear @a[tag=game1]
 #Dragonforge
 execute if score spellnumber spells matches 26 run execute if score durationSlot1 shield < dragonforgeDuration spellStats run scoreboard players operation durationSlot1 shield = dragonforgeDuration spellStats 
 execute if score spellnumber spells matches 26 run scoreboard players operation shield slot1 += dragonforge spellStats
-execute if score spellnumber spells matches 26 run execute if score alivep1 deaths matches 1 run scoreboard players operation shield slot1 += dragonforge spellStats
+execute if score spellnumber spells matches 26 run execute if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 run scoreboard players operation shield slot1 += dragonforge spellStats
 execute if score spellnumber spells matches 26 run scoreboard players set attackIsOngoingGame1 booleans 0
-execute if score spellnumber spells matches 26 run execute if score alivep1 deaths matches 1 run execute at @n[type=armor_stand,name=slot1] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score spellnumber spells matches 26 run execute if score alivep1 deaths matches 2.. run execute at @n[type=armor_stand,name=slot1] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+execute if score spellnumber spells matches 26 run execute if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 run execute at @n[type=armor_stand,name=slot1] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber spells matches 26 run execute at @n[type=armor_stand,name=slot1] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score spellnumber spells matches 26 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Dragonforge on Slot 1!"]
 
 #Embiggen

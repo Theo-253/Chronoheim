@@ -4,10 +4,10 @@ clear @a[tag=game3]
 #Dragonforge
 execute if score spellnumber3 spells matches 26 run execute if score durationSlot23 shield < dragonforgeDuration spellStats run scoreboard players operation durationSlot23 shield = dragonforgeDuration spellStats 
 execute if score spellnumber3 spells matches 26 run scoreboard players operation shield slot23 += dragonforge spellStats
-execute if score spellnumber3 spells matches 26 run execute if score alivep6 deaths matches 1 run scoreboard players operation shield slot23 += dragonforge spellStats
+execute if score spellnumber3 spells matches 26 run execute if score slot22 hp matches ..0 if score slot21 hp matches ..0 if score slot24 hp matches ..0 run scoreboard players operation shield slot23 += dragonforge spellStats
 execute if score spellnumber3 spells matches 26 run function chthree:spellphasep5
-execute if score spellnumber3 spells matches 26 run execute if score alivep6 deaths matches 1 run execute at @n[type=armor_stand,name=slot22] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score spellnumber3 spells matches 26 run execute if score alivep6 deaths matches 2.. run execute at @n[type=armor_stand,name=slot22] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+execute if score spellnumber3 spells matches 26 run execute if score slot22 hp matches ..0 if score slot21 hp matches ..0 if score slot24 hp matches ..0 run execute at @n[type=armor_stand,name=slot22] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber3 spells matches 26 run execute at @n[type=armor_stand,name=slot22] run particle dragon_breath ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score spellnumber3 spells matches 26 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Dragonforge on Slot 7!"]
 
 #Embiggen

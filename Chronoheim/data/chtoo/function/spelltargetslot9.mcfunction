@@ -72,6 +72,7 @@ execute if score spellnumber2 spells matches -2 run execute if score ward slot9 
 execute if score spellnumber2 spells matches -2 run execute if score ward slot9 matches 1.. run function chtoo:wardslot9
 execute if score spellnumber2 spells matches -2 run execute at @n[type=armor_stand,name=slot9] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
 execute if score spellnumber2 spells matches -2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," smited Slot 1 with Magic Missle!"]
+say yee
 execute if score spellnumber2 spells matches -2 run function chtoo:spellphasep3
 
 #Magic Missile, Magic Missile! I smite thee with Magic Missile!

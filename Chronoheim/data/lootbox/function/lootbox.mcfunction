@@ -1,6 +1,6 @@
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:luck":{amplifier:{min:0,max:0}}}}} run tag @s add lootbox
 scoreboard objectives setdisplay sidebar.team.aqua Shards
-execute store result score drop lootboxes run random value 1..100
+execute at @a[tag=lootbox] run execute store result score drop lootboxes run random value 1..100
 execute if score drop lootboxes matches 1..50 run execute store result score spellraritydrop lootboxes run random value 1..10
 execute if score drop lootboxes matches 50..99 run execute store result score heroraritydrop lootboxes run random value 1..10
 execute if score drop lootboxes matches 100 run execute store result score mapdrop lootboxes run scoreboard players set mapdrop lootboxes 1
@@ -244,6 +244,8 @@ execute if score legendaryhero lootboxes matches 5 run execute at @p[tag=lootbox
 execute if score legendaryhero lootboxes matches 5 run tag @p[tag=lootbox,tag=!ripperO] add ripperO
 
 #Score resets
+execute if score drop lootboxes matches 1.. run effect clear @a[tag=lootbox] luck
+execute if score drop lootboxes matches 1.. run tag @a remove lootbox
 scoreboard players set drop lootboxes 0
 scoreboard players set spellraritydrop lootboxes 0
 scoreboard players set heroraritydrop lootboxes 0
@@ -256,5 +258,4 @@ scoreboard players set uncommonhero lootboxes 0
 scoreboard players set rarehero lootboxes 0
 scoreboard players set epichero lootboxes 0
 scoreboard players set legendaryhero lootboxes 0
-tag @a remove lootbox
-effect clear @a luck
+

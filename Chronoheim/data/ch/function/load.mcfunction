@@ -580,11 +580,11 @@ scoreboard players set frostboltDuration spellStats 2
 scoreboard players set heal spellStats 180
 scoreboard players set healSp spellStats 2
 scoreboard players set healCD spellStats 3
-scoreboard players set healingTotemHP spellStats 600
+scoreboard players set healingTotemHP spellStats 400
 scoreboard players set healingTotemSpeed spellStats 1200
 scoreboard players set healingTotemSp spellStats 4
 scoreboard players set healingTotemHeal spellStats 120
-scoreboard players set healingTotemCD spellStats 5
+scoreboard players set healingTotemCD spellStats 6
 scoreboard players set immolateburn spellStats 140
 scoreboard players set immolateDuration spellStats 3
 scoreboard players set immolateCD spellStats 4

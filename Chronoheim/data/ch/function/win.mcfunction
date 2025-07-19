@@ -175,6 +175,14 @@ scoreboard players set doubleatk slot5 0
 scoreboard players set doubleatk slot6 0
 scoreboard players set doubleatk slot7 0
 scoreboard players set doubleatk slot8 0
+scoreboard players set useddoubleatk slot1 0
+scoreboard players set useddoubleatk slot2 0
+scoreboard players set useddoubleatk slot3 0
+scoreboard players set useddoubleatk slot4 0
+scoreboard players set useddoubleatk slot5 0
+scoreboard players set useddoubleatk slot6 0
+scoreboard players set useddoubleatk slot7 0
+scoreboard players set useddoubleatk slot8 0
 scoreboard players set splash slot1 0
 scoreboard players set splash slot2 0
 scoreboard players set splash slot3 0

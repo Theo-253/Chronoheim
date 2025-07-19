@@ -93,14 +93,14 @@ execute if score slot7isatk booleans matches 1 run execute if score debuffDurati
 execute if score slot8isatk booleans matches 1 run execute if score debuffDurationSlot8 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot8 atkmodifiers 1
 
 #Regen Healing
-execute if score slot1isatk booleans matches 1 run scoreboard players operation slot1 hp += slot1Regen regen
-execute if score slot2isatk booleans matches 1 run scoreboard players operation slot2 hp += slot2Regen regen
-execute if score slot3isatk booleans matches 1 run scoreboard players operation slot3 hp += slot3Regen regen
-execute if score slot4isatk booleans matches 1 run scoreboard players operation slot4 hp += slot4Regen regen
-execute if score slot5isatk booleans matches 1 run scoreboard players operation slot5 hp += slot5Regen regen
-execute if score slot6isatk booleans matches 1 run scoreboard players operation slot6 hp += slot6Regen regen
-execute if score slot7isatk booleans matches 1 run scoreboard players operation slot7 hp += slot7Regen regen
-execute if score slot8isatk booleans matches 1 run scoreboard players operation slot8 hp += slot8Regen regen
+execute if score slot1isatk booleans matches 1 if score slot1bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += slot1Regen regen
+execute if score slot2isatk booleans matches 1 if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot2 hp += slot2Regen regen
+execute if score slot3isatk booleans matches 1 if score slot3bleeding booleaneffects matches 0 run scoreboard players operation slot3 hp += slot3Regen regen
+execute if score slot4isatk booleans matches 1 if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += slot4Regen regen
+execute if score slot5isatk booleans matches 1 if score slot5bleeding booleaneffects matches 0 run scoreboard players operation slot5 hp += slot5Regen regen
+execute if score slot6isatk booleans matches 1 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += slot6Regen regen
+execute if score slot7isatk booleans matches 1 if score slot7bleeding booleaneffects matches 0 run scoreboard players operation slot7 hp += slot7Regen regen
+execute if score slot8isatk booleans matches 1 if score slot8bleeding booleaneffects matches 0 run scoreboard players operation slot8 hp += slot8Regen regen
 
 #Regen Duration
 execute if score slot1isatk booleans matches 1 run execute if score durationSlot1 regen matches 1.. run scoreboard players remove durationSlot1 regen 1

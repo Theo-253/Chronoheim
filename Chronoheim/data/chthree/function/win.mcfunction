@@ -2,6 +2,7 @@ scoreboard objectives remove Health_Game_3
 scoreboard objectives remove Speed_Game_3
 scoreboard objectives remove Cooldown_Game_3
 scoreboard objectives remove Spell_Cooldown_Game_3
+scoreboard players set flintsplashmode3 booleans 0
 scoreboard players set slot17 hp 1
 scoreboard players set slot18 hp 1
 scoreboard players set slot19 hp 1

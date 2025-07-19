@@ -346,7 +346,7 @@ scoreboard players set dillo abilityStats 100
 scoreboard players set dilloCD abilityStats 1
 scoreboard players set dilloLeader herospeed 2200
 scoreboard players set dilloDmg abilityStats 100
-scoreboard players set dilloLeaderShield abilityStats 400
+scoreboard players set dilloLeaderShield abilityStats 200
 scoreboard players set dilloLeaderDuration abilityStats 4
 
 scoreboard players set flint heroattack 200
@@ -388,7 +388,6 @@ scoreboard players set golem herohealth 3200
 scoreboard players set golem herospeed 500
 scoreboard players set golemTaunt abilityStats 2
 scoreboard players set golemCD abilityStats 2
-
 
 scoreboard players set blackbeard heroattack 40
 scoreboard players set blackbeard herohealth 2800

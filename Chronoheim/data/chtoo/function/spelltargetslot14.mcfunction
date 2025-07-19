@@ -83,7 +83,7 @@ execute if score spellnumber2 spells matches 4 run scoreboard players operation 
 execute if score spellnumber2 spells matches 4 run execute if score ward slot14 matches 0 run scoreboard players operation shield slot14 -= spellDmg2 saves
 execute if score spellnumber2 spells matches 4 run execute if score ward slot14 matches 0 if score shield slot14 matches ..0 run scoreboard players operation slot14 hp += shield slot14
 execute if score spellnumber2 spells matches 4 run execute if score ward slot14 matches 1.. run function chtoo:wardslot14
-execute if score spellnumber2 spells matches 4 run function chtoo:spellgivetargetsp4
+execute if score spellnumber2 spells matches 4 run function chtoo:spellgivetargetsp3
 execute if score spellnumber2 spells matches 4 run execute at @n[type=armor_stand,name=slot14] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
 execute if score spellnumber2 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," smited Slot 6 with Magic Missle!"]
 execute if score spellnumber2 spells matches 4 run scoreboard players set spellnumber2 spells -2

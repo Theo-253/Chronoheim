@@ -13,6 +13,7 @@ execute if score disarmedslot9 booleaneffects matches 1.. at @e[name=slot9] run 
 execute if score durationSlot9 taunt matches 1.. at @e[name=slot9] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score invincibleSlot9 booleaneffects matches 1.. at @e[name=slot9] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot9 matches 1.. at @e[name=slot9] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score ward slot9 matches 1.. at @e[name=slot9] run particle minecraft:portal ~ ~2 ~ 0.9 0.9 0.9 0.01 5
 
 execute if score durationSlot10 poison matches 1.. at @e[name=slot10] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot10 regen matches 1.. at @e[name=slot10] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -29,6 +30,7 @@ execute if score disarmedslot10 booleaneffects matches 1.. at @e[name=slot10] ru
 execute if score durationSlot10 taunt matches 1.. at @e[name=slot10] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score invincibleSlot10 booleaneffects matches 1.. at @e[name=slot10] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot10 matches 1.. at @e[name=slot10] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score ward slot10 matches 1.. at @e[name=slot10] run particle minecraft:portal ~ ~2 ~ 0.9 0.9 0.9 0.01 5
 
 execute if score durationSlot11 poison matches 1.. at @e[name=slot11] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot11 regen matches 1.. at @e[name=slot11] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -45,6 +47,7 @@ execute if score disarmedslot11 booleaneffects matches 1.. at @e[name=slot11] ru
 execute if score durationSlot11 taunt matches 1.. at @e[name=slot11] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score invincibleSlot11 booleaneffects matches 1.. at @e[name=slot11] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot11 matches 1.. at @e[name=slot11] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score ward slot11 matches 1.. at @e[name=slot11] run particle minecraft:portal ~ ~2 ~ 0.9 0.9 0.9 0.01 5
 
 execute if score durationSlot12 poison matches 1.. at @e[name=slot12] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot12 regen matches 1.. at @e[name=slot12] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -61,6 +64,7 @@ execute if score disarmedslot12 booleaneffects matches 1.. at @e[name=slot12] ru
 execute if score durationSlot12 taunt matches 1.. at @e[name=slot12] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score invincibleSlot12 booleaneffects matches 1.. at @e[name=slot12] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot12 matches 1.. at @e[name=slot12] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score ward slot12 matches 1.. at @e[name=slot12] run particle minecraft:portal ~ ~2 ~ 0.9 0.9 0.9 0.01 5
 
 execute if score durationSlot13 poison matches 1.. at @e[name=slot13] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot13 regen matches 1.. at @e[name=slot13] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -77,6 +81,7 @@ execute if score disarmedslot13 booleaneffects matches 1.. at @e[name=slot13] ru
 execute if score durationSlot13 taunt matches 1.. at @e[name=slot13] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score invincibleSlot13 booleaneffects matches 1.. at @e[name=slot13] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot13 matches 1.. at @e[name=slot13] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score ward slot13 matches 1.. at @e[name=slot13] run particle minecraft:portal ~ ~2 ~ 0.9 0.9 0.9 0.01 5
 
 execute if score durationSlot14 poison matches 1.. at @e[name=slot14] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot14 regen matches 1.. at @e[name=slot14] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -93,6 +98,7 @@ execute if score disarmedslot14 booleaneffects matches 1.. at @e[name=slot14] ru
 execute if score durationSlot14 taunt matches 1.. at @e[name=slot14] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score invincibleSlot14 booleaneffects matches 1.. at @e[name=slot14] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot14 matches 1.. at @e[name=slot14] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score ward slot14 matches 1.. at @e[name=slot14] run particle minecraft:portal ~ ~2 ~ 0.9 0.9 0.9 0.01 5
 
 execute if score durationSlot15 poison matches 1.. at @e[name=slot15] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot15 regen matches 1.. at @e[name=slot15] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -109,6 +115,7 @@ execute if score disarmedslot15 booleaneffects matches 1.. at @e[name=slot15] ru
 execute if score durationSlot15 taunt matches 1.. at @e[name=slot15] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score invincibleSlot15 booleaneffects matches 1.. at @e[name=slot15] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot15 matches 1.. at @e[name=slot15] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score ward slot15 matches 1.. at @e[name=slot15] run particle minecraft:portal ~ ~2 ~ 0.9 0.9 0.9 0.01 5
 
 execute if score durationSlot16 poison matches 1.. at @e[name=slot16] run particle minecraft:falling_spore_blossom ~ ~2 ~ 0.2 0.9 0.2 0.5 1
 execute if score durationSlot16 regen matches 1.. at @e[name=slot16] run particle minecraft:composter ~ ~2 ~ 0.2 0.9 0.2 0.5 1
@@ -125,6 +132,7 @@ execute if score disarmedslot16 booleaneffects matches 1.. at @e[name=slot16] ru
 execute if score durationSlot16 taunt matches 1.. at @e[name=slot16] run particle minecraft:wax_on ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score invincibleSlot16 booleaneffects matches 1.. at @e[name=slot16] run particle minecraft:glow ~ ~2 ~ 0.2 0.9 0.2 0.01 1
 execute if score shield slot16 matches 1.. at @e[name=slot16] run particle minecraft:wax_off ~ ~2 ~ 0.2 0.9 0.2 0.01 1
+execute if score ward slot16 matches 1.. at @e[name=slot16] run particle minecraft:portal ~ ~2 ~ 0.9 0.9 0.9 0.01 5
 
 execute if score durationSlot9-13 fear matches 1.. at @e[name=slot9] run particle minecraft:soul_fire_flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot9-13 fear matches 1.. at @e[name=slot13] run particle minecraft:sculk_soul ~ ~2 ~ 0.2 0.9 0.2 0.1 1

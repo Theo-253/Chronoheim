@@ -350,7 +350,7 @@ scoreboard players set dilloLeaderShield abilityStats 200
 scoreboard players set dilloLeaderDuration abilityStats 4
 
 scoreboard players set flint heroattack 200
-scoreboard players set flintsplashmode heroattack 100
+scoreboard players set flintsplashdamage heroattack 100
 scoreboard players set flint herosplash 1
 scoreboard players set flint herohealth 2000
 scoreboard players set flint herospeed 1000

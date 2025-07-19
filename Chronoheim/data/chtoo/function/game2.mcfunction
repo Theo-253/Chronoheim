@@ -61,16 +61,16 @@ execute if score attackIsOngoingGame2 booleans matches 0 run execute if score sp
 execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 run tellraw @a ["",{"selector":"@p[tag=p4]"}," has won the duel against ",{"selector":"@p[tag=p3]"},"!"]
 execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Wins 1
 execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Combat_Rating 5
-execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Gold 15
-execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Gold 5
+execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Gold 20
+execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Gold 10
 execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p3] Combat_Rating 5 
 execute if score slot9 hp matches ..0 if score slot10 hp matches ..0 if score slot11 hp matches ..0 if score slot12 hp matches ..0 run function chtoo:win
 execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 run tellraw @a ["",{"selector":"@p[tag=p3]"}," has won the duel against ",{"selector":"@p[tag=p4]"},"!"]
 execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Wins 1
 execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Combat_Rating 5
 execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p4] Combat_Rating 5
-execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Gold 15
-execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Gold 5
+execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p3] Gold 20
+execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p4] Gold 10
 execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 run function chtoo:win
 
 #Rapidtick

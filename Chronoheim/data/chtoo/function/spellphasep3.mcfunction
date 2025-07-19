@@ -63,6 +63,7 @@ execute if score overclockCooldown player3spells matches 1.. run scoreboard play
 execute if score shiftingShadowsCooldown player3spells matches 1.. run scoreboard players remove shiftingShadowsCooldown player3spells 1
 execute if score chronoWarpCooldown player3spells matches 1.. run scoreboard players remove chronoWarpCooldown player3spells 1
 execute if score healingTotemCooldown player3spells matches 1.. run scoreboard players remove healingTotemCooldown player3spells 1
+execute if score magicMissileCooldown player3spells matches 1.. run scoreboard players remove magicMissileCooldown player3spells 1
 
 
 

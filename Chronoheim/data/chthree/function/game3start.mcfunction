@@ -11,7 +11,7 @@ execute positioned 200 1 276 run kill @e[name=mapstand,distance=..30]
 execute at @p[tag=p5,tag=colosseum] run place template map.colosseum 200 -1 262
 execute at @p[tag=p6,tag=colosseum] run place template map.colosseum 199 -1 292 180
 execute at @p[tag=p5,tag=lab] run place template map.lab 200 -1 262
-execute at @p[tag=p6,tag=lab] run place template map.lab 199 -1 291 180
+execute at @p[tag=p6,tag=lab] run place template map.lab 199 -1 292 180
 execute at @p[tag=p5,tag=!lab,tag=!colosseum] run place template map.scenic 200 0 262
 execute at @p[tag=p6,tag=!lab,tag=!colosseum] run place template map.scenic 199 0 292 180
 kill @e[type=item]

@@ -428,7 +428,7 @@ scoreboard players set doc heroattack 60
 scoreboard players set doc herohealth 1840
 scoreboard players set doc herospeed 900
 scoreboard players set docLeaderRegen abilityStats 20
-scoreboard players set docRegen abilityStats 60
+scoreboard players set docRegen abilityStats 80
 scoreboard players set docDuration abilityStats 3
 scoreboard players set docCD abilityStats 3
 scoreboard players set docLeader heroattack 20
@@ -489,9 +489,9 @@ scoreboard players set osirisCD abilityStats 6
 scoreboard players set ripper heroattack 60
 scoreboard players set ripper herohealth 2000
 scoreboard players set ripper herospeed 1300
-scoreboard players set ripper abilityStats 500
+scoreboard players set ripper abilityStats 700
 scoreboard players set ripperCD abilityStats 5
-scoreboard players set ripperBleed abilityStats 1
+scoreboard players set ripperBleed abilityStats 2
 scoreboard players set ripperLeader heroattack 60
 scoreboard players set ripperShield abilityStats 400
 scoreboard players set ripperLeaderDuration abilityStats 3

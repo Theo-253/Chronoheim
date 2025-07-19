@@ -270,10 +270,10 @@ scoreboard players set character# slot22 0
 scoreboard players set character# slot23 0
 scoreboard players set character# slot24 0
 
-scoreboard players set bones heroattack 140
+scoreboard players set bones heroattack 160
 scoreboard players set bones herohealth 2000
 scoreboard players set bones herospeed 1000
-scoreboard players set bones abilityStats 140
+scoreboard players set bones abilityStats 160
 scoreboard players set bonesCD abilityStats 3
 scoreboard players set bonesLeaderBonus abilityStats 120
 
@@ -281,12 +281,12 @@ scoreboard players set arthur heroattack 120
 scoreboard players set arthur herohealth 2640
 scoreboard players set arthur herospeed 900
 scoreboard players set arthurHealing abilityStats 160
-scoreboard players set arthurCD abilityStats 4
-scoreboard players set arthurBuff abilityStats 60
+scoreboard players set arthurCD abilityStats 5
+scoreboard players set arthurBuff abilityStats 40
 scoreboard players set arthurBuffDuration abilityStats 3
 
 scoreboard players set deuce heroattack 120
-scoreboard players set deuce herohealth 2080
+scoreboard players set deuce herohealth 1960
 scoreboard players set deuce herospeed 1100
 scoreboard players set deuceCD abilityStats 3
 scoreboard players set deuceMultLeader abilityStats 3
@@ -350,7 +350,7 @@ scoreboard players set dilloLeaderShield abilityStats 200
 scoreboard players set dilloLeaderDuration abilityStats 4
 
 scoreboard players set flint heroattack 200
-scoreboard players set flintsplashmode heroattack 80
+scoreboard players set flintsplashmode heroattack 100
 scoreboard players set flint herosplash 1
 scoreboard players set flint herohealth 2000
 scoreboard players set flint herospeed 1000
@@ -368,7 +368,7 @@ scoreboard players set aceLeaderDuration abilityStats 3
 scoreboard players set london heroattack 80
 scoreboard players set london herohealth 1760
 scoreboard players set london herospeed 1300
-scoreboard players set londonDmgDebuff abilityStats 40
+scoreboard players set londonDmgDebuff abilityStats 60
 scoreboard players set londonDmgDebuffDuration abilityStats 1
 scoreboard players set londonSpDebuff abilityStats 800
 scoreboard players set londonSpDebuffDuration abilityStats 1
@@ -377,11 +377,11 @@ scoreboard players set london abilityStats 40
 scoreboard players set londonLeaderCD abilityStats 2
 
 scoreboard players set hydra heroattack 80
-scoreboard players set hydra herohealth 2080
+scoreboard players set hydra herohealth 1980
 scoreboard players set hydra herospeed 800
 scoreboard players set hydra abilityStats 2
 scoreboard players set hydraCD abilityStats 4
-scoreboard players set hydraLeader heroattack 20
+scoreboard players set hydraLeader heroattack 40
 
 scoreboard players set golem heroattack 40
 scoreboard players set golem herohealth 3200
@@ -406,21 +406,21 @@ scoreboard players set grimoireCD abilityStats 3
 scoreboard players set grimoireSpellPoints abilityStats 2
 scoreboard players set grimoireLeaderSpellPoints abilityStats 4
 
-scoreboard players set grangor heroattack 80
+scoreboard players set grangor heroattack 100
 scoreboard players set grangor herohealth 2800
 scoreboard players set grangor herospeed 800
 scoreboard players set grangor herolifesteal 2
 scoreboard players set grangorBurn abilityStats 240
 scoreboard players set grangorBurnDuration abilityStats 2
 scoreboard players set grangorCD abilityStats 5
-scoreboard players set grangorLeaderAtk heroattack 160
+scoreboard players set grangorLeaderAtk heroattack 180
 
 scoreboard players set astro heroattack 160
 scoreboard players set astro herohealth 1760
 scoreboard players set astro herosplash 4
 scoreboard players set astroLeader herosplash 2
 scoreboard players set astro herospeed 1500
-scoreboard players set astroDuration abilityStats 4
+scoreboard players set astroDuration abilityStats 3
 scoreboard players set astroCD abilityStats 6
 
 scoreboard players set doc heroattack 60
@@ -468,9 +468,9 @@ scoreboard players set garabaldiCD abilityStats 3
 scoreboard players set garabaldiLeader abilityStats 60
 
 scoreboard players set boomer heroattack 160
-scoreboard players set boomer herohealth 1000
+scoreboard players set boomer herohealth 1200
 scoreboard players set boomer herospeed 700
-scoreboard players set boomer abilityStats 1000
+scoreboard players set boomer abilityStats 1200
 scoreboard players set boomerLeader abilityStats 4
 
 scoreboard players set juniper heroattack 140
@@ -527,7 +527,7 @@ scoreboard players set skeletonplus heroattack 120
 scoreboard players set skeletonplus herohealth 480
 scoreboard players set skeletonplus herospeed 1200
 
-scoreboard players set demon heroattack 40
+scoreboard players set demon heroattack 80
 scoreboard players set demon herosplash 2
 scoreboard players set demon herohealth 1400
 scoreboard players set demon herospeed 700
@@ -547,10 +547,10 @@ scoreboard players set dragonforgeCD spellStats 5
 scoreboard players set dragonforgeSp spellStats 3
 scoreboard players set dragonforge spellStats 500
 scoreboard players set dragonforgeDuration spellStats 3
-scoreboard players set embiggenDuration spellStats 2
-scoreboard players set embiggen spellStats 120
-scoreboard players set embiggenBuff spellStats 60
-scoreboard players set embiggenCD spellStats 4
+scoreboard players set embiggenDuration spellStats 1
+scoreboard players set embiggen spellStats 180
+scoreboard players set embiggenBuff spellStats 80
+scoreboard players set embiggenCD spellStats 3
 scoreboard players set embiggenSp spellStats 3
 scoreboard players set embrittleDuration spellStats 1
 scoreboard players set embrittle spellStats 100
@@ -581,10 +581,10 @@ scoreboard players set heal spellStats 180
 scoreboard players set healSp spellStats 2
 scoreboard players set healCD spellStats 3
 scoreboard players set healingTotemHP spellStats 400
-scoreboard players set healingTotemSpeed spellStats 1200
+scoreboard players set healingTotemSpeed spellStats 800
 scoreboard players set healingTotemSp spellStats 4
-scoreboard players set healingTotemHeal spellStats 120
-scoreboard players set healingTotemCD spellStats 6
+scoreboard players set healingTotemHeal spellStats 80
+scoreboard players set healingTotemCD spellStats 7
 scoreboard players set immolateburn spellStats 140
 scoreboard players set immolateDuration spellStats 3
 scoreboard players set immolateCD spellStats 4

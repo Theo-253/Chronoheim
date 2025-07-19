@@ -11,7 +11,7 @@ execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:2,max:2}}}}} run function chthree:basicattacks6
 execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:3,max:3}}}}} run function chthree:basicattacks7
 execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:conduit_power":{amplifier:{min:4,max:4}}}}} run function chthree:basicattacks8
-effect clear @a minecraft:conduit_power
+effect clear @a[tag=game3] minecraft:conduit_power
 
 function chthree:spelltargetinggeneralgame3
 function chthree:abilitytargetinggeneralgame3

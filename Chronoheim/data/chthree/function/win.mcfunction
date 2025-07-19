@@ -27,6 +27,7 @@ scoreboard players set speed slot22 0
 scoreboard players set speed slot23 0
 scoreboard players set speed slot24 0
 scoreboard players set game3Ongoing ongoinggames 0
+scoreboard players set drafttext3 drafts 0
 clear @a[tag=game3]
 team leave @a[tag=game3]
 tp @a[tag=game3] -32 51 1

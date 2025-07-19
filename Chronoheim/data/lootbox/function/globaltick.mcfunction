@@ -1,3 +1,4 @@
+execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:luck":{amplifier:{min:0,max:0}}}}} run tag @s add lootbox
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:luck":{amplifier:{min:0,max:0}}}}} run function lootbox:lootbox
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run tp @s -32 51 1
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run team leave @s

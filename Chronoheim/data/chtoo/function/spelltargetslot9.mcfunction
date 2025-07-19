@@ -62,6 +62,17 @@ execute if score spellnumber2 spells matches 2 run scoreboard players set attack
 execute if score spellnumber2 spells matches 2 run execute at @n[type=armor_stand,name=slot9] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber2 spells matches 2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Heal on Slot 1!"]
 
+
+
+
+
+
+
+
+
+
+
+
 #Magic Missile
 execute if score spellnumber2 spells matches 4 run scoreboard players add magicmissilex3 spells 1
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg2 saves = magicMissile spellStats

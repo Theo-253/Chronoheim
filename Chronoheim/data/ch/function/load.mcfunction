@@ -316,7 +316,7 @@ scoreboard players set thornCD abilityStats 3
 scoreboard players set kong heroattack 20
 scoreboard players set kong herohealth 2720
 scoreboard players set kong herospeed 900
-scoreboard players set kong abilityStats 360
+scoreboard players set kong abilityStats 340
 scoreboard players set kongCD abilityStats 2
 scoreboard players set kongSpDebuff abilityStats 300
 scoreboard players set kongSpDebuffDuration abilityStats 1

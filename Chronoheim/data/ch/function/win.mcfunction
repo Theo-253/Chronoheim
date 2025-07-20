@@ -207,6 +207,7 @@ scoreboard players set lifesteal slot5 0
 scoreboard players set lifesteal slot6 0
 scoreboard players set lifesteal slot7 0
 scoreboard players set lifesteal slot8 0
+scoreboard players set flintsplashmode booleans 0
 scoreboard players set invincibleSlot1 booleaneffects 0
 scoreboard players set invincibleSlot2 booleaneffects 0
 scoreboard players set invincibleSlot3 booleaneffects 0

@@ -134,7 +134,6 @@ execute if score spellnumber3 spells matches 28 run scoreboard players set spell
 execute if score spellnumber3 spells matches 28 run execute at @n[type=armor_stand,name=slot17] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber3 spells matches 28 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Shifting Shadows to make Slot 1 scary!"]
 
-clear @p[tag=game3]
 #fireball
 execute if score spellnumber3 spells matches 1 run scoreboard players operation spellDmg3 saves = fireball spellStats
 execute if score spellnumber3 spells matches 1 run scoreboard players operation spellDmg3 saves += spellbuffsp6 spells

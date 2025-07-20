@@ -610,8 +610,8 @@ scoreboard players set overclockDuration spellStats 1
 scoreboard players set plague spellStats 100
 scoreboard players set plagueCD spellStats 4
 scoreboard players set plagueSp spellStats 3
-scoreboard players set protectorsRuneCD spellStats 5
-scoreboard players set protectorsrune spellStats 2
+scoreboard players set protectorsRuneCD spellStats 4
+scoreboard players set protectorsrune spellStats 1
 scoreboard players set protectorsruneMarks spellStats 20
 scoreboard players set protectorsRuneSp spellStats 3
 scoreboard players set ritualOfBloodCD spellStats 3

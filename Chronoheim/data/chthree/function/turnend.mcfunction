@@ -266,32 +266,6 @@ execute if score slot21isatk booleans matches 1 if score side6spinball abilities
 execute if score slot22isatk booleans matches 1 if score side6spinball abilities matches 0..9 if score character# slot22 matches 10 run execute at @n[name=slot22,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
 execute if score slot23isatk booleans matches 1 if score side6spinball abilities matches 0..9 if score character# slot23 matches 10 run execute at @n[name=slot23,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
 
-#Gabriel
-execute if score slot18 hp matches 1.. if score character# slot17 matches 22 if score durationSlot17 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot17 shield += gabrielShieldDuration abilityStats
-execute if score slot19 hp matches 1.. if score character# slot17 matches 22 if score durationSlot17 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot17 shield += gabrielShieldDuration abilityStats
-execute if score slot17 hp matches 1.. if score character# slot18 matches 22 if score durationSlot18 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot18 shield += gabrielShieldDuration abilityStats
-execute if score slot19 hp matches 1.. if score character# slot18 matches 22 if score durationSlot18 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot18 shield += gabrielShieldDuration abilityStats
-execute if score slot17 hp matches 1.. if score character# slot19 matches 22 if score durationSlot19 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot19 shield += gabrielShieldDuration abilityStats
-execute if score slot18 hp matches 1.. if score character# slot19 matches 22 if score durationSlot19 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot19 shield += gabrielShieldDuration abilityStats
-execute if score slot22 hp matches 1.. if score character# slot21 matches 22 if score durationSlot21 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot21 shield += gabrielShieldDuration abilityStats
-execute if score slot23 hp matches 1.. if score character# slot21 matches 22 if score durationSlot21 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot21 shield += gabrielShieldDuration abilityStats
-execute if score slot21 hp matches 1.. if score character# slot22 matches 22 if score durationSlot22 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot22 shield += gabrielShieldDuration abilityStats
-execute if score slot23 hp matches 1.. if score character# slot22 matches 22 if score durationSlot22 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot22 shield += gabrielShieldDuration abilityStats
-execute if score slot21 hp matches 1.. if score character# slot23 matches 22 if score durationSlot23 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot23 shield += gabrielShieldDuration abilityStats
-execute if score slot22 hp matches 1.. if score character# slot23 matches 22 if score durationSlot23 shield < gabrielShieldDuration abilityStats run scoreboard players operation durationSlot23 shield += gabrielShieldDuration abilityStats
-execute if score slot18 hp matches 1.. if score character# slot17 matches 22 run scoreboard players operation shield slot17 += gabrielShield abilityStats
-execute if score slot19 hp matches 1.. if score character# slot17 matches 22 run scoreboard players operation shield slot17 += gabrielShield abilityStats
-execute if score slot17 hp matches 1.. if score character# slot18 matches 22 run scoreboard players operation shield slot18 += gabrielShield abilityStats
-execute if score slot19 hp matches 1.. if score character# slot18 matches 22 run scoreboard players operation shield slot18 += gabrielShield abilityStats
-execute if score slot17 hp matches 1.. if score character# slot19 matches 22 run scoreboard players operation shield slot19 += gabrielShield abilityStats
-execute if score slot18 hp matches 1.. if score character# slot19 matches 22 run scoreboard players operation shield slot19 += gabrielShield abilityStats
-execute if score slot22 hp matches 1.. if score character# slot21 matches 22 run scoreboard players operation shield slot21 += gabrielShield abilityStats
-execute if score slot23 hp matches 1.. if score character# slot21 matches 22 run scoreboard players operation shield slot21 += gabrielShield abilityStats
-execute if score slot21 hp matches 1.. if score character# slot22 matches 22 run scoreboard players operation shield slot22 += gabrielShield abilityStats
-execute if score slot23 hp matches 1.. if score character# slot22 matches 22 run scoreboard players operation shield slot22 += gabrielShield abilityStats
-execute if score slot21 hp matches 1.. if score character# slot23 matches 22 run scoreboard players operation shield slot23 += gabrielShield abilityStats
-execute if score slot22 hp matches 1.. if score character# slot23 matches 22 run scoreboard players operation shield slot23 += gabrielShield abilityStats
-
 #Attack boolean reset
 scoreboard players set slot17isatk booleans 0
 scoreboard players set slot18isatk booleans 0
@@ -306,11 +280,11 @@ scoreboard players set slot24isatk booleans 0
 
 scoreboard players set attackIsOngoingGame3 booleans 0
 
-execute if score game3Ongoing ongoinggames matches 1 run execute if score slot17 hp matches ..0 run execute unless score speed slot17 matches ..-900000 run function chthree:death1
-execute if score game3Ongoing ongoinggames matches 1 run execute if score slot18 hp matches ..0 run execute unless score speed slot18 matches ..-900000 run function chthree:death2
-execute if score game3Ongoing ongoinggames matches 1 run execute if score slot19 hp matches ..0 run execute unless score speed slot19 matches ..-900000 run function chthree:death3
-execute if score game3Ongoing ongoinggames matches 1 unless score character# slot20 matches 0 run execute if score slot20 hp matches ..0 run execute unless score speed slot20 matches ..-900000 run function chthree:death4
-execute if score game3Ongoing ongoinggames matches 1 run execute if score slot21 hp matches ..0 run execute unless score speed slot21 matches ..-900000 run function chthree:death5
-execute if score game3Ongoing ongoinggames matches 1 run execute if score slot22 hp matches ..0 run execute unless score speed slot22 matches ..-900000 run function chthree:death6
-execute if score game3Ongoing ongoinggames matches 1 run execute if score slot23 hp matches ..0 run execute unless score speed slot23 matches ..-900000 run function chthree:death7
-execute if score game3Ongoing ongoinggames matches 1 unless score character# slot24 matches 0 run execute if score slot24 hp matches ..0 run execute unless score speed slot24 matches ..-900000 run function chthree:death8
+execute if score game3Ongoing ongoinggames matches 1 if score invincibleSlot17 booleaneffects matches 0 run execute if score slot17 hp matches ..0 run execute unless score speed slot17 matches ..-900000 run function chthree:death1
+execute if score game3Ongoing ongoinggames matches 1 if score invincibleSlot18 booleaneffects matches 0 run execute if score slot18 hp matches ..0 run execute unless score speed slot18 matches ..-900000 run function chthree:death2
+execute if score game3Ongoing ongoinggames matches 1 if score invincibleSlot19 booleaneffects matches 0 run execute if score slot19 hp matches ..0 run execute unless score speed slot19 matches ..-900000 run function chthree:death3
+execute if score game3Ongoing ongoinggames matches 1 if score invincibleSlot20 booleaneffects matches 0 unless score character# slot20 matches 0 run execute if score slot20 hp matches ..0 run execute unless score speed slot20 matches ..-900000 run function chthree:death4
+execute if score game3Ongoing ongoinggames matches 1 if score invincibleSlot21 booleaneffects matches 0 run execute if score slot21 hp matches ..0 run execute unless score speed slot21 matches ..-900000 run function chthree:death5
+execute if score game3Ongoing ongoinggames matches 1 if score invincibleSlot22 booleaneffects matches 0 run execute if score slot22 hp matches ..0 run execute unless score speed slot22 matches ..-900000 run function chthree:death6
+execute if score game3Ongoing ongoinggames matches 1 if score invincibleSlot23 booleaneffects matches 0 run execute if score slot23 hp matches ..0 run execute unless score speed slot23 matches ..-900000 run function chthree:death7
+execute if score game3Ongoing ongoinggames matches 1 if score invincibleSlot24 booleaneffects matches 0 unless score character# slot24 matches 0 run execute if score slot24 hp matches ..0 run execute unless score speed slot24 matches ..-900000 run function chthree:death8

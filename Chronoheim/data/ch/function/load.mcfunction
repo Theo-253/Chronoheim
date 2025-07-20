@@ -376,12 +376,12 @@ scoreboard players set londonCD abilityStats 3
 scoreboard players set london abilityStats 40
 scoreboard players set londonLeaderCD abilityStats 2
 
-scoreboard players set hydra heroattack 80
+scoreboard players set hydra heroattack 60
 scoreboard players set hydra herohealth 1980
 scoreboard players set hydra herospeed 800
 scoreboard players set hydra abilityStats 2
 scoreboard players set hydraCD abilityStats 4
-scoreboard players set hydraLeader heroattack 40
+scoreboard players set hydraLeader heroattack 20
 
 scoreboard players set golem heroattack 40
 scoreboard players set golem herohealth 3200
@@ -446,8 +446,6 @@ scoreboard players set gabriel heroattack 100
 scoreboard players set gabriel herohealth 2800
 scoreboard players set gabriel herospeed 1200
 scoreboard players set gabriel abilityStats 260
-scoreboard players set gabrielShield abilityStats 40
-scoreboard players set gabrielShieldDuration abilityStats 1
 scoreboard players set gabrielDeath abilityStats 260
 scoreboard players set gabrielLeader abilityStats 2
 scoreboard players set gabrielCD abilityStats 3

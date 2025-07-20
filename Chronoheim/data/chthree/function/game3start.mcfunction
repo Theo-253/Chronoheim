@@ -337,4 +337,4 @@ execute if score character# slot22 matches 9 run execute if score ward slot22 ma
 
 
 scoreboard players set game3Ongoing ongoinggames 1
-scoreboard players set attackIsOngoingGame2 booleans 0
+scoreboard players set attackIsOngoingGame3 booleans 0

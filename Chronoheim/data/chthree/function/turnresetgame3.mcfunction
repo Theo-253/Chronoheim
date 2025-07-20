@@ -1,4 +1,4 @@
-execute if score attackIsOngoingGame2 booleans matches 0 run execute if score speed slot24 matches ..-10000 if score speed slot23 matches ..-10000 if score speed slot22 matches ..-10000 run execute if score speed slot21 matches ..-10000 run execute if score speed slot20 matches ..-10000 run execute if score speed slot19 matches ..-10000 run execute if score speed slot18 matches ..-10000 run execute if score speed slot17 matches ..-10000 run scoreboard players set attackIsOngoingGame2 booleans 1
+execute if score attackIsOngoingGame3 booleans matches 0 run execute if score speed slot24 matches ..-10000 if score speed slot23 matches ..-10000 if score speed slot22 matches ..-10000 run execute if score speed slot21 matches ..-10000 run execute if score speed slot20 matches ..-10000 run execute if score speed slot19 matches ..-10000 run execute if score speed slot18 matches ..-10000 run execute if score speed slot17 matches ..-10000 run scoreboard players set attackIsOngoingGame3 booleans 1
 #Slot 1 Speed Reset
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 1 run scoreboard players operation speed slot17 = bones herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 2 run scoreboard players operation speed slot17 = arthur herospeed
@@ -281,7 +281,7 @@ scoreboard players set useddoubleatk slot24 0
 
 #Misc
 scoreboard players set flintatkswap booleans 0
-scoreboard players set attackIsOngoingGame2 booleans 1
+scoreboard players set attackIsOngoingGame3 booleans 1
 scoreboard players set abilityusep5 booleans 0
 scoreboard players set abilityusep6 booleans 0
 scoreboard players add suddenDeath3 deaths 1

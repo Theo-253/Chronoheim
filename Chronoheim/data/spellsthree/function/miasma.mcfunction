@@ -18,7 +18,7 @@ execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run execute at @n[type=armor_stand,name=slot23] run particle spore_blossom_air ~ ~1 ~ 0.1 0.1 0.1 1 10000
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run execute at @n[type=armor_stand,name=slot24] run particle spore_blossom_air ~ ~1 ~ 0.1 0.1 0.1 1 10000
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Miasma!"]
-execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run scoreboard players set attackIsOngoingGame2 booleans 0
+execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run scoreboard players set attackIsOngoingGame3 booleans 0
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:18,max:18}}}}} run effect clear @a[tag=p5] infested
 
 

@@ -304,7 +304,7 @@ scoreboard players set slot24isatk booleans 0
 
 
 
-scoreboard players set attackIsOngoingGame2 booleans 0
+scoreboard players set attackIsOngoingGame3 booleans 0
 
 execute if score game3Ongoing ongoinggames matches 1 run execute if score slot17 hp matches ..0 run execute unless score speed slot17 matches ..-900000 run function chthree:death1
 execute if score game3Ongoing ongoinggames matches 1 run execute if score slot18 hp matches ..0 run execute unless score speed slot18 matches ..-900000 run function chthree:death2

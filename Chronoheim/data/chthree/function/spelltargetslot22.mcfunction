@@ -23,14 +23,14 @@ execute if score spellnumber3 spells matches 13 run tellraw @a[tag=game3] ["",{"
 execute if score spellnumber3 spells matches 12 if score ward slot22 matches 0 run execute if score debuffDurationSlot22 atkmodifiers < embrittleDuration spellStats run scoreboard players operation debuffDurationSlot22 atkmodifiers = embrittleDuration spellStats
 execute if score spellnumber3 spells matches 12 if score ward slot22 matches 0 run scoreboard players operation attackDebuffSlot22 atkmodifiers += embrittle spellStats
 execute if score spellnumber3 spells matches 12 if score ward slot22 matches 1.. run function chthree:wardslot22
-execute if score spellnumber3 spells matches 12 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 12 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 12 run execute at @n[type=armor_stand,name=slot22] run particle minecraft:block_crumble{block_state:"minecraft:ice"} ~ ~1 ~ 0.9 0.9 0.9 0.1 200
 execute if score spellnumber3 spells matches 12 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Embrittle on Slot 6!"]
 
 #Evil Eye
 execute if score spellnumber3 spells matches 15 if score ward slot22 matches 0 run scoreboard players operation marks slot22 += evilEye spellStats
 execute if score spellnumber3 spells matches 15 if score ward slot22 matches 1.. run function chthree:wardslot22
-execute if score spellnumber3 spells matches 15 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 15 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 15 run execute at @n[type=armor_stand,name=slot22] run particle minecraft:effect ~ ~1 ~ 0.7 0.7 0.7 0.1 200
 execute if score spellnumber3 spells matches 6 run execute at @n[type=armor_stand,name=slot22] run particle minecraft:item_snowball ~ ~1 ~ 0.7 0.7 0.7 0.1 200
 execute if score spellnumber3 spells matches 15 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Evil Eye on Slot 6!"]
@@ -49,7 +49,7 @@ execute if score spellnumber3 spells matches 6 run execute if score ward slot22 
 execute if score spellnumber3 spells matches 6 run execute if score ward slot22 matches 0 if score shield slot22 matches ..0 run scoreboard players operation slot22 hp += shield slot22
 execute if score spellnumber3 spells matches 6 run execute if score ward slot22 matches 1.. run function chthree:wardslot22
 execute if score spellnumber3 spells matches 6 run scoreboard players set spellbuffsp5 spells 0
-execute if score spellnumber3 spells matches 6 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 6 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 6 run execute at @n[type=armor_stand,name=slot22] run particle minecraft:item_snowball ~ ~1 ~ 0.7 0.7 0.7 0.1 200
 execute if score spellnumber3 spells matches 6 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Frostbolt on Slot 6!"]
 
@@ -77,7 +77,7 @@ execute if score spellnumber3 spells matches 4 run tellraw @a[tag=game3] ["",{"s
 execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 1 run function chthree:spellgivetargetsp5
 execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run scoreboard players set spellbuffsp5 spells 0
 execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run clear @a[tag=p5] target
-execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run scoreboard players set magicmissilex4 spells 0
 
 #Protector's Rune
@@ -98,7 +98,7 @@ execute if score spellnumber3 spells matches 8 run tellraw @a[tag=game3] ["",{"s
 #Ball Lightning
 execute if score spellnumber3 spells matches 9 if score ward slot22 matches 0 run scoreboard players operation slot22 stun += shockOrb spellStats
 execute if score spellnumber3 spells matches 9 if score ward slot22 matches 1.. run function chthree:wardslot22
-execute if score spellnumber3 spells matches 9 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 9 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 9 run execute at @n[type=armor_stand,name=slot22] run particle flash ~ ~1 ~ 0.9 0.9 0.9 0.1 10
 execute if score spellnumber3 spells matches 9 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Ball Lightning on Slot 6!"]
 
@@ -113,7 +113,7 @@ execute if score spellnumber3 spells matches 23 run execute if score ward slot22
 execute if score spellnumber3 spells matches 23 run execute if score ward slot22 matches 0 run scoreboard players operation slot22Burn burn += witchesBrewBurn spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot22 matches 0 run scoreboard players operation speed slot22 -= witchesBrewSpDebuff spellStats
 execute if score spellnumber3 spells matches 23 run execute if score ward slot22 matches 1.. run function chthree:wardslot22
-execute if score spellnumber3 spells matches 23 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 23 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 23 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Witches Brew on Slot 6!"]
 
 #Shifting Shadows Token
@@ -122,7 +122,7 @@ execute if score spellnumber3 spells matches -1 if score shadowsPart1 spells mat
 execute if score spellnumber3 spells matches -1 if score shadowsPart1 spells matches 3 if score ward slot22 matches 0 run scoreboard players set durationSlot19-22 fear 1
 execute if score spellnumber3 spells matches -1 if score shadowsPart1 spells matches 4 if score ward slot22 matches 0 run scoreboard players set durationSlot20-22 fear 1
 execute if score spellnumber3 spells matches -1 if score ward slot22 matches 1.. run function chthree:wardslot22
-execute if score spellnumber3 spells matches -1 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches -1 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches -1 run execute at @n[type=armor_stand,name=slot22] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber3 spells matches -1 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Shifting Shadows to fear Slot 6!"]
 
@@ -145,7 +145,7 @@ execute if score spellnumber3 spells matches 1 run execute if score ward slot22 
 execute if score spellnumber3 spells matches 1 at @e[name=slot22] run particle minecraft:flame ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber3 spells matches 1 run execute if score ward slot22 matches 1.. run function chthree:wardslot22
 execute if score spellnumber3 spells matches 1 run scoreboard players set spellbuffsp5 spells 0
-execute if score spellnumber3 spells matches 1 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 1 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 1 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Fireball on Slot 6!"]
 
 #meteor
@@ -176,7 +176,7 @@ execute if score spellnumber3 spells matches 7 run execute if score ward slot23 
 execute if score spellnumber3 spells matches 7 run execute if score ward slot23 matches 0 if score shield slot23 matches ..0 run scoreboard players operation slot23 hp += shield slot23
 execute if score spellnumber3 spells matches 7 run execute if score ward slot23 matches 1.. run function chthree:wardslot23
 execute if score spellnumber3 spells matches 7 run scoreboard players set spellbuffsp5 spells 0
-execute if score spellnumber3 spells matches 7 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 7 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 7 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Meteor on Slot 6!"]
 
 #witchbolt
@@ -189,7 +189,7 @@ execute if score spellnumber3 spells matches 10 run execute if score ward slot22
 execute if score spellnumber3 spells matches 10 at @e[name=slot22] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 200
 execute if score spellnumber3 spells matches 10 run execute if score ward slot22 matches 1.. run function chthree:wardslot22
 execute if score spellnumber3 spells matches 10 run scoreboard players set spellbuffsp5 spells 0
-execute if score spellnumber3 spells matches 10 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 10 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 10 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Witch Bolt on Slot 6!"]
 #ward
 execute if score spellnumber3 spells matches 19 run scoreboard players set ward slot22 1
@@ -201,7 +201,7 @@ execute if score spellnumber3 spells matches 19 run tellraw @a[tag=game3] ["",{"
 execute if score spellnumber3 spells matches 21 if score ward slot22 matches 0 run scoreboard players operation slot22Disease disease += plague spellStats
 execute if score spellnumber3 spells matches 21 at @e[name=slot22] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber3 spells matches 21 if score ward slot22 matches 1.. run function chthree:wardslot22
-execute if score spellnumber3 spells matches 21 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber3 spells matches 21 run scoreboard players set attackIsOngoingGame3 booleans 0
 execute if score spellnumber3 spells matches 21 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Plague on Slot 6!"]
 
 #Second wind

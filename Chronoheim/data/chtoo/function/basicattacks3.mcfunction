@@ -1,4 +1,5 @@
 #basic attack functions
+tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," attacked Slot 3"]
 clear @a[tag=p4]
 #slot 5
 execute if score slot13isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot13

@@ -474,7 +474,8 @@ scoreboard players set boomer herospeed 700
 scoreboard players set boomer abilityStats 1200
 scoreboard players set boomerLeader abilityStats 4
 
-scoreboard players set juniper heroattack 140
+scoreboard players set juniper heroattack 120
+scoreboard players set juniperLeader heroattack 40
 scoreboard players set juniper herohealth 2000
 scoreboard players set juniper herospeed 1000
 scoreboard players set juniper abilityStats 80

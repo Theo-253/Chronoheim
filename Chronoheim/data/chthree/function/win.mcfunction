@@ -278,7 +278,7 @@ scoreboard players set chronoWarpCooldown player6spells 0
 scoreboard players set healingTotemCooldown player6spells 0
 scoreboard players set Spell_Points_P5 Spell_Points -1
 scoreboard players set Spell_Points_P6 Spell_Points -1
-scoreboard players set suddenDeath2 deaths 0
+scoreboard players set suddenDeath3 deaths 0
 scoreboard players set side5spinball abilities -1
 scoreboard players set side6spinball abilities -1
 execute at @e[name=slot17,type=armor_stand] run kill @e[name=!slot17,type=!player,distance=..4]

@@ -90,7 +90,7 @@ execute if score slot20isatk booleans matches 1 run execute if score debuffDurat
 execute if score slot21isatk booleans matches 1 run execute if score debuffDurationSlot21 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot21 atkmodifiers 1
 execute if score slot22isatk booleans matches 1 run execute if score debuffDurationSlot22 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot22 atkmodifiers 1
 execute if score slot23isatk booleans matches 1 run execute if score debuffDurationSlot23 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot23 atkmodifiers 1
-execute if score slot24isatk booleans matches 1 run execute if score debuffDurationSlot16 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot16 atkmodifiers 1
+execute if score slot24isatk booleans matches 1 run execute if score debuffDurationSlot24 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot24 atkmodifiers 1
 
 #Regen Healing
 execute if score slot17isatk booleans matches 1 if score slot17bleeding booleaneffects matches 0 run scoreboard players operation slot17 hp += slot17Regen regen

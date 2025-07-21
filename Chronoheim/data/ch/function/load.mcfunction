@@ -624,8 +624,8 @@ scoreboard players set shield spellStats 240
 scoreboard players set shieldDuration spellStats 2
 scoreboard players set shieldCD spellStats 3
 scoreboard players set shieldSp spellStats 2
-scoreboard players set shiftingShadowsCD spellStats 2
-scoreboard players set shiftingShadowsSp spellStats 1
+scoreboard players set shiftingShadowsCD spellStats 3
+scoreboard players set shiftingShadowsSp spellStats 2
 scoreboard players set shockOrb spellStats 1
 scoreboard players set shockOrbCD spellStats 5
 scoreboard players set shockOrbSp spellStats 3

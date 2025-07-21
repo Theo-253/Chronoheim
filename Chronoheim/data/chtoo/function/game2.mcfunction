@@ -74,12 +74,12 @@ execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score s
 execute if score slot13 hp matches ..0 if score slot14 hp matches ..0 if score slot15 hp matches ..0 if score slot16 hp matches ..0 run function chtoo:win
 
 #Rapidtick
-execute if score character# slot10 matches 18 if score slot10 hp matches ..800 run scoreboard players operation atk slot10 = grangorLeaderAtk heroattack
-execute if score character# slot10 matches 18 if score slot10 hp matches 801.. run scoreboard players operation atk slot10 = grangor heroattack
-execute if score character# slot14 matches 18 if score slot14 hp matches ..800 run scoreboard players operation atk slot14 = grangorLeaderAtk heroattack
-execute if score character# slot14 matches 18 if score slot14 hp matches 801.. run scoreboard players operation atk slot14 = grangor heroattack
-execute if score character# slot14 matches 18 if score slot14 hp matches ..801 run execute at @n[type=armor_stand,name=slot14] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
-execute if score character# slot10 matches 18 if score slot10 hp matches ..801 run execute at @n[type=armor_stand,name=slot10] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
+execute if score character# slot10 matches 18 if score slot10 hp matches ..1000 run scoreboard players operation atk slot10 = grangorLeaderAtk heroattack
+execute if score character# slot10 matches 18 if score slot10 hp matches 1001.. run scoreboard players operation atk slot10 = grangor heroattack
+execute if score character# slot14 matches 18 if score slot14 hp matches ..1000 run scoreboard players operation atk slot14 = grangorLeaderAtk heroattack
+execute if score character# slot14 matches 18 if score slot14 hp matches 1001.. run scoreboard players operation atk slot14 = grangor heroattack
+execute if score character# slot14 matches 18 if score slot14 hp matches ..1000 run execute at @n[type=armor_stand,name=slot14] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
+execute if score character# slot10 matches 18 if score slot10 hp matches ..1000 run execute at @n[type=armor_stand,name=slot10] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
 execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot9bleeding booleaneffects 64
 execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot10bleeding booleaneffects 64
 execute if score suddenDeath2 deaths matches 20.. run scoreboard players set slot11bleeding booleaneffects 64

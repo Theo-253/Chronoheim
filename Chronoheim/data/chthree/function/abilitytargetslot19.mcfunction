@@ -1,6 +1,7 @@
 effect clear @a[tag=game3] strength
 clear @p[tag=game3]
-
+#Arthur Ability
+execute if score abilitynumber abilities matches 2 run function chthree:cleanseslot19
 #Deuce ability
 execute if score abilitynumber3 abilities matches 3 run scoreboard players operation abilityDmg3 saves = deuce heroattack
 execute if score abilitynumber3 abilities matches 3 if score slot21isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot21 atkmodifiers

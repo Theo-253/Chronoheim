@@ -1,5 +1,7 @@
 effect clear @a[tag=game1] strength
 clear @p[tag=game1]
+#Arthur Ability
+execute if score abilitynumber abilities matches 2 run function ch:cleanseslot5
 
 #Deuce ability
 execute if score abilitynumber abilities matches 3 run scoreboard players operation abilityDmg saves = deuce heroattack

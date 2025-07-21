@@ -65,13 +65,13 @@ execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slo
 execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Gold 10
 execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p1] Combat_Rating 5
 execute if score slot1 hp matches ..0 if score slot2 hp matches ..0 if score slot3 hp matches ..0 if score slot4 hp matches ..0 run function ch:win
-execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 run tellraw @a ["",{"selector":"@p[tag=p1]"}," has won the duel against ",{"selector":"@p[tag=p2]"},"!"]
-execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Wins 1
-execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Combat_Rating 10
-execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Gold 10
-execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Gold 20
-execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p2] Combat_Rating 5
-execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot6 hp matches ..0 if score slot8 hp matches ..0 run function ch:win
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot7 hp matches ..0 if score slot8 hp matches ..0 run tellraw @a ["",{"selector":"@p[tag=p1]"}," has won the duel against ",{"selector":"@p[tag=p2]"},"!"]
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot7 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Wins 1
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot7 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Combat_Rating 10
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot7 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p2] Gold 10
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot7 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p1] Gold 20
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot7 hp matches ..0 if score slot8 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players remove @p[tag=p2] Combat_Rating 5
+execute if score slot5 hp matches ..0 if score slot6 hp matches ..0 if score slot7 hp matches ..0 if score slot8 hp matches ..0 run function ch:win
 #Rapidtick
 execute if score character# slot2 matches 18 if score slot2 hp matches ..1000 run scoreboard players operation atk slot2 = grangorLeaderAtk heroattack
 execute if score character# slot2 matches 18 if score slot2 hp matches 1001.. run scoreboard players operation atk slot2 = grangor heroattack

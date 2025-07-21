@@ -620,7 +620,7 @@ scoreboard players set ritualOfBloodSp spellStats 1
 scoreboard players set ritualOfBloodDuration spellStats 2
 scoreboard players set secondWindCD spellStats 2
 scoreboard players set secondWindSpeed spellStats 500
-scoreboard players set secondWind spellStats 100
+scoreboard players set secondWind spellStats 140
 scoreboard players set secondWindDuration spellStats 1
 scoreboard players set secondWindSp spellStats 2
 scoreboard players set shield spellStats 240
@@ -641,7 +641,7 @@ scoreboard players set wardSp spellStats 3
 scoreboard players set witchbolt spellStats 200
 scoreboard players set witchboltCD spellStats 2
 scoreboard players set witchboltSp spellStats 2
-scoreboard players set witchesBrewCD spellStats 5
+scoreboard players set witchesBrewCD spellStats 4
 scoreboard players set witchesBrewSp spellStats 4
 scoreboard players set witchesBrewBurn spellStats 200
 scoreboard players set witchesBrew spellStats 60

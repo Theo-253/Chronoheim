@@ -518,11 +518,11 @@ scoreboard players set golemite herohealth 480
 scoreboard players set golemite herospeed 700
 
 scoreboard players set skeleton heroattack 80
-scoreboard players set skeleton herohealth 400
+scoreboard players set skeleton herohealth 360
 scoreboard players set skeleton herospeed 100
 
-scoreboard players set skeletonplus heroattack 120
-scoreboard players set skeletonplus herohealth 480
+scoreboard players set skeletonplus heroattack 100
+scoreboard players set skeletonplus herohealth 440
 scoreboard players set skeletonplus herospeed 1200
 
 scoreboard players set demon heroattack 80

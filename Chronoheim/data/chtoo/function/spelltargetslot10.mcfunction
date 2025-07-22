@@ -17,7 +17,7 @@ execute if score spellnumber2 spells matches 13 run execute if score durationSlo
 execute if score spellnumber2 spells matches 13 run scoreboard players operation shield slot10 += embiggen spellStats
 execute if score spellnumber2 spells matches 13 run scoreboard players set attackIsOngoingGame2 booleans 0
 execute if score spellnumber2 spells matches 13 run execute at @n[type=armor_stand,name=slot10] run particle minecraft:egg_crack ~ ~1 ~ 0.9 0.9 0.9 0.1 100
-execute if score spellnumber2 spells matches 26 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Embiggen on Slot 2!"]
+execute if score spellnumber2 spells matches 13 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Embiggen on Slot 2!"]
 
 #Embrittle
 execute if score spellnumber2 spells matches 12 if score ward slot10 matches 0 run execute if score debuffDurationSlot10 atkmodifiers < embrittleDuration spellStats run scoreboard players operation debuffDurationSlot10 atkmodifiers = embrittleDuration spellStats

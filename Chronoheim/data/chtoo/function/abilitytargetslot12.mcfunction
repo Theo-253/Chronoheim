@@ -1,7 +1,7 @@
 effect clear @a[tag=game2] strength
 clear @p[tag=game2]
 #Arthur Ability
-execute if score abilitynumber abilities matches 2 run function chtoo:cleanseslot12
+execute if score abilitynumber2 abilities matches 2 run function chtoo:cleanseslot12
 #Deuce ability
 execute if score abilitynumber2 abilities matches 3 run scoreboard players operation abilityDmg2 saves = deuce heroattack
 execute if score abilitynumber2 abilities matches 3 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers

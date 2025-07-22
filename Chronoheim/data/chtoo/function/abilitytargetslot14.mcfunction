@@ -44,8 +44,7 @@ execute if score abilitynumber2 abilities matches -2 if score abilitynumber2 abi
 #Juniper Basic
 execute if score abilitynumber2 abilities matches -2 run execute if score slot14bleeding booleaneffects matches 0 run scoreboard players operation slot14 hp += juniper heroattack
 execute if score abilitynumber2 abilities matches -2 run execute at @n[type=armor_stand,name=slot14] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
-
-execute if score character# slot14 matches 27 run function chtoo:cleanseslot14
+execute if score abilitynumber2 abilities matches -2 run execute if score slot14bleeding booleaneffects matches 0 if score slot14isatk booleans matches 1 run scoreboard players operation slot14 hp += juniperLeader heroattack
 
 #K.O.N.G ability
 execute if score abilitynumber2 abilities matches 7 run scoreboard players operation abilityDmg2 saves = kong abilityStats

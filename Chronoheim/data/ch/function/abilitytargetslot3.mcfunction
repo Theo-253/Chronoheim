@@ -45,8 +45,7 @@ execute if score abilitynumber abilities matches 27 run tellraw @a[tag=game1] ["
 #Juniper Basic
 execute if score abilitynumber abilities matches -2 run execute if score slot3bleeding booleaneffects matches 0 run scoreboard players operation slot3 hp += juniper heroattack
 execute if score abilitynumber abilities matches -2 run execute at @n[type=armor_stand,name=slot3] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
-
-execute if score abilitynumber abilities matches -2 if score character# slot2 matches 27 run function ch:cleanseslot3
+execute if score abilitynumber abilities matches -2 run execute if score slot3bleeding booleaneffects matches 0 if score slot2isatk booleans matches 1 run scoreboard players operation slot3 hp += juniperLeader heroattack
 
 #K.O.N.G ability
 execute if score abilitynumber abilities matches 7 run scoreboard players operation abilityDmg saves = kong abilityStats

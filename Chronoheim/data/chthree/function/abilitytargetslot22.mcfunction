@@ -44,8 +44,7 @@ execute if score abilitynumber3 abilities matches -2 if score abilitynumber3 abi
 #Juniper Basic
 execute if score abilitynumber3 abilities matches -2 run execute if score slot22bleeding booleaneffects matches 0 run scoreboard players operation slot22 hp += juniper heroattack
 execute if score abilitynumber3 abilities matches -2 run execute at @n[type=armor_stand,name=slot22] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
-
-execute if score character# slot22 matches 27 run function chthree:cleanseslot22
+execute if score abilitynumber3 abilities matches -2 run execute if score slot22bleeding booleaneffects matches 0 if score slot22isatk booleans matches 1 run scoreboard players operation slot22 hp += juniperLeader heroattack
 
 #K.O.N.G ability
 execute if score abilitynumber3 abilities matches 7 run scoreboard players operation abilityDmg3 saves = kong abilityStats

@@ -83,7 +83,7 @@ execute if score abilitynumber3 abilities matches 5 run tellraw @a[tag=game3] ["
 #Kirin
 execute if score abilitynumber3 abilities matches 8 if score buffDurationSlot17 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot17 atkmodifiers = kirinDuration abilityStats
 execute if score abilitynumber3 abilities matches 8 run scoreboard players operation attackBuffSlot17 atkmodifiers += kirin abilityStats
-execute if score abilitynumber3 abilities matches 8 if score slot18isatk booleans matches 1 if score slot17bleeding booleaneffects matches 0.. run scoreboard players operation slot17 hp += kirinLeader abilityStats
+execute if score abilitynumber3 abilities matches 8 if score slot18isatk booleans matches 1 if score slot17bleeding booleaneffects matches 0 run scoreboard players operation slot17 hp += kirinLeader abilityStats
 execute if score abilitynumber3 abilities matches 8 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Mythical Empowerment on Slot 1!"]
 execute if score abilitynumber3 abilities matches 8 at @e[name=slot17] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 

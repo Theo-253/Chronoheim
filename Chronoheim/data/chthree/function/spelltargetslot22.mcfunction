@@ -56,7 +56,7 @@ execute if score spellnumber3 spells matches 6 run tellraw @a[tag=game3] ["",{"s
 #Heal
 execute if score spellnumber3 spells matches 2 run scoreboard players operation spellHeal saves = heal spellStats
 execute if score spellnumber3 spells matches 2 run scoreboard players operation spellHeal saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 2 run scoreboard players operation slot22 hp += spellHeal saves
+execute if score spellnumber3 spells matches 2 unless score slot22bleeding booleaneffects matches 1.. run scoreboard players operation slot22 hp += spellHeal saves
 execute if score spellnumber3 spells matches 2 run function chthree:cleanseslot22
 execute if score spellnumber3 spells matches 2 run scoreboard players set spellbuffsp6 spells 0
 execute if score spellnumber3 spells matches 2 run function chthree:spellphasep5

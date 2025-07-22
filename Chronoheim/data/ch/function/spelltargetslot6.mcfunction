@@ -56,7 +56,7 @@ execute if score spellnumber spells matches 6 run tellraw @a[tag=game1] ["",{"se
 #Heal
 execute if score spellnumber spells matches 2 run scoreboard players operation spellHeal saves = heal spellStats
 execute if score spellnumber spells matches 2 run scoreboard players operation spellHeal saves += spellbuffsp2 spells
-execute if score spellnumber spells matches 2 run scoreboard players operation slot6 hp += spellHeal saves
+execute if score spellnumber spells matches 2 unless score slot6bleeding booleaneffects matches 1.. run scoreboard players operation slot6 hp += spellHeal saves
 execute if score spellnumber spells matches 2 run function ch:cleanseslot6
 execute if score spellnumber spells matches 2 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 2 run function ch:spellphasep1

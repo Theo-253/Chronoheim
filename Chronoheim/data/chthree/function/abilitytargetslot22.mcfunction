@@ -112,7 +112,7 @@ execute if score abilitynumber3 abilities matches 22 at @e[name=slot22] run part
 execute if score abilitynumber3 abilities matches 22 run execute if score ward slot22 matches 1.. run function chthree:wardslot22
 #Gatsby
 execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 run scoreboard players operation slot22 stun = gatsbyDuration abilityStats
-execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 run scoreboard players operation savehp14 saves = slot22 hp
+execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 run scoreboard players operation savehp22 saves = slot22 hp
 execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 run scoreboard players operation invincibleSlot22 booleaneffects = gatsbyDuration abilityStats
 execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 run scoreboard players operation slot22EatenDuration abilities = gatsbyDuration abilityStats
 execute if score abilitynumber3 abilities matches 23 if score ward slot22 matches 0 at @e[name=slot22] run execute at @e[distance=..4,type=!player] run tp @n[type=!minecraft:player,distance=..4] ~ ~-20 ~

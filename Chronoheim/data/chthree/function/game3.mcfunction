@@ -25,7 +25,7 @@ function chthree:spellchecks
 execute if score invincibleSlot17 booleaneffects matches 1.. run scoreboard players operation slot17 hp = savehp17 saves
 execute if score invincibleSlot18 booleaneffects matches 1.. run scoreboard players operation slot18 hp = savehp18 saves
 execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot19 hp = savehp19 saves
-execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot20 hp = savehp30 saves
+execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot20 hp = savehp20 saves
 execute if score invincibleSlot21 booleaneffects matches 1.. run scoreboard players operation slot21 hp = savehp21 saves
 execute if score invincibleSlot22 booleaneffects matches 1.. run scoreboard players operation slot22 hp = savehp22 saves
 execute if score invincibleSlot23 booleaneffects matches 1.. run scoreboard players operation slot23 hp = savehp23 saves

@@ -96,9 +96,7 @@ execute if score suddenDeath3 deaths matches 20.. if score shield slot21 matches
 execute if score suddenDeath3 deaths matches 20.. if score shield slot22 matches 1.. run scoreboard players set shield slot22 0
 execute if score suddenDeath3 deaths matches 20.. if score shield slot23 matches 1.. run scoreboard players set shield slot23 0
 execute if score suddenDeath3 deaths matches 20.. if score shield slot24 matches 1.. run scoreboard players set shield slot24 0
-#Token slots
-execute if score character# slot20 matches 0 run scoreboard players set slot20 hp 0
-execute if score character# slot24 matches 0 run scoreboard players set slot24 hp 0
+
 
 #QoL
 item replace entity @p[tag=p5] container.21 with clock[minecraft:custom_name="View Cooldowns",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:"regeneration",duration:1,amplifier:0,show_particles:0b}]}]}] 1

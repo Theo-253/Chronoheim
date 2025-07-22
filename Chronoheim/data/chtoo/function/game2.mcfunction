@@ -96,9 +96,7 @@ execute if score suddenDeath2 deaths matches 20.. if score shield slot13 matches
 execute if score suddenDeath2 deaths matches 20.. if score shield slot14 matches 1.. run scoreboard players set shield slot14 0
 execute if score suddenDeath2 deaths matches 20.. if score shield slot15 matches 1.. run scoreboard players set shield slot15 0
 execute if score suddenDeath2 deaths matches 20.. if score shield slot16 matches 1.. run scoreboard players set shield slot16 0
-#Token slots
-execute if score character# slot12 matches 0 run scoreboard players set slot12 hp 0
-execute if score character# slot16 matches 0 run scoreboard players set slot16 hp 0
+
 
 #Qol
 function chtoo:effectparticles

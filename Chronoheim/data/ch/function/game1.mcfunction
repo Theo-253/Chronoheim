@@ -24,8 +24,8 @@ function ch:spellchecks
 #invincibility
 execute if score invincibleSlot1 booleaneffects matches 1.. run scoreboard players operation slot1 hp = savehp1 saves
 execute if score invincibleSlot2 booleaneffects matches 1.. run scoreboard players operation slot2 hp = savehp2 saves
-execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot3 hp = savehp5 saves
-execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot4 hp = savehp6 saves
+execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot3 hp = savehp3 saves
+execute if score invincibleSlot3 booleaneffects matches 1.. run scoreboard players operation slot4 hp = savehp4 saves
 execute if score invincibleSlot5 booleaneffects matches 1.. run scoreboard players operation slot5 hp = savehp5 saves
 execute if score invincibleSlot6 booleaneffects matches 1.. run scoreboard players operation slot6 hp = savehp6 saves
 execute if score invincibleSlot7 booleaneffects matches 1.. run scoreboard players operation slot7 hp = savehp7 saves
@@ -95,9 +95,7 @@ execute if score suddenDeath deaths matches 20.. if score shield slot5 matches 1
 execute if score suddenDeath deaths matches 20.. if score shield slot6 matches 1.. run scoreboard players set shield slot6 0
 execute if score suddenDeath deaths matches 20.. if score shield slot7 matches 1.. run scoreboard players set shield slot7 0
 execute if score suddenDeath deaths matches 20.. if score shield slot8 matches 1.. run scoreboard players set shield slot8 0
-#Token slots
-execute if score character# slot4 matches 0 run scoreboard players set slot4 hp 0
-execute if score character# slot8 matches 0 run scoreboard players set slot8 hp 0
+
 
 #QoL
 function ch:effectparticles

@@ -22,7 +22,7 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot1isatk booleans matches 1.. run scoreboard players operation savehp1 saves = slot1 hp 
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot2isatk booleans matches 1.. run scoreboard players operation savehp2 saves = slot2 hp 
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot3isatk booleans matches 1.. run scoreboard players operation savehp5 saves = slot3 hp
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot3isatk booleans matches 1.. run scoreboard players operation savehp3 saves = slot3 hp
 
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot5isatk booleans matches 1.. run scoreboard players operation savehp5 saves = slot5 hp 
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:19,max:19}}}}} run execute if score slot6isatk booleans matches 1.. run scoreboard players operation savehp6 saves = slot6 hp 

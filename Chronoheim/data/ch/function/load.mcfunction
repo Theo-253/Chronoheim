@@ -280,7 +280,7 @@ scoreboard players set bonesLeaderBonus abilityStats 120
 scoreboard players set arthur heroattack 100
 scoreboard players set arthur herohealth 2520
 scoreboard players set arthur herospeed 900
-scoreboard players set arthurHealing abilityStats 160
+scoreboard players set arthurHealing abilityStats 180
 scoreboard players set arthurCD abilityStats 5
 scoreboard players set arthurBuff abilityStats 40
 scoreboard players set arthurBuffDuration abilityStats 3
@@ -300,11 +300,11 @@ scoreboard players set subjectCD abilityStats 4
 scoreboard players set subjectLeaderCD abilityStats 3
 
 scoreboard players set robo heroattack 80
-scoreboard players set robo herohealth 2800
+scoreboard players set robo herohealth 2700
 scoreboard players set robo herospeed 600
 scoreboard players set robo abilityStats 300
 scoreboard players set roboDuration abilityStats 2
-scoreboard players set roboCD abilityStats 3
+scoreboard players set roboCD abilityStats 4
 scoreboard players set roboLeader abilityStats 100
 
 scoreboard players set thorn heroattack 220
@@ -312,7 +312,7 @@ scoreboard players set thorn herohealth 1440
 scoreboard players set thorn herospeed 1200
 scoreboard players set thornLeader abilityStats 200
 scoreboard players set thornDuration abilityStats 2
-scoreboard players set thornCD abilityStats 3
+scoreboard players set thornCD abilityStats 4
 
 scoreboard players set kong heroattack 40
 scoreboard players set kong herohealth 2420
@@ -363,8 +363,8 @@ scoreboard players set flintLeader abilityStats 160
 scoreboard players set ace heroattack 120
 scoreboard players set ace herohealth 1680
 scoreboard players set ace herospeed 1500
-scoreboard players set aceSetCooldown abilityStats 3
-scoreboard players set aceCD abilityStats 4
+scoreboard players set aceSetCooldown abilityStats 2
+scoreboard players set aceCD abilityStats 3
 scoreboard players set aceLeader abilityStats 1000
 scoreboard players set aceLeaderDuration abilityStats 3
 
@@ -376,7 +376,7 @@ scoreboard players set londonDmgDebuffDuration abilityStats 1
 scoreboard players set londonSpDebuff abilityStats 800
 scoreboard players set londonSpDebuffDuration abilityStats 1
 scoreboard players set londonCD abilityStats 3
-scoreboard players set london abilityStats 40
+scoreboard players set london abilityStats 80
 scoreboard players set londonLeaderCD abilityStats 2
 
 scoreboard players set hydra heroattack 60
@@ -386,11 +386,11 @@ scoreboard players set hydra abilityStats 2
 scoreboard players set hydraCD abilityStats 4
 scoreboard players set hydraLeader heroattack 20
 
-scoreboard players set golem heroattack 40
-scoreboard players set golem herohealth 3000
+scoreboard players set golem heroattack 60
+scoreboard players set golem herohealth 2800
 scoreboard players set golem herospeed 500
 scoreboard players set golemTaunt abilityStats 2
-scoreboard players set golemCD abilityStats 2
+scoreboard players set golemCD abilityStats 3
 
 scoreboard players set blackbeard heroattack 40
 scoreboard players set blackbeard herohealth 2400
@@ -424,7 +424,7 @@ scoreboard players set astro herosplash 4
 scoreboard players set astroLeader herosplash 2
 scoreboard players set astro herospeed 1500
 scoreboard players set astroDuration abilityStats 3
-scoreboard players set astroCD abilityStats 6
+scoreboard players set astroCD abilityStats 7
 
 scoreboard players set doc heroattack 80
 scoreboard players set doc herohealth 1840
@@ -518,7 +518,7 @@ scoreboard players set dominoLeader abilityStats 140
 scoreboard players set dominoLeaderHit heroattack 120
 
 scoreboard players set golemite heroattack 60
-scoreboard players set golemite herohealth 480
+scoreboard players set golemite herohealth 300
 scoreboard players set golemite herospeed 700
 
 scoreboard players set skeleton heroattack 80
@@ -570,7 +570,7 @@ scoreboard players set fontOfWisdom spellStats 160
 scoreboard players set fontOfWisdomCD spellStats 3
 scoreboard players set fontOfWisdomSp spellStats 2
 scoreboard players set fountainOfYouthDuration spellStats 1
-scoreboard players set fountainOfYouth spellStats 300
+scoreboard players set fountainOfYouth spellStats 240
 scoreboard players set fountainOfYouthSp spellStats 2
 scoreboard players set fountainOfYouthCD spellStats 2
 scoreboard players set frostboltCD spellStats 3
@@ -624,9 +624,9 @@ scoreboard players set secondWindSpeed spellStats 500
 scoreboard players set secondWind spellStats 140
 scoreboard players set secondWindDuration spellStats 1
 scoreboard players set secondWindSp spellStats 2
-scoreboard players set shield spellStats 240
+scoreboard players set shield spellStats 200
 scoreboard players set shieldDuration spellStats 2
-scoreboard players set shieldCD spellStats 3
+scoreboard players set shieldCD spellStats 4
 scoreboard players set shieldSp spellStats 2
 scoreboard players set shiftingShadowsCD spellStats 3
 scoreboard players set shiftingShadowsSp spellStats 2
@@ -638,7 +638,7 @@ scoreboard players set swiftnessDuration spellStats 1
 scoreboard players set swiftnessCD spellStats 1
 scoreboard players set swiftnessSp spellStats 1
 scoreboard players set wardCD spellStats 1
-scoreboard players set wardSp spellStats 3
+scoreboard players set wardSp spellStats 4
 scoreboard players set witchbolt spellStats 200
 scoreboard players set witchboltCD spellStats 2
 scoreboard players set witchboltSp spellStats 2

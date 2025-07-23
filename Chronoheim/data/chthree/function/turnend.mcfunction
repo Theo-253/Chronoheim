@@ -80,7 +80,7 @@ execute if score slot20isatk booleans matches 1 run execute if score buffDuratio
 execute if score slot21isatk booleans matches 1 run execute if score buffDurationSlot21 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot21 atkmodifiers 1
 execute if score slot22isatk booleans matches 1 run execute if score buffDurationSlot22 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot22 atkmodifiers 1
 execute if score slot23isatk booleans matches 1 run execute if score buffDurationSlot23 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot23 atkmodifiers 1
-execute if score slot24isatk booleans matches 1 run execute if score buffDurationSlot16 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot16 atkmodifiers 1
+execute if score slot24isatk booleans matches 1 run execute if score buffDurationSlot24 atkmodifiers matches 1.. run scoreboard players remove buffDurationSlot24 atkmodifiers 1
 
 #Attack Debuff Duration
 execute if score slot17isatk booleans matches 1 run execute if score debuffDurationSlot17 atkmodifiers matches 1.. run scoreboard players remove debuffDurationSlot17 atkmodifiers 1

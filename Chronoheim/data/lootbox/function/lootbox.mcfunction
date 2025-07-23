@@ -240,7 +240,7 @@ execute if score legendaryhero lootboxes matches 4 run execute at @p[tag=lootbox
 execute if score legendaryhero lootboxes matches 4 run tag @p[tag=lootbox,tag=!boomerO] add boomerO
 
 execute if score legendaryhero lootboxes matches 5 run scoreboard players add @p[tag=lootbox,tag=ripperO] Shards 400
-execute if score legendaryhero lootboxes matches 5 run execute at @p[tag=lootbox,tag=!ripperO] run say @p[tag=lootbox,tag=!ripperO] unlocked Dillo!
+execute if score legendaryhero lootboxes matches 5 run execute at @p[tag=lootbox,tag=!ripperO] run say @p[tag=lootbox,tag=!ripperO] unlocked Ripper!
 execute if score legendaryhero lootboxes matches 5 run tag @p[tag=lootbox,tag=!ripperO] add ripperO
 
 #Score resets

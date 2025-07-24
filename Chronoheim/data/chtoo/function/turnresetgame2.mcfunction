@@ -30,6 +30,9 @@ execute if score slot9 hp matches 1.. run execute if score character# slot9 matc
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 28 run scoreboard players operation speed slot9 = eidolon herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 29 run scoreboard players operation speed slot9 = ripper herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 30 run scoreboard players operation speed slot9 = domino herospeed
+execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 31 run scoreboard players operation speed slot9 = jones herospeed
+execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 32 run scoreboard players operation speed slot9 = scythe herospeed
+execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 33 run scoreboard players operation speed slot9 = sherman herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches -1 run scoreboard players operation speed slot9 = skeleton herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches -2 run scoreboard players operation speed slot9 = demon herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches -3 run scoreboard players operation speed slot9 = healingTotemSpeed spellStats
@@ -71,6 +74,9 @@ execute if score slot10 hp matches 1.. run execute if score character# slot10 ma
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 28 run scoreboard players operation speed slot10 = eidolon herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 29 run scoreboard players operation speed slot10 = ripper herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 30 run scoreboard players operation speed slot10 = domino herospeed
+execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 31 run scoreboard players operation speed slot10 = jones herospeed
+execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 32 run scoreboard players operation speed slot10 = scythe herospeed
+execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 33 run scoreboard players operation speed slot10 = sherman herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches -1 run scoreboard players operation speed slot10 = skeleton herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches -2 run scoreboard players operation speed slot10 = demon herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches -3 run scoreboard players operation speed slot10 = healingTotemSpeed spellStats
@@ -112,6 +118,9 @@ execute if score slot11 hp matches 1.. run execute if score character# slot11 ma
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 28 run scoreboard players operation speed slot11 = eidolon herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 29 run scoreboard players operation speed slot11 = ripper herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 30 run scoreboard players operation speed slot11 = domino herospeed
+execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 31 run scoreboard players operation speed slot11 = jones herospeed
+execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 32 run scoreboard players operation speed slot11 = scythe herospeed
+execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 33 run scoreboard players operation speed slot11 = sherman herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches -1 run scoreboard players operation speed slot11 = skeleton herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches -2 run scoreboard players operation speed slot11 = demon herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches -3 run scoreboard players operation speed slot11 = healingTotemSpeed spellStats
@@ -154,6 +163,9 @@ execute if score slot13 hp matches 1.. run execute if score character# slot13 ma
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 28 run scoreboard players operation speed slot13 = eidolon herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 29 run scoreboard players operation speed slot13 = ripper herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 30 run scoreboard players operation speed slot13 = domino herospeed
+execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 31 run scoreboard players operation speed slot13 = jones herospeed
+execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 32 run scoreboard players operation speed slot13 = scythe herospeed
+execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 33 run scoreboard players operation speed slot13 = sherman herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches -1 run scoreboard players operation speed slot13 = skeleton herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches -2 run scoreboard players operation speed slot13 = demon herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches -3 run scoreboard players operation speed slot13 = healingTotemSpeed spellStats
@@ -196,6 +208,9 @@ execute if score slot14 hp matches 1.. run execute if score character# slot14 ma
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 28 run scoreboard players operation speed slot14 = eidolon herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 29 run scoreboard players operation speed slot14 = ripper herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 30 run scoreboard players operation speed slot14 = domino herospeed
+execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 31 run scoreboard players operation speed slot14 = jones herospeed
+execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 32 run scoreboard players operation speed slot14 = scythe herospeed
+execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 33 run scoreboard players operation speed slot14 = sherman herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches -1 run scoreboard players operation speed slot14 = skeleton herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches -2 run scoreboard players operation speed slot14 = demon herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches -3 run scoreboard players operation speed slot14 = healingTotemSpeed spellStats
@@ -237,6 +252,9 @@ execute if score slot15 hp matches 1.. run execute if score character# slot15 ma
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 28 run scoreboard players operation speed slot15 = eidolon herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 29 run scoreboard players operation speed slot15 = ripper herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 30 run scoreboard players operation speed slot15 = domino herospeed
+execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 31 run scoreboard players operation speed slot15 = jones herospeed
+execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 32 run scoreboard players operation speed slot15 = scythe herospeed
+execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 33 run scoreboard players operation speed slot15 = sherman herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches -1 run scoreboard players operation speed slot15 = skeleton herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches -2 run scoreboard players operation speed slot15 = demon herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches -3 run scoreboard players operation speed slot15 = healingTotemSpeed spellStats

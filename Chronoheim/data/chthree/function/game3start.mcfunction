@@ -46,10 +46,15 @@ execute if score slot17 hp matches 1.. run execute if score character# slot17 ma
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 28 run scoreboard players operation speed slot17 = eidolon herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 29 run scoreboard players operation speed slot17 = ripper herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 30 run scoreboard players operation speed slot17 = domino herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 31 run scoreboard players operation speed slot17 = jones herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 32 run scoreboard players operation speed slot17 = scythe herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 33 run scoreboard players operation speed slot17 = sherman herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -1 run scoreboard players operation speed slot17 = skeleton herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -2 run scoreboard players operation speed slot17 = demon herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -3 run scoreboard players operation speed slot17 = healingtotem herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -3 run scoreboard players operation speed slot17 = healingTotemSpeed spellStats
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -4 run scoreboard players operation speed slot17 = golemite herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -5 run scoreboard players operation speed slot17 = skeletonplus herospeed
+
 scoreboard players operation speed slot17 -= speedDebuffSlot17 speedDebuffs
 scoreboard players operation speed slot17 += speedBuffSlot17 speedBuffs
 
@@ -85,10 +90,15 @@ execute if score slot18 hp matches 1.. run execute if score character# slot18 ma
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 28 run scoreboard players operation speed slot18 = eidolon herospeed
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 29 run scoreboard players operation speed slot18 = ripper herospeed
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 30 run scoreboard players operation speed slot18 = domino herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 31 run scoreboard players operation speed slot18 = jones herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 32 run scoreboard players operation speed slot18 = scythe herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 33 run scoreboard players operation speed slot18 = sherman herospeed
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -1 run scoreboard players operation speed slot18 = skeleton herospeed
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -2 run scoreboard players operation speed slot18 = demon herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -3 run scoreboard players operation speed slot18 = healingtotem herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -3 run scoreboard players operation speed slot18 = healingTotemSpeed spellStats
 execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -4 run scoreboard players operation speed slot18 = golemite herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -5 run scoreboard players operation speed slot18 = skeletonplus herospeed
+
 scoreboard players operation speed slot18 -= speedDebuffSlot18 speedDebuffs
 scoreboard players operation speed slot18 += speedBuffSlot18 speedBuffs
 
@@ -124,10 +134,15 @@ execute if score slot19 hp matches 1.. run execute if score character# slot19 ma
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 28 run scoreboard players operation speed slot19 = eidolon herospeed
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 29 run scoreboard players operation speed slot19 = ripper herospeed
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 30 run scoreboard players operation speed slot19 = domino herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 31 run scoreboard players operation speed slot19 = jones herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 32 run scoreboard players operation speed slot19 = scythe herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 33 run scoreboard players operation speed slot19 = sherman herospeed
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -1 run scoreboard players operation speed slot19 = skeleton herospeed
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -2 run scoreboard players operation speed slot19 = demon herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -3 run scoreboard players operation speed slot19 = healingtotem herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -3 run scoreboard players operation speed slot19 = healingTotemSpeed spellStats
 execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -4 run scoreboard players operation speed slot19 = golemite herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -5 run scoreboard players operation speed slot19 = skeletonplus herospeed
+
 scoreboard players operation speed slot19 -= speedDebuffSlot19 speedDebuffs
 scoreboard players operation speed slot19 += speedBuffSlot19 speedBuffs
 
@@ -164,10 +179,15 @@ execute if score slot21 hp matches 1.. run execute if score character# slot21 ma
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 28 run scoreboard players operation speed slot21 = eidolon herospeed
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 29 run scoreboard players operation speed slot21 = ripper herospeed
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 30 run scoreboard players operation speed slot21 = domino herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 31 run scoreboard players operation speed slot21 = jones herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 32 run scoreboard players operation speed slot21 = scythe herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 33 run scoreboard players operation speed slot21 = sherman herospeed
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -1 run scoreboard players operation speed slot21 = skeleton herospeed
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -2 run scoreboard players operation speed slot21 = demon herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -3 run scoreboard players operation speed slot21 = healingtotem herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -3 run scoreboard players operation speed slot21 = healingTotemSpeed spellStats
 execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -4 run scoreboard players operation speed slot21 = golemite herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -5 run scoreboard players operation speed slot21 = skeletonplus herospeed
+
 scoreboard players operation speed slot21 -= speedDebuffSlot21 speedDebuffs
 scoreboard players operation speed slot21 += speedBuffSlot21 speedBuffs
 
@@ -204,10 +224,15 @@ execute if score slot22 hp matches 1.. run execute if score character# slot22 ma
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 28 run scoreboard players operation speed slot22 = eidolon herospeed
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 29 run scoreboard players operation speed slot22 = ripper herospeed
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 30 run scoreboard players operation speed slot22 = domino herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 31 run scoreboard players operation speed slot22 = jones herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 32 run scoreboard players operation speed slot22 = scythe herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 33 run scoreboard players operation speed slot22 = sherman herospeed
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -1 run scoreboard players operation speed slot22 = skeleton herospeed
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -2 run scoreboard players operation speed slot22 = demon herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -3 run scoreboard players operation speed slot22 = healingtotem herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -3 run scoreboard players operation speed slot22 = healingTotemSpeed spellStats
 execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -4 run scoreboard players operation speed slot22 = golemite herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -5 run scoreboard players operation speed slot22 = skeletonplus herospeed
+
 scoreboard players operation speed slot22 -= speedDebuffSlot22 speedDebuffs
 scoreboard players operation speed slot22 += speedBuffSlot22 speedBuffs
 
@@ -243,10 +268,15 @@ execute if score slot23 hp matches 1.. run execute if score character# slot23 ma
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 28 run scoreboard players operation speed slot23 = eidolon herospeed
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 29 run scoreboard players operation speed slot23 = ripper herospeed
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 30 run scoreboard players operation speed slot23 = domino herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 31 run scoreboard players operation speed slot23 = jones herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 32 run scoreboard players operation speed slot23 = scythe herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 33 run scoreboard players operation speed slot23 = sherman herospeed
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -1 run scoreboard players operation speed slot23 = skeleton herospeed
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -2 run scoreboard players operation speed slot23 = demon herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -3 run scoreboard players operation speed slot23 = healingtotem herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -3 run scoreboard players operation speed slot23 = healingTotemSpeed spellStats
 execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -4 run scoreboard players operation speed slot23 = golemite herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -5 run scoreboard players operation speed slot23 = skeletonplus herospeed
+
 scoreboard players operation speed slot23 -= speedDebuffSlot23 speedDebuffs
 scoreboard players operation speed slot23 += speedBuffSlot23 speedBuffs
 

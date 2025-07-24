@@ -8,9 +8,9 @@ execute if score spellraritydrop lootboxes matches 1..4 run execute store result
 execute if score spellraritydrop lootboxes matches 5..7 run execute store result score rarespell lootboxes run random value 1..7
 execute if score spellraritydrop lootboxes matches 8..9 run execute store result score epicspell lootboxes run random value 1..7
 execute if score spellraritydrop lootboxes matches 10 run execute store result score legendaryspell lootboxes run random value 1..3
-execute if score heroraritydrop lootboxes matches 1..4 run execute store result score uncommonhero lootboxes run random value 1..8
-execute if score heroraritydrop lootboxes matches 5..7 run execute store result score rarehero lootboxes run random value 1..7
-execute if score heroraritydrop lootboxes matches 8..9 run execute store result score epichero lootboxes run random value 1..7
+execute if score heroraritydrop lootboxes matches 1..4 run execute store result score uncommonhero lootboxes run random value 1..9
+execute if score heroraritydrop lootboxes matches 5..7 run execute store result score rarehero lootboxes run random value 1..8
+execute if score heroraritydrop lootboxes matches 8..9 run execute store result score epichero lootboxes run random value 1..8
 execute if score heroraritydrop lootboxes matches 10 run execute store result score legendaryhero lootboxes run random value 1..5
 
 #Map Drops
@@ -164,6 +164,10 @@ execute if score uncommonhero lootboxes matches 8 run scoreboard players add @p[
 execute if score uncommonhero lootboxes matches 8 run execute at @p[tag=lootbox,tag=!hydraO] run say @p[tag=lootbox,tag=!hydraO] unlocked Hydra!
 execute if score uncommonhero lootboxes matches 8 run tag @p[tag=lootbox,tag=!hydraO] add hydraO
 
+execute if score uncommonhero lootboxes matches 9 run scoreboard players add @p[tag=lootbox,tag=jonesO] Shards 50
+execute if score uncommonhero lootboxes matches 9 run execute at @p[tag=lootbox,tag=!jonesO] run say @p[tag=lootbox,tag=!jonesO] unlocked Jones!
+execute if score uncommonhero lootboxes matches 9 run tag @p[tag=lootbox,tag=!jonesO] add jonesO
+
 #Rare Hero Drops
 execute if score rarehero lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=aceO] Shards 100
 execute if score rarehero lootboxes matches 1 run execute at @p[tag=lootbox,tag=!aceO] run say @p[tag=lootbox,tag=!aceO] unlocked Ace!
@@ -193,6 +197,10 @@ execute if score rarehero lootboxes matches 7 run scoreboard players add @p[tag=
 execute if score rarehero lootboxes matches 7 run execute at @p[tag=lootbox,tag=!dominoO] run say @p[tag=lootbox,tag=!dominoO] unlocked Domino!
 execute if score rarehero lootboxes matches 7 run tag @p[tag=lootbox,tag=!dominoO] add dominoO
 
+execute if score rarehero lootboxes matches 8 run scoreboard players add @p[tag=lootbox,tag=scytheO] Shards 100
+execute if score rarehero lootboxes matches 8 run execute at @p[tag=lootbox,tag=!scytheO] run say @p[tag=lootbox,tag=!scytheO] unlocked Scythe!
+execute if score rarehero lootboxes matches 8 run tag @p[tag=lootbox,tag=!scytheO] add scytheO
+
 #Epic Hero Drops
 execute if score epichero lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=astroO] Shards 200
 execute if score epichero lootboxes matches 1 run execute at @p[tag=lootbox,tag=!astroO] run say @p[tag=lootbox,tag=!astroO] unlocked Astro!
@@ -221,6 +229,10 @@ execute if score epichero lootboxes matches 6 run tag @p[tag=lootbox,tag=!garaba
 execute if score epichero lootboxes matches 7 run scoreboard players add @p[tag=lootbox,tag=juniperO] Shards 200
 execute if score epichero lootboxes matches 7 run execute at @p[tag=lootbox,tag=!juniperO] run say @p[tag=lootbox,tag=!juniperO] unlocked Juniper!
 execute if score epichero lootboxes matches 7 run tag @p[tag=lootbox,tag=!juniperO] add juniperO
+
+execute if score epichero lootboxes matches 8 run scoreboard players add @p[tag=lootbox,tag=shermanO] Shards 200
+execute if score epichero lootboxes matches 8 run execute at @p[tag=lootbox,tag=!shermanO] run say @p[tag=lootbox,tag=!shermanO] unlocked Sherman!
+execute if score epichero lootboxes matches 8 run tag @p[tag=lootbox,tag=!shermanO] add shermanO
 
 #Legendary Hero Drops
 execute if score legendaryhero lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=dilloO] Shards 400

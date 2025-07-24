@@ -360,5 +360,40 @@ execute if score Spell_Points_P4 Spell_Points >= healingTotemSp spellStats run e
 execute if items entity @p[tag=p4,tag=!healingtotemO] container.* minecraft:totem_of_undying[minecraft:custom_name={"text":"Healing Totem","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p4] ["Sorry, you don't own this spell."]
 execute if items entity @p[tag=p4,tag=!healingtotemO] container.* minecraft:totem_of_undying[minecraft:custom_name={"text":"Healing Totem","bold":true,"color":"gold","italic":false}] run clear @a[tag=p4]
 
+#Life Leech Select P3
+execute if score Spell_Points_P4 Spell_Points >= lifeLeechSp spellStats run execute if items entity @p[tag=p4,tag=lifeleechO] container.* minecraft:weeping_vines[minecraft:custom_name={"text":"Life Leech","bold":true,"color":"dark_purple","italic":false}] run tag @p[tag=p4] add lifeleech
+execute if score Spell_Points_P4 Spell_Points >= lifeLeechSp spellStats run execute if items entity @p[tag=p4,tag=lifeleechO] container.* minecraft:weeping_vines[minecraft:custom_name={"text":"Life Leech","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p4] ["",{"selector":"@p[tag=p4]"}," picked Life Leech."]
+execute if score Spell_Points_P4 Spell_Points < lifeLeechSp spellStats run execute if items entity @p[tag=p4,tag=lifeleechO] container.* minecraft:weeping_vines[minecraft:custom_name={"text":"Life Leech","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p4] ["",{"selector":"@p[tag=p4]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P4 Spell_Points < lifeLeechSp spellStats run execute if items entity @p[tag=p4,tag=lifeleechO] container.* minecraft:weeping_vines[minecraft:custom_name={"text":"Life Leech","bold":true,"color":"dark_purple","italic":false}] run clear @a[tag=p4]
+execute if score Spell_Points_P4 Spell_Points >= lifeLeechSp spellStats run execute if items entity @p[tag=p4,tag=lifeleechO] container.* minecraft:weeping_vines[minecraft:custom_name={"text":"Life Leech","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation Spell_Points_P4 Spell_Points -= lifeLeechSp spellStats
+execute if score Spell_Points_P4 Spell_Points >= lifeLeechSp spellStats run execute if items entity @p[tag=p4,tag=lifeleechO] container.* minecraft:weeping_vines[minecraft:custom_name={"text":"Life Leech","bold":true,"color":"dark_purple","italic":false}] run effect clear @a[tag=p4] water_breathing
+
+
+execute if items entity @p[tag=p4,tag=!lifeleechO] container.* minecraft:weeping_vines[minecraft:custom_name={"text":"Life Leech","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p4] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p4,tag=!lifeleechO] container.* minecraft:weeping_vines[minecraft:custom_name={"text":"Life Leech","bold":true,"color":"dark_purple","italic":false}] run clear @a[tag=p4]
+
+#Decimate Select P4
+execute if score Spell_Points_P4 Spell_Points >= decimateSp spellStats run execute if items entity @p[tag=p4,tag=decimateO] container.* minecraft:pointed_dripstone[minecraft:custom_name={"text":"Decimate","bold":true,"color":"dark_purple","italic":false}] run tag @p[tag=p4] add decimate
+execute if score Spell_Points_P4 Spell_Points >= decimateSp spellStats run execute if items entity @p[tag=p4,tag=decimateO] container.* minecraft:pointed_dripstone[minecraft:custom_name={"text":"Decimate","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p4] ["",{"selector":"@p[tag=p4]"}," picked Decimate."]
+execute if score Spell_Points_P4 Spell_Points < decimateSp spellStats run execute if items entity @p[tag=p4,tag=decimateO] container.* minecraft:pointed_dripstone[minecraft:custom_name={"text":"Decimate","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p4] ["",{"selector":"@p[tag=p4]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P4 Spell_Points < decimateSp spellStats run execute if items entity @p[tag=p4,tag=decimateO] container.* minecraft:pointed_dripstone[minecraft:custom_name={"text":"Decimate","bold":true,"color":"dark_purple","italic":false}] run clear @a[tag=p4]
+execute if score Spell_Points_P4 Spell_Points >= decimateSp spellStats run execute if items entity @p[tag=p4,tag=decimateO] container.* minecraft:pointed_dripstone[minecraft:custom_name={"text":"Decimate","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation Spell_Points_P4 Spell_Points -= decimateSp spellStats
+execute if score Spell_Points_P4 Spell_Points >= decimateSp spellStats run execute if items entity @p[tag=p4,tag=decimateO] container.* minecraft:pointed_dripstone[minecraft:custom_name={"text":"Decimate","bold":true,"color":"dark_purple","italic":false}] run effect clear @a[tag=p4] water_breathing
+
+
+execute if items entity @p[tag=p4,tag=!decimateO] container.* minecraft:pointed_dripstone[minecraft:custom_name={"text":"Decimate","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p4] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p4,tag=!decimateO] container.* minecraft:pointed_dripstone[minecraft:custom_name={"text":"Decimate","bold":true,"color":"dark_purple","italic":false}] run clear @a[tag=p4]
+
+#Healing Rain Select P4
+execute if score Spell_Points_P4 Spell_Points >= healingRainSp spellStats run execute if items entity @p[tag=p4,tag=healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run tag @p[tag=p4] add healingRain
+execute if score Spell_Points_P4 Spell_Points >= healingRainSp spellStats run execute if items entity @p[tag=p4,tag=healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p4] ["",{"selector":"@p[tag=p4]"}," picked Healing Rain."]
+execute if score Spell_Points_P4 Spell_Points < healingRainSp spellStats run execute if items entity @p[tag=p4,tag=healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p4] ["",{"selector":"@p[tag=p4]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P4 Spell_Points < healingRainSp spellStats run execute if items entity @p[tag=p4,tag=healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run clear @a[tag=p4]
+execute if score Spell_Points_P4 Spell_Points >= healingRainSp spellStats run execute if items entity @p[tag=p4,tag=healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run scoreboard players operation Spell_Points_P4 Spell_Points -= healingRainSp spellStats
+execute if score Spell_Points_P4 Spell_Points >= healingRainSp spellStats run execute if items entity @p[tag=p4,tag=healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run effect clear @a[tag=p4] water_breathing
+
+
+execute if items entity @p[tag=p4,tag=!healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p4] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p4,tag=!healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run clear @a[tag=p4]
 
 execute if score spellpick4 drafts > Spell_Points_P4 Spell_Points run clear @a[tag=p4]

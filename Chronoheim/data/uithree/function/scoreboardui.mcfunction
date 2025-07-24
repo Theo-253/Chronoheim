@@ -898,4 +898,9 @@ execute at @p[tag=p6,tag=overclock] run scoreboard players operation Overclock_[
 execute at @p[tag=p6,tag=shiftingshadows] run scoreboard players operation Shifting_Shadows_[2] Spell_Cooldown_Game_3 = shiftingShadowsCooldown player6spells
 execute at @p[tag=p6,tag=chronowarp] run scoreboard players operation Chrono_Warp_[2] Spell_Cooldown_Game_3 = chronoWarpCooldown player6spells
 execute at @p[tag=p6,tag=healingtotem] run scoreboard players operation Healing_Totem_[2] Spell_Cooldown_Game_3 = healingTotemCooldown player6spells
-
+execute at @p[tag=p5,tag=lifeleech] run scoreboard players operation Life_Leech_[1] Spell_Cooldown_Game_3 = lifeLeechCooldown player5spells
+execute at @p[tag=p6,tag=lifeleech] run scoreboard players operation Life_Leech_[2] Spell_Cooldown_Game_3 = lifeLeechCooldown player6spells
+execute at @p[tag=p5,tag=decimate] run scoreboard players operation Decimate_[1] Spell_Cooldown_Game_3 = decimateCooldown player5spells
+execute at @p[tag=p6,tag=decimate] run scoreboard players operation Decimate_[2] Spell_Cooldown_Game_3 = decimateCooldown player6spells
+execute at @p[tag=p5,tag=healingrain] run scoreboard players operation Healing_Rain_[1] Spell_Cooldown_Game_3 = healingRainCooldown player5spells
+execute at @p[tag=p6,tag=healingrain] run scoreboard players operation Healing_Rain_[2] Spell_Cooldown_Game_3 = healingRainCooldown player6spells

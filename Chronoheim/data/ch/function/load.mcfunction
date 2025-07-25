@@ -40,7 +40,7 @@ scoreboard objectives add slot20 dummy
 scoreboard objectives add slot21 dummy
 scoreboard objectives add slot22 dummy
 scoreboard objectives add slot23 dummy
-scoreboard objectives add slot23 dummy
+scoreboard objectives add slot24 dummy
 scoreboard objectives add shield dummy
 scoreboard objectives add fear dummy
 scoreboard objectives add wards dummy

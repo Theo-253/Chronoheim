@@ -180,6 +180,14 @@ execute if score abilitynumber3 abilities matches 30 run execute if score ward s
 execute if score abilitynumber3 abilities matches 30 at @e[name=slot24] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score abilitynumber3 abilities matches 30 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Poison Dart on Slot 8!"]
 
+#Scythe
+execute if score abilitynumber3 abilities matches 32 if score ward slot24 matches 0 run scoreboard players operation slot24 hp /= scytheDivide abilityStats
+execute if score abilitynumber3 abilities matches 32 if score ward slot24 matches 0 run scoreboard players operation slot24 hp *= scytheMult abilityStats
+execute if score abilitynumber3 abilities matches 32 if score ward slot24 matches 0 if score slot18isatk booleans matches 1 run scoreboard players operation marks slot24 += scytheLeader abilityStats
+execute if score abilitynumber3 abilities matches 32 if score ward slot24 matches 1.. run function chthree:wardslot24
+execute if score abilitynumber3 abilities matches 32 at @e[name=slot24] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+execute if score abilitynumber3 abilities matches 32 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Cull the Weak on Slot 8!"]
+
 #Doc Basic Attack
 execute if score abilitynumber3 abilities matches -1 run scoreboard players operation slot24Disease disease += doc heroattack
 execute if score abilitynumber3 abilities matches -1 if score slot18isatk booleans matches 1 run scoreboard players operation slot24Disease disease += docLeader heroattack

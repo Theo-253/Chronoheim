@@ -225,6 +225,40 @@ execute if score spellnumber spells matches 27 at @e[name=slot2] run particle mi
 execute if score spellnumber spells matches 27 run scoreboard players set attackIsOngoingGame1 booleans 0
 execute if score spellnumber spells matches 27 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Overclock on Slot 2!"]
 
+#Life Leech Token
+
+execute if score spellnumber spells matches -2 if score slot2bleeding booleaneffects matches 0 run scoreboard players operation slot2 hp += lifeLeechHeal spellStats
+execute if score spellnumber spells matches -2 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches -2 run execute at @n[type=armor_stand,name=slot2] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber spells matches -2 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Life Leech to heal Slot 2!"]
+execute if score spellnumber spells matches -2 run scoreboard players set spellbuffsp1 spells 0
+
+#Life Leech
+execute if score spellnumber spells matches 31 run scoreboard players operation spellDmg saves = lifeLeech spellStats
+execute if score spellnumber spells matches 31 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
+execute if score spellnumber spells matches 31 run scoreboard players operation spellDmg saves += marks slot2
+execute if score spellnumber spells matches 31 run scoreboard players operation spellDmg saves /= atkmultiplier slot2
+execute if score spellnumber spells matches 31 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= spellDmg saves
+execute if score spellnumber spells matches 31 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
+execute if score spellnumber spells matches 31 run execute if score ward slot2 matches 1.. run function ch:wardslot2
+execute if score spellnumber spells matches 31 run function ch:spellgivetargetsp1reverse
+execute if score spellnumber spells matches 31 run execute at @n[type=armor_stand,name=slot2] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber spells matches 31 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Life Leech on Slot 2!"]
+execute if score spellnumber spells matches 31 run scoreboard players set spellnumber spells -2
+
+#Decimate
+execute if score spellnumber spells matches 32 run scoreboard players operation spellDmg saves = decimate spellStats
+execute if score spellnumber spells matches 32 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
+execute if score spellnumber spells matches 32 run scoreboard players operation spellDmg saves += marks slot2
+execute if score spellnumber spells matches 32 run scoreboard players operation spellDmg saves /= atkmultiplier slot2
+execute if score spellnumber spells matches 32 run execute if score ward slot2 matches 0 if score character# slot2 matches ..-1 run scoreboard players operation shield slot2 -= spellDmg saves
+execute if score spellnumber spells matches 32 run execute if score ward slot2 matches 0 if score character# slot2 matches ..-1 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
+execute if score spellnumber spells matches 32 run execute if score ward slot2 matches 1.. if score character# slot2 matches ..-1 run function ch:wardslot2
+execute if score spellnumber spells matches 32 run execute at @n[type=armor_stand,name=slot2] run particle block{block_state:"minecraft:dripstone_block"} ~ ~ ~ 0.9 2 0.9 1 250 normal
+execute if score spellnumber spells matches 32 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Decimate on Slot 2!"]
+execute if score spellnumber spells matches 32 run scoreboard players set spellbuffsp2 spells 0
+execute if score spellnumber spells matches 32 run function ch:spellphasep1
+
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0
 execute if score shield slot2 matches ..0 run scoreboard players set shield slot2 0

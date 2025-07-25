@@ -71,7 +71,7 @@ execute if score spellnumber2 spells matches 4 run execute if score ward slot12 
 execute if score spellnumber2 spells matches 4 run execute if score ward slot12 matches 0 if score shield slot12 matches ..0 run scoreboard players operation slot12 hp += shield slot12
 execute if score spellnumber2 spells matches 4 run execute if score ward slot12 matches 1.. run function chtoo:wardslot12
 execute if score spellnumber2 spells matches 4 run execute at @n[type=armor_stand,name=slot12] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
-execute if score spellnumber2 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," smited Slot 12 with Magic Missle!"]
+execute if score spellnumber2 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," smited Slot 4 with Magic Missle!"]
 execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 1 run function chtoo:spellgivetargetsp4
 execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set spellbuffsp4 spells 0
 execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run clear @a[tag=p4] target

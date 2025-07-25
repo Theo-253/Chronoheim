@@ -5,8 +5,8 @@ execute if score drop lootboxes matches 1..50 run execute store result score spe
 execute if score drop lootboxes matches 50..99 run execute store result score heroraritydrop lootboxes run random value 1..10
 execute if score drop lootboxes matches 100 run execute store result score mapdrop lootboxes run scoreboard players set mapdrop lootboxes 1
 execute if score spellraritydrop lootboxes matches 1..4 run execute store result score uncommonspell lootboxes run random value 1..10
-execute if score spellraritydrop lootboxes matches 5..7 run execute store result score rarespell lootboxes run random value 1..7
-execute if score spellraritydrop lootboxes matches 8..9 run execute store result score epicspell lootboxes run random value 1..7
+execute if score spellraritydrop lootboxes matches 5..7 run execute store result score rarespell lootboxes run random value 1..8
+execute if score spellraritydrop lootboxes matches 8..9 run execute store result score epicspell lootboxes run random value 1..9
 execute if score spellraritydrop lootboxes matches 10 run execute store result score legendaryspell lootboxes run random value 1..3
 execute if score heroraritydrop lootboxes matches 1..4 run execute store result score uncommonhero lootboxes run random value 1..9
 execute if score heroraritydrop lootboxes matches 5..7 run execute store result score rarehero lootboxes run random value 1..8
@@ -89,6 +89,10 @@ execute if score rarespell lootboxes matches 7 run scoreboard players add @p[tag
 execute if score rarespell lootboxes matches 7 run execute at @p[tag=lootbox,tag=!blizzardO] run say @p[tag=lootbox,tag=!blizzardO] unlocked Blizzard!
 execute if score rarespell lootboxes matches 7 run tag @p[tag=lootbox,tag=!blizzardO] add blizzardO
 
+execute if score rarespell lootboxes matches 8 run scoreboard players add @p[tag=lootbox,tag=healingrainO] Shards 50
+execute if score rarespell lootboxes matches 8 run execute at @p[tag=lootbox,tag=!healingrainO] run say @p[tag=lootbox,tag=!healingrainO] unlocked Healing Rain!
+execute if score rarespell lootboxes matches 8 run tag @p[tag=lootbox,tag=!healingrainO] add healingrainO
+
 #Epic Spell Drops
 execute if score epicspell lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=plagueO] Shards 100
 execute if score epicspell lootboxes matches 1 run execute at @p[tag=lootbox,tag=!plagueO] run say @p[tag=lootbox,tag=!plagueO] unlocked Plague!
@@ -117,6 +121,14 @@ execute if score epicspell lootboxes matches 6 run tag @p[tag=lootbox,tag=!overc
 execute if score epicspell lootboxes matches 7 run scoreboard players add @p[tag=lootbox,tag=dragonforgeO] Shards 100
 execute if score epicspell lootboxes matches 7 run execute at @p[tag=lootbox,tag=!dragonforgeO] run say @p[tag=lootbox,tag=!dragonforgeO] unlocked Dragonforge!
 execute if score epicspell lootboxes matches 7 run tag @p[tag=lootbox,tag=!dragonforgeO] add dragonforgeO
+
+execute if score epicspell lootboxes matches 8 run scoreboard players add @p[tag=lootbox,tag=lifeleechO] Shards 100
+execute if score epicspell lootboxes matches 8 run execute at @p[tag=lootbox,tag=!lifeleechO] run say @p[tag=lootbox,tag=!lifeleechO] unlocked Life Leech!
+execute if score epicspell lootboxes matches 8 run tag @p[tag=lootbox,tag=!lifeleechO] add lifeleechO
+
+execute if score epicspell lootboxes matches 9 run scoreboard players add @p[tag=lootbox,tag=decimateO] Shards 100
+execute if score epicspell lootboxes matches 9 run execute at @p[tag=lootbox,tag=!decimateO] run say @p[tag=lootbox,tag=!decimateO] unlocked Decimate!
+execute if score epicspell lootboxes matches 9 run tag @p[tag=lootbox,tag=!decimateO] add decimateO
 
 #Legendary Spell Drops
 execute if score legendaryspell lootboxes matches 1 run scoreboard players add @p[tag=lootbox,tag=shiftingshadowsO] Shards 200

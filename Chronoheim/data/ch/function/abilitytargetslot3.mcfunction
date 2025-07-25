@@ -222,6 +222,56 @@ execute if score abilitynumber abilities matches -4 run execute if score ward sl
 execute if score abilitynumber abilities matches -4 run execute if score ward slot3 matches 1.. run function ch:wardslot3
 execute if score abilitynumber abilities matches -4 run execute at @e[name=slot3,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 
+
+#Jones Ability
+execute if score abilitynumber abilities matches 31 run execute if score ward slot3 matches 0 run scoreboard players set disarmedslot3 booleaneffects 2
+execute if score abilitynumber abilities matches 31 run execute if score ward slot3 matches 1 run function ch:wardslot3
+execute if score abilitynumber abilities matches 31 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Lasso on Slot 3!"]
+execute if score abilitynumber abilities matches 31 at @e[name=slot3] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+
+#Sherman Basic
+execute if score abilitynumber abilities matches -5 run execute unless score slot3bleeding booleaneffects matches 1.. run scoreboard players operation slot3 hp += sherman heroattack
+execute if score abilitynumber abilities matches -5 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," healed Slot 3!"]
+execute if score abilitynumber abilities matches -5 run execute at @n[type=armor_stand,name=slot3] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 80
+
+#Sherman Ability
+execute if score abilitynumber abilities matches 33 run execute if score ward slot3 matches 0 if score debuffDurationSlot3 atkmodifiers < shermanDuration abilityStats run scoreboard players operation debuffDurationSlot3 atkmodifiers = shermanDuration abilityStats
+execute if score abilitynumber abilities matches 33 run execute if score ward slot3 matches 0 run scoreboard players operation attackDebuffSlot3 atkmodifiers += shermanDebuff abilityStats
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves = sherman abilityStats
+execute if score abilitynumber abilities matches 33 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
+execute if score abilitynumber abilities matches 33 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
+execute if score abilitynumber abilities matches 33 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves += marks slot3
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves /= atkmultiplier slot3
+execute if score abilitynumber abilities matches 33 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= abilityDmg saves
+execute if score abilitynumber abilities matches 33 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3
+execute if score abilitynumber abilities matches 33 run execute if score ward slot3 matches 1.. run function ch:wardslot3
+execute if score abilitynumber abilities matches 33 at @e[name=slot3] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+execute if score abilitynumber abilities matches 33 at @e[name=slot3] run particle minecraft:explosion ~ ~1 ~ 0.9 0.9 0.9 0.1 10
+execute if score abilitynumber abilities matches 33 at @e[name=slot2] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 50
+execute if score abilitynumber abilities matches 33 at @e[name=slot4] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 50
+execute if score abilitynumber abilities matches 33 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Grasping Roots on Slot 3!"]
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves = sherman abilityStats
+execute if score abilitynumber abilities matches 33 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
+execute if score abilitynumber abilities matches 33 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
+execute if score abilitynumber abilities matches 33 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves /= shermanLeader abilityStats
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves += marks slot2
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves /= atkmultiplier slot2
+execute if score abilitynumber abilities matches 33 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= abilityDmg saves
+execute if score abilitynumber abilities matches 33 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
+execute if score abilitynumber abilities matches 33 run execute if score ward slot2 matches 1.. run function ch:wardslot2
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves = sherman abilityStats
+execute if score abilitynumber abilities matches 33 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
+execute if score abilitynumber abilities matches 33 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
+execute if score abilitynumber abilities matches 33 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves /= shermanLeader abilityStats
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves += marks slot4
+execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves /= atkmultiplier slot4
+execute if score abilitynumber abilities matches 33 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= abilityDmg saves
+execute if score abilitynumber abilities matches 33 run execute if score ward slot4 matches 0 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
+execute if score abilitynumber abilities matches 33 run execute if score ward slot4 matches 1.. run function ch:wardslot4
+
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0
 execute if score shield slot2 matches ..0 run scoreboard players set shield slot2 0

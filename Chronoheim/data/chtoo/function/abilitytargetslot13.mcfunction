@@ -180,6 +180,15 @@ execute if score abilitynumber2 abilities matches 30 if score ward slot13 matche
 execute if score abilitynumber2 abilities matches 30 run execute if score ward slot13 matches 1.. run function chtoo:wardslot13
 execute if score abilitynumber2 abilities matches 30 at @e[name=slot13] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score abilitynumber2 abilities matches 30 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Poison Dart on Slot 5!"]
+
+#Scythe
+execute if score abilitynumber2 abilities matches 32 if score ward slot13 matches 0 run scoreboard players operation slot13 hp /= scytheDivide abilityStats
+execute if score abilitynumber2 abilities matches 32 if score ward slot13 matches 0 run scoreboard players operation slot13 hp *= scytheMult abilityStats
+execute if score abilitynumber2 abilities matches 32 if score ward slot13 matches 0 if score slot10isatk booleans matches 1 run scoreboard players operation marks slot13 += scytheLeader abilityStats
+execute if score abilitynumber2 abilities matches 32 if score ward slot13 matches 1.. run function chtoo:wardslot13
+execute if score abilitynumber2 abilities matches 32 at @e[name=slot13] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+execute if score abilitynumber2 abilities matches 32 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Cull the Weak on Slot 5!"]
+
 #Doc Basic Attack
 execute if score abilitynumber2 abilities matches -1 run scoreboard players operation slot13Disease disease += doc heroattack
 execute if score abilitynumber2 abilities matches -1 if score slot10isatk booleans matches 1 run scoreboard players operation slot13Disease disease += docLeader heroattack

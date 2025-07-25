@@ -276,6 +276,14 @@ scoreboard players set overclockCooldown player2spells 0
 scoreboard players set shiftingShadowsCooldown player2spells 0
 scoreboard players set chronoWarpCooldown player2spells 0
 scoreboard players set healingTotemCooldown player2spells 0
+scoreboard players set decimateCooldown player2spells 0
+scoreboard players set lifeLeechCooldown player2spells 0
+scoreboard players set healingRainCooldown player2spells 0
+scoreboard players set decimateCooldown player1spells 0
+scoreboard players set lifeLeechCooldown player1spells 0
+scoreboard players set healingRainCooldown player1spells 0
+
+
 scoreboard players set Spell_Points_P1 Spell_Points -1
 scoreboard players set Spell_Points_P2 Spell_Points -1
 scoreboard players set suddenDeath deaths 0

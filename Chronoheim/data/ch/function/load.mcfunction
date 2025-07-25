@@ -517,6 +517,13 @@ scoreboard players set dominoPoison abilityStats 40
 scoreboard players set dominoLeader abilityStats 140
 scoreboard players set dominoLeaderHit heroattack 120
 
+scoreboard players set scythe heroattack 140
+scoreboard players set scythe herohealth 1860
+scoreboard players set scythe herospeed 1400
+scoreboard players set scytheDivide abilityStats 4
+scoreboard players set scytheMult abilityStats 3
+scoreboard players set scytheLeader abilityStats 80
+
 scoreboard players set golemite heroattack 60
 scoreboard players set golemite herohealth 300
 scoreboard players set golemite herospeed 700
@@ -649,4 +656,11 @@ scoreboard players set witchesBrew spellStats 60
 scoreboard players set witchesBrewSpDebuff spellStats 400
 scoreboard players set witchesBrewDmgDebuff spellStats 60
 scoreboard players set witchesBrewDuration spellStats 2
+scoreboard players set lifeLeechSP spellStats 3
+scoreboard players set lifeLeechCD spellStats 2
+scoreboard players set lifeLeech spellStats 120
+scoreboard players set lifeLeechHeal spellStats 120
+scoreboard players set decimate spellStats 200
+scoreboard players set decimateCD spellStats 1
+scoreboard players set decimateSP spellStats 1
 

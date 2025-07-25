@@ -183,6 +183,7 @@ execute if score spellnumber3 spells matches 10 run execute if score ward slot17
 execute if score spellnumber3 spells matches 10 run scoreboard players set spellbuffsp6 spells 0
 execute if score spellnumber3 spells matches 10 run function chthree:spellphasep5
 execute if score spellnumber3 spells matches 10 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Witch Bolt on Slot 1!"]
+
 #ward
 execute if score spellnumber3 spells matches 19 run scoreboard players set ward slot17 1
 execute if score spellnumber3 spells matches 19 at @e[name=slot17] run particle minecraft:ominous_spawning ~ ~1 ~ 0.9 0.9 0.9 0.1 100

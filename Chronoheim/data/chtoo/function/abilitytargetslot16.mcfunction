@@ -175,7 +175,7 @@ execute if score abilitynumber2 abilities matches 30 run scoreboard players oper
 execute if score abilitynumber2 abilities matches 30 run execute if score ward slot16 matches 0 run scoreboard players operation shield slot16 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 30 run execute if score ward slot16 matches 0 if score shield slot16 matches ..0 run scoreboard players operation slot16 hp += shield slot16
 execute if score abilitynumber2 abilities matches 30 if score ward slot16 matches 0 if score durationSlot16 poison < dominoDuration abilityStats run scoreboard players operation durationSlot16 poison = dominoDuration abilityStats
-execute if score abilitynumber2 abilities matches 30 if score ward slot16 matches 0 run scoreboard players operation slot16Poison poison += dominoPoisonLeader abilityStats
+execute if score abilitynumber2 abilities matches 30 if score ward slot16 matches 0 run scoreboard players operation slot16Poison poison += dominoPoison abilityStats
 execute if score abilitynumber2 abilities matches 30 run execute if score ward slot16 matches 1.. run function chtoo:wardslot16
 execute if score abilitynumber2 abilities matches 30 at @e[name=slot16] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score abilitynumber2 abilities matches 30 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Poison Dart on Slot 8!"]

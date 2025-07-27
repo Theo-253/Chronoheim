@@ -81,7 +81,7 @@ execute if score abilitynumber3 abilities matches 5 if score slot24isatk boolean
 execute if score abilitynumber3 abilities matches 5 run execute at @n[name=slot24,type=armor_stand] run particle minecraft:wax_off ~ ~1 ~ 0.6 0.6 0.6 0.0001 400
 execute if score abilitynumber3 abilities matches 5 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Force Field on Slot 8!"]
 #Kirin
-execute if score abilitynumber3 abilities matches 8 if score buffDurationSlot16 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot16 atkmodifiers = kirinDuration abilityStats
+execute if score abilitynumber3 abilities matches 8 if score buffDurationSlot24 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot24 atkmodifiers = kirinDuration abilityStats
 execute if score abilitynumber3 abilities matches 8 run scoreboard players operation attackBuffSlot24 atkmodifiers += kirin abilityStats
 execute if score abilitynumber3 abilities matches 8 if score slot24isatk booleans matches 1 if score slot24bleeding booleaneffects matches 0 run scoreboard players operation slot24 hp += kirinLeader abilityStats
 execute if score abilitynumber3 abilities matches 8 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Mythical Empowerment on Slot 8!"]
@@ -212,7 +212,45 @@ execute if score abilitynumber3 abilities matches -4 run execute if score ward s
 execute if score abilitynumber3 abilities matches -4 run execute if score ward slot24 matches 1.. run function chthree:wardslot24
 execute if score abilitynumber3 abilities matches -4 run execute at @e[name=slot24,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 
+#Jones Ability
+execute if score abilitynumber3 abilities matches 31 run execute if score ward slot24 matches 0 run scoreboard players operation disarmedslot24 booleaneffects = jones abilityStats
+execute if score abilitynumber3 abilities matches 31 run execute if score ward slot24 matches 1 run function chthree:wardslot24
+execute if score abilitynumber3 abilities matches 31 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Lasso on Slot 8!"]
+execute if score abilitynumber3 abilities matches 31 at @e[name=slot24] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 
+
+#Sherman Basic
+execute if score abilitynumber3 abilities matches -5 run execute unless score slot24bleeding booleaneffects matches 1.. run scoreboard players operation slot24 hp += sherman heroattack
+execute if score abilitynumber3 abilities matches -5 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," healed Slot 8!"]
+execute if score abilitynumber3 abilities matches -5 run execute at @n[type=armor_stand,name=slot24] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 80
+
+
+#Sherman Ability
+execute if score abilitynumber3 abilities matches 33 run execute if score ward slot24 matches 0 if score debuffDurationSlot24 atkmodifiers < shermanDuration abilityStats run scoreboard players operation debuffDurationSlot24 atkmodifiers = shermanDuration abilityStats
+execute if score abilitynumber3 abilities matches 33 run execute if score ward slot24 matches 0 run scoreboard players operation attackDebuffSlot24 atkmodifiers += shermanDebuff abilityStats
+execute if score abilitynumber3 abilities matches 33 run scoreboard players operation abilityDmg saves = sherman abilityStats
+execute if score abilitynumber3 abilities matches 33 if score slot17isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot17 atkmodifiers
+execute if score abilitynumber3 abilities matches 33 if score slot18isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot18 atkmodifiers
+execute if score abilitynumber3 abilities matches 33 if score slot19isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot19 atkmodifiers
+execute if score abilitynumber3 abilities matches 33 run scoreboard players operation abilityDmg saves += marks slot24
+execute if score abilitynumber3 abilities matches 33 run scoreboard players operation abilityDmg saves /= atkmultiplier slot24
+execute if score abilitynumber3 abilities matches 33 run execute if score ward slot24 matches 0 run scoreboard players operation shield slot24 -= abilityDmg saves
+execute if score abilitynumber3 abilities matches 33 run execute if score ward slot24 matches 0 if score shield slot24 matches ..0 run scoreboard players operation slot24 hp += shield slot24
+execute if score abilitynumber3 abilities matches 33 run execute if score ward slot24 matches 1.. run function chthree:wardslot24
+execute if score abilitynumber3 abilities matches 33 at @e[name=slot24] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+execute if score abilitynumber3 abilities matches 33 at @e[name=slot24] run particle minecraft:explosion ~ ~1 ~ 0.9 0.9 0.9 0.1 10
+execute if score abilitynumber3 abilities matches 33 at @e[name=slot23] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.1 50
+execute if score abilitynumber3 abilities matches 33 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Grasping Roots on Slot 8!"]
+execute if score abilitynumber3 abilities matches 33 run scoreboard players operation abilityDmg saves = sherman abilityStats
+execute if score abilitynumber3 abilities matches 33 if score slot17isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot17 atkmodifiers
+execute if score abilitynumber3 abilities matches 33 if score slot18isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot18 atkmodifiers
+execute if score abilitynumber3 abilities matches 33 if score slot19isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot19 atkmodifiers
+execute if score abilitynumber3 abilities matches 33 run scoreboard players operation abilityDmg saves /= shermanSplash abilityStats
+execute if score abilitynumber3 abilities matches 33 run scoreboard players operation abilityDmg saves += marks slot23
+execute if score abilitynumber3 abilities matches 33 run scoreboard players operation abilityDmg saves /= atkmultiplier slot23
+execute if score abilitynumber3 abilities matches 33 run execute if score ward slot23 matches 0 run scoreboard players operation shield slot23 -= abilityDmg saves
+execute if score abilitynumber3 abilities matches 33 run execute if score ward slot23 matches 0 if score shield slot23 matches ..0 run scoreboard players operation slot23 hp += shield slot23
+execute if score abilitynumber3 abilities matches 33 run execute if score ward slot23 matches 1.. run function chthree:wardslot23
 
 #This goes at the bottom
 execute if score shield slot21 matches ..0 run scoreboard players set shield slot21 0

@@ -15,6 +15,10 @@ execute at @p[tag=p2,tag=lab] run place template map.lab 199 -1 230 180
 execute at @p[tag=p1,tag=!lab,tag=!colosseum] run place template map.scenic 200 0 200
 execute at @p[tag=p2,tag=!lab,tag=!colosseum] run place template map.scenic 199 0 230 180
 kill @e[type=item]
+scoreboard players set speed slot4 -1000000
+scoreboard players set speed slot8 -1000000
+scoreboard players set slot4 hp 0
+scoreboard players set slot8 hp 0
 #Slot 1 Speed Reset
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 1 run scoreboard players operation speed slot1 = bones herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 2 run scoreboard players operation speed slot1 = arthur herospeed

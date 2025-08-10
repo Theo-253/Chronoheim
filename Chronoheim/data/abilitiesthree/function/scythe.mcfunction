@@ -9,6 +9,6 @@ execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:32,max:32}}}}} run execute if score slot22isatk booleans matches 1.. run scoreboard players operation cooldown slot22 = scytheCD abilityStats
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:32,max:32}}}}} run execute if score slot23isatk booleans matches 1.. run scoreboard players operation cooldown slot23 = scytheCD abilityStats
 scoreboard players set burn burn 1
-scoreboard players set abilitynumber abilities 32
+scoreboard players set abilitynumber3 abilities 32
 execute as @a[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:32,max:32}}}}} run function chthree:abilitygivetargetsp5
 execute as @a[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:32,max:32}}}}} run function chthree:abilitygivetargetsp6

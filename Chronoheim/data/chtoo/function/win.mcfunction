@@ -70,6 +70,9 @@ tag @a[tag=game2] remove overclock
 tag @a[tag=game2] remove shiftingshadows
 tag @a[tag=game2] remove chronowarp
 tag @a[tag=game2] remove healingtotem
+tag @a[tag=game2] remove healingrain
+tag @a[tag=game2] remove decimate
+tag @a[tag=game2] remove lifeleech
 tag @a remove p3
 tag @a remove p4
 tag @a remove game2

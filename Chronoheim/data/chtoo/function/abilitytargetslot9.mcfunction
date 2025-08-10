@@ -135,7 +135,7 @@ execute if score abilitynumber2 abilities matches 23 if score slot14isatk boolea
 execute if score abilitynumber2 abilities matches 23 if score slot14isatk booleans matches 1 at @e[name=slot11] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber2 abilities matches 23 if score slot14isatk booleans matches 1 at @e[name=slot12] run particle minecraft:falling_nectar ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber2 abilities matches 23 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Consume on Slot 1!"]
-#Boomer
+#Old Boomer
 execute if score abilitynumber2 abilities matches 25 run scoreboard players operation abilityDmg2 saves = boomer abilityStats
 execute if score abilitynumber2 abilities matches 25 if score slot13isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot13 atkmodifiers
 execute if score abilitynumber2 abilities matches 25 if score slot14isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot14 atkmodifiers

@@ -19,6 +19,23 @@ scoreboard players set speed slot24 -1000000
 scoreboard players set slot20 hp 0
 scoreboard players set slot24 hp 0
 kill @e[type=item]
+#Jones Leader Bonus
+execute if score character# slot18 matches 31 run scoreboard players operation durationSlot17 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation speedBuffSlot17 speedBuffs = jonesLeader abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation durationSlot18 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation speedBuffSlot18 speedBuffs = jonesLeader abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation durationSlot19 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation speedBuffSlot19 speedBuffs = jonesLeader abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation durationSlot20 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation speedBuffSlot20 speedBuffs = jonesLeader abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation durationSlot21 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation speedBuffSlot21 speedBuffs = jonesLeader abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation durationSlot22 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation speedBuffSlot22 speedBuffs = jonesLeader abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation durationSlot23 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation speedBuffSlot23 speedBuffs = jonesLeader abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation durationSlot24 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation speedBuffSlot24 speedBuffs = jonesLeader abilityStats
 #Slot 1 Speed Reset
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 1 run scoreboard players operation speed slot17 = bones herospeed
 execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 2 run scoreboard players operation speed slot17 = arthur herospeed
@@ -302,8 +319,8 @@ execute if score slot24 hp matches 1.. run execute if score character# slot24 ma
 execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -2 run scoreboard players operation speed slot24 = demon herospeed
 execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -3 run scoreboard players operation speed slot24 = healingtotem herospeed
 execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -4 run scoreboard players operation speed slot24 = golemite herospeed
-scoreboard players operation speed slot24 -= speedDebuffSlot16 speedDebuffs
-scoreboard players operation speed slot24 += speedBuffSlot16 speedBuffs
+scoreboard players operation speed slot24 -= speedDebuffSlot24 speedDebuffs
+scoreboard players operation speed slot24 += speedBuffSlot24 speedBuffs
 
 
 #Game Start Leader bonuses
@@ -319,11 +336,11 @@ execute if score character# slot18 matches 2 run scoreboard players operation at
 execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot21 atkmodifiers = arthurBuffDuration abilityStats
 execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot22 atkmodifiers = arthurBuffDuration abilityStats
 execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot23 atkmodifiers = arthurBuffDuration abilityStats
-execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot16 atkmodifiers = arthurBuffDuration abilityStats
+execute if score character# slot22 matches 2 run scoreboard players operation buffDurationSlot24 atkmodifiers = arthurBuffDuration abilityStats
 execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot21 atkmodifiers = arthurBuff abilityStats
 execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot22 atkmodifiers = arthurBuff abilityStats
 execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot23 atkmodifiers = arthurBuff abilityStats
-execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot16 atkmodifiers = arthurBuff abilityStats
+execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot24 atkmodifiers = arthurBuff abilityStats
 
 execute if score character# slot18 matches 14 run scoreboard players operation atk slot18 += hydraLeader heroattack
 execute if score character# slot22 matches 14 run scoreboard players operation atk slot22 += hydraLeader heroattack

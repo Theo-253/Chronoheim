@@ -19,6 +19,23 @@ scoreboard players set speed slot4 -1000000
 scoreboard players set speed slot8 -1000000
 scoreboard players set slot4 hp 0
 scoreboard players set slot8 hp 0
+#Jones Leader Bonus
+execute if score character# slot2 matches 31 run scoreboard players operation durationSlot1 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot2 matches 31 run scoreboard players operation speedBuffSlot1 speedBuffs = jonesLeader abilityStats
+execute if score character# slot2 matches 31 run scoreboard players operation durationSlot2 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot2 matches 31 run scoreboard players operation speedBuffSlot2 speedBuffs = jonesLeader abilityStats
+execute if score character# slot2 matches 31 run scoreboard players operation durationSlot3 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot2 matches 31 run scoreboard players operation speedBuffSlot3 speedBuffs = jonesLeader abilityStats
+execute if score character# slot2 matches 31 run scoreboard players operation durationSlot4 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot2 matches 31 run scoreboard players operation speedBuffSlot4 speedBuffs = jonesLeader abilityStats
+execute if score character# slot6 matches 31 run scoreboard players operation durationSlot5 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot6 matches 31 run scoreboard players operation speedBuffSlot5 speedBuffs = jonesLeader abilityStats
+execute if score character# slot6 matches 31 run scoreboard players operation durationSlot6 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot6 matches 31 run scoreboard players operation speedBuffSlot6 speedBuffs = jonesLeader abilityStats
+execute if score character# slot6 matches 31 run scoreboard players operation durationSlot7 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot6 matches 31 run scoreboard players operation speedBuffSlot7 speedBuffs = jonesLeader abilityStats
+execute if score character# slot6 matches 31 run scoreboard players operation durationSlot8 speedBuffs = jonesLeaderDuration abilityStats
+execute if score character# slot6 matches 31 run scoreboard players operation speedBuffSlot8 speedBuffs = jonesLeader abilityStats
 #Slot 1 Speed Reset
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 1 run scoreboard players operation speed slot1 = bones herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 2 run scoreboard players operation speed slot1 = arthur herospeed

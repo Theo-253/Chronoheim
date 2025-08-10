@@ -520,8 +520,8 @@ scoreboard players set dominoLeaderHit heroattack 120
 scoreboard players set scythe heroattack 140
 scoreboard players set scythe herohealth 1860
 scoreboard players set scythe herospeed 1400
-scoreboard players set scytheDivide abilityStats 4
-scoreboard players set scytheMult abilityStats 3
+scoreboard players set scytheDivide abilityStats 5
+scoreboard players set scytheMult abilityStats 4
 scoreboard players set scytheLeader abilityStats 80
 
 scoreboard players set golemite heroattack 60

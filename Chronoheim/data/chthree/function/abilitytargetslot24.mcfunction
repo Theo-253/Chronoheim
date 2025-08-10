@@ -175,7 +175,7 @@ execute if score abilitynumber3 abilities matches 30 run scoreboard players oper
 execute if score abilitynumber3 abilities matches 30 run execute if score ward slot24 matches 0 run scoreboard players operation shield slot24 -= abilityDmg3 saves
 execute if score abilitynumber3 abilities matches 30 run execute if score ward slot24 matches 0 if score shield slot24 matches ..0 run scoreboard players operation slot24 hp += shield slot24
 execute if score abilitynumber3 abilities matches 30 if score ward slot24 matches 0 if score durationSlot24 poison < dominoDuration abilityStats run scoreboard players operation durationSlot24 poison = dominoDuration abilityStats
-execute if score abilitynumber3 abilities matches 30 if score ward slot24 matches 0 run scoreboard players operation slot24Poison poison += dominoPoisonLeader abilityStats
+execute if score abilitynumber3 abilities matches 30 if score ward slot24 matches 0 run scoreboard players operation slot24Poison poison += dominoPoison abilityStats
 execute if score abilitynumber3 abilities matches 30 run execute if score ward slot24 matches 1.. run function chthree:wardslot24
 execute if score abilitynumber3 abilities matches 30 at @e[name=slot24] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score abilitynumber3 abilities matches 30 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Poison Dart on Slot 8!"]

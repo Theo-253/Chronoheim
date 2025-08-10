@@ -69,6 +69,9 @@ tag @a[tag=game1] remove overclock
 tag @a[tag=game1] remove shiftingshadows
 tag @a[tag=game1] remove chronowarp
 tag @a[tag=game1] remove healingtotem
+tag @a[tag=game1] remove healingrain
+tag @a[tag=game1] remove decimate
+tag @a[tag=game1] remove lifeleech
 tag @a remove p1
 tag @a remove p2
 tag @a remove game1

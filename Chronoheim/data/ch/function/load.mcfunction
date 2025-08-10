@@ -469,10 +469,10 @@ scoreboard players set garabaldiCD abilityStats 3
 scoreboard players set garabaldiLeader abilityStats 60
 
 scoreboard players set boomer heroattack 160
-scoreboard players set boomer herohealth 1400
+scoreboard players set boomer herohealth 1620
 scoreboard players set boomer herospeed 700
-scoreboard players set boomer abilityStats 1200
-scoreboard players set boomerLeader abilityStats 4
+scoreboard players set boomer abilityStats 540
+scoreboard players set boomerLeader abilityStats 100
 
 scoreboard players set juniper heroattack 120
 scoreboard players set juniperLeader heroattack 40

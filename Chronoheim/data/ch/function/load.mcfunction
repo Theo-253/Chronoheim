@@ -591,7 +591,7 @@ scoreboard players set evilEyeCD spellStats 2
 scoreboard players set evilEyeSp spellStats 2
 scoreboard players set fireball spellStats 100
 scoreboard players set fireballDuration spellStats 2
-scoreboard players set fireballBurn spellStats 300
+scoreboard players set fireballBurn spellStats 240
 scoreboard players set fireballCD spellStats 3
 scoreboard players set fireballSp spellStats 2
 scoreboard players set fontOfWisdom spellStats 160

@@ -15,10 +15,10 @@ execute at @p[tag=p4,tag=lab] run place template map.lab 199 -1 261 180
 execute at @p[tag=p3,tag=!lab,tag=!colosseum] run place template map.scenic 200 0 231
 execute at @p[tag=p4,tag=!lab,tag=!colosseum] run place template map.scenic 199 0 261 180
 kill @e[type=item]
-scoreboard players set speed slot12 -1000000
-scoreboard players set speed slot16 -1000000
-scoreboard players set slot12 hp 0
-scoreboard players set slot16 hp 0
+execute if score character# slot12 matches 0 run scoreboard players set speed slot12 -1000000
+execute if score character# slot16 matches 0 run scoreboard players set speed slot16 -1000000
+execute if score character# slot12 matches 0 run scoreboard players set slot12 hp 0
+execute if score character# slot16 matches 0 run scoreboard players set slot16 hp 0
 #Jones Leader Bonus
 execute if score character# slot10 matches 31 run scoreboard players operation durationSlot9 speedBuffs = jonesLeaderDuration abilityStats
 execute if score character# slot10 matches 31 run scoreboard players operation speedBuffSlot9 speedBuffs = jonesLeader abilityStats

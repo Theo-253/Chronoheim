@@ -453,7 +453,7 @@ scoreboard players set gabrielDeath abilityStats 220
 scoreboard players set gabrielLeader abilityStats 2
 scoreboard players set gabrielCD abilityStats 3
 
-scoreboard players set gatsby heroattack 80
+scoreboard players set gatsby heroattack 100
 scoreboard players set gatsby herohealth 2160
 scoreboard players set gatsby herospeed 1000
 scoreboard players set gatsbyDuration abilityStats 2

@@ -292,7 +292,7 @@ scoreboard players set deuceCD abilityStats 3
 scoreboard players set deuceMultLeader abilityStats 3
 scoreboard players set deuceMult abilityStats 2
 
-scoreboard players set subject heroattack 160
+scoreboard players set subject heroattack 200
 scoreboard players set subject herohealth 1320
 scoreboard players set subject herospeed 1400
 scoreboard players set subject abilityStats 999999
@@ -487,13 +487,13 @@ scoreboard players set osiris herohealth 2440
 scoreboard players set osiris herospeed 600
 scoreboard players set osirisCD abilityStats 7
 
-scoreboard players set ripper heroattack 60
+scoreboard players set ripper heroattack 80
 scoreboard players set ripper herohealth 2000
-scoreboard players set ripper herospeed 1300
-scoreboard players set ripper abilityStats 700
+scoreboard players set ripper herospeed 900
+scoreboard players set ripper abilityStats 540
 scoreboard players set ripperCD abilityStats 5
 scoreboard players set ripperBleed abilityStats 2
-scoreboard players set ripperLeader heroattack 60
+scoreboard players set ripperLeader heroattack 40
 scoreboard players set ripperShield abilityStats 400
 scoreboard players set ripperLeaderDuration abilityStats 3
 
@@ -523,7 +523,7 @@ scoreboard players set scythe herospeed 1400
 scoreboard players set scytheDivide abilityStats 5
 scoreboard players set scytheCD abilityStats 5
 scoreboard players set scytheMult abilityStats 4
-scoreboard players set scytheLeader abilityStats 80
+scoreboard players set scytheLeader abilityStats 60
 
 scoreboard players set jones heroattack 60
 scoreboard players set jones herohealth 2280
@@ -571,7 +571,7 @@ scoreboard players set chainLightning spellStats 80
 scoreboard players set chainLightningCD spellStats 2
 scoreboard players set chainLightningSp spellStats 2
 scoreboard players set chronoWarp spellStats 1
-scoreboard players set chronoWarpCD spellStats 3
+scoreboard players set chronoWarpCD spellStats 2
 scoreboard players set chronoWarpSp spellStats 4
 scoreboard players set dragonforgeCD spellStats 5
 scoreboard players set dragonforgeSp spellStats 3
@@ -624,7 +624,7 @@ scoreboard players set magicMissileSp spellStats 1
 scoreboard players set magicMissileCD spellStats 2
 scoreboard players set meteorCD spellStats 4
 scoreboard players set meteorSp spellStats 4
-scoreboard players set meteor spellStats 300
+scoreboard players set meteor spellStats 360
 scoreboard players set meteorSplash spellStats 2
 scoreboard players set miasmaCD spellStats 5
 scoreboard players set miasma spellStats 60

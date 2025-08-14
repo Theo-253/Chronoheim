@@ -281,7 +281,7 @@ scoreboard players set arthur heroattack 100
 scoreboard players set arthur herohealth 2520
 scoreboard players set arthur herospeed 900
 scoreboard players set arthurHealing abilityStats 180
-scoreboard players set arthurCD abilityStats 5
+scoreboard players set arthurCD abilityStats 4
 scoreboard players set arthurBuff abilityStats 40
 scoreboard players set arthurBuffDuration abilityStats 3
 
@@ -337,7 +337,7 @@ scoreboard players set kirinLeader abilityStats 240
 scoreboard players set robyn heroattack 140
 scoreboard players set robyn herohealth 1720
 scoreboard players set robyn herospeed 1600
-scoreboard players set robyn abilityStats 100
+scoreboard players set robyn abilityStats 60
 scoreboard players set robynCD abilityStats 2
 
 scoreboard players set dillo heroattack 80
@@ -483,7 +483,7 @@ scoreboard players set juniperCD abilityStats 5
 scoreboard players set juniperStun abilityStats 1
 
 scoreboard players set osiris heroattack 80
-scoreboard players set osiris herohealth 2240
+scoreboard players set osiris herohealth 2440
 scoreboard players set osiris herospeed 600
 scoreboard players set osirisCD abilityStats 7
 
@@ -673,9 +673,9 @@ scoreboard players set witchboltSp spellStats 2
 scoreboard players set witchesBrewCD spellStats 4
 scoreboard players set witchesBrewSp spellStats 4
 scoreboard players set witchesBrewBurn spellStats 200
-scoreboard players set witchesBrew spellStats 60
+scoreboard players set witchesBrew spellStats 80
 scoreboard players set witchesBrewSpDebuff spellStats 400
-scoreboard players set witchesBrewDmgDebuff spellStats 60
+scoreboard players set witchesBrewDmgDebuff spellStats 80
 scoreboard players set witchesBrewDuration spellStats 2
 scoreboard players set lifeLeechSp spellStats 3
 scoreboard players set lifeLeechCD spellStats 2

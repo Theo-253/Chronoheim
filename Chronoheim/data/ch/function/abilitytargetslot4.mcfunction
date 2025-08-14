@@ -76,14 +76,14 @@ execute if score abilitynumber abilities matches 9 run tellraw @a[tag=game1] [""
 #Robo
 execute if score abilitynumber abilities matches 5 if score durationSlot4 shield < roboDuration abilityStats run scoreboard players operation durationSlot4 shield = roboDuration abilityStats
 execute if score abilitynumber abilities matches 5 run scoreboard players operation shield slot4 += robo abilityStats
-execute if score abilitynumber abilities matches 5 if score slot4isatk booleans matches 1 run scoreboard players operation shield slot4 += roboLeader abilityStats
+execute if score abilitynumber abilities matches 5 if score slot2isatk booleans matches 1 run scoreboard players operation shield slot4 += roboLeader abilityStats
 execute if score abilitynumber abilities matches 5 run execute at @n[name=slot4,type=armor_stand] run particle minecraft:wax_off ~ ~1 ~ 0.6 0.6 0.6 0.0001 400
 execute if score abilitynumber abilities matches 5 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Force Field on Slot 4!"]
 
 #Kirin
 execute if score abilitynumber abilities matches 8 if score buffDurationSlot4 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot4 atkmodifiers = kirinDuration abilityStats
 execute if score abilitynumber abilities matches 8 run scoreboard players operation attackBuffSlot4 atkmodifiers += kirin abilityStats
-execute if score abilitynumber abilities matches 8 if score slot4isatk booleans matches 1 if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += kirinLeader abilityStats
+execute if score abilitynumber abilities matches 8 if score slot2isatk booleans matches 1 if score slot4bleeding booleaneffects matches 0 run scoreboard players operation slot4 hp += kirinLeader abilityStats
 execute if score abilitynumber abilities matches 8 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Mythical Empowerment on Slot 4!"]
 execute if score abilitynumber abilities matches 8 at @e[name=slot4] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 

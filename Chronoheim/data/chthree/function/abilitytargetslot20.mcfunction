@@ -75,14 +75,14 @@ execute if score abilitynumber3 abilities matches 9 run tellraw @a[tag=game3] ["
 #Robo
 execute if score abilitynumber3 abilities matches 5 if score durationSlot20 shield < roboDuration abilityStats run scoreboard players operation durationSlot20 shield = roboDuration abilityStats
 execute if score abilitynumber3 abilities matches 5 run scoreboard players operation shield slot20 += robo abilityStats
-execute if score abilitynumber3 abilities matches 5 if score slot20isatk booleans matches 1 run scoreboard players operation shield slot20 += roboLeader abilityStats
+execute if score abilitynumber3 abilities matches 5 if score slot18isatk booleans matches 1 run scoreboard players operation shield slot20 += roboLeader abilityStats
 execute if score abilitynumber3 abilities matches 5 run execute at @n[name=slot20,type=armor_stand] run particle minecraft:wax_off ~ ~1 ~ 0.6 0.6 0.6 0.0001 400
 execute if score abilitynumber3 abilities matches 5 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Force Field on Slot 4!"]
 
 #Kirin
 execute if score abilitynumber3 abilities matches 8 if score buffDurationSlot20 atkmodifiers < kirinDuration abilityStats run scoreboard players operation buffDurationSlot20 atkmodifiers = kirinDuration abilityStats
 execute if score abilitynumber3 abilities matches 8 run scoreboard players operation attackBuffSlot20 atkmodifiers += kirin abilityStats
-execute if score abilitynumber3 abilities matches 8 if score slot20isatk booleans matches 1 if score slot20bleeding booleaneffects matches 0 run scoreboard players operation slot20 hp += kirinLeader abilityStats
+execute if score abilitynumber3 abilities matches 8 if score slot18isatk booleans matches 1 if score slot20bleeding booleaneffects matches 0 run scoreboard players operation slot20 hp += kirinLeader abilityStats
 execute if score abilitynumber3 abilities matches 8 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Mythical Empowerment on Slot 4!"]
 execute if score abilitynumber3 abilities matches 8 at @e[name=slot20] run particle minecraft:trial_spawner_detection ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 

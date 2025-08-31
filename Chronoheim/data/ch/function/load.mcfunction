@@ -292,12 +292,13 @@ scoreboard players set deuceCD abilityStats 3
 scoreboard players set deuceMultLeader abilityStats 3
 scoreboard players set deuceMult abilityStats 2
 
-scoreboard players set subject heroattack 200
-scoreboard players set subject herohealth 1320
+scoreboard players set subject heroattack 120
+scoreboard players set subject herohealth 2220
 scoreboard players set subject herospeed 1400
-scoreboard players set subject abilityStats 999999
-scoreboard players set subjectCD abilityStats 4
-scoreboard players set subjectLeaderCD abilityStats 3
+scoreboard players set subject abilityStats 180
+scoreboard players set subjectDuration abilityStats 3
+scoreboard players set subjectCD abilityStats 5
+scoreboard players set subjectLeader abilityStats 100
 
 scoreboard players set robo heroattack 100
 scoreboard players set robo herohealth 2700

@@ -8,6 +8,7 @@ execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",enti
 execute as @p[tag=p6] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:water_breathing":{amplifier:{min:0,max:0}}}}} run scoreboard players set Spell_Points_P6 Spell_Points 0
 execute as @a[tag=p5] run execute as @a[tag=p6] if score game3start ongoinggames matches 0 run place template minecraft:game3heroes -180 128 -119
 execute as @a[tag=p5] run execute as @a[tag=p6] if score game3start ongoinggames matches 0 run place template minecraft:game3heroes -173 128 -116
+execute as @a[tag=p5] run execute as @a[tag=p6] if score game3start ongoinggames matches 0 run function chthree:characterown
 execute as @a[tag=p5] run execute as @a[tag=p6] if score game3start ongoinggames matches 0 run scoreboard players set game3start ongoinggames 1
 
 

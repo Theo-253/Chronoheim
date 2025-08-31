@@ -261,17 +261,17 @@ execute if score abilitynumber3 abilities matches 33 run execute if score ward s
 execute if score abilitynumber3 abilities matches 33 run execute if score ward slot22 matches 1.. run function chthree:wardslot22
 
 #Eidolon Ability
-execute if score abilitynumber3 abilities matches 3 run scoreboard players operation abilityDmg3 saves = eidolon abilityStats
-execute if score abilitynumber3 abilities matches 3 if score slot17isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot17 atkmodifiers
-execute if score abilitynumber3 abilities matches 3 if score slot18isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot18 atkmodifiers
-execute if score abilitynumber3 abilities matches 3 if score slot19isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot19 atkmodifiers
-execute if score abilitynumber3 abilities matches 3 run scoreboard players operation abilityDmg3 saves += marks slot21
-execute if score abilitynumber3 abilities matches 3 run scoreboard players operation abilityDmg3 saves /= atkmultiplier slot21
-execute if score abilitynumber3 abilities matches 3 run execute if score ward slot21 matches 0 run scoreboard players operation shield slot21 -= abilityDmg3 saves
-execute if score abilitynumber3 abilities matches 3 run execute if score ward slot21 matches 0 if score slot18isatk booleans matches 1 if score durationSlot18-21 fear <= eidolonLeaderFearDuration abilityStats run scoreboard players operation durationSlot18-21 fear = eidolonLeaderFearDuration abilityStats
-execute if score abilitynumber3 abilities matches 3 run execute if score ward slot21 matches 0 if score shield slot21 matches ..0 run scoreboard players operation slot21 hp += shield slot21
-execute if score abilitynumber3 abilities matches 3 run execute if score ward slot21 matches 1.. run function chthree:wardslot21
-execute if score abilitynumber3 abilities matches 3 run execute at @e[name=slot21,type=armor_stand] run particle raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
+execute if score abilitynumber3 abilities matches 28 run scoreboard players operation abilityDmg3 saves = eidolon abilityStats
+execute if score abilitynumber3 abilities matches 28 if score slot17isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot17 atkmodifiers
+execute if score abilitynumber3 abilities matches 28 if score slot18isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot18 atkmodifiers
+execute if score abilitynumber3 abilities matches 28 if score slot19isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot19 atkmodifiers
+execute if score abilitynumber3 abilities matches 28 run scoreboard players operation abilityDmg3 saves += marks slot21
+execute if score abilitynumber3 abilities matches 28 run scoreboard players operation abilityDmg3 saves /= atkmultiplier slot21
+execute if score abilitynumber3 abilities matches 28 run execute if score ward slot21 matches 0 run scoreboard players operation shield slot21 -= abilityDmg3 saves
+execute if score abilitynumber3 abilities matches 28 run execute if score ward slot21 matches 0 if score slot18isatk booleans matches 1 if score durationSlot18-21 fear <= eidolonLeaderFearDuration abilityStats run scoreboard players operation durationSlot18-21 fear = eidolonLeaderFearDuration abilityStats
+execute if score abilitynumber3 abilities matches 28 run execute if score ward slot21 matches 0 if score shield slot21 matches ..0 run scoreboard players operation slot21 hp += shield slot21
+execute if score abilitynumber3 abilities matches 28 run execute if score ward slot21 matches 1.. run function chthree:wardslot21
+execute if score abilitynumber3 abilities matches 28 run execute at @e[name=slot21,type=armor_stand] run particle raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 
 #This goes at the bottom
 execute if score shield slot21 matches ..0 run scoreboard players set shield slot21 0

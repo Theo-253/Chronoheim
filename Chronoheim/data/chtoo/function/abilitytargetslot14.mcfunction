@@ -198,9 +198,17 @@ execute if score abilitynumber2 abilities matches 32 at @e[name=slot14] run part
 execute if score abilitynumber2 abilities matches 32 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Cull the Weak on Slot 6!"]
 
 #Doc Basic Attack
-execute if score abilitynumber2 abilities matches -1 run scoreboard players operation slot14Disease disease += doc heroattack
-execute if score abilitynumber2 abilities matches -1 if score slot10isatk booleans matches 1 run scoreboard players operation slot14Disease disease += docLeader heroattack
-execute if score abilitynumber2 abilities matches -1 at @e[name=slot14] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
+execute if score abilitynumber abilities matches -1 if score ward slot14 matches 0 run scoreboard players operation slot14Disease disease += doc heroattack
+execute if score abilitynumber abilities matches -1 if score ward slot14 matches 0 if score slot10isatk booleans matches 1 run scoreboard players operation slot14Disease disease += docLeader heroattack
+execute if score abilitynumber abilities matches -1 run execute if score ward slot14 matches 1.. run function chtoo:wardslot14
+execute if score abilitynumber abilities matches -1 at @e[name=slot14] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
+
+#Subject ability
+execute if score abilitynumber abilities matches 4 if score ward slot14 matches 0 run scoreboard players operation slot14Poison poison += subject abilityStats
+execute if score abilitynumber abilities matches 4 if score ward slot14 matches 0 if score slot10isatk booleans matches 1 run scoreboard players operation slot14Poison poison += subjectLeader abilityStats
+execute if score abilitynumber abilities matches 4 at @e[name=slot14] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
+execute if score abilitynumber abilities matches 4 run execute if score ward slot14 matches 1.. run function chtoo:wardslot14
+execute if score abilitynumber abilities matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Contagion on Slot 6!"]
 
 #Healing Totem
 execute if score abilitynumber2 abilities matches -3 run execute if score slot14bleeding booleaneffects matches 0 run scoreboard players operation slot14 hp += healingTotemHeal spellStats

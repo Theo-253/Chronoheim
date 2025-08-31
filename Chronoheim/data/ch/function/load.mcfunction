@@ -571,7 +571,7 @@ scoreboard players set chainLightning spellStats 80
 scoreboard players set chainLightningCD spellStats 2
 scoreboard players set chainLightningSp spellStats 2
 scoreboard players set chronoWarp spellStats 1
-scoreboard players set chronoWarpCD spellStats 2
+scoreboard players set chronoWarpCD spellStats 3
 scoreboard players set chronoWarpSp spellStats 4
 scoreboard players set dragonforgeCD spellStats 5
 scoreboard players set dragonforgeSp spellStats 3

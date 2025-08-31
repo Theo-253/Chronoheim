@@ -16,8 +16,14 @@ execute if score abilitynumber abilities matches 3 run execute if score ward slo
 execute if score abilitynumber abilities matches 3 run execute if score ward slot5 matches 0 if score shield slot5 matches ..0 run scoreboard players operation slot5 hp += shield slot5
 execute if score abilitynumber abilities matches 3 run execute if score ward slot5 matches 1.. run function ch:wardslot5
 execute if score abilitynumber abilities matches 3 run execute at @e[name=slot5,type=armor_stand] run particle crit ~ ~1 ~ 0.3 0.3 0.3 2 100
-
 execute if score abilitynumber abilities matches 3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Double Punch on Slot 5!"]
+
+#Subject ability
+execute if score abilitynumber abilities matches 4 run scoreboard players operation slot5Poison poison += subject abilityStats
+execute if score abilitynumber abilities matches 4 if score slot2isatk booleans matches 1 run scoreboard players operation slot5Poison poison += subjectLeader abilityStats
+execute if score abilitynumber abilities matches 4 at @e[name=slot5] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
+execute if score abilitynumber abilities matches 4 run execute if score ward slot5 matches 1.. run function ch:wardslot5
+execute if score abilitynumber abilities matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Contagion on Slot 5!"]
 
 #Garabaldi Ability
 execute if score abilitynumber abilities matches 24 if score slot5 hp matches 1.. if score slot5bleeding booleaneffects matches 0 run scoreboard players operation slot5 hp += garabaldiHeal abilityStats
@@ -191,8 +197,9 @@ execute if score abilitynumber abilities matches 32 at @e[name=slot5] run partic
 execute if score abilitynumber abilities matches 32 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Cull the Weak on Slot 5!"]
 
 #Doc Basic Attack
-execute if score abilitynumber abilities matches -1 run scoreboard players operation slot5Disease disease += doc heroattack
-execute if score abilitynumber abilities matches -1 if score slot2isatk booleans matches 1 run scoreboard players operation slot5Disease disease += docLeader heroattack
+execute if score abilitynumber abilities matches -1 if score ward slot5 matches 0 run scoreboard players operation slot5Disease disease += doc heroattack
+execute if score abilitynumber abilities matches -1 if score ward slot5 matches 0 if score slot2isatk booleans matches 1 run scoreboard players operation slot5Disease disease += docLeader heroattack
+execute if score abilitynumber abilities matches -1 run execute if score ward slot5 matches 1.. run function ch:wardslot5
 execute if score abilitynumber abilities matches -1 at @e[name=slot5] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 
 #Healing Totem

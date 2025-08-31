@@ -204,8 +204,8 @@ execute if score abilitynumber abilities matches -1 run execute if score ward sl
 execute if score abilitynumber abilities matches -1 at @e[name=slot11] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 
 #Subject ability
-execute if score abilitynumber abilities matches 4 run scoreboard players operation slot11Poison poison += subject abilityStats
-execute if score abilitynumber abilities matches 4 if score slot14isatk booleans matches 1 run scoreboard players operation slot11Poison poison += subjectLeader abilityStats
+execute if score abilitynumber abilities matches 4 if score ward slot11 matches 0 run scoreboard players operation slot11Poison poison += subject abilityStats
+execute if score abilitynumber abilities matches 4 if score ward slot11 matches 0 if score slot14isatk booleans matches 1 run scoreboard players operation slot11Poison poison += subjectLeader abilityStats
 execute if score abilitynumber abilities matches 4 at @e[name=slot11] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber abilities matches 4 run execute if score ward slot11 matches 1.. run function chtoo:wardslot11
 execute if score abilitynumber abilities matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Contagion on Slot 3!"]

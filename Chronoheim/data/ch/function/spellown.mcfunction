@@ -1,6 +1,6 @@
 execute as @p[tag=p1,tag=!magicmissileO] run item replace block -178 127 -98 container.3 with air
 execute as @p[tag=p1,tag=!ritualofbloodO] run item replace block -178 127 -98 container.4 with air
-execute as @p[tag=p1,tag=!frostbolt] run item replace block -178 127 -98 container.5 with air
+execute as @p[tag=p1,tag=!frostboltO] run item replace block -178 127 -98 container.5 with air
 execute as @p[tag=p1,tag=!meteorO] run item replace block -178 127 -98 container.6 with air
 execute as @p[tag=p1,tag=!shieldO] run item replace block -178 127 -98 container.7 with air
 execute as @p[tag=p1,tag=!shockorbO] run item replace block -178 127 -98 container.8 with air
@@ -30,7 +30,7 @@ execute as @p[tag=p1,tag=!healingtotemO] run item replace block -180 126 -100 co
 execute as @p[tag=p1,tag=!chronowarpO] run item replace block -180 126 -100 container.5 with air
 execute as @p[tag=p2,tag=!magicmissileO] run item replace block -173 127 -109 container.3 with air
 execute as @p[tag=p2,tag=!ritualofbloodO] run item replace block -173 127 -109 container.4 with air
-execute as @p[tag=p2,tag=!frostbolt] run item replace block -173 127 -109 container.5 with air
+execute as @p[tag=p2,tag=!frostboltO] run item replace block -173 127 -109 container.5 with air
 execute as @p[tag=p2,tag=!meteorO] run item replace block -173 127 -109 container.6 with air
 execute as @p[tag=p2,tag=!shieldO] run item replace block -173 127 -109 container.7 with air
 execute as @p[tag=p2,tag=!shockorbO] run item replace block -173 127 -109 container.8 with air

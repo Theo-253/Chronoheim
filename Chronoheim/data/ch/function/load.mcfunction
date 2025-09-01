@@ -494,6 +494,7 @@ scoreboard players set ripper herospeed 900
 scoreboard players set ripper abilityStats 540
 scoreboard players set ripperCD abilityStats 5
 scoreboard players set ripperBleed abilityStats 2
+scoreboard players set ripperHpBleed abilityStats 1080
 scoreboard players set ripperLeader heroattack 40
 scoreboard players set ripperShield abilityStats 400
 scoreboard players set ripperLeaderDuration abilityStats 3

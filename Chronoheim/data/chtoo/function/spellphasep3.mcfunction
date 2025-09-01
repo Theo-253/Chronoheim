@@ -39,6 +39,7 @@ give @p[tag=p3] feather[minecraft:custom_name="View Speeds",food={can_always_eat
 give @p[tag=p3] apple[minecraft:custom_name="View HP",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:"regeneration",duration:1,amplifier:2,show_particles:0b}]}]}] 64
 give @p[tag=p3] book[minecraft:custom_name="View Spell Cooldowns",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:"regeneration",duration:1,amplifier:3,show_particles:0b}]}]}] 64
 execute if score fireballCooldown player3spells matches 1.. run scoreboard players remove fireballCooldown player3spells 1
+execute if score ritualOfBloodCooldown player3spells matches 1.. run scoreboard players remove ritualOfBloodCooldown player3spells 1
 execute if score healCooldown player3spells matches 1.. run scoreboard players remove healCooldown player3spells 1
 execute if score chainLightningCooldown player3spells matches 1.. run scoreboard players remove chainLightningCooldown player3spells 1
 execute if score frostboltCooldown player3spells matches 1.. run scoreboard players remove frostboltCooldown player3spells 1

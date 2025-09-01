@@ -222,6 +222,14 @@ execute if score abilitynumber2 abilities matches -4 run execute if score ward s
 execute if score abilitynumber2 abilities matches -4 run execute at @e[name=slot13,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 
 #Jones Ability
+execute if score abilitynumber2 abilities matches 31 run scoreboard players operation abilityDmg2 saves = jonesDmg abilityStats
+execute if score abilitynumber2 abilities matches 31 if score slot9isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot9 atkmodifiers
+execute if score abilitynumber2 abilities matches 31 if score slot10isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot10 atkmodifiers
+execute if score abilitynumber2 abilities matches 31 if score slot11isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot11 atkmodifiers
+execute if score abilitynumber2 abilities matches 31 run scoreboard players operation abilityDmg2 saves += marks slot13
+execute if score abilitynumber2 abilities matches 31 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot13
+execute if score abilitynumber2 abilities matches 31 run execute if score ward slot13 matches 0 run scoreboard players operation shield slot13 -= abilityDmg2 saves
+execute if score abilitynumber2 abilities matches 31 run execute if score ward slot13 matches 0 if score shield slot13 matches ..0 run scoreboard players operation slot13 hp += shield slot13
 execute if score abilitynumber2 abilities matches 31 run execute if score ward slot13 matches 0 run scoreboard players operation disarmedslot13 booleaneffects = jones abilityStats
 execute if score abilitynumber2 abilities matches 31 run execute if score ward slot13 matches 1 run function chtoo:wardslot13
 execute if score abilitynumber2 abilities matches 31 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Lasso on Slot 5!"]

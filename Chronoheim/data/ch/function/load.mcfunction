@@ -528,6 +528,7 @@ scoreboard players set jones heroattack 60
 scoreboard players set jones herohealth 2280
 scoreboard players set jones herospeed 1000
 scoreboard players set jones abilityStats 2
+scoreboard players set jonesDmg abilityStats 180
 scoreboard players set jonesCD abilityStats 6
 scoreboard players set jonesLeaderCD abilityStats 5
 scoreboard players set jonesLeaderDuration abilityStats 10

@@ -233,6 +233,14 @@ execute if score abilitynumber abilities matches -4 run execute at @e[name=slot3
 
 
 #Jones Ability
+execute if score abilitynumber abilities matches 31 run scoreboard players operation abilityDmg saves = jonesDmg abilityStats
+execute if score abilitynumber abilities matches 31 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
+execute if score abilitynumber abilities matches 31 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
+execute if score abilitynumber abilities matches 31 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
+execute if score abilitynumber abilities matches 31 run scoreboard players operation abilityDmg saves += marks slot3
+execute if score abilitynumber abilities matches 31 run scoreboard players operation abilityDmg saves /= atkmultiplier slot3
+execute if score abilitynumber abilities matches 31 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= abilityDmg saves
+execute if score abilitynumber abilities matches 31 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3
 execute if score abilitynumber abilities matches 31 run execute if score ward slot3 matches 0 run scoreboard players operation disarmedslot3 booleaneffects = jones abilityStats
 execute if score abilitynumber abilities matches 31 run execute if score ward slot3 matches 1 run function ch:wardslot3
 execute if score abilitynumber abilities matches 31 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Lasso on Slot 3!"]

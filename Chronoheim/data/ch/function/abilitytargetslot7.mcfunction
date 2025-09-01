@@ -19,8 +19,9 @@ execute if score abilitynumber abilities matches 3 run execute at @e[name=slot7,
 execute if score abilitynumber abilities matches 3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Double Punch on Slot 7!"]
 
 #Subject ability
-execute if score abilitynumber abilities matches 4 run scoreboard players operation slot7Poison poison += subject abilityStats
-execute if score abilitynumber abilities matches 4 if score slot2isatk booleans matches 1 run scoreboard players operation slot7Poison poison += subjectLeader abilityStats
+execute if score abilitynumber abilities matches 4 if score ward slot7 matches 0 if score durationSlot7 poison < subjectDuration abilityStats run scoreboard players operation durationSlot7 poison = subjectDuration abilityStats
+execute if score abilitynumber abilities matches 4 if score ward slot7 matches 0 run scoreboard players operation slot7Poison poison += subject abilityStats
+execute if score abilitynumber abilities matches 4 if score ward slot7 matches 0 if score slot2isatk booleans matches 1 run scoreboard players operation slot7Poison poison += subjectLeader abilityStats
 execute if score abilitynumber abilities matches 4 at @e[name=slot7] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 execute if score abilitynumber abilities matches 4 run execute if score ward slot7 matches 1.. run function ch:wardslot7
 execute if score abilitynumber abilities matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Contagion on Slot 7!"]

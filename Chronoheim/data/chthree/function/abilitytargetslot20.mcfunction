@@ -194,6 +194,7 @@ execute if score abilitynumber3 abilities matches -1 run execute if score ward s
 execute if score abilitynumber3 abilities matches -1 at @e[name=slot20] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50
 
 #Subject ability
+execute if score abilitynumber3 abilities matches 4 if score ward slot20 matches 0 if score durationSlot20 poison < subjectDuration abilityStats run scoreboard players operation durationSlot20 poison = subjectDuration abilityStats
 execute if score abilitynumber3 abilities matches 4 if score ward slot20 matches 0 run scoreboard players operation slot20Poison poison += subject abilityStats
 execute if score abilitynumber3 abilities matches 4 if score ward slot20 matches 0 if score slot22isatk booleans matches 1 run scoreboard players operation slot20Poison poison += subjectLeader abilityStats
 execute if score abilitynumber3 abilities matches 4 at @e[name=slot20] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 50

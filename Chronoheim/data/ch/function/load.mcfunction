@@ -410,14 +410,14 @@ scoreboard players set grimoireCD abilityStats 3
 scoreboard players set grimoireSpellPoints abilityStats 2
 scoreboard players set grimoireLeaderSpellPoints abilityStats 4
 
-scoreboard players set grangor heroattack 100
+scoreboard players set grangor heroattack 80
 scoreboard players set grangor herohealth 2600
 scoreboard players set grangor herospeed 800
 scoreboard players set grangor herolifesteal 2
 scoreboard players set grangorBurn abilityStats 280
 scoreboard players set grangorBurnDuration abilityStats 3
 scoreboard players set grangorCD abilityStats 5
-scoreboard players set grangorLeaderAtk heroattack 200
+scoreboard players set grangorLeaderAtk heroattack 160
 
 scoreboard players set astro heroattack 160
 scoreboard players set astro herohealth 1680

@@ -249,7 +249,7 @@ execute if score spellnumber3 spells matches 31 run scoreboard players operation
 execute if score spellnumber3 spells matches 31 run execute if score ward slot23 matches 0 run scoreboard players operation shield slot23 -= spellDmg saves
 execute if score spellnumber3 spells matches 31 run execute if score ward slot23 matches 0 if score shield slot23 matches ..0 run scoreboard players operation slot23 hp += shield slot23
 execute if score spellnumber3 spells matches 31 run execute if score ward slot23 matches 1.. run function chthree:wardslot23
-execute if score spellnumber3 spells matches 31 run function chthree:spellgivetargetsp5reverse
+execute if score spellnumber3 spells matches 31 run function chthree:spellgivetargetsp6reverse
 execute if score spellnumber3 spells matches 31 run execute at @n[type=armor_stand,name=slot23] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber3 spells matches 31 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Life Leech on Slot 7!"]
 execute if score spellnumber3 spells matches 31 run scoreboard players set spellnumber3 spells -2

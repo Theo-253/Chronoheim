@@ -109,9 +109,9 @@ execute if score ward slot20 matches 0 if score slot24bleeding booleaneffects ma
 execute if score ward slot20 matches 0 if score lifesteal slot24 matches 1.. if score slot24isatk booleans matches 1 at @e[name=slot24,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 
 #Special Cases
-execute if score slot21isatk booleans matches 1 if score character# slot21 matches 29 run scoreboard players operation slot20bleeding booleaneffects = ripperBleed abilityStats
-execute if score slot22isatk booleans matches 1 if score character# slot22 matches 29 run scoreboard players operation slot20bleeding booleaneffects = ripperBleed abilityStats
-execute if score slot23isatk booleans matches 1 if score character# slot23 matches 29 run scoreboard players operation slot20bleeding booleaneffects = ripperBleed abilityStats
+execute if score slot21isatk booleans matches 1 if score character# slot21 matches 29 if score hp slot20 <= ripperHpBleed abilityStats run scoreboard players operation slot20bleeding booleaneffects = ripperBleed abilityStats
+execute if score slot22isatk booleans matches 1 if score character# slot22 matches 29 if score hp slot20 <= ripperHpBleed abilityStats run scoreboard players operation slot20bleeding booleaneffects = ripperBleed abilityStats
+execute if score slot23isatk booleans matches 1 if score character# slot23 matches 29 if score hp slot20 <= ripperHpBleed abilityStats run scoreboard players operation slot20bleeding booleaneffects = ripperBleed abilityStats
 
 #lifesteal + splash
 #slot 5

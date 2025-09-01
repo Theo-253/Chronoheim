@@ -13,8 +13,8 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run execute if score slot6isatk booleans matches 1.. run scoreboard players operation cooldown slot6 = grimoireCD abilityStats
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run execute if score slot7isatk booleans matches 1.. run scoreboard players operation cooldown slot7 = grimoireCD abilityStats
 
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run scoreboard players operation spellbuffsp1 spells = grimoire abilityStats
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run scoreboard players operation spellbuffsp2 spells = grimoire abilityStats
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run scoreboard players operation spellbuffsp1 spells += grimoire abilityStats
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:17,max:17}}}}} run scoreboard players operation spellbuffsp2 spells += grimoire abilityStats
 
 execute if score slot1isatk booleans matches 1.. at @e[name=slot1] run particle minecraft:enchant ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score slot2isatk booleans matches 1.. at @e[name=slot2] run particle minecraft:enchant ~ ~1 ~ 0.9 0.9 0.9 0.1 400

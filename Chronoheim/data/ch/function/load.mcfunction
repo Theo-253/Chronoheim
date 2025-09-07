@@ -303,10 +303,10 @@ scoreboard players set subjectLeader abilityStats 100
 scoreboard players set robo heroattack 100
 scoreboard players set robo herohealth 2700
 scoreboard players set robo herospeed 600
-scoreboard players set robo abilityStats 300
+scoreboard players set robo abilityStats 360
 scoreboard players set roboDuration abilityStats 2
 scoreboard players set roboCD abilityStats 4
-scoreboard players set roboLeader abilityStats 100
+scoreboard players set roboLeader abilityStats 140
 
 scoreboard players set thorn heroattack 220
 scoreboard players set thorn herohealth 1440
@@ -361,8 +361,8 @@ scoreboard players set flint herospeed 1000
 scoreboard players set flintCD abilityStats 2
 scoreboard players set flintLeader abilityStats 160
 
-scoreboard players set ace heroattack 100
-scoreboard players set ace herohealth 1780
+scoreboard players set ace heroattack 120
+scoreboard players set ace herohealth 1820
 scoreboard players set ace herospeed 1500
 scoreboard players set aceSetCooldown abilityStats 3
 scoreboard players set aceCD abilityStats 3
@@ -406,7 +406,7 @@ scoreboard players set grimoire heroattack 140
 scoreboard players set grimoire herohealth 1760
 scoreboard players set grimoire herospeed 1000
 scoreboard players set grimoire abilityStats 240
-scoreboard players set grimoireCD abilityStats 3
+scoreboard players set grimoireCD abilityStats 5
 scoreboard players set grimoireSpellPoints abilityStats 2
 scoreboard players set grimoireLeaderSpellPoints abilityStats 4
 
@@ -472,7 +472,7 @@ scoreboard players set garabaldiLeader abilityStats 60
 scoreboard players set boomer heroattack 160
 scoreboard players set boomer herohealth 1620
 scoreboard players set boomer herospeed 700
-scoreboard players set boomer abilityStats 640
+scoreboard players set boomer abilityStats 560
 scoreboard players set boomerLeader abilityStats 120
 
 scoreboard players set juniper heroattack 120
@@ -566,7 +566,7 @@ scoreboard players set demon herospeed 700
 
 scoreboard players set blizzardSpDebuffDuration spellStats 2
 scoreboard players set blizzardSpDebuff spellStats 500
-scoreboard players set blizzard spellStats 120
+scoreboard players set blizzard spellStats 160
 scoreboard players set blizzardCD spellStats 4
 scoreboard players set blizzardSp spellStats 3
 scoreboard players set chainLightning spellStats 80
@@ -621,8 +621,8 @@ scoreboard players set immolateburn spellStats 200
 scoreboard players set immolateDuration spellStats 2
 scoreboard players set immolateCD spellStats 3
 scoreboard players set immolateSp spellStats 2
-scoreboard players set magicMissile spellStats 40
-scoreboard players set magicMissileSp spellStats 1
+scoreboard players set magicMissile spellStats 100
+scoreboard players set magicMissileSp spellStats 2
 scoreboard players set magicMissileCD spellStats 2
 scoreboard players set meteorCD spellStats 4
 scoreboard players set meteorSp spellStats 4
@@ -669,9 +669,9 @@ scoreboard players set swiftnessCD spellStats 1
 scoreboard players set swiftnessSp spellStats 1
 scoreboard players set wardCD spellStats 1
 scoreboard players set wardSp spellStats 3
-scoreboard players set witchbolt spellStats 200
+scoreboard players set witchbolt spellStats 120
 scoreboard players set witchboltCD spellStats 2
-scoreboard players set witchboltSp spellStats 2
+scoreboard players set witchboltSp spellStats 1
 scoreboard players set witchesBrewCD spellStats 4
 scoreboard players set witchesBrewSp spellStats 3
 scoreboard players set witchesBrewBurn spellStats 200

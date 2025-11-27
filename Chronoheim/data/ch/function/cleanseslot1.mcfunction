@@ -1,5 +1,4 @@
 scoreboard players set durationSlot1 burn 0
-say gorzorb
 scoreboard players set durationSlot1 poison 0
 scoreboard players set debuffDurationSlot1 atkmodifiers 0
 scoreboard players set durationSlot1 speedDebuffs 0

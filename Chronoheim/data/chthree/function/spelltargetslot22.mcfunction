@@ -99,7 +99,7 @@ execute if score spellnumber3 spells matches 8 run tellraw @a[tag=game3] ["",{"s
 execute if score spellnumber3 spells matches 9 if score ward slot22 matches 0 run scoreboard players operation slot22 stun += shockOrb spellStats
 execute if score spellnumber3 spells matches 9 if score ward slot22 matches 1.. run function chthree:wardslot22
 execute if score spellnumber3 spells matches 9 run scoreboard players set attackIsOngoingGame3 booleans 0
-execute if score spellnumber3 spells matches 9 run execute at @n[type=armor_stand,name=slot22] run particle flash ~ ~1 ~ 0.9 0.9 0.9 0.1 10
+execute if score spellnumber3 spells matches 9 run execute at @n[type=armor_stand,name=slot22] run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0.9 0.9 0.9 0.1 10
 execute if score spellnumber3 spells matches 9 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Ball Lightning on Slot 6!"]
 
 #Witches Brew

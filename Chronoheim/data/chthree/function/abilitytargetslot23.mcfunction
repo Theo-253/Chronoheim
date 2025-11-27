@@ -108,7 +108,7 @@ execute if score abilitynumber3 abilities matches 22 run execute if score ward s
 execute if score abilitynumber3 abilities matches 22 run execute if score ward slot23 matches 0 if score shield slot23 matches ..0 run scoreboard players operation slot23 hp += shield slot23
 execute if score abilitynumber3 abilities matches 22 if score slot18isatk booleans matches 1 if score ward slot23 matches 0 run scoreboard players operation abilityDmg3 saves /= gabrielLeader abilityStats
 execute if score abilitynumber3 abilities matches 22 if score slot18isatk booleans matches 1 if score ward slot23 matches 0 run scoreboard players operation slot18 hp += abilityDmg3 saves
-execute if score abilitynumber3 abilities matches 22 at @e[name=slot23] run particle minecraft:flash ~ ~1 ~ 0.9 0.9 0.9 0.5 100
+execute if score abilitynumber3 abilities matches 22 at @e[name=slot23] run particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber3 abilities matches 22 run execute if score ward slot23 matches 1.. run function chthree:wardslot23
 #Gatsby
 execute if score abilitynumber3 abilities matches 23 if score ward slot23 matches 0 run scoreboard players operation slot23 stun = gatsbyDuration abilityStats

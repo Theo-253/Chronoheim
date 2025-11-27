@@ -1,3 +1,4 @@
+#function unknown in game
 effect clear @a[tag=game2] strength
 clear @p[tag=game2]
 #Arthur Ability

@@ -385,7 +385,14 @@ execute if score character# slot2 matches 9 run execute if score ward slot6 matc
 
 execute if score character# slot6 matches 9 run execute if score ward slot6 matches 0 run scoreboard players operation marks slot2 = robyn abilityStats
 execute if score character# slot6 matches 9 run execute if score ward slot6 matches 1 run function ch:wardslot2
-
+scoreboard players operation maxhp slot1 = slot1 hp
+scoreboard players operation maxhp slot2 = slot2 hp
+scoreboard players operation maxhp slot3 = slot3 hp
+scoreboard players operation maxhp slot5 = slot5 hp
+scoreboard players operation maxhp slot6 = slot6 hp
+scoreboard players operation maxhp slot7 = slot7 hp
+execute if score slot4 hp matches 1.. run scoreboard players operation maxhp slot4 = slot4 hp
+execute if score slot8 hp matches 1.. run scoreboard players operation maxhp slot8 = slot8 hp
 
 scoreboard players set game1Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame1 booleans 0

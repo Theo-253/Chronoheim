@@ -14,5 +14,8 @@ execute if score character# slot6 matches 28 run execute at @n[type=armor_stand,
 execute if score character# slot7 matches 28 run execute at @n[type=armor_stand,name=slot7] run particle minecraft:trial_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 execute unless score character# slot8 matches 0 if score slot8 hp matches ..0 run scoreboard players set speed slot8 -1000000
 scoreboard players set durationSlot8 taunt 0
+scoreboard players set buffDurationSlot8 atkmodifiers 0
+scoreboard players set durationSlot8 regen 0
+scoreboard players set durationSlot8 speedBuffs 0
 execute unless score character# slot8 matches 0 run tellraw @a[tag=game1] ["Slot 8 has died"]
 execute at @e[name=slot8,type=armor_stand] run kill @e[name=!slot8,type=!player,distance=..4]

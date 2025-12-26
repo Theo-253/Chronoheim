@@ -386,6 +386,14 @@ execute if score character# slot18 matches 9 run execute if score ward slot22 ma
 execute if score character# slot22 matches 9 run execute if score ward slot22 matches 0 run scoreboard players operation marks slot18 = robyn abilityStats
 execute if score character# slot22 matches 9 run execute if score ward slot22 matches 1 run function chthree:wardslot18
 
+scoreboard players operation maxhp slot17 = slot17 hp
+scoreboard players operation maxhp slot18 = slot18 hp
+scoreboard players operation maxhp slot19 = slot19 hp
+scoreboard players operation maxhp slot21 = slot21 hp
+scoreboard players operation maxhp slot22 = slot22 hp
+scoreboard players operation maxhp slot23 = slot23 hp
+execute if score slot20 hp matches 1.. run scoreboard players operation maxhp slot20 = slot20 hp
+execute if score slot24 hp matches 1.. run scoreboard players operation maxhp slot24 = slot24 hp
 
 scoreboard players set game3Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame3 booleans 0

@@ -374,6 +374,14 @@ execute if score character# slot10 matches 9 run execute if score ward slot14 ma
 execute if score character# slot14 matches 9 run execute if score ward slot14 matches 0 run scoreboard players operation marks slot10 = robyn abilityStats
 execute if score character# slot14 matches 9 run execute if score ward slot14 matches 1 run function chtoo:wardslot10
 
+scoreboard players operation maxhp slot9 = slot9 hp
+scoreboard players operation maxhp slot10 = slot10 hp
+scoreboard players operation maxhp slot11 = slot11 hp
+scoreboard players operation maxhp slot13 = slot13 hp
+scoreboard players operation maxhp slot14 = slot14 hp
+scoreboard players operation maxhp slot15 = slot15 hp
+execute if score slot12 hp matches 1.. run scoreboard players operation maxhp slot12 = slot12 hp
+execute if score slot16 hp matches 1.. run scoreboard players operation maxhp slot16 = slot16 hp
 
 scoreboard players set game2Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame2 booleans 0

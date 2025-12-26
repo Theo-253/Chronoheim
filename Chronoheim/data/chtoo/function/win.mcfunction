@@ -348,7 +348,14 @@ scoreboard players set durationSlot16-9 fear 0
 scoreboard players set durationSlot16-10 fear 0
 scoreboard players set durationSlot16-11 fear 0
 scoreboard players set durationSlot16-12 fear 0
-
+scoreboard players set maxhp slot9 9999
+scoreboard players set maxhp slot10 9999
+scoreboard players set maxhp slot11 9999
+scoreboard players set maxhp slot12 9999
+scoreboard players set maxhp slot13 9999
+scoreboard players set maxhp slot14 9999
+scoreboard players set maxhp slot15 9999
+scoreboard players set maxhp slot16 9999
 
 
 

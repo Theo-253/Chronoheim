@@ -195,14 +195,14 @@ execute if score slot15isatk booleans matches 1 run execute if score slot15Eaten
 execute if score slot16isatk booleans matches 1 run execute if score slot16EatenDuration abilities matches 1.. run scoreboard players remove slot16EatenDuration abilities 1
 
 #Mark Duration
-#execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 mark matches 1.. run scoreboard players remove durationSlot9 mark 1
-#execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 mark matches 1.. run scoreboard players remove durationSlot10 mark 1
-#execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 mark matches 1.. run scoreboard players remove durationSlot11 mark 1
-#execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 mark matches 1.. run scoreboard players remove durationSlot12 mark 1
-#execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 mark matches 1.. run scoreboard players remove durationSlot13 mark 1
-#execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 mark matches 1.. run scoreboard players remove durationSlot14 mark 1
-#execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 mark matches 1.. run scoreboard players remove durationSlot15 mark 1
-#execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 mark matches 1.. run scoreboard players remove durationSlot16 mark 1
+execute if score slot9isatk booleans matches 1 run execute if score durationSlot9 mark matches 1.. run scoreboard players remove durationSlot9 mark 1
+execute if score slot10isatk booleans matches 1 run execute if score durationSlot10 mark matches 1.. run scoreboard players remove durationSlot10 mark 1
+execute if score slot11isatk booleans matches 1 run execute if score durationSlot11 mark matches 1.. run scoreboard players remove durationSlot11 mark 1
+execute if score slot12isatk booleans matches 1 run execute if score durationSlot12 mark matches 1.. run scoreboard players remove durationSlot12 mark 1
+execute if score slot13isatk booleans matches 1 run execute if score durationSlot13 mark matches 1.. run scoreboard players remove durationSlot13 mark 1
+execute if score slot14isatk booleans matches 1 run execute if score durationSlot14 mark matches 1.. run scoreboard players remove durationSlot14 mark 1
+execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 mark matches 1.. run scoreboard players remove durationSlot15 mark 1
+execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 mark matches 1.. run scoreboard players remove durationSlot16 mark 1
 
 #bleed duration
 execute if score slot9isatk booleans matches 1 run execute if score slot9bleeding booleaneffects matches 1.. run scoreboard players remove slot9bleeding booleaneffects 1

@@ -24,6 +24,32 @@ execute if score durationSlot22 burn matches 0 run scoreboard players set slot22
 execute if score durationSlot23 burn matches 0 run scoreboard players set slot23Burn burn 0
 execute if score durationSlot24 burn matches 0 run scoreboard players set slot24Burn burn 0
 
+#Marks
+execute if score durationSlot1 mark matches 0 run scoreboard players set marks slot1 0
+execute if score durationSlot2 mark matches 0 run scoreboard players set marks slot2 0
+execute if score durationSlot3 mark matches 0 run scoreboard players set marks slot3 0
+execute if score durationSlot4 mark matches 0 run scoreboard players set marks slot4 0
+execute if score durationSlot5 mark matches 0 run scoreboard players set marks slot5 0
+execute if score durationSlot6 mark matches 0 run scoreboard players set marks slot6 0
+execute if score durationSlot7 mark matches 0 run scoreboard players set marks slot7 0
+execute if score durationSlot8 mark matches 0 run scoreboard players set marks slot8 0
+execute if score durationSlot9 mark matches 0 run scoreboard players set marks slot9 0
+execute if score durationSlot10 mark matches 0 run scoreboard players set marks slot10 0
+execute if score durationSlot11 mark matches 0 run scoreboard players set marks slot11 0
+execute if score durationSlot12 mark matches 0 run scoreboard players set marks slot12 0
+execute if score durationSlot13 mark matches 0 run scoreboard players set marks slot13 0
+execute if score durationSlot14 mark matches 0 run scoreboard players set marks slot14 0
+execute if score durationSlot15 mark matches 0 run scoreboard players set marks slot15 0
+execute if score durationSlot16 mark matches 0 run scoreboard players set marks slot16 0
+execute if score durationSlot17 mark matches 0 run scoreboard players set marks slot17 0
+execute if score durationSlot18 mark matches 0 run scoreboard players set marks slot18 0
+execute if score durationSlot19 mark matches 0 run scoreboard players set marks slot19 0
+execute if score durationSlot20 mark matches 0 run scoreboard players set marks slot20 0
+execute if score durationSlot21 mark matches 0 run scoreboard players set marks slot21 0
+execute if score durationSlot22 mark matches 0 run scoreboard players set marks slot22 0
+execute if score durationSlot23 mark matches 0 run scoreboard players set marks slot23 0
+execute if score durationSlot24 mark matches 0 run scoreboard players set marks slot24 0
+
 
 #Poison
 execute if score durationSlot1 poison matches 0 run scoreboard players set slot1Poison poison 0

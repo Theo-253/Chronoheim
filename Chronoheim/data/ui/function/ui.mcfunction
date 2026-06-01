@@ -464,451 +464,87 @@ execute if score debuffDurationSlot1 atkmodifiers matches 3 run item replace blo
 execute if score debuffDurationSlot1 atkmodifiers matches 4 run item replace block 203 1 208 container.14 with clock[custom_name={"bold":true,"color":"gold","text":"Weakness Duration"}] 4
 execute if score debuffDurationSlot1 atkmodifiers matches 5 run item replace block 203 1 208 container.14 with clock[custom_name={"bold":true,"color":"gold","text":"Weakness Duration"}] 5
 
-execute if score disarmedslot1 booleaneffects matches 1 run item replace block 203 1 209 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
-execute if score disarmedslot1 booleaneffects matches 2 run item replace block 203 1 209 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
-execute if score disarmedslot1 booleaneffects matches 3 run item replace block 203 1 209 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
-execute if score disarmedslot1 booleaneffects matches 0 run item replace block 203 1 209 container.15 with air
-
-execute if score disarmedslot2 booleaneffects matches 1 run item replace block 204 1 214 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
-execute if score disarmedslot2 booleaneffects matches 2 run item replace block 204 1 214 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
-execute if score disarmedslot2 booleaneffects matches 3 run item replace block 204 1 214 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
-execute if score disarmedslot2 booleaneffects matches 0 run item replace block 204 1 214 container.15 with air
-
-execute if score disarmedslot3 booleaneffects matches 1 run item replace block 203 1 219 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
-execute if score disarmedslot3 booleaneffects matches 2 run item replace block 203 1 219 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
-execute if score disarmedslot3 booleaneffects matches 3 run item replace block 203 1 219 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
-execute if score disarmedslot3 booleaneffects matches 0 run item replace block 203 1 219 container.15 with air
-
-execute if score disarmedslot4 booleaneffects matches 1 run item replace block 203 1 224 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
-execute if score disarmedslot4 booleaneffects matches 2 run item replace block 203 1 224 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
-execute if score disarmedslot4 booleaneffects matches 3 run item replace block 203 1 224 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
-execute if score disarmedslot4 booleaneffects matches 0 run item replace block 203 1 224 container.15 with air
-
-execute if score disarmedslot5 booleaneffects matches 1 run item replace block 196 1 221 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
-execute if score disarmedslot5 booleaneffects matches 2 run item replace block 196 1 221 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
-execute if score disarmedslot5 booleaneffects matches 3 run item replace block 196 1 221 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
-execute if score disarmedslot5 booleaneffects matches 0 run item replace block 196 1 221 container.15 with air
-
-execute if score disarmedslot6 booleaneffects matches 1 run item replace block 195 1 216 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
-execute if score disarmedslot6 booleaneffects matches 2 run item replace block 195 1 216 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
-execute if score disarmedslot6 booleaneffects matches 3 run item replace block 195 1 216 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
-execute if score disarmedslot6 booleaneffects matches 3 run item replace block 195 1 216 container.15 with air
-
-execute if score disarmedslot7 booleaneffects matches 1 run item replace block 196 1 211 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
-execute if score disarmedslot7 booleaneffects matches 2 run item replace block 196 1 211 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
-execute if score disarmedslot7 booleaneffects matches 3 run item replace block 196 1 211 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
-execute if score disarmedslot7 booleaneffects matches 0 run item replace block 196 1 211 container.15 with air
-
-execute if score disarmedslot8 booleaneffects matches 1 run item replace block 196 1 206 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
-execute if score disarmedslot8 booleaneffects matches 2 run item replace block 196 1 206 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
-execute if score disarmedslot8 booleaneffects matches 3 run item replace block 196 1 206 container.15 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
-execute if score disarmedslot8 booleaneffects matches 3 run item replace block 196 1 206 container.15 with air
-
-execute if score durationSlot1 taunt matches 1 run item replace block 203 1 209 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot1 taunt matches 2 run item replace block 203 1 209 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot1 taunt matches 3 run item replace block 203 1 209 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
-execute if score durationSlot1 taunt matches 0 run item replace block 203 1 209 container.22 with air
-
-execute if score durationSlot2 taunt matches 1 run item replace block 204 1 214 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot2 taunt matches 2 run item replace block 204 1 214 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot2 taunt matches 3 run item replace block 204 1 214 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
-execute if score durationSlot2 taunt matches 0 run item replace block 204 1 214 container.22 with air
-
-execute if score durationSlot3 taunt matches 1 run item replace block 203 1 219 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot3 taunt matches 2 run item replace block 203 1 219 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot3 taunt matches 3 run item replace block 203 1 219 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
-execute if score durationSlot3 taunt matches 0 run item replace block 203 1 219 container.22 with air
-
-execute if score durationSlot4 taunt matches 1 run item replace block 203 1 224 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot4 taunt matches 2 run item replace block 203 1 224 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot4 taunt matches 3 run item replace block 203 1 224 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
-execute if score durationSlot4 taunt matches 0 run item replace block 203 1 224 container.22 with air
-
-execute if score durationSlot5 taunt matches 1 run item replace block 196 1 221 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot5 taunt matches 2 run item replace block 196 1 221 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot5 taunt matches 3 run item replace block 196 1 221 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
-execute if score durationSlot5 taunt matches 0 run item replace block 196 1 221 container.22 with air
-
-execute if score durationSlot6 taunt matches 1 run item replace block 195 1 216 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot6 taunt matches 2 run item replace block 195 1 216 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot6 taunt matches 3 run item replace block 195 1 216 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
-execute if score durationSlot6 taunt matches 0 run item replace block 195 1 216 container.22 with air
-
-execute if score durationSlot7 taunt matches 1 run item replace block 196 1 211 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot7 taunt matches 2 run item replace block 196 1 211 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot7 taunt matches 3 run item replace block 196 1 211 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
-execute if score durationSlot7 taunt matches 0 run item replace block 196 1 211 container.22 with air
-
-execute if score durationSlot8 taunt matches 1 run item replace block 196 1 206 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
-execute if score durationSlot8 taunt matches 2 run item replace block 196 1 206 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
-execute if score durationSlot8 taunt matches 3 run item replace block 196 1 206 container.22 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
-execute if score durationSlot8 taunt matches 0 run item replace block 196 1 206 container.22 with air
-
-execute if score durationSlot5-1 fear matches 1 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot5-1 fear matches 2 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot5-1 fear matches 3 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot5-2 fear matches 1 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot5-2 fear matches 2 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot5-2 fear matches 3 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot5-3 fear matches 1 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot5-3 fear matches 2 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot5-3 fear matches 3 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot5-4 fear matches 1 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot5-4 fear matches 2 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot5-4 fear matches 3 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot6-1 fear matches 1 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot6-1 fear matches 2 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot6-1 fear matches 3 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot6-2 fear matches 1 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot6-2 fear matches 2 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot6-2 fear matches 3 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot6-3 fear matches 1 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot6-3 fear matches 2 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot6-3 fear matches 3 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot6-4 fear matches 1 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot6-4 fear matches 2 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot6-4 fear matches 3 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot7-1 fear matches 1 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot7-1 fear matches 2 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot7-1 fear matches 3 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot7-2 fear matches 1 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot7-2 fear matches 2 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot7-2 fear matches 3 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot7-3 fear matches 1 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot7-3 fear matches 2 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot7-3 fear matches 3 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot7-4 fear matches 1 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot7-4 fear matches 2 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot7-4 fear matches 3 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot8-1 fear matches 1 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot8-1 fear matches 2 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot8-1 fear matches 3 run item replace block 203 1 209 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot8-2 fear matches 1 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot8-2 fear matches 2 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot8-2 fear matches 3 run item replace block 204 1 214 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot8-3 fear matches 1 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot8-3 fear matches 2 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot8-3 fear matches 3 run item replace block 203 1 219 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot8-4 fear matches 1 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot8-4 fear matches 2 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot8-4 fear matches 3 run item replace block 203 1 224 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot1-5 fear matches 1 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot1-5 fear matches 2 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot1-5 fear matches 3 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot1-6 fear matches 1 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot1-6 fear matches 2 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot1-6 fear matches 3 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot1-7 fear matches 1 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot1-7 fear matches 2 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot1-7 fear matches 3 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot1-8 fear matches 1 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot1-8 fear matches 2 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot1-8 fear matches 3 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot2-5 fear matches 1 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot2-5 fear matches 2 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot2-5 fear matches 3 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot2-6 fear matches 1 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot2-6 fear matches 2 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot2-6 fear matches 3 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot2-7 fear matches 1 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot2-7 fear matches 2 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot2-7 fear matches 3 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot2-8 fear matches 1 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot2-8 fear matches 2 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot2-8 fear matches 3 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot4-5 fear matches 1 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot4-5 fear matches 2 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot4-5 fear matches 3 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot4-6 fear matches 1 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot4-6 fear matches 2 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot4-6 fear matches 3 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot4-7 fear matches 1 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot4-7 fear matches 2 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot4-7 fear matches 3 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot4-8 fear matches 1 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot4-8 fear matches 2 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot4-8 fear matches 3 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot3-5 fear matches 1 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot3-5 fear matches 2 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot3-5 fear matches 3 run item replace block 196 1 221 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot3-6 fear matches 1 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot3-6 fear matches 2 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot3-6 fear matches 3 run item replace block 195 1 216 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot3-7 fear matches 1 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot3-7 fear matches 2 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot3-7 fear matches 3 run item replace block 196 1 211 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot3-8 fear matches 1 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 1
-execute if score durationSlot3-8 fear matches 2 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 2
-execute if score durationSlot3-8 fear matches 3 run item replace block 196 1 206 container.14 with skeleton_skull[custom_name={"italic":false,"color":"light_purple","text":"Feared"},lore=[{"italic":false,"text":"Target cannot attack the enemy that fears them"}]] 3
-
-execute if score durationSlot5-1 fear matches 1 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot5-1 fear matches 2 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot5-1 fear matches 3 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot6-1 fear matches 1 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot6-1 fear matches 2 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot6-1 fear matches 3 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot7-1 fear matches 1 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot7-1 fear matches 2 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot7-1 fear matches 3 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot8-1 fear matches 1 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot8-1 fear matches 2 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot8-1 fear matches 3 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot5-2 fear matches 1 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot5-2 fear matches 2 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot5-2 fear matches 3 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot6-2 fear matches 1 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot6-2 fear matches 2 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot6-2 fear matches 3 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot7-2 fear matches 1 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot7-2 fear matches 2 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot7-2 fear matches 3 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot8-2 fear matches 1 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot8-2 fear matches 2 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot8-2 fear matches 3 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot5-4 fear matches 1 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot5-4 fear matches 2 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot5-4 fear matches 3 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot6-4 fear matches 1 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot6-4 fear matches 2 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot6-4 fear matches 3 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot7-4 fear matches 1 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot7-4 fear matches 2 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot7-4 fear matches 3 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot8-4 fear matches 1 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot8-4 fear matches 2 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot8-4 fear matches 3 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot5-3 fear matches 1 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot5-3 fear matches 2 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot5-3 fear matches 3 run item replace block 196 1 221 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot6-3 fear matches 1 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot6-3 fear matches 2 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot6-3 fear matches 3 run item replace block 195 1 216 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot7-3 fear matches 1 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot7-3 fear matches 2 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot7-3 fear matches 3 run item replace block 196 1 211 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot8-3 fear matches 1 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot8-3 fear matches 2 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot8-3 fear matches 3 run item replace block 196 1 206 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot1-5 fear matches 1 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot1-5 fear matches 2 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot1-5 fear matches 3 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot1-6 fear matches 1 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot1-6 fear matches 2 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot1-6 fear matches 3 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot1-7 fear matches 1 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot1-7 fear matches 2 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot1-7 fear matches 3 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot1-8 fear matches 1 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot1-8 fear matches 2 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot1-8 fear matches 3 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot2-5 fear matches 1 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot2-5 fear matches 2 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot2-5 fear matches 3 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot2-6 fear matches 1 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot2-6 fear matches 2 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot2-6 fear matches 3 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot2-7 fear matches 1 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot2-7 fear matches 2 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot2-7 fear matches 3 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot2-8 fear matches 1 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot2-8 fear matches 2 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot2-8 fear matches 3 run item replace block 204 1 214 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot4-5 fear matches 1 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot4-5 fear matches 2 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot4-5 fear matches 3 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot4-6 fear matches 1 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot4-6 fear matches 2 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot4-6 fear matches 3 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot4-7 fear matches 1 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot4-7 fear matches 2 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot4-7 fear matches 3 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot4-8 fear matches 1 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot4-8 fear matches 2 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot4-8 fear matches 3 run item replace block 203 1 224 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot3-5 fear matches 1 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot3-5 fear matches 2 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot3-5 fear matches 3 run item replace block 203 1 209 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot3-6 fear matches 1 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot3-6 fear matches 2 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot3-6 fear matches 3 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot3-7 fear matches 1 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot3-7 fear matches 2 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot3-7 fear matches 3 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot3-8 fear matches 1 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 1
-execute if score durationSlot3-8 fear matches 2 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 2
-execute if score durationSlot3-8 fear matches 3 run item replace block 203 1 219 container.12 with wither_skeleton_skull[custom_name={"italic":false,"color":"dark_purple","text":"Scary"},lore=[{"italic":false,"text":"Feared enemies cannot target this"}]] 3
-
-execute if score durationSlot5-1 fear matches 0 run execute if score durationSlot6-1 fear matches 0 run execute if score durationSlot7-1 fear matches 0 run execute if score durationSlot8-1 fear matches 0 run item replace block 203 1 209 container.14 with air 1
-
-execute if score durationSlot5-2 fear matches 0 run execute if score durationSlot6-2 fear matches 0 run execute if score durationSlot7-2 fear matches 0 run execute if score durationSlot8-2 fear matches 0 run item replace block 204 1 214 container.14 with air 1
-
-execute if score durationSlot5-3 fear matches 0 run execute if score durationSlot6-3 fear matches 0 run execute if score durationSlot7-3 fear matches 0 run execute if score durationSlot8-3 fear matches 0 run item replace block 203 1 219 container.14 with air 1
-
-execute if score durationSlot5-4 fear matches 0 run execute if score durationSlot6-4 fear matches 0 run execute if score durationSlot7-4 fear matches 0 run execute if score durationSlot8-4 fear matches 0 run item replace block 203 1 224 container.14 with air 1
-
-execute if score durationSlot1-5 fear matches 0 run execute if score durationSlot2-5 fear matches 0 run execute if score durationSlot3-5 fear matches 0 run execute if score durationSlot4-5 fear matches 0 run item replace block 196 1 221 container.14 with air 1
-
-execute if score durationSlot1-6 fear matches 0 run execute if score durationSlot2-6 fear matches 0 run execute if score durationSlot4-6 fear matches 0 run execute if score durationSlot3-6 fear matches 0 run item replace block 195 1 216 container.14 with air 1
-
-execute if score durationSlot1-7 fear matches 0 run execute if score durationSlot2-7 fear matches 0 run execute if score durationSlot4-7 fear matches 0 run execute if score durationSlot3-7 fear matches 0 run item replace block 196 1 211 container.14 with air 1
-
-execute if score durationSlot1-8 fear matches 0 run execute if score durationSlot2-8 fear matches 0 run execute if score durationSlot4-8 fear matches 0 run execute if score durationSlot3-8 fear matches 0 run item replace block 196 1 206 container.14 with air 1
-
-execute if score durationSlot5-1 fear matches 0 run execute if score durationSlot5-2 fear matches 0 run execute if score durationSlot5-3 fear matches 0 run execute if score durationSlot5-4 fear matches 0 run item replace block 196 1 221 container.12 with air
-
-execute if score durationSlot6-1 fear matches 0 run execute if score durationSlot6-2 fear matches 0 run execute if score durationSlot6-4 fear matches 0 run execute if score durationSlot6-3 fear matches 0 run item replace block 195 1 216 container.12 with air
-
-execute if score durationSlot7-1 fear matches 0 run execute if score durationSlot7-2 fear matches 0 run execute if score durationSlot7-4 fear matches 0 run execute if score durationSlot7-3 fear matches 0 run item replace block 196 1 211 container.12 with air
-
-execute if score durationSlot8-1 fear matches 0 run execute if score durationSlot8-2 fear matches 0 run execute if score durationSlot8-4 fear matches 0 run execute if score durationSlot8-3 fear matches 0 run item replace block 196 1 206 container.12 with air
-
-execute if score durationSlot1-5 fear matches 0 run execute if score durationSlot1-6 fear matches 0 run execute if score durationSlot1-7 fear matches 0 run execute if score durationSlot1-8 fear matches 0 run item replace block 203 1 209 container.12 with air
-
-execute if score durationSlot2-5 fear matches 0 run execute if score durationSlot2-6 fear matches 0 run execute if score durationSlot2-8 fear matches 0 run execute if score durationSlot2-7 fear matches 0 run item replace block 204 1 214 container.12 with air
-
-execute if score durationSlot3-5 fear matches 0 run execute if score durationSlot3-6 fear matches 0 run execute if score durationSlot3-7 fear matches 0 run execute if score durationSlot3-8 fear matches 0 run item replace block 203 1 219 container.12 with air
-
-execute if score durationSlot4-5 fear matches 0 run execute if score durationSlot4-6 fear matches 0 run execute if score durationSlot4-7 fear matches 0 run execute if score durationSlot4-8 fear matches 0 run item replace block 203 1 224 container.12 with air
-
-execute if score slot1Disease disease matches 0 run item replace block 203 1 209 container.5 with air
-execute if score slot1Disease disease matches 20 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 20 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 40 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 40 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 60 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 60 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 80 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 80 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 100 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 100 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 120 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 120 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 140 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 140 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 160 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 160 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 180 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 180 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 200 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 200 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 220 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 220 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 240 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 240 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 260 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 260 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 280 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 280 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 300 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 300 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 320 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 320 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 340 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 340 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 360 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 360 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 380 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 380 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 400 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 400 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 420 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 420 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 440 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 440 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 460 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 460 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 480 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 480 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 500 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 500 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 520 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 520 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 540 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 540 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 560 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 560 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 580 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 580 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 600 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 600 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 620 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 620 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 640 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 640 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 660 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 660 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 680 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 680 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 700 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 700 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 720 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 720 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 740 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 740 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 760 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 760 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 780 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 780 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 800 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 800 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 820 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 820 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 840 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 840 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 860 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 860 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 880 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 880 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 900 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 900 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 920 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 920 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 940 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 940 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 960 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 960 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 980 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 980 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-execute if score slot1Disease disease matches 1000 run item replace block 203 1 209 container.5 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 1000 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
-
-execute if score slot1 stun matches 1 run item replace block 203 1 209 container.11 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 1
-execute if score slot1 stun matches 2 run item replace block 203 1 209 container.11 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 2
-execute if score slot1 stun matches 3 run item replace block 203 1 209 container.11 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 3
-execute if score slot1 stun matches 4 run item replace block 203 1 209 container.11 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 4
-execute if score slot1 stun matches 5 run item replace block 203 1 209 container.11 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 5
-execute if score slot1bleeding booleaneffects matches 0 run item replace block 203 1 209 container.6 with air
-execute if score slot1bleeding booleaneffects matches 1 run item replace block 203 1 209 container.6 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 1
-execute if score slot1bleeding booleaneffects matches 2 run item replace block 203 1 209 container.6 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 2
-execute if score slot1bleeding booleaneffects matches 3 run item replace block 203 1 209 container.6 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 3
-execute if score slot1bleeding booleaneffects matches 4 run item replace block 203 1 209 container.6 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 4
-execute if score slot1bleeding booleaneffects matches 5 run item replace block 203 1 209 container.6 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 5
-execute if score invincibleSlot1 booleaneffects matches 0 run item replace block 203 1 209 container.8 with air
-execute if score invincibleSlot1 booleaneffects matches 1 run item replace block 203 1 209 container.8 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 1
-execute if score invincibleSlot1 booleaneffects matches 2 run item replace block 203 1 209 container.8 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 2
-execute if score invincibleSlot1 booleaneffects matches 3 run item replace block 203 1 209 container.8 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 3
-execute if score invincibleSlot1 booleaneffects matches 4 run item replace block 203 1 209 container.8 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 4
-execute if score invincibleSlot1 booleaneffects matches 5 run item replace block 203 1 209 container.8 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 5
-execute if score ward slot1 matches 0 run item replace block 203 1 209 container.7 with air
-execute if score ward slot1 matches 1 run item replace block 203 1 209 container.7 with nether_star[custom_name=[{"color":"aqua","italic":false,"text":"Ward"}],lore=[{"italic":false,"text":"Blocks the next harmful Atk/Ability"}]] 1
-execute if score ward slot1 matches 2 run item replace block 203 1 209 container.7 with nether_star[custom_name=[{"color":"aqua","italic":false,"text":"Bubble Ward"}],lore=[{"italic":false,"text":"Blocks the next harmful Atk/Ability & Stuns the attacker"}]] 1
-execute if score ward slot1 matches 3 run item replace block 203 1 209 container.7 with nether_star[custom_name=[{"color":"aqua","italic":false,"text":"Thorny Ward"}],lore=[{"italic":false,"text":"Reflects enemy attacks"}]] 1
-
-
-
-
- 
-
- 
+execute if score disarmedslot1 booleaneffects matches 1 run item replace block 203 1 208 container.18 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 1
+execute if score disarmedslot1 booleaneffects matches 2 run item replace block 203 1 208 container.18 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 2
+execute if score disarmedslot1 booleaneffects matches 3 run item replace block 203 1 208 container.18 with barrier[custom_name={"italic":false,"color":"dark_red","text":"Disarmed"},lore=[{"italic":false,"text":"Blocks target from basic attacking"}]] 3
+execute if score disarmedslot1 booleaneffects matches 0 run item replace block 203 1 208 container.18 with air
+
+execute if score durationSlot1 taunt matches 1 run item replace block 203 1 208 container.26 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 1
+execute if score durationSlot1 taunt matches 2 run item replace block 203 1 208 container.26 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 2
+execute if score durationSlot1 taunt matches 3 run item replace block 203 1 208 container.26 with crimson_fungus[custom_name={"italic":false,"color":"gold","text":"Taunt"},lore=[{"italic":false,"text":"Forces all enemies to attack this"}]] 3
+execute if score durationSlot1 taunt matches 0 run item replace block 203 1 208 container.26 with air
+
+
+execute if score slot1Disease disease matches 0 run item replace block 203 1 208 container.23 with air
+execute if score slot1Disease disease matches 20 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 20 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 40 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 40 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 60 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 60 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 80 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 80 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 100 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 100 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 120 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 120 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 140 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 140 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 160 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 160 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 180 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 180 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 200 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 200 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 220 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 220 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 240 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 240 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 260 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 260 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 280 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 280 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 300 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 300 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 320 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 320 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 340 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 340 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 360 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 360 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 380 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 380 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 400 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 400 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 420 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 420 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 440 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 440 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 460 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 460 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 480 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 480 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 500 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 500 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 520 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 520 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 540 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 540 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 560 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 560 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 580 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 580 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 600 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 600 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 620 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 620 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 640 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 640 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 660 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 660 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 680 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 680 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 700 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 700 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 720 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 720 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 740 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 740 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 760 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 760 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 780 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 780 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 800 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 800 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 820 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 820 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 840 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 840 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 860 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 860 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 880 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 880 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 900 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 900 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 920 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 920 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 940 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 940 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 960 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 960 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 980 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 980 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+execute if score slot1Disease disease matches 1000 run item replace block 203 1 208 container.23 with fermented_spider_eye[custom_name=[{"color":"dark_purple","italic":false,"text":"Disease - 1000 HP"}],lore=[{"italic":false,"text":"Deals damage at turn end, forever"}]] 1
+
+execute if score slot1 stun matches 1 run item replace block 203 1 208 container.19 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 1
+execute if score slot1 stun matches 2 run item replace block 203 1 208 container.19 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 2
+execute if score slot1 stun matches 3 run item replace block 203 1 208 container.19 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 3
+execute if score slot1 stun matches 4 run item replace block 203 1 208 container.19 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 4
+execute if score slot1 stun matches 5 run item replace block 203 1 208 container.19 with structure_void[custom_name=[{"color":"dark_aqua","italic":false,"text":"Stunned"}],lore=[{"italic":false,"text":"Skips Turn"}]] 5
+execute if score slot1bleeding booleaneffects matches 0 run item replace block 203 1 208 container.20 with air
+execute if score slot1bleeding booleaneffects matches 1 run item replace block 203 1 208 container.20 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 1
+execute if score slot1bleeding booleaneffects matches 2 run item replace block 203 1 208 container.20 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 2
+execute if score slot1bleeding booleaneffects matches 3 run item replace block 203 1 208 container.20 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 3
+execute if score slot1bleeding booleaneffects matches 4 run item replace block 203 1 208 container.20 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 4
+execute if score slot1bleeding booleaneffects matches 5 run item replace block 203 1 208 container.20 with redstone[custom_name=[{"color":"dark_red","italic":false,"text":"Bleeding"}],lore=[{"italic":false,"text":"Cannot be healed"}]] 5
+execute if score invincibleSlot1 booleaneffects matches 0 run item replace block 203 1 208 container.21 with air
+execute if score invincibleSlot1 booleaneffects matches 1 run item replace block 203 1 208 container.21 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 1
+execute if score invincibleSlot1 booleaneffects matches 2 run item replace block 203 1 208 container.21 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 2
+execute if score invincibleSlot1 booleaneffects matches 3 run item replace block 203 1 208 container.21 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 3
+execute if score invincibleSlot1 booleaneffects matches 4 run item replace block 203 1 208 container.21 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 4
+execute if score invincibleSlot1 booleaneffects matches 5 run item replace block 203 1 208 container.21 with diamond[custom_name=[{"color":"aqua","italic":false,"text":"Invincible"}],lore=[{"italic":false,"text":"Cannot take DMG or die"}]] 5
+execute if score ward slot1 matches 0 run item replace block 203 1 208 container.4 with air
+execute if score ward slot1 matches 1 run item replace block 203 1 208 container.4 with nether_star[custom_name=[{"color":"aqua","italic":false,"text":"Ward"}],lore=[{"italic":false,"text":"Blocks the next harmful Atk/Ability"}]] 1
+execute if score ward slot1 matches 2 run item replace block 203 1 208 container.4 with nether_star[custom_name=[{"color":"aqua","italic":false,"text":"Bubble Ward"}],lore=[{"italic":false,"text":"Blocks the next harmful Atk/Ability & Stuns the attacker"}]] 1
+execute if score ward slot1 matches 3 run item replace block 203 1 208 container.4 with nether_star[custom_name=[{"color":"aqua","italic":false,"text":"Thorny Ward"}],lore=[{"italic":false,"text":"Reflects enemy attacks"}]] 1

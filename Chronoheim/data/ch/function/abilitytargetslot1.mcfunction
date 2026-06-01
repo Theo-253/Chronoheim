@@ -220,7 +220,7 @@ execute if score abilitynumber abilities matches -4 run execute if score ward sl
 execute if score abilitynumber abilities matches -4 run execute at @e[name=slot1,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 
 #Jones Ability
-execute if score abilitynumber abilities matches 31 run scoreboard players operation abilityDmg saves = eidolon abilityStats
+execute if score abilitynumber abilities matches 31 run scoreboard players operation abilityDmg saves = jonesDmg abilityStats
 execute if score abilitynumber abilities matches 31 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
 execute if score abilitynumber abilities matches 31 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
 execute if score abilitynumber abilities matches 31 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers

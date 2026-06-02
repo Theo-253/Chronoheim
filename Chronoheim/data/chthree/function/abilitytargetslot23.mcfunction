@@ -67,6 +67,7 @@ execute if score abilitynumber3 abilities matches 7 run execute at @n[type=armor
 execute if score abilitynumber3 abilities matches 7 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used B.A.N.A.N.A S.L.A.M.M.A! on Slot 7!"]
 
 #Robyn Ability
+execute if score abilitynumber3 abilities matches 9 if score ward slot23 matches 0 if score durationSlot23 mark < robynDuration abilityStats run scoreboard players operation durationSlot23 mark = robynDuration abilityStats
 execute if score abilitynumber3 abilities matches 9 if score ward slot23 matches 0 run scoreboard players operation marks slot23 += robyn abilityStats
 execute if score abilitynumber3 abilities matches 9 if score ward slot23 matches 1 run function chthree:wardslot23
 execute if score abilitynumber3 abilities matches 9 run execute at @n[type=armor_stand,name=slot23] run particle minecraft:angry_villager ~ ~1 ~ 0.9 0.9 0.9 1 50

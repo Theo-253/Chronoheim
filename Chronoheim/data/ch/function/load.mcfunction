@@ -338,7 +338,8 @@ scoreboard players set kirinLeader abilityStats 240
 scoreboard players set robyn heroattack 140
 scoreboard players set robyn herohealth 1720
 scoreboard players set robyn herospeed 1600
-scoreboard players set robyn abilityStats 60
+scoreboard players set robyn abilityStats 80
+scoreboard players set robynDuration abilityStats 2
 scoreboard players set robynCD abilityStats 2
 
 scoreboard players set dillo heroattack 80
@@ -525,6 +526,7 @@ scoreboard players set scytheDivide abilityStats 5
 scoreboard players set scytheCD abilityStats 5
 scoreboard players set scytheMult abilityStats 4
 scoreboard players set scytheLeader abilityStats 60
+scoreboard players set scytheLeaderDuration abilityStats 2
 
 scoreboard players set jones heroattack 60
 scoreboard players set jones herohealth 2280
@@ -588,8 +590,9 @@ scoreboard players set embrittleDuration spellStats 1
 scoreboard players set embrittle spellStats 100
 scoreboard players set embrittleCD spellStats 3
 scoreboard players set embrittleSp spellStats 2
-scoreboard players set evilEye spellStats 40
+scoreboard players set evilEye spellStats 80
 scoreboard players set evilEyeCD spellStats 2
+scoreboard players set evilEyeDuration spellStats 1
 scoreboard players set evilEyeSp spellStats 2
 scoreboard players set fireball spellStats 100
 scoreboard players set fireballDuration spellStats 2

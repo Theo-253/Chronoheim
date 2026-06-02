@@ -380,9 +380,11 @@ execute if score character# slot22 matches 29 run scoreboard players operation s
 execute if score character# slot18 matches 24 run scoreboard players set ward slot18 2
 execute if score character# slot22 matches 24 run scoreboard players set ward slot22 2
 
+execute if score character# slot18 matches 9 run execute if score ward slot22 matches 0 run scoreboard players operation durationSlot22 mark = robynDuration abilityStats
 execute if score character# slot18 matches 9 run execute if score ward slot22 matches 0 run scoreboard players operation marks slot22 = robyn abilityStats
 execute if score character# slot18 matches 9 run execute if score ward slot22 matches 1 run function chthree:wardslot22
 
+execute if score character# slot22 matches 9 run execute if score ward slot22 matches 0 run scoreboard players operation durationSlot18 mark = robynDuration abilityStats
 execute if score character# slot22 matches 9 run execute if score ward slot22 matches 0 run scoreboard players operation marks slot18 = robyn abilityStats
 execute if score character# slot22 matches 9 run execute if score ward slot22 matches 1 run function chthree:wardslot18
 

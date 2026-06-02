@@ -9,5 +9,5 @@ scoreboard players set durationSlot4-8 fear 0
 scoreboard players set durationSlot8 mark 0
 scoreboard players set slot8Disease disease 0
 scoreboard players set slot8bleeding booleaneffects 0
-scoreboard players set marks slot8 0
+scoreboard players set durationSlot8 mark 0
 execute at @e[name=slot8] run particle minecraft:end_rod ~ ~1 ~ 0.9 0.9 0.9 0.1 100

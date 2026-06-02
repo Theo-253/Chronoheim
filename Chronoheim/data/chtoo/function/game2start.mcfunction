@@ -368,11 +368,13 @@ execute if score character# slot14 matches 29 run scoreboard players operation s
 execute if score character# slot10 matches 24 run scoreboard players set ward slot10 2
 execute if score character# slot14 matches 24 run scoreboard players set ward slot14 2
 
+execute if score character# slot10 matches 9 run execute if score ward slot14 matches 0 run scoreboard players operation durationSlot14 mark = robynDuration abilityStats
 execute if score character# slot10 matches 9 run execute if score ward slot14 matches 0 run scoreboard players operation marks slot14 = robyn abilityStats
 execute if score character# slot10 matches 9 run execute if score ward slot14 matches 1 run function chtoo:wardslot14
 
-execute if score character# slot14 matches 9 run execute if score ward slot14 matches 0 run scoreboard players operation marks slot10 = robyn abilityStats
-execute if score character# slot14 matches 9 run execute if score ward slot14 matches 1 run function chtoo:wardslot10
+execute if score character# slot14 matches 9 run execute if score ward slot10 matches 0 run scoreboard players operation durationSlot10 mark = robynDuration abilityStats
+execute if score character# slot14 matches 9 run execute if score ward slot10 matches 0 run scoreboard players operation marks slot10 = robyn abilityStats
+execute if score character# slot14 matches 9 run execute if score ward slot10 matches 1 run function chtoo:wardslot10
 
 scoreboard players operation maxhp slot9 = slot9 hp
 scoreboard players operation maxhp slot10 = slot10 hp

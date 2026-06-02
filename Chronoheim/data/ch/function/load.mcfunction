@@ -300,10 +300,10 @@ scoreboard players set subjectDuration abilityStats 3
 scoreboard players set subjectCD abilityStats 5
 scoreboard players set subjectLeader abilityStats 100
 
-scoreboard players set robo heroattack 100
+scoreboard players set robo heroattack 60
 scoreboard players set robo herohealth 2700
 scoreboard players set robo herospeed 600
-scoreboard players set robo abilityStats 360
+scoreboard players set robo abilityStats 400
 scoreboard players set roboDuration abilityStats 2
 scoreboard players set roboCD abilityStats 4
 scoreboard players set roboLeader abilityStats 140
@@ -315,8 +315,8 @@ scoreboard players set thornLeader abilityStats 200
 scoreboard players set thornDuration abilityStats 2
 scoreboard players set thornCD abilityStats 4
 
-scoreboard players set kong heroattack 40
-scoreboard players set kong herohealth 2420
+scoreboard players set kong heroattack 20
+scoreboard players set kong herohealth 2400
 scoreboard players set kong herospeed 900
 scoreboard players set kong abilityStats 340
 scoreboard players set kongCD abilityStats 2
@@ -378,7 +378,7 @@ scoreboard players set londonDmgDebuffDuration abilityStats 1
 scoreboard players set londonSpDebuff abilityStats 800
 scoreboard players set londonSpDebuffDuration abilityStats 1
 scoreboard players set londonCD abilityStats 3
-scoreboard players set london abilityStats 100
+scoreboard players set london abilityStats 120
 
 scoreboard players set hydra heroattack 60
 scoreboard players set hydra herohealth 1900
@@ -387,9 +387,10 @@ scoreboard players set hydra abilityStats 2
 scoreboard players set hydraCD abilityStats 4
 scoreboard players set hydraLeader heroattack 20
 
-scoreboard players set golem heroattack 60
+scoreboard players set golem heroattack 80
 scoreboard players set golem herohealth 2800
 scoreboard players set golem herospeed 500
+scoreboard players set golem herosplash 2
 scoreboard players set golemTaunt abilityStats 2
 scoreboard players set golemCD abilityStats 3
 
@@ -397,7 +398,7 @@ scoreboard players set blackbeard heroattack 40
 scoreboard players set blackbeard herohealth 2400
 scoreboard players set blackbeard herospeed 1100
 scoreboard players set blackbeard abilityStats 200
-scoreboard players set blackbeardSelfDmg abilityStats 200
+scoreboard players set blackbeardSelfDmg abilityStats 240
 scoreboard players set blackbeardBurn abilityStats 160
 scoreboard players set blackbeardBurnDuration abilityStats 1
 scoreboard players set blackbeardCD abilityStats 2
@@ -412,12 +413,13 @@ scoreboard players set grimoireLeaderSpellPoints abilityStats 4
 
 scoreboard players set grangor heroattack 80
 scoreboard players set grangor herohealth 2600
+scoreboard players set grangor selfHealthBonus 400
+scoreboard players set grangor teamHealthBonus 200
 scoreboard players set grangor herospeed 800
 scoreboard players set grangor herolifesteal 2
-scoreboard players set grangorBurn abilityStats 280
+scoreboard players set grangorBurn abilityStats 220
 scoreboard players set grangorBurnDuration abilityStats 3
 scoreboard players set grangorCD abilityStats 5
-scoreboard players set grangorLeaderAtk heroattack 160
 
 scoreboard players set astro heroattack 160
 scoreboard players set astro herohealth 1680
@@ -439,12 +441,12 @@ scoreboard players set docLeader heroattack 20
 scoreboard players set lillith heroattack 120
 scoreboard players set lillith herohealth 1840
 scoreboard players set lillith herospeed 800
-scoreboard players set lillithDmgBuff abilityStats 80
+scoreboard players set lillithDmgBuff abilityStats 100
 scoreboard players set lillithDmgBuffDuration abilityStats 1
 scoreboard players set lillithSelfDmgBuffDuration abilityStats 2
 scoreboard players set lillithCD abilityStats 4
-scoreboard players set lillithLeechDmg abilityStats 220
-scoreboard players set lillithLeaderLeechDmg abilityStats 80
+scoreboard players set lillithLeechDmg abilityStats 200
+scoreboard players set lillithLeaderLeechDmg abilityStats 100
 
 scoreboard players set gabriel heroattack 100
 scoreboard players set gabriel herohealth 2460
@@ -454,18 +456,18 @@ scoreboard players set gabrielDeath abilityStats 240
 scoreboard players set gabrielLeader abilityStats 2
 scoreboard players set gabrielCD abilityStats 3
 
-scoreboard players set gatsby heroattack 100
-scoreboard players set gatsby herohealth 2160
+scoreboard players set gatsby heroattack 120
+scoreboard players set gatsby herohealth 2300
 scoreboard players set gatsby herospeed 1000
 scoreboard players set gatsbyDuration abilityStats 2
 scoreboard players set gatsbyCD abilityStats 6
 scoreboard players set gatsbyLeader abilityStats 60
 
 scoreboard players set garabaldi heroattack 120
-scoreboard players set garabaldi herohealth 1600
+scoreboard players set garabaldi herohealth 1760
 scoreboard players set garabaldi herospeed 1200
 scoreboard players set garabaldi herosplash 4
-scoreboard players set garabaldiHeal abilityStats 140
+scoreboard players set garabaldiHeal abilityStats 160
 scoreboard players set garabaldiCD abilityStats 3
 scoreboard players set garabaldiLeader abilityStats 60
 
@@ -475,7 +477,7 @@ scoreboard players set boomer herospeed 700
 scoreboard players set boomer abilityStats 560
 scoreboard players set boomerLeader abilityStats 120
 
-scoreboard players set juniper heroattack 120
+scoreboard players set juniper heroattack 140
 scoreboard players set juniperLeader heroattack 40
 scoreboard players set juniper herohealth 2000
 scoreboard players set juniper herospeed 1000
@@ -518,14 +520,14 @@ scoreboard players set dominoPoison abilityStats 40
 scoreboard players set dominoLeader abilityStats 140
 scoreboard players set dominoLeaderHit heroattack 120
 
-scoreboard players set scythe heroattack 140
-scoreboard players set scythe herohealth 1860
+scoreboard players set scythe heroattack 120
+scoreboard players set scythe herohealth 1820
 scoreboard players set scythe herospeed 1400
-scoreboard players set scytheDivide abilityStats 5
+scoreboard players set scytheDivide abilityStats 4
 scoreboard players set scytheCD abilityStats 5
 scoreboard players set scytheMult abilityStats 4
-scoreboard players set scytheLeader abilityStats 60
-scoreboard players set scytheDuration abilityStats 2
+scoreboard players set scytheLeader abilityStats 20
+scoreboard players set scytheDuration abilityStats 4
 
 scoreboard players set jones heroattack 60
 scoreboard players set jones herohealth 2280
@@ -534,7 +536,7 @@ scoreboard players set jones abilityStats 2
 scoreboard players set jonesDmg abilityStats 180
 scoreboard players set jonesCD abilityStats 6
 scoreboard players set jonesLeaderCD abilityStats 5
-scoreboard players set jonesLeaderDuration abilityStats 10
+scoreboard players set jonesLeaderDuration abilityStats 5
 scoreboard players set jonesLeader abilityStats 300
 
 scoreboard players set sherman heroattack 80
@@ -548,7 +550,7 @@ scoreboard players set shermanDebuff abilityStats 80
 scoreboard players set sherman abilityStats 400
 scoreboard players set shermanSplash abilityStats 2
 
-scoreboard players set golemite heroattack 60
+scoreboard players set golemite heroattack 80
 scoreboard players set golemite herohealth 300
 scoreboard players set golemite herospeed 700
 
@@ -556,7 +558,7 @@ scoreboard players set skeleton heroattack 80
 scoreboard players set skeleton herohealth 340
 scoreboard players set skeleton herospeed 1000
 
-scoreboard players set skeletonplus heroattack 100
+scoreboard players set skeletonplus heroattack 120
 scoreboard players set skeletonplus herohealth 420
 scoreboard players set skeletonplus herospeed 1200
 
@@ -566,7 +568,7 @@ scoreboard players set demon herohealth 1000
 scoreboard players set demon herospeed 700
 
 scoreboard players set blizzardSpDebuffDuration spellStats 2
-scoreboard players set blizzardSpDebuff spellStats 500
+scoreboard players set blizzardSpDebuff spellStats 700
 scoreboard players set blizzard spellStats 160
 scoreboard players set blizzardCD spellStats 4
 scoreboard players set blizzardSp spellStats 3
@@ -589,9 +591,9 @@ scoreboard players set embrittleDuration spellStats 1
 scoreboard players set embrittle spellStats 100
 scoreboard players set embrittleCD spellStats 3
 scoreboard players set embrittleSp spellStats 2
-scoreboard players set evilEye spellStats 80
+scoreboard players set evilEye spellStats 40
 scoreboard players set evilEyeCD spellStats 2
-scoreboard players set evilEyeDuration spellStats 1
+scoreboard players set evilEyeDuration spellStats 2
 scoreboard players set evilEyeSp spellStats 2
 scoreboard players set fireball spellStats 100
 scoreboard players set fireballDuration spellStats 2
@@ -607,8 +609,8 @@ scoreboard players set fountainOfYouthSp spellStats 2
 scoreboard players set fountainOfYouthCD spellStats 2
 scoreboard players set frostboltCD spellStats 3
 scoreboard players set frostboltSp spellStats 2
-scoreboard players set frostbolt spellStats 100
-scoreboard players set frostboltDmgDebuff spellStats 60
+scoreboard players set frostbolt spellStats 140
+scoreboard players set frostboltDmgDebuff spellStats 40
 scoreboard players set frostboltSpDebuff spellStats 700
 scoreboard players set frostboltDuration spellStats 2
 scoreboard players set heal spellStats 260
@@ -634,8 +636,8 @@ scoreboard players set miasmaCD spellStats 5
 scoreboard players set miasma spellStats 80
 scoreboard players set miasmaDuration spellStats 4
 scoreboard players set miasmaSp spellStats 3
-scoreboard players set miracleCD spellStats 4
-scoreboard players set miracleSp spellStats 3
+scoreboard players set miracleCD spellStats 3
+scoreboard players set miracleSp spellStats 2
 scoreboard players set overclockCD spellStats 5
 scoreboard players set overclockAtk spellStats 200
 scoreboard players set overclock spellStats 200
@@ -665,9 +667,9 @@ scoreboard players set shiftingShadowsSp spellStats 2
 scoreboard players set shockOrb spellStats 1
 scoreboard players set shockOrbCD spellStats 5
 scoreboard players set shockOrbSp spellStats 3
-scoreboard players set swiftness spellStats 600
+scoreboard players set swiftness spellStats 500
 scoreboard players set swiftnessDuration spellStats 1
-scoreboard players set swiftnessCD spellStats 1
+scoreboard players set swiftnessCD spellStats 2
 scoreboard players set swiftnessSp spellStats 1
 scoreboard players set wardCD spellStats 1
 scoreboard players set wardSp spellStats 3

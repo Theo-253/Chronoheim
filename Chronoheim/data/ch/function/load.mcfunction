@@ -378,8 +378,7 @@ scoreboard players set londonDmgDebuffDuration abilityStats 1
 scoreboard players set londonSpDebuff abilityStats 800
 scoreboard players set londonSpDebuffDuration abilityStats 1
 scoreboard players set londonCD abilityStats 3
-scoreboard players set london abilityStats 80
-scoreboard players set londonLeaderCD abilityStats 2
+scoreboard players set london abilityStats 100
 
 scoreboard players set hydra heroattack 60
 scoreboard players set hydra herohealth 1900

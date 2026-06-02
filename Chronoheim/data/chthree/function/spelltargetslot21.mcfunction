@@ -62,6 +62,11 @@ execute if score spellnumber3 spells matches 2 run function chthree:spellphasep5
 execute if score spellnumber3 spells matches 2 run execute at @n[type=armor_stand,name=slot21] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score spellnumber3 spells matches 2 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Heal on Slot 5!"]
 
+#Miracle
+execute if score spellnumber spells matches 17 run function chthree:cleanseslot21
+execute if score spellnumber spells matches 17 run function chthree:spellphasep5
+execute if score spellnumber spells matches 17 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Miracle on Slot 5!"]
+
 #Magic Missile! Magic Missile! I smite thee with Magic Missile!
 execute if score spellnumber3 spells matches 4 run scoreboard players add magicmissilex4 spells 1
 execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg3 saves = magicMissile spellStats

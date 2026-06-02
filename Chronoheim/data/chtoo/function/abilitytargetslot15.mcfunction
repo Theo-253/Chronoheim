@@ -192,6 +192,7 @@ execute if score abilitynumber2 abilities matches 30 run tellraw @a[tag=game2] [
 #Scythe
 execute if score abilitynumber2 abilities matches 32 if score ward slot15 matches 0 run scoreboard players operation slot15 hp /= scytheDivide abilityStats
 execute if score abilitynumber2 abilities matches 32 if score ward slot15 matches 0 run scoreboard players operation slot15 hp *= scytheMult abilityStats
+execute if score abilitynumber2 abilities matches 32 if score ward slot15 matches 0 if score slot10isatk booleans matches 1 if score durationSlot15 mark < scytheDuration abilityStats run scoreboard players operation durationSlot15 mark = scytheDuration abilityStats
 execute if score abilitynumber2 abilities matches 32 if score ward slot15 matches 0 if score slot10isatk booleans matches 1 run scoreboard players operation marks slot15 += scytheLeader abilityStats
 execute if score abilitynumber2 abilities matches 32 if score ward slot15 matches 1.. run function chtoo:wardslot15
 execute if score abilitynumber2 abilities matches 32 at @e[name=slot15] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.1 100

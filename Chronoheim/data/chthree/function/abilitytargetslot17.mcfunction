@@ -184,6 +184,7 @@ execute if score abilitynumber3 abilities matches 30 run tellraw @a[tag=game3] [
 execute if score abilitynumber3 abilities matches 32 if score ward slot17 matches 0 run scoreboard players operation slot17 hp /= scytheDivide abilityStats
 execute if score abilitynumber3 abilities matches 32 if score ward slot17 matches 0 run scoreboard players operation slot17 hp *= scytheMult abilityStats
 execute if score abilitynumber3 abilities matches 32 if score ward slot17 matches 0 if score slot22isatk booleans matches 1 run scoreboard players operation marks slot17 += scytheLeader abilityStats
+execute if score abilitynumber3 abilities matches 32 if score ward slot17 matches 0 if score slot22isatk booleans matches 1 if score durationSlot17 mark < scytheDuration abilityStats run scoreboard players operation durationSlot17 mark = scytheDuration abilityStats
 execute if score abilitynumber3 abilities matches 32 if score ward slot17 matches 1.. run function chthree:wardslot17
 execute if score abilitynumber3 abilities matches 32 at @e[name=slot17] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score abilitynumber3 abilities matches 32 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Cull the Weak on Slot 1!"]

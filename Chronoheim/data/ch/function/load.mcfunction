@@ -526,7 +526,7 @@ scoreboard players set scytheDivide abilityStats 5
 scoreboard players set scytheCD abilityStats 5
 scoreboard players set scytheMult abilityStats 4
 scoreboard players set scytheLeader abilityStats 60
-scoreboard players set scytheLeaderDuration abilityStats 2
+scoreboard players set scytheDuration abilityStats 2
 
 scoreboard players set jones heroattack 60
 scoreboard players set jones herohealth 2280

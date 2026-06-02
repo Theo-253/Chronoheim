@@ -13,8 +13,8 @@ execute if score spellnumber3 spells matches 26 run tellraw @a[tag=game3] ["",{"
 #Embiggen
 execute if score spellnumber3 spells matches 13 run execute if score buffDurationSlot23 atkmodifiers < embiggenDuration spellStats run scoreboard players operation buffDurationSlot23 atkmodifiers = embiggenDuration spellStats
 execute if score spellnumber3 spells matches 13 run scoreboard players operation attackBuffSlot23 atkmodifiers += embiggenBuff spellStats
-execute if score spellnumber3 spells matches 13 run execute if score durationSlot23 shield < embiggenDuration spellStats run scoreboard players operation durationSlot23 shield = embiggenDuration spellStats 
-execute if score spellnumber3 spells matches 13 run scoreboard players operation shield slot23 += embiggen spellStats
+execute if score spellnumber3 spells matches 13 run scoreboard players operation maxhp slot23 += embiggen spellStats
+execute if score spellnumber3 spells matches 13 run scoreboard players operation slot23 hp += embiggen spellStats
 execute if score spellnumber3 spells matches 13 run function chthree:spellphasep5
 execute if score spellnumber3 spells matches 13 run execute at @n[type=armor_stand,name=slot23] run particle minecraft:egg_crack ~ ~1 ~ 0.9 0.9 0.9 0.1 100
 execute if score spellnumber3 spells matches 13 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Embiggen on Slot 7!"]

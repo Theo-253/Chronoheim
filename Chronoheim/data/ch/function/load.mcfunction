@@ -413,8 +413,8 @@ scoreboard players set grimoireLeaderSpellPoints abilityStats 4
 
 scoreboard players set grangor heroattack 80
 scoreboard players set grangor herohealth 2600
-scoreboard players set grangor selfHealthBonus 400
-scoreboard players set grangor teamHealthBonus 200
+scoreboard players set grangorSelfHealthBonus herohealth 400
+scoreboard players set grangorTeamHealthBonus herohealth 200
 scoreboard players set grangor herospeed 800
 scoreboard players set grangor herolifesteal 2
 scoreboard players set grangorBurn abilityStats 220

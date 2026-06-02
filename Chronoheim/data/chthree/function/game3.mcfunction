@@ -74,10 +74,6 @@ execute if score slot21 hp matches ..0 if score slot22 hp matches ..0 if score s
 execute if score slot21 hp matches ..0 if score slot22 hp matches ..0 if score slot23 hp matches ..0 if score slot24 hp matches ..0 run function chthree:win
 
 #Rapidtick
-execute if score character# slot18 matches 18 if score slot18 hp matches ..1000 run scoreboard players operation atk slot18 = grangorLeaderAtk heroattack
-execute if score character# slot18 matches 18 if score slot18 hp matches 1001.. run scoreboard players operation atk slot18 = grangor heroattack
-execute if score character# slot22 matches 18 if score slot22 hp matches ..1000 run scoreboard players operation atk slot22 = grangorLeaderAtk heroattack
-execute if score character# slot22 matches 18 if score slot22 hp matches 1001.. run scoreboard players operation atk slot22 = grangor heroattack
 execute if score character# slot22 matches 18 if score slot22 hp matches ..1000 run execute at @n[type=armor_stand,name=slot22] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
 execute if score character# slot18 matches 18 if score slot18 hp matches ..1000 run execute at @n[type=armor_stand,name=slot18] run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0.01 10
 execute if score suddenDeath3 deaths matches 20.. run scoreboard players set slot17bleeding booleaneffects 64

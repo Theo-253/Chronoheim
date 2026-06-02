@@ -345,6 +345,7 @@ execute if score character# slot6 matches 2 run scoreboard players operation att
 execute if score character# slot2 matches 14 run scoreboard players operation atk slot2 += hydraLeader heroattack
 execute if score character# slot6 matches 14 run scoreboard players operation atk slot6 += hydraLeader heroattack
 
+
 execute if score character# slot1 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
 execute if score character# slot1 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats
 execute if score character# slot1 matches 21 run scoreboard players operation slot3 hp -= lillithLeechDmg abilityStats
@@ -395,6 +396,13 @@ scoreboard players operation maxhp slot6 = slot6 hp
 scoreboard players operation maxhp slot7 = slot7 hp
 execute if score slot4 hp matches 1.. run scoreboard players operation maxhp slot4 = slot4 hp
 execute if score slot8 hp matches 1.. run scoreboard players operation maxhp slot8 = slot8 hp
+
+execute if score character# slot2 matches 18 run scoreboard players operation maxhp slot2 += grangorSelfHealthBonus herohealth
+execute if score character# slot2 matches 18 run scoreboard players operation maxhp slot1 += grangorTeamHealthBonus herohealth
+execute if score character# slot2 matches 18 run scoreboard players operation maxhp slot3 += grangorTeamHealthBonus herohealth
+execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot6 += grangorSelfHealthBonus herohealth
+execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot5 += grangorTeamHealthBonus herohealth
+execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot7 += grangorTeamHealthBonus herohealth
 
 scoreboard players set game1Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame1 booleans 0

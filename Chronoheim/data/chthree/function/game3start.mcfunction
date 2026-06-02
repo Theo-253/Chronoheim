@@ -397,5 +397,12 @@ scoreboard players operation maxhp slot23 = slot23 hp
 execute if score slot20 hp matches 1.. run scoreboard players operation maxhp slot20 = slot20 hp
 execute if score slot24 hp matches 1.. run scoreboard players operation maxhp slot24 = slot24 hp
 
+execute if score character# slot18 matches 18 run scoreboard players operation maxhp slot18 += grangorSelfHealthBonus herohealth
+execute if score character# slot18 matches 18 run scoreboard players operation maxhp slot17 += grangorTeamHealthBonus herohealth
+execute if score character# slot18 matches 18 run scoreboard players operation maxhp slot19 += grangorTeamHealthBonus herohealth
+execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot22 += grangorSelfHealthBonus herohealth
+execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot21 += grangorTeamHealthBonus herohealth
+execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot23 += grangorTeamHealthBonus herohealth
+
 scoreboard players set game3Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame3 booleans 0

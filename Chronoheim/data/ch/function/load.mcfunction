@@ -390,7 +390,7 @@ scoreboard players set hydraLeader heroattack 20
 scoreboard players set golem heroattack 80
 scoreboard players set golem herohealth 2800
 scoreboard players set golem herospeed 500
-scoreboard players set golem herosplash 2
+scoreboard players set golem herosplash 4
 scoreboard players set golemTaunt abilityStats 2
 scoreboard players set golemCD abilityStats 3
 

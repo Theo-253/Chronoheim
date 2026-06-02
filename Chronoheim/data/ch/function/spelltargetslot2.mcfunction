@@ -27,6 +27,7 @@ execute if score spellnumber spells matches 12 run function ch:spellphasep1
 execute if score spellnumber spells matches 12 run execute at @n[type=armor_stand,name=slot2] run particle minecraft:block_crumble{block_state:"minecraft:ice"} ~ ~1 ~ 0.9 0.9 0.9 0.1 200
 execute if score spellnumber spells matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Embrittle on Slot 2!"]
 #Evil Eye
+execute if score spellnumber spells matches 15 if score ward slot2 matches 0 run execute if score durationSlot2 mark < evilEyeDuration spellStats run scoreboard players operation durationSlot2 mark = evilEyeDuration spellStats
 execute if score spellnumber spells matches 15 if score ward slot2 matches 0 run scoreboard players operation marks slot2 += evilEye spellStats
 execute if score spellnumber spells matches 15 if score ward slot2 matches 1.. run function ch:wardslot2
 execute if score spellnumber spells matches 15 run function ch:spellphasep1

@@ -28,6 +28,7 @@ execute if score spellnumber spells matches 12 run execute at @n[type=armor_stan
 execute if score spellnumber spells matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Embrittle on Slot 1!"]
 
 #Evil Eye
+execute if score spellnumber spells matches 15 if score ward slot1 matches 0 run execute if score durationSlot1 mark < evilEyeDuration spellStats run scoreboard players operation durationSlot1 mark = evilEyeDuration spellStats
 execute if score spellnumber spells matches 15 if score ward slot1 matches 0 run scoreboard players operation marks slot1 += evilEye spellStats
 execute if score spellnumber spells matches 15 if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score spellnumber spells matches 15 run function ch:spellphasep1

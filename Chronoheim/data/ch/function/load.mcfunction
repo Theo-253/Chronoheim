@@ -303,7 +303,7 @@ scoreboard players set subjectLeader abilityStats 100
 scoreboard players set robo heroattack 60
 scoreboard players set robo herohealth 2700
 scoreboard players set robo herospeed 600
-scoreboard players set robo abilityStats 400
+scoreboard players set robo abilityStats 440
 scoreboard players set roboDuration abilityStats 2
 scoreboard players set roboCD abilityStats 4
 scoreboard players set roboLeader abilityStats 140
@@ -559,7 +559,7 @@ scoreboard players set skeleton herohealth 340
 scoreboard players set skeleton herospeed 1000
 
 scoreboard players set skeletonplus heroattack 120
-scoreboard players set skeletonplus herohealth 420
+scoreboard players set skeletonplus herohealth 440
 scoreboard players set skeletonplus herospeed 1200
 
 scoreboard players set demon heroattack 60
@@ -583,7 +583,7 @@ scoreboard players set dragonforgeSp spellStats 4
 scoreboard players set dragonforge spellStats 500
 scoreboard players set dragonforgeDuration spellStats 2
 scoreboard players set embiggenDuration spellStats 1
-scoreboard players set embiggen spellStats 180
+scoreboard players set embiggen spellStats 160
 scoreboard players set embiggenBuff spellStats 80
 scoreboard players set embiggenCD spellStats 3
 scoreboard players set embiggenSp spellStats 3
@@ -636,7 +636,7 @@ scoreboard players set miasmaCD spellStats 5
 scoreboard players set miasma spellStats 80
 scoreboard players set miasmaDuration spellStats 4
 scoreboard players set miasmaSp spellStats 3
-scoreboard players set miracleCD spellStats 3
+scoreboard players set miracleCD spellStats 4
 scoreboard players set miracleSp spellStats 2
 scoreboard players set overclockCD spellStats 5
 scoreboard players set overclockAtk spellStats 200

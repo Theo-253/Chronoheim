@@ -64,9 +64,9 @@ execute if score spellnumber2 spells matches 2 run execute at @n[type=armor_stan
 execute if score spellnumber2 spells matches 2 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Heal on Slot 1!"]
 
 #Miracle
-execute if score spellnumber spells matches 17 run function chtoo:cleanseslot9
-execute if score spellnumber spells matches 17 run scoreboard players set attackIsOngoingGame2 booleans 0
-execute if score spellnumber spells matches 17 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Miracle on Slot 1!"]
+execute if score spellnumber2 spells matches 17 run function chtoo:cleanseslot9
+execute if score spellnumber2 spells matches 17 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber2 spells matches 17 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Miracle on Slot 1!"]
 
 #Magic Missile! Magic Missile! I smite thee with Magic Missile!
 execute if score spellnumber2 spells matches 4 run scoreboard players add magicMissilex3 spells 1

@@ -11,7 +11,7 @@ execute if score slot9 hp > maxhp slot9 run scoreboard players operation slot9 h
 execute if score slot10 hp > maxhp slot10 run scoreboard players operation slot10 hp = maxhp slot10
 execute if score slot11 hp > maxhp slot11 run scoreboard players operation slot11 hp = maxhp slot11
 execute if score slot12 hp > maxhp slot12 run scoreboard players operation slot12 hp = maxhp slot12
-execute if score slot13 hp > maxhp slot13 run scoreboard players operation slot13 hp = maxhp slot12
+execute if score slot13 hp > maxhp slot13 run scoreboard players operation slot13 hp = maxhp slot13
 execute if score slot14 hp > maxhp slot14 run scoreboard players operation slot14 hp = maxhp slot14
 execute if score slot15 hp > maxhp slot15 run scoreboard players operation slot15 hp = maxhp slot15
 execute if score slot16 hp > maxhp slot16 run scoreboard players operation slot16 hp = maxhp slot16

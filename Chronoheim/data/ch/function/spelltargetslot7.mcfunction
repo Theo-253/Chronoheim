@@ -242,6 +242,7 @@ execute if score spellnumber spells matches 27 run tellraw @a[tag=game1] ["",{"s
 #Life Leech Token
 
 execute if score spellnumber spells matches -2 if score slot7bleeding booleaneffects matches 0 run scoreboard players operation slot7 hp += lifeLeechHeal spellStats
+execute if score spellnumber spells matches -2 if score slot7bleeding booleaneffects matches 0 run scoreboard players operation slot7 hp += spellbuffsp2 spells
 execute if score spellnumber spells matches -2 run function ch:spellphasep1
 execute if score spellnumber spells matches -2 run execute at @n[type=armor_stand,name=slot7] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber spells matches -2 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Life Leech to heal Slot 7!"]

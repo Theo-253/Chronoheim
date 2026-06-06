@@ -308,7 +308,7 @@ scoreboard players set roboDuration abilityStats 2
 scoreboard players set roboCD abilityStats 4
 scoreboard players set roboLeader abilityStats 140
 
-scoreboard players set thorn heroattack 220
+scoreboard players set thorn heroattack 260
 scoreboard players set thorn herohealth 1440
 scoreboard players set thorn herospeed 1200
 scoreboard players set thornLeader abilityStats 200
@@ -404,12 +404,12 @@ scoreboard players set blackbeardBurnDuration abilityStats 1
 scoreboard players set blackbeardCD abilityStats 2
 
 scoreboard players set grimoire heroattack 140
-scoreboard players set grimoire herohealth 1760
+scoreboard players set grimoire herohealth 1840
 scoreboard players set grimoire herospeed 1000
 scoreboard players set grimoire abilityStats 240
 scoreboard players set grimoireCD abilityStats 5
-scoreboard players set grimoireSpellPoints abilityStats 2
-scoreboard players set grimoireLeaderSpellPoints abilityStats 4
+scoreboard players set grimoireSpellPoints abilityStats 1
+scoreboard players set grimoireLeaderSpellPoints abilityStats 2
 
 scoreboard players set grangor heroattack 80
 scoreboard players set grangor herohealth 2600
@@ -421,7 +421,7 @@ scoreboard players set grangorBurn abilityStats 220
 scoreboard players set grangorBurnDuration abilityStats 3
 scoreboard players set grangorCD abilityStats 5
 
-scoreboard players set astro heroattack 160
+scoreboard players set astro heroattack 180
 scoreboard players set astro herohealth 1680
 scoreboard players set astro herosplash 4
 scoreboard players set astroLeader herosplash 2
@@ -513,9 +513,9 @@ scoreboard players set domino heroattack 120
 scoreboard players set domino herohealth 1820
 scoreboard players set domino herospeed 1200
 scoreboard players set dominoCD abilityStats 4
-scoreboard players set domino abilityStats 240
+scoreboard players set domino abilityStats 180
 scoreboard players set dominoDuration abilityStats 3
-scoreboard players set dominoPoisonLeader abilityStats 80
+scoreboard players set dominoPoisonLeader abilityStats 100
 scoreboard players set dominoPoison abilityStats 40
 scoreboard players set dominoLeader abilityStats 140
 scoreboard players set dominoLeaderHit heroattack 120

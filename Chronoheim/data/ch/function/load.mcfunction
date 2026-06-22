@@ -525,7 +525,7 @@ scoreboard players set scythe herohealth 1820
 scoreboard players set scythe herospeed 1400
 scoreboard players set scytheDivide abilityStats 4
 scoreboard players set scytheCD abilityStats 5
-scoreboard players set scytheMult abilityStats 1
+scoreboard players set scytheMult abilityStats 3
 scoreboard players set scytheLeader abilityStats 20
 scoreboard players set scytheDuration abilityStats 4
 

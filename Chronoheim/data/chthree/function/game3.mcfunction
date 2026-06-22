@@ -22,14 +22,22 @@ function chthree:spellchecks
 
 
 #invincibility
-execute if score invincibleSlot17 booleaneffects matches 1.. run scoreboard players operation slot17 hp = savehp17 saves
-execute if score invincibleSlot18 booleaneffects matches 1.. run scoreboard players operation slot18 hp = savehp18 saves
-execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot19 hp = savehp19 saves
-execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot20 hp = savehp20 saves
-execute if score invincibleSlot21 booleaneffects matches 1.. run scoreboard players operation slot21 hp = savehp21 saves
-execute if score invincibleSlot22 booleaneffects matches 1.. run scoreboard players operation slot22 hp = savehp22 saves
-execute if score invincibleSlot23 booleaneffects matches 1.. run scoreboard players operation slot23 hp = savehp23 saves
-execute if score invincibleSlot19 booleaneffects matches 1.. run scoreboard players operation slot24 hp = savehp24 saves
+execute if score invincibleSlot17 booleaneffects matches 1.. if score savehp17 saves > slot17 hp run scoreboard players operation slot17 hp = savehp17 saves
+execute if score invincibleSlot18 booleaneffects matches 1.. if score savehp18 saves > slot18 hp run scoreboard players operation slot18 hp = savehp18 saves
+execute if score invincibleSlot19 booleaneffects matches 1.. if score savehp19 saves > slot19 hp run scoreboard players operation slot19 hp = savehp19 saves
+execute if score invincibleSlot20 booleaneffects matches 1.. if score savehp20 saves > slot20 hp run scoreboard players operation slot20 hp = savehp20 saves
+execute if score invincibleSlot21 booleaneffects matches 1.. if score savehp21 saves > slot21 hp run scoreboard players operation slot21 hp = savehp21 saves
+execute if score invincibleSlot22 booleaneffects matches 1.. if score savehp22 saves > slot22 hp run scoreboard players operation slot22 hp = savehp22 saves
+execute if score invincibleSlot23 booleaneffects matches 1.. if score savehp23 saves > slot23 hp run scoreboard players operation slot23 hp = savehp23 saves
+execute if score invincibleSlot24 booleaneffects matches 1.. if score savehp24 saves > slot24 hp run scoreboard players operation slot24 hp = savehp24 saves
+execute if score invincibleSlot17 booleaneffects matches 1.. if score savehp17 saves < slot17 hp run scoreboard players operation savehp17 saves = slot17 hp
+execute if score invincibleSlot18 booleaneffects matches 1.. if score savehp18 saves < slot18 hp run scoreboard players operation savehp18 saves = slot18 hp
+execute if score invincibleSlot19 booleaneffects matches 1.. if score savehp19 saves < slot19 hp run scoreboard players operation savehp19 saves = slot19 hp
+execute if score invincibleSlot20 booleaneffects matches 1.. if score savehp20 saves < slot20 hp run scoreboard players operation savehp20 saves = slot20 hp
+execute if score invincibleSlot21 booleaneffects matches 1.. if score savehp21 saves < slot21 hp run scoreboard players operation savehp21 saves = slot21 hp
+execute if score invincibleSlot22 booleaneffects matches 1.. if score savehp22 saves < slot22 hp run scoreboard players operation savehp22 saves = slot22 hp
+execute if score invincibleSlot23 booleaneffects matches 1.. if score savehp23 saves < slot23 hp run scoreboard players operation savehp23 saves = slot23 hp
+execute if score invincibleSlot24 booleaneffects matches 1.. if score savehp24 saves < slot24 hp run scoreboard players operation savehp24 saves = slot24 hp
 
 #Scoreboard UI
 execute as @p[tag=p5] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:regeneration":{amplifier:{min:0,max:0}}}}} run scoreboard objectives setdisplay sidebar.team.blue Cooldown_Game_3

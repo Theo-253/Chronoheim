@@ -118,7 +118,7 @@ execute if score durationSlot9 speedBuffs matches 0 run scoreboard players set s
 execute if score durationSlot10 speedBuffs matches 0 run scoreboard players set speedBuffSlot10 speedBuffs 0
 execute if score durationSlot11 speedBuffs matches 0 run scoreboard players set speedBuffSlot11 speedBuffs 0
 execute if score durationSlot12 speedBuffs matches 0 run scoreboard players set speedBuffSlot12 speedBuffs 0
-execute if score durationSlot12 speedBuffs matches 0 run scoreboard players set speedBuffSlot23 speedBuffs 0
+execute if score durationSlot13 speedBuffs matches 0 run scoreboard players set speedBuffSlot13 speedBuffs 0
 execute if score durationSlot14 speedBuffs matches 0 run scoreboard players set speedBuffSlot14 speedBuffs 0
 execute if score durationSlot15 speedBuffs matches 0 run scoreboard players set speedBuffSlot15 speedBuffs 0
 execute if score durationSlot16 speedBuffs matches 0 run scoreboard players set speedBuffSlot16 speedBuffs 0

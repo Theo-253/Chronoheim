@@ -5,6 +5,7 @@ execute if score character# slot22 matches 30 if score slot21 hp matches 1.. if 
 execute if score character# slot22 matches 30 if score slot22 hp matches 1.. if score slot22bleeding booleaneffects matches 0 run scoreboard players operation slot22 hp += dominoLeader abilityStats
 execute if score character# slot22 matches 30 if score slot23 hp matches 1.. if score slot23bleeding booleaneffects matches 0 run scoreboard players operation slot23 hp += dominoLeader abilityStats
 execute if score character# slot22 matches 30 if score slot24 hp matches 1.. if score slot24bleeding booleaneffects matches 0 run scoreboard players operation slot24 hp += dominoLeader abilityStats
+execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches 1.. if score slot17 hp matches ..0 run scoreboard players operation maxspeed slot17 = golemite herospeed
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches 1.. if score slot17 hp matches ..0 run scoreboard players operation speed slot17 = golemite herospeed
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches 1.. if score slot17 hp matches ..0 run scoreboard players operation atk slot17 = golemite heroattack
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches 1.. if score slot17 hp matches ..0 run scoreboard players operation durationSlot17 taunt = golemTaunt abilityStats
@@ -19,6 +20,7 @@ execute if score character# slot18 matches 15 run execute if score slot18 hp mat
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches 1.. if score slot17 hp = golemite herohealth if score atk slot17 = golemite heroattack run scoreboard players set character# slot17 -4
 
 
+execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches ..0 run scoreboard players operation maxspeed slot19 = golemite herospeed
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches ..0 run scoreboard players operation speed slot19 = golemite herospeed
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches ..0 run scoreboard players operation atk slot19 = golemite heroattack
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp matches ..0 run scoreboard players operation durationSlot19 taunt = golemTaunt abilityStats
@@ -33,6 +35,7 @@ execute if score character# slot18 matches 15 run execute if score slot18 hp mat
 
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches 1.. if score slot19 hp = golemite herohealth if score atk slot19 = golemite heroattack run scoreboard players set character# slot19 -4
 
+execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches ..0 run scoreboard players operation maxspeed slot20 = golemite herospeed
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches ..0 run scoreboard players operation speed slot20 = golemite herospeed
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches ..0 run scoreboard players operation atk slot20 = golemite heroattack
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp matches ..0 run scoreboard players operation durationSlot20 taunt = golemTaunt abilityStats
@@ -47,6 +50,7 @@ execute if score character# slot18 matches 15 run execute if score slot18 hp mat
 
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 if score slot20 hp = golemite herohealth if score atk slot20 = golemite heroattack run scoreboard players set character# slot20 -4
 
+execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 run scoreboard players operation maxspeed slot18 = golemite herospeed
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 run scoreboard players operation speed slot18 = golemite herospeed
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 run scoreboard players operation atk slot18 = golemite heroattack
 execute if score character# slot18 matches 15 run execute if score slot18 hp matches ..0 run scoreboard players operation durationSlot18 taunt = golemTaunt abilityStats

@@ -19,308 +19,291 @@ execute if score character# slot24 matches 0 run scoreboard players set speed sl
 execute if score character# slot20 matches 0 run scoreboard players set slot20 hp 0
 execute if score character# slot24 matches 0 run scoreboard players set slot24 hp 0
 kill @e[type=item]
-#Jones Leader Bonus
-execute if score character# slot18 matches 31 run scoreboard players operation durationSlot17 speedBuffs = jonesLeaderDuration abilityStats
-execute if score character# slot18 matches 31 run scoreboard players operation speedBuffSlot17 speedBuffs = jonesLeader abilityStats
-execute if score character# slot18 matches 31 run scoreboard players operation durationSlot18 speedBuffs = jonesLeaderDuration abilityStats
-execute if score character# slot18 matches 31 run scoreboard players operation speedBuffSlot18 speedBuffs = jonesLeader abilityStats
-execute if score character# slot18 matches 31 run scoreboard players operation durationSlot19 speedBuffs = jonesLeaderDuration abilityStats
-execute if score character# slot18 matches 31 run scoreboard players operation speedBuffSlot19 speedBuffs = jonesLeader abilityStats
-execute if score character# slot18 matches 31 run scoreboard players operation durationSlot20 speedBuffs = jonesLeaderDuration abilityStats
-execute if score character# slot18 matches 31 run scoreboard players operation speedBuffSlot20 speedBuffs = jonesLeader abilityStats
-execute if score character# slot22 matches 31 run scoreboard players operation durationSlot21 speedBuffs = jonesLeaderDuration abilityStats
-execute if score character# slot22 matches 31 run scoreboard players operation speedBuffSlot21 speedBuffs = jonesLeader abilityStats
-execute if score character# slot22 matches 31 run scoreboard players operation durationSlot22 speedBuffs = jonesLeaderDuration abilityStats
-execute if score character# slot22 matches 31 run scoreboard players operation speedBuffSlot22 speedBuffs = jonesLeader abilityStats
-execute if score character# slot22 matches 31 run scoreboard players operation durationSlot23 speedBuffs = jonesLeaderDuration abilityStats
-execute if score character# slot22 matches 31 run scoreboard players operation speedBuffSlot23 speedBuffs = jonesLeader abilityStats
-execute if score character# slot22 matches 31 run scoreboard players operation durationSlot24 speedBuffs = jonesLeaderDuration abilityStats
-execute if score character# slot22 matches 31 run scoreboard players operation speedBuffSlot24 speedBuffs = jonesLeader abilityStats
-#Slot 1 Speed Reset
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 1 run scoreboard players operation speed slot17 = bones herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 2 run scoreboard players operation speed slot17 = arthur herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 3 run scoreboard players operation speed slot17 = deuce herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 4 run scoreboard players operation speed slot17 = subject herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 5 run scoreboard players operation speed slot17 = robo herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 6 run scoreboard players operation speed slot17 = thorn herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 7 run scoreboard players operation speed slot17 = kong herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 8 run scoreboard players operation speed slot17 = kirin herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 9 run scoreboard players operation speed slot17 = robyn herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 10 run scoreboard players operation speed slot17 = dillo herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 11 run scoreboard players operation speed slot17 = flint herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 12 run scoreboard players operation speed slot17 = ace herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 13 run scoreboard players operation speed slot17 = london herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 14 run scoreboard players operation speed slot17 = hydra herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 15 run scoreboard players operation speed slot17 = golem herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 16 run scoreboard players operation speed slot17 = blackbeard herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 17 run scoreboard players operation speed slot17 = grimoire herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 18 run scoreboard players operation speed slot17 = grangor herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 19 run scoreboard players operation speed slot17 = astro herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 20 run scoreboard players operation speed slot17 = doc herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 21 run scoreboard players operation speed slot17 = lillith herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 22 run scoreboard players operation speed slot17 = gabriel herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 23 run scoreboard players operation speed slot17 = gatsby herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 24 run scoreboard players operation speed slot17 = garabaldi herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 25 run scoreboard players operation speed slot17 = boomer herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 26 run scoreboard players operation speed slot17 = osiris herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 27 run scoreboard players operation speed slot17 = juniper herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 28 run scoreboard players operation speed slot17 = eidolon herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 29 run scoreboard players operation speed slot17 = ripper herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 30 run scoreboard players operation speed slot17 = domino herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 31 run scoreboard players operation speed slot17 = jones herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 32 run scoreboard players operation speed slot17 = scythe herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 33 run scoreboard players operation speed slot17 = sherman herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -1 run scoreboard players operation speed slot17 = skeleton herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -2 run scoreboard players operation speed slot17 = demon herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -3 run scoreboard players operation speed slot17 = healingTotemSpeed spellStats
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -4 run scoreboard players operation speed slot17 = golemite herospeed
-execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -5 run scoreboard players operation speed slot17 = skeletonplus herospeed
 
-scoreboard players operation speed slot17 -= speedDebuffSlot17 speedDebuffs
-scoreboard players operation speed slot17 += speedBuffSlot17 speedBuffs
+#Slot 1 Speed Reset
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 1 run scoreboard players operation maxspeed slot17 = bones herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 2 run scoreboard players operation maxspeed slot17 = arthur herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 3 run scoreboard players operation maxspeed slot17 = deuce herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 4 run scoreboard players operation maxspeed slot17 = subject herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 5 run scoreboard players operation maxspeed slot17 = robo herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 6 run scoreboard players operation maxspeed slot17 = thorn herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 7 run scoreboard players operation maxspeed slot17 = kong herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 8 run scoreboard players operation maxspeed slot17 = kirin herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 9 run scoreboard players operation maxspeed slot17 = robyn herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 10 run scoreboard players operation maxspeed slot17 = dillo herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 11 run scoreboard players operation maxspeed slot17 = flint herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 12 run scoreboard players operation maxspeed slot17 = ace herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 13 run scoreboard players operation maxspeed slot17 = london herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 14 run scoreboard players operation maxspeed slot17 = hydra herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 15 run scoreboard players operation maxspeed slot17 = golem herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 16 run scoreboard players operation maxspeed slot17 = blackbeard herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 17 run scoreboard players operation maxspeed slot17 = grimoire herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 18 run scoreboard players operation maxspeed slot17 = grangor herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 19 run scoreboard players operation maxspeed slot17 = astro herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 20 run scoreboard players operation maxspeed slot17 = doc herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 21 run scoreboard players operation maxspeed slot17 = lillith herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 22 run scoreboard players operation maxspeed slot17 = gabriel herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 23 run scoreboard players operation maxspeed slot17 = gatsby herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 24 run scoreboard players operation maxspeed slot17 = garabaldi herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 25 run scoreboard players operation maxspeed slot17 = boomer herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 26 run scoreboard players operation maxspeed slot17 = osiris herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 27 run scoreboard players operation maxspeed slot17 = juniper herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 28 run scoreboard players operation maxspeed slot17 = eidolon herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 29 run scoreboard players operation maxspeed slot17 = ripper herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 30 run scoreboard players operation maxspeed slot17 = domino herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 31 run scoreboard players operation maxspeed slot17 = jones herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 32 run scoreboard players operation maxspeed slot17 = scythe herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches 33 run scoreboard players operation maxspeed slot17 = sherman herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -1 run scoreboard players operation maxspeed slot17 = skeleton herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -2 run scoreboard players operation maxspeed slot17 = demon herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -3 run scoreboard players operation maxspeed slot17 = healingTotemSpeed spellStats
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -4 run scoreboard players operation maxspeed slot17 = golemite herospeed
+execute if score slot17 hp matches 1.. run execute if score character# slot17 matches -5 run scoreboard players operation maxspeed slot17 = skeletonplus herospeed
+
+
 
 
 #Slot 2 Speed Resets
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 1 run scoreboard players operation speed slot18 = bones herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 2 run scoreboard players operation speed slot18 = arthur herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 3 run scoreboard players operation speed slot18 = deuce herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 4 run scoreboard players operation speed slot18 = subject herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 5 run scoreboard players operation speed slot18 = robo herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 6 run scoreboard players operation speed slot18 = thorn herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 7 run scoreboard players operation speed slot18 = kong herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 8 run scoreboard players operation speed slot18 = kirin herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 9 run scoreboard players operation speed slot18 = robyn herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 10 run scoreboard players operation speed slot18 = dilloLeader herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 11 run scoreboard players operation speed slot18 = flint herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 12 run scoreboard players operation speed slot18 = ace herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 13 run scoreboard players operation speed slot18 = london herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 14 run scoreboard players operation speed slot18 = hydra herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 15 run scoreboard players operation speed slot18 = golem herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 16 run scoreboard players operation speed slot18 = blackbeard herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 17 run scoreboard players operation speed slot18 = grimoire herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 18 run scoreboard players operation speed slot18 = grangor herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 19 run scoreboard players operation speed slot18 = astro herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 20 run scoreboard players operation speed slot18 = doc herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 21 run scoreboard players operation speed slot18 = lillith herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 22 run scoreboard players operation speed slot18 = gabriel herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 23 run scoreboard players operation speed slot18 = gatsby herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 24 run scoreboard players operation speed slot18 = garabaldi herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 25 run scoreboard players operation speed slot18 = boomer herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 26 run scoreboard players operation speed slot18 = osiris herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 27 run scoreboard players operation speed slot18 = juniper herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 28 run scoreboard players operation speed slot18 = eidolon herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 29 run scoreboard players operation speed slot18 = ripper herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 30 run scoreboard players operation speed slot18 = domino herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 31 run scoreboard players operation speed slot18 = jones herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 32 run scoreboard players operation speed slot18 = scythe herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 33 run scoreboard players operation speed slot18 = sherman herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -1 run scoreboard players operation speed slot18 = skeleton herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -2 run scoreboard players operation speed slot18 = demon herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -3 run scoreboard players operation speed slot18 = healingTotemSpeed spellStats
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -4 run scoreboard players operation speed slot18 = golemite herospeed
-execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -5 run scoreboard players operation speed slot18 = skeletonplus herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 1 run scoreboard players operation maxspeed slot18 = bones herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 2 run scoreboard players operation maxspeed slot18 = arthur herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 3 run scoreboard players operation maxspeed slot18 = deuce herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 4 run scoreboard players operation maxspeed slot18 = subject herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 5 run scoreboard players operation maxspeed slot18 = robo herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 6 run scoreboard players operation maxspeed slot18 = thorn herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 7 run scoreboard players operation maxspeed slot18 = kong herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 8 run scoreboard players operation maxspeed slot18 = kirin herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 9 run scoreboard players operation maxspeed slot18 = robyn herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 10 run scoreboard players operation maxspeed slot18 = dilloLeader herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 11 run scoreboard players operation maxspeed slot18 = flint herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 12 run scoreboard players operation maxspeed slot18 = ace herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 13 run scoreboard players operation maxspeed slot18 = london herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 14 run scoreboard players operation maxspeed slot18 = hydra herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 15 run scoreboard players operation maxspeed slot18 = golem herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 16 run scoreboard players operation maxspeed slot18 = blackbeard herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 17 run scoreboard players operation maxspeed slot18 = grimoire herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 18 run scoreboard players operation maxspeed slot18 = grangor herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 19 run scoreboard players operation maxspeed slot18 = astro herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 20 run scoreboard players operation maxspeed slot18 = doc herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 21 run scoreboard players operation maxspeed slot18 = lillith herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 22 run scoreboard players operation maxspeed slot18 = gabriel herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 23 run scoreboard players operation maxspeed slot18 = gatsby herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 24 run scoreboard players operation maxspeed slot18 = garabaldi herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 25 run scoreboard players operation maxspeed slot18 = boomer herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 26 run scoreboard players operation maxspeed slot18 = osiris herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 27 run scoreboard players operation maxspeed slot18 = juniper herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 28 run scoreboard players operation maxspeed slot18 = eidolon herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 29 run scoreboard players operation maxspeed slot18 = ripper herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 30 run scoreboard players operation maxspeed slot18 = domino herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 31 run scoreboard players operation maxspeed slot18 = jones herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 32 run scoreboard players operation maxspeed slot18 = scythe herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches 33 run scoreboard players operation maxspeed slot18 = sherman herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -1 run scoreboard players operation maxspeed slot18 = skeleton herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -2 run scoreboard players operation maxspeed slot18 = demon herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -3 run scoreboard players operation maxspeed slot18 = healingTotemSpeed spellStats
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -4 run scoreboard players operation maxspeed slot18 = golemite herospeed
+execute if score slot18 hp matches 1.. run execute if score character# slot18 matches -5 run scoreboard players operation maxspeed slot18 = skeletonplus herospeed
 
-scoreboard players operation speed slot18 -= speedDebuffSlot18 speedDebuffs
-scoreboard players operation speed slot18 += speedBuffSlot18 speedBuffs
 
 
 #Slot 3 Speed Resets
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 1 run scoreboard players operation speed slot19 = bones herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 2 run scoreboard players operation speed slot19 = arthur herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 3 run scoreboard players operation speed slot19 = deuce herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 4 run scoreboard players operation speed slot19 = subject herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 5 run scoreboard players operation speed slot19 = robo herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 6 run scoreboard players operation speed slot19 = thorn herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 7 run scoreboard players operation speed slot19 = kong herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 8 run scoreboard players operation speed slot19 = kirin herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 9 run scoreboard players operation speed slot19 = robyn herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 10 run scoreboard players operation speed slot19 = dillo herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 11 run scoreboard players operation speed slot19 = flint herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 12 run scoreboard players operation speed slot19 = ace herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 13 run scoreboard players operation speed slot19 = london herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 14 run scoreboard players operation speed slot19 = hydra herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 15 run scoreboard players operation speed slot19 = golem herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 16 run scoreboard players operation speed slot19 = blackbeard herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 17 run scoreboard players operation speed slot19 = grimoire herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 18 run scoreboard players operation speed slot19 = grangor herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 19 run scoreboard players operation speed slot19 = astro herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 20 run scoreboard players operation speed slot19 = doc herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 21 run scoreboard players operation speed slot19 = lillith herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 22 run scoreboard players operation speed slot19 = gabriel herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 23 run scoreboard players operation speed slot19 = gatsby herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 24 run scoreboard players operation speed slot19 = garabaldi herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 25 run scoreboard players operation speed slot19 = boomer herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 26 run scoreboard players operation speed slot19 = osiris herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 27 run scoreboard players operation speed slot19 = juniper herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 28 run scoreboard players operation speed slot19 = eidolon herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 29 run scoreboard players operation speed slot19 = ripper herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 30 run scoreboard players operation speed slot19 = domino herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 31 run scoreboard players operation speed slot19 = jones herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 32 run scoreboard players operation speed slot19 = scythe herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 33 run scoreboard players operation speed slot19 = sherman herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -1 run scoreboard players operation speed slot19 = skeleton herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -2 run scoreboard players operation speed slot19 = demon herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -3 run scoreboard players operation speed slot19 = healingTotemSpeed spellStats
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -4 run scoreboard players operation speed slot19 = golemite herospeed
-execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -5 run scoreboard players operation speed slot19 = skeletonplus herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 1 run scoreboard players operation maxspeed slot19 = bones herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 2 run scoreboard players operation maxspeed slot19 = arthur herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 3 run scoreboard players operation maxspeed slot19 = deuce herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 4 run scoreboard players operation maxspeed slot19 = subject herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 5 run scoreboard players operation maxspeed slot19 = robo herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 6 run scoreboard players operation maxspeed slot19 = thorn herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 7 run scoreboard players operation maxspeed slot19 = kong herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 8 run scoreboard players operation maxspeed slot19 = kirin herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 9 run scoreboard players operation maxspeed slot19 = robyn herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 10 run scoreboard players operation maxspeed slot19 = dillo herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 11 run scoreboard players operation maxspeed slot19 = flint herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 12 run scoreboard players operation maxspeed slot19 = ace herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 13 run scoreboard players operation maxspeed slot19 = london herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 14 run scoreboard players operation maxspeed slot19 = hydra herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 15 run scoreboard players operation maxspeed slot19 = golem herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 16 run scoreboard players operation maxspeed slot19 = blackbeard herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 17 run scoreboard players operation maxspeed slot19 = grimoire herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 18 run scoreboard players operation maxspeed slot19 = grangor herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 19 run scoreboard players operation maxspeed slot19 = astro herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 20 run scoreboard players operation maxspeed slot19 = doc herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 21 run scoreboard players operation maxspeed slot19 = lillith herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 22 run scoreboard players operation maxspeed slot19 = gabriel herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 23 run scoreboard players operation maxspeed slot19 = gatsby herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 24 run scoreboard players operation maxspeed slot19 = garabaldi herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 25 run scoreboard players operation maxspeed slot19 = boomer herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 26 run scoreboard players operation maxspeed slot19 = osiris herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 27 run scoreboard players operation maxspeed slot19 = juniper herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 28 run scoreboard players operation maxspeed slot19 = eidolon herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 29 run scoreboard players operation maxspeed slot19 = ripper herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 30 run scoreboard players operation maxspeed slot19 = domino herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 31 run scoreboard players operation maxspeed slot19 = jones herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 32 run scoreboard players operation maxspeed slot19 = scythe herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches 33 run scoreboard players operation maxspeed slot19 = sherman herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -1 run scoreboard players operation maxspeed slot19 = skeleton herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -2 run scoreboard players operation maxspeed slot19 = demon herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -3 run scoreboard players operation maxspeed slot19 = healingTotemSpeed spellStats
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -4 run scoreboard players operation maxspeed slot19 = golemite herospeed
+execute if score slot19 hp matches 1.. run execute if score character# slot19 matches -5 run scoreboard players operation maxspeed slot19 = skeletonplus herospeed
 
-scoreboard players operation speed slot19 -= speedDebuffSlot19 speedDebuffs
-scoreboard players operation speed slot19 += speedBuffSlot19 speedBuffs
+
 
 
 
 #Slot 5 Speed Resets
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 1 run scoreboard players operation speed slot21 = bones herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 2 run scoreboard players operation speed slot21 = arthur herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 3 run scoreboard players operation speed slot21 = deuce herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 4 run scoreboard players operation speed slot21 = subject herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 5 run scoreboard players operation speed slot21 = robo herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 6 run scoreboard players operation speed slot21 = thorn herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 7 run scoreboard players operation speed slot21 = kong herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 8 run scoreboard players operation speed slot21 = kirin herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 9 run scoreboard players operation speed slot21 = robyn herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 10 run scoreboard players operation speed slot21 = dillo herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 11 run scoreboard players operation speed slot21 = flint herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 12 run scoreboard players operation speed slot21 = ace herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 13 run scoreboard players operation speed slot21 = london herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 14 run scoreboard players operation speed slot21 = hydra herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 15 run scoreboard players operation speed slot21 = golem herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 16 run scoreboard players operation speed slot21 = blackbeard herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 17 run scoreboard players operation speed slot21 = grimoire herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 18 run scoreboard players operation speed slot21 = grangor herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 19 run scoreboard players operation speed slot21 = astro herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 20 run scoreboard players operation speed slot21 = doc herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 21 run scoreboard players operation speed slot21 = lillith herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 22 run scoreboard players operation speed slot21 = gabriel herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 23 run scoreboard players operation speed slot21 = gatsby herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 24 run scoreboard players operation speed slot21 = garabaldi herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 25 run scoreboard players operation speed slot21 = boomer herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 26 run scoreboard players operation speed slot21 = osiris herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 27 run scoreboard players operation speed slot21 = juniper herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 28 run scoreboard players operation speed slot21 = eidolon herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 29 run scoreboard players operation speed slot21 = ripper herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 30 run scoreboard players operation speed slot21 = domino herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 31 run scoreboard players operation speed slot21 = jones herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 32 run scoreboard players operation speed slot21 = scythe herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 33 run scoreboard players operation speed slot21 = sherman herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -1 run scoreboard players operation speed slot21 = skeleton herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -2 run scoreboard players operation speed slot21 = demon herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -3 run scoreboard players operation speed slot21 = healingTotemSpeed spellStats
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -4 run scoreboard players operation speed slot21 = golemite herospeed
-execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -5 run scoreboard players operation speed slot21 = skeletonplus herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 1 run scoreboard players operation maxspeed slot21 = bones herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 2 run scoreboard players operation maxspeed slot21 = arthur herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 3 run scoreboard players operation maxspeed slot21 = deuce herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 4 run scoreboard players operation maxspeed slot21 = subject herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 5 run scoreboard players operation maxspeed slot21 = robo herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 6 run scoreboard players operation maxspeed slot21 = thorn herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 7 run scoreboard players operation maxspeed slot21 = kong herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 8 run scoreboard players operation maxspeed slot21 = kirin herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 9 run scoreboard players operation maxspeed slot21 = robyn herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 10 run scoreboard players operation maxspeed slot21 = dillo herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 11 run scoreboard players operation maxspeed slot21 = flint herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 12 run scoreboard players operation maxspeed slot21 = ace herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 13 run scoreboard players operation maxspeed slot21 = london herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 14 run scoreboard players operation maxspeed slot21 = hydra herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 15 run scoreboard players operation maxspeed slot21 = golem herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 16 run scoreboard players operation maxspeed slot21 = blackbeard herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 17 run scoreboard players operation maxspeed slot21 = grimoire herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 18 run scoreboard players operation maxspeed slot21 = grangor herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 19 run scoreboard players operation maxspeed slot21 = astro herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 20 run scoreboard players operation maxspeed slot21 = doc herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 21 run scoreboard players operation maxspeed slot21 = lillith herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 22 run scoreboard players operation maxspeed slot21 = gabriel herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 23 run scoreboard players operation maxspeed slot21 = gatsby herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 24 run scoreboard players operation maxspeed slot21 = garabaldi herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 25 run scoreboard players operation maxspeed slot21 = boomer herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 26 run scoreboard players operation maxspeed slot21 = osiris herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 27 run scoreboard players operation maxspeed slot21 = juniper herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 28 run scoreboard players operation maxspeed slot21 = eidolon herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 29 run scoreboard players operation maxspeed slot21 = ripper herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 30 run scoreboard players operation maxspeed slot21 = domino herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 31 run scoreboard players operation maxspeed slot21 = jones herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 32 run scoreboard players operation maxspeed slot21 = scythe herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches 33 run scoreboard players operation maxspeed slot21 = sherman herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -1 run scoreboard players operation maxspeed slot21 = skeleton herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -2 run scoreboard players operation maxspeed slot21 = demon herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -3 run scoreboard players operation maxspeed slot21 = healingTotemSpeed spellStats
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -4 run scoreboard players operation maxspeed slot21 = golemite herospeed
+execute if score slot21 hp matches 1.. run execute if score character# slot21 matches -5 run scoreboard players operation maxspeed slot21 = skeletonplus herospeed
 
-scoreboard players operation speed slot21 -= speedDebuffSlot21 speedDebuffs
-scoreboard players operation speed slot21 += speedBuffSlot21 speedBuffs
+
 
 
 
 #Slot 6 Speed Resets
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 1 run scoreboard players operation speed slot22 = bones herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 2 run scoreboard players operation speed slot22 = arthur herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 3 run scoreboard players operation speed slot22 = deuce herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 4 run scoreboard players operation speed slot22 = subject herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 5 run scoreboard players operation speed slot22 = robo herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 6 run scoreboard players operation speed slot22 = thorn herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 7 run scoreboard players operation speed slot22 = kong herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 8 run scoreboard players operation speed slot22 = kirin herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 9 run scoreboard players operation speed slot22 = robyn herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 10 run scoreboard players operation speed slot22 = dilloLeader herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 11 run scoreboard players operation speed slot22 = flint herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 12 run scoreboard players operation speed slot22 = ace herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 13 run scoreboard players operation speed slot22 = london herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 14 run scoreboard players operation speed slot22 = hydra herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 15 run scoreboard players operation speed slot22 = golem herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 16 run scoreboard players operation speed slot22 = blackbeard herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 17 run scoreboard players operation speed slot22 = grimoire herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 18 run scoreboard players operation speed slot22 = grangor herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 19 run scoreboard players operation speed slot22 = astro herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 20 run scoreboard players operation speed slot22 = doc herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 21 run scoreboard players operation speed slot22 = lillith herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 22 run scoreboard players operation speed slot22 = gabriel herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 23 run scoreboard players operation speed slot22 = gatsby herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 24 run scoreboard players operation speed slot22 = garabaldi herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 25 run scoreboard players operation speed slot22 = boomer herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 26 run scoreboard players operation speed slot22 = osiris herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 27 run scoreboard players operation speed slot22 = juniper herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 28 run scoreboard players operation speed slot22 = eidolon herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 29 run scoreboard players operation speed slot22 = ripper herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 30 run scoreboard players operation speed slot22 = domino herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 31 run scoreboard players operation speed slot22 = jones herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 32 run scoreboard players operation speed slot22 = scythe herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 33 run scoreboard players operation speed slot22 = sherman herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -1 run scoreboard players operation speed slot22 = skeleton herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -2 run scoreboard players operation speed slot22 = demon herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -3 run scoreboard players operation speed slot22 = healingTotemSpeed spellStats
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -4 run scoreboard players operation speed slot22 = golemite herospeed
-execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -5 run scoreboard players operation speed slot22 = skeletonplus herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 1 run scoreboard players operation maxspeed slot22 = bones herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 2 run scoreboard players operation maxspeed slot22 = arthur herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 3 run scoreboard players operation maxspeed slot22 = deuce herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 4 run scoreboard players operation maxspeed slot22 = subject herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 5 run scoreboard players operation maxspeed slot22 = robo herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 6 run scoreboard players operation maxspeed slot22 = thorn herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 7 run scoreboard players operation maxspeed slot22 = kong herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 8 run scoreboard players operation maxspeed slot22 = kirin herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 9 run scoreboard players operation maxspeed slot22 = robyn herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 10 run scoreboard players operation maxspeed slot22 = dilloLeader herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 11 run scoreboard players operation maxspeed slot22 = flint herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 12 run scoreboard players operation maxspeed slot22 = ace herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 13 run scoreboard players operation maxspeed slot22 = london herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 14 run scoreboard players operation maxspeed slot22 = hydra herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 15 run scoreboard players operation maxspeed slot22 = golem herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 16 run scoreboard players operation maxspeed slot22 = blackbeard herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 17 run scoreboard players operation maxspeed slot22 = grimoire herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 18 run scoreboard players operation maxspeed slot22 = grangor herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 19 run scoreboard players operation maxspeed slot22 = astro herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 20 run scoreboard players operation maxspeed slot22 = doc herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 21 run scoreboard players operation maxspeed slot22 = lillith herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 22 run scoreboard players operation maxspeed slot22 = gabriel herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 23 run scoreboard players operation maxspeed slot22 = gatsby herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 24 run scoreboard players operation maxspeed slot22 = garabaldi herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 25 run scoreboard players operation maxspeed slot22 = boomer herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 26 run scoreboard players operation maxspeed slot22 = osiris herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 27 run scoreboard players operation maxspeed slot22 = juniper herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 28 run scoreboard players operation maxspeed slot22 = eidolon herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 29 run scoreboard players operation maxspeed slot22 = ripper herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 30 run scoreboard players operation maxspeed slot22 = domino herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 31 run scoreboard players operation maxspeed slot22 = jones herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 32 run scoreboard players operation maxspeed slot22 = scythe herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches 33 run scoreboard players operation maxspeed slot22 = sherman herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -1 run scoreboard players operation maxspeed slot22 = skeleton herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -2 run scoreboard players operation maxspeed slot22 = demon herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -3 run scoreboard players operation maxspeed slot22 = healingTotemSpeed spellStats
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -4 run scoreboard players operation maxspeed slot22 = golemite herospeed
+execute if score slot22 hp matches 1.. run execute if score character# slot22 matches -5 run scoreboard players operation maxspeed slot22 = skeletonplus herospeed
 
-scoreboard players operation speed slot22 -= speedDebuffSlot22 speedDebuffs
-scoreboard players operation speed slot22 += speedBuffSlot22 speedBuffs
+
 
 
 #Slot 7 Speed Resets
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 1 run scoreboard players operation speed slot23 = bones herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 2 run scoreboard players operation speed slot23 = arthur herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 3 run scoreboard players operation speed slot23 = deuce herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 4 run scoreboard players operation speed slot23 = subject herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 5 run scoreboard players operation speed slot23 = robo herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 6 run scoreboard players operation speed slot23 = thorn herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 7 run scoreboard players operation speed slot23 = kong herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 8 run scoreboard players operation speed slot23 = kirin herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 9 run scoreboard players operation speed slot23 = robyn herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 10 run scoreboard players operation speed slot23 = dillo herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 11 run scoreboard players operation speed slot23 = flint herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 12 run scoreboard players operation speed slot23 = ace herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 13 run scoreboard players operation speed slot23 = london herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 14 run scoreboard players operation speed slot23 = hydra herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 15 run scoreboard players operation speed slot23 = golem herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 16 run scoreboard players operation speed slot23 = blackbeard herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 17 run scoreboard players operation speed slot23 = grimoire herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 18 run scoreboard players operation speed slot23 = grangor herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 19 run scoreboard players operation speed slot23 = astro herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 20 run scoreboard players operation speed slot23 = doc herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 21 run scoreboard players operation speed slot23 = lillith herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 22 run scoreboard players operation speed slot23 = gabriel herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 23 run scoreboard players operation speed slot23 = gatsby herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 24 run scoreboard players operation speed slot23 = garabaldi herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 25 run scoreboard players operation speed slot23 = boomer herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 26 run scoreboard players operation speed slot23 = osiris herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 27 run scoreboard players operation speed slot23 = juniper herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 28 run scoreboard players operation speed slot23 = eidolon herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 29 run scoreboard players operation speed slot23 = ripper herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 30 run scoreboard players operation speed slot23 = domino herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 31 run scoreboard players operation speed slot23 = jones herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 32 run scoreboard players operation speed slot23 = scythe herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 33 run scoreboard players operation speed slot23 = sherman herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -1 run scoreboard players operation speed slot23 = skeleton herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -2 run scoreboard players operation speed slot23 = demon herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -3 run scoreboard players operation speed slot23 = healingTotemSpeed spellStats
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -4 run scoreboard players operation speed slot23 = golemite herospeed
-execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -5 run scoreboard players operation speed slot23 = skeletonplus herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 1 run scoreboard players operation maxspeed slot23 = bones herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 2 run scoreboard players operation maxspeed slot23 = arthur herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 3 run scoreboard players operation maxspeed slot23 = deuce herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 4 run scoreboard players operation maxspeed slot23 = subject herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 5 run scoreboard players operation maxspeed slot23 = robo herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 6 run scoreboard players operation maxspeed slot23 = thorn herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 7 run scoreboard players operation maxspeed slot23 = kong herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 8 run scoreboard players operation maxspeed slot23 = kirin herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 9 run scoreboard players operation maxspeed slot23 = robyn herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 10 run scoreboard players operation maxspeed slot23 = dillo herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 11 run scoreboard players operation maxspeed slot23 = flint herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 12 run scoreboard players operation maxspeed slot23 = ace herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 13 run scoreboard players operation maxspeed slot23 = london herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 14 run scoreboard players operation maxspeed slot23 = hydra herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 15 run scoreboard players operation maxspeed slot23 = golem herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 16 run scoreboard players operation maxspeed slot23 = blackbeard herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 17 run scoreboard players operation maxspeed slot23 = grimoire herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 18 run scoreboard players operation maxspeed slot23 = grangor herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 19 run scoreboard players operation maxspeed slot23 = astro herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 20 run scoreboard players operation maxspeed slot23 = doc herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 21 run scoreboard players operation maxspeed slot23 = lillith herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 22 run scoreboard players operation maxspeed slot23 = gabriel herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 23 run scoreboard players operation maxspeed slot23 = gatsby herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 24 run scoreboard players operation maxspeed slot23 = garabaldi herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 25 run scoreboard players operation maxspeed slot23 = boomer herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 26 run scoreboard players operation maxspeed slot23 = osiris herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 27 run scoreboard players operation maxspeed slot23 = juniper herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 28 run scoreboard players operation maxspeed slot23 = eidolon herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 29 run scoreboard players operation maxspeed slot23 = ripper herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 30 run scoreboard players operation maxspeed slot23 = domino herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 31 run scoreboard players operation maxspeed slot23 = jones herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 32 run scoreboard players operation maxspeed slot23 = scythe herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches 33 run scoreboard players operation maxspeed slot23 = sherman herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -1 run scoreboard players operation maxspeed slot23 = skeleton herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -2 run scoreboard players operation maxspeed slot23 = demon herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -3 run scoreboard players operation maxspeed slot23 = healingTotemSpeed spellStats
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -4 run scoreboard players operation maxspeed slot23 = golemite herospeed
+execute if score slot23 hp matches 1.. run execute if score character# slot23 matches -5 run scoreboard players operation maxspeed slot23 = skeletonplus herospeed
 
-scoreboard players operation speed slot23 -= speedDebuffSlot23 speedDebuffs
-scoreboard players operation speed slot23 += speedBuffSlot23 speedBuffs
 
 
 
 #Slot 4 Speed Resets
-scoreboard players set speed slot20 -1000000
-execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -1 run scoreboard players operation speed slot20 = skeleton herospeed
-execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -2 run scoreboard players operation speed slot20 = demon herospeed
-execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -3 run scoreboard players operation speed slot20 = healingtotem herospeed
-execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -4 run scoreboard players operation speed slot20 = golemite herospeed
-scoreboard players operation speed slot20 -= speedDebuffSlot20 speedDebuffs
-scoreboard players operation speed slot20 += speedBuffSlot20 speedBuffs
+scoreboard players set maxspeed slot20 -1000000
+execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -1 run scoreboard players operation maxspeed slot20 = skeleton herospeed
+execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -2 run scoreboard players operation maxspeed slot20 = demon herospeed
+execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -3 run scoreboard players operation maxspeed slot20 = healingtotem herospeed
+execute if score slot20 hp matches 1.. run execute if score character# slot20 matches -4 run scoreboard players operation maxspeed slot20 = golemite herospeed
+
 
 
 #Slot 8 Speed Resets
-scoreboard players set speed slot24 -1000000
-execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -1 run scoreboard players operation speed slot24 = skeleton herospeed
-execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -2 run scoreboard players operation speed slot24 = demon herospeed
-execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -3 run scoreboard players operation speed slot24 = healingtotem herospeed
-execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -4 run scoreboard players operation speed slot24 = golemite herospeed
-scoreboard players operation speed slot24 -= speedDebuffSlot24 speedDebuffs
-scoreboard players operation speed slot24 += speedBuffSlot24 speedBuffs
+scoreboard players set maxspeed slot24 -1000000
+execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -1 run scoreboard players operation maxspeed slot24 = skeleton herospeed
+execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -2 run scoreboard players operation maxspeed slot24 = demon herospeed
+execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -3 run scoreboard players operation maxspeed slot24 = healingtotem herospeed
+execute if score slot24 hp matches 1.. run execute if score character# slot24 matches -4 run scoreboard players operation maxspeed slot24 = golemite herospeed
+
+#Jones Leader Bonus
+execute if score character# slot18 matches 31 run scoreboard players operation maxspeed slot17 += jonesLeader abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation maxspeed slot18 += jonesLeader abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation maxspeed slot18 += jonesLeader abilityStats
+execute if score character# slot18 matches 31 run scoreboard players operation maxspeed slot20 += jonesLeader abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation maxspeed slot21 += jonesLeader abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation maxspeed slot22 += jonesLeader abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation maxspeed slot23 += jonesLeader abilityStats
+execute if score character# slot22 matches 31 run scoreboard players operation maxspeed slot24 += jonesLeader abilityStats
 
 
 #Game Start Leader bonuses
@@ -394,8 +377,18 @@ scoreboard players operation maxhp slot19 = slot19 hp
 scoreboard players operation maxhp slot21 = slot21 hp
 scoreboard players operation maxhp slot22 = slot22 hp
 scoreboard players operation maxhp slot23 = slot23 hp
+
 execute if score slot20 hp matches 1.. run scoreboard players operation maxhp slot20 = slot20 hp
 execute if score slot24 hp matches 1.. run scoreboard players operation maxhp slot24 = slot24 hp
+
+scoreboard players operation speed slot17 = maxspeed slot17
+scoreboard players operation speed slot18 = maxspeed slot18
+scoreboard players operation speed slot19 = maxspeed slot19
+scoreboard players operation speed slot20 = maxspeed slot20
+scoreboard players operation speed slot21 = maxspeed slot21
+scoreboard players operation speed slot22 = maxspeed slot22
+scoreboard players operation speed slot23 = maxspeed slot23
+scoreboard players operation speed slot24 = maxspeed slot24
 
 execute if score character# slot18 matches 18 run scoreboard players operation maxhp slot18 += grangorSelfHealthBonus herohealth
 execute if score character# slot18 matches 18 run scoreboard players operation maxhp slot17 += grangorTeamHealthBonus herohealth
@@ -403,6 +396,8 @@ execute if score character# slot18 matches 18 run scoreboard players operation m
 execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot22 += grangorSelfHealthBonus herohealth
 execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot21 += grangorTeamHealthBonus herohealth
 execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot23 += grangorTeamHealthBonus herohealth
+
+
 
 scoreboard players set game3Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame3 booleans 0

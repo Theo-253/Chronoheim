@@ -15,8 +15,8 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run scoreboard players set abilitynumber abilities 2
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run scoreboard players set abilityusep1 booleans 1
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Holy Light!"]
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run effect clear @a[tag=p1] fire_resistance
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run function ch:abilitygivetargetsp2reverse
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run effect clear @a[tag=p1] fire_resistance
 
 
 #Player 2
@@ -35,5 +35,5 @@ execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} if score slot7bleeding booleaneffects matches 0 if score slot7 hp matches 1.. at @e[name=slot7] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 200
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} if score slot8bleeding booleaneffects matches 0 if score slot8 hp matches 1.. at @e[name=slot8] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 200
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Holy Light!"]
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run effect clear @a[tag=p2] fire_resistance
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run function ch:abilitygivetargetsp1reverse
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:2,max:2}}}}} run effect clear @a[tag=p2] fire_resistance

@@ -4,10 +4,10 @@ item replace entity @p[tag=p3] container.0 with barrier[minecraft:custom_name="S
 item replace entity @p[tag=p4] container.0 with barrier[minecraft:custom_name="Skip Spell Picking",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:water_breathing,duration:1,amplifier:0,show_particles:0b}]}]}]
 execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P3 Spell_Points matches -1 run scoreboard players set Spell_Points_P3 Spell_Points 7
 execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P4 Spell_Points matches -1 run scoreboard players set Spell_Points_P4 Spell_Points 7
-execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P3 Spell_Points matches -2 run scoreboard players set Spell_Points_P3 Spell_Points 9
-execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P3 Spell_Points matches -3 run scoreboard players set Spell_Points_P3 Spell_Points 11
-execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P4 Spell_Points matches -2 run scoreboard players set Spell_Points_P4 Spell_Points 9
-execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P4 Spell_Points matches -3 run scoreboard players set Spell_Points_P4 Spell_Points 11
+execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P3 Spell_Points matches -2 run scoreboard players set Spell_Points_P3 Spell_Points 8
+execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P3 Spell_Points matches -3 run scoreboard players set Spell_Points_P3 Spell_Points 9
+execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P4 Spell_Points matches -2 run scoreboard players set Spell_Points_P4 Spell_Points 8
+execute if score character# slot15 matches 1.. run execute if score character# slot11 matches 1.. run execute if score Spell_Points_P4 Spell_Points matches -3 run scoreboard players set Spell_Points_P4 Spell_Points 9
 
 scoreboard players operation spellpick3 drafts = Spell_Points_P3 Spell_Points
 

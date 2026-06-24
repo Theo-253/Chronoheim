@@ -277,7 +277,7 @@ execute if score slot7 hp matches 1.. run execute if score character# slot7 matc
 
 
 #Slot 4 Speed Resets
-scoreboard players set speed slot4 -1000000
+scoreboard players set maxspeed slot4 -1000000
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -1 run scoreboard players operation maxspeed slot4 = skeleton herospeed
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -2 run scoreboard players operation maxspeed slot4 = demon herospeed
 execute if score slot4 hp matches 1.. run execute if score character# slot4 matches -3 run scoreboard players operation maxspeed slot4 = healingtotem herospeed
@@ -286,7 +286,7 @@ execute if score slot4 hp matches 1.. run execute if score character# slot4 matc
 
 
 #Slot 8 Speed Resets
-scoreboard players set speed slot8 -1000000
+scoreboard players set maxspeed slot8 -1000000
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -1 run scoreboard players operation maxspeed slot8 = skeleton herospeed
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -2 run scoreboard players operation maxspeed slot8 = demon herospeed
 execute if score slot8 hp matches 1.. run execute if score character# slot8 matches -3 run scoreboard players operation maxspeed slot8 = healingtotem herospeed

@@ -57,6 +57,16 @@ execute if score slot1 hp matches 1.. run execute if score character# slot1 matc
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches -3 run scoreboard players operation maxspeed slot1 = healingTotemSpeed spellStats
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches -4 run scoreboard players operation maxspeed slot1 = golemite herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches -5 run scoreboard players operation maxspeed slot1 = skeletonplus herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 34 run scoreboard players operation maxspeed slot1 = frank herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 35 run scoreboard players operation maxspeed slot1 = stein herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 36 run scoreboard players operation maxspeed slot1 = barley herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 37 run scoreboard players operation maxspeed slot1 = boogaloo herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 38 run scoreboard players operation maxspeed slot1 = igor herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 39 run scoreboard players operation maxspeed slot1 = blinky herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 40 run scoreboard players operation maxspeed slot1 = zeebo herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation maxspeed slot1 = fenrir herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 42 run scoreboard players operation maxspeed slot1 = dolly herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 43 run scoreboard players operation maxspeed slot1 = grendel herospeed
 
 
 #Slot 2 Speed Resets
@@ -98,7 +108,16 @@ execute if score slot2 hp matches 1.. run execute if score character# slot2 matc
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches -3 run scoreboard players operation maxspeed slot2 = healingTotemSpeed spellStats
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches -4 run scoreboard players operation maxspeed slot2 = golemite herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches -5 run scoreboard players operation maxspeed slot2 = skeletonplus herospeed
-
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 34 run scoreboard players operation maxspeed slot2 = frank herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 35 run scoreboard players operation maxspeed slot2 = stein herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 36 run scoreboard players operation maxspeed slot2 = barley herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 37 run scoreboard players operation maxspeed slot2 = boogaloo herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 38 run scoreboard players operation maxspeed slot2 = igor herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 39 run scoreboard players operation maxspeed slot2 = blinky herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 40 run scoreboard players operation maxspeed slot2 = zeebo herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation maxspeed slot2 = fenrir herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 42 run scoreboard players operation maxspeed slot2 = dolly herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 43 run scoreboard players operation maxspeed slot2 = grendel herospeed
 
 
 
@@ -141,7 +160,16 @@ execute if score slot3 hp matches 1.. run execute if score character# slot3 matc
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches -3 run scoreboard players operation maxspeed slot3 = healingTotemSpeed spellStats
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches -4 run scoreboard players operation maxspeed slot3 = golemite herospeed
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches -5 run scoreboard players operation maxspeed slot3 = skeletonplus herospeed
-
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 34 run scoreboard players operation maxspeed slot2 = frank herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 35 run scoreboard players operation maxspeed slot2 = stein herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 36 run scoreboard players operation maxspeed slot2 = barley herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 37 run scoreboard players operation maxspeed slot2 = boogaloo herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 38 run scoreboard players operation maxspeed slot2 = igor herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 39 run scoreboard players operation maxspeed slot2 = blinky herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 40 run scoreboard players operation maxspeed slot2 = zeebo herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation maxspeed slot2 = fenrir herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 42 run scoreboard players operation maxspeed slot2 = dolly herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 43 run scoreboard players operation maxspeed slot2 = grendel herospeed
 
 
 
@@ -185,7 +213,16 @@ execute if score slot5 hp matches 1.. run execute if score character# slot5 matc
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches -3 run scoreboard players operation maxspeed slot5 = healingTotemSpeed spellStats
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches -4 run scoreboard players operation maxspeed slot5 = golemite herospeed
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches -5 run scoreboard players operation maxspeed slot5 = skeletonplus herospeed
-
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 34 run scoreboard players operation maxspeed slot5 = frank herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 35 run scoreboard players operation maxspeed slot5 = stein herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 36 run scoreboard players operation maxspeed slot5 = barley herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 37 run scoreboard players operation maxspeed slot5 = boogaloo herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 38 run scoreboard players operation maxspeed slot5 = igor herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 39 run scoreboard players operation maxspeed slot5 = blinky herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 40 run scoreboard players operation maxspeed slot5 = zeebo herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 41 run scoreboard players operation maxspeed slot5 = fenrir herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 42 run scoreboard players operation maxspeed slot5 = dolly herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 43 run scoreboard players operation maxspeed slot5 = grendel herospeed
 
 
 
@@ -229,7 +266,16 @@ execute if score slot6 hp matches 1.. run execute if score character# slot6 matc
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches -3 run scoreboard players operation maxspeed slot6 = healingTotemSpeed spellStats
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches -4 run scoreboard players operation maxspeed slot6 = golemite herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches -5 run scoreboard players operation maxspeed slot6 = skeletonplus herospeed
-
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 34 run scoreboard players operation maxspeed slot5 = frank herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 35 run scoreboard players operation maxspeed slot5 = stein herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 36 run scoreboard players operation maxspeed slot5 = barley herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 37 run scoreboard players operation maxspeed slot5 = boogaloo herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 38 run scoreboard players operation maxspeed slot5 = igor herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 39 run scoreboard players operation maxspeed slot5 = blinky herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 40 run scoreboard players operation maxspeed slot5 = zeebo herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 41 run scoreboard players operation maxspeed slot5 = fenrir herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 42 run scoreboard players operation maxspeed slot5 = dolly herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 43 run scoreboard players operation maxspeed slot5 = grendel herospeed
 
 
 #Slot 7 Speed Resets
@@ -271,7 +317,16 @@ execute if score slot7 hp matches 1.. run execute if score character# slot7 matc
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches -3 run scoreboard players operation maxspeed slot7 = healingTotemSpeed spellStats
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches -4 run scoreboard players operation maxspeed slot7 = golemite herospeed
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches -5 run scoreboard players operation maxspeed slot7 = skeletonplus herospeed
-
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 34 run scoreboard players operation maxspeed slot7 = frank herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 35 run scoreboard players operation maxspeed slot7 = stein herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 36 run scoreboard players operation maxspeed slot7 = barley herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 37 run scoreboard players operation maxspeed slot7 = boogaloo herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 38 run scoreboard players operation maxspeed slot7 = igor herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 39 run scoreboard players operation maxspeed slot7 = blinky herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 40 run scoreboard players operation maxspeed slot7 = zeebo herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 41 run scoreboard players operation maxspeed slot7 = fenrir herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 42 run scoreboard players operation maxspeed slot7 = dolly herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 43 run scoreboard players operation maxspeed slot7 = grendel herospeed
 
 
 

@@ -550,6 +550,91 @@ scoreboard players set shermanDebuff abilityStats 80
 scoreboard players set sherman abilityStats 400
 scoreboard players set shermanSplash abilityStats 2
 
+scoreboard players set frank heroattack 120
+scoreboard players set frank herohealth 2760
+scoreboard players set frankLeader herohealth 3060
+scoreboard players set frankLeaderTaunt abilityStats 1
+scoreboard players set frankSelfDamage abilityStats 220
+scoreboard players set frankCD abilityStats 2
+
+scoreboard players set stein heroattack 140
+scoreboard players set steinLeader heroattack 200
+scoreboard players set stein herohealth 1780
+scoreboard players set stein herospeed 1200
+scoreboard players set stein abilityStats 220
+scoreboard players set steinCD abilityStats 4
+
+scoreboard players set barley heroattack 100
+scoreboard players set barley herohealth 2500
+scoreboard players set barley herospeed 900
+scoreboard players set barleyLeader abilityStats 100
+scoreboard players set barley abilityStats 60
+scoreboard players set barleyDuration abilityStats 2
+scoreboard players set barleyCD abilityStats 5
+
+scoreboard players set boogaloo heroattack 120
+scoreboard players set boogaloo herohealth 2300
+scoreboard players set boogaloo herospeed 1100
+scoreboard players set boogalooDeath abilityStats 120
+scoreboard players set boogaloo abilityStats 360
+scoreboard players set boogalooLeader abilityStats 300
+scoreboard players set boogalooLeaderDuration abilityStats 1
+scoreboard players set boogalooCD abilityStats 5
+
+scoreboard players set igor heroattack 140
+scoreboard players set igor herohealth 1800
+scoreboard players set igor herospeed 1100
+scoreboard players set igor abilityStats 1
+scoreboard players set igorSpBuff abilityStats 500
+scoreboard players set igorDuration abilityStats 1
+scoreboard players set igorCD abilityStats 4
+
+scoreboard players set blinky heroattack 80
+scoreboard players set blinky herosplash 2
+scoreboard players set blinky herohealth 1900
+scoreboard players set blinky herospeed 1400
+scoreboard players set blinky abilityStats 80
+scoreboard players set blinkyLeader abilityStats 40
+scoreboard players set blinkyLeaderDuration abilityStats 1
+scoreboard players set blinkyCD abilityStats 4
+scoreboard players set blinkyCDnerf abilityStats 1
+
+scoreboard players set zeebo heroattack 180
+scoreboard players set zeebo herohealth 1700
+scoreboard players set zeebo herospeed 1300
+scoreboard players set zeebo abilityStats 180
+scoreboard players set zeeboBurn abilityStats 300
+scoreboard players set zeeboDuration abilityStats 2
+scoreboard players set zeeboLeader abilityStats 200
+scoreboard players set zeeboCD abilityStats 4
+
+scoreboard players set fenrir heroattack 80
+scoreboard players set fenrir herohealth 2500
+scoreboard players set fenrir herospeed 1200
+scoreboard players set fenrir abilityStats 160
+scoreboard players set fenrirLeader herosplash 4
+scoreboard players set fenrirCD abilityStats 3
+
+scoreboard players set dolly heroattack 60
+scoreboard players set dolly herohealth 1940
+scoreboard players set dolly herospeed 800
+scoreboard players set dolly abilityStats 2
+scoreboard players set dollyCD abilityStats 6
+scoreboard players set dollyLeader abilityStats 5
+scoreboard players set dollyDuration abilityStats 4
+
+scoreboard players set grendel heroattack 100
+scoreboard players set grendel herohealth 2600
+scoreboard players set grendel herospeed 900
+scoreboard players set grendel abilityStats 120
+scoreboard players set grendelDisease abilityStats 80
+scoreboard players set grendelCD abilityStats 4
+scoreboard players set grendelLeader herolifesteal 4
+scoreboard players set zombie heroattack 100
+scoreboard players set zombie herohealth 700
+scoreboard players set zombie herospeed 700
+scoreboard players set zombieDisease abilityStats 60
+
 scoreboard players set golemite heroattack 80
 scoreboard players set golemite herohealth 300
 scoreboard players set golemite herospeed 700
@@ -695,4 +780,46 @@ scoreboard players set healingRainCD spellStats 3
 scoreboard players set healingRain spellStats 60
 scoreboard players set healingRainDuration spellStats 2
 scoreboard players set healingRainRegen spellStats 40
+scoreboard players set cannibalizeSp spellStats 1
+scoreboard players set cannibalize spellStats 200
+scoreboard players set cannibalizeDuration spellStats 2
+scoreboard players set cannibalizeCD spellStats 3
+scoreboard players set slimedSp spellStats 1
+scoreboard players set slimed spellStats 1
+scoreboard players set slimedCD spellStats 4
+scoreboard players set vampiremarkSp spellStats 4
+scoreboard players set vampiremark spellStats 2
+scoreboard players set vampiremarkCD spellStats 4
+scoreboard players set butcheringSp spellStats 3
+scoreboard players set butchering spellStats 360
+scoreboard players set butcheringThreshold spellStats 3
+scoreboard players set butcheringCD spellStats 2
+scoreboard players set willowispSp spellStats 3
+scoreboard players set willowispCD spellStats 3
+scoreboard players set willowisp spellStats 80
+scoreboard players set willowispDuration spellStats 1
+scoreboard players set spiderwardSp spellStats 4
+scoreboard players set spiderwardCD spellStats 4
+scoreboard players set spiderward spellStats 160
+scoreboard players set spiderwardSpDebuff spellStats 500
+scoreboard players set spiderwardDuration spellStats 2
+scoreboard players set darkpower spellStats 20
+scoreboard players set darkpowerScale spellStats 20
+scoreboard players set darkpowerSp spellStats 3
+scoreboard players set darkpowerCD spellStats 1
+scoreboard players set spelleton heroattack 100
+scoreboard players set spelleton herohealth 400
+scoreboard players set spelleton herospeed 1200
+scoreboard players set raisedeadSp spellStats 3
+scoreboard players set raisedeadCD spellStats 5
+scoreboard players set monkeyspaw spellStats 3
+scoreboard players set monkeyspawSp spellStats 4
+scoreboard players set monkeyspawCD spellStats 5
+scoreboard players set curseofbatsSp spellStats 2
+scoreboard players set curseofbatsCD spellStats 3
+scoreboard players set curseofbatsATKScale spellStats 200
+scoreboard players set curseofbatsHPScale spellStats 200
+scoreboard players set bat heroattack 200
+scoreboard players set bat herohealth 400
+scoreboard players set bat herospeed 2000
 

@@ -893,6 +893,259 @@ execute if score character# slot19 matches 33 run scoreboard players operation S
 execute if score character# slot21 matches 33 run scoreboard players operation Sherman_[5] Health_Game_3 = slot21 hp
 execute if score character# slot22 matches 33 run scoreboard players operation Sherman_[6] Health_Game_3 = slot22 hp
 execute if score character# slot23 matches 33 run scoreboard players operation Sherman_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 34 run scoreboard players operation Frank_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 34 run scoreboard players operation Frank_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 34 run scoreboard players operation Frank_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 34 run scoreboard players operation Frank_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 34 run scoreboard players operation Frank_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 34 run scoreboard players operation Frank_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 34 run scoreboard players operation Frank_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 34 run scoreboard players operation Frank_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 34 run scoreboard players operation Frank_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 34 run scoreboard players operation Frank_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 34 run scoreboard players operation Frank_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 34 run scoreboard players operation Frank_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 34 run scoreboard players operation Frank_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 34 run scoreboard players operation Frank_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 34 run scoreboard players operation Frank_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 34 run scoreboard players operation Frank_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 34 run scoreboard players operation Frank_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 34 run scoreboard players operation Frank_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 35 run scoreboard players operation Stein_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 35 run scoreboard players operation Stein_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 35 run scoreboard players operation Stein_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 35 run scoreboard players operation Stein_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 35 run scoreboard players operation Stein_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 35 run scoreboard players operation Stein_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 35 run scoreboard players operation Stein_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 35 run scoreboard players operation Stein_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 35 run scoreboard players operation Stein_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 35 run scoreboard players operation Stein_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 35 run scoreboard players operation Stein_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 35 run scoreboard players operation Stein_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 35 run scoreboard players operation Stein_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 35 run scoreboard players operation Stein_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 35 run scoreboard players operation Stein_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 35 run scoreboard players operation Stein_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 35 run scoreboard players operation Stein_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 35 run scoreboard players operation Stein_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 36 run scoreboard players operation Barley_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 36 run scoreboard players operation Barley_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 36 run scoreboard players operation Barley_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 36 run scoreboard players operation Barley_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 36 run scoreboard players operation Barley_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 36 run scoreboard players operation Barley_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 36 run scoreboard players operation Barley_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 36 run scoreboard players operation Barley_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 36 run scoreboard players operation Barley_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 36 run scoreboard players operation Barley_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 36 run scoreboard players operation Barley_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 36 run scoreboard players operation Barley_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 36 run scoreboard players operation Barley_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 36 run scoreboard players operation Barley_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 36 run scoreboard players operation Barley_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 36 run scoreboard players operation Barley_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 36 run scoreboard players operation Barley_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 36 run scoreboard players operation Barley_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 37 run scoreboard players operation Boogaloo_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 37 run scoreboard players operation Boogaloo_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 37 run scoreboard players operation Boogaloo_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 37 run scoreboard players operation Boogaloo_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 37 run scoreboard players operation Boogaloo_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 37 run scoreboard players operation Boogaloo_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 37 run scoreboard players operation Boogaloo_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 37 run scoreboard players operation Boogaloo_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 37 run scoreboard players operation Boogaloo_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 37 run scoreboard players operation Boogaloo_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 37 run scoreboard players operation Boogaloo_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 37 run scoreboard players operation Boogaloo_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 37 run scoreboard players operation Boogaloo_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 37 run scoreboard players operation Boogaloo_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 37 run scoreboard players operation Boogaloo_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 37 run scoreboard players operation Boogaloo_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 37 run scoreboard players operation Boogaloo_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 37 run scoreboard players operation Boogaloo_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 38 run scoreboard players operation Igor_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 38 run scoreboard players operation Igor_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 38 run scoreboard players operation Igor_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 38 run scoreboard players operation Igor_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 38 run scoreboard players operation Igor_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 38 run scoreboard players operation Igor_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 38 run scoreboard players operation Igor_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 38 run scoreboard players operation Igor_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 38 run scoreboard players operation Igor_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 38 run scoreboard players operation Igor_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 38 run scoreboard players operation Igor_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 38 run scoreboard players operation Igor_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 38 run scoreboard players operation Igor_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 38 run scoreboard players operation Igor_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 38 run scoreboard players operation Igor_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 38 run scoreboard players operation Igor_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 38 run scoreboard players operation Igor_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 38 run scoreboard players operation Igor_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 39 run scoreboard players operation Blinky_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 39 run scoreboard players operation Blinky_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 39 run scoreboard players operation Blinky_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 39 run scoreboard players operation Blinky_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 39 run scoreboard players operation Blinky_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 39 run scoreboard players operation Blinky_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 39 run scoreboard players operation Blinky_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 39 run scoreboard players operation Blinky_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 39 run scoreboard players operation Blinky_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 39 run scoreboard players operation Blinky_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 39 run scoreboard players operation Blinky_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 39 run scoreboard players operation Blinky_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 39 run scoreboard players operation Blinky_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 39 run scoreboard players operation Blinky_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 39 run scoreboard players operation Blinky_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 39 run scoreboard players operation Blinky_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 39 run scoreboard players operation Blinky_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 39 run scoreboard players operation Blinky_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 40 run scoreboard players operation Zeebo_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 40 run scoreboard players operation Zeebo_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 40 run scoreboard players operation Zeebo_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 40 run scoreboard players operation Zeebo_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 40 run scoreboard players operation Zeebo_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 40 run scoreboard players operation Zeebo_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 40 run scoreboard players operation Zeebo_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 40 run scoreboard players operation Zeebo_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 40 run scoreboard players operation Zeebo_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 40 run scoreboard players operation Zeebo_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 40 run scoreboard players operation Zeebo_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 40 run scoreboard players operation Zeebo_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 40 run scoreboard players operation Zeebo_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 40 run scoreboard players operation Zeebo_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 40 run scoreboard players operation Zeebo_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 40 run scoreboard players operation Zeebo_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 40 run scoreboard players operation Zeebo_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 40 run scoreboard players operation Zeebo_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 41 run scoreboard players operation Fenrir_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 41 run scoreboard players operation Fenrir_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 41 run scoreboard players operation Fenrir_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 41 run scoreboard players operation Fenrir_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 41 run scoreboard players operation Fenrir_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 41 run scoreboard players operation Fenrir_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 41 run scoreboard players operation Fenrir_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 41 run scoreboard players operation Fenrir_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 41 run scoreboard players operation Fenrir_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 41 run scoreboard players operation Fenrir_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 41 run scoreboard players operation Fenrir_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 41 run scoreboard players operation Fenrir_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 41 run scoreboard players operation Fenrir_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 41 run scoreboard players operation Fenrir_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 41 run scoreboard players operation Fenrir_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 41 run scoreboard players operation Fenrir_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 41 run scoreboard players operation Fenrir_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 41 run scoreboard players operation Fenrir_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 42 run scoreboard players operation Dolly_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 42 run scoreboard players operation Dolly_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 42 run scoreboard players operation Dolly_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 42 run scoreboard players operation Dolly_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 42 run scoreboard players operation Dolly_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 42 run scoreboard players operation Dolly_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 42 run scoreboard players operation Dolly_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 42 run scoreboard players operation Dolly_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 42 run scoreboard players operation Dolly_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 42 run scoreboard players operation Dolly_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 42 run scoreboard players operation Dolly_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 42 run scoreboard players operation Dolly_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 42 run scoreboard players operation Dolly_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 42 run scoreboard players operation Dolly_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 42 run scoreboard players operation Dolly_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 42 run scoreboard players operation Dolly_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 42 run scoreboard players operation Dolly_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 42 run scoreboard players operation Dolly_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches 43 run scoreboard players operation Grendel_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches 43 run scoreboard players operation Grendel_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches 43 run scoreboard players operation Grendel_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot21 matches 43 run scoreboard players operation Grendel_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches 43 run scoreboard players operation Grendel_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches 43 run scoreboard players operation Grendel_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot17 matches 43 run scoreboard players operation Grendel_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches 43 run scoreboard players operation Grendel_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches 43 run scoreboard players operation Grendel_[3] Speed_Game_3 = speed slot19
+execute if score character# slot21 matches 43 run scoreboard players operation Grendel_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches 43 run scoreboard players operation Grendel_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches 43 run scoreboard players operation Grendel_[7] Speed_Game_3 = speed slot23
+execute if score character# slot17 matches 43 run scoreboard players operation Grendel_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches 43 run scoreboard players operation Grendel_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches 43 run scoreboard players operation Grendel_[3] Health_Game_3 = slot19 hp
+execute if score character# slot21 matches 43 run scoreboard players operation Grendel_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches 43 run scoreboard players operation Grendel_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches 43 run scoreboard players operation Grendel_[7] Health_Game_3 = slot23 hp
+execute if score character# slot17 matches -6 run scoreboard players operation Skeleton_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches -6 run scoreboard players operation Skeleton_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches -6 run scoreboard players operation Skeleton_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot20 matches -6 run scoreboard players operation Skeleton_[4] Cooldown_Game_3 = cooldown slot20
+execute if score character# slot21 matches -6 run scoreboard players operation Skeleton_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches -6 run scoreboard players operation Skeleton_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches -6 run scoreboard players operation Skeleton_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot24 matches -6 run scoreboard players operation Skeleton_[8] Cooldown_Game_3 = cooldown slot24
+execute if score character# slot17 matches -6 run scoreboard players operation Skeleton_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches -6 run scoreboard players operation Skeleton_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches -6 run scoreboard players operation Skeleton_[3] Speed_Game_3 = speed slot19
+execute if score character# slot20 matches -6 run scoreboard players operation Skeleton_[4] Speed_Game_3 = speed slot20
+execute if score character# slot21 matches -6 run scoreboard players operation Skeleton_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches -6 run scoreboard players operation Skeleton_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches -6 run scoreboard players operation Skeleton_[7] Speed_Game_3 = speed slot23
+execute if score character# slot24 matches -6 run scoreboard players operation Skeleton_[8] Speed_Game_3 = speed slot24
+execute if score character# slot17 matches -6 run scoreboard players operation Skeleton_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches -6 run scoreboard players operation Skeleton_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches -6 run scoreboard players operation Skeleton_[3] Health_Game_3 = slot19 hp
+execute if score character# slot20 matches -6 run scoreboard players operation Skeleton_[4] Health_Game_3 = slot20 hp
+execute if score character# slot21 matches -6 run scoreboard players operation Skeleton_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches -6 run scoreboard players operation Skeleton_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches -6 run scoreboard players operation Skeleton_[7] Health_Game_3 = slot23 hp
+execute if score character# slot24 matches -6 run scoreboard players operation Skeleton_[8] Health_Game_3 = slot24 hp
+execute if score character# slot17 matches -7 run scoreboard players operation Vampire_Bat_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches -7 run scoreboard players operation Vampire_Bat_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches -7 run scoreboard players operation Vampire_Bat_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot20 matches -7 run scoreboard players operation Vampire_Bat_[4] Cooldown_Game_3 = cooldown slot20
+execute if score character# slot21 matches -7 run scoreboard players operation Vampire_Bat_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches -7 run scoreboard players operation Vampire_Bat_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches -7 run scoreboard players operation Vampire_Bat_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot24 matches -7 run scoreboard players operation Vampire_Bat_[8] Cooldown_Game_3 = cooldown slot24
+execute if score character# slot17 matches -7 run scoreboard players operation Vampire_Bat_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches -7 run scoreboard players operation Vampire_Bat_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches -7 run scoreboard players operation Vampire_Bat_[3] Speed_Game_3 = speed slot19
+execute if score character# slot20 matches -7 run scoreboard players operation Vampire_Bat_[4] Speed_Game_3 = speed slot20
+execute if score character# slot21 matches -7 run scoreboard players operation Vampire_Bat_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches -7 run scoreboard players operation Vampire_Bat_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches -7 run scoreboard players operation Vampire_Bat_[7] Speed_Game_3 = speed slot23
+execute if score character# slot24 matches -7 run scoreboard players operation Vampire_Bat_[8] Speed_Game_3 = speed slot24
+execute if score character# slot17 matches -7 run scoreboard players operation Vampire_Bat_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches -7 run scoreboard players operation Vampire_Bat_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches -7 run scoreboard players operation Vampire_Bat_[3] Health_Game_3 = slot19 hp
+execute if score character# slot20 matches -7 run scoreboard players operation Vampire_Bat_[4] Health_Game_3 = slot20 hp
+execute if score character# slot21 matches -7 run scoreboard players operation Vampire_Bat_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches -7 run scoreboard players operation Vampire_Bat_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches -7 run scoreboard players operation Vampire_Bat_[7] Health_Game_3 = slot23 hp
+execute if score character# slot24 matches -7 run scoreboard players operation Vampire_Bat_[8] Health_Game_3 = slot24 hp
+execute if score character# slot17 matches -8 run scoreboard players operation Zombie_[1] Cooldown_Game_3 = cooldown slot17
+execute if score character# slot18 matches -8 run scoreboard players operation Zombie_[2] Cooldown_Game_3 = cooldown slot18
+execute if score character# slot19 matches -8 run scoreboard players operation Zombie_[3] Cooldown_Game_3 = cooldown slot19
+execute if score character# slot20 matches -8 run scoreboard players operation Zombie_[4] Cooldown_Game_3 = cooldown slot20
+execute if score character# slot21 matches -8 run scoreboard players operation Zombie_[5] Cooldown_Game_3 = cooldown slot21
+execute if score character# slot22 matches -8 run scoreboard players operation Zombie_[6] Cooldown_Game_3 = cooldown slot22
+execute if score character# slot23 matches -8 run scoreboard players operation Zombie_[7] Cooldown_Game_3 = cooldown slot23
+execute if score character# slot24 matches -8 run scoreboard players operation Zombie_[8] Cooldown_Game_3 = cooldown slot24
+execute if score character# slot17 matches -8 run scoreboard players operation Zombie_[1] Speed_Game_3 = speed slot17
+execute if score character# slot18 matches -8 run scoreboard players operation Zombie_[2] Speed_Game_3 = speed slot18
+execute if score character# slot19 matches -8 run scoreboard players operation Zombie_[3] Speed_Game_3 = speed slot19
+execute if score character# slot20 matches -8 run scoreboard players operation Zombie_[4] Speed_Game_3 = speed slot20
+execute if score character# slot21 matches -8 run scoreboard players operation Zombie_[5] Speed_Game_3 = speed slot21
+execute if score character# slot22 matches -8 run scoreboard players operation Zombie_[6] Speed_Game_3 = speed slot22
+execute if score character# slot23 matches -8 run scoreboard players operation Zombie_[7] Speed_Game_3 = speed slot23
+execute if score character# slot24 matches -8 run scoreboard players operation Zombie_[8] Speed_Game_3 = speed slot24
+execute if score character# slot17 matches -8 run scoreboard players operation Zombie_[1] Health_Game_3 = slot17 hp
+execute if score character# slot18 matches -8 run scoreboard players operation Zombie_[2] Health_Game_3 = slot18 hp
+execute if score character# slot19 matches -8 run scoreboard players operation Zombie_[3] Health_Game_3 = slot19 hp
+execute if score character# slot20 matches -8 run scoreboard players operation Zombie_[4] Health_Game_3 = slot20 hp
+execute if score character# slot21 matches -8 run scoreboard players operation Zombie_[5] Health_Game_3 = slot21 hp
+execute if score character# slot22 matches -8 run scoreboard players operation Zombie_[6] Health_Game_3 = slot22 hp
+execute if score character# slot23 matches -8 run scoreboard players operation Zombie_[7] Health_Game_3 = slot23 hp
+execute if score character# slot24 matches -8 run scoreboard players operation Zombie_[8] Health_Game_3 = slot24 hp
+
 execute at @p[tag=p5,tag=fireball] run scoreboard players operation Fireball_[1] Spell_Cooldown_Game_3 = fireballCooldown player5spells
 execute at @p[tag=p5,tag=chainlightning] run scoreboard players operation Chain_Lightning_[1] Spell_Cooldown_Game_3 = chainLightningCooldown player5spells
 execute at @p[tag=p5,tag=heal] run scoreboard players operation Heal_[1] Spell_Cooldown_Game_3 = healCooldown player5spells
@@ -959,3 +1212,24 @@ execute at @p[tag=p5,tag=decimate] run scoreboard players operation Decimate_[1]
 execute at @p[tag=p6,tag=decimate] run scoreboard players operation Decimate_[2] Spell_Cooldown_Game_3 = decimateCooldown player6spells
 execute at @p[tag=p5,tag=healingrain] run scoreboard players operation Healing_Rain_[1] Spell_Cooldown_Game_3 = healingRainCooldown player5spells
 execute at @p[tag=p6,tag=healingrain] run scoreboard players operation Healing_Rain_[2] Spell_Cooldown_Game_3 = healingRainCooldown player6spells
+
+execute at @p[tag=p5,tag=cannibalize] run scoreboard players operation Cannibalize_[1] Spell_Cooldown_Game_3 = cannibalizeCooldown player5spells
+execute at @p[tag=p6,tag=cannibalize] run scoreboard players operation Canniablize_[2] Spell_Cooldown_Game_3 = cannibalizeCooldown player6spells
+execute at @p[tag=p5,tag=slimed] run scoreboard players operation Slimed!_[1] Spell_Cooldown_Game_3 = slimedCooldown player5spells
+execute at @p[tag=p6,tag=slimed] run scoreboard players operation Slimed!_[2] Spell_Cooldown_Game_3 = slimedCooldown player6spells
+execute at @p[tag=p5,tag=vampiremark] run scoreboard players operation Vampire_Mark_[1] Spell_Cooldown_Game_3 = vampireMarkCooldown player5spells
+execute at @p[tag=p6,tag=vampiremark] run scoreboard players operation Vampire_Mark_[2] Spell_Cooldown_Game_3 = vampireMarkCooldown player6spells
+execute at @p[tag=p5,tag=butchering] run scoreboard players operation Butchering_[1] Spell_Cooldown_Game_3 = butcheringCooldown player5spells
+execute at @p[tag=p6,tag=butchering] run scoreboard players operation Butchering_[2] Spell_Cooldown_Game_3 = butcheringCooldown player6spells
+execute at @p[tag=p5,tag=willowisp] run scoreboard players operation Will_O'_Wisp_[1] Spell_Cooldown_Game_3 = willOWispCooldown player5spells
+execute at @p[tag=p6,tag=willowisp] run scoreboard players operation Will_O'_Wisp_[2] Spell_Cooldown_Game_3 = willOWispCooldown player6spells
+execute at @p[tag=p5,tag=spiderward] run scoreboard players operation Spider_Ward_[1] Spell_Cooldown_Game_3 = spiderWardCooldown player5spells
+execute at @p[tag=p6,tag=spiderward] run scoreboard players operation Spider_Ward_[2] Spell_Cooldown_Game_3 = spiderWardCooldown player6spells
+execute at @p[tag=p5,tag=darkritual] run scoreboard players operation Dark_Ritual_[1] Spell_Cooldown_Game_3 = darkRitualCooldown player5spells
+execute at @p[tag=p6,tag=darkritual] run scoreboard players operation Dark_Ritual_[2] Spell_Cooldown_Game_3 = darkRitualCooldown player6spells
+execute at @p[tag=p5,tag=raisedead] run scoreboard players operation Raise_Dead_[1] Spell_Cooldown_Game_3 = raiseDeadCooldown player5spells
+execute at @p[tag=p6,tag=raisedead] run scoreboard players operation Raise_Dead_[2] Spell_Cooldown_Game_3 = raiseDeadCooldown player6spells
+execute at @p[tag=p5,tag=curseofbats] run scoreboard players operation Curse_Of_Bats_[1] Spell_Cooldown_Game_3 = curseOfBatsCooldown player5spells
+execute at @p[tag=p6,tag=curseofbats] run scoreboard players operation Curse_Of_Bats_[2] Spell_Cooldown_Game_3 = curseOfBatsCooldown player6spells
+execute at @p[tag=p5,tag=monkeyspaw] run scoreboard players operation Monkey's_Paw_[1] Spell_Cooldown_Game_3 = monkeysPawCooldown player5spells
+execute at @p[tag=p6,tag=monkeyspaw] run scoreboard players operation Monkey's_Paw_[2] Spell_Cooldown_Game_3 = monkeysPawCooldown player6spells

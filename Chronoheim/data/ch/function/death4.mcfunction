@@ -19,3 +19,6 @@ scoreboard players set durationSlot4 speedBuffs 0
 execute unless score character# slot4 matches 0 if score slot4 hp matches ..0 run scoreboard players set speed slot4 -1000000
 execute unless score character# slot4 matches 0 run tellraw @a[tag=game1] ["Slot 4 has died"]
 execute at @e[name=slot4,type=armor_stand] run kill @e[name=!slot4,type=!player,distance=..4]
+scoreboard players set curse slot4 0
+scoreboard players set curseStacks slot4 0
+scoreboard players set curseDuration slot4 0

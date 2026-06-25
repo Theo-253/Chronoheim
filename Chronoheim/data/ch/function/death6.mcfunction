@@ -93,3 +93,6 @@ scoreboard players set durationSlot6 regen 0
 scoreboard players set durationSlot6 speedBuffs 0
 tellraw @a[tag=game1] ["Slot 6 has died"]
 execute at @e[name=slot6,type=armor_stand] run kill @e[name=!slot6,type=!player,distance=..4]
+scoreboard players set curse slot6 0
+scoreboard players set curseStacks slot6 0
+scoreboard players set curseDuration slot6 0

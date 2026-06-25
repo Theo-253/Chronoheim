@@ -19,3 +19,6 @@ scoreboard players set durationSlot24 regen 0
 scoreboard players set durationSlot24 speedBuffs 0
 execute unless score character# slot24 matches 0 run tellraw @a[tag=game3] ["Slot 8 has died"]
 execute at @e[name=slot24,type=armor_stand] run kill @e[name=!slot24,type=!player,distance=..4]
+scoreboard players set curse slot24 0
+scoreboard players set curseStacks slot24 0
+scoreboard players set curseDuration slot24 0

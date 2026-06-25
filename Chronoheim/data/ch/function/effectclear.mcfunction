@@ -363,3 +363,28 @@ execute if score alivep5 deaths matches 1 if score alivep4 deaths matches 1 run 
 execute if score alivep5 deaths matches 1 if score alivep4 deaths matches 1 run scoreboard players set durationSlot24-18 fear 0
 execute if score alivep5 deaths matches 1 if score alivep4 deaths matches 1 run scoreboard players set durationSlot24-19 fear 0
 execute if score alivep5 deaths matches 1 if score alivep4 deaths matches 1 run scoreboard players set durationSlot24-20 fear 0
+
+execute if score curseDuration slot1 matches 0 run scoreboard players set curse slot1 0
+execute if score curseDuration slot2 matches 0 run scoreboard players set curse slot2 0
+execute if score curseDuration slot3 matches 0 run scoreboard players set curse slot3 0
+execute if score curseDuration slot4 matches 0 run scoreboard players set curse slot4 0
+execute if score curseDuration slot5 matches 0 run scoreboard players set curse slot5 0
+execute if score curseDuration slot6 matches 0 run scoreboard players set curse slot6 0
+execute if score curseDuration slot7 matches 0 run scoreboard players set curse slot7 0
+execute if score curseDuration slot8 matches 0 run scoreboard players set curse slot8 0
+execute if score curseDuration slot9 matches 0 run scoreboard players set curse slot9 0
+execute if score curseDuration slot10 matches 0 run scoreboard players set curse slot10 0
+execute if score curseDuration slot11 matches 0 run scoreboard players set curse slot11 0
+execute if score curseDuration slot12 matches 0 run scoreboard players set curse slot12 0
+execute if score curseDuration slot13 matches 0 run scoreboard players set curse slot13 0
+execute if score curseDuration slot14 matches 0 run scoreboard players set curse slot14 0
+execute if score curseDuration slot15 matches 0 run scoreboard players set curse slot15 0
+execute if score curseDuration slot16 matches 0 run scoreboard players set curse slot16 0
+execute if score curseDuration slot17 matches 0 run scoreboard players set curse slot17 0
+execute if score curseDuration slot18 matches 0 run scoreboard players set curse slot18 0
+execute if score curseDuration slot19 matches 0 run scoreboard players set curse slot19 0
+execute if score curseDuration slot20 matches 0 run scoreboard players set curse slot20 0
+execute if score curseDuration slot21 matches 0 run scoreboard players set curse slot21 0
+execute if score curseDuration slot22 matches 0 run scoreboard players set curse slot22 0
+execute if score curseDuration slot23 matches 0 run scoreboard players set curse slot23 0
+execute if score curseDuration slot24 matches 0 run scoreboard players set curse slot24 0

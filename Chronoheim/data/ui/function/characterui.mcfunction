@@ -296,3 +296,105 @@ execute if score character# slot3 matches 33 run item replace block 203 1 218 co
 execute if score character# slot5 matches 33 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.5
 execute if score character# slot6 matches 33 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.5
 execute if score character# slot7 matches 33 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.5
+
+#Monster Mayhem
+execute if score character# slot1 matches 34 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.6
+execute if score character# slot2 matches 34 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.6
+execute if score character# slot3 matches 34 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.6
+execute if score character# slot5 matches 34 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.6
+execute if score character# slot6 matches 34 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.6
+execute if score character# slot7 matches 34 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.6
+
+execute if score character# slot1 matches 35 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.7
+execute if score character# slot2 matches 35 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.7
+execute if score character# slot3 matches 35 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.7
+execute if score character# slot5 matches 35 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.7
+execute if score character# slot6 matches 35 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.7
+execute if score character# slot7 matches 35 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.7
+
+execute if score character# slot1 matches 36 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.8
+execute if score character# slot2 matches 36 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.8
+execute if score character# slot3 matches 36 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.8
+execute if score character# slot5 matches 36 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.8
+execute if score character# slot6 matches 36 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.8
+execute if score character# slot7 matches 36 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.8
+
+execute if score character# slot1 matches 37 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.9
+execute if score character# slot2 matches 37 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.9
+execute if score character# slot3 matches 37 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.9
+execute if score character# slot5 matches 37 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.9
+execute if score character# slot6 matches 37 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.9
+execute if score character# slot7 matches 37 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.9
+
+execute if score character# slot1 matches 38 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.10
+execute if score character# slot2 matches 38 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.10
+execute if score character# slot3 matches 38 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.10
+execute if score character# slot5 matches 38 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.10
+execute if score character# slot6 matches 38 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.10
+execute if score character# slot7 matches 38 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.10
+
+execute if score character# slot1 matches 39 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.11
+execute if score character# slot2 matches 39 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.11
+execute if score character# slot3 matches 39 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.11
+execute if score character# slot5 matches 39 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.11
+execute if score character# slot6 matches 39 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.11
+execute if score character# slot7 matches 39 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.11
+
+execute if score character# slot1 matches 40 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.12
+execute if score character# slot2 matches 40 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.12
+execute if score character# slot3 matches 40 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.12
+execute if score character# slot5 matches 40 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.12
+execute if score character# slot6 matches 40 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.12
+execute if score character# slot7 matches 40 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.12
+
+execute if score character# slot1 matches 41 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.13
+execute if score character# slot2 matches 41 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.13
+execute if score character# slot3 matches 41 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.13
+execute if score character# slot5 matches 41 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.13
+execute if score character# slot6 matches 41 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.13
+execute if score character# slot7 matches 41 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.13
+
+execute if score character# slot1 matches 42 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.14
+execute if score character# slot2 matches 42 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.14
+execute if score character# slot3 matches 42 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.14
+execute if score character# slot5 matches 42 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.14
+execute if score character# slot6 matches 42 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.14
+execute if score character# slot7 matches 42 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.14
+
+execute if score character# slot1 matches 43 run item replace block 203 1 208 container.13 from block -125 -60 -24 container.15
+execute if score character# slot2 matches 43 run item replace block 204 1 213 container.13 from block -125 -60 -24 container.15
+execute if score character# slot3 matches 43 run item replace block 203 1 218 container.13 from block -125 -60 -24 container.15
+execute if score character# slot5 matches 43 run item replace block 196 1 222 container.13 from block -125 -60 -24 container.15
+execute if score character# slot6 matches 43 run item replace block 195 1 217 container.13 from block -125 -60 -24 container.15
+execute if score character# slot7 matches 43 run item replace block 196 1 212 container.13 from block -125 -60 -24 container.15
+
+execute if score character# slot1 matches -6 run item replace block 203 1 208 container.13 from block -125 -60 -25 container.5
+execute if score character# slot2 matches -6 run item replace block 204 1 213 container.13 from block -125 -60 -25 container.5
+execute if score character# slot3 matches -6 run item replace block 203 1 218 container.13 from block -125 -60 -25 container.5
+execute if score character# slot4 matches -6 run item replace block 203 1 223 container.13 from block -125 -60 -25 container.5
+execute if score character# slot5 matches -6 run item replace block 196 1 222 container.13 from block -125 -60 -25 container.5
+execute if score character# slot6 matches -6 run item replace block 195 1 217 container.13 from block -125 -60 -25 container.5
+execute if score character# slot7 matches -6 run item replace block 196 1 212 container.13 from block -125 -60 -25 container.5
+execute if score character# slot8 matches -6 run item replace block 196 1 207 container.13 from block -125 -60 -25 container.5
+
+
+execute if score character# slot1 matches -7 run item replace block 203 1 208 container.13 from block -125 -60 -25 container.6
+execute if score character# slot2 matches -7 run item replace block 204 1 213 container.13 from block -125 -60 -25 container.6
+execute if score character# slot3 matches -7 run item replace block 203 1 218 container.13 from block -125 -60 -25 container.6
+execute if score character# slot4 matches -7 run item replace block 203 1 223 container.13 from block -125 -60 -25 container.6
+execute if score character# slot5 matches -7 run item replace block 196 1 222 container.13 from block -125 -60 -25 container.6
+execute if score character# slot6 matches -7 run item replace block 195 1 217 container.13 from block -125 -60 -25 container.6
+execute if score character# slot7 matches -7 run item replace block 196 1 212 container.13 from block -125 -60 -25 container.6
+execute if score character# slot8 matches -7 run item replace block 196 1 207 container.13 from block -125 -60 -25 container.6
+
+
+execute if score character# slot1 matches -8 run item replace block 203 1 208 container.13 from block -125 -60 -25 container.7
+execute if score character# slot2 matches -8 run item replace block 204 1 213 container.13 from block -125 -60 -25 container.7
+execute if score character# slot3 matches -8 run item replace block 203 1 218 container.13 from block -125 -60 -25 container.7
+execute if score character# slot4 matches -8 run item replace block 203 1 223 container.13 from block -125 -60 -25 container.7
+execute if score character# slot5 matches -8 run item replace block 196 1 222 container.13 from block -125 -60 -25 container.7
+execute if score character# slot6 matches -8 run item replace block 195 1 217 container.13 from block -125 -60 -25 container.7
+execute if score character# slot7 matches -8 run item replace block 196 1 212 container.13 from block -125 -60 -25 container.7
+execute if score character# slot8 matches -8 run item replace block 196 1 207 container.13 from block -125 -60 -25 container.7
+
+

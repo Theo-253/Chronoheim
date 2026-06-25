@@ -407,6 +407,119 @@ execute if score Spell_Points_P5 Spell_Points >= healingRainSp spellStats run ex
 execute if items entity @p[tag=p5,tag=!healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
 execute if items entity @p[tag=p5,tag=!healingrainO] container.* minecraft:ghast_tear[minecraft:custom_name={"text":"Healing Rain","bold":true,"color":"blue","italic":false}] run clear @a[tag=p5]
 
+
+#Cannibalize Select P5
+execute if score Spell_Points_P5 Spell_Points >= cannibalizeSp spellStats run execute if items entity @p[tag=p5,tag=cannibalizeO] container.* rotten_flesh[minecraft:custom_name={"text":"Cannibalize","bold":true,"color":"dark_green","italic":false}] run tag @p[tag=p5] add cannibalize
+execute if score Spell_Points_P5 Spell_Points >= cannibalizeSp spellStats run execute if items entity @p[tag=p5,tag=cannibalizeO] container.* rotten_flesh[minecraft:custom_name={"text":"Cannibalize","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Cannibalize."]
+execute if score Spell_Points_P5 Spell_Points < cannibalizeSp spellStats run execute if items entity @p[tag=p5,tag=cannibalizeO] container.* rotten_flesh[minecraft:custom_name={"text":"Cannibalize","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < cannibalizeSp spellStats run execute if items entity @p[tag=p5,tag=cannibalizeO] container.* rotten_flesh[minecraft:custom_name={"text":"Cannibalize","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= cannibalizeSp spellStats run execute if items entity @p[tag=p5,tag=cannibalizeO] container.* rotten_flesh[minecraft:custom_name={"text":"Cannibalize","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= cannibalizeSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= cannibalizeSp spellStats run execute if items entity @p[tag=p5,tag=cannibalizeO] container.* rotten_flesh[minecraft:custom_name={"text":"Cannibalize","bold":true,"color":"dark_green","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!cannibalizeO] container.* rotten_flesh[minecraft:custom_name={"text":"Cannibalize","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!cannibalizeO] container.* rotten_flesh[minecraft:custom_name={"text":"Cannibalize","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p5]
+
+#Slimed! Select P5
+execute if score Spell_Points_P5 Spell_Points >= slimedSp spellStats run execute if items entity @p[tag=p5,tag=slimedO] container.* slime_ball[minecraft:custom_name={"text":"Slimed!","bold":true,"color":"dark_green","italic":false}] run tag @p[tag=p5] add slimed
+execute if score Spell_Points_P5 Spell_Points >= slimedSp spellStats run execute if items entity @p[tag=p5,tag=slimedO] container.* slime_ball[minecraft:custom_name={"text":"Slimed!","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Slimed!"]
+execute if score Spell_Points_P5 Spell_Points < slimedSp spellStats run execute if items entity @p[tag=p5,tag=slimedO] container.* slime_ball[minecraft:custom_name={"text":"Slimed!","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < slimedSp spellStats run execute if items entity @p[tag=p5,tag=slimedO] container.* slime_ball[minecraft:custom_name={"text":"Slimed!","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= slimedSp spellStats run execute if items entity @p[tag=p5,tag=slimedO] container.* slime_ball[minecraft:custom_name={"text":"Slimed!","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= slimedSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= slimedSp spellStats run execute if items entity @p[tag=p5,tag=slimedO] container.* slime_ball[minecraft:custom_name={"text":"Slimed!","bold":true,"color":"dark_green","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!slimedO] container.* slime_ball[minecraft:custom_name={"text":"Slimed!","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!slimedO] container.* slime_ball[minecraft:custom_name={"text":"Slimed!","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p5]
+
+#Vampire Mark Select P5
+execute if score Spell_Points_P5 Spell_Points >= vampiremarkSp spellStats run execute if items entity @p[tag=p5,tag=vampiremarkO] container.* red_dye[minecraft:custom_name={"text":"Vampire Mark","bold":true,"color":"dark_green","italic":false}] run tag @p[tag=p5] add vampiremark
+execute if score Spell_Points_P5 Spell_Points >= vampiremarkSp spellStats run execute if items entity @p[tag=p5,tag=vampiremarkO] container.* red_dye[minecraft:custom_name={"text":"Vampire Mark","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Vampire Mark."]
+execute if score Spell_Points_P5 Spell_Points < vampiremarkSp spellStats run execute if items entity @p[tag=p5,tag=vampiremarkO] container.* red_dye[minecraft:custom_name={"text":"Vampire Mark","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < vampiremarkSp spellStats run execute if items entity @p[tag=p5,tag=vampiremarkO] container.* red_dye[minecraft:custom_name={"text":"Vampire Mark","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= vampiremarkSp spellStats run execute if items entity @p[tag=p5,tag=vampiremarkO] container.* red_dye[minecraft:custom_name={"text":"Vampire Mark","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= vampiremarkSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= vampiremarkSp spellStats run execute if items entity @p[tag=p5,tag=vampiremarkO] container.* red_dye[minecraft:custom_name={"text":"Vampire Mark","bold":true,"color":"dark_green","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+
+
+execute if items entity @p[tag=p5,tag=!vampiremarkO] container.* red_dye[minecraft:custom_name={"text":"Vampire Mark","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!vampiremarkO] container.* red_dye[minecraft:custom_name={"text":"Vampire Mark","bold":true,"color":"dark_green","italic":false}] run clear @a[tag=p5]
+
+#Butchering Select P5
+execute if score Spell_Points_P5 Spell_Points >= butcheringSp spellStats run execute if items entity @p[tag=p5,tag=butcheringO] container.* iron_axe[minecraft:custom_name={"text":"Butchering","bold":true,"color":"blue","italic":false}] run tag @p[tag=p5] add butchering
+execute if score Spell_Points_P5 Spell_Points >= butcheringSp spellStats run execute if items entity @p[tag=p5,tag=butcheringO] container.* iron_axe[minecraft:custom_name={"text":"Butchering","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Butchering."]
+execute if score Spell_Points_P5 Spell_Points < butcheringSp spellStats run execute if items entity @p[tag=p5,tag=butcheringO] container.* iron_axe[minecraft:custom_name={"text":"Butchering","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < butcheringSp spellStats run execute if items entity @p[tag=p5,tag=butcheringO] container.* iron_axe[minecraft:custom_name={"text":"Butchering","bold":true,"color":"blue","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= butcheringSp spellStats run execute if items entity @p[tag=p5,tag=butcheringO] container.* iron_axe[minecraft:custom_name={"text":"Butchering","bold":true,"color":"blue","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= butcheringSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= butcheringSp spellStats run execute if items entity @p[tag=p5,tag=butcheringO] container.* iron_axe[minecraft:custom_name={"text":"Butchering","bold":true,"color":"blue","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!butcheringO] container.* iron_axe[minecraft:custom_name={"text":"Butchering","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!butcheringO] container.* iron_axe[minecraft:custom_name={"text":"Butchering","bold":true,"color":"blue","italic":false}] run clear @a[tag=p5]
+
+#Will O' Wisp Select P5
+execute if score Spell_Points_P5 Spell_Points >= willowispSp spellStats run execute if items entity @p[tag=p5,tag=willowispO] container.* weathered_copper_lantern[minecraft:custom_name={"text":"Will O' Wisp","bold":true,"color":"blue","italic":false}] run tag @p[tag=p5] add willowisp
+execute if score Spell_Points_P5 Spell_Points >= willowispSp spellStats run execute if items entity @p[tag=p5,tag=willowispO] container.* weathered_copper_lantern[minecraft:custom_name={"text":"Will O' Wisp","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Will O' Wisp."]
+execute if score Spell_Points_P5 Spell_Points < willowispSp spellStats run execute if items entity @p[tag=p5,tag=willowispO] container.* weathered_copper_lantern[minecraft:custom_name={"text":"Will O' Wisp","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < willowispSp spellStats run execute if items entity @p[tag=p5,tag=willowispO] container.* weathered_copper_lantern[minecraft:custom_name={"text":"Will O' Wisp","bold":true,"color":"blue","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= willowispSp spellStats run execute if items entity @p[tag=p5,tag=willowispO] container.* weathered_copper_lantern[minecraft:custom_name={"text":"Will O' Wisp","bold":true,"color":"blue","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= willowispSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= willowispSp spellStats run execute if items entity @p[tag=p5,tag=willowispO] container.* weathered_copper_lantern[minecraft:custom_name={"text":"Will O' Wisp","bold":true,"color":"blue","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!willowispO] container.* weathered_copper_lantern[minecraft:custom_name={"text":"Will O' Wisp","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!willowispO] container.* weathered_copper_lantern[minecraft:custom_name={"text":"Will O' Wisp","bold":true,"color":"blue","italic":false}] run clear @a[tag=p5]
+
+#Spider Ward Select P5
+execute if score Spell_Points_P5 Spell_Points >= spiderwardSp spellStats run execute if items entity @p[tag=p5,tag=spiderwardO] container.* cobweb[minecraft:custom_name={"text":"Spider Ward","bold":true,"color":"blue","italic":false}] run tag @p[tag=p5] add spiderward
+execute if score Spell_Points_P5 Spell_Points >= spiderwardSp spellStats run execute if items entity @p[tag=p5,tag=spiderwardO] container.* cobweb[minecraft:custom_name={"text":"Spider Ward","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Spider Ward."]
+execute if score Spell_Points_P5 Spell_Points < spiderwardSp spellStats run execute if items entity @p[tag=p5,tag=spiderwardO] container.* cobweb[minecraft:custom_name={"text":"Spider Ward","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < spiderwardSp spellStats run execute if items entity @p[tag=p5,tag=spiderwardO] container.* cobweb[minecraft:custom_name={"text":"Spider Ward","bold":true,"color":"blue","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= spiderwardSp spellStats run execute if items entity @p[tag=p5,tag=spiderwardO] container.* cobweb[minecraft:custom_name={"text":"Spider Ward","bold":true,"color":"blue","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= spiderwardSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= spiderwardSp spellStats run execute if items entity @p[tag=p5,tag=spiderwardO] container.* cobweb[minecraft:custom_name={"text":"Spider Ward","bold":true,"color":"blue","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!spiderwardO] container.* cobweb[minecraft:custom_name={"text":"Spider Ward","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!spiderwardO] container.* cobweb[minecraft:custom_name={"text":"Spider Ward","bold":true,"color":"blue","italic":false}] run clear @a[tag=p5]
+
+#Dark Ritual Select P5
+execute if score Spell_Points_P5 Spell_Points >= darkritualSp spellStats run execute if items entity @p[tag=p5,tag=darkritualO] container.* red_candle[minecraft:custom_name={"text":"Dark Ritual","bold":true,"color":"dark_purple","italic":false}] run tag @p[tag=p5] add darkritual
+execute if score Spell_Points_P5 Spell_Points >= darkritualSp spellStats run execute if items entity @p[tag=p5,tag=darkritualO] container.* red_candle[minecraft:custom_name={"text":"Dark Ritual","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Dark Ritual."]
+execute if score Spell_Points_P5 Spell_Points < darkritualSp spellStats run execute if items entity @p[tag=p5,tag=darkritualO] container.* red_candle[minecraft:custom_name={"text":"Dark Ritual","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < darkritualSp spellStats run execute if items entity @p[tag=p5,tag=darkritualO] container.* red_candle[minecraft:custom_name={"text":"Dark Ritual","bold":true,"color":"dark_purple","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= darkritualSp spellStats run execute if items entity @p[tag=p5,tag=darkritualO] container.* red_candle[minecraft:custom_name={"text":"Dark Ritual","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= darkritualSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= darkritualSp spellStats run execute if items entity @p[tag=p5,tag=darkritualO] container.* red_candle[minecraft:custom_name={"text":"Dark Ritual","bold":true,"color":"dark_purple","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!darkritualO] container.* red_candle[minecraft:custom_name={"text":"Dark Ritual","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!darkritualO] container.* red_candle[minecraft:custom_name={"text":"Dark Ritual","bold":true,"color":"dark_purple","italic":false}] run clear @a[tag=p5]
+
+#Raise Dead Select P5
+execute if score Spell_Points_P5 Spell_Points >= raisedeadSp spellStats run execute if items entity @p[tag=p5,tag=raisedeadO] container.* bone[minecraft:custom_name={"text":"Raise Dead","bold":true,"color":"dark_purple","italic":false}] run tag @p[tag=p5] add raisedead
+execute if score Spell_Points_P5 Spell_Points >= raisedeadSp spellStats run execute if items entity @p[tag=p5,tag=raisedeadO] container.* bone[minecraft:custom_name={"text":"Raise Dead","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Raise Dead."]
+execute if score Spell_Points_P5 Spell_Points < raisedeadSp spellStats run execute if items entity @p[tag=p5,tag=raisedeadO] container.* bone[minecraft:custom_name={"text":"Raise Dead","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < raisedeadSp spellStats run execute if items entity @p[tag=p5,tag=raisedeadO] container.* bone[minecraft:custom_name={"text":"Raise Dead","bold":true,"color":"dark_purple","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= raisedeadSp spellStats run execute if items entity @p[tag=p5,tag=raisedeadO] container.* bone[minecraft:custom_name={"text":"Raise Dead","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= raisedeadSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= raisedeadSp spellStats run execute if items entity @p[tag=p5,tag=raisedeadO] container.* bone[minecraft:custom_name={"text":"Raise Dead","bold":true,"color":"dark_purple","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!raisedeadO] container.* bone[minecraft:custom_name={"text":"Raise Dead","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!raisedeadO] container.* bone[minecraft:custom_name={"text":"Raise Dead","bold":true,"color":"dark_purple","italic":false}] run clear @a[tag=p5]
+
+#Curse of Bats Select P5
+execute if score Spell_Points_P5 Spell_Points >= curseofbatsSp spellStats run execute if items entity @p[tag=p5,tag=curseofbatsO] container.* elytra[minecraft:custom_name={"text":"Curse of Bats","bold":true,"color":"gold","italic":false}] run tag @p[tag=p5] add curseofbats
+execute if score Spell_Points_P5 Spell_Points >= curseofbatsSp spellStats run execute if items entity @p[tag=p5,tag=curseofbatsO] container.* elytra[minecraft:custom_name={"text":"Curse of Bats","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Curse of Bats."]
+execute if score Spell_Points_P5 Spell_Points < curseofbatsSp spellStats run execute if items entity @p[tag=p5,tag=curseofbatsO] container.* elytra[minecraft:custom_name={"text":"Curse of Bats","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < curseofbatsSp spellStats run execute if items entity @p[tag=p5,tag=curseofbatsO] container.* elytra[minecraft:custom_name={"text":"Curse of Bats","bold":true,"color":"gold","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= curseofbatsSp spellStats run execute if items entity @p[tag=p5,tag=curseofbatsO] container.* elytra[minecraft:custom_name={"text":"Curse of Bats","bold":true,"color":"gold","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= curseofbatsSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= curseofbatsSp spellStats run execute if items entity @p[tag=p5,tag=curseofbatsO] container.* elytra[minecraft:custom_name={"text":"Curse of Bats","bold":true,"color":"gold","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!curseofbatsO] container.* elytra[minecraft:custom_name={"text":"Curse of Bats","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!curseofbatsO] container.* elytra[minecraft:custom_name={"text":"Curse of Bats","bold":true,"color":"gold","italic":false}] run clear @a[tag=p5]
+
+#Monkey's Paw Select P5
+execute if score Spell_Points_P5 Spell_Points >= monkeyspawSp spellStats run execute if items entity @p[tag=p5,tag=monkeyspawO] container.* dried_kelp[minecraft:custom_name={"text":"Monkey's Paw","bold":true,"color":"gold","italic":false}] run tag @p[tag=p5] add monkeyspaw
+execute if score Spell_Points_P5 Spell_Points >= monkeyspawSp spellStats run execute if items entity @p[tag=p5,tag=monkeyspawO] container.* dried_kelp[minecraft:custom_name={"text":"Monkey's Paw","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," picked Monkey's Paw."]
+execute if score Spell_Points_P5 Spell_Points < monkeyspawSp spellStats run execute if items entity @p[tag=p5,tag=monkeyspawO] container.* dried_kelp[minecraft:custom_name={"text":"Monkey's Paw","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p5] ["",{"selector":"@p[tag=p5]"}," You dont have enough spell points to equip this spell."]
+execute if score Spell_Points_P5 Spell_Points < monkeyspawSp spellStats run execute if items entity @p[tag=p5,tag=monkeyspawO] container.* dried_kelp[minecraft:custom_name={"text":"Monkey's Paw","bold":true,"color":"gold","italic":false}] run clear @a[tag=p5]
+execute if score Spell_Points_P5 Spell_Points >= monkeyspawSp spellStats run execute if items entity @p[tag=p5,tag=monkeyspawO] container.* dried_kelp[minecraft:custom_name={"text":"Monkey's Paw","bold":true,"color":"gold","italic":false}] run scoreboard players operation Spell_Points_P5 Spell_Points -= monkeyspawSp spellStats
+execute if score Spell_Points_P5 Spell_Points >= monkeyspawSp spellStats run execute if items entity @p[tag=p5,tag=monkeyspawO] container.* dried_kelp[minecraft:custom_name={"text":"Monkey's Paw","bold":true,"color":"gold","italic":false}] run effect clear @a[tag=p5] water_breathing
+
+execute if items entity @p[tag=p5,tag=!monkeyspawO] container.* dried_kelp[minecraft:custom_name={"text":"Monkey's Paw","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=p5] ["Sorry, you don't own this spell."]
+execute if items entity @p[tag=p5,tag=!monkeyspawO] container.* dried_kelp[minecraft:custom_name={"text":"Monkey's Paw","bold":true,"color":"gold","italic":false}] run clear @a[tag=p5]
+
 execute if score spellpick3 drafts > Spell_Points_P5 Spell_Points run clear @a[tag=p5]
 
 execute if score Spell_Points_P5 Spell_Points matches 0 run execute if score Spell_Points_P6 Spell_Points matches 0 run function chthree:game3start

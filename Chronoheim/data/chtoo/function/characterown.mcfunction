@@ -29,6 +29,16 @@ execute at @p[tag=p3,tag=!dilloO] run item replace block -178 125 -84 container.
 execute at @p[tag=p3,tag=!osirisO] run item replace block -178 125 -84 container.3 with air
 execute at @p[tag=p3,tag=!eidolonO] run item replace block -178 125 -84 container.4 with air
 execute at @p[tag=p3,tag=!ripperO] run item replace block -178 125 -84 container.5 with air
+execute at @p[tag=p3,tag=!frankO] run item replace block -178 125 -84 container.6 with air
+execute at @p[tag=p3,tag=!steinO] run item replace block -178 125 -84 container.7 with air
+execute at @p[tag=p3,tag=!barleyO] run item replace block -178 125 -84 container.8 with air
+execute at @p[tag=p3,tag=!boogalooO] run item replace block -178 125 -84 container.9 with air
+execute at @p[tag=p3,tag=!igorO] run item replace block -178 125 -84 container.10 with air
+execute at @p[tag=p3,tag=!blinkyO] run item replace block -178 125 -84 container.11 with air
+execute at @p[tag=p3,tag=!zeeboO] run item replace block -178 125 -84 container.12 with air
+execute at @p[tag=p3,tag=!fenrirO] run item replace block -178 125 -84 container.13 with air
+execute at @p[tag=p3,tag=!dollyO] run item replace block -178 125 -84 container.14 with air
+execute at @p[tag=p3,tag=!grendelO] run item replace block -178 125 -84 container.14 with air
 
 #player 4
 execute at @p[tag=p4,tag=!subjectO] run item replace block -173 125 -95 container.3 with air
@@ -61,5 +71,14 @@ execute at @p[tag=p4,tag=!dilloO] run item replace block -174 125 -95 container.
 execute at @p[tag=p4,tag=!osirisO] run item replace block -174 125 -95 container.3 with air
 execute at @p[tag=p4,tag=!eidolonO] run item replace block -174 125 -95 container.4 with air
 execute at @p[tag=p4,tag=!ripperO] run item replace block -174 125 -95 container.5 with air
-
+execute at @p[tag=p4,tag=!frankO] run item replace block -174 125 -95 container.6 with air
+execute at @p[tag=p4,tag=!steinO] run item replace block -174 125 -95 container.7 with air
+execute at @p[tag=p4,tag=!barleyO] run item replace block -174 125 -95 container.8 with air
+execute at @p[tag=p4,tag=!boogalooO] run item replace block -174 125 -95 container.9 with air
+execute at @p[tag=p4,tag=!igorO] run item replace block -174 125 -95 container.10 with air
+execute at @p[tag=p4,tag=!blinkyO] run item replace block -174 125 -95 container.11 with air
+execute at @p[tag=p4,tag=!zeeboO] run item replace block -174 125 -95 container.12 with air
+execute at @p[tag=p4,tag=!fenrirO] run item replace block -174 125 -95 container.13 with air
+execute at @p[tag=p4,tag=!dollyO] run item replace block -174 125 -95 container.14 with air
+execute at @p[tag=p4,tag=!grendelO] run item replace block -174 125 -95 container.14 with air
 

@@ -28,6 +28,19 @@ execute as @p[tag=p1,tag=!decimateO] run item replace block -180 126 -100 contai
 execute as @p[tag=p1,tag=!shiftingshadowsO] run item replace block -180 126 -100 container.3 with air
 execute as @p[tag=p1,tag=!healingtotemO] run item replace block -180 126 -100 container.4 with air
 execute as @p[tag=p1,tag=!chronowarpO] run item replace block -180 126 -100 container.5 with air
+execute at @p[tag=p1,tag=!cannibalizeO] run item replace block -180 126 -100 container.6 with air
+execute at @p[tag=p1,tag=!slimedO] run item replace block -180 126 -100 container.7 with air
+execute at @p[tag=p1,tag=!vampiremarkO] run item replace block -180 126 -100 container.8 with air
+execute at @p[tag=p1,tag=!butcheringO] run item replace block -180 126 -100 container.9 with air
+execute at @p[tag=p1,tag=!willowispO] run item replace block -180 126 -100 container.10 with air
+execute at @p[tag=p1,tag=!spiderwardO] run item replace block -180 126 -100 container.11 with air
+execute at @p[tag=p1,tag=!darkritualO] run item replace block -180 126 -100 container.12 with air
+execute at @p[tag=p1,tag=!raisedeadO] run item replace block -180 126 -100 container.13 with air
+execute at @p[tag=p1,tag=!curseofbatsO] run item replace block -180 126 -100 container.14 with air
+execute at @p[tag=p1,tag=!monkeyspawO] run item replace block -180 126 -100 container.14 with air
+
+
+
 execute as @p[tag=p2,tag=!magicmissileO] run item replace block -173 127 -109 container.3 with air
 execute as @p[tag=p2,tag=!ritualofbloodO] run item replace block -173 127 -109 container.4 with air
 execute as @p[tag=p2,tag=!frostboltO] run item replace block -173 127 -109 container.5 with air
@@ -58,3 +71,13 @@ execute as @p[tag=p2,tag=!decimateO] run item replace block -171 126 -107 contai
 execute as @p[tag=p2,tag=!shiftingshadowsO] run item replace block -171 126 -107 container.3 with air
 execute as @p[tag=p2,tag=!healingtotemO] run item replace block -171 126 -107 container.4 with air
 execute as @p[tag=p2,tag=!chronowarpO] run item replace block -171 126 -107 container.5 with air
+execute at @p[tag=p2,tag=!cannibalizeO] run item replace block -171 126 -107 container.6 with air
+execute at @p[tag=p2,tag=!slimedO] run item replace block -171 126 -107 container.7 with air
+execute at @p[tag=p2,tag=!vampiremarkO] run item replace block -171 126 -107 container.8 with air
+execute at @p[tag=p2,tag=!butcheringO] run item replace block -171 126 -107 container.9 with air
+execute at @p[tag=p2,tag=!willowispO] run item replace block -171 126 -107 container.10 with air
+execute at @p[tag=p2,tag=!spiderwardO] run item replace block -171 126 -107 container.11 with air
+execute at @p[tag=p2,tag=!darkritualO] run item replace block -171 126 -107 container.12 with air
+execute at @p[tag=p2,tag=!raisedeadO] run item replace block -171 126 -107 container.13 with air
+execute at @p[tag=p2,tag=!curseofbatsO] run item replace block -171 126 -107 container.14 with air
+execute at @p[tag=p2,tag=!monkeyspawO] run item replace block -171 126 -107 container.14 with air

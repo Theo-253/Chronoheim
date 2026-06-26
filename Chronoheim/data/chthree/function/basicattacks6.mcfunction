@@ -214,9 +214,9 @@ execute if score lifesteal slot20 matches 1.. run execute if score splash slot20
 execute if score slot23 hp matches 1.. run execute if score ward slot23 matches 0 run execute if score slot20bleeding booleaneffects matches 0 run execute if score lifesteal slot20 matches 1.. run execute if score splash slot20 matches 1.. run execute if score slot20isatk booleans matches 1 run scoreboard players operation slot20 hp += lifestealsplash2 saves
 
 #Special Cases
-execute if score slot17isatk booleans matches 1 if score character# slot17 matches 29 if score hp slot22 <= ripperHpBleed abilityStats run scoreboard players operation slot22bleeding booleaneffects = ripperBleed abilityStats
-execute if score slot18isatk booleans matches 1 if score character# slot18 matches 29 if score hp slot22 <= ripperHpBleed abilityStats run scoreboard players operation slot22bleeding booleaneffects = ripperBleed abilityStats
-execute if score slot19isatk booleans matches 1 if score character# slot19 matches 29 if score hp slot22 <= ripperHpBleed abilityStats run scoreboard players operation slot22bleeding booleaneffects = ripperBleed abilityStats
+execute if score slot17isatk booleans matches 1 if score character# slot17 matches 29 if score slot22 hp <= ripperHpBleed abilityStats run scoreboard players operation slot22bleeding booleaneffects = ripperBleed abilityStats
+execute if score slot18isatk booleans matches 1 if score character# slot18 matches 29 if score slot22 hp <= ripperHpBleed abilityStats run scoreboard players operation slot22bleeding booleaneffects = ripperBleed abilityStats
+execute if score slot19isatk booleans matches 1 if score character# slot19 matches 29 if score slot22 hp <= ripperHpBleed abilityStats run scoreboard players operation slot22bleeding booleaneffects = ripperBleed abilityStats
 
 #double target + turn end trigger
 #regular attack

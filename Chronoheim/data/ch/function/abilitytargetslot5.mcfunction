@@ -337,6 +337,7 @@ execute if score abilitynumber abilities matches 42 run function ch:abilitygivet
 execute if score abilitynumber abilities matches -42 if score ward slot5 matches 0 unless score curse slot5 matches 5 run scoreboard players set curseDuration slot5 3
 execute if score abilitynumber abilities matches -42 if score ward slot5 matches 0 unless score curse slot5 matches 5 if score curseStacks slot5 matches 1.. run scoreboard players set curseStacks slot5 0
 execute if score abilitynumber abilities matches -42 if score ward slot5 matches 0 unless score curse slot5 matches 5 run scoreboard players set curse slot5 4
+
 execute if score abilitynumber abilities matches -42 if score ward slot5 matches 1.. run function ch:wardslot5
 execute if score abilitynumber abilities matches -42 run execute at @e[name=slot5,type=armor_stand] run particle effect{color:[0.725,0.180,1.000]} ~ ~1 ~ 0.9 0.9 0.9 0.05 100
 execute if score abilitynumber abilities matches -42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Life Link on Slot 5!"]
@@ -356,3 +357,4 @@ execute if score abilitynumber abilities matches 34 run scoreboard players set a
 execute if score abilitynumber abilities matches 34 run scoreboard players set abilitynumber abilities -36
 execute if score abilitynumber abilities matches 34 run scoreboard players set abilitynumber abilities -42
 execute if score abilitynumber abilities matches 34 run scoreboard players set abilitynumber abilities -43
+

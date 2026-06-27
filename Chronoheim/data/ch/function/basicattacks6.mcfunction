@@ -12,10 +12,7 @@ execute if score slot1isatk booleans matches 1 run scoreboard players operation 
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot2
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves += slot2 atkmodifiers
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot6
-execute if score slot2isatk booleans matches 1 if score character# slot2 matches 36 if score durationSlot1-6 fear matches 1.. run scoreboard players operation atk1 saves += barleyLeader abilityStats
-execute if score slot2isatk booleans matches 1 if score character# slot2 matches 36 if score durationSlot2-6 fear matches 1.. run scoreboard players operation atk1 saves += barleyLeader abilityStats
-execute if score slot2isatk booleans matches 1 if score character# slot2 matches 36 if score durationSlot3-6 fear matches 1.. run scoreboard players operation atk1 saves += barleyLeader abilityStats
-execute if score slot2isatk booleans matches 1 if score character# slot2 matches 36 if score durationSlot4-6 fear matches 1.. run scoreboard players operation atk1 saves += barleyLeader abilityStats
+execute if score slot2isatk booleans matches 1 if score character# slot2 matches 36 run execute unless score durationSlot1-6 fear matches 1.. unless score durationSlot2-6 fear matches 1.. unless score durationSlot3-6 fear matches 1.. unless score durationSlot4-6 fear matches 1.. run scoreboard players operation atk1 saves -= barleyLeader abilityStats
 execute if score slot2isatk booleans matches 1 if score character# slot2 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack
 execute if score slot2isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot6
 execute if score slot2isatk booleans matches 1 run scoreboard players operation shield slot6 -= atk1 saves

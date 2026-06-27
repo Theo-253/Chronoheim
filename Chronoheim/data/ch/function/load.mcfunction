@@ -551,10 +551,11 @@ scoreboard players set sherman abilityStats 400
 scoreboard players set shermanSplash abilityStats 2
 
 scoreboard players set frank heroattack 120
-scoreboard players set frank herohealth 2760
-scoreboard players set frankLeader herohealth 3060
+scoreboard players set frank herohealth 2560
+scoreboard players set frankLeader herohealth 2860
 scoreboard players set frankLeaderTaunt abilityStats 1
-scoreboard players set frankSelfDamage abilityStats 220
+scoreboard players set frank abilityStats 220
+scoreboard players set frankDuration abilityStats 1
 scoreboard players set frankCD abilityStats 2
 
 scoreboard players set stein heroattack 140

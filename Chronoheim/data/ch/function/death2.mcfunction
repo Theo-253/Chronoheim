@@ -79,6 +79,13 @@ execute if score character# slot3 matches 28 run execute at @n[type=armor_stand,
 execute if score character# slot5 matches 28 run execute at @n[type=armor_stand,name=slot5] run particle minecraft:trial_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 execute if score character# slot6 matches 28 run execute at @n[type=armor_stand,name=slot6] run particle minecraft:trial_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 execute if score character# slot7 matches 28 run execute at @n[type=armor_stand,name=slot7] run particle minecraft:trial_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
+execute if score character# slot5 matches 37 if score character# slot2 matches 1.. run scoreboard players operation atk slot5 += boogalooDeath abilityStats
+execute if score character# slot6 matches 37 if score character# slot2 matches 1.. run scoreboard players operation atk slot6 += boogalooDeath abilityStats
+execute if score character# slot7 matches 37 if score character# slot2 matches 1.. run scoreboard players operation atk slot7 += boogalooDeath abilityStats
+execute if score character# slot5 matches 37 if score character# slot2 matches 1.. run execute at @n[type=armor_stand,name=slot5] run particle minecraft:raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
+execute if score character# slot6 matches 37 if score character# slot2 matches 1.. run execute at @n[type=armor_stand,name=slot6] run particle minecraft:raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
+execute if score character# slot7 matches 37 if score character# slot2 matches 1.. run execute at @n[type=armor_stand,name=slot7] run particle minecraft:raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
+
 scoreboard players set durationSlot2 taunt 0
 scoreboard players set buffDurationSlot2 atkmodifiers 0
 scoreboard players set durationSlot2 regen 0

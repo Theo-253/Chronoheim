@@ -29,11 +29,7 @@ execute if score slot8isatk booleans matches 1 run scoreboard players operation 
 execute if score slot8isatk booleans matches 1 run scoreboard players operation atk1 saves += slot8 atkmodifiers
 execute if score slot8isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot2
 execute if score slot8isatk booleans matches 1 run scoreboard players operation shield slot2 -= atk1 saves
-#damage + shield reset (all)
-execute if score shield slot2 matches ..0 if score ward slot2 matches 0 run scoreboard players operation slot2 hp += shield slot2
-execute if score ward slot2 matches 1.. run function ch:wardslot2
-execute if score shield slot2 matches ..0 run scoreboard players set shield slot2 0
-execute at @e[name=slot2,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
+
 
 
 #splash

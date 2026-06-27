@@ -102,8 +102,8 @@ execute if score abilitynumber abilities matches 12 if score ward slot1 matches 
 execute if score abilitynumber abilities matches 12 if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score abilitynumber abilities matches 12 at @e[name=slot1] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber abilities matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Ace of Spades on Slot 1!"]
-execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot2 speedDebuffs = aceLeaderDuration abilityStats
-execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speedDebuffSlot2 speedDebuffs = aceLeader abilityStats
+execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot1 speedDebuffs = aceLeaderDuration abilityStats
+execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speedDebuffSlot1 speedDebuffs = aceLeader abilityStats
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speed slot1 -= aceLeader abilityStats
 #Gabriel
 execute if score abilitynumber abilities matches 22 run scoreboard players operation abilityDmg saves = gabriel abilityStats
@@ -264,8 +264,8 @@ execute if score abilitynumber abilities matches 33 if score slot7isatk booleans
 execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves /= shermanSplash abilityStats
 execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves += marks slot2
 execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves /= atkmultiplier slot2
-execute if score abilitynumber abilities matches 33 run execute if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= abilityDmg saves
-execute if score abilitynumber abilities matches 33 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
+execute if score abilitynumber abilities matches 33 run execute if score ward slot2 matches ..0 run scoreboard players operation shield slot2 -= abilityDmg saves
+execute if score abilitynumber abilities matches 33 run execute if score ward slot2 matches ..0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
 execute if score abilitynumber abilities matches 33 run execute if score ward slot2 matches 1.. run function ch:wardslot2
 #execute if score abilitynumber abilities matches 33 run scoreboard players operation abilityDmg saves = sherman abilityStats
 #execute if score abilitynumber abilities matches 33 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
@@ -285,19 +285,19 @@ execute if score abilitynumber abilities matches 28 if score slot6isatk booleans
 execute if score abilitynumber abilities matches 28 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
 execute if score abilitynumber abilities matches 28 run scoreboard players operation abilityDmg saves += marks slot1
 execute if score abilitynumber abilities matches 28 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
-execute if score abilitynumber abilities matches 28 run execute if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= abilityDmg saves
-execute if score abilitynumber abilities matches 28 run execute if score ward slot1 matches 0 if score slot6isatk booleans matches 1 if score durationSlot6-1 fear <= eidolonLeaderFearDuration abilityStats run scoreboard players operation durationSlot6-1 fear = eidolonLeaderFearDuration abilityStats
-execute if score abilitynumber abilities matches 28 run execute if score ward slot1 matches 0 if score shield slot1 matches ..0 run scoreboard players operation slot1 hp += shield slot1
+execute if score abilitynumber abilities matches 28 run execute if score ward slot1 matches ..0 run scoreboard players operation shield slot1 -= abilityDmg saves
+execute if score abilitynumber abilities matches 28 run execute if score ward slot1 matches ..0 if score slot6isatk booleans matches 1 if score durationSlot6-1 fear <= eidolonLeaderFearDuration abilityStats run scoreboard players operation durationSlot6-1 fear = eidolonLeaderFearDuration abilityStats
+execute if score abilitynumber abilities matches 28 run execute if score ward slot1 matches ..0 if score shield slot1 matches ..0 run scoreboard players operation slot1 hp += shield slot1
 execute if score abilitynumber abilities matches 28 run execute if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score abilitynumber abilities matches 28 run execute at @e[name=slot1,type=armor_stand] run particle raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 
 #Barley
-execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 5 if score ward slot1 matches 0 run scoreboard players operation durationSlot5-1 fear = barleyDuration abilityStats 
-execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 6 if score ward slot1 matches 0 run scoreboard players operation durationSlot6-1 fear = barleyDuration abilityStats 
-execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 7 if score ward slot1 matches 0 run scoreboard players operation durationSlot7-1 fear = barleyDuration abilityStats 
-execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 8 if score ward slot1 matches 0 run scoreboard players operation durationSlot8-1 fear = barleyDuration abilityStats 
-execute if score abilitynumber abilities matches -36 if score ward slot1 matches 0 if score debuffDurationSlot1 atkmodifiers < barleyDuration abilityStats run scoreboard players operation debuffDurationSlot1 atkmodifiers = barleyDuration abilityStats
-execute if score abilitynumber abilities matches -36 if score ward slot1 matches 0 run scoreboard players operation debuffDurationSlot1 atkmodifiers += barley abilityStats
+execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 5 if score ward slot1 matches ..0 run scoreboard players operation durationSlot5-1 fear = barleyDuration abilityStats 
+execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 6 if score ward slot1 matches ..0 run scoreboard players operation durationSlot6-1 fear = barleyDuration abilityStats 
+execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 7 if score ward slot1 matches ..0 run scoreboard players operation durationSlot7-1 fear = barleyDuration abilityStats 
+execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 8 if score ward slot1 matches ..0 run scoreboard players operation durationSlot8-1 fear = barleyDuration abilityStats 
+execute if score abilitynumber abilities matches -36 if score ward slot1 matches ..0 if score debuffDurationSlot1 atkmodifiers < barleyDuration abilityStats run scoreboard players operation debuffDurationSlot1 atkmodifiers = barleyDuration abilityStats
+execute if score abilitynumber abilities matches -36 if score ward slot1 matches ..0 run scoreboard players operation debuffDurationSlot1 atkmodifiers += barley abilityStats
 execute if score abilitynumber abilities matches -36 if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score abilitynumber abilities matches -36 run execute at @n[type=armor_stand,name=slot1] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score sabilitynumber abilities matches -36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Spookcrow to fear Slot 1!"]
@@ -308,6 +308,55 @@ execute if score abilitynumber abilities matches 36 run scoreboard players opera
 execute if score abilitynumber abilities matches 36 run function ch:abilitygivetargetsp1
 execute if score abilitynumber abilities matches 36 run execute at @n[type=armor_stand,name=slot1] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score abilitynumber abilities matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Spookcrow to make Slot 1 scary!"]
+
+#Igor
+execute if score abilitynumber abilities matches 38 run scoreboard players operation cooldown slot1 -= igor abilityStats
+execute if score abilitynumber abilities matches 38 run execute if score durationSlot1 speedBuffs > igorDuration abilityStats run scoreboard players operation durationSlot1 speedBuffs = igorDuration abilityStats
+execute if score abilitynumber abilities matches 38 run scoreboard players operation speedBuffSlot1 speedBuffs += igorSpBuff abilityStats
+execute if score abilitynumber abilities matches 38 if score slot2isatk booleans matches 1 run execute if score invincibleSlot1 booleaneffects > igorDuration abilityStats run scoreboard players operation invincibleSlot1 booleaneffects = igorDuration abilityStats
+
+#Zeebo
+execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 unless score curse slot1 matches 2 run scoreboard players set curseStacks slot1 0
+execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 unless score curse slot1 matches 2 run scoreboard players set curseDuration slot1 0
+execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 if score curse slot1 matches 2 run scoreboard players add curseStacks slot1 1
+execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 run scoreboard players set curse slot1 2
+execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 run execute if score durationSlot1 burn > zeeboDuration abilityStats run scoreboard players operation durationSlot1 burn = zeeboDuration abilityStats
+execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 run scoreboard players operation slot1Burn burn += zeebo abilityStats
+execute if score abilitynumber abilities matches 40 if score ward slot1 matches 1.. run function ch:wardslot1
+
+#Fenrir
+execute if score abilitynumber abilities matches 41 if score ward slot1 matches ..0 unless score curse slot1 matches 5 unless score curse slot1 matches 3 run scoreboard players set curseStacks slot1 0
+execute if score abilitynumber abilities matches 41 if score ward slot1 matches ..0 unless score curse slot1 matches 5 unless score curse slot1 matches 3 run scoreboard players set curseDuration slot1 0
+execute if score abilitynumber abilities matches 41 if score ward slot1 matches ..0 unless score curse slot1 matches 5 run scoreboard players set curse slot1 3
+execute if score abilitynumber abilities matches 41 run scoreboard players operation abilityDmg saves = fenrir abilityStats
+execute if score abilitynumber abilities matches 41 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
+execute if score abilitynumber abilities matches 41 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
+execute if score abilitynumber abilities matches 41 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
+execute if score abilitynumber abilities matches 41 run scoreboard players operation abilityDmg saves += marks slot1
+execute if score abilitynumber abilities matches 41 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
+execute if score abilitynumber abilities matches 41 run execute if score ward slot1 matches ..0 run scoreboard players operation shield slot1 -= abilityDmg saves
+execute if score abilitynumber abilities matches 41 if score ward slot1 matches 1.. run function ch:wardslot1
+
+#Grendel
+execute if score abilitynumber abilities matches 43 run scoreboard players operation abilityDmg saves = grendel abilityStats
+execute if score abilitynumber abilities matches 43 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
+execute if score abilitynumber abilities matches 43 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
+execute if score abilitynumber abilities matches 43 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
+execute if score abilitynumber abilities matches 43 run scoreboard players operation abilityDmg saves += marks slot1
+execute if score abilitynumber abilities matches 43 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
+execute if score abilitynumber abilities matches 43 run execute if score ward slot1 matches ..0 run scoreboard players operation shield slot1 -= abilityDmg saves
+execute if score abilitynumber abilities matches 43 run execute if score ward slot1 matches ..0 run scoreboard players operation slot1Disease disease += grendelDisease abilityStats
+execute if score abilitynumber abilities matches 43 if score ward slot1 matches 1.. run function ch:wardslot1
+execute if score abilitynumber abilities matches 43 run function ch:abilitygivetargetsp2
+execute if score abilitynumber abilities matches -43 run scoreboard players operation abilityDmg saves = grendel abilityStats
+execute if score abilitynumber abilities matches -43 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
+execute if score abilitynumber abilities matches -43 if score slot6isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot6 atkmodifiers
+execute if score abilitynumber abilities matches -43 if score slot7isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot7 atkmodifiers
+execute if score abilitynumber abilities matches -43 run scoreboard players operation abilityDmg saves += marks slot1
+execute if score abilitynumber abilities matches -43 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
+execute if score abilitynumber abilities matches -43 run execute if score ward slot1 matches ..0 run scoreboard players operation shield slot1 -= abilityDmg saves
+execute if score abilitynumber abilities matches -43 run execute if score ward slot1 matches ..0 run scoreboard players operation slot1Disease disease += grendelDisease abilityStats
+execute if score abilitynumber abilities matches -43 if score ward slot1 matches 1.. run function ch:wardslot1
 
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0

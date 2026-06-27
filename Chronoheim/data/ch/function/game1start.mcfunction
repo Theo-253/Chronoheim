@@ -381,6 +381,25 @@ execute if score character# slot6 matches 14 run scoreboard players operation at
 execute if score character# slot2 matches 36 run scoreboard players operation atk slot2 += barleyLeader abilityStats
 execute if score character# slot6 matches 36 run scoreboard players operation atk slot6 += barleyLeader abilityStats
 
+execute if score character# slot2 matches 34 if score character# slot1 matches 35 run scoreboard players operation atk slot1 += steinLeader heroattack
+execute if score character# slot2 matches 34 if score character# slot3 matches 35 run scoreboard players operation atk slot3 += steinLeader heroattack
+execute if score character# slot6 matches 34 if score character# slot5 matches 35 run scoreboard players operation atk slot5 += steinLeader heroattack
+execute if score character# slot6 matches 34 if score character# slot7 matches 35 run scoreboard players operation atk slot7 += steinLeader heroattack
+execute if score character# slot2 matches 35 run scoreboard players operation atk slot2 += steinLeader heroattack
+execute if score character# slot6 matches 35 run scoreboard players operation atk slot6 += steinLeader heroattack
+
+execute if score character# slot2 matches 35 if score character# slot1 matches 34 run scoreboard players operation slot1 hp += frankLeader herohealth
+execute if score character# slot2 matches 35 if score character# slot1 matches 34 run scoreboard players operation durationSlot1 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot2 matches 35 if score character# slot3 matches 34 run scoreboard players operation slot3 hp += frankLeader herohealth
+execute if score character# slot2 matches 35 if score character# slot3 matches 34 run scoreboard players operation durationSlot3 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot6 matches 35 if score character# slot5 matches 34 run scoreboard players operation slot5 hp += frankLeader herohealth
+execute if score character# slot6 matches 35 if score character# slot5 matches 34 run scoreboard players operation durationSlot5 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot6 matches 35 if score character# slot7 matches 34 run scoreboard players operation slot7 hp += frankLeader herohealth
+execute if score character# slot6 matches 35 if score character# slot7 matches 34 run scoreboard players operation durationSlot7 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot2 matches 34 run scoreboard players operation slot2 hp += frankLeader herohealth
+execute if score character# slot2 matches 34 run scoreboard players operation durationSlot2 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot6 matches 34 run scoreboard players operation slot6 hp += frankLeader herohealth
+execute if score character# slot6 matches 34 run scoreboard players operation durationSlot6 taunt = frankLeaderTaunt abilityStats
 
 execute if score character# slot2 matches 37 run scoreboard players operation buffDurationSlot2 atkmodifiers = boogalooLeaderDuration abilityStats
 execute if score character# slot2 matches 37 run scoreboard players operation attackBuffSlot2 atkmodifiers = boogalooLeader abilityStats

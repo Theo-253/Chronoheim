@@ -378,6 +378,9 @@ execute if score character# slot6 matches 2 run scoreboard players operation att
 execute if score character# slot2 matches 14 run scoreboard players operation atk slot2 += hydraLeader heroattack
 execute if score character# slot6 matches 14 run scoreboard players operation atk slot6 += hydraLeader heroattack
 
+execute if score character# slot2 matches 36 run scoreboard players operation atk slot2 += barleyLeader abilityStats
+execute if score character# slot6 matches 36 run scoreboard players operation atk slot6 += barleyLeader abilityStats
+
 
 execute if score character# slot1 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
 execute if score character# slot1 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats

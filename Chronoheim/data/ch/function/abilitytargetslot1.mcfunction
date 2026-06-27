@@ -311,6 +311,7 @@ execute if score abilitynumber abilities matches 36 run tellraw @a[tag=game1] ["
 
 #Igor
 execute if score abilitynumber abilities matches 38 run scoreboard players operation cooldown slot1 -= igor abilityStats
+execute if score abilitynumber abilities matches 38 run execute at @e[type=armor_stand,name=slot1] run particle witch ~ ~1 ~ 0.5 0.8 0.5 0.1 100
 execute if score abilitynumber abilities matches 38 run execute if score durationSlot1 speedBuffs > igorDuration abilityStats run scoreboard players operation durationSlot1 speedBuffs = igorDuration abilityStats
 execute if score abilitynumber abilities matches 38 run scoreboard players operation speedBuffSlot1 speedBuffs += igorSpBuff abilityStats
 execute if score abilitynumber abilities matches 38 if score slot2isatk booleans matches 1 run execute if score invincibleSlot1 booleaneffects > igorDuration abilityStats run scoreboard players operation invincibleSlot1 booleaneffects = igorDuration abilityStats
@@ -318,10 +319,12 @@ execute if score abilitynumber abilities matches 38 if score slot2isatk booleans
 #Zeebo
 execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 unless score curse slot1 matches 2 run scoreboard players set curseStacks slot1 0
 execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 unless score curse slot1 matches 2 run scoreboard players set curseDuration slot1 0
-execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 if score curse slot1 matches 2 run scoreboard players add curseStacks slot1 1
 execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 run scoreboard players set curse slot1 2
+execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 unless score curse slot1 matches 5 if score curse slot1 matches 2 run scoreboard players add curseStacks slot1 1
 execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 run execute if score durationSlot1 burn > zeeboDuration abilityStats run scoreboard players operation durationSlot1 burn = zeeboDuration abilityStats
 execute if score abilitynumber abilities matches 40 if score ward slot1 matches ..0 run scoreboard players operation slot1Burn burn += zeebo abilityStats
+execute if score abilitynumber abilities matches 40 run execute at @e[type=armor_stand,name=slot1] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
+execute if score abilitynumber abilities matches 40 run execute at @e[type=armor_stand,name=slot1] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
 execute if score abilitynumber abilities matches 40 if score ward slot1 matches 1.. run function ch:wardslot1
 
 #Fenrir
@@ -335,6 +338,8 @@ execute if score abilitynumber abilities matches 41 if score slot7isatk booleans
 execute if score abilitynumber abilities matches 41 run scoreboard players operation abilityDmg saves += marks slot1
 execute if score abilitynumber abilities matches 41 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
 execute if score abilitynumber abilities matches 41 run execute if score ward slot1 matches ..0 run scoreboard players operation shield slot1 -= abilityDmg saves
+execute if score abilitynumber abilities matches 41 run execute at @n[type=armor_stand,name=slot1] run particle enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+
 execute if score abilitynumber abilities matches 41 if score ward slot1 matches 1.. run function ch:wardslot1
 
 #Grendel
@@ -346,6 +351,7 @@ execute if score abilitynumber abilities matches 43 run scoreboard players opera
 execute if score abilitynumber abilities matches 43 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
 execute if score abilitynumber abilities matches 43 run execute if score ward slot1 matches ..0 run scoreboard players operation shield slot1 -= abilityDmg saves
 execute if score abilitynumber abilities matches 43 run execute if score ward slot1 matches ..0 run scoreboard players operation slot1Disease disease += grendelDisease abilityStats
+execute if score abilitynumber abilities matches 43 run execute at @e[type=armor_stand,name=slot1] run particle minecraft:noxious_gas ~ ~1 ~ 0.7 0.7 0.7 0.05 200
 execute if score abilitynumber abilities matches 43 if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score abilitynumber abilities matches 43 run function ch:abilitygivetargetsp2
 execute if score abilitynumber abilities matches -43 run scoreboard players operation abilityDmg saves = grendel abilityStats
@@ -356,6 +362,7 @@ execute if score abilitynumber abilities matches -43 run scoreboard players oper
 execute if score abilitynumber abilities matches -43 run scoreboard players operation abilityDmg saves /= atkmultiplier slot1
 execute if score abilitynumber abilities matches -43 run execute if score ward slot1 matches ..0 run scoreboard players operation shield slot1 -= abilityDmg saves
 execute if score abilitynumber abilities matches -43 run execute if score ward slot1 matches ..0 run scoreboard players operation slot1Disease disease += grendelDisease abilityStats
+execute if score abilitynumber abilities matches -43 run execute at @e[type=armor_stand,name=slot1] run particle minecraft:noxious_gas ~ ~1 ~ 0.7 0.7 0.7 0.05 200
 execute if score abilitynumber abilities matches -43 if score ward slot1 matches 1.. run function ch:wardslot1
 
 #This goes at the bottom

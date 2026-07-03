@@ -274,6 +274,92 @@ execute if score spellnumber spells matches 32 run tellraw @a[tag=game1] ["",{"s
 execute if score spellnumber spells matches 32 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 32 run scoreboard players set attackIsOngoingGame1 booleans 0
 
+#cannibalize token
+
+execute if score spellnumber spells matches -3 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += cannibalize spellStats
+execute if score spellnumber spells matches -3 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += spellbuffsp1 spells
+execute if score spellnumber spells matches -3 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches -3 run execute at @n[type=armor_stand,name=slot6] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber spells matches -3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Cannibalize to heal Slot 6!"]
+execute if score spellnumber spells matches -3 run scoreboard players set spellbuffsp1 spells 0
+
+#cannibalize
+execute if score spellnumber spells matches 34 run scoreboard players operation slot6 hp -= cannibalize spellStats
+execute if score spellnumber spells matches 34 run scoreboard players operation slot6bleeding booleaneffects += cannibalizeDuration spellStats
+execute if score spellnumber spells matches 34 run function ch:spellgivetargetsp1
+execute if score spellnumber spells matches 34 run execute at @n[type=armor_stand,name=slot6] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber spells matches 34 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Cannibalize on Slot 6!"]
+execute if score spellnumber spells matches 34 run scoreboard players set spellnumber spells -3
+
+#Dark Ritual
+execute if score spellnumber spells matches 40 run execute if score buffDurationSlot6 atkmodifiers < darkpowerDuration spellStats run scoreboard players operation buffDurationSlot6 atkmodifiers = darkpowerDuration spellStats
+execute if score spellnumber spells matches 40 run scoreboard players operation attackBuffSlot6 atkmodifiers += darkpower spellStats
+execute if score spellnumber spells matches 40 run scoreboard players operation attackBuffSlot6 atkmodifiers += darkritual player1spells
+execute if score spellnumber spells matches 40 at @e[name=slot6] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score spellnumber spells matches 40 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 40 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Dark Ritual on Slot 6!"]
+
+#Monkey's Paw
+execute if score spellnumber spells matches 43 run scoreboard players operation invincibleSlot6 booleaneffects = monkeyspaw spellStats
+execute if score spellnumber spells matches 43 run scoreboard players set curse slot6 5
+execute if score spellnumber spells matches 43 run scoreboard players set curseStacks slot6 0
+execute if score spellnumber spells matches 43 run scoreboard players operation curseDuration slot6 = monkeyspaw spellStats
+execute if score spellnumber spells matches 43 at @e[name=slot6] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.00000001 200
+execute if score spellnumber spells matches 43 run playsound minecraft:ambient.cave player @a[tag=game1] ~ ~ ~ 500 2
+execute if score spellnumber spells matches 43 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 43 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Monkey's Paw on Slot 6!"]
+
+#Slimed!
+execute if score spellnumber spells matches 35 if score ward slot6 matches 0 run scoreboard players operation disarmedslot6 booleaneffects += slimed spellStats
+execute if score spellnumber spells matches 35 if score ward slot6 matches 1.. run function ch:wardslot6
+execute if score spellnumber spells matches 35 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 35 run execute at @n[type=armor_stand,name=slot6] run particle minecraft:item_slime ~ ~1 ~ 0.7 0.7 0.7 0.3 150
+execute if score spellnumber spells matches 35 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Slimed! on Slot 6!"]
+
+#Vampire Mark
+execute if score spellnumber spells matches 36 run scoreboard players operation lifesteal slot6 = vampiremark spellStats
+execute if score spellnumber spells matches 36 run execute at @n[type=armor_stand,name=slot6] run particle minecraft:crimson_spore ~ ~1 ~ 0.6 0.4 0.6 0 200
+execute if score spellnumber spells matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Vampire Mark on Slot 6!"]
+
+#Butchering
+execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves = butchering spellStats
+execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves += spellbuffsp1 spells
+execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves += marks slot6
+execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves /= atkmultiplier slot6
+execute if score spellnumber spells matches 37 run execute if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= spellDmg saves
+execute if score spellnumber spells matches 37 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
+execute if score spellnumber spells matches 37 at @e[name=slot6] run particle minecraft:damage_indicator ~ ~1 ~ 0.6 0.6 0.6 0 100
+execute if score spellnumber spells matches 37 run execute if score ward slot6 matches 1.. run function ch:wardslot6
+execute if score spellnumber spells matches 37 run scoreboard players set spellbuffsp1 spells 0
+execute if score spellnumber spells matches 37 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 37 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Butchering on Slot 6!"]
+
+#Will O' Wisp
+execute if score spellnumber spells matches 38 run execute if score ward slot6 matches 0 if score durationSlot1 burn < willowispDuration spellStats run scoreboard players operation durationSlot1 burn = willowispDuration spellStats
+execute if score spellnumber spells matches 38 run execute if score ward slot6 matches 0 run scoreboard players operation slot6Burn burn += willowisp spellStats
+execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves = slot6Burn burn
+execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves += spellbuffsp1 spells
+execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves += marks slot6
+execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves /= atkmultiplier slot6
+execute if score spellnumber spells matches 38 run execute if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= spellDmg saves
+execute if score spellnumber spells matches 38 run execute if score ward slot6 matches 0 if score shield slot6 matches ..0 run scoreboard players operation slot6 hp += shield slot6
+execute if score spellnumber spells matches 38 at @e[name=slot6] run particle minecraft:glow ~ ~1 ~ 0.7 0.7 0.7 0.1 100
+execute if score spellnumber spells matches 38 at @e[name=slot6] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.6 0.6 0.6 0.1 100
+execute if score spellnumber spells matches 38 run execute if score ward slot6 matches 1.. run function ch:wardslot6
+execute if score spellnumber spells matches 38 run scoreboard players set spellbuffsp1 spells 0
+execute if score spellnumber spells matches 38 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 38 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Will O' Wisp on Slot 6!"]
+
+#Curse of Bats
+execute if score spellnumber spells matches 42 if score ward slot6 matches ..0 unless score curse slot6 matches 5 unless score curse slot6 matches 6 run scoreboard players set curseStacks slot6 0
+execute if score spellnumber spells matches 42 if score ward slot6 matches ..0 unless score curse slot6 matches 5 unless score curse slot6 matches 6 run scoreboard players set curseDuration slot6 0
+execute if score spellnumber spells matches 42 if score ward slot6 matches ..0 unless score curse slot6 matches 5 run scoreboard players set curse slot6 6
+execute if score spellnumber spells matches 42 if score ward slot6 matches ..0 unless score curse slot6 matches 5 if score curse slot6 matches 6 run scoreboard players add curseStacks slot6 1
+execute if score spellnumber spells matches 42 run execute at @n[name=slot6] run particle shriek{delay:0} ~ ~1 ~ 0.3 0.5 0.3 0.1 200 normal
+execute if score spellnumber spells matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Curse of Bats on Slot 6!"]
+execute if score spellnumber spells matches 42 if score ward slot6 matches 1.. run function ch:wardslot6
+
+
 #This goes at the bottom
 execute if score shield slot5 matches ..0 run scoreboard players set shield slot5 0
 execute if score shield slot6 matches ..0 run scoreboard players set shield slot6 0

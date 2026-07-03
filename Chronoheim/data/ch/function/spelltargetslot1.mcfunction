@@ -263,6 +263,41 @@ execute if score spellnumber spells matches 32 run execute at @n[type=armor_stan
 execute if score spellnumber spells matches 32 run scoreboard players set spellbuffsp2 spells 0
 execute if score spellnumber spells matches 32 run function ch:spellphasep1
 
+#cannibalize token
+
+execute if score spellnumber spells matches -3 if score slot1bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += cannibalize spellStats
+execute if score spellnumber spells matches -3 if score slot1bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += spellbuffsp1 spells
+execute if score spellnumber spells matches -3 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches -3 run execute at @n[type=armor_stand,name=slot1] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber spells matches -3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Cannibalize to heal Slot 1!"]
+execute if score spellnumber spells matches -3 run scoreboard players set spellbuffsp1 spells 0
+
+#cannibalize
+execute if score spellnumber spells matches 34 run scoreboard players operation slot1 hp -= cannibalize spellStats
+execute if score spellnumber spells matches 34 run scoreboard players operation slot1bleeding booleaneffects += cannibalizeDuration spellStats
+execute if score spellnumber spells matches 34 run function ch:spellgivetargetsp1
+execute if score spellnumber spells matches 34 run execute at @n[type=armor_stand,name=slot1] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber spells matches 34 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Cannibalize on Slot 1!"]
+execute if score spellnumber spells matches 34 run scoreboard players set spellnumber spells -3
+
+#Dark Ritual
+execute if score spellnumber spells matches 40 run execute if score buffDurationSlot1 atkmodifiers < darkpowerDuration spellStats run scoreboard players operation buffDurationSlot1 atkmodifiers = darkpowerDuration spellStats
+execute if score spellnumber spells matches 40 run scoreboard players operation attackBuffSlot1 atkmodifiers += darkpower spellStats
+execute if score spellnumber spells matches 40 run scoreboard players operation attackBuffSlot1 atkmodifiers += darkritual player1spells
+execute if score spellnumber spells matches 40 at @e[name=slot1] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score spellnumber spells matches 40 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 40 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Dark Ritual on Slot 1!"]
+
+#Monkey's Paw
+execute if score spellnumber spells matches 42 run scoreboard players operation invincibleSlot1 booleaneffects = monkeyspaw spellStats
+execute if score spellnumber spells matches 42 run scoreboard players set curse slot1 5
+execute if score spellnumber spells matches 42 run scoreboard players set curseStacks slot1 0
+execute if score spellnumber spells matches 42 run scoreboard players operation curseDuration slot1 = monkeyspaw spellStats
+execute if score spellnumber spells matches 42 at @e[name=slot1] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.00000001 200
+execute if score spellnumber spells matches 42 run playsound minecraft:ambient.cave player @a[tag=game1] ~ ~ ~ 500 2
+execute if score spellnumber spells matches 42 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Monkey's Paw on Slot 1!"]
+
 #This goes at the bottom
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0
 execute if score shield slot1 matches ..0 run scoreboard players set shield slot1 0

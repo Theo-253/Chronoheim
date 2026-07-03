@@ -331,7 +331,7 @@ execute if score spellnumber spells matches 38 at @e[name=slot4] run particle mi
 execute if score spellnumber spells matches 38 run execute if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score spellnumber spells matches 38 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 38 run scoreboard players set attackIsOngoingGame1 booleans 0
-execute if score spellnumber spells matches 38 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Will O' Wisp on Slot 4!"]
+execute if score spellnumber spells matches 38 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Will O' Wisp on Slot 4!"]
 
 #Curse of Bats
 execute if score spellnumber spells matches 42 if score ward slot4 matches ..0 unless score curse slot4 matches 5 unless score curse slot4 matches 6 run scoreboard players set curseStacks slot4 0
@@ -339,7 +339,7 @@ execute if score spellnumber spells matches 42 if score ward slot4 matches ..0 u
 execute if score spellnumber spells matches 42 if score ward slot4 matches ..0 unless score curse slot4 matches 5 run scoreboard players set curse slot4 6
 execute if score spellnumber spells matches 42 if score ward slot4 matches ..0 unless score curse slot4 matches 5 if score curse slot4 matches 6 run scoreboard players add curseStacks slot4 1
 execute if score spellnumber spells matches 42 run execute at @n[name=slot4] run particle shriek{delay:0} ~ ~1 ~ 0.3 0.5 0.3 0.1 200 normal
-execute if score spellnumber spells matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Curse of Bats on Slot 4!"]
+execute if score spellnumber spells matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Curse of Bats on Slot 4!"]
 execute if score spellnumber spells matches 42 if score ward slot4 matches 1.. run function ch:wardslot4
 
 #This goes at the bottom

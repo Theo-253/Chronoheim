@@ -220,6 +220,14 @@ scoreboard players set invincibleSlot6 booleaneffects 0
 scoreboard players set invincibleSlot7 booleaneffects 0
 scoreboard players set invincibleSlot8 booleaneffects 0
 scoreboard players set fireballCooldown player1spells 0
+scoreboard players set curse slot1 0
+scoreboard players set curse slot2 0
+scoreboard players set curse slot3 0
+scoreboard players set curse slot4 0
+scoreboard players set curse slot5 0
+scoreboard players set curse slot6 0
+scoreboard players set curse slot7 0
+scoreboard players set curse slot8 0
 scoreboard players set chainLightningCooldown player1spells 0
 scoreboard players set healCooldown player1spells 0
 scoreboard players set magicMissileCooldown player1spells 0

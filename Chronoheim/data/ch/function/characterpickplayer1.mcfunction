@@ -787,7 +787,7 @@ execute if score character# slot1 matches 0 run execute if items entity @p[tag=p
 
 
 #Stein character select p1
-execute if items entity @p[tag=p1,tag=steinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Stein","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Stein"]
+execute if items entity @p[tag=p1,tag=steinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Stein","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Stein"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=steinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Stein","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot3 hp = stein herohealth
@@ -808,7 +808,7 @@ execute if score character# slot1 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=steinO] container.* minecraft:player_head[minecraft:custom_name={"text":"Stein","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot1 35
 
 #Barley character select p1
-execute if items entity @p[tag=p1,tag=barleyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Barley","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Barley"]
+execute if items entity @p[tag=p1,tag=barleyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Barley","bold":true,"color":"dark_green","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Barley"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=barleyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Barley","bold":true,"color":"dark_green","italic":false}] run scoreboard players operation slot3 hp = barley herohealth
@@ -829,7 +829,7 @@ execute if score character# slot1 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=barleyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Barley","bold":true,"color":"dark_green","italic":false}] run scoreboard players set character# slot1 36
 
 #Boogaloo character select p1
-execute if items entity @p[tag=p1,tag=boogalooO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boogaloo","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Boogaloo"]
+execute if items entity @p[tag=p1,tag=boogalooO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boogaloo","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Boogaloo"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=boogalooO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boogaloo","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot3 hp = boogaloo herohealth
@@ -847,9 +847,10 @@ execute if score character# slot2 matches 0 run execute if score character# slot
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=boogalooO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boogaloo","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot1 hp = boogaloo herohealth
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=boogalooO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boogaloo","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot1 = boogaloo heroattack
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=boogalooO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boogaloo","bold":true,"color":"blue","italic":false}] run execute at @e[type=armor_stand,name=slot1] run place template minecraft:boogaloo ~ ~1 ~ clockwise_90
+execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=boogalooO] container.* minecraft:player_head[minecraft:custom_name={"text":"Boogaloo","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot1 37
 
 #Igor character select p1
-execute if items entity @p[tag=p1,tag=igorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Igor","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Igor"]
+execute if items entity @p[tag=p1,tag=igorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Igor","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Igor"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=igorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Igor","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot3 hp = igor herohealth
@@ -867,9 +868,10 @@ execute if score character# slot2 matches 0 run execute if score character# slot
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=igorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Igor","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot1 hp = igor herohealth
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=igorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Igor","bold":true,"color":"blue","italic":false}] run scoreboard players operation atk slot1 = igor heroattack
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=igorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Igor","bold":true,"color":"blue","italic":false}] run execute at @e[type=armor_stand,name=slot1] run place template minecraft:igor ~ ~1 ~ clockwise_90
+execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=igorO] container.* minecraft:player_head[minecraft:custom_name={"text":"Igor","bold":true,"color":"blue","italic":false}] run execute at @e[type=armor_stand,name=slot1] run scoreboard players set character# slot1 38
 
 #Blinky character select p1
-execute if items entity @p[tag=p1,tag=blinkyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blinky","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Blinky"]
+execute if items entity @p[tag=p1,tag=blinkyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blinky","bold":true,"color":"blue","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Blinky"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=blinkyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blinky","bold":true,"color":"blue","italic":false}] run scoreboard players operation slot3 hp = blinky herohealth
@@ -893,7 +895,7 @@ execute if score character# slot1 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=blinkyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Blinky","bold":true,"color":"blue","italic":false}] run scoreboard players set character# slot1 39
 
 #Zeebo character select p1
-execute if items entity @p[tag=p1,tag=zeeboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Zeebo","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Zeebo"]
+execute if items entity @p[tag=p1,tag=zeeboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Zeebo","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Zeebo"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=zeeboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Zeebo","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot3 hp = zeebo herohealth
@@ -911,9 +913,10 @@ execute if score character# slot2 matches 0 run execute if score character# slot
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=zeeboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Zeebo","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot1 hp = zeebo herohealth
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=zeeboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Zeebo","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot1 = zeebo heroattack
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=zeeboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Zeebo","bold":true,"color":"dark_purple","italic":false}] run execute at @e[type=armor_stand,name=slot1] run place template minecraft:zeebo ~ ~1 ~ clockwise_90
+execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=zeeboO] container.* minecraft:player_head[minecraft:custom_name={"text":"Zeebo","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot1 40
 
 #Fenrir character select p1
-execute if items entity @p[tag=p1,tag=fenrirO] container.* minecraft:player_head[minecraft:custom_name={"text":"Fenrir","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Fenrir"]
+execute if items entity @p[tag=p1,tag=fenrirO] container.* minecraft:player_head[minecraft:custom_name={"text":"Fenrir","bold":true,"color":"dark_purple","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Fenrir"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=fenrirO] container.* minecraft:player_head[minecraft:custom_name={"text":"Fenrir","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot3 hp = fenrir herohealth
@@ -932,9 +935,10 @@ execute if score character# slot2 matches 0 run execute if score character# slot
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=fenrirO] container.* minecraft:player_head[minecraft:custom_name={"text":"Fenrir","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation slot1 hp = fenrir herohealth
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=fenrirO] container.* minecraft:player_head[minecraft:custom_name={"text":"Fenrir","bold":true,"color":"dark_purple","italic":false}] run scoreboard players operation atk slot1 = fenrir heroattack
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=fenrirO] container.* minecraft:player_head[minecraft:custom_name={"text":"Fenrir","bold":true,"color":"dark_purple","italic":false}] run execute at @e[type=armor_stand,name=slot1] run place template minecraft:fenrir ~ ~1 ~ clockwise_90
+execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=fenrirO] container.* minecraft:player_head[minecraft:custom_name={"text":"Fenrir","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot1 41
 
 #Dolly character select p1
-execute if items entity @p[tag=p1,tag=dollyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dolly","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Dolly"]
+execute if items entity @p[tag=p1,tag=dollyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dolly","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Dolly"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=dollyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dolly","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot3 hp = dolly herohealth
@@ -952,9 +956,10 @@ execute if score character# slot2 matches 0 run execute if score character# slot
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=dollyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dolly","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot1 hp = dolly herohealth
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=dollyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dolly","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot1 = dolly heroattack
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=dollyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dolly","bold":true,"color":"gold","italic":false}] run execute at @e[type=armor_stand,name=slot1] run place template minecraft:dolly ~ ~1 ~ clockwise_90
+execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=dollyO] container.* minecraft:player_head[minecraft:custom_name={"text":"Dolly","bold":true,"color":"gold","italic":false}] run scoreboard players set character# slot1 42
 
 #Grendel character select p1
-execute if items entity @p[tag=p1,tag=grendelO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grendel","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked  Grendel"]
+execute if items entity @p[tag=p1,tag=grendelO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grendel","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Grendel"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=grendelO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grendel","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot3 hp = grendel herohealth
@@ -974,3 +979,4 @@ execute if score character# slot2 matches 0 run execute if score character# slot
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=grendelO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grendel","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot1 hp = grendel herohealth
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=grendelO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grendel","bold":true,"color":"gold","italic":false}] run scoreboard players operation atk slot1 = grendel heroattack
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=grendelO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grendel","bold":true,"color":"gold","italic":false}] run execute at @e[type=armor_stand,name=slot1] run place template minecraft:grendel ~ ~1 ~ clockwise_90
+execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=grendelO] container.* minecraft:player_head[minecraft:custom_name={"text":"Grendel","bold":true,"color":"gold","italic":false}] run scoreboard players set character# slot1 43

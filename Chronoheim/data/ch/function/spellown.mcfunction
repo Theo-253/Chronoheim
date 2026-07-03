@@ -37,7 +37,7 @@ execute at @p[tag=p1,tag=!spiderwardO] run item replace block -180 126 -100 cont
 execute at @p[tag=p1,tag=!darkritualO] run item replace block -180 126 -100 container.12 with air
 execute at @p[tag=p1,tag=!raisedeadO] run item replace block -180 126 -100 container.13 with air
 execute at @p[tag=p1,tag=!curseofbatsO] run item replace block -180 126 -100 container.14 with air
-execute at @p[tag=p1,tag=!monkeyspawO] run item replace block -180 126 -100 container.14 with air
+execute at @p[tag=p1,tag=!monkeyspawO] run item replace block -180 126 -100 container.15 with air
 
 
 
@@ -80,4 +80,4 @@ execute at @p[tag=p2,tag=!spiderwardO] run item replace block -171 126 -107 cont
 execute at @p[tag=p2,tag=!darkritualO] run item replace block -171 126 -107 container.12 with air
 execute at @p[tag=p2,tag=!raisedeadO] run item replace block -171 126 -107 container.13 with air
 execute at @p[tag=p2,tag=!curseofbatsO] run item replace block -171 126 -107 container.14 with air
-execute at @p[tag=p2,tag=!monkeyspawO] run item replace block -171 126 -107 container.14 with air
+execute at @p[tag=p2,tag=!monkeyspawO] run item replace block -171 126 -107 container.15 with air

@@ -23,7 +23,7 @@ execute if score zombies booleans matches 1 run execute if score slot1 hp matche
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players operation speed slot4 = zombie herospeed
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players operation atk slot4 = zombie heroattack
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players set slot4 stun 0
-execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players set nobasicatk slot4 1
+execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players set nobasicatk slot4 0
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players set disarmedslot4 booleaneffects 0
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 at @e[name=slot4] run place template minecraft:zombie ~ ~1 ~ clockwise_90
@@ -35,7 +35,7 @@ execute if score zombies booleans matches 1 run execute if score slot1 hp matche
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players operation speed slot3 = zombie herospeed
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players operation atk slot3 = zombie heroattack
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players set slot3 stun 0
-execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players set nobasicatk slot3 1
+execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players set nobasicatk slot3 0
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players set disarmedslot3 booleaneffects 0
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 at @e[name=slot3] run place template minecraft:zombie ~ ~1 ~ clockwise_90
@@ -47,7 +47,7 @@ execute if score zombies booleans matches 1 run execute if score slot1 hp matche
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players operation speed slot2 = zombie herospeed
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players operation atk slot2 = zombie heroattack
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players set slot2 stun 0
-execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players set nobasicatk slot2 1
+execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players set nobasicatk slot2 0
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players set disarmedslot2 booleaneffects 0
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 at @e[name=slot2] run place template minecraft:zombie ~ ~1 ~ clockwise_90
@@ -59,7 +59,7 @@ execute if score zombies booleans matches 1 run execute if score slot1 hp matche
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches ..0 run scoreboard players operation speed slot1 = zombie herospeed
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches ..0 run scoreboard players operation atk slot1 = zombie heroattack
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches ..0 run scoreboard players set slot1 stun 0
-execute if score zombies booleans matches 1 run execute if score slot1 hp matches ..0 run scoreboard players set nobasicatk slot1 1
+execute if score zombies booleans matches 1 run execute if score slot1 hp matches ..0 run scoreboard players set nobasicatk slot1 0
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches ..0 run scoreboard players set disarmedslot1 booleaneffects 0
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score zombies booleans matches 1 run execute if score slot1 hp matches ..0 at @e[name=slot1] run place template minecraft:zombie ~ ~1 ~ clockwise_90
@@ -75,7 +75,7 @@ execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1..
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players operation atk slot4 = bat heroattack
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players operation atk slot4 *= curseStacks slot8
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players set slot4 stun 0
-execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players set nobasicatk slot4 1
+execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players set nobasicatk slot4 0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players set disarmedslot4 booleaneffects 0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches 1.. if score slot4 hp matches ..0 at @e[name=slot4] run place template minecraft:bat ~ ~1 ~ clockwise_90
@@ -91,7 +91,7 @@ execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1..
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players operation atk slot3 = bat heroattack
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players operation atk slot3 *= curseStacks slot8
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players set slot3 stun 0
-execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players set nobasicatk slot3 1
+execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players set nobasicatk slot3 0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players set disarmedslot3 booleaneffects 0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches 1.. if score slot3 hp matches ..0 at @e[name=slot3] run place template minecraft:bat ~ ~1 ~ clockwise_90
@@ -107,7 +107,7 @@ execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1..
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players operation atk slot2 = bat heroattack
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players operation atk slot2 *= curseStacks slot8
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players set slot2 stun 0
-execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players set nobasicatk slot2 1
+execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players set nobasicatk slot2 0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players set disarmedslot2 booleaneffects 0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches 1.. if score slot2 hp matches ..0 at @e[name=slot2] run place template minecraft:bat ~ ~1 ~ clockwise_90
@@ -123,7 +123,7 @@ execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0 run scoreboard players operation atk slot1 = bat heroattack
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0 run scoreboard players operation atk slot1 *= curseStacks slot8
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0 run scoreboard players set slot1 stun 0
-execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0 run scoreboard players set nobasicatk slot1 1
+execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0 run scoreboard players set nobasicatk slot1 0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0 run scoreboard players set disarmedslot1 booleaneffects 0
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0 run scoreboard players add alivep2 deaths 1
 execute if score curse slot8 matches 6 run execute if score slot1 hp matches ..0 at @e[name=slot1] run place template minecraft:bat ~ ~1 ~ clockwise_90

@@ -809,9 +809,9 @@ scoreboard players set darkpowerDuration spellStats 1
 scoreboard players set darkpowerScale spellStats 20
 scoreboard players set darkpowerSp spellStats 3
 scoreboard players set darkpowerCD spellStats 1
-scoreboard players set spelleton heroattack 100
-scoreboard players set spelleton herohealth 400
-scoreboard players set spelleton herospeed 1200
+scoreboard players set spelletonATK spellStats 100
+scoreboard players set spelletonHP spellStats 400
+scoreboard players set spelletonSpeed spellStats 1200
 scoreboard players set raisedeadSp spellStats 3
 scoreboard players set raisedeadCD spellStats 5
 scoreboard players set monkeyspaw spellStats 3

@@ -2,6 +2,12 @@ execute if score ward slot6 matches 1 run scoreboard players set ward slot6 0
 execute if score ward slot1 matches 1 at @e[name=slot6,type=armor_stand] run particle minecraft:ominous_spawning ~ ~1 ~ 0.9 0.9 0.9 0.5 200
 execute if score ward slot1 matches 2 at @e[name=slot6,type=armor_stand] run particle minecraft:bubble_pop ~ ~1 ~ 0.9 0.9 0.9 0.0001 200
 execute if score ward slot1 matches 3 at @e[name=slot6,type=armor_stand] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score ward slot6 matches 4 at @e[name=slot6,type=armor_stand] run particle minecraft:block{block_state:"minecraft:cobweb"} ~ ~1 ~ 0.9 0.9 0.9 0.1 200
+execute if score ward slot6 matches 4 if score spiderwardDuration spellStats > durationSlot2 speedDebuffs run scoreboard players operation durationSlot2 speedDebuffs = spiderwardDuration spellStats
+execute if score ward slot6 matches 4 if score spiderwardDuration spellStats > durationSlot2 poison run scoreboard players operation durationSlot2 poison = spiderwardDuration spellStats
+execute if score ward slot6 matches 4 run scoreboard players operation slot2Poison poison += spiderward spellStats
+execute if score ward slot6 matches 4 run scoreboard players operation speedDebuffSlot2 speedDebuffs += spiderwardSpDebuff spellStats
+execute if score ward slot6 matches 4 run scoreboard players operation speed slot2 -= spiderwardSpDebuff spellStats
 execute if score ward slot6 matches 2 run execute if score slot1isatk booleans matches 1 run scoreboard players set slot1 stun 1
 execute if score ward slot6 matches 2 run execute if score slot2isatk booleans matches 1 run scoreboard players set slot2 stun 1
 execute if score ward slot6 matches 2 run execute if score slot3isatk booleans matches 1 run scoreboard players set slot3 stun 1

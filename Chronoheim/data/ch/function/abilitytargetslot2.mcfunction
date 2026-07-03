@@ -446,7 +446,7 @@ execute unless score abilitynumber abilities matches 34 unless score abilitynumb
 
 #Token Abilities
 execute if score abilitynumber abilities matches 34 run scoreboard players set abilitynumber abilities -34
-execute if score abilitynumber abilities matches 34 run scoreboard players set abilitynumber abilities -35
-execute if score abilitynumber abilities matches 34 run scoreboard players set abilitynumber abilities -36
-execute if score abilitynumber abilities matches 34 run scoreboard players set abilitynumber abilities -42
-execute if score abilitynumber abilities matches 34 run scoreboard players set abilitynumber abilities -43
+execute if score abilitynumber abilities matches 35 run scoreboard players set abilitynumber abilities -35
+execute if score abilitynumber abilities matches 36 run scoreboard players set abilitynumber abilities -36
+execute if score abilitynumber abilities matches 42 run scoreboard players set abilitynumber abilities -42
+execute if score abilitynumber abilities matches 43 run scoreboard players set abilitynumber abilities -43

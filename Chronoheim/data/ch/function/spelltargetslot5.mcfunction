@@ -258,6 +258,56 @@ execute if score spellnumber spells matches 32 run tellraw @a[tag=game1] ["",{"s
 execute if score spellnumber spells matches 32 run scoreboard players set spellbuffsp1 spells 0
 execute if score spellnumber spells matches 32 run scoreboard players set attackIsOngoingGame1 booleans 0
 
+#Slimed!
+execute if score spellnumber spells matches 35 if score ward slot5 matches 0 run scoreboard players operation disarmedslot5 booleaneffects += slimed spellStats
+execute if score spellnumber spells matches 35 if score ward slot5 matches 1.. run function ch:wardslot5
+execute if score spellnumber spells matches 35 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 35 run execute at @n[type=armor_stand,name=slot5] run particle minecraft:item_slime ~ ~1 ~ 0.7 0.7 0.7 0.3 150
+execute if score spellnumber spells matches 35 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Slimed! on Slot 5!"]
+
+#Vampire Mark
+execute if score spellnumber spells matches 36 run scoreboard players operation lifesteal slot5 = vampiremark spellStats
+execute if score spellnumber spells matches 36 run execute at @n[type=armor_stand,name=slot5] run particle minecraft:crimson_spore ~ ~1 ~ 0.6 0.4 0.6 0 200
+execute if score spellnumber spells matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Vampire Mark on Slot 5!"]
+
+#Butchering
+execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves = butchering spellStats
+execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves += spellbuffsp1 spells
+execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves += marks slot5
+execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves /= atkmultiplier slot5
+execute if score spellnumber spells matches 37 run execute if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= spellDmg saves
+execute if score spellnumber spells matches 37 run execute if score ward slot5 matches 0 if score shield slot5 matches ..0 run scoreboard players operation slot5 hp += shield slot5
+execute if score spellnumber spells matches 37 at @e[name=slot5] run particle minecraft:damage_indicator ~ ~1 ~ 0.6 0.6 0.6 0 100
+execute if score spellnumber spells matches 37 run execute if score ward slot5 matches 1.. run function ch:wardslot5
+execute if score spellnumber spells matches 37 run scoreboard players set spellbuffsp1 spells 0
+execute if score spellnumber spells matches 37 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 37 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Butchering on Slot 5!"]
+
+#Will O' Wisp
+execute if score spellnumber spells matches 38 run execute if score ward slot5 matches 0 if score durationSlot5 burn < willowispDuration spellStats run scoreboard players operation durationSlot5 burn = willowispDuration spellStats
+execute if score spellnumber spells matches 38 run execute if score ward slot5 matches 0 run scoreboard players operation slot5Burn burn += willowisp spellStats
+execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves = slot1Burn burn
+execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves += spellbuffsp1 spells
+execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves += marks slot5
+execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves /= atkmultiplier slot5
+execute if score spellnumber spells matches 38 run execute if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= spellDmg saves
+execute if score spellnumber spells matches 38 run execute if score ward slot5 matches 0 if score shield slot5 matches ..0 run scoreboard players operation slot5 hp += shield slot5
+execute if score spellnumber spells matches 38 at @e[name=slot5] run particle minecraft:glow ~ ~1 ~ 0.7 0.7 0.7 0.1 100
+execute if score spellnumber spells matches 38 at @e[name=slot5] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.6 0.6 0.6 0.1 100
+execute if score spellnumber spells matches 38 run execute if score ward slot5 matches 1.. run function ch:wardslot5
+execute if score spellnumber spells matches 38 run scoreboard players set spellbuffsp1 spells 0
+execute if score spellnumber spells matches 38 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 38 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Will O' Wisp on Slot 5!"]
+
+#Curse of Bats
+execute if score spellnumber spells matches 42 if score ward slot1 matches ..0 unless score curse slot1 matches 5 unless score curse slot1 matches 6 run scoreboard players set curseStacks slot1 0
+execute if score spellnumber spells matches 42 if score ward slot1 matches ..0 unless score curse slot1 matches 5 unless score curse slot1 matches 6 run scoreboard players set curseDuration slot1 0
+execute if score spellnumber spells matches 42 if score ward slot1 matches ..0 unless score curse slot1 matches 5 run scoreboard players set curse slot1 6
+execute if score spellnumber spells matches 42 if score ward slot1 matches ..0 unless score curse slot1 matches 5 if score curse slot1 matches 6 run scoreboard players add curseStacks slot1 1
+execute if score spellnumber spells matches 42 run execute at @n[name=slot5] run particle shriek{delay:0} ~ ~1 ~ 0.3 0.5 0.3 0.1 200 normal
+execute if score spellnumber spells matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Curse of Bats on Slot 1!"]
+execute if score spellnumber spells matches 42 if score ward slot1 matches 1.. run function ch:wardslot1
+
 #This goes at the bottom
 execute if score shield slot5 matches ..0 run scoreboard players set shield slot5 0
 execute if score shield slot6 matches ..0 run scoreboard players set shield slot6 0

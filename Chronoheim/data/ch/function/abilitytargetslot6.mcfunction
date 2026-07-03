@@ -305,28 +305,29 @@ execute if score abilitynumber abilities matches 28 run execute if score ward sl
 execute if score abilitynumber abilities matches 28 run execute at @e[name=slot6,type=armor_stand] run particle raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 
 #Barley
-execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 5 if score ward slot6 matches ..0 run scoreboard players operation durationSlot1-1 fear = barleyDuration abilityStats 
-execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 6 if score ward slot6 matches ..0 run scoreboard players operation durationSlot2-1 fear = barleyDuration abilityStats 
-execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 7 if score ward slot6 matches ..0 run scoreboard players operation durationSlot3-1 fear = barleyDuration abilityStats 
-execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 8 if score ward slot6 matches ..0 run scoreboard players operation durationSlot4-1 fear = barleyDuration abilityStats 
+execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 1 if score ward slot6 matches ..0 run scoreboard players operation durationSlot1-6 fear = barleyDuration abilityStats 
+execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 2 if score ward slot6 matches ..0 run scoreboard players operation durationSlot2-6 fear = barleyDuration abilityStats 
+execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 3 if score ward slot6 matches ..0 run scoreboard players operation durationSlot3-6 fear = barleyDuration abilityStats 
+execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 4 if score ward slot6 matches ..0 run scoreboard players operation durationSlot4-6 fear = barleyDuration abilityStats 
 execute if score abilitynumber abilities matches -36 if score ward slot6 matches ..0 if score debuffDurationSlot6 atkmodifiers < barleyDuration abilityStats run scoreboard players operation debuffDurationSlot6 atkmodifiers = barleyDuration abilityStats
 execute if score abilitynumber abilities matches -36 if score ward slot6 matches ..0 run scoreboard players operation debuffDurationSlot6 atkmodifiers += barley abilityStats
 execute if score abilitynumber abilities matches -36 if score ward slot6 matches 1.. run function ch:wardslot6
 execute if score abilitynumber abilities matches -36 run execute at @n[type=armor_stand,name=slot6] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score sabilitynumber abilities matches -36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Spookcrow to fear Slot 6!"]
+execute if score abilitynumber abilities matches -36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Spookcrow to fear Slot 6!"]
 
 execute if score abilitynumber abilities matches 36 run scoreboard players set barleyPart1 abilities 1
 execute if score abilitynumber abilities matches 36 if score buffDurationSlot6 atkmodifiers < barleyDuration abilityStats run scoreboard players operation buffDurationSlot6 atkmodifiers = barleyDuration abilityStats
 execute if score abilitynumber abilities matches 36 run scoreboard players operation attackBuffSlot6 atkmodifiers += barley abilityStats
-execute if score abilitynumber abilities matches 36 run function ch:abilitygivetargetsp1
+execute if score abilitynumber abilities matches 36 run function ch:abilitygivetargetsp2
 execute if score abilitynumber abilities matches 36 run execute at @n[type=armor_stand,name=slot6] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score abilitynumber abilities matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Spookcrow to make Slot 6 scary!"]
+execute if score abilitynumber abilities matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Spookcrow to make Slot 6 scary!"]
 
 #Igor
 execute if score abilitynumber abilities matches 38 run scoreboard players operation cooldown slot6 -= igor abilityStats
 execute if score abilitynumber abilities matches 38 run execute at @e[type=armor_stand,name=slot6] run particle witch ~ ~1 ~ 0.5 0.8 0.5 0.1 100
 execute if score abilitynumber abilities matches 38 run execute if score durationSlot6 speedBuffs > igorDuration abilityStats run scoreboard players operation durationSlot6 speedBuffs = igorDuration abilityStats
 execute if score abilitynumber abilities matches 38 run scoreboard players operation speedBuffSlot6 speedBuffs += igorSpBuff abilityStats
+execute if score abilitynumber abilities matches 38 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Black Lagoon Brew on Slot 6!"]
 execute if score abilitynumber abilities matches 38 if score slot6isatk booleans matches 1 run execute if score invincibleSlot6 booleaneffects > igorDuration abilityStats run scoreboard players operation invincibleSlot6 booleaneffects = igorDuration abilityStats
 
 #Zeebo
@@ -337,6 +338,7 @@ execute if score abilitynumber abilities matches 40 if score ward slot6 matches 
 execute if score abilitynumber abilities matches 40 if score ward slot6 matches ..0 run execute if score durationSlot6 burn > zeeboDuration abilityStats run scoreboard players operation durationSlot6 burn = zeeboDuration abilityStats
 execute if score abilitynumber abilities matches 40 if score ward slot6 matches ..0 run scoreboard players operation slot6Burn burn += zeebo abilityStats
 execute if score abilitynumber abilities matches 40 run execute at @e[type=armor_stand,name=slot6] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
+execute if score abilitynumber abilities matches 40 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Last Laugh on Slot 6!"]
 execute if score abilitynumber abilities matches 40 run execute at @e[type=armor_stand,name=slot6] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
 execute if score abilitynumber abilities matches 40 if score ward slot6 matches 1.. run function ch:wardslot6
 
@@ -352,6 +354,7 @@ execute if score abilitynumber abilities matches 41 run scoreboard players opera
 execute if score abilitynumber abilities matches 41 run scoreboard players operation abilityDmg saves /= atkmultiplier slot6
 execute if score abilitynumber abilities matches 41 run execute if score ward slot6 matches ..0 run scoreboard players operation shield slot6 -= abilityDmg saves
 execute if score abilitynumber abilities matches 41 run execute at @n[type=armor_stand,name=slot6] run particle enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score abilitynumber abilities matches 41 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Mark of the Wolf on Slot 6!"]
 
 execute if score abilitynumber abilities matches 41 if score ward slot6 matches 1.. run function ch:wardslot6
 
@@ -377,7 +380,8 @@ execute if score abilitynumber abilities matches -43 run execute if score ward s
 execute if score abilitynumber abilities matches -43 run execute if score ward slot6 matches ..0 run scoreboard players operation slot6Disease disease += grendelDisease abilityStats
 execute if score abilitynumber abilities matches -43 run execute at @e[type=armor_stand,name=slot6] run particle minecraft:noxious_gas ~ ~1 ~ 0.7 0.7 0.7 0.05 200
 execute if score abilitynumber abilities matches -43 if score ward slot6 matches 1.. run function ch:wardslot6
-
+execute if score abilitynumber abilities matches -43 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Piercing Pestilence on Slot 6!"]
+execute if score abilitynumber abilities matches 43 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Piercing Pestilence on Slot 6!"]
 #Frank
 execute if score abilitynumber abilities matches 34 run scoreboard players operation abilityDmg saves = frank abilityStats
 execute if score abilitynumber abilities matches 34 run scoreboard players operation shield slot6 -= abilityDmg saves

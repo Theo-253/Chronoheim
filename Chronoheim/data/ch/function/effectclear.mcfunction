@@ -567,6 +567,31 @@ execute if score alivep5 deaths matches 1 if score alivep4 deaths matches 1 run 
 execute if score alivep5 deaths matches 1 if score alivep4 deaths matches 1 run scoreboard players set durationSlot24-19 fear 0
 execute if score alivep5 deaths matches 1 if score alivep4 deaths matches 1 run scoreboard players set durationSlot24-20 fear 0
 
+execute if score curseDuration slot1 matches 0 if score curse slot1 matches 5 run scoreboard players set slot1 hp 0
+execute if score curseDuration slot1 matches 0 if score curse slot1 matches 5 run function ch:death1
+execute if score curseDuration slot1 matches 0 if score curse slot1 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
+execute if score curseDuration slot2 matches 0 if score curse slot2 matches 5 run scoreboard players set slot2 hp 0
+execute if score curseDuration slot2 matches 0 if score curse slot2 matches 5 run function ch:death2
+execute if score curseDuration slot2 matches 0 if score curse slot2 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
+execute if score curseDuration slot3 matches 0 if score curse slot3 matches 5 run scoreboard players set slot3 hp 0
+execute if score curseDuration slot3 matches 0 if score curse slot3 matches 5 run function ch:death3
+execute if score curseDuration slot3 matches 0 if score curse slot3 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
+execute if score curseDuration slot4 matches 0 if score curse slot4 matches 5 run scoreboard players set slot4 hp 0
+execute if score curseDuration slot4 matches 0 if score curse slot4 matches 5 run function ch:death4
+execute if score curseDuration slot4 matches 0 if score curse slot4 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
+execute if score curseDuration slot5 matches 0 if score curse slot5 matches 5 run scoreboard players set slot5 hp 0
+execute if score curseDuration slot5 matches 0 if score curse slot5 matches 5 run function ch:death5
+execute if score curseDuration slot5 matches 0 if score curse slot5 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
+execute if score curseDuration slot6 matches 0 if score curse slot6 matches 5 run scoreboard players set slot6 hp 0
+execute if score curseDuration slot6 matches 0 if score curse slot6 matches 5 run function ch:death6
+execute if score curseDuration slot6 matches 0 if score curse slot6 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
+execute if score curseDuration slot7 matches 0 if score curse slot7 matches 5 run scoreboard players set slot7 hp 0
+execute if score curseDuration slot7 matches 0 if score curse slot7 matches 5 run function ch:death7
+execute if score curseDuration slot7 matches 0 if score curse slot7 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
+execute if score curseDuration slot8 matches 0 if score curse slot8 matches 5 run scoreboard players set slot8 hp 0
+execute if score curseDuration slot8 matches 0 if score curse slot8 matches 5 run function ch:death8
+execute if score curseDuration slot8 matches 0 if score curse slot8 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
+
 execute if score curseDuration slot1 matches 0 run scoreboard players set curse slot1 0
 execute if score curseDuration slot2 matches 0 run scoreboard players set curse slot2 0
 execute if score curseDuration slot3 matches 0 run scoreboard players set curse slot3 0

@@ -293,6 +293,8 @@ scoreboard players set healingRainCooldown player2spells 0
 scoreboard players set decimateCooldown player1spells 0
 scoreboard players set lifeLeechCooldown player1spells 0
 scoreboard players set healingRainCooldown player1spells 0
+scoreboard players set darkritual player1spells 0
+scoreboard players set darkritual player2spells 0
 
 
 scoreboard players set Spell_Points_P1 Spell_Points -1

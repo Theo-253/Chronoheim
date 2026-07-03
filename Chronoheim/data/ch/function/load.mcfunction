@@ -804,7 +804,8 @@ scoreboard players set spiderwardCD spellStats 4
 scoreboard players set spiderward spellStats 160
 scoreboard players set spiderwardSpDebuff spellStats 500
 scoreboard players set spiderwardDuration spellStats 2
-scoreboard players set darkpower spellStats 20
+scoreboard players set darkpower spellStats 0
+scoreboard players set darkpowerDuration spellStats 1
 scoreboard players set darkpowerScale spellStats 20
 scoreboard players set darkpowerSp spellStats 3
 scoreboard players set darkpowerCD spellStats 1

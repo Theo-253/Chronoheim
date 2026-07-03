@@ -349,7 +349,7 @@ execute if score abilitynumber abilities matches 43 run execute if score ward sl
 execute if score abilitynumber abilities matches 43 run execute if score ward slot8 matches ..0 run scoreboard players operation slot8Disease disease += grendelDisease abilityStats
 execute if score abilitynumber abilities matches 43 run execute at @e[type=armor_stand,name=slot8] run particle minecraft:noxious_gas ~ ~1 ~ 0.7 0.7 0.7 0.05 200
 execute if score abilitynumber abilities matches 43 if score ward slot8 matches 1.. run function ch:wardslot8
-execute if score abilitynumber abilities matches 43 run function ch:abilitygivetargetsp2
+execute if score abilitynumber abilities matches 43 run function ch:abilitygivetargetsp1
 execute if score abilitynumber abilities matches -43 run scoreboard players operation abilityDmg saves = grendel abilityStats
 execute if score abilitynumber abilities matches -43 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
 execute if score abilitynumber abilities matches -43 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 atkmodifiers

@@ -8,6 +8,7 @@ execute if score ward slot4 matches 4 if score spiderwardDuration spellStats > d
 execute if score ward slot4 matches 4 run scoreboard players operation slot8Poison poison += spiderward spellStats
 execute if score ward slot4 matches 4 run scoreboard players operation speedDebuffSlot8 speedDebuffs += spiderwardSpDebuff spellStats
 execute if score ward slot4 matches 4 run scoreboard players operation speed slot8 -= spiderwardSpDebuff spellStats
+execute if score ward slot4 matches 4 run scoreboard players set ward slot4 0
 execute if score ward slot4 matches 2 run execute if score slot1isatk booleans matches 1 run scoreboard players set slot1 stun 1
 execute if score ward slot4 matches 2 run execute if score slot2isatk booleans matches 1 run scoreboard players set slot2 stun 1
 execute if score ward slot4 matches 2 run execute if score slot3isatk booleans matches 1 run scoreboard players set slot3 stun 1

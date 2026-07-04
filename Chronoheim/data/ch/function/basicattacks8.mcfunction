@@ -144,10 +144,10 @@ execute if score slot7 hp matches 1.. run execute if score ward slot7 matches 0 
 execute if score ward slot8 matches ..0 run execute if score slot1isatk booleans matches 1 if score character# slot1 matches 29 if score slot8 hp <= ripperHpBleed abilityStats run scoreboard players operation slot8bleeding booleaneffects = ripperBleed abilityStats
 execute if score ward slot8 matches ..0 run execute if score slot2isatk booleans matches 1 if score character# slot2 matches 29 if score slot8 hp <= ripperHpBleed abilityStats run scoreboard players operation slot8bleeding booleaneffects = ripperBleed abilityStats
 execute if score ward slot8 matches ..0 run execute if score slot3isatk booleans matches 1 if score character# slot3 matches 29 if score slot8 hp <= ripperHpBleed abilityStats run scoreboard players operation slot8bleeding booleaneffects = ripperBleed abilityStats
-execute if score ward slot8 matches ..0 run execute if score slot1isatk booleans matches 1 if score character# slot1 matches -8 run scoreboard players operation slot8Disease disease = zombieDisease abilityStats
-execute if score ward slot8 matches ..0 run execute if score slot2isatk booleans matches 1 if score character# slot2 matches -8 run scoreboard players operation slot8Disease disease = zombieDisease abilityStats
-execute if score ward slot8 matches ..0 run execute if score slot3isatk booleans matches 1 if score character# slot3 matches -8 run scoreboard players operation slot8Disease disease = zombieDisease abilityStats
-execute if score ward slot8 matches ..0 run execute if score slot4isatk booleans matches 1 if score character# slot4 matches -8 run scoreboard players operation slot8Disease disease = zombieDisease abilityStats
+execute if score ward slot8 matches ..0 run execute if score slot1isatk booleans matches 1 if score character# slot1 matches -8 run scoreboard players operation slot8Disease disease += zombieDisease abilityStats
+execute if score ward slot8 matches ..0 run execute if score slot2isatk booleans matches 1 if score character# slot2 matches -8 run scoreboard players operation slot8Disease disease += zombieDisease abilityStats
+execute if score ward slot8 matches ..0 run execute if score slot3isatk booleans matches 1 if score character# slot3 matches -8 run scoreboard players operation slot8Disease disease += zombieDisease abilityStats
+execute if score ward slot8 matches ..0 run execute if score slot4isatk booleans matches 1 if score character# slot4 matches -8 run scoreboard players operation slot8Disease disease += zombieDisease abilityStats
 
 #damage + shield reset (all)
 execute if score shield slot8 matches ..0 if score ward slot8 matches 0 run scoreboard players operation slot8 hp += shield slot8

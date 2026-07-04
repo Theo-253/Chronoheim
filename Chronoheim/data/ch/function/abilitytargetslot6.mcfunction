@@ -416,7 +416,7 @@ execute if score abilitynumber abilities matches -35 run execute at @e[name=slot
 execute if score abilitynumber abilities matches -35 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Reanimation Beam to heal Slot 6!"]
 
 #Boogaloo
-execute if score abilitynumber abilities matches 37 if score curseDuration slot6 matches 1.. unless score curse slot6 matches 5 run scoreboard players set curseDuration slot6 0
+execute if score abilitynumber abilities matches 37 unless score curse slot6 matches 5 run scoreboard players set curseDuration slot6 -1
 execute if score abilitynumber abilities matches 37 if score curseStacks slot6 matches 1.. unless score curse slot6 matches 5 run scoreboard players set curseStacks slot6 0
 execute if score abilitynumber abilities matches 37 unless score curse slot6 matches 5 run scoreboard players set curse slot6 1
 execute if score abilitynumber abilities matches 37 run execute at @e[name=slot6,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30

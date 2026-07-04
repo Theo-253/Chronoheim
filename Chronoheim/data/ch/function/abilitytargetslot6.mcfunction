@@ -412,6 +412,7 @@ execute if score abilitynumber abilities matches 35 run function ch:abilitygivet
 
 execute if score abilitynumber abilities matches -35 if score slot6bleeding booleaneffects matches 0 run scoreboard players operation slot6 hp += abilityDmg saves
 execute if score abilitynumber abilities matches -35 if score character# slot6 matches 35 run function ch:cleanseslot6
+execute if score abilitynumber abilities matches -35 if score character# slot6 matches 34 run function ch:cleanseslot6
 execute if score abilitynumber abilities matches -35 run execute at @e[name=slot6,type=armor_stand] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 2 100
 execute if score abilitynumber abilities matches -35 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Reanimation Beam to heal Slot 6!"]
 

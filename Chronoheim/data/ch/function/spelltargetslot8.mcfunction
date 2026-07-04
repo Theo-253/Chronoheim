@@ -276,7 +276,7 @@ execute if score spellnumber spells matches -3 run scoreboard players set spellb
 #cannibalize
 execute if score spellnumber spells matches 34 run scoreboard players operation slot8 hp -= cannibalize spellStats
 execute if score spellnumber spells matches 34 run scoreboard players operation slot8bleeding booleaneffects += cannibalizeDuration spellStats
-execute if score spellnumber spells matches 34 run function ch:spellgivetargetsp1
+execute if score spellnumber spells matches 34 run function ch:spellgivetargetsp1reverse
 execute if score spellnumber spells matches 34 run execute at @n[type=armor_stand,name=slot8] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber spells matches 34 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Cannibalize on Slot 8!"]
 execute if score spellnumber spells matches 34 run scoreboard players set spellnumber spells -3

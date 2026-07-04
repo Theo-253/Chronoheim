@@ -379,6 +379,14 @@ scoreboard players set spellbuffsp2 spells 0
  scoreboard players set maxhp slot6 9999
  scoreboard players set maxhp slot7 9999
  scoreboard players set maxhp slot8 9999
+ scoreboard players set maxspeed slot1 9999
+ scoreboard players set maxspeed slot2 9999
+ scoreboard players set maxspeed slot3 9999
+ scoreboard players set maxspeed slot4 9999
+ scoreboard players set maxspeed slot5 9999
+ scoreboard players set maxspeed slot6 9999
+ scoreboard players set maxspeed slot7 9999
+ scoreboard players set maxspeed slot8 9999
 
 
 

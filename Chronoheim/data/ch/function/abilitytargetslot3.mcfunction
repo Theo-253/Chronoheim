@@ -318,21 +318,22 @@ execute if score abilitynumber abilities matches -36 run tellraw @a[tag=game1] [
 execute if score abilitynumber abilities matches 36 run scoreboard players set barleyPart1 abilities 3
 execute if score abilitynumber abilities matches 36 if score buffDurationSlot3 atkmodifiers < barleyDuration abilityStats run scoreboard players operation buffDurationSlot3 atkmodifiers = barleyDuration abilityStats
 execute if score abilitynumber abilities matches 36 run scoreboard players operation attackBuffSlot3 atkmodifiers += barley abilityStats
-execute if score abilitynumber abilities matches 36 run function ch:abilitygivetargetsp2
+execute if score abilitynumber abilities matches 36 run function ch:abilitygivetargetsp1
 execute if score abilitynumber abilities matches 36 run execute at @n[type=armor_stand,name=slot3] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score abilitynumber abilities matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Spookcrow to make Slot 3 scary!"]
 
 #Igor
 execute if score abilitynumber abilities matches 38 run scoreboard players operation cooldown slot3 -= igor abilityStats
 execute if score abilitynumber abilities matches 38 run execute at @e[type=armor_stand,name=slot3] run particle witch ~ ~1 ~ 0.5 0.8 0.5 0.1 100
-execute if score abilitynumber abilities matches 38 run execute if score durationSlot3 speedBuffs > igorDuration abilityStats run scoreboard players operation durationSlot3 speedBuffs = igorDuration abilityStats
+execute if score abilitynumber abilities matches 38 run execute if score durationSlot3 speedBuffs < igorDuration abilityStats run scoreboard players operation durationSlot3 speedBuffs = igorDuration abilityStats
 execute if score abilitynumber abilities matches 38 run scoreboard players operation speedBuffSlot3 speedBuffs += igorSpBuff abilityStats
 execute if score abilitynumber abilities matches 38 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Black Lagoon Brew on Slot 3!"]
-execute if score abilitynumber abilities matches 38 if score slot2isatk booleans matches 1 run execute if score invincibleSlot3 booleaneffects > igorDuration abilityStats run scoreboard players operation invincibleSlot3 booleaneffects = igorDuration abilityStats
+execute if score abilitynumber abilities matches 38 if score slot2isatk booleans matches 1 run execute if score invincibleSlot3 booleaneffects < igorDuration abilityStats run scoreboard players operation invincibleSlot3 booleaneffects = igorDuration abilityStats
+execute if score abilitynumber abilities matches 38 if score slot2isatk booleans matches 1 run scoreboard players operation savehp3 saves = slot3 hp
 
 #Zeebo
 execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 2 run scoreboard players set curseStacks slot3 0
-execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 2 run scoreboard players set curseDuration slot3 0
+execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 2 run scoreboard players set curseDuration slot3 -1
 execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 unless score curse slot3 matches 5 run scoreboard players set curse slot3 2
 execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 unless score curse slot3 matches 5 if score curse slot3 matches 2 run scoreboard players add curseStacks slot3 1
 execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 run execute if score durationSlot3 burn > zeeboDuration abilityStats run scoreboard players operation durationSlot3 burn = zeeboDuration abilityStats
@@ -344,7 +345,7 @@ execute if score abilitynumber abilities matches 40 if score ward slot3 matches 
 
 #Fenrir
 execute if score abilitynumber abilities matches 41 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 3 run scoreboard players set curseStacks slot3 0
-execute if score abilitynumber abilities matches 41 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 3 run scoreboard players set curseDuration slot3 0
+execute if score abilitynumber abilities matches 41 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 3 run scoreboard players set curseDuration slot3 -1
 execute if score abilitynumber abilities matches 41 if score ward slot3 matches ..0 unless score curse slot3 matches 5 run scoreboard players set curse slot3 3
 execute if score abilitynumber abilities matches 41 run scoreboard players operation abilityDmg saves = fenrir abilityStats
 execute if score abilitynumber abilities matches 41 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers

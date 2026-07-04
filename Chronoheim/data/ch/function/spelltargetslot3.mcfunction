@@ -329,7 +329,7 @@ execute if score spellnumber spells matches 37 run scoreboard players set attack
 execute if score spellnumber spells matches 37 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Butchering on Slot 3!"]
 
 #Will O' Wisp
-execute if score spellnumber spells matches 38 run execute if score ward slot3 matches 0 if score durationSlot5 burn < willowispDuration spellStats run scoreboard players operation durationSlot5 burn = willowispDuration spellStats
+execute if score spellnumber spells matches 38 run execute if score ward slot3 matches 0 if score durationSlot3 burn < willowispDuration spellStats run scoreboard players operation durationSlot3 burn = willowispDuration spellStats
 execute if score spellnumber spells matches 38 run execute if score ward slot3 matches 0 run scoreboard players operation slot3Burn burn += willowisp spellStats
 execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves = slot3Burn burn
 execute if score spellnumber spells matches 38 run scoreboard players operation spellDmg saves += spellbuffsp1 spells
@@ -346,7 +346,7 @@ execute if score spellnumber spells matches 38 run tellraw @a[tag=game1] ["",{"s
 
 #Curse of Bats
 execute if score spellnumber spells matches 42 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 6 run scoreboard players set curseStacks slot3 0
-execute if score spellnumber spells matches 42 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 6 run scoreboard players set curseDuration slot3 0
+execute if score spellnumber spells matches 42 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 6 run scoreboard players set curseDuration slot3 -1
 execute if score spellnumber spells matches 42 if score ward slot3 matches ..0 unless score curse slot3 matches 5 run scoreboard players set curse slot3 6
 execute if score spellnumber spells matches 42 if score ward slot3 matches ..0 unless score curse slot3 matches 5 if score curse slot3 matches 6 run scoreboard players add curseStacks slot3 1
 execute if score spellnumber spells matches 42 run execute at @n[name=slot3] run particle shriek{delay:0} ~ ~1 ~ 0.3 0.5 0.3 0.1 200 normal

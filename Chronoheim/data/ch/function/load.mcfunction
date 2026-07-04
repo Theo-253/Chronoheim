@@ -808,7 +808,7 @@ scoreboard players set spiderwardDuration spellStats 2
 scoreboard players set darkpower spellStats 0
 scoreboard players set darkpowerDuration spellStats 1
 scoreboard players set darkpowerScale spellStats 20
-scoreboard players set darkpowerSp spellStats 3
+scoreboard players set darkritualSp spellStats 3
 scoreboard players set darkpowerCD spellStats 1
 scoreboard players set spelletonATK spellStats 100
 scoreboard players set spelletonHP spellStats 400

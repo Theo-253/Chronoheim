@@ -387,7 +387,7 @@ execute if score abilitynumber abilities matches 34 run scoreboard players opera
 execute if score abilitynumber abilities matches 34 run scoreboard players operation slot2 hp += shield slot2
 execute if score abilitynumber abilities matches 34 run execute at @e[name=slot2,type=armor_stand] run particle minecraft:angry_villager ~ ~1 ~ 0.9 0.9 0.9 0.5 15
 execute if score abilitynumber abilities matches 34 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used IT'S ALIVE! to damage Slot 2!"]
-execute if score abilitynumber abilities matches 34 run function ch:abilitygivetargetsp2
+execute if score abilitynumber abilities matches 34 run function ch:abilitygivetargetsp1
 
 execute if score abilitynumber abilities matches -34 run execute if score ward slot2 matches 0 run scoreboard players operation slot2 stun = frankDuration abilityStats
 execute if score abilitynumber abilities matches -34 run execute if score ward slot2 matches 1.. run function ch:wardslot2

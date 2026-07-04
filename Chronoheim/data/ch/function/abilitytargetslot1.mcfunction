@@ -297,7 +297,7 @@ execute if score abilitynumber abilities matches -36 if score barleyPart1 abilit
 execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 7 if score ward slot1 matches ..0 run scoreboard players operation durationSlot7-1 fear = barleyDuration abilityStats 
 execute if score abilitynumber abilities matches -36 if score barleyPart1 abilities matches 8 if score ward slot1 matches ..0 run scoreboard players operation durationSlot8-1 fear = barleyDuration abilityStats 
 execute if score abilitynumber abilities matches -36 if score ward slot1 matches ..0 if score debuffDurationSlot1 atkmodifiers < barleyDuration abilityStats run scoreboard players operation debuffDurationSlot1 atkmodifiers = barleyDuration abilityStats
-execute if score abilitynumber abilities matches -36 if score ward slot1 matches ..0 run scoreboard players operation debuffDurationSlot1 atkmodifiers += barley abilityStats
+execute if score abilitynumber abilities matches -36 if score ward slot1 matches ..0 run scoreboard players operation attackDebuffSlot1 atkmodifiers += barley abilityStats
 execute if score abilitynumber abilities matches -36 if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score abilitynumber abilities matches -36 run execute at @n[type=armor_stand,name=slot1] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score abilitynumber abilities matches -36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Spookcrow to fear Slot 1!"]

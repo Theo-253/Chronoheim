@@ -268,7 +268,7 @@ execute if score spellnumber spells matches 32 run scoreboard players set attack
 
 execute if score spellnumber spells matches -3 if score slot8bleeding booleaneffects matches 0 run scoreboard players operation slot8 hp += cannibalize spellStats
 execute if score spellnumber spells matches -3 if score slot8bleeding booleaneffects matches 0 run scoreboard players operation slot8 hp += spellbuffsp1 spells
-execute if score spellnumber spells matches -3 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches -3 run function ch:spellphasep1
 execute if score spellnumber spells matches -3 run execute at @n[type=armor_stand,name=slot8] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score spellnumber spells matches -3 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Cannibalize to heal Slot 8!"]
 execute if score spellnumber spells matches -3 run scoreboard players set spellbuffsp1 spells 0
@@ -286,7 +286,7 @@ execute if score spellnumber spells matches 40 run execute if score buffDuration
 execute if score spellnumber spells matches 40 run scoreboard players operation attackBuffSlot8 atkmodifiers += darkpower spellStats
 execute if score spellnumber spells matches 40 run scoreboard players operation attackBuffSlot8 atkmodifiers += darkritual player1spells
 execute if score spellnumber spells matches 40 at @e[name=slot8] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 40
-execute if score spellnumber spells matches 40 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 40 run function ch:spellphasep1
 execute if score spellnumber spells matches 40 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Dark Ritual on Slot 8!"]
 
 #Monkey's Paw
@@ -296,7 +296,7 @@ execute if score spellnumber spells matches 43 run scoreboard players set curseS
 execute if score spellnumber spells matches 43 run scoreboard players operation curseDuration slot8 = monkeyspaw spellStats
 execute if score spellnumber spells matches 43 at @e[name=slot8] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.00000001 200
 execute if score spellnumber spells matches 43 run playsound minecraft:ambient.cave player @a[tag=game1] ~ ~ ~ 500 2
-execute if score spellnumber spells matches 43 run scoreboard players set attackIsOngoingGame1 booleans 0
+execute if score spellnumber spells matches 43 run function ch:spellphasep1
 execute if score spellnumber spells matches 43 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Monkey's Paw on Slot 8!"]
 
 #Slimed!
@@ -310,6 +310,7 @@ execute if score spellnumber spells matches 35 run tellraw @a[tag=game1] ["",{"s
 execute if score spellnumber spells matches 36 run scoreboard players operation lifesteal slot8 = vampiremark spellStats
 execute if score spellnumber spells matches 36 run execute at @n[type=armor_stand,name=slot8] run particle minecraft:crimson_spore ~ ~1 ~ 0.6 0.4 0.6 0 200
 execute if score spellnumber spells matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Vampire Mark on Slot 8!"]
+execute if score spellnumber spells matches 36 run function ch:spellphasep1
 
 #Butchering
 execute if score spellnumber spells matches 37 run scoreboard players operation spellDmg saves = butchering spellStats
@@ -348,6 +349,7 @@ execute if score spellnumber spells matches 42 if score ward slot8 matches ..0 u
 execute if score spellnumber spells matches 42 run execute at @n[name=slot8] run particle shriek{delay:0} ~ ~1 ~ 0.3 0.5 0.3 0.1 200 normal
 execute if score spellnumber spells matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Curse of Bats on Slot 8!"]
 execute if score spellnumber spells matches 42 if score ward slot8 matches 1.. run function ch:wardslot8
+execute if score spellnumber spells matches 42 run scoreboard players set attackIsOngoingGame1 booleans 0
 
 #This goes at the bottom
 execute if score shield slot5 matches ..0 run scoreboard players set shield slot5 0

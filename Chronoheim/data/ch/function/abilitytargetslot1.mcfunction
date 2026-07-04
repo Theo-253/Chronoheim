@@ -357,6 +357,7 @@ execute if score abilitynumber abilities matches 43 run execute if score ward sl
 execute if score abilitynumber abilities matches 43 run execute if score ward slot1 matches ..0 run scoreboard players operation slot1Disease disease += grendelDisease abilityStats
 execute if score abilitynumber abilities matches 43 run execute at @e[type=armor_stand,name=slot1] run particle minecraft:noxious_gas ~ ~1 ~ 0.7 0.7 0.7 0.05 200
 execute if score abilitynumber abilities matches 43 if score ward slot1 matches 1.. run function ch:wardslot1
+#execute if score abilitynumber abilities matches 43 run function ch:abilitygivetargetsp2
 execute if score abilitynumber abilities matches 43 run function ch:abilitygivetargetsp2
 execute if score abilitynumber abilities matches -43 run scoreboard players operation abilityDmg saves = grendel abilityStats
 execute if score abilitynumber abilities matches -43 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers
@@ -395,6 +396,7 @@ execute if score abilitynumber abilities matches 35 run execute if score ward sl
 execute if score abilitynumber abilities matches 35 run execute if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score abilitynumber abilities matches 35 run execute at @e[name=slot1,type=armor_stand] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 2 100
 execute if score abilitynumber abilities matches 35 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Reanimation Beam to damage Slot 1!"]
+#execute if score abilitynumber abilities matches 35 run function ch:abilitygivetargetsp1reverse
 execute if score abilitynumber abilities matches 35 run function ch:abilitygivetargetsp1reverse
 
 execute if score abilitynumber abilities matches -35 if score slot1bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += abilityDmg saves

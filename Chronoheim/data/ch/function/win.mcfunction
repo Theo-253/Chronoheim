@@ -72,6 +72,17 @@ tag @a[tag=game1] remove healingtotem
 tag @a[tag=game1] remove healingrain
 tag @a[tag=game1] remove decimate
 tag @a[tag=game1] remove lifeleech
+tag @a[tag=game1] remove cannibalize
+tag @a[tag=game1] remove slimed
+tag @a[tag=game1] remove vampiremark
+tag @a[tag=game1] remove willowisp
+tag @a[tag=game1] remove butchering
+tag @a[tag=game1] remove spiderward
+tag @a[tag=game1] remove darkritual
+tag @a[tag=game1] remove raisedead
+tag @a[tag=game1] remove monkeyspaw
+tag @a[tag=game1] remove curseofbats
+
 tag @a remove p1
 tag @a remove p2
 tag @a remove game1

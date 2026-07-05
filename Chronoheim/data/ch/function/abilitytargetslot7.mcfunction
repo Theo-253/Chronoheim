@@ -326,6 +326,7 @@ execute if score abilitynumber abilities matches 38 if score cooldown slot7 matc
 execute if score abilitynumber abilities matches 38 run execute at @e[type=armor_stand,name=slot7] run particle witch ~ ~1 ~ 0.5 0.8 0.5 0.1 100
 execute if score abilitynumber abilities matches 38 run execute if score durationSlot7 speedBuffs < igorDuration abilityStats run scoreboard players operation durationSlot7 speedBuffs = igorDuration abilityStats
 execute if score abilitynumber abilities matches 38 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Black Lagoon Brew on Slot 7!"]
+execute if score abilitynumber abilities matches 38 run scoreboard players operation speed slot7 += igorSpBuff abilityStats
 execute if score abilitynumber abilities matches 38 run scoreboard players operation speedBuffSlot7 speedBuffs += igorSpBuff abilityStats
 execute if score abilitynumber abilities matches 38 if score slot6isatk booleans matches 1 run execute if score invincibleSlot7 booleaneffects < igorDuration abilityStats run scoreboard players operation invincibleSlot7 booleaneffects = igorDuration abilityStats
 execute if score abilitynumber abilities matches 38 if score slot6isatk booleans matches 1 run scoreboard players operation savehp7 saves = slot7 hp

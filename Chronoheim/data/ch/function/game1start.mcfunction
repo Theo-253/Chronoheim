@@ -437,6 +437,13 @@ execute if score character# slot6 matches 21 run scoreboard players operation sl
 execute if score character# slot6 matches 21 run scoreboard players operation slot6 hp -= lillithLeaderLeechDmg abilityStats
 execute if score character# slot6 matches 21 run scoreboard players operation slot7 hp -= lillithLeaderLeechDmg abilityStats
 
+execute if score character# slot1 matches 41 run scoreboard players operation fenrirhpsave saves = slot1 hp
+execute if score character# slot2 matches 41 run scoreboard players operation fenrirhpsave saves = slot2 hp
+execute if score character# slot3 matches 41 run scoreboard players operation fenrirhpsave saves = slot3 hp
+execute if score character# slot5 matches 41 run scoreboard players operation fenrirhpsave2 saves = slot5 hp
+execute if score character# slot6 matches 41 run scoreboard players operation fenrirhpsave2 saves = slot6 hp
+execute if score character# slot7 matches 41 run scoreboard players operation fenrirhpsave2 saves = slot7 hp
+
 execute if score character# slot2 matches 29 run scoreboard players operation atk slot2 += ripperLeader heroattack
 execute if score character# slot2 matches 29 if score durationSlot2 shield < ripperLeaderDuration abilityStats run scoreboard players operation durationSlot2 shield = ripperLeaderDuration abilityStats
 execute if score character# slot2 matches 29 run scoreboard players operation shield slot2 += ripperShield abilityStats

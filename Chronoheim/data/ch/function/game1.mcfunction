@@ -124,12 +124,12 @@ execute if score character# slot3 matches 41 if score invincibleSlot3 booleaneff
 execute if score character# slot5 matches 41 if score invincibleSlot5 booleaneffects matches 0 run execute if score fenrirhpsave2 saves > slot5 hp run function abilities:fenrirrebuke
 execute if score character# slot6 matches 41 if score invincibleSlot6 booleaneffects matches 0 run execute if score fenrirhpsave2 saves > slot6 hp run function abilities:fenrirrebuke
 execute if score character# slot7 matches 41 if score invincibleSlot7 booleaneffects matches 0 run execute if score fenrirhpsave2 saves > slot7 hp run function abilities:fenrirrebuke
-execute if score character# slot1 matches 41 run scoreboard players operation fenrirhpsave saves = slot1 hp
-execute if score character# slot2 matches 41 run scoreboard players operation fenrirhpsave saves = slot2 hp
-execute if score character# slot3 matches 41 run scoreboard players operation fenrirhpsave saves = slot3 hp
-execute if score character# slot5 matches 41 run scoreboard players operation fenrirhpsave2 saves = slot5 hp
-execute if score character# slot6 matches 41 run scoreboard players operation fenrirhpsave2 saves = slot6 hp
-execute if score character# slot7 matches 41 run scoreboard players operation fenrirhpsave2 saves = slot7 hp
+execute if score character# slot1 matches 41 if score fenrirhpsave saves < slot1 hp run scoreboard players operation fenrirhpsave saves = slot1 hp
+execute if score character# slot2 matches 41 if score fenrirhpsave saves < slot2 hp run scoreboard players operation fenrirhpsave saves = slot2 hp
+execute if score character# slot3 matches 41 if score fenrirhpsave saves < slot3 hp run scoreboard players operation fenrirhpsave saves = slot3 hp
+execute if score character# slot5 matches 41 if score fenrirhpsave saves < slot5 hp run scoreboard players operation fenrirhpsave2 saves = slot5 hp
+execute if score character# slot6 matches 41 if score fenrirhpsave saves < slot6 hp run scoreboard players operation fenrirhpsave2 saves = slot6 hp
+execute if score character# slot7 matches 41 if score fenrirhpsave saves < slot7 hp run scoreboard players operation fenrirhpsave2 saves = slot7 hp
 
 #Zeebo Curse
 execute if score character# slot6 matches 40 if score curse slot1 matches 2 if score slot1 hp matches ..200 run scoreboard players set slot1 hp 0

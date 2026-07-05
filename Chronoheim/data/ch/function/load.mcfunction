@@ -814,7 +814,7 @@ scoreboard players set spelletonATK spellStats 100
 scoreboard players set spelletonHP spellStats 400
 scoreboard players set spelletonSpeed spellStats 1200
 scoreboard players set raisedeadSp spellStats 3
-scoreboard players set raisedeadCD spellStats 5
+scoreboard players set raiseDeadCD spellStats 5
 scoreboard players set monkeyspaw spellStats 3
 scoreboard players set monkeyspawSp spellStats 4
 scoreboard players set monkeyspawCD spellStats 5

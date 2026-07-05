@@ -3,9 +3,6 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run scoreboard players operation butcheringCooldown player2spells = butcheringCD spellStats
 scoreboard players set spellnumber spells 37
 
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run function ch:spellgivetargetsp1
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run function ch:spellgivetargetsp2
-
 execute if score durationSlot1 burn matches 1.. run scoreboard players add slot1Butchering spells 1
 execute if score durationSlot1 poison matches 1.. run scoreboard players add slot1Butchering spells 1
 execute if score durationSlot1 speedDebuffs matches 1.. run scoreboard players add slot1Butchering spells 1
@@ -126,6 +123,14 @@ execute if score durationSlot3-5 fear matches 1.. run scoreboard players add slo
 execute if score durationSlot2-5 fear matches 1.. run scoreboard players add slot8Butchering spells 1
 execute if score durationSlot1-5 fear matches 1.. run scoreboard players add slot8Butchering spells 1
 
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run execute if score slot5Butchering spells <= butcheringThreshold spellStats if score slot6Butchering spells <= butcheringThreshold spellStats if score slot8Butchering spells <= butcheringThreshold spellStats if score slot7Butchering spells <= butcheringThreshold spellStats run give @p[tag=p1] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run execute if score slot1Butchering spells <= butcheringThreshold spellStats if score slot2Butchering spells <= butcheringThreshold spellStats if score slot4Butchering spells <= butcheringThreshold spellStats if score slot3Butchering spells <= butcheringThreshold spellStats run give @p[tag=p2] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
+
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run function ch:spellgivetargetsp1
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run function ch:spellgivetargetsp2
+
+
 execute if score slot1Butchering spells <= butcheringThreshold spellStats run clear @a[tag=p2] minecraft:target[minecraft:custom_name="Target Slot 1"]
 execute if score slot2Butchering spells <= butcheringThreshold spellStats run clear @a[tag=p2] minecraft:target[minecraft:custom_name="Target Slot 2"]
 execute if score slot3Butchering spells <= butcheringThreshold spellStats run clear @a[tag=p2] minecraft:target[minecraft:custom_name="Target Slot 3"]
@@ -136,8 +141,7 @@ execute if score slot6Butchering spells <= butcheringThreshold spellStats run cl
 execute if score slot7Butchering spells <= butcheringThreshold spellStats run clear @a[tag=p1] minecraft:target[minecraft:custom_name="Target Slot 7"]
 execute if score slot8Butchering spells <= butcheringThreshold spellStats run clear @a[tag=p1] minecraft:target[minecraft:custom_name="Target Slot 8"]
 
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run execute if score slot5Butchering spells <= butcheringThreshold spellStats if score slot6Butchering spells <= butcheringThreshold spellStats if score slot8Butchering spells <= butcheringThreshold spellStats if score slot7Butchering spells <= butcheringThreshold spellStats run give @p[tag=p1] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run execute if score slot1Butchering spells <= butcheringThreshold spellStats if score slot2Butchering spells <= butcheringThreshold spellStats if score slot4Butchering spells <= butcheringThreshold spellStats if score slot3Butchering spells <= butcheringThreshold spellStats run give @p[tag=p2] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
+
 
 
 scoreboard players set slot1Butchering spells 0

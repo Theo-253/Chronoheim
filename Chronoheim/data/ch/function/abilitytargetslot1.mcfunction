@@ -378,7 +378,6 @@ execute if score abilitynumber abilities matches 34 run scoreboard players opera
 execute if score abilitynumber abilities matches 34 run execute at @e[name=slot1,type=armor_stand] run particle minecraft:angry_villager ~ ~1 ~ 0.9 0.9 0.9 0.5 15
 execute if score abilitynumber abilities matches 34 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used IT'S ALIVE! to damage Slot 1!"]
 execute if score abilitynumber abilities matches 34 run function ch:abilitygivetargetsp1
-
 execute if score abilitynumber abilities matches -34 run execute if score ward slot1 matches 0 run scoreboard players operation slot1 stun = frankDuration abilityStats
 execute if score abilitynumber abilities matches -34 run execute if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score abilitynumber abilities matches -34 run execute at @e[name=slot1,type=armor_stand] run particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0.9 0.9 0.9 0.5 100
@@ -396,7 +395,6 @@ execute if score abilitynumber abilities matches 35 run execute if score ward sl
 execute if score abilitynumber abilities matches 35 run execute if score ward slot1 matches 1.. run function ch:wardslot1
 execute if score abilitynumber abilities matches 35 run execute at @e[name=slot1,type=armor_stand] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 2 100
 execute if score abilitynumber abilities matches 35 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Reanimation Beam to damage Slot 1!"]
-#execute if score abilitynumber abilities matches 35 run function ch:abilitygivetargetsp1reverse
 execute if score abilitynumber abilities matches 35 run function ch:abilitygivetargetsp1reverse
 
 execute if score abilitynumber abilities matches -35 if score slot1bleeding booleaneffects matches 0 run scoreboard players operation slot1 hp += abilityDmg saves
@@ -433,7 +431,6 @@ execute if score shield slot1 matches ..0 run scoreboard players set shield slot
 execute if score shield slot2 matches ..0 run scoreboard players set shield slot2 0
 execute if score shield slot3 matches ..0 run scoreboard players set shield slot3 0
 execute if score shield slot4 matches ..0 run scoreboard players set shield slot4 0
-clear @p[tag=p2]
 execute unless score abilitynumber abilities matches 34 unless score abilitynumber abilities matches 35 unless score abilitynumber abilities matches 36 unless score abilitynumber abilities matches 42 unless score abilitynumber abilities matches 43 run function ch:turnend
 #Make sure to add burn to your abilities
 

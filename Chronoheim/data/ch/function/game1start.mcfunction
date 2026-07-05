@@ -401,16 +401,8 @@ execute if score character# slot2 matches 34 run scoreboard players operation du
 execute if score character# slot6 matches 34 run scoreboard players operation slot6 hp += frankLeader herohealth
 execute if score character# slot6 matches 34 run scoreboard players operation durationSlot6 taunt = frankLeaderTaunt abilityStats
 
-execute if score character# slot2 matches 37 run scoreboard players operation buffDurationSlot2 atkmodifiers = boogalooLeaderDuration abilityStats
-execute if score character# slot2 matches 37 run scoreboard players operation attackBuffSlot2 atkmodifiers = boogalooLeader abilityStats
-execute if score character# slot2 matches 37 run scoreboard players operation durationSlot2 speedBuffs = boogalooLeaderDuration abilityStats
-execute if score character# slot2 matches 37 run scoreboard players operation speedBuffSlot2 speedBuffs = boogalooLeaderSpeed abilityStats
-execute if score character# slot2 matches 37 run scoreboard players operation speed slot2 += boogalooLeaderSpeed abilityStats
-execute if score character# slot6 matches 37 run scoreboard players operation buffDurationSlot6 atkmodifiers = boogalooLeaderDuration abilityStats
-execute if score character# slot6 matches 37 run scoreboard players operation attackBuffSlot6 atkmodifiers = boogalooLeader abilityStats
-execute if score character# slot6 matches 37 run scoreboard players operation durationSlot6 speedBuffs = boogalooLeaderDuration abilityStats
-execute if score character# slot6 matches 37 run scoreboard players operation speedBuffSlot6 speedBuffs = boogalooLeaderSpeed abilityStats
-execute if score character# slot6 matches 37 run scoreboard players operation speed slot6 += boogalooLeaderSpeed abilityStats
+
+
 
 
 execute if score character# slot1 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
@@ -480,6 +472,17 @@ scoreboard players operation speed slot5 = maxspeed slot5
 scoreboard players operation speed slot6 = maxspeed slot6
 scoreboard players operation speed slot7 = maxspeed slot7
 scoreboard players operation speed slot8 = maxspeed slot8
+
+execute if score character# slot2 matches 37 run scoreboard players operation buffDurationSlot2 atkmodifiers = boogalooLeaderDuration abilityStats
+execute if score character# slot2 matches 37 run scoreboard players operation attackBuffSlot2 atkmodifiers = boogalooLeader abilityStats
+execute if score character# slot2 matches 37 run scoreboard players operation durationSlot2 speedBuffs = boogalooLeaderDuration abilityStats
+execute if score character# slot2 matches 37 run scoreboard players operation speedBuffSlot2 speedBuffs = boogalooLeaderSpeed abilityStats
+execute if score character# slot2 matches 37 run scoreboard players operation speed slot2 += boogalooLeaderSpeed abilityStats
+execute if score character# slot6 matches 37 run scoreboard players operation buffDurationSlot6 atkmodifiers = boogalooLeaderDuration abilityStats
+execute if score character# slot6 matches 37 run scoreboard players operation attackBuffSlot6 atkmodifiers = boogalooLeader abilityStats
+execute if score character# slot6 matches 37 run scoreboard players operation durationSlot6 speedBuffs = boogalooLeaderDuration abilityStats
+execute if score character# slot6 matches 37 run scoreboard players operation speedBuffSlot6 speedBuffs = boogalooLeaderSpeed abilityStats
+execute if score character# slot6 matches 37 run scoreboard players operation speed slot6 += boogalooLeaderSpeed abilityStats
 
 execute if score character# slot2 matches 18 run scoreboard players operation maxhp slot2 += grangorSelfHealthBonus herohealth
 execute if score character# slot2 matches 18 run scoreboard players operation maxhp slot1 += grangorTeamHealthBonus herohealth

@@ -337,7 +337,6 @@ execute if score abilitynumber abilities matches 41 run execute if score ward sl
 execute if score abilitynumber abilities matches 41 run execute at @n[type=armor_stand,name=slot8] run particle enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score abilitynumber abilities matches 41 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Mark of the Wolf on Slot 8!"]
 execute if score abilitynumber abilities matches 41 run execute if score ward slot8 matches 0 if score shield slot8 matches ..0 run scoreboard players operation slot8 hp += shield slot8
-
 execute if score abilitynumber abilities matches 41 if score ward slot8 matches 1.. run function ch:wardslot8
 
 #Grendel
@@ -406,18 +405,23 @@ execute if score abilitynumber abilities matches 37 run execute at @e[name=slot8
 execute if score abilitynumber abilities matches 37 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Devour Soul on Slot 8!"]
 
 #Dolly
-execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 unless score curse slot8 matches 5 run scoreboard players set curseDuration slot8 3
+execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 unless score curse slot8 matches 5 run scoreboard players operation curseDuration slot8 = dollyDuration abilityStats
 execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 unless score curse slot8 matches 5 if score curseStacks slot8 matches 1.. run scoreboard players set curseStacks slot8 0
 execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 unless score curse slot8 matches 5 run scoreboard players set curse slot8 4
 execute if score abilitynumber abilities matches 42 if score ward slot8 matches 1.. run function ch:wardslot8
 execute if score abilitynumber abilities matches 42 run execute at @e[name=slot8,type=armor_stand] run particle effect{color:[0.725,0.180,1.000]} ~ ~1 ~ 0.9 0.9 0.9 0.05 100
 execute if score abilitynumber abilities matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Life Link on Slot 8!"]
 execute if score abilitynumber abilities matches 42 run function ch:abilitygivetargetsp1
+execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 run scoreboard players operation dollydump saves = slot8 hp
+execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 run scoreboard players operation dollydump saves += shield slot8
+execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 run scoreboard players operation slot8Dolly saves = dollydump saves
 
-execute if score abilitynumber abilities matches -42 if score ward slot8 matches 0 unless score curse slot8 matches 5 run scoreboard players set curseDuration slot8 3
+execute if score abilitynumber abilities matches -42 if score ward slot8 matches 0 unless score curse slot8 matches 5 run scoreboard players operation curseDuration slot8 = dollyDuration abilityStats
 execute if score abilitynumber abilities matches -42 if score ward slot8 matches 0 unless score curse slot8 matches 5 if score curseStacks slot8 matches 1.. run scoreboard players set curseStacks slot8 0
 execute if score abilitynumber abilities matches -42 if score ward slot8 matches 0 unless score curse slot8 matches 5 run scoreboard players set curse slot8 4
-
+execute if score abilitynumber abilities matches -42 if score ward slot8 matches 0 run scoreboard players operation dollydump saves = slot8 hp
+execute if score abilitynumber abilities matches -42 if score ward slot8 matches 0 run scoreboard players operation dollydump saves += shield slot8
+execute if score abilitynumber abilities matches -42 if score ward slot8 matches 0 run scoreboard players operation slot8Dolly saves = dollydump saves
 execute if score abilitynumber abilities matches -42 if score ward slot8 matches 1.. run function ch:wardslot8
 execute if score abilitynumber abilities matches -42 run execute at @e[name=slot8,type=armor_stand] run particle effect{color:[0.725,0.180,1.000]} ~ ~1 ~ 0.9 0.9 0.9 0.05 100
 execute if score abilitynumber abilities matches -42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Life Link on Slot 8!"]

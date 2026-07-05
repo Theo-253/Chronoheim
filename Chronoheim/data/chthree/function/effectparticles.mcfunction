@@ -206,3 +206,12 @@ execute if score durationSlot24-19 fear matches 1.. at @e[name=slot19] run parti
 execute if score durationSlot-4 fear matches 1.. at @e[name=slot24] run particle minecraft:soul_fire_flame ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 execute if score durationSlot24-20 fear matches 1.. at @e[name=slot20] run particle minecraft:sculk_soul ~ ~2 ~ 0.2 0.9 0.2 0.1 1
 
+execute if score curse slot17 matches 1.. at @e[name=slot17] run particle minecraft:ash ~ ~1 ~ 0.9 0.9 0.9 0.01 5
+execute if score curse slot18 matches 1.. at @e[name=slot18] run particle minecraft:ash ~ ~1 ~ 0.9 0.9 0.9 0.01 5
+execute if score curse slot19 matches 1.. at @e[name=slot19] run particle minecraft:ash ~ ~1 ~ 0.9 0.9 0.9 0.01 5
+execute if score curse slot20 matches 1.. at @e[name=slot20] run particle minecraft:ash ~ ~1 ~ 0.9 0.9 0.9 0.01 5
+execute if score curse slot21 matches 1.. at @e[name=slot21] run particle minecraft:ash ~ ~1 ~ 0.9 0.9 0.9 0.01 5
+execute if score curse slot22 matches 1.. at @e[name=slot22] run particle minecraft:ash ~ ~1 ~ 0.9 0.9 0.9 0.01 5
+execute if score curse slot23 matches 1.. at @e[name=slot23] run particle minecraft:ash ~ ~1 ~ 0.9 0.9 0.9 0.01 5
+execute if score curse slot24 matches 1.. at @e[name=slot24] run particle minecraft:ash ~ ~1 ~ 0.9 0.9 0.9 0.01 5
+

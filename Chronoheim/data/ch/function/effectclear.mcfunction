@@ -158,31 +158,6 @@ execute if score durationSlot22 regen matches 0 run scoreboard players set slot2
 execute if score durationSlot23 regen matches 0 run scoreboard players set slot23Regen regen 0
 execute if score durationSlot24 regen matches 0 run scoreboard players set slot24Regen regen 0
 
-#Shield
-execute if score durationSlot1 shield matches 0 run scoreboard players set shield slot1 0
-execute if score durationSlot2 shield matches 0 run scoreboard players set shield slot2 0
-execute if score durationSlot3 shield matches 0 run scoreboard players set shield slot3 0
-execute if score durationSlot4 shield matches 0 run scoreboard players set shield slot4 0
-execute if score durationSlot5 shield matches 0 run scoreboard players set shield slot5 0
-execute if score durationSlot6 shield matches 0 run scoreboard players set shield slot6 0
-execute if score durationSlot7 shield matches 0 run scoreboard players set shield slot7 0
-execute if score durationSlot8 shield matches 0 run scoreboard players set shield slot8 0
-execute if score durationSlot9 shield matches 0 run scoreboard players set shield slot9 0
-execute if score durationSlot10 shield matches 0 run scoreboard players set shield slot10 0
-execute if score durationSlot11 shield matches 0 run scoreboard players set shield slot11 0
-execute if score durationSlot12 shield matches 0 run scoreboard players set shield slot12 0
-execute if score durationSlot13 shield matches 0 run scoreboard players set shield slot13 0
-execute if score durationSlot14 shield matches 0 run scoreboard players set shield slot14 0
-execute if score durationSlot15 shield matches 0 run scoreboard players set shield slot15 0
-execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot16 0
-execute if score durationSlot17 shield matches 0 run scoreboard players set shield slot17 0
-execute if score durationSlot18 shield matches 0 run scoreboard players set shield slot18 0
-execute if score durationSlot19 shield matches 0 run scoreboard players set shield slot19 0
-execute if score durationSlot20 shield matches 0 run scoreboard players set shield slot20 0
-execute if score durationSlot21 shield matches 0 run scoreboard players set shield slot21 0
-execute if score durationSlot22 shield matches 0 run scoreboard players set shield slot22 0
-execute if score durationSlot23 shield matches 0 run scoreboard players set shield slot23 0
-execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot24 0
 
 execute if score curse slot1 matches 4 run scoreboard players operation slot1DollyCurrent saves = slot1 hp
 execute if score curse slot1 matches 4 run scoreboard players operation slot1DollyCurrent saves += shield slot1
@@ -440,6 +415,32 @@ execute if score curse slot5 matches 4 if score slot5Dolly saves < slot5DollyCur
 execute if score curse slot6 matches 4 if score slot6Dolly saves < slot6DollyCurrent saves run scoreboard players operation slot6Dolly saves = slot6DollyCurrent saves
 execute if score curse slot7 matches 4 if score slot7Dolly saves < slot7DollyCurrent saves run scoreboard players operation slot7Dolly saves = slot7DollyCurrent saves
 execute if score curse slot8 matches 4 if score slot8Dolly saves < slot8DollyCurrent saves run scoreboard players operation slot8Dolly saves = slot8DollyCurrent saves
+
+#Shield
+execute if score durationSlot1 shield matches 0 run scoreboard players set shield slot1 0
+execute if score durationSlot2 shield matches 0 run scoreboard players set shield slot2 0
+execute if score durationSlot3 shield matches 0 run scoreboard players set shield slot3 0
+execute if score durationSlot4 shield matches 0 run scoreboard players set shield slot4 0
+execute if score durationSlot5 shield matches 0 run scoreboard players set shield slot5 0
+execute if score durationSlot6 shield matches 0 run scoreboard players set shield slot6 0
+execute if score durationSlot7 shield matches 0 run scoreboard players set shield slot7 0
+execute if score durationSlot8 shield matches 0 run scoreboard players set shield slot8 0
+execute if score durationSlot9 shield matches 0 run scoreboard players set shield slot9 0
+execute if score durationSlot10 shield matches 0 run scoreboard players set shield slot10 0
+execute if score durationSlot11 shield matches 0 run scoreboard players set shield slot11 0
+execute if score durationSlot12 shield matches 0 run scoreboard players set shield slot12 0
+execute if score durationSlot13 shield matches 0 run scoreboard players set shield slot13 0
+execute if score durationSlot14 shield matches 0 run scoreboard players set shield slot14 0
+execute if score durationSlot15 shield matches 0 run scoreboard players set shield slot15 0
+execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot16 0
+execute if score durationSlot17 shield matches 0 run scoreboard players set shield slot17 0
+execute if score durationSlot18 shield matches 0 run scoreboard players set shield slot18 0
+execute if score durationSlot19 shield matches 0 run scoreboard players set shield slot19 0
+execute if score durationSlot20 shield matches 0 run scoreboard players set shield slot20 0
+execute if score durationSlot21 shield matches 0 run scoreboard players set shield slot21 0
+execute if score durationSlot22 shield matches 0 run scoreboard players set shield slot22 0
+execute if score durationSlot23 shield matches 0 run scoreboard players set shield slot23 0
+execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot24 0
 
 #Damage Buff
 execute if score buffDurationSlot1 atkmodifiers matches 0 run scoreboard players set attackBuffSlot1 atkmodifiers 0

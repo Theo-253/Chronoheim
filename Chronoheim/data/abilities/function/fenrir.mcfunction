@@ -20,3 +20,11 @@ execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",enti
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot8 matches 3 run scoreboard players set curse slot8 0
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run function ch:abilitygivetargetsp1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run function ch:abilitygivetargetsp2
+
+#execute if score character# slot1 matches 41 run clear @a[tag=p2] minecraft:target[minecraft:custom_name="Target Slot 1"]
+#execute if score character# slot2 matches 41 run clear @a[tag=p2] minecraft:target[minecraft:custom_name="Target Slot 2"]
+#execute if score character# slot3 matches 41 run clear @a[tag=p2] minecraft:target[minecraft:custom_name="Target Slot 3"]
+
+#execute if score character# slot5 matches 41 run clear @a[tag=p1] minecraft:target[minecraft:custom_name="Target Slot 5"]
+#execute if score character# slot6 matches 41 run clear @a[tag=p1] minecraft:target[minecraft:custom_name="Target Slot 6"]
+#execute if score character# slot7 matches 41 run clear @a[tag=p1] minecraft:target[minecraft:custom_name="Target Slot 7"]

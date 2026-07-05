@@ -158,6 +158,40 @@ execute if score durationSlot22 regen matches 0 run scoreboard players set slot2
 execute if score durationSlot23 regen matches 0 run scoreboard players set slot23Regen regen 0
 execute if score durationSlot24 regen matches 0 run scoreboard players set slot24Regen regen 0
 
+execute if score curse slot1 matches 4 if score shield slot1 matches 1.. if score durationSlot1 shield matches 0 run scoreboard players operation slot1Dolly saves -= shield slot1
+execute if score curse slot2 matches 4 if score shield slot2 matches 1.. if score durationSlot1 shield matches 0 run scoreboard players operation slot2Dolly saves -= shield slot2
+execute if score curse slot3 matches 4 if score shield slot3 matches 1.. if score durationSlot1 shield matches 0 run scoreboard players operation slot3Dolly saves -= shield slot3
+execute if score curse slot4 matches 4 if score shield slot4 matches 1.. if score durationSlot1 shield matches 0 run scoreboard players operation slot4Dolly saves -= shield slot4
+execute if score curse slot5 matches 4 if score shield slot5 matches 1.. if score durationSlot1 shield matches 0 run scoreboard players operation slot5Dolly saves -= shield slot5
+execute if score curse slot6 matches 4 if score shield slot6 matches 1.. if score durationSlot1 shield matches 0 run scoreboard players operation slot6Dolly saves -= shield slot6
+execute if score curse slot7 matches 4 if score shield slot7 matches 1.. if score durationSlot1 shield matches 0 run scoreboard players operation slot7Dolly saves -= shield slot7
+execute if score curse slot8 matches 4 if score shield slot8 matches 1.. if score durationSlot1 shield matches 0 run scoreboard players operation slot8Dolly saves -= shield slot8
+
+#Shield
+execute if score durationSlot1 shield matches 0 run scoreboard players set shield slot1 0
+execute if score durationSlot2 shield matches 0 run scoreboard players set shield slot2 0
+execute if score durationSlot3 shield matches 0 run scoreboard players set shield slot3 0
+execute if score durationSlot4 shield matches 0 run scoreboard players set shield slot4 0
+execute if score durationSlot5 shield matches 0 run scoreboard players set shield slot5 0
+execute if score durationSlot6 shield matches 0 run scoreboard players set shield slot6 0
+execute if score durationSlot7 shield matches 0 run scoreboard players set shield slot7 0
+execute if score durationSlot8 shield matches 0 run scoreboard players set shield slot8 0
+execute if score durationSlot9 shield matches 0 run scoreboard players set shield slot9 0
+execute if score durationSlot10 shield matches 0 run scoreboard players set shield slot10 0
+execute if score durationSlot11 shield matches 0 run scoreboard players set shield slot11 0
+execute if score durationSlot12 shield matches 0 run scoreboard players set shield slot12 0
+execute if score durationSlot13 shield matches 0 run scoreboard players set shield slot13 0
+execute if score durationSlot14 shield matches 0 run scoreboard players set shield slot14 0
+execute if score durationSlot15 shield matches 0 run scoreboard players set shield slot15 0
+execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot16 0
+execute if score durationSlot17 shield matches 0 run scoreboard players set shield slot17 0
+execute if score durationSlot18 shield matches 0 run scoreboard players set shield slot18 0
+execute if score durationSlot19 shield matches 0 run scoreboard players set shield slot19 0
+execute if score durationSlot20 shield matches 0 run scoreboard players set shield slot20 0
+execute if score durationSlot21 shield matches 0 run scoreboard players set shield slot21 0
+execute if score durationSlot22 shield matches 0 run scoreboard players set shield slot22 0
+execute if score durationSlot23 shield matches 0 run scoreboard players set shield slot23 0
+execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot24 0
 
 execute if score curse slot1 matches 4 run scoreboard players operation slot1DollyCurrent saves = slot1 hp
 execute if score curse slot1 matches 4 run scoreboard players operation slot1DollyCurrent saves += shield slot1
@@ -166,6 +200,62 @@ execute if score curse slot1 matches 4 if score slot1Dolly saves > slot1DollyCur
 execute if score curse slot1 matches 4 if score slot1Dolly saves > slot1DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
 execute if score curse slot1 matches 4 if score slot1Dolly saves > slot1DollyCurrent saves run scoreboard players set slot1DollyDmgTaken saves 1
 execute if score curse slot1 matches 4 if score slot1Dolly saves > slot1DollyCurrent saves run scoreboard players operation slot1Dolly saves = slot1DollyCurrent saves
+
+execute if score curse slot2 matches 4 run scoreboard players operation slot2DollyCurrent saves = slot2 hp
+execute if score curse slot2 matches 4 run scoreboard players operation slot2DollyCurrent saves += shield slot2
+execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players operation dollyDmg saves = slot2Dolly saves
+execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot2DollyCurrent saves
+execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
+execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players set slot2DollyDmgTaken saves 1
+execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players operation slot2Dolly saves = slot2DollyCurrent saves
+
+execute if score curse slot3 matches 4 run scoreboard players operation slot3DollyCurrent saves = slot3 hp
+execute if score curse slot3 matches 4 run scoreboard players operation slot3DollyCurrent saves += shield slot3
+execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players operation dollyDmg saves = slot3Dolly saves
+execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot3DollyCurrent saves
+execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
+execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players set slot3DollyDmgTaken saves 1
+execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players operation slot3Dolly saves = slot3DollyCurrent saves
+
+execute if score curse slot4 matches 4 run scoreboard players operation slot4DollyCurrent saves = slot4 hp
+execute if score curse slot4 matches 4 run scoreboard players operation slot4DollyCurrent saves += shield slot4
+execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players operation dollyDmg saves = slot4Dolly saves
+execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot4DollyCurrent saves
+execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
+execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players set slot4DollyDmgTaken saves 1
+execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players operation slot4Dolly saves = slot4DollyCurrent saves
+
+execute if score curse slot5 matches 4 run scoreboard players operation slot5DollyCurrent saves = slot5 hp
+execute if score curse slot5 matches 4 run scoreboard players operation slot5DollyCurrent saves += shield slot5
+execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players operation dollyDmg saves = slot5Dolly saves
+execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot5DollyCurrent saves
+execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
+execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players set slot5DollyDmgTaken saves 1
+execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players operation slot5Dolly saves = slot5DollyCurrent saves
+
+execute if score curse slot6 matches 4 run scoreboard players operation slot6DollyCurrent saves = slot6 hp
+execute if score curse slot6 matches 4 run scoreboard players operation slot6DollyCurrent saves += shield slot6
+execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players operation dollyDmg saves = slot6Dolly saves
+execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot6DollyCurrent saves
+execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
+execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players set slot6DollyDmgTaken saves 1
+execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players operation slot6Dolly saves = slot6DollyCurrent saves
+
+execute if score curse slot7 matches 4 run scoreboard players operation slot7DollyCurrent saves = slot7 hp
+execute if score curse slot7 matches 4 run scoreboard players operation slot7DollyCurrent saves += shield slot7
+execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players operation dollyDmg saves = slot7Dolly saves
+execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot7DollyCurrent saves
+execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
+execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players set slot7DollyDmgTaken saves 1
+execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players operation slot7Dolly saves = slot7DollyCurrent saves
+
+execute if score curse slot8 matches 4 run scoreboard players operation slot8DollyCurrent saves = slot8 hp
+execute if score curse slot8 matches 4 run scoreboard players operation slot8DollyCurrent saves += shield slot8
+execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players operation dollyDmg saves = slot8Dolly saves
+execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot8DollyCurrent saves
+execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
+execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players set slot8DollyDmgTaken saves 1
+execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players operation slot8Dolly saves = slot8DollyCurrent saves
 
 execute if score slot1DollyDmgTaken saves matches 1 if score curse slot2 matches 4 if score ward slot2 matches 0 run scoreboard players operation slot2Dolly saves -= dollyDmg saves
 execute if score slot1DollyDmgTaken saves matches 1 if score curse slot2 matches 4 if score ward slot2 matches 0 run scoreboard players operation shield slot2 -= dollyDmg saves
@@ -190,14 +280,6 @@ execute if score slot1DollyDmgTaken saves matches 1 if score curse slot4 matches
 execute if score slot1DollyDmgTaken saves matches 1 if score curse slot4 matches 4 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score slot1DollyDmgTaken saves matches 1.. run scoreboard players set slot1DollyDmgTaken saves 0
 
-execute if score curse slot2 matches 4 run scoreboard players operation slot2DollyCurrent saves = slot2 hp
-execute if score curse slot2 matches 4 run scoreboard players operation slot2DollyCurrent saves += shield slot2
-execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players operation dollyDmg saves = slot2Dolly saves
-execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot2DollyCurrent saves
-execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
-execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players set slot2DollyDmgTaken saves 1
-execute if score curse slot2 matches 4 if score slot2Dolly saves > slot2DollyCurrent saves run scoreboard players operation slot2Dolly saves = slot2DollyCurrent saves
-
 execute if score slot2DollyDmgTaken saves matches 1 if score curse slot1 matches 4 if score ward slot1 matches 0 run scoreboard players operation slot1Dolly saves -= dollyDmg saves
 execute if score slot2DollyDmgTaken saves matches 1 if score curse slot1 matches 4 if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= dollyDmg saves
 execute if score slot2DollyDmgTaken saves matches 1 if score curse slot1 matches 4 if score ward slot1 matches 0 if score shield slot1 matches ..-1 run scoreboard players operation slot1 hp += shield slot1
@@ -220,14 +302,6 @@ execute if score slot2DollyDmgTaken saves matches 1 if score curse slot4 matches
 execute if score slot2DollyDmgTaken saves matches 1 if score curse slot4 matches 4 if score ward slot4 matches 0 if score slot4 hp matches ..0 run function ch:death4
 execute if score slot2DollyDmgTaken saves matches 1 if score curse slot4 matches 4 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score slot2DollyDmgTaken saves matches 1.. run scoreboard players set slot2DollyDmgTaken saves 0
-
-execute if score curse slot3 matches 4 run scoreboard players operation slot3DollyCurrent saves = slot3 hp
-execute if score curse slot3 matches 4 run scoreboard players operation slot3DollyCurrent saves += shield slot3
-execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players operation dollyDmg saves = slot3Dolly saves
-execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot3DollyCurrent saves
-execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
-execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players set slot3DollyDmgTaken saves 1
-execute if score curse slot3 matches 4 if score slot3Dolly saves > slot3DollyCurrent saves run scoreboard players operation slot3Dolly saves = slot3DollyCurrent saves
 
 execute if score slot3DollyDmgTaken saves matches 1 if score curse slot1 matches 4 if score ward slot1 matches 0 run scoreboard players operation slot1Dolly saves -= dollyDmg saves
 execute if score slot3DollyDmgTaken saves matches 1 if score curse slot1 matches 4 if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= dollyDmg saves
@@ -252,14 +326,6 @@ execute if score slot3DollyDmgTaken saves matches 1 if score curse slot4 matches
 execute if score slot3DollyDmgTaken saves matches 1 if score curse slot4 matches 4 if score ward slot4 matches 1.. run function ch:wardslot4
 execute if score slot3DollyDmgTaken saves matches 1.. run scoreboard players set slot3DollyDmgTaken saves 0
 
-execute if score curse slot4 matches 4 run scoreboard players operation slot4DollyCurrent saves = slot4 hp
-execute if score curse slot4 matches 4 run scoreboard players operation slot4DollyCurrent saves += shield slot4
-execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players operation dollyDmg saves = slot4Dolly saves
-execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot4DollyCurrent saves
-execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
-execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players set slot4DollyDmgTaken saves 1
-execute if score curse slot4 matches 4 if score slot4Dolly saves > slot4DollyCurrent saves run scoreboard players operation slot4Dolly saves = slot4DollyCurrent saves
-
 execute if score slot4DollyDmgTaken saves matches 1 if score curse slot1 matches 4 if score ward slot1 matches 0 run scoreboard players operation slot1Dolly saves -= dollyDmg saves
 execute if score slot4DollyDmgTaken saves matches 1 if score curse slot1 matches 4 if score ward slot1 matches 0 run scoreboard players operation shield slot1 -= dollyDmg saves
 execute if score slot4DollyDmgTaken saves matches 1 if score curse slot1 matches 4 if score ward slot1 matches 0 if score shield slot1 matches ..-1 run scoreboard players operation slot1 hp += shield slot1
@@ -282,14 +348,6 @@ execute if score slot4DollyDmgTaken saves matches 1 if score curse slot3 matches
 execute if score slot4DollyDmgTaken saves matches 1 if score curse slot3 matches 4 if score ward slot3 matches 1.. run function ch:wardslot3
 execute if score slot4DollyDmgTaken saves matches 1 if score curse slot3 matches 4 if score ward slot3 matches 0 at @e[name=slot3,type=armor_stand] run particle effect{color:[0.725,0.180,1.000]} ~ ~1 ~ 0.9 0.9 0.9 0.05 50
 execute if score slot4DollyDmgTaken saves matches 1.. run scoreboard players set slot4DollyDmgTaken saves 0
-
-execute if score curse slot5 matches 4 run scoreboard players operation slot5DollyCurrent saves = slot5 hp
-execute if score curse slot5 matches 4 run scoreboard players operation slot5DollyCurrent saves += shield slot5
-execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players operation dollyDmg saves = slot5Dolly saves
-execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot5DollyCurrent saves
-execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
-execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players set slot5DollyDmgTaken saves 1
-execute if score curse slot5 matches 4 if score slot5Dolly saves > slot5DollyCurrent saves run scoreboard players operation slot5Dolly saves = slot5DollyCurrent saves
 
 execute if score slot5DollyDmgTaken saves matches 1 if score curse slot6 matches 4 if score ward slot6 matches 0 run scoreboard players operation slot6Dolly saves -= dollyDmg saves
 execute if score slot5DollyDmgTaken saves matches 1 if score curse slot6 matches 4 if score ward slot6 matches 0 run scoreboard players operation shield slot6 -= dollyDmg saves
@@ -314,14 +372,6 @@ execute if score slot5DollyDmgTaken saves matches 1 if score curse slot8 matches
 execute if score slot5DollyDmgTaken saves matches 1 if score curse slot8 matches 4 if score ward slot8 matches 1.. run function ch:wardslot8
 execute if score slot5DollyDmgTaken saves matches 1.. run scoreboard players set slot5DollyDmgTaken saves 0
 
-execute if score curse slot6 matches 4 run scoreboard players operation slot6DollyCurrent saves = slot6 hp
-execute if score curse slot6 matches 4 run scoreboard players operation slot6DollyCurrent saves += shield slot6
-execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players operation dollyDmg saves = slot6Dolly saves
-execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot6DollyCurrent saves
-execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
-execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players set slot6DollyDmgTaken saves 1
-execute if score curse slot6 matches 4 if score slot6Dolly saves > slot6DollyCurrent saves run scoreboard players operation slot6Dolly saves = slot6DollyCurrent saves
-
 execute if score slot6DollyDmgTaken saves matches 1 if score curse slot5 matches 4 if score ward slot5 matches 0 run scoreboard players operation slot5Dolly saves -= dollyDmg saves
 execute if score slot6DollyDmgTaken saves matches 1 if score curse slot5 matches 4 if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= dollyDmg saves
 execute if score slot6DollyDmgTaken saves matches 1 if score curse slot5 matches 4 if score ward slot5 matches 0 if score shield slot5 matches ..-1 run scoreboard players operation slot5 hp += shield slot5
@@ -345,14 +395,6 @@ execute if score slot6DollyDmgTaken saves matches 1 if score curse slot8 matches
 execute if score slot6DollyDmgTaken saves matches 1 if score curse slot8 matches 4 if score ward slot8 matches 1.. run function ch:wardslot8
 execute if score slot6DollyDmgTaken saves matches 1.. run scoreboard players set slot6DollyDmgTaken saves 0
 
-execute if score curse slot7 matches 4 run scoreboard players operation slot7DollyCurrent saves = slot7 hp
-execute if score curse slot7 matches 4 run scoreboard players operation slot7DollyCurrent saves += shield slot7
-execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players operation dollyDmg saves = slot7Dolly saves
-execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot7DollyCurrent saves
-execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
-execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players set slot7DollyDmgTaken saves 1
-execute if score curse slot7 matches 4 if score slot7Dolly saves > slot7DollyCurrent saves run scoreboard players operation slot7Dolly saves = slot7DollyCurrent saves
-
 execute if score slot7DollyDmgTaken saves matches 1 if score curse slot5 matches 4 if score ward slot5 matches 0 run scoreboard players operation slot5Dolly saves -= dollyDmg saves
 execute if score slot7DollyDmgTaken saves matches 1 if score curse slot5 matches 4 if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= dollyDmg saves
 execute if score slot7DollyDmgTaken saves matches 1 if score curse slot5 matches 4 if score ward slot5 matches 0 if score shield slot5 matches ..-1 run scoreboard players operation slot5 hp += shield slot5
@@ -375,14 +417,6 @@ execute if score slot7DollyDmgTaken saves matches 1 if score curse slot8 matches
 execute if score slot7DollyDmgTaken saves matches 1 if score curse slot8 matches 4 if score ward slot8 matches 0 if score slot8 hp matches ..0 run function ch:death8
 execute if score slot7DollyDmgTaken saves matches 1 if score curse slot8 matches 4 if score ward slot8 matches 1.. run function ch:wardslot8
 execute if score slot7DollyDmgTaken saves matches 1.. run scoreboard players set slot7DollyDmgTaken saves 0
-
-execute if score curse slot8 matches 4 run scoreboard players operation slot8DollyCurrent saves = slot8 hp
-execute if score curse slot8 matches 4 run scoreboard players operation slot8DollyCurrent saves += shield slot8
-execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players operation dollyDmg saves = slot8Dolly saves
-execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players operation dollyDmg saves -= slot8DollyCurrent saves
-execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players operation dollyDmg saves /= dolly abilityStats
-execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players set slot8DollyDmgTaken saves 1
-execute if score curse slot8 matches 4 if score slot8Dolly saves > slot8DollyCurrent saves run scoreboard players operation slot8Dolly saves = slot8DollyCurrent saves
 
 execute if score slot8DollyDmgTaken saves matches 1 if score curse slot5 matches 4 if score ward slot5 matches 0 run scoreboard players operation slot5Dolly saves -= dollyDmg saves
 execute if score slot8DollyDmgTaken saves matches 1 if score curse slot5 matches 4 if score ward slot5 matches 0 run scoreboard players operation shield slot5 -= dollyDmg saves
@@ -416,31 +450,6 @@ execute if score curse slot6 matches 4 if score slot6Dolly saves < slot6DollyCur
 execute if score curse slot7 matches 4 if score slot7Dolly saves < slot7DollyCurrent saves run scoreboard players operation slot7Dolly saves = slot7DollyCurrent saves
 execute if score curse slot8 matches 4 if score slot8Dolly saves < slot8DollyCurrent saves run scoreboard players operation slot8Dolly saves = slot8DollyCurrent saves
 
-#Shield
-execute if score durationSlot1 shield matches 0 run scoreboard players set shield slot1 0
-execute if score durationSlot2 shield matches 0 run scoreboard players set shield slot2 0
-execute if score durationSlot3 shield matches 0 run scoreboard players set shield slot3 0
-execute if score durationSlot4 shield matches 0 run scoreboard players set shield slot4 0
-execute if score durationSlot5 shield matches 0 run scoreboard players set shield slot5 0
-execute if score durationSlot6 shield matches 0 run scoreboard players set shield slot6 0
-execute if score durationSlot7 shield matches 0 run scoreboard players set shield slot7 0
-execute if score durationSlot8 shield matches 0 run scoreboard players set shield slot8 0
-execute if score durationSlot9 shield matches 0 run scoreboard players set shield slot9 0
-execute if score durationSlot10 shield matches 0 run scoreboard players set shield slot10 0
-execute if score durationSlot11 shield matches 0 run scoreboard players set shield slot11 0
-execute if score durationSlot12 shield matches 0 run scoreboard players set shield slot12 0
-execute if score durationSlot13 shield matches 0 run scoreboard players set shield slot13 0
-execute if score durationSlot14 shield matches 0 run scoreboard players set shield slot14 0
-execute if score durationSlot15 shield matches 0 run scoreboard players set shield slot15 0
-execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot16 0
-execute if score durationSlot17 shield matches 0 run scoreboard players set shield slot17 0
-execute if score durationSlot18 shield matches 0 run scoreboard players set shield slot18 0
-execute if score durationSlot19 shield matches 0 run scoreboard players set shield slot19 0
-execute if score durationSlot20 shield matches 0 run scoreboard players set shield slot20 0
-execute if score durationSlot21 shield matches 0 run scoreboard players set shield slot21 0
-execute if score durationSlot22 shield matches 0 run scoreboard players set shield slot22 0
-execute if score durationSlot23 shield matches 0 run scoreboard players set shield slot23 0
-execute if score durationSlot24 shield matches 0 run scoreboard players set shield slot24 0
 
 #Damage Buff
 execute if score buffDurationSlot1 atkmodifiers matches 0 run scoreboard players set attackBuffSlot1 atkmodifiers 0

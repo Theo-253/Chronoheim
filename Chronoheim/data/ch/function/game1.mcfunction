@@ -220,7 +220,12 @@ execute if score suddenDeath deaths matches 20.. if score shield slot6 matches 1
 execute if score suddenDeath deaths matches 20.. if score shield slot7 matches 1.. run scoreboard players set shield slot7 0
 execute if score suddenDeath deaths matches 20.. if score shield slot8 matches 1.. run scoreboard players set shield slot8 0
 
-
+execute if score character# slot1 matches 41 if score curse slot1 matches 3 run scoreboard players set curse slot1 0
+execute if score character# slot2 matches 41 if score curse slot2 matches 3 run scoreboard players set curse slot2 0
+execute if score character# slot3 matches 41 if score curse slot3 matches 3 run scoreboard players set curse slot3 0
+execute if score character# slot5 matches 41 if score curse slot5 matches 3 run scoreboard players set curse slot5 0
+execute if score character# slot6 matches 41 if score curse slot6 matches 3 run scoreboard players set curse slot6 0
+execute if score character# slot7 matches 41 if score curse slot7 matches 3 run scoreboard players set curse slot7 0
 #QoL
 function ch:effectparticles
 function ui:ui

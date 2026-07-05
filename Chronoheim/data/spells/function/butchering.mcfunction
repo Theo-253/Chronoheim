@@ -108,24 +108,24 @@ execute if score durationSlot3-7 fear matches 1.. run scoreboard players add slo
 execute if score durationSlot2-7 fear matches 1.. run scoreboard players add slot7Butchering spells 1
 execute if score durationSlot1-7 fear matches 1.. run scoreboard players add slot7Butchering spells 1
 
-execute if score durationSlot5 burn matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score durationSlot5 poison matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score durationSlot5 speedDebuffs matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score debuffDurationSlot5 atkmodifiers matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score durationSlot5 mark matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score slot5Disease disease matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score slot5bleeding booleaneffects matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score slot5 stun matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score disarmedslot5 booleaneffects matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score curse slot5 matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score durationSlot4-5 fear matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score durationSlot3-5 fear matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score durationSlot2-5 fear matches 1.. run scoreboard players add slot8Butchering spells 1
-execute if score durationSlot1-5 fear matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score durationSlot8 burn matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score durationSlot8 poison matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score durationSlot8 speedDebuffs matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score debuffDurationSlot8 atkmodifiers matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score durationSlot8 mark matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score slot8Disease disease matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score slot8bleeding booleaneffects matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score slot8 stun matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score disarmedslot8 booleaneffects matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score curse slot8 matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score durationSlot4-8 fear matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score durationSlot3-8 fear matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score durationSlot2-8 fear matches 1.. run scoreboard players add slot8Butchering spells 1
+execute if score durationSlot1-8 fear matches 1.. run scoreboard players add slot8Butchering spells 1
 
 
-execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run execute if score slot5Butchering spells <= butcheringThreshold spellStats if score slot6Butchering spells <= butcheringThreshold spellStats if score slot8Butchering spells <= butcheringThreshold spellStats if score slot7Butchering spells <= butcheringThreshold spellStats run give @p[tag=p1] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
-execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run execute if score slot1Butchering spells <= butcheringThreshold spellStats if score slot2Butchering spells <= butcheringThreshold spellStats if score slot4Butchering spells <= butcheringThreshold spellStats if score slot3Butchering spells <= butcheringThreshold spellStats run give @p[tag=p2] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
+execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run give @p[tag=p1] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
+execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run give @p[tag=p2] barrier[minecraft:custom_name="Skip",minecraft:lore=[{"text":"Spell","color":"blue","italic":false}],food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"block.amethyst_block.break",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:infested,duration:1,amplifier:0,show_particles:0b}]}]}]
 
 execute as @a[tag=p1] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run function ch:spellgivetargetsp1
 execute as @a[tag=p2] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:37,max:37}}}}} run function ch:spellgivetargetsp2

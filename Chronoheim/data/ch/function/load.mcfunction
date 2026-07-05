@@ -580,6 +580,7 @@ scoreboard players set boogaloo herospeed 1100
 scoreboard players set boogalooDeath abilityStats 120
 scoreboard players set boogaloo abilityStats 360
 scoreboard players set boogalooLeader abilityStats 300
+scoreboard players set boogalooLeaderSpeed abilityStats 2000
 scoreboard players set boogalooLeaderDuration abilityStats 1
 scoreboard players set boogalooCD abilityStats 5
 

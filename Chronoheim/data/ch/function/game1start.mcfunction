@@ -403,8 +403,15 @@ execute if score character# slot6 matches 34 run scoreboard players operation du
 
 execute if score character# slot2 matches 37 run scoreboard players operation buffDurationSlot2 atkmodifiers = boogalooLeaderDuration abilityStats
 execute if score character# slot2 matches 37 run scoreboard players operation attackBuffSlot2 atkmodifiers = boogalooLeader abilityStats
+execute if score character# slot2 matches 37 run scoreboard players operation durationSlot2 speedBuffs = boogalooLeaderDuration abilityStats
+execute if score character# slot2 matches 37 run scoreboard players operation speedBuffSlot2 speedBuffs = boogalooLeaderSpeed abilityStats
+execute if score character# slot2 matches 37 run scoreboard players operation speed slot2 += boogalooLeaderSpeed abilityStats
 execute if score character# slot6 matches 37 run scoreboard players operation buffDurationSlot6 atkmodifiers = boogalooLeaderDuration abilityStats
 execute if score character# slot6 matches 37 run scoreboard players operation attackBuffSlot6 atkmodifiers = boogalooLeader abilityStats
+execute if score character# slot6 matches 37 run scoreboard players operation durationSlot6 speedBuffs = boogalooLeaderDuration abilityStats
+execute if score character# slot6 matches 37 run scoreboard players operation speedBuffSlot6 speedBuffs = boogalooLeaderSpeed abilityStats
+execute if score character# slot6 matches 37 run scoreboard players operation speed slot6 += boogalooLeaderSpeed abilityStats
+
 
 execute if score character# slot1 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
 execute if score character# slot1 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats

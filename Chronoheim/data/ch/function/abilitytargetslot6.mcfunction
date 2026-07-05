@@ -323,7 +323,7 @@ execute if score abilitynumber abilities matches 36 run execute at @n[type=armor
 execute if score abilitynumber abilities matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Spookcrow to make Slot 6 scary!"]
 
 #Igor
-execute if score abilitynumber abilities matches 38 run scoreboard players operation cooldown slot6 -= igor abilityStats
+execute if score abilitynumber abilities matches 38 if score cooldown slot6 matches 1.. run scoreboard players operation cooldown slot6 -= igor abilityStats
 execute if score abilitynumber abilities matches 38 run execute at @e[type=armor_stand,name=slot6] run particle witch ~ ~1 ~ 0.5 0.8 0.5 0.1 100
 execute if score abilitynumber abilities matches 38 run execute if score durationSlot6 speedBuffs < igorDuration abilityStats run scoreboard players operation durationSlot6 speedBuffs = igorDuration abilityStats
 execute if score abilitynumber abilities matches 38 run scoreboard players operation speedBuffSlot6 speedBuffs += igorSpBuff abilityStats

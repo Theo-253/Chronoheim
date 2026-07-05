@@ -307,6 +307,26 @@ scoreboard players set healingRainCooldown player1spells 0
 scoreboard players set darkritual player1spells 0
 scoreboard players set darkritual player2spells 0
 
+scoreboard players set butcheringCooldown player1spells 0
+scoreboard players set butcheringCooldown player2spells 0
+scoreboard players set cannibalizeCooldown player1spells 0
+scoreboard players set cannibalizeCooldown player2spells 0
+scoreboard players set curseOfBatsCooldown player1spells 0
+scoreboard players set curseOfBatsCooldown player2spells 0
+scoreboard players set darkRitualCooldown player1spells 0
+scoreboard players set darkRitualCooldown player2spells 0
+scoreboard players set monkeysPawCooldown player1spells 0
+scoreboard players set monkeysPawCooldown player2spells 0
+scoreboard players set raiseDeadCooldown player1spells 0
+scoreboard players set raiseDeadCooldown player2spells 0
+scoreboard players set vampireMarkCooldown player1spells 0
+scoreboard players set vampireMarkCooldown player2spells 0
+scoreboard players set slimedCooldown player1spells 0
+scoreboard players set slimedCooldown player2spells 0
+scoreboard players set willOWispCooldown player1spells 0
+scoreboard players set willOWispCooldown player2spells 0
+scoreboard players set spiderWardCooldown player1spells 0
+scoreboard players set spiderWardCooldown player2spells 0
 
 scoreboard players set Spell_Points_P1 Spell_Points -1
 scoreboard players set Spell_Points_P2 Spell_Points -1

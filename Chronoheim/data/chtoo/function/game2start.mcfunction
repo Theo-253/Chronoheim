@@ -67,7 +67,7 @@ execute if score slot9 hp matches 1.. run execute if score character# slot9 matc
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 39 run scoreboard players operation maxspeed slot9 = blinky herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 40 run scoreboard players operation maxspeed slot9 = zeebo herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 41 run scoreboard players operation maxspeed slot9 = fenrir herospeed
-execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 42 run scoreboard players operation maxspeed slot9 = dolly herospeed
+execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 42 run scoreboard players operation maxspeed slot9 = anubis herospeed
 execute if score slot9 hp matches 1.. run execute if score character# slot9 matches 43 run scoreboard players operation maxspeed slot9 = grendel herospeed
 
 #Slot 2 Speed Resets
@@ -117,7 +117,7 @@ execute if score slot10 hp matches 1.. run execute if score character# slot10 ma
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 39 run scoreboard players operation maxspeed slot10 = blinky herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 40 run scoreboard players operation maxspeed slot10 = zeebo herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 41 run scoreboard players operation maxspeed slot10 = fenrir herospeed
-execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 42 run scoreboard players operation maxspeed slot10 = dolly herospeed
+execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 42 run scoreboard players operation maxspeed slot10 = anubis herospeed
 execute if score slot10 hp matches 1.. run execute if score character# slot10 matches 43 run scoreboard players operation maxspeed slot10 = grendel herospeed
 
 #Slot 3 Speed Resets
@@ -167,7 +167,7 @@ execute if score slot11 hp matches 1.. run execute if score character# slot11 ma
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 39 run scoreboard players operation maxspeed slot11 = blinky herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 40 run scoreboard players operation maxspeed slot11 = zeebo herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 41 run scoreboard players operation maxspeed slot11 = fenrir herospeed
-execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 42 run scoreboard players operation maxspeed slot11 = dolly herospeed
+execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 42 run scoreboard players operation maxspeed slot11 = anubis herospeed
 execute if score slot11 hp matches 1.. run execute if score character# slot11 matches 43 run scoreboard players operation maxspeed slot11 = grendel herospeed
 
 #Slot 5 Speed Resets
@@ -217,7 +217,7 @@ execute if score slot13 hp matches 1.. run execute if score character# slot13 ma
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 39 run scoreboard players operation maxspeed slot13 = blinky herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 40 run scoreboard players operation maxspeed slot13 = zeebo herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 41 run scoreboard players operation maxspeed slot13 = fenrir herospeed
-execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 42 run scoreboard players operation maxspeed slot13 = dolly herospeed
+execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 42 run scoreboard players operation maxspeed slot13 = anubis herospeed
 execute if score slot13 hp matches 1.. run execute if score character# slot13 matches 43 run scoreboard players operation maxspeed slot13 = grendel herospeed
 
 #Slot 6 Speed Resets
@@ -267,7 +267,7 @@ execute if score slot14 hp matches 1.. run execute if score character# slot14 ma
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 39 run scoreboard players operation maxspeed slot14 = blinky herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 40 run scoreboard players operation maxspeed slot14 = zeebo herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 41 run scoreboard players operation maxspeed slot14 = fenrir herospeed
-execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 42 run scoreboard players operation maxspeed slot14 = dolly herospeed
+execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 42 run scoreboard players operation maxspeed slot14 = anubis herospeed
 execute if score slot14 hp matches 1.. run execute if score character# slot14 matches 43 run scoreboard players operation maxspeed slot14 = grendel herospeed
 
 #Slot 7 Speed Resets
@@ -317,7 +317,7 @@ execute if score slot15 hp matches 1.. run execute if score character# slot15 ma
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 39 run scoreboard players operation maxspeed slot15 = blinky herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 40 run scoreboard players operation maxspeed slot15 = zeebo herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 41 run scoreboard players operation maxspeed slot15 = fenrir herospeed
-execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 42 run scoreboard players operation maxspeed slot15 = dolly herospeed
+execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 42 run scoreboard players operation maxspeed slot15 = anubis herospeed
 execute if score slot15 hp matches 1.. run execute if score character# slot15 matches 43 run scoreboard players operation maxspeed slot15 = grendel herospeed
 
 #Slot 4 Speed Resets

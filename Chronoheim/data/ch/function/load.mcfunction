@@ -618,13 +618,16 @@ scoreboard players set fenrir abilityStats 160
 scoreboard players set fenrirLeader herosplash 4
 scoreboard players set fenrirCD abilityStats 3
 
-scoreboard players set dolly heroattack 60
-scoreboard players set dolly herohealth 1940
-scoreboard players set dolly herospeed 800
-scoreboard players set dolly abilityStats 2
-scoreboard players set dollyCD abilityStats 6
-scoreboard players set dollyLeader abilityStats 5
-scoreboard players set dollyDuration abilityStats 4
+scoreboard players set anubis heroattack 100
+scoreboard players set anubis herohealth 2200
+scoreboard players set anubis herospeed 600
+scoreboard players set anubis abilityStats 100
+scoreboard players set anubisCD abilityStats 4
+scoreboard players set anubisLeader abilityStats 60
+scoreboard players set anubisShield abilityStats 40
+scoreboard players set anubisDuration abilityStats 1
+scoreboard players set anubisSpDebuff abilityStats 1000
+scoreboard players set anubisSelfDuration abilityStats 2
 
 scoreboard players set grendel heroattack 100
 scoreboard players set grendel herohealth 2600

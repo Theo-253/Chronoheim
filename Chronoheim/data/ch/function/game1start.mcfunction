@@ -65,7 +65,7 @@ execute if score slot1 hp matches 1.. run execute if score character# slot1 matc
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 39 run scoreboard players operation maxspeed slot1 = blinky herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 40 run scoreboard players operation maxspeed slot1 = zeebo herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation maxspeed slot1 = fenrir herospeed
-execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 42 run scoreboard players operation maxspeed slot1 = dolly herospeed
+execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 42 run scoreboard players operation maxspeed slot1 = anubis herospeed
 execute if score slot1 hp matches 1.. run execute if score character# slot1 matches 43 run scoreboard players operation maxspeed slot1 = grendel herospeed
 
 
@@ -116,7 +116,7 @@ execute if score slot2 hp matches 1.. run execute if score character# slot2 matc
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 39 run scoreboard players operation maxspeed slot2 = blinky herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 40 run scoreboard players operation maxspeed slot2 = zeebo herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation maxspeed slot2 = fenrir herospeed
-execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 42 run scoreboard players operation maxspeed slot2 = dolly herospeed
+execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 42 run scoreboard players operation maxspeed slot2 = anubis herospeed
 execute if score slot2 hp matches 1.. run execute if score character# slot2 matches 43 run scoreboard players operation maxspeed slot2 = grendel herospeed
 
 
@@ -168,7 +168,7 @@ execute if score slot3 hp matches 1.. run execute if score character# slot3 matc
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches 39 run scoreboard players operation maxspeed slot3 = blinky herospeed
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches 40 run scoreboard players operation maxspeed slot3 = zeebo herospeed
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation maxspeed slot3 = fenrir herospeed
-execute if score slot3 hp matches 1.. run execute if score character# slot3 matches 42 run scoreboard players operation maxspeed slot3 = dolly herospeed
+execute if score slot3 hp matches 1.. run execute if score character# slot3 matches 42 run scoreboard players operation maxspeed slot3 = anubis herospeed
 execute if score slot3 hp matches 1.. run execute if score character# slot3 matches 43 run scoreboard players operation maxspeed slot3 = grendel herospeed
 
 
@@ -221,7 +221,7 @@ execute if score slot5 hp matches 1.. run execute if score character# slot5 matc
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 39 run scoreboard players operation maxspeed slot5 = blinky herospeed
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 40 run scoreboard players operation maxspeed slot5 = zeebo herospeed
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 41 run scoreboard players operation maxspeed slot5 = fenrir herospeed
-execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 42 run scoreboard players operation maxspeed slot5 = dolly herospeed
+execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 42 run scoreboard players operation maxspeed slot5 = anubis herospeed
 execute if score slot5 hp matches 1.. run execute if score character# slot5 matches 43 run scoreboard players operation maxspeed slot5 = grendel herospeed
 
 
@@ -274,7 +274,7 @@ execute if score slot6 hp matches 1.. run execute if score character# slot6 matc
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 39 run scoreboard players operation maxspeed slot6 = blinky herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 40 run scoreboard players operation maxspeed slot6 = zeebo herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 41 run scoreboard players operation maxspeed slot6 = fenrir herospeed
-execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 42 run scoreboard players operation maxspeed slot6 = dolly herospeed
+execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 42 run scoreboard players operation maxspeed slot6 = anubis herospeed
 execute if score slot6 hp matches 1.. run execute if score character# slot6 matches 43 run scoreboard players operation maxspeed slot6 = grendel herospeed
 
 
@@ -325,7 +325,7 @@ execute if score slot7 hp matches 1.. run execute if score character# slot7 matc
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 39 run scoreboard players operation maxspeed slot7 = blinky herospeed
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 40 run scoreboard players operation maxspeed slot7 = zeebo herospeed
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 41 run scoreboard players operation maxspeed slot7 = fenrir herospeed
-execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 42 run scoreboard players operation maxspeed slot7 = dolly herospeed
+execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 42 run scoreboard players operation maxspeed slot7 = anubis herospeed
 execute if score slot7 hp matches 1.. run execute if score character# slot7 matches 43 run scoreboard players operation maxspeed slot7 = grendel herospeed
 
 
@@ -490,6 +490,24 @@ execute if score character# slot2 matches 18 run scoreboard players operation ma
 execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot6 += grangorSelfHealthBonus herohealth
 execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot5 += grangorTeamHealthBonus herohealth
 execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot7 += grangorTeamHealthBonus herohealth
+
+execute if score character# slot2 matches 42 run scoreboard players operation anubisHP saves = anubisLeader abilityStats
+execute if score character# slot2 matches 42 run scoreboard players operation anubisHP saves *= anubisUnusedP1 saves
+execute if score character# slot2 matches 42 run scoreboard players operation maxhp slot2 += anubisHP saves
+
+execute if score character# slot6 matches 42 run scoreboard players operation anubisHP saves = anubisLeader abilityStats
+execute if score character# slot6 matches 42 run scoreboard players operation anubisHP saves *= anubisUnusedP2 saves
+execute if score character# slot6 matches 42 run scoreboard players operation maxhp slot6 += anubisHP saves
+
+scoreboard players set anubisUsedP1 saves 9
+execute unless score character# slot1 matches 17 unless score character# slot2 matches 17 unless score character# slot3 matches 17 run scoreboard players remove anubisUsedP1 saves 1
+execute unless score character# slot2 matches 17 run scoreboard players remove anubisUsedP1 saves 1
+scoreboard players operation anubisUsedP1 saves -= anubisUnusedP1 saves
+
+scoreboard players set anubisUsedP2 saves 9
+execute unless score character# slot5 matches 17 unless score character# slot6 matches 17 unless score character# slot7 matches 17 run scoreboard players remove anubisUsedP2 saves 1
+execute unless score character# slot6 matches 17 run scoreboard players remove anubisUsedP2 saves 1
+scoreboard players operation anubisUsedP2 saves -= anubisUnusedP2 saves
 
 scoreboard players set game1Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame1 booleans 0

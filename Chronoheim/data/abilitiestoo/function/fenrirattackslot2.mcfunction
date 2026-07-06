@@ -1,5 +1,5 @@
 #basic attack functions
-tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"},"'s Fenrir attacked Slot 10"]
+tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"},"'s Fenrir attacked Slot 2"]
 #slot 5
 execute if score character# slot13 matches 41 run scoreboard players operation atk1 saves = atk slot13
 execute if score character# slot13 matches 41 run scoreboard players operation atk1 saves += slot13 atkmodifiers

@@ -336,6 +336,66 @@ execute if score slot16 hp matches 1.. run execute if score character# slot16 ma
 
 
 #Game Start Leader bonuses
+
+execute if score character# slot10 matches 36 run scoreboard players operation atk slot10 += barleyLeader abilityStats
+execute if score character# slot14 matches 36 run scoreboard players operation atk slot14 += barleyLeader abilityStats
+
+execute if score character# slot10 matches 34 if score character# slot9 matches 35 run scoreboard players operation atk slot9 += steinLeader heroattack
+execute if score character# slot10 matches 34 if score character# slot11 matches 35 run scoreboard players operation atk slot11 += steinLeader heroattack
+execute if score character# slot14 matches 34 if score character# slot13 matches 35 run scoreboard players operation atk slot13 += steinLeader heroattack
+execute if score character# slot14 matches 34 if score character# slot15 matches 35 run scoreboard players operation atk slot15 += steinLeader heroattack
+execute if score character# slot10 matches 35 run scoreboard players operation atk slot10 += steinLeader heroattack
+execute if score character# slot14 matches 35 run scoreboard players operation atk slot14 += steinLeader heroattack
+
+execute if score character# slot10 matches 35 if score character# slot9 matches 34 run scoreboard players operation slot9 hp += frankLeader herohealth
+execute if score character# slot10 matches 35 if score character# slot9 matches 34 run scoreboard players operation durationSlot9 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot10 matches 35 if score character# slot11 matches 34 run scoreboard players operation slot11 hp += frankLeader herohealth
+execute if score character# slot10 matches 35 if score character# slot11 matches 34 run scoreboard players operation durationSlot11 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot14 matches 35 if score character# slot13 matches 34 run scoreboard players operation slot13 hp += frankLeader herohealth
+execute if score character# slot14 matches 35 if score character# slot13 matches 34 run scoreboard players operation durationSlot13 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot14 matches 35 if score character# slot15 matches 34 run scoreboard players operation slot15 hp += frankLeader herohealth
+execute if score character# slot14 matches 35 if score character# slot15 matches 34 run scoreboard players operation durationSlot14 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot10 matches 34 run scoreboard players operation slot10 hp += frankLeader herohealth
+execute if score character# slot10 matches 34 run scoreboard players operation durationSlot10 taunt = frankLeaderTaunt abilityStats
+execute if score character# slot14 matches 34 run scoreboard players operation slot14 hp += frankLeader herohealth
+execute if score character# slot14 matches 34 run scoreboard players operation durationSlot14 taunt = frankLeaderTaunt abilityStats
+
+execute if score character# slot9 matches 41 run scoreboard players operation fenrirhpsave3 saves = slot9 hp
+execute if score character# slot10 matches 41 run scoreboard players operation fenrirhpsave3 saves = slot10 hp
+execute if score character# slot11 matches 41 run scoreboard players operation fenrirhpsave3 saves = slot11 hp
+execute if score character# slot13 matches 41 run scoreboard players operation fenrirhpsave4 saves = slot13 hp
+execute if score character# slot14 matches 41 run scoreboard players operation fenrirhpsave4 saves = slot14 hp
+execute if score character# slot15 matches 41 run scoreboard players operation fenrirhpsave4 saves = slot15 hp
+
+execute if score character# slot10 matches 42 run scoreboard players operation anubisHP saves = anubisLeader abilityStats
+execute if score character# slot10 matches 42 run scoreboard players operation anubisHP saves *= anubisUnusedP3 saves
+execute if score character# slot10 matches 42 run scoreboard players operation slot10 hp += anubisHP saves
+
+execute if score character# slot14 matches 42 run scoreboard players operation anubisHP saves = anubisLeader abilityStats
+execute if score character# slot14 matches 42 run scoreboard players operation anubisHP saves *= anubisUnusedP4 saves
+execute if score character# slot14 matches 42 run scoreboard players operation slot14 hp += anubisHP saves
+
+scoreboard players set anubisUsedP3 saves 9
+execute unless score character# slot9 matches 17 unless score character# slot10 matches 17 unless score character# slot11 matches 17 run scoreboard players remove anubisUsedP3 saves 1
+execute unless score character# slot10 matches 17 run scoreboard players remove anubisUsedP3 saves 1
+scoreboard players operation anubisUsedP3 saves -= anubisUnusedP3 saves
+
+scoreboard players set anubisUsedP4 saves 9
+execute unless score character# slot13 matches 17 unless score character# slot14 matches 17 unless score character# slot15 matches 17 run scoreboard players remove anubisUsedP4 saves 1
+execute unless score character# slot14 matches 17 run scoreboard players remove anubisUsedP4 saves 1
+scoreboard players operation anubisUsedP4 saves -= anubisUnusedP4 saves
+
+execute if score character# slot10 matches 37 run scoreboard players operation buffDurationSlot10 atkmodifiers = boogalooLeaderDuration abilityStats
+execute if score character# slot10 matches 37 run scoreboard players operation attackBuffSlot10 atkmodifiers = boogalooLeader abilityStats
+execute if score character# slot10 matches 37 run scoreboard players operation durationSlot10 speedBuffs = boogalooLeaderDuration abilityStats
+execute if score character# slot10 matches 37 run scoreboard players operation speedBuffSlot10 speedBuffs = boogalooLeaderSpeed abilityStats
+execute if score character# slot10 matches 37 run scoreboard players operation speed slot10 += boogalooLeaderSpeed abilityStats
+execute if score character# slot14 matches 37 run scoreboard players operation buffDurationSlot14 atkmodifiers = boogalooLeaderDuration abilityStats
+execute if score character# slot14 matches 37 run scoreboard players operation attackBuffSlot14 atkmodifiers = boogalooLeader abilityStats
+execute if score character# slot14 matches 37 run scoreboard players operation durationSlot14 speedBuffs = boogalooLeaderDuration abilityStats
+execute if score character# slot14 matches 37 run scoreboard players operation speedBuffSlot14 speedBuffs = boogalooLeaderSpeed abilityStats
+execute if score character# slot14 matches 37 run scoreboard players operation speed slot14 += boogalooLeaderSpeed abilityStats
+
 execute if score character# slot10 matches 2 run scoreboard players operation buffDurationSlot9 atkmodifiers = arthurBuffDuration abilityStats
 execute if score character# slot10 matches 2 run scoreboard players operation buffDurationSlot10 atkmodifiers = arthurBuffDuration abilityStats
 execute if score character# slot10 matches 2 run scoreboard players operation buffDurationSlot11 atkmodifiers = arthurBuffDuration abilityStats

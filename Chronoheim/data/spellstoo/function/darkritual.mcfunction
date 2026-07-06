@@ -1,0 +1,8 @@
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:40,max:40}}}}} run scoreboard players operation darkRitualCooldown player3spells = darkpowerCD spellStats
+
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:40,max:40}}}}} run scoreboard players operation darkRitualCooldown player4spells = darkpowerCD spellStats
+scoreboard players set spellnumber2 spells 40
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:40,max:40}}}}} run scoreboard players operation darkritual player3spells += darkpowerScale spellStats
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:40,max:40}}}}} run scoreboard players operation darkritual player4spells += darkpowerScale spellStats
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:40,max:40}}}}} run function chtoo:spellgivetargetsp4reverse
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:infested":{amplifier:{min:40,max:40}}}}} run function chtoo:spellgivetargetsp3reverse

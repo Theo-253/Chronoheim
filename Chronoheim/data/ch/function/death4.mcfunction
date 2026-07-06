@@ -84,7 +84,7 @@ execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1..
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches 1.. if score slot8 hp matches ..0 run scoreboard players operation maxhp slot8 *= curseStacks slot4
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches 1.. if score slot8 hp matches ..0 run scoreboard players operation maxhp slot8 -= curseofbatsHPScale spellStats
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches 1.. if score slot8 hp matches ..0 run scoreboard players operation maxhp slot8 += bat herohealth
-execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches 1.. if score slot8 hp matches ..0 run scoreboard players operation slot8 hp = maxhp slot6
+execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches 1.. if score slot8 hp matches ..0 run scoreboard players operation slot8 hp = maxhp slot8
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players set character# slot7 -7
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players operation maxspeed slot7 = bat herospeed
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players operation speed slot7 = bat herospeed
@@ -100,7 +100,7 @@ execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1..
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players operation maxhp slot7 *= curseStacks slot4
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players operation maxhp slot7 -= curseofbatsHPScale spellStats
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players operation maxhp slot7 += bat herohealth
-execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players operation slot7 hp = maxhp slot6
+execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches ..0 run scoreboard players operation slot7 hp = maxhp slot7
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches ..0 run scoreboard players set character# slot6 -7
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches ..0 run scoreboard players operation maxspeed slot6 = bat herospeed
 execute if score curse slot4 matches 6 run execute if score slot5 hp matches 1.. if score slot6 hp matches ..0 run scoreboard players operation speed slot6 = bat herospeed

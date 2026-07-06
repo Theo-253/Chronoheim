@@ -1,0 +1,23 @@
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run scoreboard players set abilityusep3 booleans 1
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run scoreboard players set abilityusep4 booleans 1
+
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score slot9isatk booleans matches 1.. run scoreboard players operation cooldown slot9 = fenrirCD abilityStats
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score slot10isatk booleans matches 1.. run scoreboard players operation cooldown slot10 = fenrirCD abilityStats
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score slot11isatk booleans matches 1.. run scoreboard players operation cooldown slot11 = fenrirCD abilityStats
+
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score slot13isatk booleans matches 1.. run scoreboard players operation cooldown slot13 = fenrirCD abilityStats
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score slot14isatk booleans matches 1.. run scoreboard players operation cooldown slot14 = fenrirCD abilityStats
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score slot15isatk booleans matches 1.. run scoreboard players operation cooldown slot15 = fenrirCD abilityStats
+scoreboard players set burn2 burn 1
+scoreboard players set abilitynumber2 abilities 41
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot9 matches 3 run scoreboard players set curse slot9 0
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot10 matches 3 run scoreboard players set curse slot10 0
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot11 matches 3 run scoreboard players set curse slot11 0
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot12 matches 3 run scoreboard players set curse slot12 0
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot13 matches 3 run scoreboard players set curse slot13 0
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot14 matches 3 run scoreboard players set curse slot14 0
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot14 matches 3 run scoreboard players set curse slot15 0
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run execute if score curse slot16 matches 3 run scoreboard players set curse slot16 0
+execute as @a[tag=p3] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run function chtoo:abilitygivetargetsp3
+execute as @a[tag=p4] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:fire_resistance":{amplifier:{min:41,max:41}}}}} run function chtoo:abilitygivetargetsp4
+

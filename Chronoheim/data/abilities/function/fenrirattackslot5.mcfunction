@@ -80,32 +80,32 @@ execute if score shield slot6 matches ..0 run scoreboard players set shield slot
 #slot 5
 execute if score lifesteal slot1 matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation lifesteal saves = atk slot1
 execute if score lifesteal slot1 matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation lifesteal saves += slot1 atkmodifiers
-execute if score lifesteal slot1 matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation lifesteal saves += marks slot1
-execute if score lifesteal slot1 matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation lifesteal saves /= atkmultiplier slot1
+execute if score lifesteal slot1 matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation lifesteal saves += marks slot5
+execute if score lifesteal slot1 matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation lifesteal saves /= atkmultiplier slot5
 execute if score lifesteal slot1 matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation lifesteal saves /= lifesteal slot1
 execute if score ward slot5 matches 0 if score slot1bleeding booleaneffects matches 0 run execute if score lifesteal slot1 matches 1.. run execute if score character# slot1 matches 41 run scoreboard players operation slot1 hp += lifesteal saves
 execute if score ward slot5 matches 0 if score lifesteal slot1 matches 1.. if score character# slot1 matches 41 at @e[name=slot1,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 6
 execute if score lifesteal slot2 matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation lifesteal saves = atk slot2
 execute if score lifesteal slot2 matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation lifesteal saves += slot2 atkmodifiers
-execute if score lifesteal slot2 matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation lifesteal saves += marks slot1
-execute if score lifesteal slot2 matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation lifesteal saves /= atkmultiplier slot1
+execute if score lifesteal slot2 matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation lifesteal saves += marks slot5
+execute if score lifesteal slot2 matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation lifesteal saves /= atkmultiplier slot5
 execute if score lifesteal slot2 matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation lifesteal saves /= lifesteal slot2
 execute if score ward slot5 matches 0 if score slot2bleeding booleaneffects matches 0 run execute if score lifesteal slot2 matches 1.. run execute if score character# slot2 matches 41 run scoreboard players operation slot2 hp += lifesteal saves
 execute if score ward slot5 matches 0 if score lifesteal slot2 matches 1.. if score character# slot2 matches 41 at @e[name=slot2,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 7
 execute if score lifesteal slot3 matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation lifesteal saves = atk slot3
 execute if score lifesteal slot3 matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation lifesteal saves += slot3 atkmodifiers
-execute if score lifesteal slot3 matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation lifesteal saves += marks slot1
-execute if score lifesteal slot3 matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation lifesteal saves /= atkmultiplier slot1
+execute if score lifesteal slot3 matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation lifesteal saves += marks slot5
+execute if score lifesteal slot3 matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation lifesteal saves /= atkmultiplier slot5
 execute if score lifesteal slot3 matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation lifesteal saves /= lifesteal slot3
 execute if score ward slot5 matches 0 if score slot3bleeding booleaneffects matches 0 run execute if score lifesteal slot3 matches 1.. run execute if score character# slot3 matches 41 run scoreboard players operation slot3 hp += lifesteal saves
 execute if score ward slot5 matches 0 if score lifesteal slot3 matches 1.. if score character# slot3 matches 41 at @e[name=slot3,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50
 #slot 8
 execute if score lifesteal slot4 matches 1.. run execute if score character# slot4 matches 41 run scoreboard players operation lifesteal saves = atk slot4
 execute if score lifesteal slot4 matches 1.. run execute if score character# slot4 matches 41 run scoreboard players operation lifesteal saves += slot4 atkmodifiers
-execute if score lifesteal slot4 matches 1.. run execute if score character# slot4 matches 41 run scoreboard players operation lifesteal saves += marks slot1
-execute if score lifesteal slot4 matches 1.. run execute if score character# slot4 matches 41 run scoreboard players operation lifesteal saves /= atkmultiplier slot1
+execute if score lifesteal slot4 matches 1.. run execute if score character# slot4 matches 41 run scoreboard players operation lifesteal saves += marks slot5
+execute if score lifesteal slot4 matches 1.. run execute if score character# slot4 matches 41 run scoreboard players operation lifesteal saves /= atkmultiplier slot5
 execute if score lifesteal slot4 matches 1.. run execute if score character# slot4 matches 41 run scoreboard players operation lifesteal saves /= lifesteal slot4
 execute if score ward slot5 matches 0 if score slot4bleeding booleaneffects matches 0 run execute if score lifesteal slot4 matches 1.. run execute if score character# slot4 matches 41 run scoreboard players operation slot4 hp += lifesteal saves
 execute if score ward slot5 matches 0 if score lifesteal slot4 matches 1.. if score character# slot4 matches 41 at @e[name=slot4,type=armor_stand] run particle minecraft:composter ~ ~1 ~ 0.9 0.9 0.9 0.5 50

@@ -12,6 +12,7 @@ execute if score slot21isatk booleans matches 1 run scoreboard players operation
 execute if score slot22isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot22
 execute if score slot22isatk booleans matches 1 run scoreboard players operation atk1 saves += slot22 atkmodifiers
 execute if score slot22isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot18
+execute if score slot22isatk booleans matches 1 if score character# slot22 matches 36 run execute unless score durationSlot21-18 fear matches 1.. unless score durationSlot22-18 fear matches 1.. unless score durationSlot23-18 fear matches 1.. unless score durationSlot24-18 fear matches 1.. run scoreboard players operation atk1 saves -= barleyLeader abilityStats
 execute if score slot22isatk booleans matches 1 if score character# slot22 matches 30 run scoreboard players operation atk1 saves += dominoLeaderHit heroattack
 execute if score slot22isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot18
 execute if score slot22isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk1 saves
@@ -28,11 +29,7 @@ execute if score slot24isatk booleans matches 1 run scoreboard players operation
 execute if score slot24isatk booleans matches 1 run scoreboard players operation atk1 saves += slot24 atkmodifiers
 execute if score slot24isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot18
 execute if score slot24isatk booleans matches 1 run scoreboard players operation shield slot18 -= atk1 saves
-#damage + shield reset (all)
-execute if score shield slot18 matches ..0 if score ward slot18 matches 0 run scoreboard players operation slot18 hp += shield slot18
-execute if score ward slot18 matches 1.. run function chthree:wardslot18
-execute if score shield slot18 matches ..0 run scoreboard players set shield slot18 0
-execute at @e[name=slot18,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
+
 
 
 #splash
@@ -213,9 +210,18 @@ execute if score lifesteal slot24 matches 1.. run execute if score splash slot24
 execute if score slot19 hp matches 1.. run execute if score ward slot19 matches 0 run execute if score slot24bleeding booleaneffects matches 0 run execute if score lifesteal slot24 matches 1.. run execute if score splash slot24 matches 1.. run execute if score slot24isatk booleans matches 1 run scoreboard players operation slot24 hp += lifestealsplash2 saves
 
 #Special Cases
-execute if score slot21isatk booleans matches 1 if score character# slot21 matches 29 if score slot18 hp <= ripperHpBleed abilityStats run scoreboard players operation slot18bleeding booleaneffects = ripperBleed abilityStats
-execute if score slot22isatk booleans matches 1 if score character# slot22 matches 29 if score slot18 hp <= ripperHpBleed abilityStats run scoreboard players operation slot18bleeding booleaneffects = ripperBleed abilityStats
-execute if score slot23isatk booleans matches 1 if score character# slot23 matches 29 if score slot18 hp <= ripperHpBleed abilityStats run scoreboard players operation slot18bleeding booleaneffects = ripperBleed abilityStats
+execute if score ward slot18 matches ..0 if score slot21isatk booleans matches 1 if score character# slot21 matches 29 if score slot18 hp <= ripperHpBleed abilityStats run scoreboard players operation slot18bleeding booleaneffects = ripperBleed abilityStats
+execute if score ward slot18 matches ..0 if score slot22isatk booleans matches 1 if score character# slot22 matches 29 if score slot18 hp <= ripperHpBleed abilityStats run scoreboard players operation slot18bleeding booleaneffects = ripperBleed abilityStats
+execute if score ward slot18 matches ..0 if score slot23isatk booleans matches 1 if score character# slot23 matches 29 if score slot18 hp <= ripperHpBleed abilityStats run scoreboard players operation slot18bleeding booleaneffects = ripperBleed abilityStats
+execute if score ward slot18 matches ..0 run execute if score slot21isatk booleans matches 1 if score character# slot21 matches -8 run scoreboard players operation slot18Disease disease += zombieDisease abilityStats
+execute if score ward slot18 matches ..0 run execute if score slot22isatk booleans matches 1 if score character# slot22 matches -8 run scoreboard players operation slot18Disease disease += zombieDisease abilityStats
+execute if score ward slot18 matches ..0 run execute if score slot23isatk booleans matches 1 if score character# slot23 matches -8 run scoreboard players operation slot18Disease disease += zombieDisease abilityStats
+execute if score ward slot18 matches ..0 run execute if score slot24isatk booleans matches 1 if score character# slot24 matches -8 run scoreboard players operation slot18Disease disease += zombieDisease abilityStats
+#damage + shield reset (all)
+execute if score shield slot18 matches ..0 if score ward slot18 matches 0 run scoreboard players operation slot18 hp += shield slot18
+execute if score ward slot18 matches 1.. run function chthree:wardslot18
+execute if score shield slot18 matches ..0 run scoreboard players set shield slot18 0
+execute at @e[name=slot18,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 
 #double target + turn end trigger
 #regular attack

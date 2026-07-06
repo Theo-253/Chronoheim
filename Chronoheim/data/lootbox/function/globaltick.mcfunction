@@ -4,6 +4,8 @@ execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s amethyst_shard
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s trial_key
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s sunflower
+execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s jack_o_lantern
+execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s quartz_pillar
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run effect clear @s darkness
 item replace entity @a[team=Shop] container.1 with minecraft:trial_key[minecraft:custom_name="Buy Chest (10 Gold)",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.levelup",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:luck,duration:1,amplifier:1,show_particles:0b}]}]}] 50
 item replace entity @a[team=Shop] container.2 with minecraft:jack_o_lantern[minecraft:custom_name="Monster Mayhem",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.levelup",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:darkness,duration:1,amplifier:2,show_particles:0b}]}]}] 1
@@ -41,7 +43,7 @@ execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this
 
 item replace entity @a[team=Shop2] container.2 with minecraft:quartz_pillar[minecraft:custom_name="Classic Set",food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:0.1,animation:none,sound:"minecraft:entity.player.levelup",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:darkness,duration:1,amplifier:3,show_particles:0b}]}]}] 1
 
-execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:3,max:3}}}}} run tp @s -149 -12 -37
+execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:3,max:3}}}}} run tp @s -149 -13 -37
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:3,max:3}}}}} run team leave @s
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:3,max:3}}}}} run team join Shop @s
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:3,max:3}}}}} run effect clear @s darkness

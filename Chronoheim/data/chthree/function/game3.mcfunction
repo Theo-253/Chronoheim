@@ -65,6 +65,134 @@ execute as @p[tag=p6] if predicate {condition:"minecraft:entity_properties",enti
 #Speed Reset
 execute if score attackIsOngoingGame3 booleans matches 0 run execute if score speed slot24 matches ..-10000 if score speed slot23 matches ..-10000 if score speed slot22 matches ..-10000 run execute if score speed slot21 matches ..-10000 run execute if score speed slot20 matches ..-10000 run execute if score speed slot19 matches ..-10000 run execute if score speed slot18 matches ..-10000 run execute if score speed slot17 matches ..-10000 run function chthree:turnresetgame3
 
+#boogaloo curse
+execute if score curse slot17 matches 1 if score durationSlot17 regen matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot17 matches 1 if score durationSlot17 regen matches 1.. run scoreboard players set durationSlot17 regen 0
+execute if score curse slot17 matches 1 if score durationSlot17 taunt matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot17 matches 1 if score durationSlot17 taunt matches 1.. run scoreboard players set durationSlot17 taunt 0
+execute if score curse slot17 matches 1 if score shield slot17 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot17 matches 1 if score shield slot17 matches 1.. run scoreboard players set shield slot17 0
+execute if score curse slot17 matches 1 if score ward slot17 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot17 matches 1 if score ward slot17 matches 1.. run scoreboard players set ward slot17 0
+execute if score curse slot17 matches 1 if score boogalooCurse3 abilities matches 1.. at @e[name=slot17,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
+execute if score curse slot17 matches 1 if score boogalooCurse3 abilities matches 1.. run scoreboard players set curse slot17 0
+execute if score boogalooCurse3 abilities matches 1.. run scoreboard players set boogalooCurse3 abilities 0
+execute if score curse slot18 matches 1 if score durationSlot18 regen matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot18 matches 1 if score durationSlot18 regen matches 1.. run scoreboard players set durationSlot18 regen 0
+execute if score curse slot18 matches 1 if score durationSlot18 taunt matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot18 matches 1 if score durationSlot18 taunt matches 1.. run scoreboard players set durationSlot18 taunt 0
+execute if score curse slot18 matches 1 if score shield slot18 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot18 matches 1 if score shield slot18 matches 1.. run scoreboard players set shield slot18 0
+execute if score curse slot18 matches 1 if score ward slot18 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot18 matches 1 if score ward slot18 matches 1.. run scoreboard players set ward slot18 0
+execute if score curse slot18 matches 1 if score boogalooCurse3 abilities matches 1.. at @e[name=slot18,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
+execute if score curse slot18 matches 1 if score boogalooCurse3 abilities matches 1.. run scoreboard players set curse slot18 0
+execute if score boogalooCurse3 abilities matches 1.. run scoreboard players set boogalooCurse3 abilities 0
+execute if score curse slot19 matches 1 if score durationSlot19 regen matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot19 matches 1 if score durationSlot19 regen matches 1.. run scoreboard players set durationSlot19 regen 0
+execute if score curse slot19 matches 1 if score durationSlot19 taunt matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot19 matches 1 if score durationSlot19 taunt matches 1.. run scoreboard players set durationSlot19 taunt 0
+execute if score curse slot19 matches 1 if score shield slot19 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot19 matches 1 if score shield slot19 matches 1.. run scoreboard players set shield slot19 0
+execute if score curse slot19 matches 1 if score ward slot19 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot19 matches 1 if score ward slot19 matches 1.. run scoreboard players set ward slot19 0
+execute if score curse slot19 matches 1 if score boogalooCurse3 abilities matches 1.. at @e[name=slot19,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
+execute if score curse slot19 matches 1 if score boogalooCurse3 abilities matches 1.. run scoreboard players set curse slot19 0
+execute if score boogalooCurse3 abilities matches 1.. run scoreboard players set boogalooCurse3 abilities 0
+execute if score curse slot20 matches 1 if score durationSlot20 regen matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot20 matches 1 if score durationSlot20 regen matches 1.. run scoreboard players set durationSlot20 regen 0
+execute if score curse slot20 matches 1 if score durationSlot20 taunt matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot20 matches 1 if score durationSlot20 taunt matches 1.. run scoreboard players set durationSlot20 taunt 0
+execute if score curse slot20 matches 1 if score shield slot20 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot20 matches 1 if score shield slot20 matches 1.. run scoreboard players set shield slot20 0
+execute if score curse slot20 matches 1 if score ward slot20 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot20 matches 1 if score ward slot20 matches 1.. run scoreboard players set ward slot20 0
+execute if score curse slot20 matches 1 if score boogalooCurse3 abilities matches 1.. at @e[name=slot20,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
+execute if score curse slot20 matches 1 if score boogalooCurse3 abilities matches 1.. run scoreboard players set curse slot20 0
+execute if score boogalooCurse3 abilities matches 1.. run scoreboard players set boogalooCurse3 abilities 0
+execute if score curse slot21 matches 1 if score durationSlot21 regen matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot21 matches 1 if score durationSlot21 regen matches 1.. run scoreboard players set durationSlot21 regen 0
+execute if score curse slot21 matches 1 if score durationSlot21 taunt matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot21 matches 1 if score durationSlot21 taunt matches 1.. run scoreboard players set durationSlot21 taunt 0
+execute if score curse slot21 matches 1 if score shield slot21 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot21 matches 1 if score shield slot21 matches 1.. run scoreboard players set shield slot21 0
+execute if score curse slot21 matches 1 if score ward slot21 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot21 matches 1 if score ward slot21 matches 1.. run scoreboard players set ward slot21 0
+execute if score curse slot21 matches 1 if score boogalooCurse3 abilities matches 1.. at @e[name=slot21,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
+execute if score curse slot21 matches 1 if score boogalooCurse3 abilities matches 1.. run scoreboard players set curse slot21 0
+execute if score boogalooCurse3 abilities matches 1.. run scoreboard players set boogalooCurse3 abilities 0
+execute if score curse slot22 matches 1 if score durationSlot22 regen matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot22 matches 1 if score durationSlot22 regen matches 1.. run scoreboard players set durationSlot22 regen 0
+execute if score curse slot22 matches 1 if score durationSlot22 taunt matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot22 matches 1 if score durationSlot22 taunt matches 1.. run scoreboard players set durationSlot22 taunt 0
+execute if score curse slot22 matches 1 if score shield slot22 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot22 matches 1 if score shield slot22 matches 1.. run scoreboard players set shield slot22 0
+execute if score curse slot22 matches 1 if score ward slot22 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot22 matches 1 if score ward slot22 matches 1.. run scoreboard players set ward slot22 0
+execute if score curse slot22 matches 1 if score boogalooCurse3 abilities matches 1.. at @e[name=slot22,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
+execute if score curse slot22 matches 1 if score boogalooCurse3 abilities matches 1.. run scoreboard players set curse slot22 0
+execute if score boogalooCurse3 abilities matches 1.. run scoreboard players set boogalooCurse3 abilities 0
+execute if score curse slot23 matches 1 if score durationSlot23 regen matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot23 matches 1 if score durationSlot23 regen matches 1.. run scoreboard players set durationSlot23 regen 0
+execute if score curse slot23 matches 1 if score durationSlot23 taunt matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot23 matches 1 if score durationSlot23 taunt matches 1.. run scoreboard players set durationSlot23 taunt 0
+execute if score curse slot23 matches 1 if score shield slot23 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot23 matches 1 if score shield slot23 matches 1.. run scoreboard players set shield slot23 0
+execute if score curse slot23 matches 1 if score ward slot23 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot23 matches 1 if score ward slot23 matches 1.. run scoreboard players set ward slot23 0
+execute if score curse slot23 matches 1 if score boogalooCurse3 abilities matches 1.. at @e[name=slot23,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
+execute if score curse slot23 matches 1 if score boogalooCurse3 abilities matches 1.. run scoreboard players set curse slot23 0
+execute if score boogalooCurse3 abilities matches 1.. run scoreboard players set boogalooCurse3 abilities 0
+execute if score curse slot24 matches 1 if score durationSlot24 regen matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot24 matches 1 if score durationSlot24 regen matches 1.. run scoreboard players set durationSlot24 regen 0
+execute if score curse slot24 matches 1 if score durationSlot24 taunt matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot24 matches 1 if score durationSlot24 taunt matches 1.. run scoreboard players set durationSlot24 taunt 0
+execute if score curse slot24 matches 1 if score shield slot24 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot24 matches 1 if score shield slot24 matches 1.. run scoreboard players set shield slot24 0
+execute if score curse slot24 matches 1 if score ward slot24 matches 1.. run scoreboard players add boogalooCurse3 abilities 1
+execute if score curse slot24 matches 1 if score ward slot24 matches 1.. run scoreboard players set ward slot24 0
+execute if score curse slot24 matches 1 if score boogalooCurse3 abilities matches 1.. at @e[name=slot24,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
+execute if score curse slot24 matches 1 if score boogalooCurse3 abilities matches 1.. run scoreboard players set curse slot24 0
+execute if score boogalooCurse3 abilities matches 1.. run scoreboard players set boogalooCurse3 abilities 0
+
+#Fenrir Curse
+execute if score character# slot17 matches 41 if score fenrirhpsave5 saves < slot17 hp run scoreboard players operation fenrirhpsave5 saves = slot17 hp
+execute if score character# slot18 matches 41 if score fenrirhpsave5 saves < slot18 hp run scoreboard players operation fenrirhpsave5 saves = slot18 hp
+execute if score character# slot19 matches 41 if score fenrirhpsave5 saves < slot19 hp run scoreboard players operation fenrirhpsave5 saves = slot19 hp
+execute if score character# slot21 matches 41 if score fenrirhpsave6 saves < slot21 hp run scoreboard players operation fenrirhpsave6 saves = slot21 hp
+execute if score character# slot22 matches 41 if score fenrirhpsave6 saves < slot22 hp run scoreboard players operation fenrirhpsave6 saves = slot22 hp
+execute if score character# slot23 matches 41 if score fenrirhpsave6 saves < slot23 hp run scoreboard players operation fenrirhpsave6 saves = slot23 hp
+execute if score character# slot17 matches 41 if score fenrirhpsave5 saves > maxhp slot17 run scoreboard players operation fenrirhpsave5 saves = maxhp slot17
+execute if score character# slot18 matches 41 if score fenrirhpsave5 saves > maxhp slot18 run scoreboard players operation fenrirhpsave5 saves = maxhp slot18
+execute if score character# slot19 matches 41 if score fenrirhpsave5 saves > maxhp slot19 run scoreboard players operation fenrirhpsave5 saves = maxhp slot19
+execute if score character# slot21 matches 41 if score fenrirhpsave6 saves > maxhp slot21 run scoreboard players operation fenrirhpsave6 saves = maxhp slot21
+execute if score character# slot22 matches 41 if score fenrirhpsave6 saves > maxhp slot22 run scoreboard players operation fenrirhpsave6 saves = maxhp slot22
+execute if score character# slot23 matches 41 if score fenrirhpsave6 saves > maxhp slot23 run scoreboard players operation fenrirhpsave6 saves = maxhp slot23
+execute if score character# slot17 matches 41 if score invincibleSlot17 booleaneffects matches 0 run execute if score fenrirhpsave5 saves > slot17 hp run scoreboard players set fenrirattack3 saves 1
+execute if score character# slot18 matches 41 if score invincibleSlot18 booleaneffects matches 0 run execute if score fenrirhpsave5 saves > slot18 hp run scoreboard players set fenrirattack3 saves 1
+execute if score character# slot19 matches 41 if score invincibleSlot19 booleaneffects matches 0 run execute if score fenrirhpsave5 saves > slot19 hp run scoreboard players set fenrirattack3 saves 1
+execute if score character# slot21 matches 41 if score invincibleSlot21 booleaneffects matches 0 run execute if score fenrirhpsave6 saves > slot21 hp run scoreboard players set fenrirattack3 saves 2
+execute if score character# slot22 matches 41 if score invincibleSlot22 booleaneffects matches 0 run execute if score fenrirhpsave6 saves > slot22 hp run scoreboard players set fenrirattack3 saves 2
+execute if score character# slot23 matches 41 if score invincibleSlot23 booleaneffects matches 0 run execute if score fenrirhpsave6 saves > slot23 hp run scoreboard players set fenrirattack3 saves 2
+execute if score character# slot17 matches 41 if score invincibleSlot17 booleaneffects matches 0 run execute if score fenrirhpsave5 saves > slot17 hp run function abilitiesthree:fenrirrebuke
+execute if score character# slot18 matches 41 if score invincibleSlot18 booleaneffects matches 0 run execute if score fenrirhpsave5 saves > slot18 hp run function abilitiesthree:fenrirrebuke
+execute if score character# slot19 matches 41 if score invincibleSlot19 booleaneffects matches 0 run execute if score fenrirhpsave5 saves > slot19 hp run function abilitiesthree:fenrirrebuke
+execute if score character# slot21 matches 41 if score invincibleSlot21 booleaneffects matches 0 run execute if score fenrirhpsave6 saves > slot21 hp run function abilitiesthree:fenrirrebuke
+execute if score character# slot22 matches 41 if score invincibleSlot22 booleaneffects matches 0 run execute if score fenrirhpsave6 saves > slot22 hp run function abilitiesthree:fenrirrebuke
+execute if score character# slot23 matches 41 if score invincibleSlot23 booleaneffects matches 0 run execute if score fenrirhpsave6 saves > slot23 hp run function abilitiesthree:fenrirrebuke
+
+
+#Zeebo Curse
+execute if score character# slot22 matches 40 if score curse slot17 matches 2 if score slot17 hp matches ..200 run scoreboard players set slot17 hp 0
+execute if score character# slot22 matches 40 if score curse slot18 matches 2 if score slot18 hp matches ..200 run scoreboard players set slot18 hp 0
+execute if score character# slot22 matches 40 if score curse slot19 matches 2 if score slot19 hp matches ..200 run scoreboard players set slot19 hp 0
+execute if score character# slot22 matches 40 if score curse slot20 matches 2 if score slot20 hp matches ..200 run scoreboard players set slot20 hp 0
+execute if score character# slot18 matches 40 if score curse slot21 matches 2 if score slot21 hp matches ..200 run scoreboard players set slot21 hp 0
+execute if score character# slot18 matches 40 if score curse slot22 matches 2 if score slot22 hp matches ..200 run scoreboard players set slot22 hp 0
+execute if score character# slot18 matches 40 if score curse slot23 matches 2 if score slot23 hp matches ..200 run scoreboard players set slot23 hp 0
+execute if score character# slot18 matches 40 if score curse slot24 matches 2 if score slot24 hp matches ..200 run scoreboard players set slot24 hp 0
+
+
 #When I get elected, we will have so much winning
 execute if score slot17 hp matches ..0 if score slot18 hp matches ..0 if score slot19 hp matches ..0 if score slot20 hp matches ..0 run tellraw @a ["",{"selector":"@p[tag=p6]"}," has won the duel against ",{"selector":"@p[tag=p5]"},"!"]
 execute if score slot17 hp matches ..0 if score slot18 hp matches ..0 if score slot19 hp matches ..0 if score slot20 hp matches ..0 if score testing Combat_Rating matches 0 run scoreboard players add @p[tag=p6] Wins 1

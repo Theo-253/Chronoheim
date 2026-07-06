@@ -11,6 +11,7 @@ execute if score slot9isatk booleans matches 1 run scoreboard players operation 
 execute if score slot10isatk booleans matches 1 run scoreboard players operation atk1 saves = atk slot10
 execute if score slot10isatk booleans matches 1 run scoreboard players operation atk1 saves += slot10 atkmodifiers
 execute if score slot10isatk booleans matches 1 run scoreboard players operation atk1 saves += marks slot13
+execute if score slot10isatk booleans matches 1 if score character# slot10 matches 36 run execute unless score durationSlot9-13 fear matches 1.. unless score durationSlot10-13 fear matches 1.. unless score durationSlot11-13 fear matches 1.. unless score durationSlot12-13 fear matches 1.. run scoreboard players operation atk1 saves -= barleyLeader abilityStats
 execute if score slot10isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot13
 execute if score slot10isatk booleans matches 1 run scoreboard players operation shield slot13 -= atk1 saves
 #slot 7
@@ -25,11 +26,7 @@ execute if score slot12isatk booleans matches 1 run scoreboard players operation
 execute if score slot12isatk booleans matches 1 run scoreboard players operation atk1 saves += slot12 atkmodifiers
 execute if score slot12isatk booleans matches 1 run scoreboard players operation atk1 saves /= atkmultiplier slot13
 execute if score slot12isatk booleans matches 1 run scoreboard players operation shield slot13 -= atk1 saves
-#damage + shield reset (all)
-execute if score shield slot13 matches ..0 if score ward slot13 matches 0 run scoreboard players operation slot13 hp += shield slot13
-execute if score ward slot13 matches 1.. run function chtoo:wardslot13
-execute if score shield slot13 matches ..0 run scoreboard players set shield slot13 0
-execute at @e[name=slot13,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
+
 
 
 #splash
@@ -118,41 +115,50 @@ execute if score ward slot13 matches 0 if score lifesteal slot12 matches 1.. if 
 #slot 5
 execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot9
 execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot9 atkmodifiers
-execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot14
-execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot14
+execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot13
+execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot13
 execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot9
 execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot9
 execute if score slot14 hp matches 1.. run execute if score ward slot14 matches 0 run execute if score slot9bleeding booleaneffects matches 0 run execute if score lifesteal slot9 matches 1.. run execute if score splash slot9 matches 1.. run execute if score slot9isatk booleans matches 1 run scoreboard players operation slot9 hp += lifestealsplash2 saves
 #slot 6
 execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot10
 execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot10 atkmodifiers
-execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot14
-execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot14
+execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot13
+execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot13
 execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot10
 execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot10
 execute if score slot14 hp matches 1.. run execute if score ward slot14 matches 0 run execute if score slot10bleeding booleaneffects matches 0 run execute if score lifesteal slot10 matches 1.. run execute if score splash slot10 matches 1.. run execute if score slot10isatk booleans matches 1 run scoreboard players operation slot10 hp += lifestealsplash2 saves
 #slot 7
 execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot11
 execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot11 atkmodifiers
-execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot14
-execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot14
+execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot13
+execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot13
 execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot11
 execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot11
 execute if score slot14 hp matches 1.. run execute if score ward slot14 matches 0 run execute if score slot11bleeding booleaneffects matches 0 run execute if score lifesteal slot11 matches 1.. run execute if score splash slot11 matches 1.. run execute if score slot11isatk booleans matches 1 run scoreboard players operation slot11 hp += lifestealsplash2 saves
 #slot 8
 execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves = atk slot12
 execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += slot12 atkmodifiers
-execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot14
-execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot14
+execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves += marks slot13
+execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= atkmultiplier slot13
 execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= lifesteal slot12
 execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation lifestealsplash2 saves /= splash slot12
 execute if score slot14 hp matches 1.. run execute if score ward slot14 matches 0 run execute if score slot12bleeding booleaneffects matches 0 run execute if score lifesteal slot12 matches 1.. run execute if score splash slot12 matches 1.. run execute if score slot12isatk booleans matches 1 run scoreboard players operation slot12 hp += lifestealsplash2 saves
 
 #Special Cases
-execute if score slot9isatk booleans matches 1 if score character# slot9 matches 29 if score slot13 hp <= ripperHpBleed abilityStats run scoreboard players operation slot13bleeding booleaneffects = ripperBleed abilityStats
-execute if score slot10isatk booleans matches 1 if score character# slot10 matches 29 if score slot13 hp <= ripperHpBleed abilityStats run scoreboard players operation slot13bleeding booleaneffects = ripperBleed abilityStats
-execute if score slot11isatk booleans matches 1 if score character# slot11 matches 29 if score slot13 hp <= ripperHpBleed abilityStats run scoreboard players operation slot13bleeding booleaneffects = ripperBleed abilityStats
+execute if score ward slot13 matches ..0 if score slot9isatk booleans matches 1 if score character# slot9 matches 29 if score slot13 hp <= ripperHpBleed abilityStats run scoreboard players operation slot13bleeding booleaneffects = ripperBleed abilityStats
+execute if score ward slot13 matches ..0 if score slot10isatk booleans matches 1 if score character# slot10 matches 29 if score slot13 hp <= ripperHpBleed abilityStats run scoreboard players operation slot13bleeding booleaneffects = ripperBleed abilityStats
+execute if score ward slot13 matches ..0 if score slot11isatk booleans matches 1 if score character# slot11 matches 29 if score slot13 hp <= ripperHpBleed abilityStats run scoreboard players operation slot13bleeding booleaneffects = ripperBleed abilityStats
+execute if score ward slot13 matches ..0 run execute if score slot9isatk booleans matches 1 if score character# slot9 matches -8 run scoreboard players operation slot13Disease disease += zombieDisease abilityStats
+execute if score ward slot13 matches ..0 run execute if score slot10isatk booleans matches 1 if score character# slot10 matches -8 run scoreboard players operation slot13Disease disease += zombieDisease abilityStats
+execute if score ward slot13 matches ..0 run execute if score slot11isatk booleans matches 1 if score character# slot11 matches -8 run scoreboard players operation slot13Disease disease += zombieDisease abilityStats
+execute if score ward slot13 matches ..0 run execute if score slot12isatk booleans matches 1 if score character# slot12 matches -8 run scoreboard players operation slot13Disease disease += zombieDisease abilityStats
 
+#damage + shield reset (all)
+execute if score shield slot13 matches ..0 if score ward slot13 matches 0 run scoreboard players operation slot13 hp += shield slot13
+execute if score ward slot13 matches 1.. run function chtoo:wardslot13
+execute if score shield slot13 matches ..0 run scoreboard players set shield slot13 0
+execute at @e[name=slot13,type=armor_stand] run particle minecraft:crit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 #double target + turn end trigger
 #regular attack
 execute if score slot9isatk booleans matches 1 run execute if score doubleatk slot9 matches 0 run function chtoo:turnend

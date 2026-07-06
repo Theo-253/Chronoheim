@@ -14,14 +14,14 @@ execute if score character# slot21 matches 41 if score slot21 hp >= maxhp slot21
 execute if score character# slot22 matches 41 if score slot22 hp >= maxhp slot22 run scoreboard players set fenrircancel saves 2
 execute if score character# slot23 matches 41 if score slot23 hp >= maxhp slot23 run scoreboard players set fenrircancel saves 2
 
-execute unless score fenrircancel saves matches 1 if score fenrirattack saves matches 1 if score curse slot21 matches 3 run function abilities:fenrirattackslot21
-execute unless score fenrircancel saves matches 1 if score fenrirattack saves matches 1 if score curse slot22 matches 3 run function abilities:fenrirattackslot22
-execute unless score fenrircancel saves matches 1 if score fenrirattack saves matches 1 if score curse slot23 matches 3 run function abilities:fenrirattackslot23
-execute unless score fenrircancel saves matches 1 if score fenrirattack saves matches 1 if score curse slot24 matches 3 run function abilities:fenrirattackslot24
+execute unless score fenrircancel saves matches 1 if score fenrirattack saves matches 1 if score curse slot21 matches 3 run function abilitiesthree:fenrirattackslot1
+execute unless score fenrircancel saves matches 1 if score fenrirattack saves matches 1 if score curse slot22 matches 3 run function abilitiesthree:fenrirattackslot2
+execute unless score fenrircancel saves matches 1 if score fenrirattack saves matches 1 if score curse slot23 matches 3 run function abilitiesthree:fenrirattackslot3
+execute unless score fenrircancel saves matches 1 if score fenrirattack saves matches 1 if score curse slot24 matches 3 run function abilitiesthree:fenrirattackslot4
 
-execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot17 matches 3 run function abilities:fenrirattackslot17
-execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot18 matches 3 run function abilities:fenrirattackslot18
-execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot19 matches 3 run function abilities:fenrirattackslot19
-execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot20 matches 3 run function abilities:fenrirattackslot20
+execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot17 matches 3 run function abilitiesthree:fenrirattackslot5
+execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot18 matches 3 run function abilitiesthree:fenrirattackslot6
+execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot19 matches 3 run function abilitiesthree:fenrirattackslot7
+execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot20 matches 3 run function abilitiesthree:fenrirattackslot8
 
 scoreboard players set fenrircancel saves 0

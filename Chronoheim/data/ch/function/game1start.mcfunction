@@ -454,6 +454,25 @@ execute if score character# slot2 matches 9 run execute if score ward slot6 matc
 execute if score character# slot6 matches 9 run execute if score ward slot6 matches 0 run scoreboard players operation durationSlot2 mark = robynDuration abilityStats
 execute if score character# slot6 matches 9 run execute if score ward slot6 matches 0 run scoreboard players operation marks slot2 = robyn abilityStats
 execute if score character# slot6 matches 9 run execute if score ward slot6 matches 1 run function ch:wardslot2
+
+execute if score character# slot2 matches 42 run scoreboard players operation anubisHP saves = anubisLeader abilityStats
+execute if score character# slot2 matches 42 run scoreboard players operation anubisHP saves *= anubisUnusedP1 saves
+execute if score character# slot2 matches 42 run scoreboard players operation slot2 hp += anubisHP saves
+
+execute if score character# slot6 matches 42 run scoreboard players operation anubisHP saves = anubisLeader abilityStats
+execute if score character# slot6 matches 42 run scoreboard players operation anubisHP saves *= anubisUnusedP2 saves
+execute if score character# slot6 matches 42 run scoreboard players operation slot6 hp += anubisHP saves
+
+scoreboard players set anubisUsedP1 saves 9
+execute unless score character# slot1 matches 17 unless score character# slot2 matches 17 unless score character# slot3 matches 17 run scoreboard players remove anubisUsedP1 saves 1
+execute unless score character# slot2 matches 17 run scoreboard players remove anubisUsedP1 saves 1
+scoreboard players operation anubisUsedP1 saves -= anubisUnusedP1 saves
+
+scoreboard players set anubisUsedP2 saves 9
+execute unless score character# slot5 matches 17 unless score character# slot6 matches 17 unless score character# slot7 matches 17 run scoreboard players remove anubisUsedP2 saves 1
+execute unless score character# slot6 matches 17 run scoreboard players remove anubisUsedP2 saves 1
+scoreboard players operation anubisUsedP2 saves -= anubisUnusedP2 saves
+
 scoreboard players operation maxhp slot1 = slot1 hp
 scoreboard players operation maxhp slot2 = slot2 hp
 scoreboard players operation maxhp slot3 = slot3 hp
@@ -491,23 +510,7 @@ execute if score character# slot6 matches 18 run scoreboard players operation ma
 execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot5 += grangorTeamHealthBonus herohealth
 execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot7 += grangorTeamHealthBonus herohealth
 
-execute if score character# slot2 matches 42 run scoreboard players operation anubisHP saves = anubisLeader abilityStats
-execute if score character# slot2 matches 42 run scoreboard players operation anubisHP saves *= anubisUnusedP1 saves
-execute if score character# slot2 matches 42 run scoreboard players operation maxhp slot2 += anubisHP saves
 
-execute if score character# slot6 matches 42 run scoreboard players operation anubisHP saves = anubisLeader abilityStats
-execute if score character# slot6 matches 42 run scoreboard players operation anubisHP saves *= anubisUnusedP2 saves
-execute if score character# slot6 matches 42 run scoreboard players operation maxhp slot6 += anubisHP saves
-
-scoreboard players set anubisUsedP1 saves 9
-execute unless score character# slot1 matches 17 unless score character# slot2 matches 17 unless score character# slot3 matches 17 run scoreboard players remove anubisUsedP1 saves 1
-execute unless score character# slot2 matches 17 run scoreboard players remove anubisUsedP1 saves 1
-scoreboard players operation anubisUsedP1 saves -= anubisUnusedP1 saves
-
-scoreboard players set anubisUsedP2 saves 9
-execute unless score character# slot5 matches 17 unless score character# slot6 matches 17 unless score character# slot7 matches 17 run scoreboard players remove anubisUsedP2 saves 1
-execute unless score character# slot6 matches 17 run scoreboard players remove anubisUsedP2 saves 1
-scoreboard players operation anubisUsedP2 saves -= anubisUnusedP2 saves
 
 scoreboard players set game1Ongoing ongoinggames 1
 scoreboard players set attackIsOngoingGame1 booleans 0

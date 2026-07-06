@@ -23,3 +23,4 @@ execute unless score fenrircancel saves matches 2 if score fenrirattack saves ma
 execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot3 matches 3 run function abilities:fenrirattackslot3
 execute unless score fenrircancel saves matches 2 if score fenrirattack saves matches 2 if score curse slot4 matches 3 run function abilities:fenrirattackslot4
 
+scoreboard players set fenrircancel saves 0

@@ -329,7 +329,7 @@ execute if score abilitynumber abilities matches 40 if score ward slot5 matches 
 #Fenrir
 execute if score abilitynumber abilities matches 41 if score ward slot5 matches ..0 unless score curse slot5 matches 5 unless score curse slot5 matches 3 run scoreboard players set curseStacks slot5 0
 execute if score abilitynumber abilities matches 41 if score ward slot5 matches ..0 unless score curse slot5 matches 5 unless score curse slot5 matches 3 run scoreboard players set curseDuration slot5 -1
-execute if score abilitynumber abilities matches 41 if score ward slot5 matches ..0 unless score curse slot5 matches 5 run scoreboard players set curse slot5 3
+execute if score abilitynumber abilities matches 41 if score ward slot5 matches ..0 unless score character# slot5 matches 41 unless score curse slot5 matches 5 run scoreboard players set curse slot5 3
 execute if score abilitynumber abilities matches 41 run scoreboard players operation abilityDmg saves = fenrir abilityStats
 execute if score abilitynumber abilities matches 41 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
 execute if score abilitynumber abilities matches 41 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 atkmodifiers

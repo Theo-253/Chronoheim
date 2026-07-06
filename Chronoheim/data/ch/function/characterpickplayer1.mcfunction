@@ -938,7 +938,7 @@ execute if score character# slot1 matches 0 run execute if items entity @p[tag=p
 execute if score character# slot1 matches 0 run execute if items entity @p[tag=p1,tag=fenrirO] container.* minecraft:player_head[minecraft:custom_name={"text":"Fenrir","bold":true,"color":"dark_purple","italic":false}] run scoreboard players set character# slot1 41
 
 #Anubis character select p1
-execute if items entity @p[tag=p1,tag=AnubisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Anubis","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Anubis"]
+execute if items entity @p[tag=p1,tag=anubisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Anubis","bold":true,"color":"gold","italic":false}] run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," picked Anubis"]
 
 
 execute if score character# slot3 matches 0 run execute if score character# slot2 matches 1.. run execute if score character# slot1 matches 1.. run execute if items entity @p[tag=p1,tag=anubisO] container.* minecraft:player_head[minecraft:custom_name={"text":"Anubis","bold":true,"color":"gold","italic":false}] run scoreboard players operation slot3 hp = anubis herohealth

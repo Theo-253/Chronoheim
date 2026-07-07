@@ -73,6 +73,16 @@ tag @a[tag=game3] remove healingtotem
 tag @a[tag=game3] remove healingrain
 tag @a[tag=game3] remove decimate
 tag @a[tag=game3] remove lifeleech
+tag @a[tag=game3] remove cannibalize
+tag @a[tag=game3] remove slimed
+tag @a[tag=game3] remove vampiremark
+tag @a[tag=game3] remove willowisp
+tag @a[tag=game3] remove butchering
+tag @a[tag=game3] remove spiderward
+tag @a[tag=game3] remove darkritual
+tag @a[tag=game3] remove raisedead
+tag @a[tag=game3] remove monkeyspaw
+tag @a[tag=game3] remove curseofbats
 tag @a remove p5
 tag @a remove p6
 tag @a remove game3
@@ -377,7 +387,10 @@ scoreboard players set maxhp slot22 9999
 scoreboard players set maxhp slot23 9999
 scoreboard players set maxhp slot24 9999
 
-
+scoreboard players set darkritual player5spells 0
+scoreboard players set darkritual player6spells 0
+scoreboard players set anubisSpCheckedP5 booleans 0
+scoreboard players set anubisSpCheckedP6 booleans 0
 
 
 

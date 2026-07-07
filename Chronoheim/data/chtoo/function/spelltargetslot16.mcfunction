@@ -283,7 +283,7 @@ execute if score spellnumber2 spells matches 34 run scoreboard players set spell
 #Dark Ritual
 execute if score spellnumber2 spells matches 40 run execute if score buffDurationSlot16 atkmodifiers < darkpowerDuration spellStats run scoreboard players operation buffDurationSlot16 atkmodifiers = darkpowerDuration spellStats
 execute if score spellnumber2 spells matches 40 run scoreboard players operation attackBuffSlot16 atkmodifiers += darkpower spellStats
-execute if score spellnumber2 spells matches 40 run scoreboard players operation attackBuffSlot16 atkmodifiers += darkritual player2spells
+execute if score spellnumber2 spells matches 40 run scoreboard players operation attackBuffSlot16 atkmodifiers += darkritual player4spells
 execute if score spellnumber2 spells matches 40 at @e[name=slot16] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 40
 execute if score spellnumber2 spells matches 40 run function chtoo:spellphasep3
 execute if score spellnumber2 spells matches 40 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Dark Ritual on Slot 8!"]

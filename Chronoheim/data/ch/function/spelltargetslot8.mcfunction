@@ -291,6 +291,7 @@ execute if score spellnumber spells matches 40 run tellraw @a[tag=game1] ["",{"s
 
 #Monkey's Paw
 execute if score spellnumber spells matches 43 run scoreboard players operation invincibleSlot8 booleaneffects = monkeyspaw spellStats
+execute if score spellnumber spells matches 43 run scoreboard players operation savehp8 saves = slot8 hp
 execute if score spellnumber spells matches 43 run scoreboard players set curse slot8 5
 execute if score spellnumber spells matches 43 run scoreboard players set curseStacks slot8 0
 execute if score spellnumber spells matches 43 run scoreboard players operation curseDuration slot8 = monkeyspaw spellStats

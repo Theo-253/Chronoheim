@@ -266,6 +266,94 @@ execute if score spellnumber2 spells matches 32 run tellraw @a[tag=game2] ["",{"
 execute if score spellnumber2 spells matches 32 run scoreboard players set spellbuffsp4 spells 0
 execute if score spellnumber2 spells matches 32 run function chtoo:spellphasep3
 
+#cannibalize token
+
+execute if score spellnumber2 spells matches -3 if score slot10bleeding booleaneffects matches 0 run scoreboard players operation slot10 hp += cannibalize spellStats
+execute if score spellnumber2 spells matches -3 if score slot10bleeding booleaneffects matches 0 run scoreboard players operation slot10 hp += spellbuffsp3 spells
+execute if score spellnumber2 spells matches -3 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber2 spells matches -3 run execute at @n[type=armor_stand,name=slot10] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber2 spells matches -3 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Cannibalize to heal Slot 2!"]
+execute if score spellnumber2 spells matches -3 run scoreboard players set spellbuffsp3 spells 0
+
+#cannibalize
+execute if score spellnumber2 spells matches 34 run scoreboard players operation slot10 hp -= cannibalize spellStats
+execute if score spellnumber2 spells matches 34 run scoreboard players operation slot10bleeding booleaneffects += cannibalizeDuration spellStats
+execute if score spellnumber2 spells matches 34 run function chtoo:spellgivetargetsp4reverse
+execute if score spellnumber2 spells matches 34 run execute at @n[type=armor_stand,name=slot10] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber2 spells matches 34 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Cannibalize on Slot 2!"]
+execute if score spellnumber2 spells matches 34 run scoreboard players set spellnumber2 spells -3
+
+#Dark Ritual
+execute if score spellnumber2 spells matches 40 run execute if score buffDurationSlot10 atkmodifiers < darkpowerDuration spellStats run scoreboard players operation buffDurationSlot10 atkmodifiers = darkpowerDuration spellStats
+execute if score spellnumber2 spells matches 40 run scoreboard players operation attackBuffSlot10 atkmodifiers += darkpower spellStats
+execute if score spellnumber2 spells matches 40 run scoreboard players operation attackBuffSlot10 atkmodifiers += darkritual player1spells
+execute if score spellnumber2 spells matches 40 at @e[name=slot10] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score spellnumber2 spells matches 40 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber2 spells matches 40 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Dark Ritual on Slot 2!"]
+
+#Monkey's Paw
+execute if score spellnumber2 spells matches 43 run scoreboard players operation invincibleSlot10 booleaneffects = monkeyspaw spellStats
+execute if score spellnumber2 spells matches 43 run scoreboard players operation savehp10 saves = slot10 hp
+execute if score spellnumber2 spells matches 43 run scoreboard players set curse slot10 5
+execute if score spellnumber2 spells matches 43 run scoreboard players set curseStacks slot10 0
+execute if score spellnumber2 spells matches 43 run scoreboard players operation curseDuration slot10 = monkeyspaw spellStats
+execute if score spellnumber2 spells matches 43 at @e[name=slot10] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.00000001 200
+execute if score spellnumber2 spells matches 43 run playsound minecraft:ambient.cave player @a[tag=game2] ~ ~ ~ 500 2
+execute if score spellnumber2 spells matches 43 run scoreboard players set attackIsOngoingGame2 booleans 0
+execute if score spellnumber2 spells matches 43 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Monkey's Paw on Slot 2!"]
+
+#Slimed!
+execute if score spellnumber2 spells matches 35 if score ward slot10 matches 0 run scoreboard players operation disarmedslot10 booleaneffects += slimed spellStats
+execute if score spellnumber2 spells matches 35 if score ward slot10 matches 1.. run function chtoo:wardslot10
+execute if score spellnumber2 spells matches 35 run function chtoo:spellphasep3
+execute if score spellnumber2 spells matches 35 run execute at @n[type=armor_stand,name=slot10] run particle minecraft:item_slime ~ ~1 ~ 0.7 0.7 0.7 0.3 150
+execute if score spellnumber2 spells matches 35 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Slimed! on Slot 2!"]
+
+#Vampire Mark
+execute if score spellnumber2 spells matches 36 run scoreboard players operation lifesteal slot10 = vampiremark spellStats
+execute if score spellnumber2 spells matches 36 run execute at @n[type=armor_stand,name=slot10] run particle minecraft:crimson_spore ~ ~1 ~ 0.6 0.4 0.6 0 200
+execute if score spellnumber2 spells matches 36 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Vampire Mark on Slot 2!"]
+execute if score spellnumber2 spells matches 36 run scoreboard players set attackIsOngoingGame2 booleans 0
+
+#Butchering
+execute if score spellnumber2 spells matches 37 run scoreboard players operation spellDmg saves = butchering spellStats
+execute if score spellnumber2 spells matches 37 run scoreboard players operation spellDmg saves += spellbuffsp3 spells
+execute if score spellnumber2 spells matches 37 run scoreboard players operation spellDmg saves += marks slot10
+execute if score spellnumber2 spells matches 37 run scoreboard players operation spellDmg saves /= atkmultiplier slot10
+execute if score spellnumber2 spells matches 37 run execute if score ward slot10 matches 0 run scoreboard players operation shield slot10 -= spellDmg saves
+execute if score spellnumber2 spells matches 37 run execute if score ward slot10 matches 0 if score shield slot10 matches ..0 run scoreboard players operation slot10 hp += shield slot10
+execute if score spellnumber2 spells matches 37 at @e[name=slot10] run particle minecraft:damage_indicator ~ ~1 ~ 0.6 0.6 0.6 0 100
+execute if score spellnumber2 spells matches 37 run execute if score ward slot10 matches 1.. run function chtoo:wardslot10
+execute if score spellnumber2 spells matches 37 run scoreboard players set spellbuffsp3 spells 0
+execute if score spellnumber2 spells matches 37 run function chtoo:spellphasep3
+execute if score spellnumber2 spells matches 37 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Butchering on Slot 2!"]
+
+#Will O' Wisp
+execute if score spellnumber2 spells matches 38 run execute if score ward slot10 matches 0 if score durationSlot10 burn < willowispDuration spellStats run scoreboard players operation durationSlot10 burn = willowispDuration spellStats
+execute if score spellnumber2 spells matches 38 run execute if score ward slot10 matches 0 run scoreboard players operation slot10Burn burn += willowisp spellStats
+execute if score spellnumber2 spells matches 38 run scoreboard players operation spellDmg saves = slot10Burn burn
+execute if score spellnumber2 spells matches 38 run scoreboard players operation spellDmg saves += spellbuffsp3 spells
+execute if score spellnumber2 spells matches 38 run scoreboard players operation spellDmg saves += marks slot10
+execute if score spellnumber2 spells matches 38 run scoreboard players operation spellDmg saves /= atkmultiplier slot10
+execute if score spellnumber2 spells matches 38 run execute if score ward slot10 matches 0 run scoreboard players operation shield slot10 -= spellDmg saves
+execute if score spellnumber2 spells matches 38 run execute if score ward slot10 matches 0 if score shield slot10 matches ..0 run scoreboard players operation slot10 hp += shield slot10
+execute if score spellnumber2 spells matches 38 at @e[name=slot10] run particle minecraft:glow ~ ~1 ~ 0.7 0.7 0.7 0.1 100
+execute if score spellnumber2 spells matches 38 at @e[name=slot10] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.6 0.6 0.6 0.1 100
+execute if score spellnumber2 spells matches 38 run execute if score ward slot10 matches 1.. run function chtoo:wardslot10
+execute if score spellnumber2 spells matches 38 run scoreboard players set spellbuffsp3 spells 0
+execute if score spellnumber2 spells matches 38 run function chtoo:spellphasep3
+execute if score spellnumber2 spells matches 38 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Will O' Wisp on Slot 2!"]
+
+#Curse of Bats
+execute if score spellnumber2 spells matches 42 if score ward slot10 matches ..0 unless score curse slot10 matches 5 unless score curse slot10 matches 6 run scoreboard players set curseStacks slot10 0
+execute if score spellnumber2 spells matches 42 if score ward slot10 matches ..0 unless score curse slot10 matches 5 unless score curse slot10 matches 6 run scoreboard players set curseDuration slot10 -1
+execute if score spellnumber2 spells matches 42 if score ward slot10 matches ..0 unless score curse slot10 matches 5 run scoreboard players set curse slot10 6
+execute if score spellnumber2 spells matches 42 if score ward slot10 matches ..0 unless score curse slot10 matches 5 if score curse slot10 matches 6 run scoreboard players add curseStacks slot10 1
+execute if score spellnumber2 spells matches 42 run execute at @n[name=slot10] run particle shriek{delay:0} ~ ~1 ~ 0.3 0.5 0.3 0.1 200 normal
+execute if score spellnumber2 spells matches 42 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Curse of Bats on Slot 2!"]
+execute if score spellnumber2 spells matches 42 if score ward slot10 matches 1.. run function chtoo:wardslot10
+execute if score spellnumber2 spells matches 42 run function chtoo:spellphasep3
+
 #This goes at the bottom
 execute if score shield slot9 matches ..0 run scoreboard players set shield slot9 0
 execute if score shield slot10 matches ..0 run scoreboard players set shield slot10 0

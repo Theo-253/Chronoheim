@@ -102,8 +102,8 @@ execute if score abilitynumber abilities matches 12 if score ward slot2 matches 
 execute if score abilitynumber abilities matches 12 at @e[name=slot2] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 100
 execute if score abilitynumber abilities matches 12 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Ace of Spades on Slot 2!"]
 execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation durationSlot2 speedDebuffs = aceLeaderDuration abilityStats
-execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speedDebuffSlot2 speedDebuffs = aceLeader abilityStats
-execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation speed slot2 -= aceLeader abilityStats
+execute if score abilitynumber abilities matches 12 run execute if score character# slot6 matches 12 run scoreboard players operation cooldown slot2 = aceSetCooldownLeader abilityStats
+
 #Gabriel
 execute if score abilitynumber abilities matches 22 run scoreboard players operation abilityDmg saves = gabriel abilityStats
 execute if score abilitynumber abilities matches 22 if score slot5isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot5 atkmodifiers

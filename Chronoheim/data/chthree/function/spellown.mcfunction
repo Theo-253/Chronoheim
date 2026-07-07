@@ -37,7 +37,7 @@ execute at @p[tag=p5,tag=!spiderwardO] run item replace block -180 128 -119 cont
 execute at @p[tag=p5,tag=!darkritualO] run item replace block -180 128 -119 container.12 with air
 execute at @p[tag=p5,tag=!raisedeadO] run item replace block -180 128 -119 container.13 with air
 execute at @p[tag=p5,tag=!curseofbatsO] run item replace block -180 128 -119 container.14 with air
-execute at @p[tag=p5,tag=!monkeyspawO] run item replace block -180 128 -119 container.14 with air
+execute at @p[tag=p5,tag=!monkeyspawO] run item replace block -180 128 -119 container.15 with air
 
 execute as @p[tag=p6,tag=!magicmissileO] run item replace block -171 128 -116 container.3 with air
 execute as @p[tag=p6,tag=!ritualofbloodO] run item replace block -171 128 -116 container.4 with air
@@ -78,4 +78,4 @@ execute at @p[tag=p6,tag=!spiderwardO] run item replace block -173 128 -116 cont
 execute at @p[tag=p6,tag=!darkritualO] run item replace block -173 128 -116 container.12 with air
 execute at @p[tag=p6,tag=!raisedeadO] run item replace block -173 128 -116 container.13 with air
 execute at @p[tag=p6,tag=!curseofbatsO] run item replace block -173 128 -116 container.14 with air
-execute at @p[tag=p6,tag=!monkeyspawO] run item replace block -173 128 -116 container.14 with air
+execute at @p[tag=p6,tag=!monkeyspawO] run item replace block -173 128 -116 container.15 with air

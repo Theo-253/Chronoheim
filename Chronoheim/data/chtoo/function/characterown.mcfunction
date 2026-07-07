@@ -38,7 +38,7 @@ execute at @p[tag=p3,tag=!blinkyO] run item replace block -178 125 -84 container
 execute at @p[tag=p3,tag=!zeeboO] run item replace block -178 125 -84 container.12 with air
 execute at @p[tag=p3,tag=!fenrirO] run item replace block -178 125 -84 container.13 with air
 execute at @p[tag=p3,tag=!anubisO] run item replace block -178 125 -84 container.14 with air
-execute at @p[tag=p3,tag=!grendelO] run item replace block -178 125 -84 container.14 with air
+execute at @p[tag=p3,tag=!grendelO] run item replace block -178 125 -84 container.15 with air
 
 #player 4
 execute at @p[tag=p4,tag=!subjectO] run item replace block -173 125 -95 container.3 with air
@@ -80,5 +80,5 @@ execute at @p[tag=p4,tag=!blinkyO] run item replace block -174 125 -95 container
 execute at @p[tag=p4,tag=!zeeboO] run item replace block -174 125 -95 container.12 with air
 execute at @p[tag=p4,tag=!fenrirO] run item replace block -174 125 -95 container.13 with air
 execute at @p[tag=p4,tag=!anubisO] run item replace block -174 125 -95 container.14 with air
-execute at @p[tag=p4,tag=!grendelO] run item replace block -174 125 -95 container.14 with air
+execute at @p[tag=p4,tag=!grendelO] run item replace block -174 125 -95 container.15 with air
 

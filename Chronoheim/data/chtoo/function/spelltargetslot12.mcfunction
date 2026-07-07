@@ -68,21 +68,26 @@ execute if score spellnumber2 spells matches 17 run scoreboard players set attac
 execute if score spellnumber2 spells matches 17 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Miracle on Slot 4!"]
 
 #Magic Missile! Magic Missile! I smite thee with Magic Missile!
-execute if score spellnumber2 spells matches 4 run scoreboard players add magicMissilex3 spells 1
-execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves = magicMissile spellStats
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves = magicmissile spellStats
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp4 spells
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves += marks slot12
 execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot12
 execute if score spellnumber2 spells matches 4 run execute if score ward slot12 matches 0 run scoreboard players operation shield slot12 -= spellDmg saves
 execute if score spellnumber2 spells matches 4 run execute if score ward slot12 matches 0 if score shield slot12 matches ..0 run scoreboard players operation slot12 hp += shield slot12
+execute if score spellnumber2 spells matches 4 at @e[name=slot12] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 300
+execute if score spellnumber2 spells matches 4 at @e[name=slot11] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 150
 execute if score spellnumber2 spells matches 4 run execute if score ward slot12 matches 1.. run function chtoo:wardslot12
-execute if score spellnumber2 spells matches 4 run execute at @n[type=armor_stand,name=slot12] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
-execute if score spellnumber2 spells matches 4 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," smited Slot 4 with Magic Missle!"]
-execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 1 run function chtoo:spellgivetargetsp4
-execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set spellbuffsp4 spells 0
-execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run clear @a[tag=p4] target
-execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run function chtoo:spellphasep3
-execute if score spellnumber2 spells matches 4 run execute if score magicMissilex3 spells matches 2 run scoreboard players set magicMissilex3 spells 0
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves = magicmissile spellStats
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp4 spells
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves /= magicmissileSplash spellStats
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves += marks slot11
+execute if score spellnumber2 spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot11
+execute if score spellnumber2 spells matches 4 run execute if score ward slot11 matches 0 run scoreboard players operation shield slot11 -= spellDmg saves
+execute if score spellnumber2 spells matches 4 run execute if score ward slot11 matches 0 if score shield slot11 matches ..0 run scoreboard players operation slot11 hp += shield slot11
+execute if score spellnumber2 spells matches 4 run execute if score ward slot11 matches 1.. run function chtoo:wardslot11
+execute if score spellnumber2 spells matches 4 run scoreboard players set spellbuffsp4 spells 0
+execute if score spellnumber2 spells matches 4 run function chtoo:spellphasep3
+execute if score spellnumber2 spells matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p4]"}," used Magic Missile on Slot 4!"]
 
 #Protector's Rune
 execute if score spellnumber2 spells matches 16 if score protectorsrune spellStats > durationSlot12 taunt run scoreboard players operation durationSlot12 taunt = protectorsrune spellStats

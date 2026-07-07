@@ -2,6 +2,13 @@ execute if score ward slot17 matches 1 run scoreboard players set ward slot17 0
 execute if score ward slot17 matches 1 at @e[name=slot17,type=armor_stand] run particle minecraft:ominous_spawning ~ ~1 ~ 0.9 0.9 0.9 0.5 200
 execute if score ward slot17 matches 2 at @e[name=slot17,type=armor_stand] run particle minecraft:bubble_pop ~ ~1 ~ 0.9 0.9 0.9 0.0001 200
 execute if score ward slot17 matches 3 at @e[name=slot17,type=armor_stand] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 0.9 0.9 0.5 200
+execute if score ward slot17 matches 4 at @e[name=slot17,type=armor_stand] run particle minecraft:block{block_state:"minecraft:cobweb"} ~ ~1 ~ 0.9 0.9 0.9 0.1 200
+execute if score ward slot17 matches 4 if score spiderwardDuration spellStats > durationSlot21 speedDebuffs run scoreboard players operation durationSlot21 speedDebuffs = spiderwardDuration spellStats
+execute if score ward slot17 matches 4 if score spiderwardDuration spellStats > durationSlot21 poison run scoreboard players operation durationSlot21 poison = spiderwardDuration spellStats
+execute if score ward slot17 matches 4 run scoreboard players operation slot21Poison poison += spiderward spellStats
+execute if score ward slot17 matches 4 run scoreboard players operation speedDebuffSlot21 speedDebuffs += spiderwardSpDebuff spellStats
+execute if score ward slot17 matches 4 run scoreboard players operation speed slot21 -= spiderwardSpDebuff spellStats
+execute if score ward slot17 matches 4 run scoreboard players set ward slot17 0
 execute if score ward slot17 matches 2 run execute if score slot17isatk booleans matches 1 run scoreboard players set slot17 stun 1
 execute if score ward slot17 matches 2 run execute if score slot18isatk booleans matches 1 run scoreboard players set slot18 stun 1
 execute if score ward slot17 matches 2 run execute if score slot19isatk booleans matches 1 run scoreboard players set slot19 stun 1

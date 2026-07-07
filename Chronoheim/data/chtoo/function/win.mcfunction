@@ -393,7 +393,14 @@ scoreboard players set anubisSpCheckedP3 booleans 0
 scoreboard players set anubisSpCheckedP4 booleans 0
 scoreboard players set anubisUnusedP3 saves 0
 scoreboard players set anubisUnusedP4 saves 0
-
+scoreboard players set curseDuration slot9 0
+scoreboard players set curseDuration slot10 0
+scoreboard players set curseDuration slot11 0
+scoreboard players set curseDuration slot12 0
+scoreboard players set curseDuration slot13 0
+scoreboard players set curseDuration slot14 0
+scoreboard players set curseDuration slot15 0
+scoreboard players set curseDuration slot16 0
 
 
 

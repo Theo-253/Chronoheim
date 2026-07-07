@@ -382,6 +382,8 @@ execute if score abilitynumber abilities matches -43 run execute at @e[type=armo
 execute if score abilitynumber abilities matches -43 if score ward slot2 matches 1.. run function ch:wardslot2
 execute if score abilitynumber abilities matches -43 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Piercing Pestilence on Slot 2!"]
 execute if score abilitynumber abilities matches 43 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Piercing Pestilence on Slot 2!"]
+execute if score abilitynumber abilities matches 43 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
+execute if score abilitynumber abilities matches -43 run execute if score ward slot2 matches 0 if score shield slot2 matches ..0 run scoreboard players operation slot2 hp += shield slot2
 #Frank
 execute if score abilitynumber abilities matches 34 run scoreboard players operation abilityDmg saves = frank abilityStats
 execute if score abilitynumber abilities matches 34 run scoreboard players operation shield slot2 -= abilityDmg saves

@@ -364,6 +364,8 @@ execute if score abilitynumber abilities matches -43 run execute at @e[type=armo
 execute if score abilitynumber abilities matches -43 if score ward slot8 matches 1.. run function ch:wardslot8
 execute if score abilitynumber abilities matches -43 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Piercing Pestilence on Slot 8!"]
 execute if score abilitynumber abilities matches 43 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Piercing Pestilence on Slot 8!"]
+execute if score abilitynumber abilities matches 43 run execute if score ward slot8 matches 0 if score shield slot8 matches ..0 run scoreboard players operation slot8 hp += shield slot8
+execute if score abilitynumber abilities matches -43 run execute if score ward slot8 matches 0 if score shield slot8 matches ..0 run scoreboard players operation slot8 hp += shield slot8
 
 #Frank
 execute if score abilitynumber abilities matches 34 run scoreboard players operation abilityDmg saves = frank abilityStats
@@ -409,7 +411,7 @@ execute if score abilitynumber abilities matches 37 run tellraw @a[tag=game1] ["
 execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 run scoreboard players operation abilityDmg saves = anubis abilityStats
 execute if score abilitynumber abilities matches 42 if score ward slot8 matches 0 run scoreboard players operation abilityDmg saves *= anubisUnusedP1 saves
 execute if score abilitynumber abilities matches 42 run execute at @e[name=slot8,type=armor_stand] run particle minecraft:sonic_boom ~ ~2 ~ 0.03 0.03 0.03 0.01 100
-execute if score abilitynumber abilities matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Wrath of the Desert on Slot 8!"]
+execute if score abilitynumber abilities matches 42 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Wrath of the Desert on Slot 8!"]
 execute if score abilitynumber abilities matches 42 if score slot1isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot1 atkmodifiers
 execute if score abilitynumber abilities matches 42 if score slot2isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot2 atkmodifiers
 execute if score abilitynumber abilities matches 42 if score slot3isatk booleans matches 1 run scoreboard players operation abilityDmg saves += slot3 atkmodifiers

@@ -381,6 +381,9 @@ execute if score character# slot6 matches 14 run scoreboard players operation at
 execute if score character# slot2 matches 36 run scoreboard players operation atk slot2 += barleyLeader abilityStats
 execute if score character# slot6 matches 36 run scoreboard players operation atk slot6 += barleyLeader abilityStats
 
+execute if score character# slot2 matches 41 run scoreboard players operation atk slot2 += fenrirLeader heroattack
+execute if score character# slot6 matches 41 run scoreboard players operation atk slot6 += fenrirLeader heroattack
+
 execute if score character# slot2 matches 34 if score character# slot1 matches 35 run scoreboard players operation atk slot1 += steinLeader heroattack
 execute if score character# slot2 matches 34 if score character# slot3 matches 35 run scoreboard players operation atk slot3 += steinLeader heroattack
 execute if score character# slot6 matches 34 if score character# slot5 matches 35 run scoreboard players operation atk slot5 += steinLeader heroattack

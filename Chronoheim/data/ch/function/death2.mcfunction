@@ -65,9 +65,9 @@ execute if score character# slot2 matches 15 run execute if score slot2 hp = gol
 
 execute if score character# slot2 matches 15 run execute if score slot2 hp = golemite herohealth if score atk slot2 = golemite heroattack run scoreboard players set character# slot2 -4
 
-execute if score character# slot5 matches 43 run scoreboard players set zombies booleans 1
-execute if score character# slot6 matches 43 run scoreboard players set zombies booleans 1
-execute if score character# slot7 matches 43 run scoreboard players set zombies booleans 1
+execute if score character# slot5 matches 43 if score slot5 hp matches 1.. run scoreboard players set zombies booleans 1
+execute if score character# slot6 matches 43 if score slot6 hp matches 1.. run scoreboard players set zombies booleans 1
+execute if score character# slot7 matches 43 if score slot7 hp matches 1.. run scoreboard players set zombies booleans 1
 
 
 execute if score zombies booleans matches 1 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches 1.. if score slot8 hp matches ..0 run scoreboard players set character# slot8 -8

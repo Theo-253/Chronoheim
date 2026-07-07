@@ -615,7 +615,8 @@ scoreboard players set fenrir heroattack 80
 scoreboard players set fenrir herohealth 2500
 scoreboard players set fenrir herospeed 1200
 scoreboard players set fenrir abilityStats 160
-scoreboard players set fenrirLeader herosplash 4
+scoreboard players set fenrirLeader herosplash 0
+scoreboard players set fenrirLeader heroattack 40
 scoreboard players set fenrirCD abilityStats 3
 
 scoreboard players set anubis heroattack 100

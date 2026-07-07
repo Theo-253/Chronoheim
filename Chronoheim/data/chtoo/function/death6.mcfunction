@@ -98,6 +98,9 @@ execute if score character# slot9 matches 43 run scoreboard players set zombies2
 execute if score character# slot10 matches 43 run scoreboard players set zombies2 booleans 1
 execute if score character# slot11 matches 43 run scoreboard players set zombies2 booleans 1
 
+execute if score character# slot9 matches 43 if score slot9 hp matches 1.. run scoreboard players set zombies2 booleans 1
+execute if score character# slot10 matches 43 if score slot10 hp matches 1.. run scoreboard players set zombies2 booleans 1
+execute if score character# slot11 matches 43 if score slot11 hp matches 1.. run scoreboard players set zombies2 booleans 1
 
 execute if score zombies2 booleans matches 1 run execute if score slot9 hp matches 1.. if score slot10 hp matches 1.. if score slot11 hp matches 1.. if score slot12 hp matches ..0 run scoreboard players set character# slot12 -8
 execute if score zombies2 booleans matches 1 run execute if score slot9 hp matches 1.. if score slot10 hp matches 1.. if score slot11 hp matches 1.. if score slot12 hp matches ..0 run scoreboard players operation maxspeed slot12 = zombie herospeed

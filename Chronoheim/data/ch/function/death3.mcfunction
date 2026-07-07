@@ -19,10 +19,9 @@ execute if score character# slot5 matches 37 if score character# slot3 matches 1
 execute if score character# slot6 matches 37 if score character# slot3 matches 1.. run execute at @n[type=armor_stand,name=slot6] run particle minecraft:raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 execute if score character# slot7 matches 37 if score character# slot3 matches 1.. run execute at @n[type=armor_stand,name=slot7] run particle minecraft:raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 
-execute if score character# slot5 matches 43 run scoreboard players set zombies booleans 1
-execute if score character# slot6 matches 43 run scoreboard players set zombies booleans 1
-execute if score character# slot7 matches 43 run scoreboard players set zombies booleans 1
-
+execute if score character# slot5 matches 43 if score slot5 hp matches 1.. run scoreboard players set zombies booleans 1
+execute if score character# slot6 matches 43 if score slot6 hp matches 1.. run scoreboard players set zombies booleans 1
+execute if score character# slot7 matches 43 if score slot7 hp matches 1.. run scoreboard players set zombies booleans 1
 
 execute if score zombies booleans matches 1 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches 1.. if score slot8 hp matches ..0 run scoreboard players set character# slot8 -8
 execute if score zombies booleans matches 1 run execute if score slot5 hp matches 1.. if score slot6 hp matches 1.. if score slot7 hp matches 1.. if score slot8 hp matches ..0 run scoreboard players operation maxspeed slot8 = zombie herospeed

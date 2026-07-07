@@ -20,9 +20,9 @@ execute if score character# slot21 matches 37 if score character# slot19 matches
 execute if score character# slot22 matches 37 if score character# slot19 matches 1.. run execute at @n[type=armor_stand,name=slot22] run particle minecraft:raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 execute if score character# slot23 matches 37 if score character# slot19 matches 1.. run execute at @n[type=armor_stand,name=slot23] run particle minecraft:raid_omen ~ ~1 ~ 0.3 0.3 0.3 2 100
 
-execute if score character# slot21 matches 43 run scoreboard players set zombies3 booleans 1
-execute if score character# slot22 matches 43 run scoreboard players set zombies3 booleans 1
-execute if score character# slot23 matches 43 run scoreboard players set zombies3 booleans 1
+execute if score character# slot21 matches 43 if score slot21 hp matches 1.. run scoreboard players set zombies3 booleans 1
+execute if score character# slot22 matches 43 if score slot22 hp matches 1.. run scoreboard players set zombies3 booleans 1
+execute if score character# slot23 matches 43 if score slot23 hp matches 1.. run scoreboard players set zombies3 booleans 1
 
 
 execute if score zombies3 booleans matches 1 run execute if score slot21 hp matches 1.. if score slot22 hp matches 1.. if score slot23 hp matches 1.. if score slot24 hp matches ..0 run scoreboard players set character# slot24 -8

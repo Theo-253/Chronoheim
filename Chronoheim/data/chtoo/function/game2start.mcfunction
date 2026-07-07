@@ -337,6 +337,9 @@ execute if score slot16 hp matches 1.. run execute if score character# slot16 ma
 
 #Game Start Leader bonuses
 
+execute if score character# slot10 matches 41 run scoreboard players operation atk slot10 += fenrirLeader heroattack
+execute if score character# slot14 matches 41 run scoreboard players operation atk slot14 += fenrirLeader heroattack
+
 execute if score character# slot10 matches 36 run scoreboard players operation atk slot10 += barleyLeader abilityStats
 execute if score character# slot14 matches 36 run scoreboard players operation atk slot14 += barleyLeader abilityStats
 

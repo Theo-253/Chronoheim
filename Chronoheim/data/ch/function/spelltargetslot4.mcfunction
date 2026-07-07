@@ -68,21 +68,26 @@ execute if score spellnumber spells matches 17 run scoreboard players set attack
 execute if score spellnumber spells matches 17 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p1]"}," used Miracle on Slot 4!"]
 
 #Magic Missile! Magic Missile! I smite thee with Magic Missile!
-execute if score spellnumber spells matches 4 run scoreboard players add magicMissilex2 spells 1
-execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves = magicMissile spellStats
+execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves = magicmissile spellStats
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += marks slot4
 execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot4
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= spellDmg saves
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 0 if score shield slot4 matches ..0 run scoreboard players operation slot4 hp += shield slot4
+execute if score spellnumber spells matches 4 at @e[name=slot4] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 300
+execute if score spellnumber spells matches 4 at @e[name=slot3] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 150
 execute if score spellnumber spells matches 4 run execute if score ward slot4 matches 1.. run function ch:wardslot4
-execute if score spellnumber spells matches 4 run execute at @n[type=armor_stand,name=slot4] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
-execute if score spellnumber spells matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," smited Slot 4 with Magic Missle!"]
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 1 run function ch:spellgivetargetsp2
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set spellbuffsp2 spells 0
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run clear @a[tag=p2] target
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run function ch:spellphasep1
-execute if score spellnumber spells matches 4 run execute if score magicMissilex2 spells matches 2 run scoreboard players set magicMissilex2 spells 0
+execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves = magicmissile spellStats
+execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
+execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves /= magicmissileSplash spellStats
+execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves += marks slot3
+execute if score spellnumber spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot3
+execute if score spellnumber spells matches 4 run execute if score ward slot3 matches 0 run scoreboard players operation shield slot3 -= spellDmg saves
+execute if score spellnumber spells matches 4 run execute if score ward slot3 matches 0 if score shield slot3 matches ..0 run scoreboard players operation slot3 hp += shield slot3
+execute if score spellnumber spells matches 4 run execute if score ward slot3 matches 1.. run function ch:wardslot3
+execute if score spellnumber spells matches 4 run scoreboard players set spellbuffsp2 spells 0
+execute if score spellnumber spells matches 4 run function ch:spellphasep1
+execute if score spellnumber spells matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Magic Missile on Slot 4!"]
 
 #Protector's Rune
 execute if score spellnumber spells matches 16 if score protectorsrune spellStats > durationSlot4 taunt run scoreboard players operation durationSlot4 taunt = protectorsrune spellStats
@@ -151,7 +156,7 @@ execute if score spellnumber spells matches 1 run function ch:spellphasep1
 execute if score spellnumber spells matches 1 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Fireball on Slot 4!"]
 #meteor
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves = meteor spellStats
-execute if score spellnumber spells matches 7 if score slot7isatk booleans matches 1 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
+execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves += spellbuffsp2 spells
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves += marks slot4
 execute if score spellnumber spells matches 7 run scoreboard players operation spellDmg saves /= atkmultiplier slot4
 execute if score spellnumber spells matches 7 run execute if score ward slot4 matches 0 run scoreboard players operation shield slot4 -= spellDmg saves

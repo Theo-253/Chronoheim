@@ -317,7 +317,7 @@ execute if score abilitynumber abilities matches -36 run tellraw @a[tag=game1] [
 execute if score abilitynumber abilities matches 36 run scoreboard players set barleyPart1 abilities 7
 execute if score abilitynumber abilities matches 36 if score buffDurationSlot7 atkmodifiers < barleyDuration abilityStats run scoreboard players operation buffDurationSlot7 atkmodifiers = barleyDuration abilityStats
 execute if score abilitynumber abilities matches 36 run scoreboard players operation attackBuffSlot7 atkmodifiers += barley abilityStats
-execute if score abilitynumber abilities matches 36 run function ch:abilitygivetargetsp1
+execute if score abilitynumber abilities matches 36 run function ch:abilitygivetargetsp2
 execute if score abilitynumber abilities matches 36 run execute at @n[type=armor_stand,name=slot7] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
 execute if score abilitynumber abilities matches 36 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Spookcrow to make Slot 7 scary!"]
 

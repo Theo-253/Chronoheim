@@ -298,14 +298,14 @@ execute if score abilitynumber3 abilities matches -36 if score ward slot24 match
 execute if score abilitynumber3 abilities matches -36 if score ward slot24 matches ..0 run scoreboard players operation attackDebuffSlot24 atkmodifiers += barley abilityStats
 execute if score abilitynumber3 abilities matches -36 if score ward slot24 matches 1.. run function chthree:wardslot24
 execute if score abilitynumber3 abilities matches -36 run execute at @n[type=armor_stand,name=slot24] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score abilitynumber3 abilities matches -36 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Spookcrow to fear Slot 24!"]
+execute if score abilitynumber3 abilities matches -36 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Spookcrow to fear Slot 8!"]
 
 execute if score abilitynumber3 abilities matches 36 run scoreboard players set barleyPart1 abilities 8
 execute if score abilitynumber3 abilities matches 36 if score buffDurationSlot24 atkmodifiers < barleyDuration abilityStats run scoreboard players operation buffDurationSlot24 atkmodifiers = barleyDuration abilityStats
 execute if score abilitynumber3 abilities matches 36 run scoreboard players operation attackBuffSlot24 atkmodifiers += barley abilityStats
-execute if score abilitynumber3 abilities matches 36 run function chthree:abilitygivetargetsp5
+execute if score abilitynumber3 abilities matches 36 run function chthree:abilitygivetargetsp6
 execute if score abilitynumber3 abilities matches 36 run execute at @n[type=armor_stand,name=slot24] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score abilitynumber3 abilities matches 36 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Spookcrow to make Slot 24 scary!"]
+execute if score abilitynumber3 abilities matches 36 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Spookcrow to make Slot 8 scary!"]
 
 #Igor
 execute if score abilitynumber3 abilities matches 38 if score cooldown slot24 matches 1.. run scoreboard players operation cooldown slot24 -= igor abilityStats
@@ -313,7 +313,7 @@ execute if score abilitynumber3 abilities matches 38 run execute at @e[type=armo
 execute if score abilitynumber3 abilities matches 38 run execute if score durationSlot24 speedBuffs < igorDuration abilityStats run scoreboard players operation durationSlot24 speedBuffs = igorDuration abilityStats
 execute if score abilitynumber3 abilities matches 38 run scoreboard players operation speed slot24 += igorSpBuff abilityStats
 execute if score abilitynumber3 abilities matches 38 run scoreboard players operation speedBuffSlot24 speedBuffs += igorSpBuff abilityStats
-execute if score abilitynumber3 abilities matches 38 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Black Lagoon Brew on Slot 24!"]
+execute if score abilitynumber3 abilities matches 38 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Black Lagoon Brew on Slot 8!"]
 execute if score abilitynumber3 abilities matches 38 if score slot22isatk booleans matches 1 run execute if score invincibleSlot24 booleaneffects < igorDuration abilityStats run scoreboard players operation invincibleSlot24 booleaneffects = igorDuration abilityStats
 execute if score abilitynumber3 abilities matches 38 if score slot22isatk booleans matches 1 run scoreboard players operation savehp64 saves = slot24 hp
 
@@ -325,7 +325,7 @@ execute if score abilitynumber3 abilities matches 40 if score ward slot24 matche
 execute if score abilitynumber3 abilities matches 40 if score ward slot24 matches ..0 run execute if score durationSlot24 burn < zeeboDuration abilityStats run scoreboard players operation durationSlot24 burn = zeeboDuration abilityStats
 execute if score abilitynumber3 abilities matches 40 if score ward slot24 matches ..0 run scoreboard players operation slot24Burn burn += zeeboBurn abilityStats
 execute if score abilitynumber3 abilities matches 40 run execute at @e[type=armor_stand,name=slot24] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
-execute if score abilitynumber3 abilities matches 40 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Last Laugh on Slot 24!"]
+execute if score abilitynumber3 abilities matches 40 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Last Laugh on Slot 8!"]
 execute if score abilitynumber3 abilities matches 40 run execute at @e[type=armor_stand,name=slot24] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
 execute if score abilitynumber3 abilities matches 40 if score ward slot24 matches 1.. run function chthree:wardslot24
 
@@ -341,7 +341,7 @@ execute if score abilitynumber3 abilities matches 41 run scoreboard players oper
 execute if score abilitynumber3 abilities matches 41 run scoreboard players operation abilityDmg3 saves /= atkmultiplier slot24
 execute if score abilitynumber3 abilities matches 41 run execute if score ward slot24 matches ..0 run scoreboard players operation shield slot24 -= abilityDmg3 saves
 execute if score abilitynumber3 abilities matches 41 run execute at @n[type=armor_stand,name=slot24] run particle enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score abilitynumber3 abilities matches 41 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Mark of the Wolf on Slot 24!"]
+execute if score abilitynumber3 abilities matches 41 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Mark of the Wolf on Slot 8!"]
 execute if score abilitynumber3 abilities matches 41 run execute if score ward slot24 matches 0 if score shield slot24 matches ..0 run scoreboard players operation slot24 hp += shield slot24
 execute if score abilitynumber3 abilities matches 41 if score ward slot24 matches 1.. run function chthree:wardslot24
 
@@ -367,21 +367,21 @@ execute if score abilitynumber3 abilities matches -43 run execute if score ward 
 execute if score abilitynumber3 abilities matches -43 run execute if score ward slot24 matches ..0 run scoreboard players operation slot24Disease disease += grendelDisease abilityStats
 execute if score abilitynumber3 abilities matches -43 run execute at @e[type=armor_stand,name=slot24] run particle minecraft:noxious_gas ~ ~1 ~ 0.7 0.7 0.7 0.05 200
 execute if score abilitynumber3 abilities matches -43 if score ward slot24 matches 1.. run function chthree:wardslot24
-execute if score abilitynumber3 abilities matches -43 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Piercing Pestilence on Slot 24!"]
-execute if score abilitynumber3 abilities matches 43 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Piercing Pestilence on Slot 24!"]
+execute if score abilitynumber3 abilities matches -43 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Piercing Pestilence on Slot 8!"]
+execute if score abilitynumber3 abilities matches 43 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Piercing Pestilence on Slot 8!"]
 
 #Frank
 execute if score abilitynumber3 abilities matches 34 run scoreboard players operation abilityDmg3 saves = frank abilityStats
 execute if score abilitynumber3 abilities matches 34 run scoreboard players operation shield slot24 -= abilityDmg3 saves
 execute if score abilitynumber3 abilities matches 34 run scoreboard players operation slot24 hp += shield slot24
 execute if score abilitynumber3 abilities matches 34 run execute at @e[name=slot24,type=armor_stand] run particle minecraft:angry_villager ~ ~1 ~ 0.9 0.9 0.9 0.5 15
-execute if score abilitynumber3 abilities matches 34 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used IT'S ALIVE! to damage Slot 24!"]
+execute if score abilitynumber3 abilities matches 34 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used IT'S ALIVE! to damage Slot 8!"]
 execute if score abilitynumber3 abilities matches 34 run function chthree:abilitygivetargetsp6
 
 execute if score abilitynumber3 abilities matches -34 run execute if score ward slot24 matches 0 run scoreboard players operation slot24 stun = frankDuration abilityStats
 execute if score abilitynumber3 abilities matches -34 run execute if score ward slot24 matches 1.. run function chthree:wardslot24
 execute if score abilitynumber3 abilities matches -34 run execute at @e[name=slot24,type=armor_stand] run particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0.9 0.9 0.9 0.5 100
-execute if score abilitynumber3 abilities matches -34 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used IT'S ALIVE! to stun Slot 24!"]
+execute if score abilitynumber3 abilities matches -34 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used IT'S ALIVE! to stun Slot 8!"]
 
 #Stein
 execute if score abilitynumber3 abilities matches 35 run scoreboard players operation abilityDmg3 saves = stein abilityStats
@@ -394,27 +394,27 @@ execute if score abilitynumber3 abilities matches 35 run execute if score ward s
 execute if score abilitynumber3 abilities matches 35 run execute if score ward slot24 matches 0 if score shield slot24 matches ..0 run scoreboard players operation slot24 hp += shield slot24
 execute if score abilitynumber3 abilities matches 35 run execute if score ward slot24 matches 1.. run function chthree:wardslot24
 execute if score abilitynumber3 abilities matches 35 run execute at @e[name=slot24,type=armor_stand] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 2 100
-execute if score abilitynumber3 abilities matches 35 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Reanimation Beam to damage Slot 24!"]
+execute if score abilitynumber3 abilities matches 35 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Reanimation Beam to damage Slot 8!"]
 execute if score abilitynumber3 abilities matches 35 run function chthree:abilitygivetargetsp6reverse
 
 execute if score abilitynumber3 abilities matches -35 if score slot24bleeding booleaneffects matches 0 run scoreboard players operation slot24 hp += abilityDmg3 saves
 execute if score abilitynumber3 abilities matches -35 if score character# slot22 matches 35 run function chthree:cleanseslot24
 execute if score abilitynumber3 abilities matches -35 if score character# slot22 matches 34 run function chthree:cleanseslot24
 execute if score abilitynumber3 abilities matches -35 run execute at @e[name=slot24,type=armor_stand] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 2 100
-execute if score abilitynumber3 abilities matches -35 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Reanimation Beam to heal Slot 24!"]
+execute if score abilitynumber3 abilities matches -35 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Reanimation Beam to heal Slot 8!"]
 
 #Boogaloo
 execute if score abilitynumber3 abilities matches 37 unless score curse slot24 matches 5 run scoreboard players set curseDuration slot24 -1
 execute if score abilitynumber3 abilities matches 37 if score curseStacks slot24 matches 1.. unless score curse slot24 matches 5 run scoreboard players set curseStacks slot24 0
 execute if score abilitynumber3 abilities matches 37 unless score curse slot24 matches 5 run scoreboard players set curse slot24 1
 execute if score abilitynumber3 abilities matches 37 run execute at @e[name=slot24,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
-execute if score abilitynumber3 abilities matches 37 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Devour Soul on Slot 24!"]
+execute if score abilitynumber3 abilities matches 37 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Devour Soul on Slot 8!"]
 
 #Anubis
 execute if score abilitynumber3 abilities matches 42 if score ward slot24 matches 0 run scoreboard players operation abilityDmg3 saves = anubis abilityStats
 execute if score abilitynumber3 abilities matches 42 if score ward slot24 matches 0 run scoreboard players operation abilityDmg3 saves *= anubisUnusedP1 saves
 execute if score abilitynumber3 abilities matches 42 run execute at @e[name=slot24,type=armor_stand] run particle minecraft:sonic_boom ~ ~2 ~ 0.03 0.03 0.03 0.01 100
-execute if score abilitynumber3 abilities matches 42 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Wrath of the Desert on Slot 24!"]
+execute if score abilitynumber3 abilities matches 42 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Wrath of the Desert on Slot 8!"]
 execute if score abilitynumber3 abilities matches 42 if score slot17isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot17 atkmodifiers
 execute if score abilitynumber3 abilities matches 42 if score slot18isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot18 atkmodifiers
 execute if score abilitynumber3 abilities matches 42 if score slot19isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot19 atkmodifiers

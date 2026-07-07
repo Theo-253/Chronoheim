@@ -10,6 +10,7 @@ scoreboard players set durationSlot8 mark 0
 scoreboard players set slot8Disease disease 0
 scoreboard players set slot8bleeding booleaneffects 0
 scoreboard players set durationSlot8 mark 0
+execute if score curse slot8 matches 2 if score slot8 hp > maxhp slot8 run scoreboard players operation slot8 hp = maxhp slot8
 
 execute if score curse slot8 matches 2 run scoreboard players operation abilityDmg saves = zeebo abilityStats
 execute if score curse slot8 matches 2 run scoreboard players operation abilityDmg saves *= curseStacks slot8

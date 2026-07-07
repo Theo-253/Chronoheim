@@ -10,6 +10,7 @@ scoreboard players set durationSlot19 mark 0
 scoreboard players set slot19Disease disease 0
 scoreboard players set slot19bleeding booleaneffects 0
 scoreboard players set durationSlot19 mark 0
+execute if score curse slot19 matches 2 if score slot19 hp > maxhp slot19 run scoreboard players operation slot19 hp = maxhp slot19
 
 execute if score curse slot19 matches 2 run scoreboard players operation abilityDmg saves = zeebo abilityStats
 execute if score curse slot19 matches 2 run scoreboard players operation abilityDmg saves *= curseStacks slot19

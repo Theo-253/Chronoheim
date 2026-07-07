@@ -312,20 +312,20 @@ execute if score abilitynumber2 abilities matches -36 if score ward slot15 match
 execute if score abilitynumber2 abilities matches -36 if score ward slot15 matches ..0 run scoreboard players operation attackDebuffSlot15 atkmodifiers += barley abilityStats
 execute if score abilitynumber2 abilities matches -36 if score ward slot15 matches 1.. run function chtoo:wardslot15
 execute if score abilitynumber2 abilities matches -36 run execute at @n[type=armor_stand,name=slot15] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score abilitynumber2 abilities matches -36 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Spookcrow to fear Slot 15!"]
+execute if score abilitynumber2 abilities matches -36 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Spookcrow to fear Slot 7!"]
 
 execute if score abilitynumber2 abilities matches 36 run scoreboard players set barleyPart1 abilities 7
 execute if score abilitynumber2 abilities matches 36 if score buffDurationSlot15 atkmodifiers < barleyDuration abilityStats run scoreboard players operation buffDurationSlot15 atkmodifiers = barleyDuration abilityStats
 execute if score abilitynumber2 abilities matches 36 run scoreboard players operation attackBuffSlot15 atkmodifiers += barley abilityStats
-execute if score abilitynumber2 abilities matches 36 run function chtoo:abilitygivetargetsp3
+execute if score abilitynumber2 abilities matches 36 run function chtoo:abilitygivetargetsp4
 execute if score abilitynumber2 abilities matches 36 run execute at @n[type=armor_stand,name=slot15] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score abilitynumber2 abilities matches 36 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Spookcrow to make Slot 15 scary!"]
+execute if score abilitynumber2 abilities matches 36 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Spookcrow to make Slot 7 scary!"]
 
 #Igor
 execute if score abilitynumber2 abilities matches 38 if score cooldown slot15 matches 1.. run scoreboard players operation cooldown slot15 -= igor abilityStats
 execute if score abilitynumber2 abilities matches 38 run execute at @e[type=armor_stand,name=slot15] run particle witch ~ ~1 ~ 0.5 0.8 0.5 0.1 100
 execute if score abilitynumber2 abilities matches 38 run execute if score durationSlot15 speedBuffs < igorDuration abilityStats run scoreboard players operation durationSlot15 speedBuffs = igorDuration abilityStats
-execute if score abilitynumber2 abilities matches 38 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Black Lagoon Brew on Slot 15!"]
+execute if score abilitynumber2 abilities matches 38 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Black Lagoon Brew on Slot 7!"]
 execute if score abilitynumber2 abilities matches 38 run scoreboard players operation speed slot15 += igorSpBuff abilityStats
 execute if score abilitynumber2 abilities matches 38 run scoreboard players operation speedBuffSlot15 speedBuffs += igorSpBuff abilityStats
 execute if score abilitynumber2 abilities matches 38 if score slot14isatk booleans matches 1 run execute if score invincibleSlot15 booleaneffects < igorDuration abilityStats run scoreboard players operation invincibleSlot15 booleaneffects = igorDuration abilityStats
@@ -339,7 +339,7 @@ execute if score abilitynumber2 abilities matches 40 if score ward slot15 matche
 execute if score abilitynumber2 abilities matches 40 if score ward slot15 matches ..0 run execute if score durationSlot15 burn < zeeboDuration abilityStats run scoreboard players operation durationSlot15 burn = zeeboDuration abilityStats
 execute if score abilitynumber2 abilities matches 40 if score ward slot15 matches ..0 run scoreboard players operation slot15Burn burn += zeeboBurn abilityStats
 execute if score abilitynumber2 abilities matches 40 run execute at @e[type=armor_stand,name=slot15] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
-execute if score abilitynumber2 abilities matches 40 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Last Laugh on Slot 15!"]
+execute if score abilitynumber2 abilities matches 40 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Last Laugh on Slot 7!"]
 execute if score abilitynumber2 abilities matches 40 run execute at @e[type=armor_stand,name=slot15] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
 execute if score abilitynumber2 abilities matches 40 if score ward slot15 matches 1.. run function chtoo:wardslot15
 
@@ -355,7 +355,7 @@ execute if score abilitynumber2 abilities matches 41 run scoreboard players oper
 execute if score abilitynumber2 abilities matches 41 run scoreboard players operation abilityDmg2 saves /= atkmultiplier slot15
 execute if score abilitynumber2 abilities matches 41 run execute if score ward slot15 matches ..0 run scoreboard players operation shield slot15 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 41 run execute at @n[type=armor_stand,name=slot15] run particle enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.1 400
-execute if score abilitynumber2 abilities matches 41 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Mark of the Wolf on Slot 15!"]
+execute if score abilitynumber2 abilities matches 41 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Mark of the Wolf on Slot 7!"]
 execute if score abilitynumber2 abilities matches 41 run execute if score ward slot15 matches 0 if score shield slot15 matches ..0 run scoreboard players operation slot15 hp += shield slot15
 
 execute if score abilitynumber2 abilities matches 41 if score ward slot15 matches 1.. run function chtoo:wardslot15
@@ -382,20 +382,20 @@ execute if score abilitynumber2 abilities matches -43 run execute if score ward 
 execute if score abilitynumber2 abilities matches -43 run execute if score ward slot15 matches ..0 run scoreboard players operation slot15Disease disease += grendelDisease abilityStats
 execute if score abilitynumber2 abilities matches -43 run execute at @e[type=armor_stand,name=slot15] run particle minecraft:noxious_gas ~ ~1 ~ 0.7 0.7 0.7 0.05 200
 execute if score abilitynumber2 abilities matches -43 if score ward slot15 matches 1.. run function chtoo:wardslot15
-execute if score abilitynumber2 abilities matches -43 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Piercing Pestilence on Slot 15!"]
-execute if score abilitynumber2 abilities matches 43 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Piercing Pestilence on Slot 15!"]
+execute if score abilitynumber2 abilities matches -43 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Piercing Pestilence on Slot 7!"]
+execute if score abilitynumber2 abilities matches 43 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Piercing Pestilence on Slot 7!"]
 #Frank
 execute if score abilitynumber2 abilities matches 34 run scoreboard players operation abilityDmg2 saves = frank abilityStats
 execute if score abilitynumber2 abilities matches 34 run scoreboard players operation shield slot15 -= abilityDmg2 saves
 execute if score abilitynumber2 abilities matches 34 run scoreboard players operation slot15 hp += shield slot15
 execute if score abilitynumber2 abilities matches 34 run execute at @e[name=slot15,type=armor_stand] run particle minecraft:angry_villager ~ ~1 ~ 0.9 0.9 0.9 0.5 15
-execute if score abilitynumber2 abilities matches 34 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used IT'S ALIVE! to damage Slot 15!"]
+execute if score abilitynumber2 abilities matches 34 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used IT'S ALIVE! to damage Slot 7!"]
 execute if score abilitynumber2 abilities matches 34 run function chtoo:abilitygivetargetsp4
 
 execute if score abilitynumber2 abilities matches -34 run execute if score ward slot15 matches 0 run scoreboard players operation slot15 stun = frankDuration abilityStats
 execute if score abilitynumber2 abilities matches -34 run execute if score ward slot15 matches 1.. run function chtoo:wardslot15
 execute if score abilitynumber2 abilities matches -34 run execute at @e[name=slot15,type=armor_stand] run particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0.9 0.9 0.9 0.5 100
-execute if score abilitynumber2 abilities matches -34 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used IT'S ALIVE! to stun Slot 15!"]
+execute if score abilitynumber2 abilities matches -34 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used IT'S ALIVE! to stun Slot 7!"]
 
 #Stein
 execute if score abilitynumber2 abilities matches 35 run scoreboard players operation abilityDmg2 saves = stein abilityStats
@@ -408,27 +408,27 @@ execute if score abilitynumber2 abilities matches 35 run execute if score ward s
 execute if score abilitynumber2 abilities matches 35 run execute if score ward slot15 matches 0 if score shield slot15 matches ..0 run scoreboard players operation slot15 hp += shield slot15
 execute if score abilitynumber2 abilities matches 35 run execute if score ward slot15 matches 1.. run function chtoo:wardslot15
 execute if score abilitynumber2 abilities matches 35 run execute at @e[name=slot15,type=armor_stand] run particle raid_omen ~ ~1 ~ 0.9 0.9 0.9 2 100
-execute if score abilitynumber2 abilities matches 35 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Reanimation Beam to damage Slot 15!"]
+execute if score abilitynumber2 abilities matches 35 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Reanimation Beam to damage Slot 7!"]
 execute if score abilitynumber2 abilities matches 35 run function chtoo:abilitygivetargetsp4reverse
 
 execute if score abilitynumber2 abilities matches -35 if score slot15bleeding booleaneffects matches 0 run scoreboard players operation slot15 hp += abilityDmg2 saves
 execute if score abilitynumber2 abilities matches -35 if score character# slot14 matches 35 run function chtoo:cleanseslot15
 execute if score abilitynumber2 abilities matches -35 if score character# slot14 matches 34 run function chtoo:cleanseslot15
 execute if score abilitynumber2 abilities matches -35 run execute at @e[name=slot15,type=armor_stand] run particle trial_omen ~ ~1 ~ 0.9 0.9 0.9 2 100
-execute if score abilitynumber2 abilities matches -35 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Reanimation Beam to heal Slot 15!"]
+execute if score abilitynumber2 abilities matches -35 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Reanimation Beam to heal Slot 7!"]
 
 #Boogaloo
 execute if score abilitynumber2 abilities matches 37 unless score curse slot15 matches 5 run scoreboard players set curseDuration slot15 -1
 execute if score abilitynumber2 abilities matches 37 if score curseStacks slot15 matches 1.. unless score curse slot15 matches 5 run scoreboard players set curseStacks slot15 0
 execute if score abilitynumber2 abilities matches 37 unless score curse slot15 matches 5 run scoreboard players set curse slot15 1
 execute if score abilitynumber2 abilities matches 37 run execute at @e[name=slot15,type=armor_stand] run particle minecraft:sculk_soul ~ ~1 ~ 0.9 0.9 0.9 0.15 30
-execute if score abilitynumber2 abilities matches 37 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Devour Soul on Slot 15!"]
+execute if score abilitynumber2 abilities matches 37 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p3]"}," used Devour Soul on Slot 7!"]
 
 #Anubis
 execute if score abilitynumber2 abilities matches 42 if score ward slot15 matches 0 run scoreboard players operation abilityDmg2 saves = anubis abilityStats
 execute if score abilitynumber2 abilities matches 42 if score ward slot15 matches 0 run scoreboard players operation abilityDmg2 saves *= anubisUnusedP1 saves
 execute if score abilitynumber2 abilities matches 42 run execute at @e[name=slot15,type=armor_stand] run particle minecraft:sonic_boom ~ ~2 ~ 0.03 0.03 0.03 0.01 100
-execute if score abilitynumber2 abilities matches 42 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Wrath of the Desert on Slot 15!"]
+execute if score abilitynumber2 abilities matches 42 run tellraw @a[tag=game2] ["",{"selector":"@p[tag=p4]"}," used Wrath of the Desert on Slot 7!"]
 execute if score abilitynumber2 abilities matches 42 if score slot9isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot9 atkmodifiers
 execute if score abilitynumber2 abilities matches 42 if score slot10isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot10 atkmodifiers
 execute if score abilitynumber2 abilities matches 42 if score slot11isatk booleans matches 1 run scoreboard players operation abilityDmg2 saves += slot11 atkmodifiers

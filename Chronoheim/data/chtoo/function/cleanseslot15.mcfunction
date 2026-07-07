@@ -10,6 +10,7 @@ scoreboard players set durationSlot15 mark 0
 scoreboard players set slot15Disease disease 0
 scoreboard players set slot15bleeding booleaneffects 0
 scoreboard players set durationSlot15 mark 0
+execute if score curse slot15 matches 2 if score slot15 hp > maxhp slot15 run scoreboard players operation slot15 hp = maxhp slot15
 
 execute if score curse slot15 matches 2 run scoreboard players operation abilityDmg saves = zeebo abilityStats
 execute if score curse slot15 matches 2 run scoreboard players operation abilityDmg saves *= curseStacks slot15
@@ -29,10 +30,10 @@ execute if score curse slot15 matches 2 run execute if score shield slot13 match
 execute if score curse slot15 matches 2 run execute if score shield slot14 matches ..0 run scoreboard players set shield slot14 0
 execute if score curse slot15 matches 2 run execute if score shield slot15 matches ..0 run scoreboard players set shield slot15 0
 execute if score curse slot15 matches 2 run execute if score shield slot16 matches ..0 run scoreboard players set shield slot16 0
-execute if score curse slot15 matches 2 run execute if score ward slot13 matches 1.. run function chthree:wardslot13
-execute if score curse slot15 matches 2 run execute if score ward slot14 matches 1.. run function chthree:wardslot14
-execute if score curse slot15 matches 2 run execute if score ward slot15 matches 1.. run function chthree:wardslot15
-execute if score curse slot15 matches 2 run execute if score ward slot16 matches 1.. run function chthree:wardslot16
+execute if score curse slot15 matches 2 run execute if score ward slot13 matches 1.. run function chtoo:wardslot13
+execute if score curse slot15 matches 2 run execute if score ward slot14 matches 1.. run function chtoo:wardslot14
+execute if score curse slot15 matches 2 run execute if score ward slot15 matches 1.. run function chtoo:wardslot15
+execute if score curse slot15 matches 2 run execute if score ward slot16 matches 1.. run function chtoo:wardslot16
 execute if score curse slot15 matches 2 run execute at @e[name=slot13] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_twinkle:true,has_trail:true,colors:[I;10224278],fade_colors:[I;16711680,16762120]}]}}}}
 execute if score curse slot15 matches 2 run execute at @e[name=slot13] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_twinkle:true,has_trail:true,colors:[I;10224278],fade_colors:[I;16711680,16762120]}]}}}}
 execute if score curse slot15 matches 2 run execute at @e[name=slot13] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_twinkle:true,has_trail:true,colors:[I;10224278],fade_colors:[I;16711680,16762120]}]}}}}

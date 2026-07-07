@@ -11,6 +11,7 @@ scoreboard players set slot4Disease disease 0
 scoreboard players set slot4bleeding booleaneffects 0
 scoreboard players set durationSlot4 mark 0
 execute at @e[name=slot4] run particle minecraft:end_rod ~ ~1 ~ 0.9 0.9 0.9 0.1 100
+execute if score curse slot4 matches 2 if score slot4 hp > maxhp slot4 run scoreboard players operation slot4 hp = maxhp slot4
 
 execute if score curse slot4 matches 2 run scoreboard players operation abilityDmg saves = zeebo abilityStats
 execute if score curse slot4 matches 2 run scoreboard players operation abilityDmg saves *= curseStacks slot4

@@ -10,6 +10,7 @@ scoreboard players set durationSlot24 mark 0
 scoreboard players set slot24Disease disease 0
 scoreboard players set slot24bleeding booleaneffects 0
 scoreboard players set durationSlot24 mark 0
+execute if score curse slot24 matches 2 if score slot24 hp > maxhp slot24 run scoreboard players operation slot24 hp = maxhp slot24
 
 execute if score curse slot24 matches 2 run scoreboard players operation abilityDmg saves = zeebo abilityStats
 execute if score curse slot24 matches 2 run scoreboard players operation abilityDmg saves *= curseStacks slot24

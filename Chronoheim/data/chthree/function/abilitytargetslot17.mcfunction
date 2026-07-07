@@ -418,7 +418,7 @@ execute if score shield slot17 matches ..0 run scoreboard players set shield slo
 execute if score shield slot18 matches ..0 run scoreboard players set shield slot18 0
 execute if score shield slot19 matches ..0 run scoreboard players set shield slot19 0
 execute if score shield slot20 matches ..0 run scoreboard players set shield slot20 0
-clear @p[tag=p6]
+
 execute unless score abilitynumber3 abilities matches 34 unless score abilitynumber3 abilities matches 35 unless score abilitynumber3 abilities matches 36 unless score abilitynumber3 abilities matches 43 run function chthree:turnend
 #Make sure to add burn to your abilities
 

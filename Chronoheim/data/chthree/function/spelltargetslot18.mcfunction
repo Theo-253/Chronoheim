@@ -68,21 +68,35 @@ execute if score spellnumber3 spells matches 17 run scoreboard players set attac
 execute if score spellnumber3 spells matches 17 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Miracle on Slot 2!"]
 
 #Magic Missile! Magic Missile! I smite thee with Magic Missile!
-execute if score spellnumber3 spells matches 4 run scoreboard players add magicmissilex4 spells 1
-execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg3 saves = magicMissile spellStats
-execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg3 saves += spellbuffsp6 spells
-execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg3 saves += marks slot18
-execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg3 saves /= atkmultiplier slot18
-execute if score spellnumber3 spells matches 4 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg3 saves
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves = magicmissile spellStats
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves += marks slot18
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot18
+execute if score spellnumber3 spells matches 4 run execute if score ward slot18 matches 0 run scoreboard players operation shield slot18 -= spellDmg saves
 execute if score spellnumber3 spells matches 4 run execute if score ward slot18 matches 0 if score shield slot18 matches ..0 run scoreboard players operation slot18 hp += shield slot18
 execute if score spellnumber3 spells matches 4 run execute if score ward slot18 matches 1.. run function chthree:wardslot18
-execute if score spellnumber3 spells matches 4 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," smited Slot 2 with Magic Missle!"]
-execute if score spellnumber3 spells matches 4 run execute at @n[type=armor_stand,name=slot18] run particle minecraft:enchanted_hit ~ ~1 ~ 0.7 0.7 0.7 0.5 300
-execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 1 run function chthree:spellgivetargetsp6
-execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run scoreboard players set spellbuffsp6 spells 0
-execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run clear @a[tag=p6] target
-execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run function chthree:spellphasep5
-execute if score spellnumber3 spells matches 4 run execute if score magicmissilex4 spells matches 2 run scoreboard players set magicmissilex4 spells 0
+execute if score spellnumber3 spells matches 4 at @e[name=slot18] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 300
+execute if score spellnumber3 spells matches 4 at @e[name=slot17] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 150
+execute if score spellnumber3 spells matches 4 at @e[name=slot19] run particle minecraft:enchanted_hit ~ ~1 ~ 0.9 0.9 0.9 0.5 150
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves = magicmissile spellStats
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves /= magicmissileSplash spellStats
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves += marks slot17
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot17
+execute if score spellnumber3 spells matches 4 run execute if score ward slot17 matches 0 run scoreboard players operation shield slot17 -= spellDmg saves
+execute if score spellnumber3 spells matches 4 run execute if score ward slot17 matches 0 if score shield slot17 matches ..0 run scoreboard players operation slot17 hp += shield slot17
+execute if score spellnumber3 spells matches 4 run execute if score ward slot17 matches 1.. run function chthree:wardslot17
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves = magicmissile spellStats
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves += spellbuffsp6 spells
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves /= magicmissileSplash spellStats
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves += marks slot19
+execute if score spellnumber3 spells matches 4 run scoreboard players operation spellDmg saves /= atkmultiplier slot19
+execute if score spellnumber3 spells matches 4 run execute if score ward slot19 matches 0 run scoreboard players operation shield slot19 -= spellDmg saves
+execute if score spellnumber3 spells matches 4 run execute if score ward slot19 matches 0 if score shield slot19 matches ..0 run scoreboard players operation slot19 hp += shield slot19
+execute if score spellnumber3 spells matches 4 run execute if score ward slot19 matches 1.. run function chthree:wardslot19
+execute if score spellnumber3 spells matches 4 run scoreboard players set spellbuffsp6 spells 0
+execute if score spellnumber3 spells matches 4 run function chthree:spellphasep5
+execute if score spellnumber3 spells matches 4 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p6]"}," used Magic Missile on Slot 2!"]
 
 #Protector's Rune
 execute if score spellnumber3 spells matches 16 if score protectorsrune spellStats > durationSlot18 taunt run scoreboard players operation durationSlot18 taunt = protectorsrune spellStats

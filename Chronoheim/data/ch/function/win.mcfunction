@@ -306,6 +306,8 @@ scoreboard players set lifeLeechCooldown player1spells 0
 scoreboard players set healingRainCooldown player1spells 0
 scoreboard players set darkritual player1spells 0
 scoreboard players set darkritual player2spells 0
+scoreboard players set anubisSpCheckedP1 booleans 0
+scoreboard players set anubisSpCheckedP2 booleans 0
 
 scoreboard players set butcheringCooldown player1spells 0
 scoreboard players set butcheringCooldown player2spells 0

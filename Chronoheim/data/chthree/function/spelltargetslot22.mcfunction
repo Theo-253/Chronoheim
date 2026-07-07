@@ -275,6 +275,95 @@ execute if score spellnumber3 spells matches 32 run tellraw @a[tag=game3] ["",{"
 execute if score spellnumber3 spells matches 32 run scoreboard players set spellbuffsp5 spells 0
 execute if score spellnumber3 spells matches 32 run scoreboard players set attackIsOngoingGame3 booleans 0
 
+#cannibalize token
+
+execute if score spellnumber3 spells matches -3 if score slot22bleeding booleaneffects matches 0 run scoreboard players operation slot22 hp += cannibalize spellStats
+execute if score spellnumber3 spells matches -3 if score slot22bleeding booleaneffects matches 0 run scoreboard players operation slot22 hp += spellbuffsp5 spells
+execute if score spellnumber3 spells matches -3 run function chthree:spellphasep5
+execute if score spellnumber3 spells matches -3 run execute at @n[type=armor_stand,name=slot22] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber3 spells matches -3 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Cannibalize to heal Slot 6!"]
+execute if score spellnumber3 spells matches -3 run scoreboard players set spellbuffsp5 spells 0
+
+#cannibalize
+execute if score spellnumber3 spells matches 34 run scoreboard players operation slot22 hp -= cannibalize spellStats
+execute if score spellnumber3 spells matches 34 run scoreboard players operation slot22bleeding booleaneffects += cannibalizeDuration spellStats
+execute if score spellnumber3 spells matches 34 run function chthree:spellgivetargetsp5reverse
+execute if score spellnumber3 spells matches 34 run execute at @n[type=armor_stand,name=slot22] run particle dust{color:[0.639,0.008,0.008],scale:1} ~ ~1 ~ 0.9 0.9 0.9 0.1 400
+execute if score spellnumber3 spells matches 34 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Cannibalize on Slot 6!"]
+execute if score spellnumber3 spells matches 34 run scoreboard players set spellnumber3 spells -3
+
+#Dark Ritual
+execute if score spellnumber3 spells matches 40 run execute if score buffDurationSlot22 atkmodifiers < darkpowerDuration spellStats run scoreboard players operation buffDurationSlot22 atkmodifiers = darkpowerDuration spellStats
+execute if score spellnumber3 spells matches 40 run scoreboard players operation attackBuffSlot22 atkmodifiers += darkpower spellStats
+execute if score spellnumber3 spells matches 40 run scoreboard players operation attackBuffSlot22 atkmodifiers += darkritual player2spells
+execute if score spellnumber3 spells matches 40 at @e[name=slot22] run particle minecraft:trial_omen ~ ~1 ~ 0.9 0.9 0.9 0.5 40
+execute if score spellnumber3 spells matches 40 run function chthree:spellphasep5
+execute if score spellnumber3 spells matches 40 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Dark Ritual on Slot 6!"]
+
+#Monkey's Paw
+execute if score spellnumber3 spells matches 43 run scoreboard players operation invincibleSlot22 booleaneffects = monkeyspaw spellStats
+execute if score spellnumber3 spells matches 43 run scoreboard players operation savehp22 saves = slot22 hp
+execute if score spellnumber3 spells matches 43 run scoreboard players set curse slot22 5
+execute if score spellnumber3 spells matches 43 run scoreboard players set curseStacks slot22 0
+execute if score spellnumber3 spells matches 43 run scoreboard players operation curseDuration slot22 = monkeyspaw spellStats
+execute if score spellnumber3 spells matches 43 at @e[name=slot22] run particle minecraft:raid_omen ~ ~1 ~ 0.9 0.9 0.9 0.00000001 200
+execute if score spellnumber3 spells matches 43 run playsound minecraft:ambient.cave player @a[tag=game3] ~ ~ ~ 500 2
+execute if score spellnumber3 spells matches 43 run function chthree:spellphasep5
+execute if score spellnumber3 spells matches 43 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Monkey's Paw on Slot 6!"]
+
+#Slimed!
+execute if score spellnumber3 spells matches 35 if score ward slot22 matches 0 run scoreboard players operation disarmedslot22 booleaneffects += slimed spellStats
+execute if score spellnumber3 spells matches 35 if score ward slot22 matches 1.. run function chthree:wardslot22
+execute if score spellnumber3 spells matches 35 run scoreboard players set attackIsOngoingGame3 booleans 0
+execute if score spellnumber3 spells matches 35 run execute at @n[type=armor_stand,name=slot22] run particle minecraft:item_slime ~ ~1 ~ 0.7 0.7 0.7 0.3 150
+execute if score spellnumber3 spells matches 35 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Slimed! on Slot 6!"]
+
+#Vampire Mark
+execute if score spellnumber3 spells matches 36 run scoreboard players operation lifesteal slot22 = vampiremark spellStats
+execute if score spellnumber3 spells matches 36 run execute at @n[type=armor_stand,name=slot22] run particle minecraft:crimson_spore ~ ~1 ~ 0.6 0.4 0.6 0 200
+execute if score spellnumber3 spells matches 36 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Vampire Mark on Slot 6!"]
+execute if score spellnumber3 spells matches 36 run function chthree:spellphasep5
+
+#Butchering
+execute if score spellnumber3 spells matches 37 run scoreboard players operation spellDmg saves = butchering spellStats
+execute if score spellnumber3 spells matches 37 run scoreboard players operation spellDmg saves += spellbuffsp5 spells
+execute if score spellnumber3 spells matches 37 run scoreboard players operation spellDmg saves += marks slot22
+execute if score spellnumber3 spells matches 37 run scoreboard players operation spellDmg saves /= atkmultiplier slot22
+execute if score spellnumber3 spells matches 37 run execute if score ward slot22 matches 0 run scoreboard players operation shield slot22 -= spellDmg saves
+execute if score spellnumber3 spells matches 37 run execute if score ward slot22 matches 0 if score shield slot22 matches ..0 run scoreboard players operation slot22 hp += shield slot22
+execute if score spellnumber3 spells matches 37 at @e[name=slot22] run particle minecraft:damage_indicator ~ ~1 ~ 0.6 0.6 0.6 0 100
+execute if score spellnumber3 spells matches 37 run execute if score ward slot22 matches 1.. run function chthree:wardslot22
+execute if score spellnumber3 spells matches 37 run scoreboard players set spellbuffsp5 spells 0
+execute if score spellnumber3 spells matches 37 run scoreboard players set attackIsOngoingGame3 booleans 0
+execute if score spellnumber3 spells matches 37 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Butchering on Slot 6!"]
+
+#Will O' Wisp
+execute if score spellnumber3 spells matches 38 run execute if score ward slot22 matches 0 if score durationSlot22 burn < willowispDuration spellStats run scoreboard players operation durationSlot22 burn = willowispDuration spellStats
+execute if score spellnumber3 spells matches 38 run execute if score ward slot22 matches 0 run scoreboard players operation slot22Burn burn += willowisp spellStats
+execute if score spellnumber3 spells matches 38 run scoreboard players operation spellDmg saves = slot22Burn burn
+execute if score spellnumber3 spells matches 38 run scoreboard players operation spellDmg saves += spellbuffsp5 spells
+execute if score spellnumber3 spells matches 38 run scoreboard players operation spellDmg saves += marks slot22
+execute if score spellnumber3 spells matches 38 run scoreboard players operation spellDmg saves /= atkmultiplier slot22
+execute if score spellnumber3 spells matches 38 run execute if score ward slot22 matches 0 run scoreboard players operation shield slot22 -= spellDmg saves
+execute if score spellnumber3 spells matches 38 run execute if score ward slot22 matches 0 if score shield slot22 matches ..0 run scoreboard players operation slot22 hp += shield slot22
+execute if score spellnumber3 spells matches 38 at @e[name=slot22] run particle minecraft:glow ~ ~1 ~ 0.7 0.7 0.7 0.1 100
+execute if score spellnumber3 spells matches 38 at @e[name=slot22] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.6 0.6 0.6 0.1 100
+execute if score spellnumber3 spells matches 38 run execute if score ward slot22 matches 1.. run function chthree:wardslot22
+execute if score spellnumber3 spells matches 38 run scoreboard players set spellbuffsp5 spells 0
+execute if score spellnumber3 spells matches 38 run scoreboard players set attackIsOngoingGame3 booleans 0
+execute if score spellnumber3 spells matches 38 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Will O' Wisp on Slot 6!"]
+
+#Curse of Bats
+execute if score spellnumber3 spells matches 42 if score ward slot22 matches ..0 unless score curse slot22 matches 5 unless score curse slot22 matches 6 run scoreboard players set curseStacks slot22 0
+execute if score spellnumber3 spells matches 42 if score ward slot22 matches ..0 unless score curse slot22 matches 5 unless score curse slot22 matches 6 run scoreboard players set curseDuration slot22 -1
+execute if score spellnumber3 spells matches 42 if score ward slot22 matches ..0 unless score curse slot22 matches 5 run scoreboard players set curse slot22 6
+execute if score spellnumber3 spells matches 42 if score ward slot22 matches ..0 unless score curse slot22 matches 5 if score curse slot22 matches 6 run scoreboard players add curseStacks slot22 1
+execute if score spellnumber3 spells matches 42 run execute at @n[name=slot22] run particle shriek{delay:0} ~ ~1 ~ 0.3 0.5 0.3 0.1 200 normal
+execute if score spellnumber3 spells matches 42 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Curse of Bats on Slot 6!"]
+execute if score spellnumber3 spells matches 42 if score ward slot22 matches 1.. run function chthree:wardslot22
+execute if score spellnumber3 spells matches 42 run scoreboard players set attackIsOngoingGame3 booleans 0
+
+
 #This goes at the bottom
 execute if score shield slot21 matches ..0 run scoreboard players set shield slot21 0
 execute if score shield slot22 matches ..0 run scoreboard players set shield slot22 0

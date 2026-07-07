@@ -3,6 +3,7 @@ execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run team leave @s
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s amethyst_shard
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s trial_key
+execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s ominous_trial_key
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s sunflower
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s jack_o_lantern
 execute as @a if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:darkness":{amplifier:{min:0,max:0}}}}} run clear @s quartz_pillar

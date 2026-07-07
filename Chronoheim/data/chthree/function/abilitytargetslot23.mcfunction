@@ -428,7 +428,7 @@ execute if score abilitynumber3 abilities matches 37 run tellraw @a[tag=game3] [
 execute if score abilitynumber3 abilities matches 42 if score ward slot23 matches 0 run scoreboard players operation abilityDmg3 saves = anubis abilityStats
 execute if score abilitynumber3 abilities matches 42 if score ward slot23 matches 0 run scoreboard players operation abilityDmg3 saves *= anubisUnusedP1 saves
 execute if score abilitynumber3 abilities matches 42 run execute at @e[name=slot23,type=armor_stand] run particle minecraft:sonic_boom ~ ~2 ~ 0.03 0.03 0.03 0.01 100
-execute if score abilitynumber3 abilities matches 42 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p6]"}," used Wrath of the Desert on Slot 7!"]
+execute if score abilitynumber3 abilities matches 42 run tellraw @a[tag=game3] ["",{"selector":"@p[tag=p5]"}," used Wrath of the Desert on Slot 7!"]
 execute if score abilitynumber3 abilities matches 42 if score slot17isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot17 atkmodifiers
 execute if score abilitynumber3 abilities matches 42 if score slot18isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot18 atkmodifiers
 execute if score abilitynumber3 abilities matches 42 if score slot19isatk booleans matches 1 run scoreboard players operation abilityDmg3 saves += slot19 atkmodifiers

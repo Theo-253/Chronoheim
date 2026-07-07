@@ -409,7 +409,8 @@ scoreboard players set spellbuffsp2 spells 0
  scoreboard players set maxspeed slot6 9999
  scoreboard players set maxspeed slot7 9999
  scoreboard players set maxspeed slot8 9999
-
+scoreboard players set anubisUnusedP1 saves 0
+scoreboard players set anubisUnusedP2 saves 0
 
 
 

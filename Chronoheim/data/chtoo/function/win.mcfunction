@@ -391,6 +391,9 @@ scoreboard players set darkritual player3spells 0
 scoreboard players set darkritual player4spells 0
 scoreboard players set anubisSpCheckedP3 booleans 0
 scoreboard players set anubisSpCheckedP4 booleans 0
+scoreboard players set anubisUnusedP3 saves 0
+scoreboard players set anubisUnusedP4 saves 0
+
 
 
 

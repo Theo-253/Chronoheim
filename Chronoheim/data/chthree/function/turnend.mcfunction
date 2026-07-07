@@ -234,6 +234,16 @@ execute if score slot22isatk booleans matches 1 run execute if score invincibleS
 execute if score slot23isatk booleans matches 1 run execute if score invincibleSlot23 booleaneffects matches 1.. run scoreboard players remove invincibleSlot23 booleaneffects 1
 execute if score slot24isatk booleans matches 1 run execute if score invincibleSlot16 booleaneffects matches 1.. run scoreboard players remove invincibleSlot16 booleaneffects 1
 
+#Curses! I have been defeated!
+execute unless score curse slot17 matches 4 run execute if score slot17isatk booleans matches 1 run execute if score curseDuration slot17 matches 1.. run scoreboard players remove curseDuration slot17 1
+execute unless score curse slot18 matches 4 run execute if score slot18isatk booleans matches 1 run execute if score curseDuration slot18 matches 1.. run scoreboard players remove curseDuration slot18 1
+execute unless score curse slot19 matches 4 run execute if score slot19isatk booleans matches 1 run execute if score curseDuration slot19 matches 1.. run scoreboard players remove curseDuration slot19 1
+execute unless score curse slot20 matches 4 run execute if score slot20isatk booleans matches 1 run execute if score curseDuration slot20 matches 1.. run scoreboard players remove curseDuration slot20 1
+execute unless score curse slot21 matches 4 run execute if score slot21isatk booleans matches 1 run execute if score curseDuration slot21 matches 1.. run scoreboard players remove curseDuration slot21 1
+execute unless score curse slot22 matches 4 run execute if score slot22isatk booleans matches 1 run execute if score curseDuration slot22 matches 1.. run scoreboard players remove curseDuration slot22 1
+execute unless score curse slot23 matches 4 run execute if score slot23isatk booleans matches 1 run execute if score curseDuration slot23 matches 1.. run scoreboard players remove curseDuration slot23 1
+execute unless score curse slot24 matches 4 run execute if score slot24isatk booleans matches 1 run execute if score curseDuration slot24 matches 1.. run scoreboard players remove curseDuration slot24 1
+
 #Ward Duration
 execute if score slot17isatk booleans matches 1 run execute if score durationSlot17 wards matches 1.. run scoreboard players remove durationSlot17 wards 1
 execute if score slot18isatk booleans matches 1 run execute if score durationSlot18 wards matches 1.. run scoreboard players remove durationSlot18 wards 1

@@ -244,6 +244,16 @@ execute if score slot14isatk booleans matches 1 run execute if score durationSlo
 execute if score slot15isatk booleans matches 1 run execute if score durationSlot15 wards matches 1.. run scoreboard players remove durationSlot15 wards 1
 execute if score slot16isatk booleans matches 1 run execute if score durationSlot16 wards matches 1.. run scoreboard players remove durationSlot16 wards 1
 
+#Curses
+execute unless score curse slot9 matches 4 run execute if score slot9isatk booleans matches 1 run execute if score curseDuration slot9 matches 1.. run scoreboard players remove curseDuration slot9 1
+execute unless score curse slot10 matches 4 run execute if score slot10isatk booleans matches 1 run execute if score curseDuration slot10 matches 1.. run scoreboard players remove curseDuration slot10 1
+execute unless score curse slot11 matches 4 run execute if score slot11isatk booleans matches 1 run execute if score curseDuration slot11 matches 1.. run scoreboard players remove curseDuration slot11 1
+execute unless score curse slot12 matches 4 run execute if score slot12isatk booleans matches 1 run execute if score curseDuration slot12 matches 1.. run scoreboard players remove curseDuration slot12 1
+execute unless score curse slot13 matches 4 run execute if score slot13isatk booleans matches 1 run execute if score curseDuration slot13 matches 1.. run scoreboard players remove curseDuration slot13 1
+execute unless score curse slot14 matches 4 run execute if score slot14isatk booleans matches 1 run execute if score curseDuration slot14 matches 1.. run scoreboard players remove curseDuration slot14 1
+execute unless score curse slot15 matches 4 run execute if score slot15isatk booleans matches 1 run execute if score curseDuration slot15 matches 1.. run scoreboard players remove curseDuration slot15 1
+execute unless score curse slot16 matches 4 run execute if score slot16isatk booleans matches 1 run execute if score curseDuration slot16 matches 1.. run scoreboard players remove curseDuration slot16 1
+
 execute if score slot9isatk booleans matches 1 if score side3spinball abilities matches 0.. if score character# slot9 matches 10 run scoreboard players add side3spinball abilities 1
 execute if score slot10isatk booleans matches 1 if score side3spinball abilities matches 0.. if score character# slot10 matches 10 run scoreboard players add side3spinball abilities 1
 execute if score slot11isatk booleans matches 1 if score side3spinball abilities matches 0.. if score character# slot11 matches 10 run scoreboard players add side3spinball abilities 1

@@ -277,39 +277,6 @@ execute if score slot5isatk booleans matches 1 if score side2spinball abilities 
 execute if score slot6isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot6 matches 10 run execute at @n[name=slot6,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
 execute if score slot7isatk booleans matches 1 if score side2spinball abilities matches 0..9 if score character# slot7 matches 10 run execute at @n[name=slot7,type=armor_stand] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.2 20
 
-#Dolly
-execute if score slot1isatk booleans matches 1 if score character# slot1 matches 42 if score curse slot5 matches 4 run scoreboard players remove curseDuration slot5 1
-execute if score slot1isatk booleans matches 1 if score character# slot1 matches 42 if score curse slot6 matches 4 run scoreboard players remove curseDuration slot6 1
-execute if score slot1isatk booleans matches 1 if score character# slot1 matches 42 if score curse slot7 matches 4 run scoreboard players remove curseDuration slot7 1
-execute if score slot1isatk booleans matches 1 if score character# slot1 matches 42 if score curse slot8 matches 4 run scoreboard players remove curseDuration slot8 1
-execute if score slot2isatk booleans matches 1 if score character# slot2 matches 42 if score curse slot5 matches 4 run scoreboard players remove curseDuration slot5 1
-execute if score slot2isatk booleans matches 1 if score character# slot2 matches 42 if score curse slot6 matches 4 run scoreboard players remove curseDuration slot6 1
-execute if score slot2isatk booleans matches 1 if score character# slot2 matches 42 if score curse slot7 matches 4 run scoreboard players remove curseDuration slot7 1
-execute if score slot2isatk booleans matches 1 if score character# slot2 matches 42 if score curse slot8 matches 4 run scoreboard players remove curseDuration slot8 1
-execute if score slot3isatk booleans matches 1 if score character# slot3 matches 42 if score curse slot5 matches 4 run scoreboard players remove curseDuration slot5 1
-execute if score slot3isatk booleans matches 1 if score character# slot3 matches 42 if score curse slot6 matches 4 run scoreboard players remove curseDuration slot6 1
-execute if score slot3isatk booleans matches 1 if score character# slot3 matches 42 if score curse slot7 matches 4 run scoreboard players remove curseDuration slot7 1
-execute if score slot3isatk booleans matches 1 if score character# slot3 matches 42 if score curse slot8 matches 4 run scoreboard players remove curseDuration slot8 1
-execute if score slot4isatk booleans matches 1 if score character# slot4 matches 42 if score curse slot5 matches 4 run scoreboard players remove curseDuration slot5 1
-execute if score slot4isatk booleans matches 1 if score character# slot4 matches 42 if score curse slot6 matches 4 run scoreboard players remove curseDuration slot6 1
-execute if score slot4isatk booleans matches 1 if score character# slot4 matches 42 if score curse slot7 matches 4 run scoreboard players remove curseDuration slot7 1
-execute if score slot4isatk booleans matches 1 if score character# slot4 matches 42 if score curse slot8 matches 4 run scoreboard players remove curseDuration slot8 1
-execute if score slot5isatk booleans matches 1 if score character# slot5 matches 42 if score curse slot1 matches 4 run scoreboard players remove curseDuration slot1 1
-execute if score slot5isatk booleans matches 1 if score character# slot5 matches 42 if score curse slot2 matches 4 run scoreboard players remove curseDuration slot2 1
-execute if score slot5isatk booleans matches 1 if score character# slot5 matches 42 if score curse slot3 matches 4 run scoreboard players remove curseDuration slot3 1
-execute if score slot5isatk booleans matches 1 if score character# slot5 matches 42 if score curse slot4 matches 4 run scoreboard players remove curseDuration slot4 1
-execute if score slot6isatk booleans matches 1 if score character# slot6 matches 42 if score curse slot1 matches 4 run scoreboard players remove curseDuration slot1 1
-execute if score slot6isatk booleans matches 1 if score character# slot6 matches 42 if score curse slot2 matches 4 run scoreboard players remove curseDuration slot2 1
-execute if score slot6isatk booleans matches 1 if score character# slot6 matches 42 if score curse slot3 matches 4 run scoreboard players remove curseDuration slot3 1
-execute if score slot6isatk booleans matches 1 if score character# slot6 matches 42 if score curse slot4 matches 4 run scoreboard players remove curseDuration slot4 1
-execute if score slot7isatk booleans matches 1 if score character# slot7 matches 42 if score curse slot1 matches 4 run scoreboard players remove curseDuration slot1 1
-execute if score slot7isatk booleans matches 1 if score character# slot7 matches 42 if score curse slot2 matches 4 run scoreboard players remove curseDuration slot2 1
-execute if score slot7isatk booleans matches 1 if score character# slot7 matches 42 if score curse slot3 matches 4 run scoreboard players remove curseDuration slot3 1
-execute if score slot7isatk booleans matches 1 if score character# slot7 matches 42 if score curse slot4 matches 4 run scoreboard players remove curseDuration slot4 1
-execute if score slot8isatk booleans matches 1 if score character# slot8 matches 42 if score curse slot1 matches 4 run scoreboard players remove curseDuration slot1 1
-execute if score slot8isatk booleans matches 1 if score character# slot8 matches 42 if score curse slot2 matches 4 run scoreboard players remove curseDuration slot2 1
-execute if score slot8isatk booleans matches 1 if score character# slot8 matches 42 if score curse slot3 matches 4 run scoreboard players remove curseDuration slot3 1
-execute if score slot8isatk booleans matches 1 if score character# slot8 matches 42 if score curse slot4 matches 4 run scoreboard players remove curseDuration slot4 1
 
 
 #Attack boolean reset

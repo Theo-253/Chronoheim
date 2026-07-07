@@ -408,6 +408,13 @@ execute if score character# slot14 matches 2 run scoreboard players operation at
 execute if score character# slot14 matches 2 run scoreboard players operation attackBuffSlot15 atkmodifiers = arthurBuff abilityStats
 execute if score character# slot14 matches 2 run scoreboard players operation attackBuffSlot16 atkmodifiers = arthurBuff abilityStats
 
+execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot10 += grangorTeamHealthBonus herohealth
+execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot9 += grangorTeamHealthBonus herohealth
+execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot11 += grangorTeamHealthBonus herohealth
+execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot24 += grangorTeamHealthBonus herohealth
+execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot13 += grangorTeamHealthBonus herohealth
+execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot15 += grangorTeamHealthBonus herohealth
+
 execute if score character# slot10 matches 14 run scoreboard players operation atk slot10 += hydraLeader heroattack
 execute if score character# slot14 matches 14 run scoreboard players operation atk slot14 += hydraLeader heroattack
 
@@ -482,12 +489,6 @@ scoreboard players operation speed slot14 = maxspeed slot14
 scoreboard players operation speed slot15 = maxspeed slot15
 scoreboard players operation speed slot16 = maxspeed slot16
 
-execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot10 += grangorSelfHealthBonus herohealth
-execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot9 += grangorTeamHealthBonus herohealth
-execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot11 += grangorTeamHealthBonus herohealth
-execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot24 += grangorSelfHealthBonus herohealth
-execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot13 += grangorTeamHealthBonus herohealth
-execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot15 += grangorTeamHealthBonus herohealth
 
 execute if score character# slot10 matches 37 run scoreboard players operation buffDurationSlot10 atkmodifiers = boogalooLeaderDuration abilityStats
 execute if score character# slot10 matches 37 run scoreboard players operation attackBuffSlot10 atkmodifiers = boogalooLeader abilityStats

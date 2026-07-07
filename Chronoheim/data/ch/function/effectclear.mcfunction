@@ -388,6 +388,56 @@ execute if score curseDuration slot8 matches 0 if score curse slot8 matches 5 ru
 execute if score curseDuration slot8 matches 0 if score curse slot8 matches 5 run function ch:death8
 execute if score curseDuration slot8 matches 0 if score curse slot8 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game1] ~ ~ ~ 500 0.8
 
+execute if score curseDuration slot17 matches 0 if score curse slot17 matches 5 run scoreboard players set slot17 hp 0
+execute if score curseDuration slot17 matches 0 if score curse slot17 matches 5 run function chthree:death1
+execute if score curseDuration slot17 matches 0 if score curse slot17 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game3] ~ ~ ~ 500 0.8
+execute if score curseDuration slot18 matches 0 if score curse slot18 matches 5 run scoreboard players set slot18 hp 0
+execute if score curseDuration slot18 matches 0 if score curse slot18 matches 5 run function chthree:death2
+execute if score curseDuration slot18 matches 0 if score curse slot18 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game3] ~ ~ ~ 500 0.8
+execute if score curseDuration slot19 matches 0 if score curse slot19 matches 5 run scoreboard players set slot19 hp 0
+execute if score curseDuration slot19 matches 0 if score curse slot19 matches 5 run function chthree:death3
+execute if score curseDuration slot19 matches 0 if score curse slot19 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game3] ~ ~ ~ 500 0.8
+execute if score curseDuration slot20 matches 0 if score curse slot20 matches 5 run scoreboard players set slot20 hp 0
+execute if score curseDuration slot20 matches 0 if score curse slot20 matches 5 run function chthree:death4
+execute if score curseDuration slot20 matches 0 if score curse slot20 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game3] ~ ~ ~ 500 0.8
+execute if score curseDuration slot21 matches 0 if score curse slot21 matches 5 run scoreboard players set slot21 hp 0
+execute if score curseDuration slot21 matches 0 if score curse slot21 matches 5 run function chthree:death5
+execute if score curseDuration slot21 matches 0 if score curse slot21 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game3] ~ ~ ~ 500 0.8
+execute if score curseDuration slot22 matches 0 if score curse slot22 matches 5 run scoreboard players set slot22 hp 0
+execute if score curseDuration slot22 matches 0 if score curse slot22 matches 5 run function chthree:death6
+execute if score curseDuration slot22 matches 0 if score curse slot22 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game3] ~ ~ ~ 500 0.8
+execute if score curseDuration slot23 matches 0 if score curse slot23 matches 5 run scoreboard players set slot23 hp 0
+execute if score curseDuration slot23 matches 0 if score curse slot23 matches 5 run function chthree:death7
+execute if score curseDuration slot23 matches 0 if score curse slot23 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game3] ~ ~ ~ 500 0.8
+execute if score curseDuration slot24 matches 0 if score curse slot24 matches 5 run scoreboard players set slot24 hp 0
+execute if score curseDuration slot24 matches 0 if score curse slot24 matches 5 run function chthree:death8
+execute if score curseDuration slot24 matches 0 if score curse slot24 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game3] ~ ~ ~ 500 0.8
+
+execute if score curseDuration slot9 matches 0 if score curse slot9 matches 5 run scoreboard players set slot9 hp 0
+execute if score curseDuration slot9 matches 0 if score curse slot9 matches 5 run function chtoo:death1
+execute if score curseDuration slot9 matches 0 if score curse slot9 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game2] ~ ~ ~ 500 0.8
+execute if score curseDuration slot10 matches 0 if score curse slot10 matches 5 run scoreboard players set slot10 hp 0
+execute if score curseDuration slot10 matches 0 if score curse slot10 matches 5 run function chtoo:death2
+execute if score curseDuration slot10 matches 0 if score curse slot10 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game2] ~ ~ ~ 500 0.8
+execute if score curseDuration slot11 matches 0 if score curse slot11 matches 5 run scoreboard players set slot11 hp 0
+execute if score curseDuration slot11 matches 0 if score curse slot11 matches 5 run function chtoo:death3
+execute if score curseDuration slot11 matches 0 if score curse slot11 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game2] ~ ~ ~ 500 0.8
+execute if score curseDuration slot12 matches 0 if score curse slot12 matches 5 run scoreboard players set slot12 hp 0
+execute if score curseDuration slot12 matches 0 if score curse slot12 matches 5 run function chtoo:death4
+execute if score curseDuration slot12 matches 0 if score curse slot12 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game2] ~ ~ ~ 500 0.8
+execute if score curseDuration slot13 matches 0 if score curse slot13 matches 5 run scoreboard players set slot13 hp 0
+execute if score curseDuration slot13 matches 0 if score curse slot13 matches 5 run function chtoo:death5
+execute if score curseDuration slot13 matches 0 if score curse slot13 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game2] ~ ~ ~ 500 0.8
+execute if score curseDuration slot14 matches 0 if score curse slot14 matches 5 run scoreboard players set slot14 hp 0
+execute if score curseDuration slot14 matches 0 if score curse slot14 matches 5 run function chtoo:death6
+execute if score curseDuration slot14 matches 0 if score curse slot14 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game2] ~ ~ ~ 500 0.8
+execute if score curseDuration slot15 matches 0 if score curse slot15 matches 5 run scoreboard players set slot15 hp 0
+execute if score curseDuration slot15 matches 0 if score curse slot15 matches 5 run function chtoo:death7
+execute if score curseDuration slot15 matches 0 if score curse slot15 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game2] ~ ~ ~ 500 0.8
+execute if score curseDuration slot16 matches 0 if score curse slot16 matches 5 run scoreboard players set slot16 hp 0
+execute if score curseDuration slot16 matches 0 if score curse slot16 matches 5 run function chtoo:death8
+execute if score curseDuration slot16 matches 0 if score curse slot16 matches 5 run playsound minecraft:block.sculk_shrieker.shriek player @a[tag=game2] ~ ~ ~ 500 0.8
+
 execute if score curseDuration slot1 matches 0 run scoreboard players set curse slot1 0
 execute if score curseDuration slot2 matches 0 run scoreboard players set curse slot2 0
 execute if score curseDuration slot3 matches 0 run scoreboard players set curse slot3 0

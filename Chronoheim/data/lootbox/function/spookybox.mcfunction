@@ -88,7 +88,7 @@ execute if score spookyrarehero lootboxes matches 2 run execute at @p[tag=spooky
 execute if score spookyrarehero lootboxes matches 2 run tag @p[tag=spookybox,tag=!igorO] add igorO
 
 execute if score spookyrarehero lootboxes matches 3 run scoreboard players add @p[tag=spookybox,tag=blinkyO] Shards 200
-execute if score spookyrarehero lootboxes matches 3 run execute at @p[tag=spookybox,tag=!blinkyO] run say @p[tag=spookybox,tag=!blinkyO] unlocked Golem!
+execute if score spookyrarehero lootboxes matches 3 run execute at @p[tag=spookybox,tag=!blinkyO] run say @p[tag=spookybox,tag=!blinkyO] unlocked Blinky!
 execute if score spookyrarehero lootboxes matches 3 run tag @p[tag=spookybox,tag=!blinkyO] add blinkyO
 
 #Epic Hero Drops

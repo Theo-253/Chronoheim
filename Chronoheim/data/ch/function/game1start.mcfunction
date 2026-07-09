@@ -429,12 +429,12 @@ execute unless score character# slot5 matches 17 unless score character# slot6 m
 execute unless score character# slot6 matches 17 run scoreboard players remove anubisUsedP2 saves 1
 scoreboard players operation anubisUsedP2 saves -= anubisUnusedP2 saves
 
-execute if score character# slot2 matches 18 run scoreboard players operation maxhp slot2 += grangorTeamHealthBonus herohealth
-execute if score character# slot2 matches 18 run scoreboard players operation maxhp slot1 += grangorTeamHealthBonus herohealth
-execute if score character# slot2 matches 18 run scoreboard players operation maxhp slot3 += grangorTeamHealthBonus herohealth
-execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot6 += grangorTeamHealthBonus herohealth
-execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot5 += grangorTeamHealthBonus herohealth
-execute if score character# slot6 matches 18 run scoreboard players operation maxhp slot7 += grangorTeamHealthBonus herohealth
+execute if score character# slot2 matches 18 run scoreboard players operation slot2 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot2 matches 18 run scoreboard players operation slot3 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot2 matches 18 run scoreboard players operation slot1 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot6 matches 18 run scoreboard players operation slot5 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot6 matches 18 run scoreboard players operation slot6 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot6 matches 18 run scoreboard players operation slot7 hp += grangorTeamHealthBonus herohealth
 
 execute if score character# slot1 matches 21 run scoreboard players operation slot1 hp -= lillithLeechDmg abilityStats
 execute if score character# slot1 matches 21 run scoreboard players operation slot2 hp -= lillithLeechDmg abilityStats

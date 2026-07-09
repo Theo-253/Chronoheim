@@ -434,12 +434,12 @@ execute if score character# slot22 matches 2 run scoreboard players operation at
 execute if score character# slot22 matches 2 run scoreboard players operation attackBuffSlot24 atkmodifiers = arthurBuff abilityStats
 
 
-execute if score character# slot18 matches 18 run scoreboard players operation maxhp slot18 += grangorTeamHealthBonus herohealth
-execute if score character# slot18 matches 18 run scoreboard players operation maxhp slot17 += grangorTeamHealthBonus herohealth
-execute if score character# slot18 matches 18 run scoreboard players operation maxhp slot19 += grangorTeamHealthBonus herohealth
-execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot22 += grangorTeamHealthBonus herohealth
-execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot21 += grangorTeamHealthBonus herohealth
-execute if score character# slot22 matches 18 run scoreboard players operation maxhp slot23 += grangorTeamHealthBonus herohealth
+execute if score character# slot18 matches 18 run scoreboard players operation slot17 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot18 matches 18 run scoreboard players operation slot18 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot18 matches 18 run scoreboard players operation slot19 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot22 matches 18 run scoreboard players operation slot21 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot22 matches 18 run scoreboard players operation slot22 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot22 matches 18 run scoreboard players operation slot23 hp += grangorTeamHealthBonus herohealth
 
 execute if score character# slot18 matches 14 run scoreboard players operation atk slot18 += hydraLeader heroattack
 execute if score character# slot22 matches 14 run scoreboard players operation atk slot22 += hydraLeader heroattack

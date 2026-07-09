@@ -408,12 +408,12 @@ execute if score character# slot14 matches 2 run scoreboard players operation at
 execute if score character# slot14 matches 2 run scoreboard players operation attackBuffSlot15 atkmodifiers = arthurBuff abilityStats
 execute if score character# slot14 matches 2 run scoreboard players operation attackBuffSlot16 atkmodifiers = arthurBuff abilityStats
 
-execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot10 += grangorTeamHealthBonus herohealth
-execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot9 += grangorTeamHealthBonus herohealth
-execute if score character# slot10 matches 18 run scoreboard players operation maxhp slot11 += grangorTeamHealthBonus herohealth
-execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot24 += grangorTeamHealthBonus herohealth
-execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot13 += grangorTeamHealthBonus herohealth
-execute if score character# slot14 matches 18 run scoreboard players operation maxhp slot15 += grangorTeamHealthBonus herohealth
+execute if score character# slot10 matches 18 run scoreboard players operation slot9 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot10 matches 18 run scoreboard players operation slot10 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot10 matches 18 run scoreboard players operation slot11 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot14 matches 18 run scoreboard players operation slot13 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot14 matches 18 run scoreboard players operation slot14 hp += grangorTeamHealthBonus herohealth
+execute if score character# slot14 matches 18 run scoreboard players operation slot15 hp += grangorTeamHealthBonus herohealth
 
 execute if score character# slot10 matches 14 run scoreboard players operation atk slot10 += hydraLeader heroattack
 execute if score character# slot14 matches 14 run scoreboard players operation atk slot14 += hydraLeader heroattack

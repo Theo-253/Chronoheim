@@ -337,7 +337,7 @@ execute if score abilitynumber abilities matches 40 if score ward slot3 matches 
 execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 unless score curse slot3 matches 5 unless score curse slot3 matches 2 run scoreboard players set curseDuration slot3 -1
 execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 unless score curse slot3 matches 5 run scoreboard players set curse slot3 2
 execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 unless score curse slot3 matches 5 if score curse slot3 matches 2 run scoreboard players add curseStacks slot3 1
-execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 run execute if score durationSlot3 burn > zeeboDuration abilityStats run scoreboard players operation durationSlot3 burn = zeeboDuration abilityStats
+execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 run execute if score durationSlot3 burn < zeeboDuration abilityStats run scoreboard players operation durationSlot3 burn = zeeboDuration abilityStats
 execute if score abilitynumber abilities matches 40 if score ward slot3 matches ..0 run scoreboard players operation slot3Burn burn += zeeboBurn abilityStats
 execute if score abilitynumber abilities matches 40 run execute at @e[type=armor_stand,name=slot3] run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;13894251,16746496,16770560],fade_colors:[I;10224278]}]}}}}
 execute if score abilitynumber abilities matches 40 run tellraw @a[tag=game1] ["",{"selector":"@p[tag=p2]"}," used Last Laugh on Slot 3!"]

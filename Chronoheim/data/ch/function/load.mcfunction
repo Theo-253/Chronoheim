@@ -448,7 +448,7 @@ scoreboard players set lillithCD abilityStats 4
 scoreboard players set lillithLeechDmg abilityStats 200
 scoreboard players set lillithLeaderLeechDmg abilityStats 100
 
-scoreboard players set gabriel heroattack 120
+scoreboard players set gabriel heroattack 100
 scoreboard players set gabriel herohealth 2460
 scoreboard players set gabriel herospeed 1200
 scoreboard players set gabriel abilityStats 280
@@ -751,9 +751,9 @@ scoreboard players set secondWindSpeed spellStats 500
 scoreboard players set secondWind spellStats 200
 scoreboard players set secondWindDuration spellStats 1
 scoreboard players set secondWindSp spellStats 2
-scoreboard players set shield spellStats 240
+scoreboard players set shield spellStats 340
 scoreboard players set shieldDuration spellStats 2
-scoreboard players set shieldCD spellStats 3
+scoreboard players set shieldCD spellStats 4
 scoreboard players set shieldSp spellStats 2
 scoreboard players set shiftingShadowsCD spellStats 1
 scoreboard players set shiftingShadowsSp spellStats 2
@@ -782,7 +782,7 @@ scoreboard players set lifeLeech spellStats 160
 scoreboard players set lifeLeechHeal spellStats 160
 scoreboard players set decimate spellStats 340
 scoreboard players set decimateCD spellStats 2
-scoreboard players set decimateSp spellStats 3
+scoreboard players set decimateSp spellStats 2
 scoreboard players set healingRainSp spellStats 2
 scoreboard players set healingRainCD spellStats 3
 scoreboard players set healingRain spellStats 60

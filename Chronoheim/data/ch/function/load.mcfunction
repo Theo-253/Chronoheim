@@ -330,7 +330,7 @@ scoreboard players set kongLeaderDmgDebuff abilityStats 60
 scoreboard players set kirin heroattack 60
 scoreboard players set kirin herohealth 2000
 scoreboard players set kirin herospeed 1400
-scoreboard players set kirin abilityStats 120
+scoreboard players set kirin abilityStats 160
 scoreboard players set kirinDuration abilityStats 2
 scoreboard players set kirinCD abilityStats 4
 scoreboard players set kirinLeader abilityStats 240
@@ -570,7 +570,7 @@ scoreboard players set barley heroattack 100
 scoreboard players set barley herohealth 2500
 scoreboard players set barley herospeed 900
 scoreboard players set barleyLeader abilityStats 100
-scoreboard players set barley abilityStats 60
+scoreboard players set barley abilityStats 80
 scoreboard players set barleyDuration abilityStats 2
 scoreboard players set barleyCD abilityStats 5
 
@@ -587,12 +587,12 @@ scoreboard players set boogalooCD abilityStats 5
 scoreboard players set igor heroattack 140
 scoreboard players set igor herohealth 1800
 scoreboard players set igor herospeed 1100
-scoreboard players set igor abilityStats 1
+scoreboard players set igor abilityStats 2
 scoreboard players set igorSpBuff abilityStats 500
 scoreboard players set igorDuration abilityStats 1
 scoreboard players set igorCD abilityStats 4
 
-scoreboard players set blinky heroattack 80
+scoreboard players set blinky heroattack 120
 scoreboard players set blinky herosplash 2
 scoreboard players set blinky herohealth 1900
 scoreboard players set blinky herospeed 1400
@@ -622,25 +622,25 @@ scoreboard players set fenrirCD abilityStats 3
 scoreboard players set anubis heroattack 100
 scoreboard players set anubis herohealth 2200
 scoreboard players set anubis herospeed 600
-scoreboard players set anubis abilityStats 100
-scoreboard players set anubisCD abilityStats 4
+scoreboard players set anubis abilityStats 120
+scoreboard players set anubisCD abilityStats 3
 scoreboard players set anubisLeader abilityStats 60
-scoreboard players set anubisShield abilityStats 60
+scoreboard players set anubisShield abilityStats 40
 scoreboard players set anubisDuration abilityStats 1
 scoreboard players set anubisSpDebuff abilityStats 1000
 scoreboard players set anubisSelfDuration abilityStats 2
 
-scoreboard players set grendel heroattack 100
+scoreboard players set grendel heroattack 80
 scoreboard players set grendel herohealth 2600
 scoreboard players set grendel herospeed 900
-scoreboard players set grendel abilityStats 120
-scoreboard players set grendelDisease abilityStats 80
+scoreboard players set grendel abilityStats 100
+scoreboard players set grendelDisease abilityStats 60
 scoreboard players set grendelCD abilityStats 4
 scoreboard players set grendelLeader herolifesteal 4
-scoreboard players set zombie heroattack 100
-scoreboard players set zombie herohealth 700
+scoreboard players set zombie heroattack 80
+scoreboard players set zombie herohealth 600
 scoreboard players set zombie herospeed 700
-scoreboard players set zombieDisease abilityStats 60
+scoreboard players set zombieDisease abilityStats 40
 
 scoreboard players set golemite heroattack 80
 scoreboard players set golemite herohealth 400
@@ -736,8 +736,8 @@ scoreboard players set overclockAtk spellStats 200
 scoreboard players set overclock spellStats 200
 scoreboard players set overclockSp spellStats 3
 scoreboard players set overclockDuration spellStats 1
-scoreboard players set plague spellStats 120
-scoreboard players set plagueCD spellStats 2
+scoreboard players set plague spellStats 100
+scoreboard players set plagueCD spellStats 3
 scoreboard players set plagueSp spellStats 3
 scoreboard players set protectorsRuneCD spellStats 5
 scoreboard players set protectorsrune spellStats 2
@@ -757,16 +757,16 @@ scoreboard players set shieldCD spellStats 3
 scoreboard players set shieldSp spellStats 2
 scoreboard players set shiftingShadowsCD spellStats 1
 scoreboard players set shiftingShadowsSp spellStats 2
-scoreboard players set shockOrb spellStats 2
+scoreboard players set shockOrb spellStats 1
 scoreboard players set shockOrbCD spellStats 3
-scoreboard players set shockOrbSp spellStats 3
+scoreboard players set shockOrbSp spellStats 2
 scoreboard players set swiftness spellStats 500
 scoreboard players set swiftnessDuration spellStats 2
 scoreboard players set swiftnessCD spellStats 3
 scoreboard players set swiftnessSp spellStats 1
 scoreboard players set wardCD spellStats 1
 scoreboard players set wardSp spellStats 3
-scoreboard players set witchbolt spellStats 120
+scoreboard players set witchbolt spellStats 100
 scoreboard players set witchboltCD spellStats 2
 scoreboard players set witchboltSp spellStats 1
 scoreboard players set witchesBrewCD spellStats 5
